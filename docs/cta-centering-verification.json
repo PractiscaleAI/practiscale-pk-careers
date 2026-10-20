@@ -1,0 +1,21 @@
+{
+  "version": "0.28",
+  "checks": {
+    "hero-finish": 19,
+    "mobile-editorial": 118,
+    "composition": 54,
+    "layout": 61,
+    "hero": 22,
+    "motion": 13
+  },
+  "failed": 0,
+  "circleCenterOffsetsPx": [
+    -0.0078125,
+    -0.0078125,
+    -0.0078125,
+    -0.0078125
+  ],
+  "build": "passed",
+  "visualReview": "Mobile full CTA block and enlarged text",
+  "creditsSpent": 0
+}

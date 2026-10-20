@@ -70,7 +70,9 @@ const fs = require("fs");
     await p.screenshot({ path: "docs/qa/whole-hero/desktop.png" });
     await p.emulateMedia({ reducedMotion: "reduce" });
     await waitEngine(p, "poster");
-    await p.locator(".portrait-poster").waitFor({state:"visible", timeout:3000});
+    await p
+      .locator(".portrait-poster")
+      .waitFor({ state: "visible", timeout: 3000 });
     check(
       "Live reduced-motion change removes animated canvas",
       (await p.locator(".hero-portrait canvas").count()) === 0,
@@ -95,8 +97,12 @@ const fs = require("fs");
       [375, 667],
     ]) {
       requests.length = 0;
-      const expectedPath = w < 768 ? "/ceo-prime-v1/mobile/" : "/ceo-prime-v1/desktop/";
-      const resolutionRequest = p.waitForRequest(r => r.url().includes(expectedPath), {timeout: 15000});
+      const expectedPath =
+        w < 768 ? "/ceo-prime-v1/mobile/" : "/ceo-prime-v1/desktop/";
+      const resolutionRequest = p.waitForRequest(
+        (r) => r.url().includes(expectedPath),
+        { timeout: 15000 },
+      );
       await p.setViewportSize({ width: w, height: h });
       await resolutionRequest;
       await waitEngine(p, "three");
@@ -132,6 +138,16 @@ const fs = require("fs");
         path: "docs/qa/whole-hero/end-" + w + "x" + h + ".png",
       });
     }
+    await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+    await p.waitForFunction(
+      () => Number(document.querySelector(".hero-portrait").dataset.frame) < 3,
+      undefined,
+      { timeout: 15000 },
+    );
+    check(
+      "Reverse scroll after breakpoint refresh returns to the first pose",
+      (await frame(p)) < 3,
+    );
     await p.setViewportSize({ width: 1440, height: 900 });
     await waitEngine(p, "three");
     await p.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));

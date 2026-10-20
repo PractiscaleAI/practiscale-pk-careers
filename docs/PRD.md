@@ -1,6 +1,6 @@
 # PractiScale hero — Product requirements
 
-Version 0.25 | 20 October 2026 | Status: Hero composition corrected and regression verified; blink accepted
+Version 0.29 | 20 October 2026 | Status: Compact CTA columns and desktop clearance verified
 
 ## Scope and authority
 
@@ -202,3 +202,57 @@ At 1200px and above, offset the portrait only as far right as needed to clear th
 Permanent requirements now appear in AGENTS.md and COMPOSITION-QC.md; a memory update note was saved at the user's explicit request. The npm test:composition regression projects the visible alpha envelope of all 120 source frames into real viewport layouts, requires at least 16px portrait/card separation for desktop/tablet, checks head/supporting-copy clearance and verifies mobile paragraph measure, final-word grouping, two-line heading and balanced width. It detected 13 failures on the old layout and passes all 54 assertions after the fix.
 
 Production build and TypeScript passed. Final focused checks: composition 54, responsive layout 61 across 15 viewport cases, browser/accessibility 22 and motion/fallback 13, all 150 passed with no runtime errors or automated accessibility violations. Actual start/end renders were captured at nine viewport sizes and independently inspected, including 1192px narrow desktop, 768px tablet, 530px phone, 430/375px phone and 320px short phone. Current artifacts: composition-verification.json and composition-qa.json. No source video, blink, original preloader artwork/timing, brand identity or other sections were changed. No further generation credits were spent.
+
+
+## Mobile editorial refinement - 20 October 2026 (current)
+
+Remove the hero header divider stroke at every width while retaining its tagline, location and spacing. Hide the separate Built for growth label on desktop/tablet; preserve the supplied logo artwork and its embedded tagline. This supersedes earlier statements that the desktop divider remains visible.
+
+Preserve every existing CTA label and destination: Explore training, Your next chapter / Starts with a skill and Apply on WhatsApp. Retain all approved copy, trust figures, local fonts and palette. The approved video, ordered 120-frame sequence, final hold and accepted blink are unchanged; no paid media generation is authorized.
+
+Phone composition uses consistent responsive reading gutters, a two-line Sora heading, readable Manrope body copy and a content-sized primary action. Give the portrait a dedicated cinematic frame with static teal/blue atmospheric lighting, full-head clearance and a soft lower-body fade. Place aligned proof figures below the portrait instead of floating over it. Keep the next-chapter invitation below the proof row with an adjacent arrow and a generous touch target. The light floating mobile header retains the original logo/mark and dark menu control; refine padding, press feedback, disclosure rotation and a restrained menu entrance. Respect reduced motion and safe areas.
+
+Mobile content grows naturally on short screens and with enlarged text; do not force the whole hero into one viewport. Let the reading content scroll normally; pin only the portrait frame below the header and near the viewport center while its approved sequence turns. Reserve the scrub distance within the portrait region, then release into the statistics and next-chapter invitation, with no additional page sections. Future sections remain out of scope. Verify 320-430px widths, 530px and tablet/desktop regression cases, source-frame silhouette clearance, live forward/reverse/hold motion, menu/focus, text reflow, actual renders and the original preloader before sign-off.
+
+
+## Version 0.26 verification - 20 October 2026
+
+The final default npm.cmd run build passed with Turbopack and TypeScript. All 318 checks passed: mobile-editorial 118, composition 54, layout 61, hero 22, motion 13, whole-hero 28, preloader 22. The mobile suite sweeps every CSS width from 320 through 430, checks exact CTA wording and statistics, normal/enlarged reading flow, header fit, menu/Escape behavior, and actual start/turn/end states on short and tall phones. The composition suite projects all 120 source-frame alpha silhouettes across phone/tablet/desktop layouts. Motion and lifecycle checks cover forward/reverse/hold, resize-at-bottom, reverse after resize, reduced motion, context loss and cleanup. No runtime errors or automated accessibility violations were found.
+
+Mobile uses a dedicated sticky portrait frame rather than pinning the entire hero. The explicit region height creates real scroll travel; its trigger is refreshed after the original introduction unlocks main. An explicit GSAP from/to range and refresh synchronization preserve correct initial/end poses during breakpoint changes. The 15% final-frame hold, approved source and accepted blink remain intact. The original-preloader source, phases, refresh, Escape, no-JavaScript visibility and failure recovery passed. No generation credits spent. Actual desktop, tablet, phone, menu, enlarged-text and live-turn renders were independently inspected. Verification is local Chrome; physical-device testing has not been performed. See mobile-editorial-verification.json and docs/qa/mobile-editorial/.
+
+
+## Mobile gradient continuity and circular CTA - 20 October 2026 (current)
+
+The user identified a hard rectangular edge at the top of the mobile portrait lighting and unused space beside the next-chapter invitation. Keep the existing portrait sequence, brand colors, exact CTA copy and enquiry links. Apply a transparent-to-opaque-to-transparent mask only to the atmospheric light layer, so it starts and ends without a clipped rectangle. Never fade, blur or recolor the face to conceal this seam.
+
+Use the supplied thin circular-arrow reference for the secondary invitation: a 56px outlined circle with a restrained diagonal arrow, hover/focus/press feedback and the existing link semantics. On phones the existing CTA label stays left-aligned and the circle aligns to the opposite reading gutter, making the whole row a usable link. This supersedes the earlier instruction to keep a bare arrow immediately beside the text. Retain the existing label and heading exactly. Verify actual screenshot pixels at the light boundary in static and pinned scroll states, circle/label clearance at 320-430px, enlarged text, desktop/tablet composition and the existing motion behavior before sign-off.
+
+
+## Version 0.27 verification - 20 October 2026
+
+Production build and TypeScript passed. All 283 focused checks passed: hero-finish 15, mobile-editorial 118, composition 54, layout 61, hero 22, motion 13. Screenshot-pixel regression reproduces the former clipped glow (maximum channel step 6) and verifies a maximum step of 1 at the corrected top boundary at 320, 375, 430 and 530px, including the live pinned portrait state. The 56px circle, centered diagonal arrow, right-gutter alignment, exact copy/link destinations, visible keyboard focus and text enlargement passed. The existing all-frame silhouette, responsive layout, browser/accessibility and forward/reverse/hold/fallback checks passed, with no runtime errors or automated accessibility violations.
+
+Actual full mobile layouts, live pinned lighting, enlarged text and desktop CTA/card alignment were visually reviewed. The original preloader, source video, native frame assets and accepted blink were not changed. No generation credits spent. These are local Chrome checks; physical-device testing has not been performed. See hero-finish-verification.json and docs/qa/hero-finish/.
+
+
+## CTA vertical centering - 20 October 2026 (current)
+
+Center the complete 56px circular arrow against the full next-chapter block, including its eyebrow and link label. Keep the circle at the right reading gutter and reserve space in the link so enlarged text stays clear. Preserve the exact wording, destination, existing lighting, portrait and scroll sequence. Add a regression that compares the circle center with the complete CTA block center.
+
+
+## Version 0.28 verification - 20 October 2026
+
+Production build and TypeScript passed. All 287 focused regression checks passed. At 320, 375, 430 and 530px, the circle center matches the complete CTA block center within 1 CSS pixel. The existing mobile suite also covers every width from 320 to 430 and enlarged text; responsive, composition, browser/accessibility and motion checks passed. Actual mobile CTA and enlarged-text renders were visually inspected. Copy, destinations, lighting and source media are preserved. No generation credits used. Validation is in local Chrome.
+
+
+## Compact CTA columns - 20 October 2026 (current)
+
+The user reported the desktop caption overlapping the absolutely positioned circle and excessive empty space inside that circle. Replace the overlay arrangement with a real two-column link: the existing eyebrow/label form one text group, and a 44px outlined circle with an 18px diagonal arrow forms the other. Use a 16px gap and vertical center alignment. The whole group remains one accessible enquiry link named by the unchanged Starts with a skill label. Phones retain the right-gutter circle; desktop text remains right-aligned. This supersedes the 56px circle and absolute positioning described in older entries.
+
+Verify the real caption and label rectangles stay at least 15px clear of the circle on phone, tablet and desktop, including 1192px and enlarged-text cases. Check complete-link hit containment as well as geometric centering. Preserve all copy, brand colors, lighting, source video and original preloader.
+
+
+## Version 0.29 verification - 20 October 2026
+
+Production build and TypeScript passed. All 309 focused checks passed: {'hero-finish': 41, 'mobile-editorial': 118, 'composition': 54, 'layout': 61, 'hero': 22, 'motion': 13}. Actual caption and label bounds remain at least 15px clear of the compact circle at ten widths from 320 through 1920, including 768/1024/1192px and enlarged phone text. The icon remains vertically centered and fully inside the single link. Desktop/tablet full-hero and CTA renders, mobile CTA and enlarged text were visually inspected. Exact CTA wording and enquiry destination remain intact. No runtime errors or automated accessibility violations were found. Portrait assets, lighting and the original preloader are unchanged; no generation credits spent. Validation uses local Chrome. See compact-cta-verification.json.

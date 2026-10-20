@@ -9,3 +9,9 @@ These rules were explicitly requested by the user after the portrait/card overla
 - Keep the accepted video and its natural blink. These layout fixes require no regeneration credits.
 
 The new regression failed on 13 concrete checks before the fix and now passes all 54 composition assertions, including every-frame silhouette coverage. The production build and all 150 focused composition, responsive, browser/accessibility and motion checks passed. Actual starting and ending renders were captured at nine viewport sizes and visually reviewed.
+
+Current mobile acceptance: preserve every CTA label, pin only the portrait after the face fits inside the viewport, keep the full face clear of the fixed header and lower fade throughout the turn, then release into the proof row. Refresh geometry after the original preloader reveal. Run npm.cmd run test:mobile-hero; it sweeps every CSS width from 320 to 430, checks exact wording, short/tall phone motion, menu focus and text reflow.
+
+Lighting/CTA regression: run npm.cmd run test:hero-finish after changing portrait backgrounds or the next-chapter control. The atmospheric light must fade to transparent at its clipped bounds without masking the face. Check actual screenshot pixels in initial and pinned states. The secondary CTA now uses a 56px outlined circle at the opposite phone gutter; preserve its exact copy and clear space under enlarged text.
+
+Current CTA requirement supersedes the earlier 56px overlay: keep the caption/label and 44px icon in separate grid columns with 16px clearance. Check caption and label rectangles against the icon on desktop/tablet and mobile, plus enlarged text; checking only the SVG center is insufficient. The complete group remains one enquiry link.

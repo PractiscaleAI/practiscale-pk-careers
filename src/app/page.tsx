@@ -49,7 +49,11 @@ export default function Home() {
               Work that matters.
             </p>
           </div>
-          <HeroSequence />
+          <div className="hero-visual">
+            <div className="hero-frame">
+              <HeroSequence />
+            </div>
+          </div>
           <dl className="hero-trust" aria-label="PractiScale in numbers">
             <div className="trust-card">
               <dt>Team members</dt>
@@ -61,10 +65,19 @@ export default function Home() {
             </div>
           </dl>
           <div className="hero-bottom-right">
-            <span className="eyebrow">Your next chapter</span>
-            <Link href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.">
-              Starts with a skill
-              <ArrowUpRight size={18} aria-hidden="true" />
+            <Link
+              href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details."
+              aria-labelledby="hero-next-label"
+            >
+              <span className="hero-next-copy">
+                <span className="eyebrow">Your next chapter</span>
+                <span className="hero-next-label" id="hero-next-label">
+                  Starts with a skill
+                </span>
+              </span>
+              <span className="hero-next-icon" aria-hidden="true">
+                <ArrowUpRight size={18} strokeWidth={1.5} />
+              </span>
             </Link>
           </div>
         </div>

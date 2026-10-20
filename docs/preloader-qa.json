@@ -20,9 +20,9 @@
       "name": "Original broad annulus and bottom-up mark fill",
       "pass": true,
       "detail": {
-        "progress": 35,
+        "progress": 36,
         "hole": "0",
-        "clip": 25.09,
+        "clip": 25.22,
         "circles": [
           "191",
           "88"
@@ -35,9 +35,9 @@
       "name": "No early aperture or visible preview controls",
       "pass": true,
       "detail": {
-        "progress": 35,
+        "progress": 36,
         "hole": "0",
-        "clip": 25.09,
+        "clip": 25.22,
         "circles": [
           "191",
           "88"
@@ -55,8 +55,8 @@
       "name": "Original upper-wing zoom advances",
       "pass": true,
       "detail": {
-        "first": "translate(289.22 264.16) scale(1.3497) translate(-45.6 -21.3)",
-        "second": "translate(285.34 270.82) scale(45.4470) translate(-45.6 -21.3)"
+        "first": "translate(289.23 264.14) scale(1.3000) translate(-45.6 -21.3)",
+        "second": "translate(286.05 269.61) scale(34.9129) translate(-45.6 -21.3)"
       }
     },
     {

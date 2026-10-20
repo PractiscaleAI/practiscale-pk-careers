@@ -7,78 +7,78 @@
         "cards": [
           {
             "card": {
-              "top": 790.78125,
-              "bottom": 896.78125,
-              "left": 28,
-              "height": 106,
-              "width": 128
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 30,
+              "height": 88,
+              "width": 120
             },
             "number": {
-              "top": 804.78125,
-              "bottom": 836.78125,
-              "left": 43,
-              "height": 32,
-              "width": 98
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 30,
+              "height": 31.046875,
+              "width": 120
             },
             "label": {
-              "top": 843.78125,
-              "bottom": 879.78125,
-              "left": 43,
-              "height": 36,
-              "width": 98
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 30,
+              "height": 38.375,
+              "width": 120
             }
           },
           {
             "card": {
-              "top": 790.78125,
-              "bottom": 896.78125,
-              "left": 164,
-              "height": 106,
-              "width": 128
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 170,
+              "height": 88,
+              "width": 120
             },
             "number": {
-              "top": 804.78125,
-              "bottom": 836.78125,
-              "left": 179,
-              "height": 32,
-              "width": 98
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 170,
+              "height": 31.046875,
+              "width": 120
             },
             "label": {
-              "top": 843.78125,
-              "bottom": 879.78125,
-              "left": 179,
-              "height": 36,
-              "width": 98
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 170,
+              "height": 38.375,
+              "width": 120
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 1007.171875,
+          "bottom": 975.671875,
           "left": 8,
           "right": 312,
-          "height": 999.171875
+          "height": 967.671875
         },
         "copy": {
-          "top": 146,
-          "bottom": 382.78125,
-          "left": 28,
-          "right": 292,
-          "height": 236.78125
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
         },
         "trust": {
-          "top": 790.78125,
-          "bottom": 896.78125,
-          "left": 28,
-          "right": 292,
-          "height": 106
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
         },
         "footer": {
-          "top": 920.78125,
-          "bottom": 991.171875,
-          "left": 28,
-          "right": 292,
-          "height": 70.390625
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -113,48 +113,48 @@
       "detail": [
         {
           "card": {
-            "top": 790.78125,
-            "bottom": 896.78125,
-            "left": 28,
-            "height": 106,
-            "width": 128
+            "top": 767.625,
+            "bottom": 855.625,
+            "left": 30,
+            "height": 88,
+            "width": 120
           },
           "number": {
-            "top": 804.78125,
-            "bottom": 836.78125,
-            "left": 43,
-            "height": 32,
-            "width": 98
+            "top": 767.625,
+            "bottom": 798.671875,
+            "left": 30,
+            "height": 31.046875,
+            "width": 120
           },
           "label": {
-            "top": 843.78125,
-            "bottom": 879.78125,
-            "left": 43,
-            "height": 36,
-            "width": 98
+            "top": 808.671875,
+            "bottom": 847.046875,
+            "left": 30,
+            "height": 38.375,
+            "width": 120
           }
         },
         {
           "card": {
-            "top": 790.78125,
-            "bottom": 896.78125,
-            "left": 164,
-            "height": 106,
-            "width": 128
+            "top": 767.625,
+            "bottom": 855.625,
+            "left": 170,
+            "height": 88,
+            "width": 120
           },
           "number": {
-            "top": 804.78125,
-            "bottom": 836.78125,
-            "left": 179,
-            "height": 32,
-            "width": 98
+            "top": 767.625,
+            "bottom": 798.671875,
+            "left": 170,
+            "height": 31.046875,
+            "width": 120
           },
           "label": {
-            "top": 843.78125,
-            "bottom": 879.78125,
-            "left": 179,
-            "height": 36,
-            "width": 98
+            "top": 808.671875,
+            "bottom": 847.046875,
+            "left": 170,
+            "height": 38.375,
+            "width": 120
           }
         }
       ]
@@ -164,25 +164,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 382.78125,
-          "left": 28,
-          "right": 292,
-          "height": 236.78125
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
         },
         "trust": {
-          "top": 790.78125,
-          "bottom": 896.78125,
-          "left": 28,
-          "right": 292,
-          "height": 106
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
         },
         "footer": {
-          "top": 920.78125,
-          "bottom": 991.171875,
-          "left": 28,
-          "right": 292,
-          "height": 70.390625
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
         }
       }
     },
@@ -193,78 +193,78 @@
         "cards": [
           {
             "card": {
-              "top": 790.78125,
-              "bottom": 896.78125,
-              "left": 28,
-              "height": 106,
-              "width": 128
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 30,
+              "height": 88,
+              "width": 120
             },
             "number": {
-              "top": 804.78125,
-              "bottom": 836.78125,
-              "left": 43,
-              "height": 32,
-              "width": 98
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 30,
+              "height": 31.046875,
+              "width": 120
             },
             "label": {
-              "top": 843.78125,
-              "bottom": 879.78125,
-              "left": 43,
-              "height": 36,
-              "width": 98
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 30,
+              "height": 38.375,
+              "width": 120
             }
           },
           {
             "card": {
-              "top": 790.78125,
-              "bottom": 896.78125,
-              "left": 164,
-              "height": 106,
-              "width": 128
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 170,
+              "height": 88,
+              "width": 120
             },
             "number": {
-              "top": 804.78125,
-              "bottom": 836.78125,
-              "left": 179,
-              "height": 32,
-              "width": 98
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 170,
+              "height": 31.046875,
+              "width": 120
             },
             "label": {
-              "top": 843.78125,
-              "bottom": 879.78125,
-              "left": 179,
-              "height": 36,
-              "width": 98
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 170,
+              "height": 38.375,
+              "width": 120
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 1007.171875,
+          "bottom": 975.671875,
           "left": 8,
           "right": 312,
-          "height": 999.171875
+          "height": 967.671875
         },
         "copy": {
-          "top": 146,
-          "bottom": 382.78125,
-          "left": 28,
-          "right": 292,
-          "height": 236.78125
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
         },
         "trust": {
-          "top": 790.78125,
-          "bottom": 896.78125,
-          "left": 28,
-          "right": 292,
-          "height": 106
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
         },
         "footer": {
-          "top": 920.78125,
-          "bottom": 991.171875,
-          "left": 28,
-          "right": 292,
-          "height": 70.390625
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -300,78 +300,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -406,48 +406,48 @@
       "detail": [
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 28,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 43,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 43,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
           }
         },
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 191.5,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 206.5,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 206.5,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
           }
         }
       ]
@@ -457,25 +457,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         }
       }
     },
@@ -486,78 +486,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -593,78 +593,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -699,48 +699,48 @@
       "detail": [
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 28,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 43,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 43,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
           }
         },
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 191.5,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 206.5,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 206.5,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
           }
         }
       ]
@@ -750,25 +750,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         }
       }
     },
@@ -779,78 +779,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -886,78 +886,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -992,48 +992,48 @@
       "detail": [
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 28,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 43,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 43,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
           }
         },
         {
           "card": {
-            "top": 772.5,
-            "bottom": 878.5,
-            "left": 191.5,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 786.5,
-            "bottom": 818.5,
-            "left": 206.5,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 825.5,
-            "bottom": 861.5,
-            "left": 206.5,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
           }
         }
       ]
@@ -1043,25 +1043,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         }
       }
     },
@@ -1072,78 +1072,78 @@
         "cards": [
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 772.5,
-              "bottom": 878.5,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 786.5,
-              "bottom": 818.5,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 825.5,
-              "bottom": 861.5,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 988.890625,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 980.890625
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 772.5,
-          "bottom": 878.5,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 902.5,
-          "bottom": 972.890625,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -1179,78 +1179,78 @@
         "cards": [
           {
             "card": {
-              "top": 690,
-              "bottom": 796,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 704,
-              "bottom": 736,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 743,
-              "bottom": 779,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 690,
-              "bottom": 796,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 704,
-              "bottom": 736,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 743,
-              "bottom": 779,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 892,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 884
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 690,
-          "bottom": 796,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 805.609375,
-          "bottom": 876,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -1273,7 +1273,7 @@
           "right": 347,
           "height": 44
         },
-        "layout": "viewport",
+        "layout": "content",
         "overflow": false,
         "bg": "rgb(243, 246, 246)",
         "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
@@ -1285,48 +1285,48 @@
       "detail": [
         {
           "card": {
-            "top": 690,
-            "bottom": 796,
-            "left": 28,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 704,
-            "bottom": 736,
-            "left": 43,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 743,
-            "bottom": 779,
-            "left": 43,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
           }
         },
         {
           "card": {
-            "top": 690,
-            "bottom": 796,
-            "left": 191.5,
-            "height": 106,
-            "width": 155.5
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
           },
           "number": {
-            "top": 704,
-            "bottom": 736,
-            "left": 206.5,
-            "height": 32,
-            "width": 125.5
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
           },
           "label": {
-            "top": 743,
-            "bottom": 779,
-            "left": 206.5,
-            "height": 36,
-            "width": 125.5
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
           }
         }
       ]
@@ -1336,25 +1336,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 690,
-          "bottom": 796,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 805.609375,
-          "bottom": 876,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         }
       }
     },
@@ -1365,78 +1365,78 @@
         "cards": [
           {
             "card": {
-              "top": 690,
-              "bottom": 796,
-              "left": 28,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 704,
-              "bottom": 736,
-              "left": 43,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 743,
-              "bottom": 779,
-              "left": 43,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
             }
           },
           {
             "card": {
-              "top": 690,
-              "bottom": 796,
-              "left": 191.5,
-              "height": 106,
-              "width": 155.5
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
             },
             "number": {
-              "top": 704,
-              "bottom": 736,
-              "left": 206.5,
-              "height": 32,
-              "width": 125.5
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
             },
             "label": {
-              "top": 743,
-              "bottom": 779,
-              "left": 206.5,
-              "height": 36,
-              "width": 125.5
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 892,
+          "bottom": 1003.515625,
           "left": 8,
           "right": 367,
-          "height": 884
+          "height": 995.515625
         },
         "copy": {
-          "top": 146,
-          "bottom": 364.5,
-          "left": 28,
-          "right": 347,
-          "height": 218.5
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
         },
         "trust": {
-          "top": 690,
-          "bottom": 796,
-          "left": 28,
-          "right": 347,
-          "height": 106
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
         },
         "footer": {
-          "top": 805.609375,
-          "bottom": 876,
-          "left": 28,
-          "right": 347,
-          "height": 70.390625
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -1459,7 +1459,7 @@
           "right": 347,
           "height": 44
         },
-        "layout": "viewport",
+        "layout": "content",
         "overflow": false,
         "bg": "rgb(243, 246, 246)",
         "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
@@ -1469,10 +1469,10 @@
       "name": "Enlarged text spacing reflows without clipping",
       "pass": true,
       "detail": {
-        "copy": 470.75,
-        "trust": 878.75,
-        "footer": 1083.140625,
-        "stage": 1099.140625,
+        "copy": 479.875,
+        "trust": 879.125,
+        "footer": 1081.375,
+        "stage": 1105.375,
         "width": 375
       }
     },
@@ -1483,78 +1483,78 @@
         "cards": [
           {
             "card": {
-              "top": 722,
-              "bottom": 828,
-              "left": 28,
-              "height": 106,
-              "width": 183
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 35.515625,
+              "height": 88,
+              "width": 169.484375
             },
             "number": {
-              "top": 736,
-              "bottom": 768,
-              "left": 43,
-              "height": 32,
-              "width": 153
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 35.515625,
+              "height": 37.578125,
+              "width": 169.484375
             },
             "label": {
-              "top": 775,
-              "bottom": 811,
-              "left": 43,
-              "height": 36,
-              "width": 131.75
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 35.515625,
+              "height": 38.375,
+              "width": 169.484375
             }
           },
           {
             "card": {
-              "top": 722,
-              "bottom": 828,
-              "left": 219,
-              "height": 106,
-              "width": 183
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 225,
+              "height": 88,
+              "width": 169.484375
             },
             "number": {
-              "top": 736,
-              "bottom": 768,
-              "left": 234,
-              "height": 32,
-              "width": 153
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 225,
+              "height": 37.578125,
+              "width": 169.484375
             },
             "label": {
-              "top": 775,
-              "bottom": 811,
-              "left": 234,
-              "height": 36,
-              "width": 131.75
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 225,
+              "height": 38.375,
+              "width": 169.484375
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 924,
+          "bottom": 1070.140625,
           "left": 8,
           "right": 422,
-          "height": 916
+          "height": 1062.140625
         },
         "copy": {
-          "top": 146,
-          "bottom": 376.59375,
-          "left": 28,
-          "right": 402,
-          "height": 230.59375
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
         },
         "trust": {
-          "top": 722,
-          "bottom": 828,
-          "left": 28,
-          "right": 402,
-          "height": 106
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
         },
         "footer": {
-          "top": 837.609375,
-          "bottom": 908,
-          "left": 28,
-          "right": 402,
-          "height": 70.390625
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -1577,7 +1577,7 @@
           "right": 402,
           "height": 44
         },
-        "layout": "viewport",
+        "layout": "content",
         "overflow": false,
         "bg": "rgb(243, 246, 246)",
         "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
@@ -1589,48 +1589,48 @@
       "detail": [
         {
           "card": {
-            "top": 722,
-            "bottom": 828,
-            "left": 28,
-            "height": 106,
-            "width": 183
+            "top": 862.09375,
+            "bottom": 950.09375,
+            "left": 35.515625,
+            "height": 88,
+            "width": 169.484375
           },
           "number": {
-            "top": 736,
-            "bottom": 768,
-            "left": 43,
-            "height": 32,
-            "width": 153
+            "top": 862.09375,
+            "bottom": 899.671875,
+            "left": 35.515625,
+            "height": 37.578125,
+            "width": 169.484375
           },
           "label": {
-            "top": 775,
-            "bottom": 811,
-            "left": 43,
-            "height": 36,
-            "width": 131.75
+            "top": 909.671875,
+            "bottom": 948.046875,
+            "left": 35.515625,
+            "height": 38.375,
+            "width": 169.484375
           }
         },
         {
           "card": {
-            "top": 722,
-            "bottom": 828,
-            "left": 219,
-            "height": 106,
-            "width": 183
+            "top": 862.09375,
+            "bottom": 950.09375,
+            "left": 225,
+            "height": 88,
+            "width": 169.484375
           },
           "number": {
-            "top": 736,
-            "bottom": 768,
-            "left": 234,
-            "height": 32,
-            "width": 153
+            "top": 862.09375,
+            "bottom": 899.671875,
+            "left": 225,
+            "height": 37.578125,
+            "width": 169.484375
           },
           "label": {
-            "top": 775,
-            "bottom": 811,
-            "left": 234,
-            "height": 36,
-            "width": 131.75
+            "top": 909.671875,
+            "bottom": 948.046875,
+            "left": 225,
+            "height": 38.375,
+            "width": 169.484375
           }
         }
       ]
@@ -1640,25 +1640,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 376.59375,
-          "left": 28,
-          "right": 402,
-          "height": 230.59375
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
         },
         "trust": {
-          "top": 722,
-          "bottom": 828,
-          "left": 28,
-          "right": 402,
-          "height": 106
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
         },
         "footer": {
-          "top": 837.609375,
-          "bottom": 908,
-          "left": 28,
-          "right": 402,
-          "height": 70.390625
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
         }
       }
     },
@@ -1669,78 +1669,78 @@
         "cards": [
           {
             "card": {
-              "top": 722,
-              "bottom": 828,
-              "left": 28,
-              "height": 106,
-              "width": 183
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 35.515625,
+              "height": 88,
+              "width": 169.484375
             },
             "number": {
-              "top": 736,
-              "bottom": 768,
-              "left": 43,
-              "height": 32,
-              "width": 153
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 35.515625,
+              "height": 37.578125,
+              "width": 169.484375
             },
             "label": {
-              "top": 775,
-              "bottom": 811,
-              "left": 43,
-              "height": 36,
-              "width": 131.75
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 35.515625,
+              "height": 38.375,
+              "width": 169.484375
             }
           },
           {
             "card": {
-              "top": 722,
-              "bottom": 828,
-              "left": 219,
-              "height": 106,
-              "width": 183
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 225,
+              "height": 88,
+              "width": 169.484375
             },
             "number": {
-              "top": 736,
-              "bottom": 768,
-              "left": 234,
-              "height": 32,
-              "width": 153
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 225,
+              "height": 37.578125,
+              "width": 169.484375
             },
             "label": {
-              "top": 775,
-              "bottom": 811,
-              "left": 234,
-              "height": 36,
-              "width": 131.75
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 225,
+              "height": 38.375,
+              "width": 169.484375
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 924,
+          "bottom": 1070.140625,
           "left": 8,
           "right": 422,
-          "height": 916
+          "height": 1062.140625
         },
         "copy": {
-          "top": 146,
-          "bottom": 376.59375,
-          "left": 28,
-          "right": 402,
-          "height": 230.59375
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
         },
         "trust": {
-          "top": 722,
-          "bottom": 828,
-          "left": 28,
-          "right": 402,
-          "height": 106
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
         },
         "footer": {
-          "top": 837.609375,
-          "bottom": 908,
-          "left": 28,
-          "right": 402,
-          "height": 70.390625
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -1763,7 +1763,7 @@
           "right": 402,
           "height": 44
         },
-        "layout": "viewport",
+        "layout": "content",
         "overflow": false,
         "bg": "rgb(243, 246, 246)",
         "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
@@ -1843,11 +1843,11 @@
           "height": 112
         },
         "footer": {
-          "top": 914.203125,
+          "top": 924.75,
           "bottom": 974,
-          "left": 570.03125,
+          "left": 540.578125,
           "right": 724,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -1947,11 +1947,11 @@
           "height": 112
         },
         "footer": {
-          "top": 914.203125,
+          "top": 924.75,
           "bottom": 974,
-          "left": 570.03125,
+          "left": 540.578125,
           "right": 724,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -2029,11 +2029,11 @@
           "height": 112
         },
         "footer": {
-          "top": 914.203125,
+          "top": 924.75,
           "bottom": 974,
-          "left": 570.03125,
+          "left": 540.578125,
           "right": 724,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2136,11 +2136,11 @@
           "height": 112
         },
         "footer": {
-          "top": 658.203125,
+          "top": 668.75,
           "bottom": 718,
-          "left": 826.03125,
+          "left": 796.578125,
           "right": 980,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2240,11 +2240,11 @@
           "height": 112
         },
         "footer": {
-          "top": 658.203125,
+          "top": 668.75,
           "bottom": 718,
-          "left": 826.03125,
+          "left": 796.578125,
           "right": 980,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -2322,11 +2322,11 @@
           "height": 112
         },
         "footer": {
-          "top": 658.203125,
+          "top": 668.75,
           "bottom": 718,
-          "left": 826.03125,
+          "left": 796.578125,
           "right": 980,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2429,11 +2429,11 @@
           "height": 112
         },
         "footer": {
-          "top": 610.203125,
+          "top": 620.75,
           "bottom": 670,
-          "left": 1068.03125,
+          "left": 1038.578125,
           "right": 1222,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2526,11 +2526,11 @@
           "height": 112
         },
         "footer": {
-          "top": 610.203125,
+          "top": 620.75,
           "bottom": 670,
-          "left": 1068.03125,
+          "left": 1038.578125,
           "right": 1222,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -2608,11 +2608,11 @@
           "height": 112
         },
         "footer": {
-          "top": 610.203125,
+          "top": 620.75,
           "bottom": 670,
-          "left": 1068.03125,
+          "left": 1038.578125,
           "right": 1222,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2715,11 +2715,11 @@
           "height": 112
         },
         "footer": {
-          "top": 790.203125,
+          "top": 800.75,
           "bottom": 850,
-          "left": 1228.03125,
+          "left": 1198.578125,
           "right": 1382,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -2812,11 +2812,11 @@
           "height": 112
         },
         "footer": {
-          "top": 790.203125,
+          "top": 800.75,
           "bottom": 850,
-          "left": 1228.03125,
+          "left": 1198.578125,
           "right": 1382,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -2894,11 +2894,11 @@
           "height": 112
         },
         "footer": {
-          "top": 790.203125,
+          "top": 800.75,
           "bottom": 850,
-          "left": 1228.03125,
+          "left": 1198.578125,
           "right": 1382,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3001,11 +3001,11 @@
           "height": 112
         },
         "footer": {
-          "top": 586.203125,
+          "top": 596.75,
           "bottom": 646,
-          "left": 1324.03125,
+          "left": 1294.578125,
           "right": 1478,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3098,11 +3098,11 @@
           "height": 112
         },
         "footer": {
-          "top": 586.203125,
+          "top": 596.75,
           "bottom": 646,
-          "left": 1324.03125,
+          "left": 1294.578125,
           "right": 1478,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -3180,11 +3180,11 @@
           "height": 112
         },
         "footer": {
-          "top": 586.203125,
+          "top": 596.75,
           "bottom": 646,
-          "left": 1324.03125,
+          "left": 1294.578125,
           "right": 1478,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3287,11 +3287,11 @@
           "height": 112
         },
         "footer": {
-          "top": 970.203125,
+          "top": 980.75,
           "bottom": 1030,
-          "left": 1682.03125,
+          "left": 1652.578125,
           "right": 1836,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3384,11 +3384,11 @@
           "height": 112
         },
         "footer": {
-          "top": 970.203125,
+          "top": 980.75,
           "bottom": 1030,
-          "left": 1682.03125,
+          "left": 1652.578125,
           "right": 1836,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -3466,11 +3466,11 @@
           "height": 112
         },
         "footer": {
-          "top": 970.203125,
+          "top": 980.75,
           "bottom": 1030,
-          "left": 1682.03125,
+          "left": 1652.578125,
           "right": 1836,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3573,11 +3573,11 @@
           "height": 112
         },
         "footer": {
-          "top": 764.203125,
+          "top": 774.75,
           "bottom": 824,
-          "left": 1620.03125,
+          "left": 1590.578125,
           "right": 1774,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3670,11 +3670,11 @@
           "height": 112
         },
         "footer": {
-          "top": 764.203125,
+          "top": 774.75,
           "bottom": 824,
-          "left": 1620.03125,
+          "left": 1590.578125,
           "right": 1774,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -3752,11 +3752,11 @@
           "height": 112
         },
         "footer": {
-          "top": 764.203125,
+          "top": 774.75,
           "bottom": 824,
-          "left": 1620.03125,
+          "left": 1590.578125,
           "right": 1774,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3859,11 +3859,11 @@
           "height": 112
         },
         "footer": {
-          "top": 658.203125,
+          "top": 668.75,
           "bottom": 718,
-          "left": 646.03125,
+          "left": 616.578125,
           "right": 800,
-          "height": 59.796875
+          "height": 49.25
         },
         "header": {
           "top": 32,
@@ -3963,11 +3963,11 @@
           "height": 112
         },
         "footer": {
-          "top": 658.203125,
+          "top": 668.75,
           "bottom": 718,
-          "left": 646.03125,
+          "left": 616.578125,
           "right": 800,
-          "height": 59.796875
+          "height": 49.25
         }
       }
     },
@@ -3978,78 +3978,78 @@
         "cards": [
           {
             "card": {
-              "top": 813.1875,
-              "bottom": 919.1875,
-              "left": 28,
-              "height": 106,
-              "width": 328
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 89.765625,
+              "width": 310
             },
             "number": {
-              "top": 827.1875,
-              "bottom": 859.1875,
-              "left": 43,
-              "height": 32,
-              "width": 298
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 40,
+              "height": 41.390625,
+              "width": 310
             },
             "label": {
-              "top": 866.1875,
-              "bottom": 902.1875,
-              "left": 43,
-              "height": 36,
-              "width": 131.75
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 38.375,
+              "width": 310
             }
           },
           {
             "card": {
-              "top": 813.1875,
-              "bottom": 919.1875,
-              "left": 364,
-              "height": 106,
-              "width": 328
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 89.765625,
+              "width": 310
             },
             "number": {
-              "top": 827.1875,
-              "bottom": 859.1875,
-              "left": 379,
-              "height": 32,
-              "width": 298
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 370,
+              "height": 41.390625,
+              "width": 310
             },
             "label": {
-              "top": 866.1875,
-              "bottom": 902.1875,
-              "left": 379,
-              "height": 36,
-              "width": 131.75
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 38.375,
+              "width": 310
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 1029.578125,
+          "bottom": 1153.03125,
           "left": 8,
           "right": 712,
-          "height": 1021.578125
+          "height": 1145.03125
         },
         "copy": {
-          "top": 146,
-          "bottom": 405.1875,
-          "left": 28,
-          "right": 692,
-          "height": 259.1875
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
         },
         "trust": {
-          "top": 813.1875,
-          "bottom": 919.1875,
-          "left": 28,
-          "right": 692,
-          "height": 106
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
         },
         "footer": {
-          "top": 943.1875,
-          "bottom": 1013.578125,
-          "left": 28,
-          "right": 692,
-          "height": 70.390625
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
         },
         "header": {
           "top": 16,
@@ -4084,48 +4084,48 @@
       "detail": [
         {
           "card": {
-            "top": 813.1875,
-            "bottom": 919.1875,
-            "left": 28,
-            "height": 106,
-            "width": 328
+            "top": 943.21875,
+            "bottom": 1032.984375,
+            "left": 40,
+            "height": 89.765625,
+            "width": 310
           },
           "number": {
-            "top": 827.1875,
-            "bottom": 859.1875,
-            "left": 43,
-            "height": 32,
-            "width": 298
+            "top": 943.21875,
+            "bottom": 984.609375,
+            "left": 40,
+            "height": 41.390625,
+            "width": 310
           },
           "label": {
-            "top": 866.1875,
-            "bottom": 902.1875,
-            "left": 43,
-            "height": 36,
-            "width": 131.75
+            "top": 994.609375,
+            "bottom": 1032.984375,
+            "left": 40,
+            "height": 38.375,
+            "width": 310
           }
         },
         {
           "card": {
-            "top": 813.1875,
-            "bottom": 919.1875,
-            "left": 364,
-            "height": 106,
-            "width": 328
+            "top": 943.21875,
+            "bottom": 1032.984375,
+            "left": 370,
+            "height": 89.765625,
+            "width": 310
           },
           "number": {
-            "top": 827.1875,
-            "bottom": 859.1875,
-            "left": 379,
-            "height": 32,
-            "width": 298
+            "top": 943.21875,
+            "bottom": 984.609375,
+            "left": 370,
+            "height": 41.390625,
+            "width": 310
           },
           "label": {
-            "top": 866.1875,
-            "bottom": 902.1875,
-            "left": 379,
-            "height": 36,
-            "width": 131.75
+            "top": 994.609375,
+            "bottom": 1032.984375,
+            "left": 370,
+            "height": 38.375,
+            "width": 310
           }
         }
       ]
@@ -4135,25 +4135,25 @@
       "pass": true,
       "detail": {
         "copy": {
-          "top": 146,
-          "bottom": 405.1875,
-          "left": 28,
-          "right": 692,
-          "height": 259.1875
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
         },
         "trust": {
-          "top": 813.1875,
-          "bottom": 919.1875,
-          "left": 28,
-          "right": 692,
-          "height": 106
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
         },
         "footer": {
-          "top": 943.1875,
-          "bottom": 1013.578125,
-          "left": 28,
-          "right": 692,
-          "height": 70.390625
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
         }
       }
     },
@@ -4164,78 +4164,78 @@
         "cards": [
           {
             "card": {
-              "top": 813.1875,
-              "bottom": 919.1875,
-              "left": 28,
-              "height": 106,
-              "width": 328
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 89.765625,
+              "width": 310
             },
             "number": {
-              "top": 827.1875,
-              "bottom": 859.1875,
-              "left": 43,
-              "height": 32,
-              "width": 298
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 40,
+              "height": 41.390625,
+              "width": 310
             },
             "label": {
-              "top": 866.1875,
-              "bottom": 902.1875,
-              "left": 43,
-              "height": 36,
-              "width": 131.75
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 38.375,
+              "width": 310
             }
           },
           {
             "card": {
-              "top": 813.1875,
-              "bottom": 919.1875,
-              "left": 364,
-              "height": 106,
-              "width": 328
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 89.765625,
+              "width": 310
             },
             "number": {
-              "top": 827.1875,
-              "bottom": 859.1875,
-              "left": 379,
-              "height": 32,
-              "width": 298
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 370,
+              "height": 41.390625,
+              "width": 310
             },
             "label": {
-              "top": 866.1875,
-              "bottom": 902.1875,
-              "left": 379,
-              "height": 36,
-              "width": 131.75
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 38.375,
+              "width": 310
             }
           }
         ],
         "stage": {
           "top": 8,
-          "bottom": 1029.578125,
+          "bottom": 1153.03125,
           "left": 8,
           "right": 712,
-          "height": 1021.578125
+          "height": 1145.03125
         },
         "copy": {
-          "top": 146,
-          "bottom": 405.1875,
-          "left": 28,
-          "right": 692,
-          "height": 259.1875
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
         },
         "trust": {
-          "top": 813.1875,
-          "bottom": 919.1875,
-          "left": 28,
-          "right": 692,
-          "height": 106
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
         },
         "footer": {
-          "top": 943.1875,
-          "bottom": 1013.578125,
-          "left": 28,
-          "right": 692,
-          "height": 70.390625
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
         },
         "header": {
           "top": 16,

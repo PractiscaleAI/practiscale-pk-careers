@@ -14,22 +14,23 @@ export default function HeroLayout() {
     const update = () => {
       if (disposed) return;
       const mobile = innerWidth < 768;
-      const available = innerHeight - (mobile ? 16 : 28);
+      // Phone content flows naturally; its portrait frame owns the scrub distance.
+      if (mobile) {
+        stage.dataset.layout = "content";
+        stage.style.minHeight = "";
+        scroll.style.minHeight = "0px";
+        return;
+      }
+      const available = innerHeight - 28;
       stage.style.setProperty(
         "--hero-copy-bottom",
         `${editorial.offsetTop + copy.offsetHeight}px`,
       );
       const required =
-        editorial.offsetTop +
-        copy.offsetHeight +
-        trust.offsetHeight +
-        (mobile ? 336 : 100);
-      const flow =
-        required > available ||
-        (mobile ? innerHeight <= 860 : innerHeight <= 620);
+        editorial.offsetTop + copy.offsetHeight + trust.offsetHeight + 100;
+      const flow = required > available || innerHeight <= 620;
       stage.dataset.layout = flow ? "content" : "viewport";
-      stage.style.minHeight =
-        flow && !mobile ? `${Math.max(required, 740)}px` : "";
+      stage.style.minHeight = flow ? `${Math.max(required, 740)}px` : "";
       scroll.style.minHeight = motion.matches
         ? "0px"
         : flow
@@ -37,6 +38,7 @@ export default function HeroLayout() {
           : "";
     };
     const observer = new ResizeObserver(update);
+    observer.observe(stage);
     observer.observe(copy);
     observer.observe(trust);
     window.addEventListener("resize", update);

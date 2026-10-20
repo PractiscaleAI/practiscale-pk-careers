@@ -16,18 +16,18 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 77.03125,
-          "right": 233.03125,
-          "top": 434.28125,
-          "bottom": 598.28125
+          "left": 86.54166666666669,
+          "right": 219.79166666666669,
+          "top": 441.1145833333333,
+          "bottom": 581.1979166666667
         },
         "stage": {
           "left": 8,
           "right": 312,
           "top": 8,
-          "bottom": 1007.171875,
+          "bottom": 975.671875,
           "width": 304,
-          "height": 999.171875
+          "height": 967.671875
         }
       }
     },
@@ -35,8 +35,8 @@
       "name": "Phone paragraph uses its available column 320x568",
       "pass": true,
       "detail": {
-        "paragraph": 264,
-        "available": 264
+        "paragraph": 260,
+        "available": 260
       }
     },
     {
@@ -60,7 +60,7 @@
       "name": "Phone heading has balanced visual width 320x568",
       "pass": true,
       "detail": {
-        "widestLineFraction": 0.8551136363636364
+        "widestLineFraction": 0.7917668269230769
       }
     },
     {
@@ -68,13 +68,13 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 77.03125,
-          "right": 233.03125,
-          "top": 434.28125,
-          "bottom": 598.28125
+          "left": 86.54166666666669,
+          "right": 219.79166666666669,
+          "top": 441.1145833333333,
+          "bottom": 581.1979166666667
         },
-        "actionBottom": 382.78125,
-        "cardTop": 790.78125
+        "actionBottom": 389.625,
+        "cardTop": 747.625
       }
     },
     {
@@ -86,18 +86,18 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 105.078125,
-          "right": 261.078125,
-          "top": 416,
-          "bottom": 580
+          "left": 101.5,
+          "right": 257.5,
+          "top": 431.71875,
+          "bottom": 595.71875
         },
         "stage": {
           "left": 8,
           "right": 367,
           "top": 8,
-          "bottom": 892,
+          "bottom": 1003.515625,
           "width": 359,
-          "height": 884
+          "height": 995.515625
         }
       }
     },
@@ -105,8 +105,8 @@
       "name": "Phone paragraph uses its available column 375x900",
       "pass": true,
       "detail": {
-        "paragraph": 319,
-        "available": 319
+        "paragraph": 311,
+        "available": 311
       }
     },
     {
@@ -129,7 +129,7 @@
       "name": "Phone heading has balanced visual width 375x900",
       "pass": true,
       "detail": {
-        "widestLineFraction": 0.7804663009404389
+        "widestLineFraction": 0.7757234726688103
       }
     },
     {
@@ -137,13 +137,13 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 105.078125,
-          "right": 261.078125,
-          "top": 416,
-          "bottom": 580
+          "left": 101.5,
+          "right": 257.5,
+          "top": 431.71875,
+          "bottom": 595.71875
         },
-        "actionBottom": 364.5,
-        "cardTop": 690
+        "actionBottom": 376.21875,
+        "cardTop": 775.46875
       }
     },
     {
@@ -155,18 +155,18 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 133.125,
-          "right": 289.125,
-          "top": 428.09375,
-          "bottom": 592.09375
+          "left": 116.38834635416669,
+          "right": 295.2652994791667,
+          "top": 447.9390462239583,
+          "bottom": 635.9891764322917
         },
         "stage": {
           "left": 8,
           "right": 422,
           "top": 8,
-          "bottom": 924,
+          "bottom": 1070.140625,
           "width": 414,
-          "height": 916
+          "height": 1062.140625
         }
       }
     },
@@ -174,8 +174,8 @@
       "name": "Phone paragraph uses its available column 430x932",
       "pass": true,
       "detail": {
-        "paragraph": 374,
-        "available": 374
+        "paragraph": 358.96875,
+        "available": 358.96875
       }
     },
     {
@@ -198,7 +198,7 @@
       "name": "Phone heading has balanced visual width 430x932",
       "pass": true,
       "detail": {
-        "widestLineFraction": 0.7633689839572193
+        "widestLineFraction": 0.7706102550709498
       }
     },
     {
@@ -206,13 +206,13 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 133.125,
-          "right": 289.125,
-          "top": 428.09375,
-          "bottom": 592.09375
+          "left": 116.38834635416669,
+          "right": 295.2652994791667,
+          "top": 447.9390462239583,
+          "bottom": 635.9891764322917
         },
-        "actionBottom": 376.59375,
-        "cardTop": 722
+        "actionBottom": 388.40625,
+        "cardTop": 842.09375
       }
     },
     {
@@ -224,18 +224,18 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 184.125,
-          "right": 340.125,
-          "top": 450.09375,
-          "bottom": 614.09375
+          "left": 157.50000000000003,
+          "right": 352.5,
+          "top": 472.9375,
+          "bottom": 677.9375
         },
         "stage": {
           "left": 8,
           "right": 522,
           "top": 8,
-          "bottom": 892,
+          "bottom": 1148.375,
           "width": 514,
-          "height": 884
+          "height": 1140.375
         }
       }
     },
@@ -243,8 +243,8 @@
       "name": "Phone paragraph uses its available column 530x900",
       "pass": true,
       "detail": {
-        "paragraph": 474,
-        "available": 474
+        "paragraph": 450,
+        "available": 450
       }
     },
     {
@@ -267,7 +267,7 @@
       "name": "Phone heading has balanced visual width 530x900",
       "pass": true,
       "detail": {
-        "widestLineFraction": 0.7423852848101266
+        "widestLineFraction": 0.7576736111111111
       }
     },
     {
@@ -275,13 +275,13 @@
       "pass": true,
       "detail": {
         "head": {
-          "left": 184.125,
-          "right": 340.125,
-          "top": 450.09375,
-          "bottom": 614.09375
+          "left": 157.50000000000003,
+          "right": 352.5,
+          "top": 472.9375,
+          "bottom": 677.9375
         },
-        "actionBottom": 398.59375,
-        "cardTop": 690
+        "actionBottom": 410.5625,
+        "cardTop": 918.5625
       }
     },
     {
@@ -330,9 +330,9 @@
           "left": 564.4375,
           "right": 724,
           "top": 184,
-          "bottom": 253.28125,
+          "bottom": 221.78125,
           "width": 159.5625,
-          "height": 69.28125
+          "height": 37.78125
         }
       }
     },
@@ -382,9 +382,9 @@
           "left": 797.640625,
           "right": 980,
           "top": 184,
-          "bottom": 339.28125,
+          "bottom": 307.78125,
           "width": 182.359375,
-          "height": 155.28125
+          "height": 123.78125
         }
       }
     },
@@ -434,9 +434,9 @@
           "left": 965.640625,
           "right": 1148,
           "top": 184,
-          "bottom": 339.28125,
+          "bottom": 307.78125,
           "width": 182.359375,
-          "height": 155.28125
+          "height": 123.78125
         }
       }
     },
@@ -486,9 +486,9 @@
           "left": 1005.453125,
           "right": 1222,
           "top": 184,
-          "bottom": 347.375,
+          "bottom": 315.875,
           "width": 216.546875,
-          "height": 163.375
+          "height": 131.875
         }
       }
     },
@@ -538,9 +538,9 @@
           "left": 1165.453125,
           "right": 1382,
           "top": 184,
-          "bottom": 347.375,
+          "bottom": 315.875,
           "width": 216.546875,
-          "height": 163.375
+          "height": 131.875
         }
       }
     },
@@ -590,9 +590,9 @@
           "left": 1619.453125,
           "right": 1836,
           "top": 184,
-          "bottom": 347.375,
+          "bottom": 315.875,
           "width": 216.546875,
-          "height": 163.375
+          "height": 131.875
         }
       }
     },

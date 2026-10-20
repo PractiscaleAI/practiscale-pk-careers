@@ -43,6 +43,7 @@ export default function HeroSequence() {
       decoding = false;
     let renderer: THREE.WebGLRenderer | undefined,
       observer: ResizeObserver | undefined,
+      introductionObserver: MutationObserver | undefined,
       context: gsap.Context | undefined,
       material: THREE.ShaderMaterial | undefined,
       geometry: THREE.PlaneGeometry | undefined,
@@ -56,6 +57,7 @@ export default function HeroSequence() {
       cancelAnimationFrame(refreshFrame);
       context?.revert();
       observer?.disconnect();
+      introductionObserver?.disconnect();
       texture?.dispose();
       geometry?.dispose();
       material?.dispose();
@@ -217,23 +219,60 @@ export default function HeroSequence() {
         void Promise.all(Array.from({ length: 4 }, worker));
         gsap.registerPlugin(ScrollTrigger);
         const driver = { frame: 0 };
+        const phoneScene =
+          mode === "mobile" ? el.closest(".hero-visual") : null;
+        const phoneFrame = el.closest<HTMLElement>(".hero-frame");
+        const pinTop = () =>
+          phoneFrame ? parseFloat(getComputedStyle(phoneFrame).top) || 0 : 0;
         context = gsap.context(() => {
-          gsap.to(driver, {
-            frame: (files.length - 1) / (1 - holdFraction),
-            ease: "none",
-            scrollTrigger: {
-              trigger: el.closest(".hero-scroll"),
-              start: "top top",
-              end: "bottom bottom",
-              scrub: 0.65,
-              invalidateOnRefresh: true,
+          gsap.fromTo(
+            driver,
+            { frame: 0 },
+            {
+              frame: (files.length - 1) / (1 - holdFraction),
+              ease: "none",
+              scrollTrigger: {
+                trigger: phoneScene ?? el.closest(".hero-scroll"),
+                start: phoneScene ? () => `top ${pinTop()}px` : "top top",
+                end: phoneScene
+                  ? () =>
+                      `clamp(bottom ${pinTop() + (phoneFrame?.offsetHeight ?? 0)}px)`
+                  : "bottom bottom",
+                scrub: 0.65,
+                invalidateOnRefresh: true,
+                onRefresh: (trigger) => {
+                  requested = Math.min(
+                    files.length - 1,
+                    Math.round(
+                      (trigger.progress * (files.length - 1)) /
+                        (1 - holdFraction),
+                    ),
+                  );
+                  void paint();
+                },
+              },
+              onUpdate: () => {
+                requested = Math.min(
+                  files.length - 1,
+                  Math.round(driver.frame),
+                );
+                void paint();
+              },
             },
-            onUpdate: () => {
-              requested = Math.min(files.length - 1, Math.round(driver.frame));
-              void paint();
-            },
-          });
+          );
         }, el);
+        // The original introduction scales the stage; refresh after its host unlocks it.
+        const main = el.closest("main");
+        if (phoneScene && main) {
+          introductionObserver = new MutationObserver(() => {
+            if (!main.inert) resize();
+          });
+          introductionObserver.observe(main, {
+            attributes: true,
+            attributeFilter: ["inert"],
+          });
+          if (!main.inert) resize();
+        }
       } catch {
         if (!stopped) fallback();
       }

@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-20",
+  "version": "0.26",
+  "build": "npm.cmd run build passed (default Turbopack), including TypeScript",
+  "checks": {
+    "mobile-editorial": 118,
+    "composition": 54,
+    "layout": 61,
+    "hero": 22,
+    "motion": 13,
+    "whole-hero": 28,
+    "preloader": 22
+  },
+  "totalChecks": 318,
+  "failed": 0,
+  "mobileWidthSweep": {
+    "min": 320,
+    "max": 430,
+    "step": 1
+  },
+  "sourceFramesInSilhouetteEnvelope": 120,
+  "scope": [
+    "Header divider removed at all widths",
+    "Standalone desktop Built for growth label hidden",
+    "Mobile cinematic editorial layout and portrait-focused scroll"
+  ],
+  "preserved": [
+    "Brand colors and local fonts",
+    "All CTA wording and destinations",
+    "100+ and 46,000 trust values",
+    "Approved character and ordered 120-frame sequence including accepted blink",
+    "Original preloader artwork and timings"
+  ],
+  "motion": "Mobile portrait pins below header in a viewport-centered frame; scrub starts after editorial flow, endpoint clamps to available scroll, final 15% holds, reverse and resize-at-bottom verified. Introduction unlock refreshes geometry.",
+  "creditsSpent": 0,
+  "accessibilityViolations": [],
+  "limitation": "Verified in local Chrome, including software WebGL. No physical iOS or Android device certification."
+}

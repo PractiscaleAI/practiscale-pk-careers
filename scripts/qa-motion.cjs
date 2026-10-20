@@ -125,7 +125,18 @@ const fs = require("fs");
         document.querySelector(".hero-portrait")?.dataset.engine === "three",
       { timeout: 20000 },
     );
-    await mp.evaluate(() => scrollTo({ top: 280, behavior: "instant" }));
+    await mp.evaluate(() => {
+      const scene = document.querySelector(".hero-visual"),
+        frame = document.querySelector(".hero-frame");
+      scrollTo({
+        top:
+          scene.getBoundingClientRect().top +
+          scrollY -
+          parseFloat(getComputedStyle(frame).top) +
+          (scene.offsetHeight - frame.offsetHeight) * 0.45,
+        behavior: "instant",
+      });
+    });
     await mp.waitForFunction(
       () =>
         Number(

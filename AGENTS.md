@@ -19,3 +19,5 @@ Independently inspect rendered desktop, tablet and mobile layouts and relevant s
 - Phone paragraphs must use their available content column instead of inherited narrow character limits, and avoid a single orphaned final word. Keep the approved two-line heading and balanced responsive type; intentional gutters and content-sized buttons remain appropriate.
 - Independently inspect actual rendered screenshots before reporting visual QC complete. Passing functional, accessibility or geometry tests is supporting evidence and is not proof of professional composition. Add a focused regression for a defect the user identifies before marking its fix complete.
 - The user accepted the natural blink in the current Wan 3.0 Prime source. Preserve it and do not spend further generation credits without authorization.
+
+- For the current mobile editorial hero, run npm.cmd run test:mobile-hero. Keep reading content in natural flow and pin only the portrait when the face fits below the header. Check short-phone start/turn/end states and refresh scroll geometry after the original preloader unlocks the page. Preserve all CTA wording and keep the statistics below the portrait.

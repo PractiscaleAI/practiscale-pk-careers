@@ -12,7 +12,9 @@
     "test:motion": "node scripts/qa-motion.cjs",
     "test:preloader": "node scripts/qa-preloader.cjs",
     "test:layout": "node scripts/qa-layout.cjs",
-    "test:composition": "node scripts/qa-composition.cjs"
+    "test:composition": "node scripts/qa-composition.cjs",
+    "test:mobile-hero": "node scripts/qa-mobile-editorial.cjs",
+    "test:hero-finish": "node scripts/qa-hero-finish.cjs"
   },
   "dependencies": {
     "gsap": "3.15.0",
