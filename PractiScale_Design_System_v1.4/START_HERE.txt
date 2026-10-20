@@ -1,0 +1,19 @@
+PRACTISCALE DESIGN SYSTEM / EDITION 1.4
+
+Start with design-system/00-read-first.md and design-system/README.md.
+The identity is established; website designs and layouts are pending selection.
+
+The 18 supplied paths are updated copies. Their original source directory was
+not modified. Two obsolete chapter files are now short retirement notices.
+
+The complete PDF includes all requested Markdown, CSS, and JSON content, plus
+AI interpretation, migration notes, and supporting local CSS. Exact editable
+files are in design-system/. Source listings compress blank lines and wrap
+long lines for readability; the ZIP files preserve the actual source.
+
+Validation: QA_REPORT.txt and design-system/verification/.
+Optional rebuild tools: design-system/tools/. Python PDF dependencies are in
+tools/requirements.txt. Browser fixture checks require Playwright and Chrome;
+set PRACTISCALE_CHROME_PATH if Chrome uses a different executable path.
+
+This package does not approve a website layout or certify a live site.

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-20",
+  "jobId": "f2a2311d-84d0-41af-9af3-5da3a24c9e47",
+  "status": "rejected_after_frame_review",
+  "attemptsSubmitted": 1,
+  "creditsSpent": 7,
+  "balanceBefore": 597.32,
+  "balanceAfter": 590.32,
+  "requestedDurationSeconds": 4,
+  "reviewFps": 24,
+  "framesReviewed": 97,
+  "reviewMethod": "Visual inspection of every extracted frame in face crops and full-frame contact sheets; enlarged evidence frames inspected separately.",
+  "outfit": "Existing dark teal suit and black open-collar shirt reused without a new image generation.",
+  "findings": [
+    {
+      "requirement": "Eyes stay open throughout",
+      "pass": false,
+      "detail": "Three visible eyelid-closing episodes, including during the head turn.",
+      "evidenceFramesOneBased": [
+        34,
+        64,
+        85
+      ],
+      "approximateSeconds": [
+        1.38,
+        2.62,
+        3.5
+      ]
+    },
+    {
+      "requirement": "Single turn then stable upright hold",
+      "pass": false,
+      "detail": "Turns toward the camera, but later lifts the chin and continues small pose changes. A final-frame freeze alone cannot fix the earlier blink."
+    },
+    {
+      "requirement": "Mouth closed",
+      "pass": true,
+      "detail": "No obvious speech or open-mouth movement in the reviewed frames."
+    }
+  ],
+  "productionReplaced": false,
+  "activeSourceJob": "386cc3d4-df54-48da-8640-af32d2eea847",
+  "activeManifestSha256": "890f4b90b4bc497d0c6ac5a11b40325ad406b5e578d7bcc50a13b75bc7b21a18",
+  "candidateSha256": "1994be33bef08474fa183b2569d141094ca6e342b5b88149ea69b0d3e1375f4a",
+  "remainingRequirement": "A blink-free full turn into direct frontal eye contact, followed by a controlled website hold, is still pending. The existing website video is unchanged and still has its previously documented blink issue.",
+  "retryPolicy": "No second paid generation submitted or authorized. Rejecting this clip does not restore spent credits."
+}

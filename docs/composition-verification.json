@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "status": "verified",
+  "productionBuild": "passed",
+  "baselineFailuresDetected": 13,
+  "checks": {
+    "composition-qa.json": 54,
+    "layout-qa.json": 61,
+    "hero-qa.json": 22,
+    "motion-qa.json": 13
+  },
+  "totalFocusedChecks": 150,
+  "sourceFramesInSilhouetteCheck": 120,
+  "renderViewports": 9,
+  "visualStates": [
+    "starting pose",
+    "frontal scroll end"
+  ],
+  "rulesPersisted": [
+    "project AGENTS.md",
+    "docs/COMPOSITION-QC.md",
+    "user-requested memory update note"
+  ],
+  "additionalGenerationCreditsSpent": 0,
+  "knownAcceptedMediaCharacteristic": "The natural blink remains, explicitly accepted by the user."
+}

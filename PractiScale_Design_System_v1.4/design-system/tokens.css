@@ -1,0 +1,269 @@
+/* GENERATED from tokens.json / Edition 1.4. Run python tools/build_tokens.py. */
+
+/* Identity is fixed. Type sizes and layout values are adaptable defaults. No website layout is approved. */
+
+:root, [data-theme="deep-teal"], [data-theme="night"] {
+
+  color-scheme: dark;
+
+  --bg: #134143;
+
+  --surface: #1C5052;
+
+  --surface-2: #265F61;
+
+  --line: #3D7375;
+
+  --line-strong: #8BB6B6;
+
+  --text: #FFFFFF;
+
+  --text-muted: #BDD3D3;
+
+  --accent-text: #9BE3D6;
+
+  --link: #A9D4EC;
+
+  --link-raised: #A9D4EC;
+
+  --error: #FFFFFF;
+
+  --focus: #9BE3D6;
+
+  --primary-border: #D6E6E6;
+
+  --disabled-bg: #265F61;
+
+  --disabled-text: #BDD3D3;
+
+  --harbor: #2C526E;
+
+  --on-harbor: #FFFFFF;
+
+  --proof: #F5B041;
+
+  --on-proof: #134143;
+
+}
+
+[data-theme="fog"], [data-theme="day"] {
+
+  color-scheme: light;
+
+  --bg: #F3F6F6;
+
+  --surface: #FFFFFF;
+
+  --surface-2: #E6ECEC;
+
+  --line: #CFD8DA;
+
+  --line-strong: #6F8287;
+
+  --text: #134143;
+
+  --text-muted: #46565B;
+
+  --accent-text: #0B6559;
+
+  --link: #0D77A9;
+
+  --link-raised: #0A6390;
+
+  --error: #134143;
+
+  --focus: #0D77A9;
+
+  --primary-border: #0F8272;
+
+  --disabled-bg: #E6ECEC;
+
+  --disabled-text: #46565B;
+
+  --harbor: #2C526E;
+
+  --on-harbor: #FFFFFF;
+
+  --proof: #F5B041;
+
+  --on-proof: #134143;
+
+}
+
+:root {
+
+  --primary-start: #0F8272;
+
+  --primary-end: #0B6B98;
+
+  --primary-hover-start: #0D7668;
+
+  --primary-hover-end: #095F87;
+
+  --primary-pressed-start: #0B695D;
+
+  --primary-pressed-end: #085477;
+
+  --on-primary: #FFFFFF;
+
+  --radius-primary: 11px;
+
+  --font-display: "Sora", "Segoe UI", system-ui, sans-serif;
+
+  --font-sans: "Manrope", "Segoe UI", system-ui, sans-serif;
+
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+
+  --space-1: 4px;
+
+  --space-2: 8px;
+
+  --space-3: 12px;
+
+  --space-4: 16px;
+
+  --space-5: 24px;
+
+  --space-6: 32px;
+
+  --space-7: 48px;
+
+  --space-8: 64px;
+
+  --space-9: 96px;
+
+  --space-10: 128px;
+
+  --radius-xs: 2px;
+
+  --radius-sm: 6px;
+
+  --radius-md: 10px;
+
+  --radius-lg: 20px;
+
+  --radius-full: 999px;
+
+  --dur-instant: 100ms;
+
+  --dur-quick: 200ms;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --ease-rise: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  --teal-50: #E8F8F5;
+
+  --teal-100: #CBF0E9;
+
+  --teal-200: #9BE3D6;
+
+  --teal-300: #5ED2BF;
+
+  --teal-400: #20BFA8;
+
+  --teal-500: #149C89;
+
+  --teal-600: #0E7F70;
+
+  --teal-700: #0B6559;
+
+  --teal-800: #0A4B43;
+
+  --teal-900: #08332E;
+
+  --blue-50: #EAF4FA;
+
+  --blue-100: #CFE6F3;
+
+  --blue-200: #A3CDE6;
+
+  --blue-300: #6FB0D6;
+
+  --blue-400: #3A93C4;
+
+  --blue-500: #0D77A9;
+
+  --blue-600: #0A6390;
+
+  --blue-700: #0A4F74;
+
+  --blue-800: #083B57;
+
+  --blue-900: #062A3F;
+
+}
+
+/* Default type scale. Preserve roles; adapt sizes to the selected design. */
+
+.display-xxl { font-family: var(--font-display); font-size: 96px; line-height: 96px; font-weight: 600; letter-spacing: -0.035em; }
+
+.display-xl { font-family: var(--font-display); font-size: 72px; line-height: 76px; font-weight: 600; letter-spacing: -0.03em; }
+
+.h1 { font-family: var(--font-display); font-size: 56px; line-height: 60px; font-weight: 600; letter-spacing: -0.025em; }
+
+.h2 { font-family: var(--font-display); font-size: 40px; line-height: 48px; font-weight: 600; letter-spacing: -0.02em; }
+
+.h3 { font-family: var(--font-display); font-size: 28px; line-height: 36px; font-weight: 600; letter-spacing: -0.01em; }
+
+.h4 { font-family: var(--font-display); font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: 0; }
+
+.body-lg { font-family: var(--font-sans); font-size: 20px; line-height: 32px; font-weight: 400; letter-spacing: 0; }
+
+.body { font-family: var(--font-sans); font-size: 17px; line-height: 28px; font-weight: 400; letter-spacing: 0; }
+
+.body-sm { font-family: var(--font-sans); font-size: 15px; line-height: 24px; font-weight: 400; letter-spacing: 0; }
+
+.label { font-family: var(--font-sans); font-size: 15px; line-height: 20px; font-weight: 700; letter-spacing: 0.01em; }
+
+.caption { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; letter-spacing: 0; }
+
+.overline { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; }
+
+.data { font-family: var(--font-mono); font-size: 15px; line-height: 22px; font-weight: 500; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+
+.spec { font-family: var(--font-mono); font-size: 12px; line-height: 18px; font-weight: 400; letter-spacing: 0; }
+
+.urdu-display { font-family: var(--font-urdu); font-size: 40px; line-height: 84px; font-weight: 700; letter-spacing: 0; }
+
+.urdu-body { font-family: var(--font-urdu); font-size: 20px; line-height: 44px; font-weight: 400; letter-spacing: 0; }
+
+@media (max-width: 767px) {
+
+  .display-xxl { font-size: 48px; line-height: 52px; }
+
+  .display-xl { font-size: 40px; line-height: 44px; }
+
+  .h1 { font-size: 36px; line-height: 40px; }
+
+  .h2 { font-size: 28px; line-height: 34px; }
+
+  .h3 { font-size: 22px; line-height: 28px; }
+
+  .h4 { font-size: 18px; line-height: 26px; }
+
+  .body-lg { font-size: 18px; line-height: 28px; }
+
+  .body { font-size: 16px; line-height: 26px; }
+
+  .body-sm { font-size: 15px; line-height: 24px; }
+
+  .label { font-size: 15px; line-height: 20px; }
+
+  .caption { font-size: 13px; line-height: 18px; }
+
+  .overline { font-size: 12px; line-height: 16px; }
+
+  .data { font-size: 15px; line-height: 22px; }
+
+  .spec { font-size: 12px; line-height: 18px; }
+
+  .urdu-display { font-size: 32px; line-height: 68px; }
+
+  .urdu-body { font-size: 18px; line-height: 40px; }
+
+}

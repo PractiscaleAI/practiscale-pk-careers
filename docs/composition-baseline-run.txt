@@ -1,0 +1,113 @@
+{
+  "checks": 54,
+  "failed": [
+    {
+      "name": "Phone paragraph avoids a lone final word 320x568",
+      "pass": false,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani",
+        "talent."
+      ]
+    },
+    {
+      "name": "Phone paragraph uses its available column 375x900",
+      "pass": false,
+      "detail": {
+        "paragraph": 283.03125,
+        "available": 319
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 375x900",
+      "pass": false,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani",
+        "talent."
+      ]
+    },
+    {
+      "name": "Phone paragraph uses its available column 430x932",
+      "pass": false,
+      "detail": {
+        "paragraph": 283.03125,
+        "available": 374
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 430x932",
+      "pass": false,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani",
+        "talent."
+      ]
+    },
+    {
+      "name": "Phone paragraph uses its available column 530x900",
+      "pass": false,
+      "detail": {
+        "paragraph": 283.03125,
+        "available": 474
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 530x900",
+      "pass": false,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani",
+        "talent."
+      ]
+    },
+    {
+      "name": "Phone heading has balanced visual width 530x900",
+      "pass": false,
+      "detail": {
+        "widestLineFraction": 0.532271888185654
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 768x1024",
+      "pass": false,
+      "detail": {
+        "minimumGapPx": -300,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1024x768",
+      "pass": false,
+      "detail": {
+        "minimumGapPx": -201.7,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1192x720",
+      "pass": false,
+      "detail": {
+        "minimumGapPx": -107.6,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1280x720",
+      "pass": false,
+      "detail": {
+        "minimumGapPx": -66.3,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1440x900",
+      "pass": false,
+      "detail": {
+        "minimumGapPx": -44.4,
+        "requiredGapPx": 16
+      }
+    }
+  ],
+  "errors": []
+}

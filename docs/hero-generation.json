@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "name": "Afra - CEO Master Identity",
+    "id": "b4b49ad4-c503-4227-9a83-1fb4b212b4c9"
+  },
+  "firstImage": {
+    "job": "3e6620a0-abfb-42b4-ab05-1f7918cf5dd6",
+    "requestedModel": "nano_banana_pro",
+    "reportedCompletedModel": "nano_banana_2",
+    "params": {
+      "model": "nano_banana_pro",
+      "count": 1,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "prompt": "Professional editorial studio hero portrait of <<<b4b49ad4-c503-4227-9a83-1fb4b212b4c9>>>. Preserve this exact real man's facial identity, age, swept-back black hair, full dark beard, eyes, nose and face proportions from the character reference. Half-length portrait with full shoulders and torso extending below lower frame. Tailored dark deep-teal suit and black open collar shirt, no tie, no microphones, hands below crop. Body facing camera, head turned gently 25 degrees to viewer's left, calm confident closed-mouth expression. Neutral natural skin and soft key light, subtle teal edge light. Seamless UNIFORM solid deep teal studio background exact #134143, no gradient, no spotlight, no visible floor. Head centered horizontally, top of hair at 12 percent frame height, shoulders 58 percent frame width. Photorealistic high-end corporate portrait, 85mm lens. No words, logos, jewelry emphasis, props or other people. This image will be the starting frame of a slow head turn toward direct camera eye contact."
+    }
+  },
+  "selectedImage": {
+    "job": "ef274b1d-5243-437d-8e5e-32709567a7b3",
+    "requestedModel": "nano_banana_pro",
+    "reportedCompletedModel": "nano_banana_2",
+    "params": {
+      "model": "nano_banana_pro",
+      "count": 1,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "prompt": "Professional editorial studio hero portrait of <<<b4b49ad4-c503-4227-9a83-1fb4b212b4c9>>>. Preserve this exact real man's facial identity, age, swept-back black hair, full dark beard, eyes, nose and face proportions from the character reference. Half-length portrait with full shoulders and torso extending below lower frame. Tailored dark deep-teal suit and black open collar shirt, no tie, no microphones, hands below crop. Body facing camera, head turned gently 25 degrees to viewer's left, calm confident closed-mouth expression. Neutral natural skin and soft key light, subtle teal edge light. Seamless UNIFORM solid deep teal studio background exact #134143, no gradient, no spotlight, no visible floor. Head centered horizontally, top of hair at 12 percent frame height, shoulders 58 percent frame width. Photorealistic high-end corporate portrait, 85mm lens. No words, logos, jewelry emphasis, props or other people. This image will be the starting frame of a slow head turn toward direct camera eye contact.\nCRITICAL POSE: his nose MUST point toward the LEFT EDGE of the image, clearly 45 degrees LEFT, NOT frontal, NOT direct eye contact. Both shoulders stay facing the camera; only his head is turned LEFT. Gaze follows his head to off-camera left. Preserve the dense FULL long beard shown in the character references, do not shorten or trim it."
+    }
+  },
+  "video": {
+    "job": "386cc3d4-df54-48da-8640-af32d2eea847",
+    "quotedCredits": 8.75,
+    "params": {
+      "model": "kling3_0",
+      "count": 1,
+      "duration": 5,
+      "mode": "pro",
+      "sound": "off",
+      "aspect_ratio": "1:1",
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "ef274b1d-5243-437d-8e5e-32709567a7b3"
+        }
+      ],
+      "prompt": "A single continuous locked-off professional studio portrait of <<<b4b49ad4-c503-4227-9a83-1fb4b212b4c9>>>. Preserve the exact person from the starting image and character references throughout: identical face, eyes, nose, swept back hair, full beard, suit and skin texture. Beginning at the supplied three-quarter head angle, he slowly and smoothly rotates ONLY his head to look directly into the camera, reaching frontal eye contact by 4 seconds, then holds for the final second. Shoulders/body remain still. Gentle natural eye movement and one subtle blink only. No speaking, no smile change, no hand movement. Uniform deep teal #134143 studio backdrop remains perfectly still and consistent. Locked camera, constant exposure and soft studio lighting. No zoom, pan, cut, camera orbit, dissolve, morph, new objects, text, audio or logo. Five-second motion designed for reversible frame-by-frame website scroll scrubbing."
+    }
+  }
+}

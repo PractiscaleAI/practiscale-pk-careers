@@ -1,0 +1,258 @@
+{
+  "edition": "1.4",
+  "requested_paths": 18,
+  "pdf_pages": 64,
+  "source_checks": 21,
+  "browser_checks": 42,
+  "website_layout_status": "pending_user_selection",
+  "files": {
+    "PractiScale_Design_System_Complete.pdf": {
+      "bytes": 168993,
+      "sha256": "85e0235a7988e88250d7a51e41459c704c9d985d8229837d479b1bdd0f990ff7"
+    },
+    "PractiScale_Design_System_Contact_Sheet.png": {
+      "bytes": 4679450,
+      "sha256": "d44f062ff43f4aeb59ce77ed0b551af9214bb2c25878faab8f0097774c2eade0"
+    },
+    "QA_REPORT.txt": {
+      "bytes": 2591,
+      "sha256": "2776272dbff5000c20a5c4572e926bb08c754d424f89bb0479dc9a6064b47ffe"
+    },
+    "START_HERE.txt": {
+      "bytes": 1025,
+      "sha256": "a59dd2db189b530efdbb10c25878a507d49d2d4e53adc90f9bd86b288a27d9ed"
+    },
+    "design-system/00-read-first.md": {
+      "bytes": 2868,
+      "sha256": "5956ce9503b4042653bd8b475ce536be07b44874925e6169c585f39fef69fa53"
+    },
+    "design-system/01-brand-essence.md": {
+      "bytes": 4576,
+      "sha256": "1c822f2cbbf1420d3f7078bec78bd011f14fa523edf50567b4e12327f6daec4f"
+    },
+    "design-system/02-brand-story.md": {
+      "bytes": 4851,
+      "sha256": "96c2d095774e8fd30c854a20a3da2669d16596cc4306595c2b3189f6958d2ea9"
+    },
+    "design-system/03-voice-and-tone.md": {
+      "bytes": 5958,
+      "sha256": "82d46b5f830f75a1464c3e9ce33de6e6e1ee3ce5e99c20f98cd105df1323ff61"
+    },
+    "design-system/04-logo.md": {
+      "bytes": 3777,
+      "sha256": "28ede8e56f3370fb719afec13b6371e27db22d82e39dc06bb630bac180ebd017"
+    },
+    "design-system/05-color.md": {
+      "bytes": 6261,
+      "sha256": "6fef57d6886c5e5e547e7ba52822753bf2abeaf41737279d1451518ca0bef02b"
+    },
+    "design-system/06-typography.md": {
+      "bytes": 3803,
+      "sha256": "4a0edf4d2798ca124d906997142e1244314f0af92b45dc13a215804c3834eea0"
+    },
+    "design-system/07-imagery-and-iconography.md": {
+      "bytes": 3778,
+      "sha256": "f29444931620bb448a7ac1fd3fd8aaae27fe2d66a522778560792c99f198095d"
+    },
+    "design-system/08-3d-experience.md": {
+      "bytes": 905,
+      "sha256": "3f4fc221867442e1a8fcd4c35c9d9779082c5394cb50f3666b64fa7fb95b5f72"
+    },
+    "design-system/09-layout-and-interface.md": {
+      "bytes": 7173,
+      "sha256": "faa019b177c0b726e689ba6897db4fc6e277373fe351589b7fdf6f3ffb310a6f"
+    },
+    "design-system/10-applications.md": {
+      "bytes": 738,
+      "sha256": "ff5c02502c23af992595be633e3587958585bb37916de845ca17b526eb7e1cd6"
+    },
+    "design-system/11-sources.md": {
+      "bytes": 2226,
+      "sha256": "df7f5ed76eaed29cbe284133a17339c0d07556f88c568c9b3a8cfc3b82c77d3d"
+    },
+    "design-system/12-changelog.md": {
+      "bytes": 1785,
+      "sha256": "85e1d24b7a0885f70ca6373dd07a44e86e6ab5f7daf345cf108427248230d768"
+    },
+    "design-system/components.css": {
+      "bytes": 3446,
+      "sha256": "5f61d31f592823929cbea12bd10ee27574e63c2982cfd995e6a9703ba9610359"
+    },
+    "design-system/fonts.css": {
+      "bytes": 1536,
+      "sha256": "0e6a37dffa878f28de0993c71dd532e59d304e8e2467daaeb8a1aa659ea0a196"
+    },
+    "design-system/MIGRATION.md": {
+      "bytes": 2518,
+      "sha256": "573a6ce1219c9ff6ffc74fface43069ae136012735951190aaca5fca0687433f"
+    },
+    "design-system/package.json": {
+      "bytes": 315,
+      "sha256": "9dd1c5732770abcb362284ca3b55f470aa28b1834545bb987a8e1f80f47618bf"
+    },
+    "design-system/README.md": {
+      "bytes": 3225,
+      "sha256": "6f17d6dd983ad1c416b6302b315489f755f1ba37e2169fecad28109f87de0199"
+    },
+    "design-system/tokens.css": {
+      "bytes": 5919,
+      "sha256": "84745b13db87be49b7807f85c8c003a948e8e51196cb08cfc889e84948e34ccf"
+    },
+    "design-system/tokens.json": {
+      "bytes": 9717,
+      "sha256": "1686df1d308d146709390bddd0b022748398db0a7b73691244a273a4bb5e34f5"
+    },
+    "design-system/components/bundle.css": {
+      "bytes": 166,
+      "sha256": "1242e6ba8393090ba0980132b1c55f4c71ae96be534d54a1d10044e8d77c53d2"
+    },
+    "design-system/components/Button.md": {
+      "bytes": 3245,
+      "sha256": "7ba3bd4ccf12ee4f91102e525c56bff88628f46ebf3bf62db9f9919674520e63"
+    },
+    "design-system/components/Logo.md": {
+      "bytes": 2014,
+      "sha256": "bf81f75b004545ca098f3c0e4cc579327cbb5ea7f486743a1a8a9d594ba11b5e"
+    },
+    "design-system/tools/browser_check.cjs": {
+      "bytes": 6390,
+      "sha256": "44234a1ee0d0e79d719e7514ef685cd10d9d46c9b952303749fbf49e4aa38b79"
+    },
+    "design-system/tools/build_handbook.py": {
+      "bytes": 13464,
+      "sha256": "2fa6a3a999682619fa05d86bbeecd02183d16d484f200c8b6e08aa3681324d84"
+    },
+    "design-system/tools/build_tokens.py": {
+      "bytes": 3530,
+      "sha256": "ac498d6e015fb407de9ebbd69825e20095913cd1072629ad0433ef4bfe252ee7"
+    },
+    "design-system/tools/requirements.txt": {
+      "bytes": 88,
+      "sha256": "7aaa94b1aff4e3d6d09d8ead2c957cc3a7cdc6162a4a8d70f82bfb88a80b5fde"
+    },
+    "design-system/tools/verify_handbook.py": {
+      "bytes": 5620,
+      "sha256": "0e148cde0c0fc9b9c6e3207d7c39e7337a78d088054de165e8d215e8cf9dbb8d"
+    },
+    "design-system/tools/verify_sources.py": {
+      "bytes": 6591,
+      "sha256": "003f876e0ab769c67e68d7bcac4e8c3a4a1f37c9c625db55e4748e272e9f2730"
+    },
+    "design-system/verification/component-checks.json": {
+      "bytes": 11343,
+      "sha256": "6ec9d37738943287c867c6f42958e9fcf0d8080c198b79b2b11cb6848ebb744f"
+    },
+    "design-system/verification/component-fixture.html": {
+      "bytes": 3991,
+      "sha256": "ed75a74f02337c11cd65180db832b4a3cbfd0de0cd32f521665cb2dd50d184f8"
+    },
+    "design-system/verification/expected-asset-sha256.json": {
+      "bytes": 344,
+      "sha256": "f9b0b30b8cbed0f468c13c475494c727a37cb81df4026f3c160ed2bedff30006"
+    },
+    "design-system/verification/expected-logo-pixels.json": {
+      "bytes": 305,
+      "sha256": "73817b48b0c307c8ad7c1a8626dfdcc117557204ef378cf8c506770344ec035e"
+    },
+    "design-system/verification/file-status.json": {
+      "bytes": 4840,
+      "sha256": "f0a420804a0b0c4d94edd7b086fd72789d98c6a61c37158ac9a5a5f539e4d00c"
+    },
+    "design-system/verification/fixture-desktop.png": {
+      "bytes": 175574,
+      "sha256": "92eb2ee4e91a7a2c14c76d3904e6f53de915aaf196cd10bb1ee12e0fa547f216"
+    },
+    "design-system/verification/fixture-mobile.png": {
+      "bytes": 164186,
+      "sha256": "8bded04bc7329ec3152e33c668a4598c4e9ae1917b8f8644ebc8ce2924f40604"
+    },
+    "design-system/verification/handbook-source-map.json": {
+      "bytes": 3433,
+      "sha256": "aa544d2f1e4115fc4d3f9fed19f0a83d1ddc074c82964d60076a2a6e05161b38"
+    },
+    "design-system/verification/logo-comparison.json": {
+      "bytes": 808,
+      "sha256": "66f4897cc890c79932af461bc199bca249e7975f8de5e5a265359f740462acb1"
+    },
+    "design-system/verification/original-file-audit.json": {
+      "bytes": 2963,
+      "sha256": "41d3e516ae16c3041b88fb7ff03436d92e3d11685f519b2fd64e15ddb07b928c"
+    },
+    "design-system/verification/pdf-checks.json": {
+      "bytes": 2581,
+      "sha256": "20b5a6e7e78d76c61234624ac112e76126b9ded980541e53631bff2aa01a67be"
+    },
+    "design-system/verification/preflight.json": {
+      "bytes": 8576,
+      "sha256": "69c3c7f5db62cd9aed87cea9078b8cac2b3f1c2752cb3981aa006853936b7ccb"
+    },
+    "design-system/verification/requested-files.json": {
+      "bytes": 424,
+      "sha256": "80a0dbf5e88ad23af74b41a3bcba578c1671894d833ff6a0abb2549eff257aa8"
+    },
+    "design-system/assets/fonts/assets-jetbrainsmono-OFL.txt": {
+      "bytes": 4399,
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    "design-system/assets/fonts/assets-manrope-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "design-system/assets/fonts/assets-notonastaliqurdu-OFL.txt": {
+      "bytes": 4384,
+      "sha256": "e90279e3fb2003c4d54f8685e25274bd7838b1b21c891520d71dbdb1d4a98907"
+    },
+    "design-system/assets/fonts/assets-sora-OFL.txt": {
+      "bytes": 4385,
+      "sha256": "ba0b9729c9428ba79a0459ab8ec575791b51509dbec213e383d0316d37fec299"
+    },
+    "design-system/assets/fonts/Manrope400.ttf": {
+      "bytes": 97468,
+      "sha256": "548760e4773048a1d3720a2bbaa4116a3988c9c664113d19025c8a5e62757b36"
+    },
+    "design-system/assets/fonts/Manrope500.ttf": {
+      "bytes": 97528,
+      "sha256": "2cd48af318cf7d8e710da300982a1f8ff58dde968458cc2e04b006bc73a4710f"
+    },
+    "design-system/assets/fonts/Manrope700.ttf": {
+      "bytes": 97460,
+      "sha256": "e11b660c4741a7c72e495bf432da665dfc21d6253c3800dc723b4e87f3527b19"
+    },
+    "design-system/assets/fonts/Mono400.ttf": {
+      "bytes": 115152,
+      "sha256": "5cfa81dc1af24f13203066aabeb678c8bd247648f9e414865e403e5c92934c3a"
+    },
+    "design-system/assets/fonts/Mono500.ttf": {
+      "bytes": 115152,
+      "sha256": "50b5ec7cbce239ad2c0b2decdf812d99716795890bb8374c9f93ef05d329bf3d"
+    },
+    "design-system/assets/fonts/Sora600.ttf": {
+      "bytes": 58596,
+      "sha256": "d2f24c99c8dba3235270ca6b5c258369a6d73684be108a269bfc7a219281d750"
+    },
+    "design-system/assets/fonts/Sora700.ttf": {
+      "bytes": 58544,
+      "sha256": "0e47ba57a43abc7fca43bff0c29609e1662cf827e896012853340fc6e118a2f3"
+    },
+    "design-system/assets/fonts/Urdu400.ttf": {
+      "bytes": 530796,
+      "sha256": "3664ee5d95e31a3d0aed890668af9a3658ec9799323c4867f92f6036c534ab84"
+    },
+    "design-system/assets/fonts/Urdu700.ttf": {
+      "bytes": 531664,
+      "sha256": "abeeae1b28719b2243b942c9e436f79959635c32a129a38256bca80bf20c400b"
+    },
+    "design-system/assets/logos/practiscale-logo-primary.png": {
+      "bytes": 7451,
+      "sha256": "537a8131530967eeb0914ce7003bbe2a69cfde0a326b8d824ef2290cb080c264"
+    },
+    "design-system/assets/logos/practiscale-logo-reversed.png": {
+      "bytes": 7716,
+      "sha256": "d918f1bc92a2a823981dbe63b29c2d008a6d6e38dc0e86fe3c6b3a079df2c37f"
+    },
+    "design-system/assets/logos/practiscale-mark.png": {
+      "bytes": 3163,
+      "sha256": "d222ddcb7b8a441dd05c3a17ea5f65d0d9334c144b91c5f3684b0cba993716e8"
+    }
+  }
+}

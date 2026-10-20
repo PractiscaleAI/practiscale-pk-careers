@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "status": "complete",
+  "build": "Production build and TypeScript passed. Later source formatting was whitespace-only; subsequent changes were tests/documentation.",
+  "regressionChecks": 145,
+  "regressionReports": {
+    "hero-qa.json": {
+      "checks": 22,
+      "pass": true
+    },
+    "motion-qa.json": {
+      "checks": 13,
+      "pass": true
+    },
+    "layout-qa.json": {
+      "checks": 61,
+      "pass": true
+    },
+    "whole-hero-qa.json": {
+      "checks": 27,
+      "pass": true
+    },
+    "preloader-qa.json": {
+      "checks": 22,
+      "pass": true
+    }
+  },
+  "renderChecks": 6,
+  "visualReview": [
+    "Desktop start/end",
+    "Tablet start/end",
+    "375px phone start/end and open menu",
+    "Short phone scroll end",
+    "Enlarged-text desktop scroll end",
+    "Original preloader fill"
+  ],
+  "sourceFramesReviewed": 120,
+  "transparentFramesVerified": 240,
+  "acceptedBlink": true,
+  "scrollSmoothingSeconds": 0.65,
+  "finalScrollHoldFraction": 0.15,
+  "creditsSpent": 24,
+  "noAdditionalGenerations": true,
+  "localPreview": "http://127.0.0.1:3000/",
+  "scope": "Homepage hero/navigation/preloader only. No deployment or additional homepage sections."
+}

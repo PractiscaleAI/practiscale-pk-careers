@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "checks": [
+    {
+      "check": "C6876 all decoded frames indexed with no omissions; original file unchanged",
+      "pass": true,
+      "frames": 156
+    },
+    {
+      "check": "C6874 all decoded frames indexed with no omissions; original file unchanged",
+      "pass": true,
+      "frames": 468
+    },
+    {
+      "check": "01-front-neutral crop pixels exactly match native decoded source frame",
+      "pass": true
+    },
+    {
+      "check": "02-front-relaxed crop pixels exactly match native decoded source frame",
+      "pass": true
+    },
+    {
+      "check": "03-front-warm-smile crop pixels exactly match native decoded source frame",
+      "pass": true
+    },
+    {
+      "check": "04-three-quarter-viewer-left crop pixels exactly match native decoded source frame",
+      "pass": true
+    },
+    {
+      "check": "05-profile-viewer-right crop pixels exactly match native decoded source frame",
+      "pass": true
+    },
+    {
+      "check": "06-three-quarter-viewer-right crop pixels exactly match native decoded source frame",
+      "pass": true
+    }
+  ],
+  "selectedShotsVisuallyReviewed": 6,
+  "allDecodedFramesVisuallyReviewed": 624,
+  "nativeFullFrames": 6,
+  "unretouchedFaceCrops": 6,
+  "generationCreditsUsed": 0,
+  "externalUploads": 0,
+  "pass": true
+}

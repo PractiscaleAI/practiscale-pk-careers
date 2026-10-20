@@ -1,0 +1,480 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { ArrowUpRight } from "lucide-react";
+import { Action, Eyebrow, PageIntro, FAQ, TextLink } from "@/components/ui";
+import { Closing } from "@/components/footer";
+import JobBoard from "@/components/job-board";
+import { routes, roles, industries, whatsapp, siteUrl } from "@/lib/content";
+const pages: Record<
+  string,
+  { label: string; title: string; copy: string; meta: string }
+> = {
+  "about/our-story": {
+    label: "Our story",
+    title: "Built in Pakistan. Built for growth.",
+    copy: "A team, a practical skill and the belief that overlooked talent deserves a real opportunity.",
+    meta: "Meet Afrasyab Ahmed and the purpose behind PractiScale’s training and career opportunities in Pakistan.",
+  },
+  "about/how-we-work": {
+    label: "How we work",
+    title: "Every role serves one outcome.",
+    copy: "We help US healthcare businesses build professional referral relationships. Here’s where our Pakistan teams fit.",
+    meta: "Understand PractiScale’s research, outreach, qualification and coordination work for US healthcare businesses.",
+  },
+  "about/why-practiscale": {
+    label: "Why PractiScale",
+    title: "A skill that grows with you.",
+    copy: "Build useful skills, take ownership of your work and learn from clear feedback.",
+    meta: "Explore the skills, coaching, international exposure and performance culture behind careers at PractiScale.",
+  },
+  "training-programs/appointment-setter": {
+    label: "Training & hiring path",
+    title: "Turn a conversation into an opportunity.",
+    copy: "Appointment Setter Program. Learn to open professional conversations with US healthcare contacts and book qualified meetings.",
+    meta: "Explore appointment setter training at PractiScale in Pakistan: outreach, qualification, objections and follow-up.",
+  },
+  "training-programs/virtual-assistant": {
+    label: "Women Empowerment Program",
+    title: "Build a professional career from home.",
+    copy: "Virtual Assistant Program for women. Learn the research, organization and coordination skills behind US healthcare accounts.",
+    meta: "Explore PractiScale’s Virtual Assistant Program for women in Pakistan and the skills behind remote account support.",
+  },
+  jobs: {
+    label: "Careers at PractiScale",
+    title: "Bring what you do best.",
+    copy: "Explore sales, creative, technology and operations career areas. Talk to our hiring team about current openings and terms.",
+    meta: "Explore sales, creative, AI, web development, recruitment and operations career opportunities at PractiScale.",
+  },
+  "who-we-serve": {
+    label: "Who we serve",
+    title: "The businesses behind your work.",
+    copy: "Our Pakistan teams support US healthcare businesses by building professional referral relationships.",
+    meta: "Meet the US healthcare sectors PractiScale supports, from home care and senior care to therapy and specialty clinics.",
+  },
+};
+export function generateStaticParams() {
+  return routes
+    .filter((x) => x !== "/")
+    .map((x) => ({ slug: x.slice(1).split("/") }));
+}
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const key = slug.join("/"),
+    p = pages[key];
+  return p
+    ? {
+        title:
+          p.label === "Training & hiring path"
+            ? "Appointment Setter Program"
+            : key.includes("virtual-assistant")
+              ? "Virtual Assistant Program for Women"
+              : p.label,
+        description: p.meta,
+        alternates: { canonical: `/${key}` },
+      }
+    : { title: "Page not found" };
+}
+function TwoColumns({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="interior-section wrap two-col">
+      <h2>{title}</h2>
+      <div>{children}</div>
+    </section>
+  );
+}
+function Program({ va }: { va: boolean }) {
+  const name = va ? "Virtual Assistant Program" : "Appointment Setter Program";
+  const topics = va
+    ? [
+        [
+          "Research",
+          "Find and verify healthcare professionals and organizations.",
+        ],
+        ["Records", "Keep contact lists and account information accurate."],
+        ["Coordination", "Manage schedules, messages and follow-ups."],
+        ["Reporting", "Prepare clear updates for the team."],
+      ]
+    : [
+        [
+          "Professional outreach",
+          "Start a clear conversation with a busy professional.",
+        ],
+        ["Qualification", "Recognize a genuine fit and ask useful questions."],
+        [
+          "Objections & follow-up",
+          "Respond calmly and follow up consistently.",
+        ],
+        [
+          "Tools & tracking",
+          "Log conversations and keep the next step visible.",
+        ],
+      ];
+  return (
+    <>
+      <div className="wrap program-hero-actions">
+        <Action href={whatsapp(name)}>Apply on WhatsApp</Action>
+        <span className="eyebrow">
+          {va ? "For women / Remote path" : "Freshers welcome / Onsite path"}
+        </span>
+      </div>
+      <TwoColumns
+        title={
+          va
+            ? "Ability is everywhere. Access should be, too."
+            : "Every job wants experience. Start by building it."
+        }
+      >
+        <p>
+          {va
+            ? "The program is designed to open a professional remote-work path for women in Pakistan, with practical skills for research, support and account coordination."
+            : "Learn the communication skills behind professional outreach and qualified meetings. Practice the actual work and understand what a role on the team requires."}
+        </p>
+        <p>
+          Ask the hiring team about the current intake, eligibility, duration,
+          fees or stipend, assessment process and available roles before
+          committing.
+        </p>
+      </TwoColumns>
+      <section className="interior-section wrap">
+        <Eyebrow>What you’ll learn</Eyebrow>
+        <h2>Skills you can use.</h2>
+        <div className="topic-grid">
+          {topics.map(([t, d], i) => (
+            <article key={t}>
+              <span className="eyebrow">0{i + 1}</span>
+              <h3>{t}</h3>
+              <p>{d}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <TwoColumns title="A practical path forward.">
+        <ol className="process-list">
+          {[
+            "Apply — share your CV and interest in the program.",
+            "Screen — discuss eligibility, availability and compensation.",
+            "Train — learn through structured lessons and practice.",
+            "Assess — demonstrate the relevant skills.",
+            "Next step — discuss available roles and any offer conditions.",
+          ].map((x) => (
+            <li key={x}>{x}</li>
+          ))}
+        </ol>
+        <p className="fine-print">
+          Training participation does not guarantee employment. Current program
+          terms and any offer are confirmed by the hiring team.
+        </p>
+      </TwoColumns>
+      <section className="faq-section wrap">
+        <div>
+          <Eyebrow>Program questions</Eyebrow>
+          <h2>
+            Know before
+            <br />
+            you apply.
+          </h2>
+        </div>
+        <FAQ
+          items={[
+            [
+              va ? "Is this program for women?" : "Do I need sales experience?",
+              va
+                ? "Yes. This is the women-focused Virtual Assistant Program described in our source materials. Confirm current intake details with hiring."
+                : "The program is designed for freshers and career switchers. The hiring team will explain current eligibility.",
+            ],
+            [
+              "What is the work arrangement?",
+              va
+                ? "The program is intended as a remote path. Confirm device, internet, schedule and role requirements with hiring."
+                : "The program is intended as an onsite path. Confirm the current office location and schedule with hiring.",
+            ],
+            [
+              "How long is the program, and does it have a fee?",
+              "Duration, fees or stipends have not been published here. Ask for the current written terms before joining.",
+            ],
+            [
+              "Is a job guaranteed?",
+              "No job is guaranteed by this website. Ask how the current assessment, role availability and offer process work.",
+            ],
+          ]}
+        />
+      </section>
+    </>
+  );
+}
+export default async function ContentPage({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
+}) {
+  const { slug } = await params;
+  const key = slug.join("/"),
+    p = pages[key];
+  if (!p) notFound();
+  return (
+    <main id="main" className="interior">
+      <PageIntro {...p} />
+      {key === "jobs" ? (
+        <JobBoard />
+      ) : key.startsWith("training-programs/") ? (
+        <Program va={key.includes("virtual-assistant")} />
+      ) : key === "about/our-story" ? (
+        <>
+          <section className="founder-section wrap" id="founder">
+            <div className="founder-photo">
+              <img
+                src="/media/ceo-poster.webp"
+                alt="Afrasyab Ahmed, Founder and CEO of PractiScale"
+                width="960"
+                height="960"
+              />
+            </div>
+            <div>
+              <Eyebrow>Founder & CEO</Eyebrow>
+              <h2>Afrasyab Ahmed</h2>
+              <p>
+                PractiScale’s story starts with learning how to sell and using
+                that skill to build a team in Pakistan.
+              </p>
+              <p>
+                Today, the work connects Pakistani talent with the needs of US
+                healthcare businesses. Training, practical experience and
+                systems for everyday work sit at the center of that purpose.
+              </p>
+              <TextLink href="/about/how-we-work">
+                See how the work happens
+              </TextLink>
+            </div>
+          </section>
+          <TwoColumns title="Overlooked talent. Practical opportunity.">
+            <p>
+              Our mission is to find talent in Pakistan, help people develop
+              skills that businesses value and give them a clear way to
+              contribute.
+            </p>
+            <p>
+              The Women Empowerment Program creates a path into virtual
+              assistance and remote account-support work.
+            </p>
+            <Action href="/training-programs/virtual-assistant" secondary>
+              Explore the VA Program
+            </Action>
+          </TwoColumns>
+          <section className="interior-section wrap">
+            <Eyebrow>What we value</Eyebrow>
+            <h2>Principles that guide the work.</h2>
+            <div className="principle-list">
+              {[
+                [
+                  "Hunger over pedigree",
+                  "Curiosity, effort and the ability to learn matter.",
+                ],
+                [
+                  "Clear ownership",
+                  "Know the work, the owner and the next step.",
+                ],
+                [
+                  "Systems over heroics",
+                  "Good systems make consistent work possible.",
+                ],
+                [
+                  "Results and feedback",
+                  "Use clear goals and coaching to improve.",
+                ],
+              ].map(([t, d]) => (
+                <article key={t}>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+        </>
+      ) : key === "about/how-we-work" ? (
+        <>
+          <TwoColumns title="Healthcare growth runs on trust.">
+            <p>
+              Patients often reach healthcare providers through referrals.
+              Discharge planners, case managers, social workers and other
+              professionals help make those connections.
+            </p>
+            <p>
+              PractiScale helps businesses become known to relevant referral
+              partners, qualify the fit and coordinate introductions. The
+              healthcare business builds the relationship.
+            </p>
+          </TwoColumns>
+          <section className="interior-section wrap">
+            <Eyebrow>The process</Eyebrow>
+            <h2>Four steps. One clear purpose.</h2>
+            <div className="topic-grid">
+              {[
+                [
+                  "Research",
+                  "Identify relevant referral partners in each client’s area.",
+                ],
+                [
+                  "Outreach",
+                  "Start professional conversations with suitable contacts.",
+                ],
+                [
+                  "Qualify",
+                  "Understand whether a partnership is a genuine fit.",
+                ],
+                [
+                  "Introduce",
+                  "Coordinate an introduction for the client to take forward.",
+                ],
+              ].map(([t, d], i) => (
+                <article key={t}>
+                  <span className="eyebrow">0{i + 1}</span>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+          <TwoColumns title="Find where you contribute.">
+            <div className="principle-list">
+              {[
+                [
+                  "Sales",
+                  "Start conversations and bring new clients on board.",
+                ],
+                [
+                  "Account support",
+                  "Research, organize and coordinate account work.",
+                ],
+                ["Creative", "Create the content behind the brand."],
+                [
+                  "Technology",
+                  "Build websites, AI workflows and internal tools.",
+                ],
+                [
+                  "People & operations",
+                  "Find talent and support everyday operations.",
+                ],
+              ].map(([t, d]) => (
+                <article key={t}>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+            <TextLink href="/jobs">Explore career areas</TextLink>
+          </TwoColumns>
+        </>
+      ) : key === "about/why-practiscale" ? (
+        <>
+          <section className="interior-section wrap">
+            <div className="topic-grid">
+              {[
+                [
+                  "A skill that travels",
+                  "Communication, design and technical skills stay valuable wherever your career takes you.",
+                ],
+                [
+                  "Training and coaching",
+                  "Learn the work with practice, feedback and support.",
+                ],
+                [
+                  "International exposure",
+                  "Build experience supporting US healthcare businesses.",
+                ],
+                [
+                  "Clear ownership",
+                  "Understand the goal and how your contribution fits.",
+                ],
+                [
+                  "Room to grow",
+                  "Keep building your capabilities and ask about progression opportunities.",
+                ],
+                [
+                  "Useful systems",
+                  "Work with tools that support training, quality and coordination.",
+                ],
+              ].map(([t, d], i) => (
+                <article key={t}>
+                  <span className="eyebrow">0{i + 1}</span>
+                  <h2>{t}</h2>
+                  <p>{d}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+          <TwoColumns title="Who thrives here?">
+            <p>
+              People who learn quickly, use feedback, communicate clearly and
+              take responsibility for their results.
+            </p>
+            <p>
+              Ask direct questions about compensation, schedules, targets and
+              role expectations. Understanding the work comes before deciding
+              whether it fits.
+            </p>
+          </TwoColumns>
+        </>
+      ) : (
+        <>
+          <TwoColumns title="Professional relationships. Healthcare impact.">
+            <p>
+              From home care to specialty clinics, our teams support the
+              business relationships behind healthcare services. You help
+              research the right partners and make clear introductions.
+            </p>
+            <p>
+              These are business-support roles. Specific responsibilities are
+              explained during hiring and training.
+            </p>
+          </TwoColumns>
+          <section className="interior-section wrap">
+            <Eyebrow>Across US healthcare</Eyebrow>
+            <h2>The sectors we support.</h2>
+            <div className="industry-list">
+              {industries.map(([t, d], i) => (
+                <article key={t}>
+                  <span className="eyebrow">0{i + 1}</span>
+                  <h3>{t}</h3>
+                  <p>{d}</p>
+                  <ArrowUpRight size={22} aria-hidden="true" />
+                </article>
+              ))}
+            </div>
+            <TextLink href="https://practiscale.com/">
+              Explore our US healthcare services
+            </TextLink>
+          </section>
+        </>
+      )}
+      <Closing />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: p.label,
+                item: `${siteUrl}/${key}`,
+              },
+            ],
+          }),
+        }}
+      />
+    </main>
+  );
+}

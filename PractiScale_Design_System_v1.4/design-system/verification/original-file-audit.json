@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01-brand-essence.md",
+    "original_bytes": 4423,
+    "original_sha256": "4006ae7d8fde4ebeb729b0e09318462283262d0552f75d0c4026dd8e18de0b7b"
+  },
+  {
+    "file": "02-brand-story.md",
+    "original_bytes": 3971,
+    "original_sha256": "60878d2130b37066426defbb7ef13434ae96d3d61c6c8105eb306d209b6c0499"
+  },
+  {
+    "file": "03-voice-and-tone.md",
+    "original_bytes": 5836,
+    "original_sha256": "9be5b2e83896d7b1e57ca7a52ee59b90d3a5e64f0cc33013cc93600d028ba959"
+  },
+  {
+    "file": "04-logo.md",
+    "original_bytes": 3904,
+    "original_sha256": "3b8f4f68f4d2a7af92a85d4b99905d38c5fb97a40589866f81154c28a550bc9e"
+  },
+  {
+    "file": "05-color.md",
+    "original_bytes": 8340,
+    "original_sha256": "2f519d1597a4b9dc99036ee341fe6b81bfa7e053c271ac456c0ac0dfd54e53f8"
+  },
+  {
+    "file": "06-typography.md",
+    "original_bytes": 4420,
+    "original_sha256": "f1d6e9ec010e622f469fee27507528b77ed9b5abc09f57ea95d0854cb39534ec"
+  },
+  {
+    "file": "07-imagery-and-iconography.md",
+    "original_bytes": 4000,
+    "original_sha256": "c7e86c0a322bbcadc131c09564e4c2bd8f40e9e730469054437c4c7e4e7497f8"
+  },
+  {
+    "file": "08-3d-experience.md",
+    "original_bytes": 10283,
+    "original_sha256": "9ef68d63cd87297751c4df235bd695fb61c9e8b8ef3caf116cdf207959c6965f"
+  },
+  {
+    "file": "09-layout-and-interface.md",
+    "original_bytes": 5118,
+    "original_sha256": "2b573939ec3411e13f8df438d001261c5b32fad379cc222ad0cb66c244401033"
+  },
+  {
+    "file": "10-applications.md",
+    "original_bytes": 4404,
+    "original_sha256": "cc0165c6367cfe1c342044faae8c8f8e3c439b8dd553cdcf4bd4202e8e60289c"
+  },
+  {
+    "file": "11-sources.md",
+    "original_bytes": 3449,
+    "original_sha256": "77baf8faf751ea5d356e1a91ee43d3721697a1453472a18872008103cc8d395d"
+  },
+  {
+    "file": "12-changelog.md",
+    "original_bytes": 1541,
+    "original_sha256": "0b00a716f81a02d910ff18bf87b60fcc9cccad62e0deba9d39845509c696834f"
+  },
+  {
+    "file": "components.css",
+    "original_bytes": 2038,
+    "original_sha256": "c64b0c49727bb25f97c277d1791bfb418c910e1de0c07f7f9dc418e41386beff"
+  },
+  {
+    "file": "README.md",
+    "original_bytes": 3599,
+    "original_sha256": "2c5d64e94264c03474b3abb2717959fec27c316d489dc5f61fe67a9701851733"
+  },
+  {
+    "file": "tokens.css",
+    "original_bytes": 5398,
+    "original_sha256": "86c1516ce32f217717b833cbeb77fba222d0343221b8767866a8aec641ab370e"
+  },
+  {
+    "file": "tokens.json",
+    "original_bytes": 15595,
+    "original_sha256": "27214b9c7905d14241bae7abdf1ed95225f26d6d703b19f27a4c2ede32d43987"
+  },
+  {
+    "file": "components/Button.md",
+    "original_bytes": 1188,
+    "original_sha256": "05abc8527e963a47d51c71095e0cc1d8ec2be9ce19e7d58788458097d3eb14fe"
+  },
+  {
+    "file": "components/Logo.md",
+    "original_bytes": 760,
+    "original_sha256": "8b030931066f74e30b91416a79463e0d0e0b0e6f9625dbd0238b52b1ff3f105b"
+  }
+]

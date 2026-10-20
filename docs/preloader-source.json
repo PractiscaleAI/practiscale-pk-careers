@@ -1,0 +1,19 @@
+{
+  "source": "Recovered complete supplied HTML from the original file read; line endings normalized only.",
+  "sha256": "e9f1815a3c177257f51e9a2f713fbda987d578a70f0de307ed7ec60790a6c523",
+  "originalAnimationUnchanged": true,
+  "integrationOnly": [
+    "Hide demo site and preview controls",
+    "Transparent iframe document so logo window reveals the actual hero",
+    "Omit remote font requests used only by hidden demo text",
+    "Same-origin ready, progress, landed and completion messages",
+    "Mount iframe after the host listener and scroll lock are installed, consistently across first visit and reload"
+  ],
+  "timing": {
+    "fillMs": 3000,
+    "holdMs": 450,
+    "openingMs": 260,
+    "zoomMs": 1600
+  },
+  "supersedes": "Earlier adapted resource-progress preloader. User explicitly requested the original as-is."
+}

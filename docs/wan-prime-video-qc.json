@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-20",
+  "jobId": "5a9cf3ed-7741-427b-a175-55f4c55eb210",
+  "model": "wan3_0_prime",
+  "status": "user_accepted_with_natural_blink",
+  "approval": "its still have a eye blink but use this video.",
+  "source": {
+    "size": [
+      1440,
+      1440
+    ],
+    "fps": 30,
+    "nativeFrames": 120,
+    "durationSeconds": 4,
+    "audio": false,
+    "sha256": "0ec8590cba0e4e557d3d1acdf5e6286a9c81a72385ce33efd8150424559ff8e7"
+  },
+  "credits": {
+    "approved": 24,
+    "spent": 24,
+    "balanceBefore": 585.32,
+    "balanceAfter": 561.32
+  },
+  "review": {
+    "coverage": "All 120 native frames inspected in consecutive face and full-frame sheets. Selected native crops enlarged; processed alpha validated for both resolutions.",
+    "blink": "One blink during the turn, approximately frames 17-24 (one-based), 0.533-0.767s; visible closed-eye evidence in frame 20 at 0.633s. Explicitly accepted by user.",
+    "expression": "Closed mouth with no obvious broad smile or speaking. Natural mouth asymmetry and subtle motion remain; no claim of perfectly fixed expression.",
+    "identityAndDetail": "Broadly recognizable against approved poses. Hair/beard detail retained visually; generative identity and texture are not exact photographic certification.",
+    "motion": "Single coordinated turn, largely frontal by roughly one second, earlier than requested in the prompt. Small residual pose motion remains in source. Website will clamp the final frame through the last 15 percent of scroll.",
+    "decision": "Integrate this specific user-approved source, retaining its blink. Do not synthesize eyes, skip blink frames or generate again."
+  },
+  "processing": [
+    {
+      "variant": "desktop",
+      "count": 120,
+      "size": [
+        960,
+        960
+      ],
+      "allAlphaVerified": true
+    },
+    {
+      "variant": "mobile",
+      "count": 120,
+      "size": [
+        540,
+        540
+      ],
+      "allAlphaVerified": true
+    }
+  ],
+  "websiteIntegrationStatus": "complete",
+  "promptFile": "Prompts.md",
+  "sourceVideoFile": "Generated-Video.mp4",
+  "verificationStatus": "Production build; 145 regression checks plus 6 render checks passed. Actual desktop/tablet/mobile, open-menu and edge-case screenshots inspected."
+}

@@ -1,0 +1,607 @@
+{
+  "checks": [
+    {
+      "name": "Visible silhouette checked across every source frame",
+      "pass": true,
+      "detail": {
+        "count": 120
+      }
+    },
+    {
+      "name": "No horizontal overflow 320x568",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 320x568",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 77.03125,
+          "right": 233.03125,
+          "top": 434.28125,
+          "bottom": 598.28125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1007.171875,
+          "width": 304,
+          "height": 999.171875
+        }
+      }
+    },
+    {
+      "name": "Phone paragraph uses its available column 320x568",
+      "pass": true,
+      "detail": {
+        "paragraph": 264,
+        "available": 264
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 320x568",
+      "pass": true,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for",
+        "Pakistani talent."
+      ]
+    },
+    {
+      "name": "Phone heading remains two lines 320x568",
+      "pass": true,
+      "detail": [
+        "Learn a skill",
+        "that gets paid."
+      ]
+    },
+    {
+      "name": "Phone heading has balanced visual width 320x568",
+      "pass": true,
+      "detail": {
+        "widestLineFraction": 0.8551136363636364
+      }
+    },
+    {
+      "name": "Phone face clears reading/action area 320x568",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 77.03125,
+          "right": 233.03125,
+          "top": 434.28125,
+          "bottom": 598.28125
+        },
+        "actionBottom": 382.78125,
+        "cardTop": 790.78125
+      }
+    },
+    {
+      "name": "No horizontal overflow 375x900",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 375x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 105.078125,
+          "right": 261.078125,
+          "top": 416,
+          "bottom": 580
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884
+        }
+      }
+    },
+    {
+      "name": "Phone paragraph uses its available column 375x900",
+      "pass": true,
+      "detail": {
+        "paragraph": 319,
+        "available": 319
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 375x900",
+      "pass": true,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani talent."
+      ]
+    },
+    {
+      "name": "Phone heading remains two lines 375x900",
+      "pass": true,
+      "detail": [
+        "Learn a skill",
+        "that gets paid."
+      ]
+    },
+    {
+      "name": "Phone heading has balanced visual width 375x900",
+      "pass": true,
+      "detail": {
+        "widestLineFraction": 0.7804663009404389
+      }
+    },
+    {
+      "name": "Phone face clears reading/action area 375x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 105.078125,
+          "right": 261.078125,
+          "top": 416,
+          "bottom": 580
+        },
+        "actionBottom": 364.5,
+        "cardTop": 690
+      }
+    },
+    {
+      "name": "No horizontal overflow 430x932",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 430x932",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 133.125,
+          "right": 289.125,
+          "top": 428.09375,
+          "bottom": 592.09375
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916
+        }
+      }
+    },
+    {
+      "name": "Phone paragraph uses its available column 430x932",
+      "pass": true,
+      "detail": {
+        "paragraph": 374,
+        "available": 374
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 430x932",
+      "pass": true,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani talent."
+      ]
+    },
+    {
+      "name": "Phone heading remains two lines 430x932",
+      "pass": true,
+      "detail": [
+        "Learn a skill",
+        "that gets paid."
+      ]
+    },
+    {
+      "name": "Phone heading has balanced visual width 430x932",
+      "pass": true,
+      "detail": {
+        "widestLineFraction": 0.7633689839572193
+      }
+    },
+    {
+      "name": "Phone face clears reading/action area 430x932",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 133.125,
+          "right": 289.125,
+          "top": 428.09375,
+          "bottom": 592.09375
+        },
+        "actionBottom": 376.59375,
+        "cardTop": 722
+      }
+    },
+    {
+      "name": "No horizontal overflow 530x900",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 530x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 184.125,
+          "right": 340.125,
+          "top": 450.09375,
+          "bottom": 614.09375
+        },
+        "stage": {
+          "left": 8,
+          "right": 522,
+          "top": 8,
+          "bottom": 892,
+          "width": 514,
+          "height": 884
+        }
+      }
+    },
+    {
+      "name": "Phone paragraph uses its available column 530x900",
+      "pass": true,
+      "detail": {
+        "paragraph": 474,
+        "available": 474
+      }
+    },
+    {
+      "name": "Phone paragraph avoids a lone final word 530x900",
+      "pass": true,
+      "detail": [
+        "Then build a career using it.",
+        "Training and real work for Pakistani talent."
+      ]
+    },
+    {
+      "name": "Phone heading remains two lines 530x900",
+      "pass": true,
+      "detail": [
+        "Learn a skill",
+        "that gets paid."
+      ]
+    },
+    {
+      "name": "Phone heading has balanced visual width 530x900",
+      "pass": true,
+      "detail": {
+        "widestLineFraction": 0.7423852848101266
+      }
+    },
+    {
+      "name": "Phone face clears reading/action area 530x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 184.125,
+          "right": 340.125,
+          "top": 450.09375,
+          "bottom": 614.09375
+        },
+        "actionBottom": 398.59375,
+        "cardTop": 690
+      }
+    },
+    {
+      "name": "No horizontal overflow 768x1024",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 768x1024",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 451.9084635416667,
+          "right": 686.5279947916667,
+          "top": 353.4373372395833,
+          "bottom": 600.0886393229166
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 768x1024",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 67.9,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 768x1024",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 451.9084635416667,
+          "right": 686.5279947916667,
+          "top": 353.4373372395833,
+          "bottom": 600.0886393229166
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125
+        }
+      }
+    },
+    {
+      "name": "No horizontal overflow 1024x768",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 1024x768",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 459.0744140625,
+          "right": 731.9677734375,
+          "top": 272.106201171875,
+          "bottom": 558.994091796875
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1024x768",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 94.3,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 1024x768",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 459.0744140625,
+          "right": 731.9677734375,
+          "top": 272.106201171875,
+          "bottom": 558.994091796875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125
+        }
+      }
+    },
+    {
+      "name": "No horizontal overflow 1192x720",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 1192x720",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 459.70833333333337,
+          "right": 735.9583333333334,
+          "top": 272.6979166666667,
+          "bottom": 563.1145833333334
+        },
+        "stage": {
+          "left": 14,
+          "right": 1178,
+          "top": 14,
+          "bottom": 706,
+          "width": 1164,
+          "height": 692
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1192x720",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 94.3,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 1192x720",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 459.70833333333337,
+          "right": 735.9583333333334,
+          "top": 272.6979166666667,
+          "bottom": 563.1145833333334
+        },
+        "aside": {
+          "left": 965.640625,
+          "right": 1148,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125
+        }
+      }
+    },
+    {
+      "name": "No horizontal overflow 1280x720",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 1280x720",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 613.111328125,
+          "right": 871.029296875,
+          "top": 189.46630859375,
+          "bottom": 460.61083984375
+        },
+        "stage": {
+          "left": 14,
+          "right": 1266,
+          "top": 14,
+          "bottom": 706,
+          "width": 1252,
+          "height": 692
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1280x720",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 49,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 1280x720",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 613.111328125,
+          "right": 871.029296875,
+          "top": 189.46630859375,
+          "bottom": 460.61083984375
+        },
+        "aside": {
+          "left": 1005.453125,
+          "right": 1222,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375
+        }
+      }
+    },
+    {
+      "name": "No horizontal overflow 1440x900",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 1440x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 637.0093098958334,
+          "right": 927.1682942708334,
+          "top": 195.14982096354166,
+          "bottom": 500.1887532552084
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1440x900",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 32.6,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 1440x900",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 637.0093098958334,
+          "right": 927.1682942708334,
+          "top": 195.14982096354166,
+          "bottom": 500.1887532552084
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375
+        }
+      }
+    },
+    {
+      "name": "No horizontal overflow 1920x1080",
+      "pass": true
+    },
+    {
+      "name": "Full head stays inside hero 1920x1080",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 798.75,
+          "right": 1091.25,
+          "top": 241.5625,
+          "bottom": 549.0625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052
+        }
+      }
+    },
+    {
+      "name": "Cards clear every visible portrait frame 1920x1080",
+      "pass": true,
+      "detail": {
+        "minimumGapPx": 161.9,
+        "requiredGapPx": 16
+      }
+    },
+    {
+      "name": "Head clear of supporting copy 1920x1080",
+      "pass": true,
+      "detail": {
+        "head": {
+          "left": 798.75,
+          "right": 1091.25,
+          "top": 241.5625,
+          "bottom": 549.0625
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375
+        }
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "framesInSilhouetteEnvelope": 120
+}

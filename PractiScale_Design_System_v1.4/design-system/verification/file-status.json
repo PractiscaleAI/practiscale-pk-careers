@@ -1,0 +1,128 @@
+[
+  {
+    "file": "01-brand-essence.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "1c822f2cbbf1420d3f7078bec78bd011f14fa523edf50567b4e12327f6daec4f",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "02-brand-story.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "96c2d095774e8fd30c854a20a3da2669d16596cc4306595c2b3189f6958d2ea9",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "03-voice-and-tone.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "82d46b5f830f75a1464c3e9ce33de6e6e1ee3ce5e99c20f98cd105df1323ff61",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "04-logo.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "28ede8e56f3370fb719afec13b6371e27db22d82e39dc06bb630bac180ebd017",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "05-color.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "6fef57d6886c5e5e547e7ba52822753bf2abeaf41737279d1451518ca0bef02b",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "06-typography.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "4a0edf4d2798ca124d906997142e1244314f0af92b45dc13a215804c3834eea0",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "07-imagery-and-iconography.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "f29444931620bb448a7ac1fd3fd8aaae27fe2d66a522778560792c99f198095d",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "08-3d-experience.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "3f4fc221867442e1a8fcd4c35c9d9779082c5394cb50f3666b64fa7fb95b5f72",
+    "action": "Retired content replaced by an explicit notice."
+  },
+  {
+    "file": "09-layout-and-interface.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "faa019b177c0b726e689ba6897db4fc6e277373fe351589b7fdf6f3ffb310a6f",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "10-applications.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "ff5c02502c23af992595be633e3587958585bb37916de845ca17b526eb7e1cd6",
+    "action": "Retired content replaced by an explicit notice."
+  },
+  {
+    "file": "11-sources.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "df7f5ed76eaed29cbe284133a17339c0d07556f88c568c9b3a8cfc3b82c77d3d",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "12-changelog.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "85e1d24b7a0885f70ca6373dd07a44e86e6ab5f7daf345cf108427248230d768",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "components.css",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "5f61d31f592823929cbea12bd10ee27574e63c2982cfd995e6a9703ba9610359",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "README.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "6f17d6dd983ad1c416b6302b315489f755f1ba37e2169fecad28109f87de0199",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "tokens.css",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "84745b13db87be49b7807f85c8c003a948e8e51196cb08cfc889e84948e34ccf",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "tokens.json",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "1686df1d308d146709390bddd0b022748398db0a7b73691244a273a4bb5e34f5",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "components/Button.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "7ba3bd4ccf12ee4f91102e525c56bff88628f46ebf3bf62db9f9919674520e63",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  },
+  {
+    "file": "components/Logo.md",
+    "updated": true,
+    "original_unchanged": true,
+    "sha256": "bf81f75b004545ca098f3c0e4cc579327cbb5ea7f486743a1a8a9d594ba11b5e",
+    "action": "Synchronized with Edition 1.4 fixed brand rules and open-layout status."
+  }
+]

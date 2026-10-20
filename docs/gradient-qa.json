@@ -1,0 +1,1184 @@
+{
+  "version": "0.11",
+  "build": "passed",
+  "viewports": 9,
+  "renderStates": 18,
+  "readabilityChecks": 151,
+  "minimumOrdinaryTextOnGradient": 5.7,
+  "interactionAndAccessibilityChecks": 22,
+  "visualReview": "Desktop, tablet, regular phone and short-phone scroll end inspected. A preliminary capture paint delay was corrected before the final background-pixel measurements.",
+  "creditsSpent": 0,
+  "mediaChanged": false,
+  "contrast": {
+    "method": "Conservative minimum over every rendered background pixel in each visible text bounding box, with content hidden without changing layout. Buttons and cards retain their tested opaque surfaces.",
+    "checks": [
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-copy h1",
+        "ratio": 9.791,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.379,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-copy p",
+        "ratio": 5.768,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-location",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 6.949,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-aside>p",
+        "ratio": 9.875,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-aside>p",
+        "ratio": 6.025,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.096,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-copy h1",
+        "ratio": 9.791,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.379,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-copy p",
+        "ratio": 5.768,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-location",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 6.949,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-aside>p",
+        "ratio": 9.875,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-aside>p",
+        "ratio": 6.025,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1440x900-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.096,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-copy h1",
+        "ratio": 10.797,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.481,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-copy p",
+        "ratio": 6.806,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-location",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.261,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-aside>p",
+        "ratio": 10.321,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-aside>p",
+        "ratio": 6.398,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.096,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-copy h1",
+        "ratio": 10.797,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.481,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-copy p",
+        "ratio": 6.806,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-location",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.261,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-aside>p",
+        "ratio": 10.321,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-aside>p",
+        "ratio": 6.398,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1858x874-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.096,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.096,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.584,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-copy p",
+        "ratio": 6.538,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-jobs",
+        "ratio": 5.7,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-location",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.696,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-aside>p",
+        "ratio": 11.108,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-aside>p",
+        "ratio": 6.795,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.103,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 9.698,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-copy h1",
+        "ratio": 11.096,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.584,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-copy p",
+        "ratio": 6.538,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-jobs",
+        "ratio": 5.7,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-location",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.696,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-aside>p",
+        "ratio": 11.108,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-aside>p",
+        "ratio": 6.795,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.103,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "1024x768-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 9.698,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-jobs",
+        "ratio": 6.722,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-location",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.696,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-aside>p",
+        "ratio": 11.261,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 5.935,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 9.054,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-copy p",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-jobs",
+        "ratio": 6.722,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-location",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.696,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-aside>p",
+        "ratio": 11.261,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 5.935,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "768x1024-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 9.054,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-jobs",
+        "ratio": 6.815,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.089,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.062,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-jobs",
+        "ratio": 6.815,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.089,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x900-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.062,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x667-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "375x667-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-end",
+        "selector": ".hero-jobs",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.431,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "375x667-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.331,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.005,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.262,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.189,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-jobs",
+        "ratio": 7.005,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.262,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "430x932-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.189,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "320x568-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.261,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "320x568-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.696,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "320x568-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "320x568-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "320x568-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "320x568-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 6.35,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "320x568-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 10.342,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-copy h1",
+        "ratio": 11.096,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.584,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-copy p",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-location",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.481,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-aside>p",
+        "ratio": 10.946,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-aside>p",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-start",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.261,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-copy h1",
+        "ratio": 11.096,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-copy h1 span",
+        "ratio": 7.584,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-copy p",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-jobs",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-topline .eyebrow",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-location",
+        "ratio": 7.092,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-aside>.eyebrow",
+        "ratio": 7.481,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-aside>p",
+        "ratio": 10.946,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-aside>p",
+        "ratio": 6.996,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-bottom-right>.eyebrow",
+        "ratio": 7.197,
+        "required": 4.5,
+        "pass": true
+      },
+      {
+        "case": "2560x1440-end",
+        "selector": ".hero-bottom-right>a",
+        "ratio": 11.261,
+        "required": 4.5,
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "failures": []
+  },
+  "browser": {
+    "checks": [
+      {
+        "name": "Homepage returns 200",
+        "pass": true
+      },
+      {
+        "name": "Hero-only page",
+        "pass": true
+      },
+      {
+        "name": "No footer or other homepage sections",
+        "pass": true
+      },
+      {
+        "name": "One H1",
+        "pass": true
+      },
+      {
+        "name": "Original logo 240px minimum",
+        "pass": true
+      },
+      {
+        "name": "No corrupted text",
+        "pass": true
+      },
+      {
+        "name": "Exact trust figures",
+        "pass": true
+      },
+      {
+        "name": "Visible founder caption removed",
+        "pass": true
+      },
+      {
+        "name": "No overflow 375",
+        "pass": true,
+        "detail": {
+          "viewport": 375,
+          "document": 375
+        }
+      },
+      {
+        "name": "H1 visible 375",
+        "pass": true
+      },
+      {
+        "name": "No overflow 768",
+        "pass": true,
+        "detail": {
+          "viewport": 768,
+          "document": 768
+        }
+      },
+      {
+        "name": "H1 visible 768",
+        "pass": true
+      },
+      {
+        "name": "No overflow 1440",
+        "pass": true,
+        "detail": {
+          "viewport": 1440,
+          "document": 1440
+        }
+      },
+      {
+        "name": "H1 visible 1440",
+        "pass": true
+      },
+      {
+        "name": "Founder menu works",
+        "pass": true
+      },
+      {
+        "name": "Escape returns focus",
+        "pass": true
+      },
+      {
+        "name": "Program enquiry has real destination",
+        "pass": true
+      },
+      {
+        "name": "Mobile menu closes after anchor",
+        "pass": true
+      },
+      {
+        "name": "No-JavaScript hero remains visible",
+        "pass": true
+      },
+      {
+        "name": "Reduced motion static portrait",
+        "pass": true
+      },
+      {
+        "name": "No runtime errors",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "name": "No automated accessibility violations",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "violations": [],
+    "errors": []
+  }
+}

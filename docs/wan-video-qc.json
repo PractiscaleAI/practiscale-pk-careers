@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-20",
+  "model": "wan2_7",
+  "jobId": "9b84ff14-a82f-4702-8efd-f960e9944d59",
+  "status": "completed_rejected_by_no_blink_qc",
+  "requested": {
+    "durationSeconds": 2,
+    "resolutionTier": "1080p",
+    "outputs": 1
+  },
+  "actualVideo": {
+    "width": 1440,
+    "height": 1440,
+    "fps": 30,
+    "decodedNativeFrames": 60,
+    "videoDurationSeconds": 2.0,
+    "originalContainerDurationSeconds": 2.07
+  },
+  "credits": {
+    "approved": 5,
+    "spent": 5,
+    "balanceBefore": 590.32,
+    "balanceAfter": 585.32
+  },
+  "review": {
+    "coverage": "All 60 native frames inspected in consecutive full-frame and face-crop contact sheets; six selected face crops enlarged for detail review.",
+    "noBlink": "FAIL",
+    "blink": {
+      "count": 1,
+      "oneBasedFrameRangeApprox": [
+        9,
+        15
+      ],
+      "secondsApprox": [
+        0.267,
+        0.467
+      ],
+      "evidenceFrame": 11,
+      "evidenceTimeSeconds": 0.333
+    },
+    "likenessAndDetail": "Broadly recognizable against approved keyframes, with some facial texture softening/change during motion; exact likeness and unchanged fine detail cannot be certified.",
+    "motion": "One turn toward the viewer, mostly frontal by about one second, with slight residual movement afterward. Mouth remains closed in inspected frames; no obvious speaking.",
+    "decision": "Do not integrate. A final-frame hold cannot remove a blink during the turn; skipping or synthesizing eye frames is not an approved quality fix."
+  },
+  "audio": "Provider included an AAC audio stream despite the silent-shot prompt. Review deliverable removes audio using video stream copy; no video re-encoding.",
+  "deliverable": "Generated-Video-Silent.mp4",
+  "deliverableSha256": "ae4a409dc66dda95b77532850bd7f04735d6579ed7d8b65588dec365b3753599",
+  "originalSha256": "9cc7d03d3d372cb925ddef803399cceafa7eaf11258266ce99e1e89f757324c2",
+  "productionMediaChanged": false,
+  "productionManifestSha256": "890f4b90b4bc497d0c6ac5a11b40325ad406b5e578d7bcc50a13b75bc7b21a18",
+  "retryPolicy": "No further paid generation authorized. No automatic retry.",
+  "verificationScope": "Media inspection and documentation only; no new website build or browser testing claimed."
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-20",
+  "status": "completed_rejected_by_qc",
+  "quotedCredits": 7,
+  "allocation": {
+    "videos": 1,
+    "durationSeconds": 4,
+    "model": "Kling 3.0 Pro",
+    "sound": "off"
+  },
+  "reference": {
+    "name": "Afra - CEO Master Identity",
+    "id": "b4b49ad4-c503-4227-9a83-1fb4b212b4c9",
+    "status": "completed"
+  },
+  "params": {
+    "model": "kling3_0",
+    "count": 1,
+    "duration": 4,
+    "mode": "pro",
+    "sound": "off",
+    "aspect_ratio": "1:1",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "ef274b1d-5243-437d-8e5e-32709567a7b3"
+      }
+    ],
+    "prompt": "Single locked-camera high-end corporate studio portrait of <<<b4b49ad4-c503-4227-9a83-1fb4b212b4c9>>> using the supplied start image. Preserve this exact person's face, age, eye shape, nose, hairline, dense full-length beard, skin texture, teal suit and black open-collar shirt in every frame. The entire motion is ONE controlled head rotation: begin at the supplied three-quarter left-facing pose; from 0.3 to 3.0 seconds rotate only the head smoothly and monotonically toward the camera, decelerate into direct frontal eye contact, then remain completely motionless facing the visitor for the final second. Keep the head upright: no tilt, nod, bounce, overshoot, reversal or second turn. Both eyes stay naturally OPEN in every frame; zero blinks, zero winks, no eyelid closure, no squinting. Mouth stays gently CLOSED with the same calm confident expression throughout: no speech, lip movement, teeth, smile change or jaw motion. Neck, shoulders, torso, hands, clothing and hair remain still. Fixed lens, fixed framing, identical subject size and position, constant lighting and exposure. Uniform solid deep teal studio backdrop #134143 for clean foreground extraction; no gradient baked into the footage. No camera move, zoom, pan, orbit, cut, transition, body turn, breathing sway, morph, warping, flicker, text, props or sound. A restrained four-second executive portrait designed for a website's reversible scroll animation."
+  },
+  "acceptance": [
+    "Same likeness, full beard, hair and existing professional suit",
+    "One monotonic head turn toward direct frontal eye contact",
+    "No blinks or winks in any retained frame",
+    "Mouth closed with no lip motion",
+    "Shoulders, torso, framing and exposure stable",
+    "Stop at a clean frontal frame; hold it in the website to prevent subsequent drift",
+    "Inspect full sequence and scroll/reverse behavior before replacing existing assets"
+  ],
+  "retryPolicy": "One quoted attempt only. No further paid attempts without a new cost review.",
+  "existingWebsiteMedia": "unchanged; replacement requirement remains pending",
+  "creditsSpent": 7,
+  "jobId": "f2a2311d-84d0-41af-9af3-5da3a24c9e47",
+  "qcReport": "ceo-video-qc.json"
+}

@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-20",
+  "status": "integrated_user_accepted_blink",
+  "approval": "Wan 3.0 Prime at 24 credits. also tell me what prompts you are using?",
+  "model": "wan3_0_prime",
+  "count": 1,
+  "duration": 4,
+  "resolution": "1080p",
+  "aspect_ratio": "1:1",
+  "generate_audio": false,
+  "enable_thinking": true,
+  "quotedCredits": 24,
+  "additionalHiggsfieldCreditsSpentThisRevision": 0,
+  "jobSubmitted": true,
+  "keyframes": {
+    "start-side-neutral.png": {
+      "sha256": "949bb59720fc3b381d8a2748c83adfe2fa30b9731f21ac99d9f3c4f5c79aef08",
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "user_approved"
+    },
+    "end-front-neutral.png": {
+      "sha256": "d358e9cb9e55b27ced7628a3e1b8458442dde4c49d5f1f4badaff5e7923a3203",
+      "size": [
+        1254,
+        1254
+      ],
+      "status": "user_approved"
+    }
+  },
+  "prompts": "Prompts.md",
+  "qc": "Visually checked proposed full portraits against their source poses and authentic footage crops. Mouth corners appear more neutral; exact likeness requires user review. No claim of pixel-identical non-mouth regions after generative edits.",
+  "retryPolicy": "User accepted this generated video including its blink. Integrate it; no further generation authorized.",
+  "websiteChanged": true,
+  "jobId": "5a9cf3ed-7741-427b-a175-55f4c55eb210",
+  "params": {
+    "model": "wan3_0_prime",
+    "count": 1,
+    "duration": 4,
+    "resolution": "1080p",
+    "aspect_ratio": "1:1",
+    "generate_audio": false,
+    "enable_thinking": true,
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "160a2cee-89ec-4620-ae58-b8ad0b34e051"
+      },
+      {
+        "role": "end_image",
+        "value": "b6c6a12e-112a-46b1-9f22-a0d61629d263"
+      }
+    ],
+    "prompt": "A single locked-camera, four-second corporate portrait shot interpolating between the supplied START and END images of the same man. Keep his recognizable facial identity, natural facial proportions and asymmetry, eye shape, nose, hairline, swept hairstyle, dense beard, skin tone and fine photographic detail consistent throughout. Keep the charcoal suit, black open-collar shirt, teal rim lighting, deep teal background, framing and subject scale constant.\n\nMaintain the SAME calm, confident, NEUTRAL resting expression throughout: relaxed cheeks, relaxed mouth corners and gently closed lips. Both eyes remain naturally open with a steady eyelid opening throughout the turn and hold. No smile or expression change, no blinking, squinting, winking, speech or lip movement.\n\nTiming: 0.0-0.3 seconds, hold the supplied side-facing START pose. From 0.3-3.0 seconds, make ONE smooth coordinated head-and-shoulder turn toward the camera, matching the supplied frontal END pose. Keep the chin level and body position fixed. Gently decelerate into direct eye contact. From 3.0-4.0 seconds, hold the END pose still with the same neutral expression and open eyes.\n\nNo reversal, second turn, nod, tilt, chin lift, body sway, camera motion, zoom, focus change, lighting change, cut or added objects. No face morphing, beautification, skin smoothing, loss of beard detail, texture flicker or motion blur. Silent video."
+  },
+  "balanceBefore": 585.32,
+  "keyframeApproval": "use them.",
+  "productionManifestSha256Before": "890f4b90b4bc497d0c6ac5a11b40325ad406b5e578d7bcc50a13b75bc7b21a18",
+  "videoAcceptance": "its still have a eye blink but use this video.",
+  "creditsSpent": 24,
+  "balanceAfter": 561.32,
+  "actualVideo": {
+    "size": [
+      1440,
+      1440
+    ],
+    "fps": 30,
+    "nativeFrames": 120,
+    "durationSeconds": 4,
+    "audio": false,
+    "sha256": "0ec8590cba0e4e557d3d1acdf5e6286a9c81a72385ce33efd8150424559ff8e7"
+  },
+  "qcReport": "QC-report.json",
+  "verification": "Integration-Verification.json"
+}

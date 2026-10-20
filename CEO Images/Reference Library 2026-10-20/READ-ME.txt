@@ -1,0 +1,35 @@
+PRACTISCALE CEO - AUTHENTIC REFERENCE LIBRARY
+20 October 2026
+
+Six photographed reference shots extracted from C6874.MP4 and C6876.MP4.
+All 624 decoded frames were reviewed in consecutive face contact sheets.
+These files are actual video frames, not new AI portraits.
+
+CONTENTS
+01-face-crops/: six native-pixel PNG crops, with the face unretouched.
+02-original-4k-frames/: six corresponding 3840 x 2160 PNG frames.
+PREVIEW.jpg: a labelled comparison board; resized for viewing only.
+reference-manifest.json: source hashes, original paths, exact frame numbers,
+timestamps, crop rectangles, image dimensions and file hashes.
+verification.json: frame coverage and pixel-preservation checks.
+
+FUTURE USE
+Use 01-front-neutral as the primary facial reference.
+Add 05 and 06 for detailed nose, cheek, ear and beard views.
+Add 04 for the opposite three-quarter angle and 02 for an alternative direct view.
+Use 03 only when a natural smiling expression is intended.
+The direction names refer to the viewer's left/right. No frames are mirrored.
+Keep the natural eye shape, brows, cheek width, nose, lip shape, beard outline,
+hairline, skin texture and facial asymmetry from these photographed sources.
+Previously rejected generated charcoal portraits are not identity references.
+
+LIMITATIONS
+The close-up video clips the crown of the hair; its PNGs retain this honestly.
+Use the wider frontal views for the complete hairstyle. Wider shots have fewer
+face pixels than the close-up. No missing hair or skin detail was invented.
+The recordings have natural head angles, blinks and speech. The six chosen
+stills have open eyes; the smile shot intentionally includes visible teeth.
+Future generative edits still require a likeness review against these originals.
+
+Original videos remain unchanged. No video was regenerated, no face library was
+uploaded, no generation credits were used, and no active website asset changed.

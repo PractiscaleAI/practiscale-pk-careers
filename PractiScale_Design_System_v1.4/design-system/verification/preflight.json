@@ -1,0 +1,327 @@
+{
+  "edition": "1.4",
+  "stage": "pre-render source validation",
+  "checks": [
+    {
+      "check": "All 18 requested paths updated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Current edition and layout status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exact generated CSS parity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Official palette unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Same primary gradient on all themes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Every CSS variable reference resolves",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "Retired flat-button variables removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Reduced motion cancels press transform",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Disabled controls retain explicit labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "All internal Markdown links resolve",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "Local CSS and font assets resolve",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "Four font families and readable body floor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Nine real font resources bundled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Font license texts bundled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Approved logo file bytes preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No obsolete active rules",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "Both retired paths are notices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "24 semantic text pairs meet 4.5:1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "All active gradients pass sampled contrast",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Strong boundaries and focus pass 3:1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Every requested source changed",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "text_pairs": [
+    {
+      "theme": "deep_teal",
+      "role": "text",
+      "fg": "#FFFFFF",
+      "bg": "#134143",
+      "ratio": 11.26091316389117
+    },
+    {
+      "theme": "deep_teal",
+      "role": "text",
+      "fg": "#FFFFFF",
+      "bg": "#1C5052",
+      "ratio": 9.056881775416922
+    },
+    {
+      "theme": "deep_teal",
+      "role": "text",
+      "fg": "#FFFFFF",
+      "bg": "#265F61",
+      "ratio": 7.261634573214897
+    },
+    {
+      "theme": "deep_teal",
+      "role": "text-muted",
+      "fg": "#BDD3D3",
+      "bg": "#134143",
+      "ratio": 7.197385490790316
+    },
+    {
+      "theme": "deep_teal",
+      "role": "text-muted",
+      "fg": "#BDD3D3",
+      "bg": "#1C5052",
+      "ratio": 5.788684144302933
+    },
+    {
+      "theme": "deep_teal",
+      "role": "text-muted",
+      "fg": "#BDD3D3",
+      "bg": "#265F61",
+      "ratio": 4.641256224607837
+    },
+    {
+      "theme": "deep_teal",
+      "role": "accent-text",
+      "fg": "#9BE3D6",
+      "bg": "#134143",
+      "ratio": 7.6962198388663
+    },
+    {
+      "theme": "deep_teal",
+      "role": "accent-text",
+      "fg": "#9BE3D6",
+      "bg": "#1C5052",
+      "ratio": 6.189884619813946
+    },
+    {
+      "theme": "deep_teal",
+      "role": "accent-text",
+      "fg": "#9BE3D6",
+      "bg": "#265F61",
+      "ratio": 4.962931091963265
+    },
+    {
+      "theme": "deep_teal",
+      "role": "link",
+      "fg": "#A9D4EC",
+      "bg": "#134143",
+      "ratio": 7.140288932079317
+    },
+    {
+      "theme": "deep_teal",
+      "role": "link",
+      "fg": "#A9D4EC",
+      "bg": "#1C5052",
+      "ratio": 5.742762754580577
+    },
+    {
+      "theme": "deep_teal",
+      "role": "link",
+      "fg": "#A9D4EC",
+      "bg": "#265F61",
+      "ratio": 4.604437332683791
+    },
+    {
+      "theme": "fog",
+      "role": "text",
+      "fg": "#134143",
+      "bg": "#F3F6F6",
+      "ratio": 10.362189531253662
+    },
+    {
+      "theme": "fog",
+      "role": "text",
+      "fg": "#134143",
+      "bg": "#FFFFFF",
+      "ratio": 11.26091316389117
+    },
+    {
+      "theme": "fog",
+      "role": "text",
+      "fg": "#134143",
+      "bg": "#E6ECEC",
+      "ratio": 9.423778661669566
+    },
+    {
+      "theme": "fog",
+      "role": "text-muted",
+      "fg": "#46565B",
+      "bg": "#F3F6F6",
+      "ratio": 7.0458723691885154
+    },
+    {
+      "theme": "fog",
+      "role": "text-muted",
+      "fg": "#46565B",
+      "bg": "#FFFFFF",
+      "ratio": 7.656968314851192
+    },
+    {
+      "theme": "fog",
+      "role": "text-muted",
+      "fg": "#46565B",
+      "bg": "#E6ECEC",
+      "ratio": 6.4077906976454155
+    },
+    {
+      "theme": "fog",
+      "role": "accent-text",
+      "fg": "#0B6559",
+      "bg": "#F3F6F6",
+      "ratio": 6.398772772368698
+    },
+    {
+      "theme": "fog",
+      "role": "accent-text",
+      "fg": "#0B6559",
+      "bg": "#FFFFFF",
+      "ratio": 6.953745087154126
+    },
+    {
+      "theme": "fog",
+      "role": "accent-text",
+      "fg": "#0B6559",
+      "bg": "#E6ECEC",
+      "ratio": 5.819293126346138
+    },
+    {
+      "theme": "fog",
+      "role": "link",
+      "fg": "#0D77A9",
+      "bg": "#F3F6F6",
+      "ratio": 4.5696652526611
+    },
+    {
+      "theme": "fog",
+      "role": "link",
+      "fg": "#0D77A9",
+      "bg": "#FFFFFF",
+      "ratio": 4.965997142115752
+    },
+    {
+      "theme": "fog",
+      "role": "link",
+      "fg": "#0A6390",
+      "bg": "#E6ECEC",
+      "ratio": 5.491249807536365
+    }
+  ],
+  "gradients": [
+    {
+      "state": "default",
+      "samples": 1001,
+      "minimum": 4.707543567669724,
+      "passed": true
+    },
+    {
+      "state": "hover",
+      "samples": 1001,
+      "minimum": 5.508239141732331,
+      "passed": true
+    },
+    {
+      "state": "pressed",
+      "samples": 1001,
+      "minimum": 6.569706121077318,
+      "passed": true
+    }
+  ],
+  "minimum_boundary_ratio": 3.2727331918353273,
+  "source_sha256": {
+    "00-read-first.md": "5956ce9503b4042653bd8b475ce536be07b44874925e6169c585f39fef69fa53",
+    "01-brand-essence.md": "1c822f2cbbf1420d3f7078bec78bd011f14fa523edf50567b4e12327f6daec4f",
+    "02-brand-story.md": "96c2d095774e8fd30c854a20a3da2669d16596cc4306595c2b3189f6958d2ea9",
+    "03-voice-and-tone.md": "82d46b5f830f75a1464c3e9ce33de6e6e1ee3ce5e99c20f98cd105df1323ff61",
+    "04-logo.md": "28ede8e56f3370fb719afec13b6371e27db22d82e39dc06bb630bac180ebd017",
+    "05-color.md": "6fef57d6886c5e5e547e7ba52822753bf2abeaf41737279d1451518ca0bef02b",
+    "06-typography.md": "4a0edf4d2798ca124d906997142e1244314f0af92b45dc13a215804c3834eea0",
+    "07-imagery-and-iconography.md": "f29444931620bb448a7ac1fd3fd8aaae27fe2d66a522778560792c99f198095d",
+    "08-3d-experience.md": "3f4fc221867442e1a8fcd4c35c9d9779082c5394cb50f3666b64fa7fb95b5f72",
+    "09-layout-and-interface.md": "faa019b177c0b726e689ba6897db4fc6e277373fe351589b7fdf6f3ffb310a6f",
+    "10-applications.md": "ff5c02502c23af992595be633e3587958585bb37916de845ca17b526eb7e1cd6",
+    "11-sources.md": "df7f5ed76eaed29cbe284133a17339c0d07556f88c568c9b3a8cfc3b82c77d3d",
+    "12-changelog.md": "85e1d24b7a0885f70ca6373dd07a44e86e6ab5f7daf345cf108427248230d768",
+    "MIGRATION.md": "573a6ce1219c9ff6ffc74fface43069ae136012735951190aaca5fca0687433f",
+    "README.md": "6f17d6dd983ad1c416b6302b315489f755f1ba37e2169fecad28109f87de0199",
+    "components/Button.md": "7ba3bd4ccf12ee4f91102e525c56bff88628f46ebf3bf62db9f9919674520e63",
+    "components/Logo.md": "bf81f75b004545ca098f3c0e4cc579327cbb5ea7f486743a1a8a9d594ba11b5e",
+    "tokens.json": "1686df1d308d146709390bddd0b022748398db0a7b73691244a273a4bb5e34f5",
+    "tokens.css": "84745b13db87be49b7807f85c8c003a948e8e51196cb08cfc889e84948e34ccf",
+    "components.css": "5f61d31f592823929cbea12bd10ee27574e63c2982cfd995e6a9703ba9610359",
+    "fonts.css": "0e6a37dffa878f28de0993c71dd532e59d304e8e2467daaeb8a1aa659ea0a196",
+    "components/bundle.css": "1242e6ba8393090ba0980132b1c55f4c71ae96be534d54a1d10044e8d77c53d2"
+  }
+}

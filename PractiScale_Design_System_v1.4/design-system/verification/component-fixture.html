@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PractiScale component fixture - layout not approved</title>
+<link rel="stylesheet" href="../components/bundle.css">
+<style>
+body{margin:0;padding:16px;background:#F3F6F6;color:#134143;font-family:Manrope,sans-serif;font-size:16px;line-height:1.625}
+main{max-width:1040px;margin:auto}h1{font-family:Sora,sans-serif;font-size:30px;line-height:1.25}h2{font:600 24px/32px Sora,sans-serif}
+.fixture{padding:20px;margin-block:20px;border:1px solid var(--line-strong);border-radius:10px}.row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px;margin-block:20px}
+.sample-muted{color:var(--text-muted)}.sample-link{color:var(--link)}.raised{padding:16px;background:var(--surface-2)}.raised a{color:var(--link-raised)}
+.fixture p{max-width:65ch}.long{max-width:300px}.urdu{font-family:"Noto Nastaliq Urdu";font-size:24px;line-height:2.2}
+</style></head><body><main>
+<h1>Component fixture</h1><p><strong>ILLUSTRATIVE ONLY. WEBSITE LAYOUT NOT APPROVED.</strong> These controls exercise reusable styles. This is not a proposed page, a hiring offer, or a live application route.</p>
+<section class="ps fixture" data-theme="deep-teal" id="dark"><h2>Deep Teal theme</h2>
+<a class="ps-logo-space" href="#fixture-end" aria-label="PractiScale home fixture"><img class="ps-logo ps-logo--full" src="../assets/logos/practiscale-logo-reversed.png" width="363" height="67" alt="PractiScale - Built for growth"></a>
+<p>Reading text uses the approved theme foreground.</p><p class="sample-muted">Secondary text remains readable on the actual surface.</p>
+<div class="row"><button class="ps-btn ps-btn--primary primary" type="button">Apply on WhatsApp</button><button class="ps-btn ps-btn--secondary" type="button">See open seats</button><a class="ps-btn ps-btn--ghost" href="#fixture-end">Email your CV</a></div>
+<button class="ps-btn ps-btn--primary disabled" type="button" disabled aria-describedby="dark-reason">Apply on WhatsApp</button><p id="dark-reason">Fixture disabled state: no application is transmitted.</p>
+<div class="raised"><a href="#fixture-end">Accessible raised-surface link</a></div>
+<p class="urdu" lang="ur" dir="rtl">آپ کی ترقی</p></section>
+<section class="ps fixture" data-theme="fog" id="light"><h2>Fog theme</h2>
+<a class="ps-logo-space" href="#fixture-end" aria-label="PractiScale home fixture"><img class="ps-logo ps-logo--full" src="../assets/logos/practiscale-logo-primary.png" width="363" height="67" alt="PractiScale - Built for growth"></a>
+<p>Reading text uses Deep Teal on a calm light ground.</p><p class="sample-muted">Secondary text uses its explicit semantic token.</p>
+<div class="row"><button class="ps-btn ps-btn--primary primary" type="button">Apply on WhatsApp</button><button class="ps-btn ps-btn--secondary" type="button">See open seats</button><a class="ps-btn ps-btn--ghost" href="#fixture-end">Email your CV</a></div>
+<button class="ps-btn ps-btn--primary disabled" type="button" disabled aria-describedby="light-reason">Apply on WhatsApp</button><p id="light-reason">Fixture disabled state: no application is transmitted.</p>
+<div class="raised"><a href="#fixture-end">Accessible raised-surface link</a></div>
+<p class="body">Mobile body scale remains at least 16px.</p>
+<button class="ps-btn ps-btn--primary long" type="button">A deliberately longer illustrative label that must wrap without being cut off</button>
+</section><div class="ps fixture" data-theme="night" id="alias-dark">Deprecated dark alias: new Deep Teal values.</div>
+<div class="ps fixture" data-theme="day" id="alias-light">Deprecated light alias: new Fog values.</div>
+<p id="fixture-end">End of component fixture. No network destination or application sending exists here.</p>
+</main><script>window.fixtureClicks=0;document.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>window.fixtureClicks++));</script></body></html>

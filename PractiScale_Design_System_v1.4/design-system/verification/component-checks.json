@@ -1,0 +1,430 @@
+{
+  "scope": "Local reusable component fixture; website layouts remain pending.",
+  "checks": [
+    {
+      "name": "Local font loads: Sora 600",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Sora 700",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Manrope 400",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Manrope 500",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Manrope 700",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: JetBrains Mono 400",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: JetBrains Mono 500",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Noto Nastaliq Urdu 400",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Local font loads: Noto Nastaliq Urdu 700",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "Imported stylesheet chain applies tokens and component rules",
+      "passed": true,
+      "detail": {
+        "bg": "#134143",
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif"
+      }
+    },
+    {
+      "name": "Default gradient: dark",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))"
+    },
+    {
+      "name": "White Manrope Bold label: dark",
+      "passed": true,
+      "detail": {
+        "background": "rgb(15, 130, 114)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(214, 230, 230)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Primary size/radius: dark",
+      "passed": true,
+      "detail": {
+        "background": "rgb(15, 130, 114)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(214, 230, 230)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Hover gradient: dark",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(13, 118, 104), rgb(9, 95, 135))"
+    },
+    {
+      "name": "Pressed gradient: dark",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(11, 105, 93), rgb(8, 84, 119))"
+    },
+    {
+      "name": "Keyboard focus visible: dark",
+      "passed": true,
+      "detail": {
+        "background": "rgb(15, 130, 114)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(214, 230, 230)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "solid",
+        "outlineColor": "rgb(155, 227, 214)",
+        "outlineWidth": "2px",
+        "outlineOffset": "2px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Explicit disabled state: dark",
+      "passed": true,
+      "detail": {
+        "background": "rgb(38, 95, 97)",
+        "image": "none",
+        "color": "rgb(189, 211, 211)",
+        "border": "rgb(139, 182, 182)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(189, 211, 211)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Native disabled semantics: dark",
+      "passed": true
+    },
+    {
+      "name": "Original logo loaded at minimum width: dark",
+      "passed": true,
+      "detail": {
+        "complete": true,
+        "natural": 363,
+        "width": 240
+      }
+    },
+    {
+      "name": "Default gradient: light",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))"
+    },
+    {
+      "name": "White Manrope Bold label: light",
+      "passed": true,
+      "detail": {
+        "background": "rgb(15, 130, 114)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(15, 130, 114)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Primary size/radius: light",
+      "passed": true,
+      "detail": {
+        "background": "rgb(15, 130, 114)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(15, 130, 114)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Hover gradient: light",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(13, 118, 104), rgb(9, 95, 135))"
+    },
+    {
+      "name": "Pressed gradient: light",
+      "passed": true,
+      "detail": "linear-gradient(to right, rgb(11, 105, 93), rgb(8, 84, 119))"
+    },
+    {
+      "name": "Keyboard focus visible: light",
+      "passed": true,
+      "detail": {
+        "background": "rgb(13, 117, 103)",
+        "image": "linear-gradient(to right, rgb(15, 130, 114), rgb(11, 107, 152))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(15, 130, 114)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "solid",
+        "outlineColor": "rgb(13, 119, 169)",
+        "outlineWidth": "2px",
+        "outlineOffset": "2px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Explicit disabled state: light",
+      "passed": true,
+      "detail": {
+        "background": "rgb(230, 236, 236)",
+        "image": "none",
+        "color": "rgb(70, 86, 91)",
+        "border": "rgb(111, 130, 135)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(70, 86, 91)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0.1s, 0.1s"
+      }
+    },
+    {
+      "name": "Native disabled semantics: light",
+      "passed": true
+    },
+    {
+      "name": "Original logo loaded at minimum width: light",
+      "passed": true,
+      "detail": {
+        "complete": true,
+        "natural": 363,
+        "width": 240
+      }
+    },
+    {
+      "name": "Primary identity identical across themes",
+      "passed": true
+    },
+    {
+      "name": "Dark CTA pale boundary",
+      "passed": true,
+      "detail": "rgb(214, 230, 230)"
+    },
+    {
+      "name": "Deprecated aliases use new values",
+      "passed": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(243, 246, 246)"
+      ]
+    },
+    {
+      "name": "No fixture horizontal overflow: 360",
+      "passed": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "No fixture horizontal overflow: 375",
+      "passed": true,
+      "detail": {
+        "width": 375,
+        "scrollWidth": 375
+      }
+    },
+    {
+      "name": "No fixture horizontal overflow: 768",
+      "passed": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "No fixture horizontal overflow: 1024",
+      "passed": true,
+      "detail": {
+        "width": 1024,
+        "scrollWidth": 1024
+      }
+    },
+    {
+      "name": "No fixture horizontal overflow: 1440",
+      "passed": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "Mobile body default is 16px",
+      "passed": true
+    },
+    {
+      "name": "Long labels wrap without truncation",
+      "passed": true,
+      "detail": {
+        "client": 298,
+        "scroll": 298,
+        "height": 84
+      }
+    },
+    {
+      "name": "Reduced motion removes scaling and transitions",
+      "passed": true,
+      "detail": {
+        "background": "rgb(11, 105, 93)",
+        "image": "linear-gradient(to right, rgb(11, 105, 93), rgb(8, 84, 119))",
+        "color": "rgb(255, 255, 255)",
+        "border": "rgb(214, 230, 230)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(255, 255, 255)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "Forced colors retain discernible controls",
+      "passed": true,
+      "detail": {
+        "background": "rgb(255, 255, 255)",
+        "image": "none",
+        "color": "rgb(0, 0, 0)",
+        "border": "rgb(0, 0, 0)",
+        "radius": "11px",
+        "height": 48,
+        "font": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+        "weight": "700",
+        "opacity": "1",
+        "outline": "none",
+        "outlineColor": "rgb(0, 0, 0)",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "name": "No JavaScript errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No external requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "viewports": [
+    {
+      "width": 360,
+      "scrollWidth": 360
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "browser": "155.0.8059.84",
+  "passed": true
+}

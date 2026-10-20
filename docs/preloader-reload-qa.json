@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-19T21:36:06.678Z",
+  "checks": [
+    {
+      "name": "Host receives readiness before reveal 1440 visit 0",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 1440 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 1440 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 1440 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 1440 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Host receives readiness before reveal 1440 visit 1",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 1440 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 1440 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 1440 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 1440 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Host receives readiness before reveal 1440 visit 2",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 1440 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 1440 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 1440 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 1440 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Host receives readiness before reveal 375 visit 0",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 375 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 375 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 375 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 375 visit 0",
+      "pass": true
+    },
+    {
+      "name": "Host receives readiness before reveal 375 visit 1",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 375 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 375 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 375 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 375 visit 1",
+      "pass": true
+    },
+    {
+      "name": "Host receives readiness before reveal 375 visit 2",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "ready": {
+          "type": "ready",
+          "locked": true,
+          "overflow": "hidden"
+        }
+      }
+    },
+    {
+      "name": "Same original visual configuration 375 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Logo-window reveal uses transparent host 375 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Original completion unlocks page 375 visit 2",
+      "pass": true
+    },
+    {
+      "name": "Removed scroll hint stays absent 375 visit 2",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors across cold visits and two reloads",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

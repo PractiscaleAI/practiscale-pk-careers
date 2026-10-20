@@ -1,0 +1,7191 @@
+{
+  "checks": [
+    {
+      "name": "Header/divider breathing room 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Phone card floats inside hero 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Approved artwork with readable size 320x568",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 92,
+          "top": 18,
+          "bottom": 78,
+          "width": 64,
+          "height": 60,
+          "centerY": 48
+        },
+        "logo": {
+          "left": 44,
+          "right": 76,
+          "top": 33,
+          "bottom": 63,
+          "width": 32,
+          "height": 30,
+          "centerY": 48
+        },
+        "nav": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 292,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 264,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 292,
+          "top": 146,
+          "bottom": 439,
+          "width": 264,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 312,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 292,
+          "top": 847,
+          "bottom": 953,
+          "width": 264,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 292,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 264,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 312,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 304,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Header/divider breathing room 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Phone card floats inside hero 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Approved artwork with readable size 360x800",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 332,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 304,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 332,
+          "top": 146,
+          "bottom": 439,
+          "width": 304,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "editorial": {
+          "left": 8,
+          "right": 352,
+          "top": 146,
+          "bottom": 439,
+          "width": 344,
+          "height": 293,
+          "centerY": 292.5
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 332,
+          "top": 847,
+          "bottom": 953,
+          "width": 304,
+          "height": 106,
+          "centerY": 900
+        },
+        "footer": {
+          "left": 28,
+          "right": 332,
+          "top": 977,
+          "bottom": 1047.390625,
+          "width": 304,
+          "height": 70.390625,
+          "centerY": 1012.1953125
+        },
+        "stage": {
+          "left": 8,
+          "right": 352,
+          "top": 8,
+          "bottom": 1063.390625,
+          "width": 344,
+          "height": 1055.390625,
+          "centerY": 535.6953125
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Header/divider breathing room 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Phone card floats inside hero 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Approved artwork with readable size 375x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 347,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 319,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 347,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 319,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 367,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 359,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 347,
+          "top": 690,
+          "bottom": 796,
+          "width": 319,
+          "height": 106,
+          "centerY": 743
+        },
+        "footer": {
+          "left": 28,
+          "right": 347,
+          "top": 805.609375,
+          "bottom": 876,
+          "width": 319,
+          "height": 70.390625,
+          "centerY": 840.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 367,
+          "top": 8,
+          "bottom": 892,
+          "width": 359,
+          "height": 884,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Mobile menu and CTA remain usable",
+      "pass": true
+    },
+    {
+      "name": "Header/divider breathing room 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Phone card floats inside hero 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Approved artwork with readable size 430x932",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64,
+          "centerY": 48
+        },
+        "brand": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "logo": {
+          "left": 28,
+          "right": 268,
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 47.9921875
+        },
+        "nav": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44,
+          "centerY": 48
+        },
+        "divider": {
+          "left": 28,
+          "right": 402,
+          "top": 104,
+          "bottom": 130.5,
+          "width": 374,
+          "height": 26.5,
+          "centerY": 117.25
+        },
+        "copy": {
+          "left": 28,
+          "right": 402,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 374,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "editorial": {
+          "left": 8,
+          "right": 422,
+          "top": 146,
+          "bottom": 445.59375,
+          "width": 414,
+          "height": 299.59375,
+          "centerY": 295.796875
+        },
+        "aside": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0,
+          "centerY": 0
+        },
+        "trust": {
+          "left": 28,
+          "right": 402,
+          "top": 722,
+          "bottom": 828,
+          "width": 374,
+          "height": 106,
+          "centerY": 775
+        },
+        "footer": {
+          "left": 28,
+          "right": 402,
+          "top": 837.609375,
+          "bottom": 908,
+          "width": 374,
+          "height": 70.390625,
+          "centerY": 872.8046875
+        },
+        "stage": {
+          "left": 8,
+          "right": 422,
+          "top": 8,
+          "bottom": 924,
+          "width": 414,
+          "height": 916,
+          "centerY": 466
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png",
+        "lines": 1.9998504784688997
+      }
+    },
+    {
+      "name": "Header/divider breathing room 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 768x1024",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 724,
+          "top": 32,
+          "bottom": 96,
+          "width": 680,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 676,
+          "right": 724,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 724,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 680,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 381.90625,
+          "top": 184,
+          "bottom": 474,
+          "width": 337.90625,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 754,
+          "top": 184,
+          "bottom": 474,
+          "width": 740,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 564.4375,
+          "right": 724,
+          "top": 184,
+          "bottom": 253.28125,
+          "width": 159.5625,
+          "height": 69.28125,
+          "centerY": 218.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 836,
+          "bottom": 948,
+          "width": 340,
+          "height": 112,
+          "centerY": 892
+        },
+        "footer": {
+          "left": 570.03125,
+          "right": 724,
+          "top": 914.203125,
+          "bottom": 974,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 944.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 754,
+          "top": 14,
+          "bottom": 1010,
+          "width": 740,
+          "height": 996,
+          "centerY": 512
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 768x1024",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "Header/divider breathing room 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1024x768",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 980,
+          "top": 32,
+          "bottom": 96,
+          "width": 936,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 932,
+          "right": 980,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 980,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 936,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 360,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1010,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 996,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 797.640625,
+          "right": 980,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 580,
+          "bottom": 692,
+          "width": 340,
+          "height": 112,
+          "centerY": 636
+        },
+        "footer": {
+          "left": 826.03125,
+          "right": 980,
+          "top": 658.203125,
+          "bottom": 718,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 688.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1010,
+          "top": 14,
+          "bottom": 754,
+          "width": 996,
+          "height": 740,
+          "centerY": 384
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1024x768",
+      "pass": true,
+      "detail": 1.999421296296296
+    },
+    {
+      "name": "Header/divider breathing room 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1200x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 44,
+          "right": 1156,
+          "top": 32,
+          "bottom": 96,
+          "width": 1112,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 44,
+          "right": 284,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1108,
+          "right": 1156,
+          "top": 40,
+          "bottom": 88,
+          "width": 48,
+          "height": 48,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 44,
+          "right": 1156,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1112,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 44,
+          "right": 404,
+          "top": 184,
+          "bottom": 474,
+          "width": 360,
+          "height": 290,
+          "centerY": 329
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1186,
+          "top": 184,
+          "bottom": 474,
+          "width": 1172,
+          "height": 290,
+          "centerY": 329
+        },
+        "aside": {
+          "left": 973.640625,
+          "right": 1156,
+          "top": 184,
+          "bottom": 339.28125,
+          "width": 182.359375,
+          "height": 155.28125,
+          "centerY": 261.640625
+        },
+        "trust": {
+          "left": 44,
+          "right": 384,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1002.03125,
+          "right": 1156,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1186,
+          "top": 14,
+          "bottom": 886,
+          "width": 1172,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1200x900",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "Header/divider breathing room 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1201x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1143,
+          "top": 32,
+          "bottom": 96,
+          "width": 1085,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 529.765625,
+          "right": 1143,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1143,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1085,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 420,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1187,
+          "top": 184,
+          "bottom": 481.09375,
+          "width": 1173,
+          "height": 297.09375,
+          "centerY": 332.546875
+        },
+        "aside": {
+          "left": 926.453125,
+          "right": 1143,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 989.03125,
+          "right": 1143,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1187,
+          "top": 14,
+          "bottom": 886,
+          "width": 1173,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999464881958637
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1201x900",
+      "pass": true,
+      "detail": 1.999464881958637
+    },
+    {
+      "name": "Header/divider breathing room 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1440x900",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1382,
+          "top": 32,
+          "bottom": 96,
+          "width": 1324,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 768.765625,
+          "right": 1382,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1382,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1324,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 420,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1426,
+          "top": 184,
+          "bottom": 500.03125,
+          "width": 1412,
+          "height": 316.03125,
+          "centerY": 342.015625
+        },
+        "aside": {
+          "left": 1165.453125,
+          "right": 1382,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 712,
+          "bottom": 824,
+          "width": 340,
+          "height": 112,
+          "centerY": 768
+        },
+        "footer": {
+          "left": 1228.03125,
+          "right": 1382,
+          "top": 790.203125,
+          "bottom": 850,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 820.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1426,
+          "top": 14,
+          "bottom": 886,
+          "width": 1412,
+          "height": 872,
+          "centerY": 450
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.9997062640291807
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1440x900",
+      "pass": true,
+      "detail": 1.9997062640291807
+    },
+    {
+      "name": "Scrolled logo backing protects all artwork",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "clearance": [
+          17,
+          17,
+          17,
+          17
+        ]
+      }
+    },
+    {
+      "name": "Header/divider breathing room 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1536x696",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 58,
+          "right": 1478,
+          "top": 32,
+          "bottom": 96,
+          "width": 1420,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 58,
+          "right": 298,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 864.765625,
+          "right": 1478,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 58,
+          "right": 1478,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1420,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 58,
+          "right": 478,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 420,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1522,
+          "top": 184,
+          "bottom": 454.375,
+          "width": 1508,
+          "height": 270.375,
+          "centerY": 319.1875
+        },
+        "aside": {
+          "left": 1261.453125,
+          "right": 1478,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 58,
+          "right": 398,
+          "top": 508,
+          "bottom": 620,
+          "width": 340,
+          "height": 112,
+          "centerY": 564
+        },
+        "footer": {
+          "left": 1324.03125,
+          "right": 1478,
+          "top": 586.203125,
+          "bottom": 646,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 616.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1522,
+          "top": 14,
+          "bottom": 682,
+          "width": 1508,
+          "height": 668,
+          "centerY": 348
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 1.999421296296296
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1536x696",
+      "pass": true,
+      "detail": 1.999421296296296
+    },
+    {
+      "name": "Header/divider breathing room 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Copy, trust and footer share content gutters 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Logo and navigation vertically centered 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "No overlaps or horizontal overflow 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Desktop header shares hero grid 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Supporting block shares editorial anchor 1920x1080",
+      "pass": true,
+      "detail": {
+        "header": {
+          "left": 84,
+          "right": 1836,
+          "top": 32,
+          "bottom": 96,
+          "width": 1752,
+          "height": 64,
+          "centerY": 64
+        },
+        "brand": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "logo": {
+          "left": 84,
+          "right": 324,
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "width": 240,
+          "height": 44.296875,
+          "centerY": 63.9921875
+        },
+        "nav": {
+          "left": 1222.765625,
+          "right": 1836,
+          "top": 35,
+          "bottom": 93,
+          "width": 613.234375,
+          "height": 58,
+          "centerY": 64
+        },
+        "divider": {
+          "left": 84,
+          "right": 1836,
+          "top": 120,
+          "bottom": 152.5,
+          "width": 1752,
+          "height": 32.5,
+          "centerY": 136.25
+        },
+        "copy": {
+          "left": 84,
+          "right": 504,
+          "top": 184,
+          "bottom": 507,
+          "width": 420,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "editorial": {
+          "left": 14,
+          "right": 1906,
+          "top": 184,
+          "bottom": 507,
+          "width": 1892,
+          "height": 323,
+          "centerY": 345.5
+        },
+        "aside": {
+          "left": 1619.453125,
+          "right": 1836,
+          "top": 184,
+          "bottom": 347.375,
+          "width": 216.546875,
+          "height": 163.375,
+          "centerY": 265.6875
+        },
+        "trust": {
+          "left": 84,
+          "right": 424,
+          "top": 892,
+          "bottom": 1004,
+          "width": 340,
+          "height": 112,
+          "centerY": 948
+        },
+        "footer": {
+          "left": 1682.03125,
+          "right": 1836,
+          "top": 970.203125,
+          "bottom": 1030,
+          "width": 153.96875,
+          "height": 59.796875,
+          "centerY": 1000.1015625
+        },
+        "stage": {
+          "left": 14,
+          "right": 1906,
+          "top": 14,
+          "bottom": 1066,
+          "width": 1892,
+          "height": 1052,
+          "centerY": 540
+        },
+        "overflow": false,
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png",
+        "lines": 2
+      }
+    },
+    {
+      "name": "Headline has no isolated final word 1920x1080",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

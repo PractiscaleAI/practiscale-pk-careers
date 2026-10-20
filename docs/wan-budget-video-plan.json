@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-20",
+  "status": "completed_rejected_by_no_blink_qc",
+  "blockedVeoRequest": {
+    "model": "veo3_1_lite",
+    "approvedCredits": 6,
+    "requestedDuration": 4,
+    "result": "Rejected before job submission",
+    "reason": "Both start_image and end_image require duration 8.",
+    "jobCreated": false,
+    "creditsSpent": 0,
+    "balance": 590.32
+  },
+  "quotes": [
+    {
+      "name": "Veo 3.1 Lite \u2014 8 seconds",
+      "result": {
+        "cost": {
+          "credits": 12,
+          "credits_exact": 12
+        }
+      }
+    },
+    {
+      "name": "Wan 2.7 \u2014 2 seconds, 1080p",
+      "result": {
+        "cost": {
+          "credits": 5,
+          "credits_exact": 5
+        }
+      }
+    },
+    {
+      "name": "Kling 3.0 Pro \u2014 3 seconds",
+      "result": {
+        "cost": {
+          "credits": 5.25,
+          "credits_exact": 5.25
+        }
+      }
+    }
+  ],
+  "recommendedModel": "wan2_7",
+  "quotedCredits": 5,
+  "durationSeconds": 2,
+  "resolution": "1080p",
+  "params": {
+    "count": 1,
+    "duration": 2,
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "555656c2-8b12-47e3-baaf-4a43df7183d7"
+      },
+      {
+        "role": "end_image",
+        "value": "1e53994e-5ee7-4749-8196-40e79e055bb1"
+      }
+    ],
+    "prompt": "A restrained premium corporate portrait, one silent two-second continuous shot from the exact supplied START and END keyframes. Preserve this man's exact identifiable face, natural cheek fullness, eye shape and spacing, nose, closed lips, hairline, swept hair, dense beard outline and length, skin tone, fine skin texture and facial asymmetry in every frame. Preserve the sharp facial detail in the supplied PNGs: crisp natural eyes, brows and beard hairs; stable fine detail and focus throughout, with no skin smoothing, beauty retouching, plastic texture, face replacement, morphing, warping, temporal flicker or motion blur. Keep the charcoal wool suit, black open-collar shirt and subtle teal rim lighting consistent.\n\nThe only action is ONE slow controlled coordinated turn. Begin exactly at the supplied left-looking three-quarter head and slightly turned torso pose. From 0.1 to 1.7 seconds rotate the head and shoulders smoothly in a single direction toward the supplied frontal END pose, decelerating gently to direct camera eye contact. The torso makes only the small rotation needed to match the ending image; body position and scale remain fixed. Hold the exact ending pose completely still for the remaining time. Calm confident expression, relaxed shoulders, level chin and gently CLOSED lips throughout. Both eyes stay naturally fully OPEN in every frame with a steady eyelid opening during the entire turn and hold. Zero blinks, winks, squinting, speech, lip motion, smile change, nods, chin lifts, head tilts, overshoot, reversal or second turn. No shoulder shrug, body sway or breathing motion.\n\nLocked camera and lens, constant size, position, exposure, lighting and depth of field. Uniform deep teal backdrop matching the keyframes. No pan, zoom, orbit, camera shake, cut, transition, text, props, sound or added animation. Precisely interpolate between the two matching reviewed portraits; retain identity and photographic face detail rather than inventing new facial features. Final pose is still and confident.",
+    "model": "wan2_7",
+    "aspect_ratio": "1:1",
+    "resolution": "1080p"
+  },
+  "reuseApprovedKeyframes": true,
+  "websiteTiming": "Scroll animation can control the turn speed independently of source duration and hold a clean final frame.",
+  "qualityCriteria": "Inspect all native frames for identity/face texture, eye closure, blur, flicker, mouth movement and extra motion before integration. Do not lower the face-quality requirement to meet the budget.",
+  "retryPolicy": "No further paid generation authorized. No automatic retry.",
+  "jobId": "9b84ff14-a82f-4702-8efd-f960e9944d59",
+  "approval": "Approve one attempt - 5 credits",
+  "attemptsSubmitted": 1,
+  "productionMediaChanged": false,
+  "creditsSpent": 5,
+  "balanceAfter": 585.32,
+  "actualVideo": {
+    "width": 1440,
+    "height": 1440,
+    "fps": 30,
+    "decodedNativeFrames": 60,
+    "videoDurationSeconds": 2.0,
+    "originalContainerDurationSeconds": 2.07
+  },
+  "qcReport": "wan-video-qc.json"
+}

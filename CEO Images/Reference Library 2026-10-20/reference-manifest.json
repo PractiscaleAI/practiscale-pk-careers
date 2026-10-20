@@ -1,0 +1,190 @@
+{
+  "title": "PractiScale CEO - Original-footage reference library",
+  "date": "2026-10-20",
+  "assetType": "Authentic video stills, not generated character portraits",
+  "sources": {
+    "C6876": {
+      "source": "C:\\Users\\e laptop\\Downloads\\C6876.MP4",
+      "sourceSha256": "607d1e7125b39865ced4af1237920427a1acae0fa1af4041dd1fd08c1427daa7",
+      "decodedFrames": 156,
+      "fps": 25,
+      "originalSize": [
+        3840,
+        2160
+      ],
+      "reviewSize": [
+        1280,
+        720
+      ]
+    },
+    "C6874": {
+      "source": "C:\\Users\\e laptop\\Downloads\\C6874.MP4",
+      "sourceSha256": "ed5c06b6e7b1a255a22e5cddd3a03c1ee5cd48935d213a19f492905076a1637b",
+      "decodedFrames": 468,
+      "fps": 25,
+      "originalSize": [
+        3840,
+        2160
+      ],
+      "reviewSize": [
+        1280,
+        720
+      ]
+    }
+  },
+  "reviewedDecodedFrameCount": 624,
+  "reviewMethod": "Every decoded frame reviewed in consecutive face contact sheets at original 25 fps. Selected original-resolution crops inspected individually. Contact sheets were for visual selection; no claim that every original 4K frame was enlarged individually.",
+  "processing": "FFmpeg native-frame PNG extraction, then rectangular lossless crops only. No generation, face replacement, beauty retouching, reshaping, upscaling, denoising, sharpening, mirroring or background removal. Preview board alone is resized.",
+  "limits": [
+    "C6876 crops retain the crown clipping already present in the source; use C6874 for complete hair outline.",
+    "C6874 is a wider shot, so its face crops contain fewer native face pixels despite the source being 4K.",
+    "Near-frontal views retain small natural head angles; they are not fabricated perfectly symmetrical front views.",
+    "Original recordings contain natural blinks and speaking. Six selected stills have open eyes; shot 03 intentionally shows a natural smile.",
+    "These photographed references preserve the recorded face; they do not guarantee exact likeness in any future generated media."
+  ],
+  "referencePriority": [
+    "01-front-neutral",
+    "05-profile-viewer-right",
+    "06-three-quarter-viewer-right",
+    "04-three-quarter-viewer-left",
+    "02-front-relaxed",
+    "03-front-warm-smile"
+  ],
+  "newGenerationCreditsSpent": 0,
+  "uploadedToExternalServices": false,
+  "websiteMediaChanged": false,
+  "shots": [
+    {
+      "id": "01-front-neutral",
+      "label": "Near-frontal / neutral",
+      "purpose": "Natural cheek width, brows, eyes, closed lips and beard silhouette; slight head angle retained.",
+      "cropBox": [
+        1569,
+        45,
+        2394,
+        1071
+      ],
+      "seconds": 9.04,
+      "sourceVideo": "C6874.MP4",
+      "frameOneBased": 227,
+      "faceCropFile": "01-face-crops/01-front-neutral.png",
+      "originalFrameFile": "02-original-4k-frames/01-front-neutral.png",
+      "faceCropSize": [
+        825,
+        1026
+      ],
+      "faceCropSha256": "021e735b1c60ca835b647d406b2ca50ae2adb505ce5a1a33e4119e81918ae0e1",
+      "originalFrameSha256": "8eff2f3149c875ddbb2dd0a7b0f46f19304471aa470c6ae708e839b22de2f467"
+    },
+    {
+      "id": "02-front-relaxed",
+      "label": "Near-frontal / relaxed",
+      "purpose": "Closed-mouth direct view and full hairstyle; wider source shot has less facial detail than the close-up.",
+      "cropBox": [
+        1635,
+        90,
+        2403,
+        1056
+      ],
+      "seconds": 15.48,
+      "sourceVideo": "C6874.MP4",
+      "frameOneBased": 388,
+      "faceCropFile": "01-face-crops/02-front-relaxed.png",
+      "originalFrameFile": "02-original-4k-frames/02-front-relaxed.png",
+      "faceCropSize": [
+        768,
+        966
+      ],
+      "faceCropSha256": "600df07ba49fa40143ea1b132e3080a2fb73a9f1208855d1e7bd71b8207a276f",
+      "originalFrameSha256": "058210eb2eccd9b02b6cb1e3e5d0e21abeed7ce8fee2ce9e159b538e704659a5"
+    },
+    {
+      "id": "03-front-warm-smile",
+      "label": "Frontal / natural smile",
+      "purpose": "Real expression and smile reference; do not use as a closed-mouth video endpoint.",
+      "cropBox": [
+        1536,
+        57,
+        2304,
+        1023
+      ],
+      "seconds": 1.48,
+      "sourceVideo": "C6874.MP4",
+      "frameOneBased": 38,
+      "faceCropFile": "01-face-crops/03-front-warm-smile.png",
+      "originalFrameFile": "02-original-4k-frames/03-front-warm-smile.png",
+      "faceCropSize": [
+        768,
+        966
+      ],
+      "faceCropSha256": "ea0d7efd4a268d1a216de536d1bd1adeeffd3ba5aa8402243fdf0853d4cc8322",
+      "originalFrameSha256": "6b171d819bc215433d9585ecaace3f2e863973e04973054cd4b72b0609408e78"
+    },
+    {
+      "id": "04-three-quarter-viewer-left",
+      "label": "Three-quarter / viewer-left",
+      "purpose": "Opposite head angle with open eyes and closed lips.",
+      "cropBox": [
+        1749,
+        33,
+        2484,
+        963
+      ],
+      "seconds": 13.32,
+      "sourceVideo": "C6874.MP4",
+      "frameOneBased": 334,
+      "faceCropFile": "01-face-crops/04-three-quarter-viewer-left.png",
+      "originalFrameFile": "02-original-4k-frames/04-three-quarter-viewer-left.png",
+      "faceCropSize": [
+        735,
+        930
+      ],
+      "faceCropSha256": "e789ef6d5e127aca11e95c58d3f98e7a4818dd432446a12fc4391a898c58c1c4",
+      "originalFrameSha256": "9692a4e8b5bf7ab286696f90a0c3fc3af8555803e2ad70670d2b127d3323f493"
+    },
+    {
+      "id": "05-profile-viewer-right",
+      "label": "Profile / viewer-right",
+      "purpose": "High-detail nose, cheek, ear and beard profile. Crown is clipped in the original recording.",
+      "cropBox": [
+        564,
+        0,
+        3030,
+        2160
+      ],
+      "seconds": 0.56,
+      "sourceVideo": "C6876.MP4",
+      "frameOneBased": 15,
+      "faceCropFile": "01-face-crops/05-profile-viewer-right.png",
+      "originalFrameFile": "02-original-4k-frames/05-profile-viewer-right.png",
+      "faceCropSize": [
+        2466,
+        2160
+      ],
+      "faceCropSha256": "586b4a018e8393e27b04153d4a8810f5c9e83b4e0a9493acc194c78e50e5a581",
+      "originalFrameSha256": "e13ddbea68d69c7860315bb2b7c98517d03105af5cef6507ba67bdb3d405e459"
+    },
+    {
+      "id": "06-three-quarter-viewer-right",
+      "label": "Three-quarter / viewer-right",
+      "purpose": "High-detail face and beard transition toward the camera. Crown is clipped in the original recording.",
+      "cropBox": [
+        288,
+        0,
+        2562,
+        2160
+      ],
+      "seconds": 4.96,
+      "sourceVideo": "C6876.MP4",
+      "frameOneBased": 125,
+      "faceCropFile": "01-face-crops/06-three-quarter-viewer-right.png",
+      "originalFrameFile": "02-original-4k-frames/06-three-quarter-viewer-right.png",
+      "faceCropSize": [
+        2274,
+        2160
+      ],
+      "faceCropSha256": "ecd73ec012fe9bda6e3e418dcec46afcf9364addd9df5433dd0d33861cb3a1ca",
+      "originalFrameSha256": "cc0f692e7f94d0f8e43a72c63808308e36731060c3642466feef274e14fe9d03"
+    }
+  ]
+}

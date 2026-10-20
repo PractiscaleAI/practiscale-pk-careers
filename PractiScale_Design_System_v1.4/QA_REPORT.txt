@@ -1,0 +1,48 @@
+PRACTISCALE / PACKAGE VERIFICATION / EDITION 1.4
+19 October 2026
+
+DELIVERED
+- All 18 requested paths updated; originals unchanged.
+- 64-page consolidated handbook; all requested file contents included.
+- Original supplied logo PNG files reused byte-for-byte.
+- Nine font-weight files and four license texts included.
+- Fixed brand rules, adaptable defaults, illustrations, pending layouts, and
+  facts awaiting confirmation clearly distinguished.
+- Former rendered-experience and applications paths contain retirement notices.
+
+BEFORE PDF GENERATION
+- 21 source preflight checks passed.
+- Exact tokens.json / generated tokens.css parity.
+- Internal Markdown links, CSS imports, font assets, variables, and all paths checked.
+- No obsolete active background, renderer, flat-button, or glow specifications.
+- 24 semantic text pairs passed 4.5:1.
+- 1,001 sRGB samples per active CTA state passed 4.5:1.
+- Strong control boundaries and focus tokens passed 3:1 on tested surfaces.
+- 42 local Chrome 155.0.8059.84 fixture checks passed.
+- Font loading, both themes, button states, focus, disabled semantics, labels,
+  logo dimensions, 360/375/768/1024/1440px widths, reduced motion, and forced
+  colors checked. No external requests or JavaScript errors.
+
+AFTER PDF EXPORT
+- Every page rendered with PDFium at 180dpi / 2400 x 1700px.
+- Every final page visually reviewed; no unintended clipping, overlap, missing
+  image, missing glyph, or blank page observed.
+- All PDF font resources embedded. Searchable text; no null/replacement characters.
+- No off-page text; all 22 file-navigation links match their destinations.
+- Source hashes and complete CSS/JSON listing token coverage verified.
+- PDF parses with pypdf and has no encryption or permission restrictions.
+- ZIP CRC and manifest hashes checked after packaging.
+
+ASSET PROVENANCE
+The supplied PNGs differ slightly from earlier PDF extraction copies. This
+package preserves the supplied PNGs without editing. No logo was redrawn,
+recolored, distorted, or reconstructed. The vector master remains outstanding.
+
+SCOPE AND LIMITS
+Adobe Acrobat application testing, PDF/UA certification, native-speaker Urdu
+approval, print color proofs, and full assistive-technology review were not
+performed. Final layouts, photography, company facts, roles, pay, timings, and
+destinations remain separate inputs. Fixture results do not validate a future
+live website or update an existing site's old consumer logic automatically.
+
+PDF SHA-256: 85e0235a7988e88250d7a51e41459c704c9d985d8229837d479b1bdd0f990ff7

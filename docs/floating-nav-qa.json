@@ -1,0 +1,186 @@
+{
+  "checks": [
+    {
+      "name": "Transparent header and logo at top 320",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "0",
+        "logo": "240px",
+        "top": 8,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Independent surfaces stay visible over later light content 320",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "logo": "240px",
+        "top": 8,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Mobile navigation accessible while scrolled 320",
+      "pass": true
+    },
+    {
+      "name": "Escape closes navigation 320",
+      "pass": true
+    },
+    {
+      "name": "Logo backing clears on return to top 320",
+      "pass": true
+    },
+    {
+      "name": "Transparent header and logo at top 375",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "0",
+        "logo": "240px",
+        "top": 8,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Independent surfaces stay visible over later light content 375",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "logo": "240px",
+        "top": 8,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Mobile navigation accessible while scrolled 375",
+      "pass": true
+    },
+    {
+      "name": "Escape closes navigation 375",
+      "pass": true
+    },
+    {
+      "name": "Logo backing clears on return to top 375",
+      "pass": true
+    },
+    {
+      "name": "Transparent header and logo at top 768",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "0",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Independent surfaces stay visible over later light content 768",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Mobile navigation accessible while scrolled 768",
+      "pass": true
+    },
+    {
+      "name": "Escape closes navigation 768",
+      "pass": true
+    },
+    {
+      "name": "Logo backing clears on return to top 768",
+      "pass": true
+    },
+    {
+      "name": "Transparent header and logo at top 1200",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "0",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Independent surfaces stay visible over later light content 1200",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Mobile navigation accessible while scrolled 1200",
+      "pass": true
+    },
+    {
+      "name": "Escape closes navigation 1200",
+      "pass": true
+    },
+    {
+      "name": "Logo backing clears on return to top 1200",
+      "pass": true
+    },
+    {
+      "name": "Transparent header and logo at top 1440",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "0",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Independent surfaces stay visible over later light content 1440",
+      "pass": true,
+      "detail": {
+        "background": "rgba(0, 0, 0, 0)",
+        "backing": "1",
+        "logo": "240px",
+        "top": 14,
+        "gapPassesThrough": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Desktop disclosure works over later content",
+      "pass": true
+    },
+    {
+      "name": "Logo backing clears on return to top 1440",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

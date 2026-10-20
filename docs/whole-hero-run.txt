@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-20T00:27:04.943Z",
+  "checks": [
+    {
+      "name": "Bottom skill action opens approved training enquiry",
+      "pass": true
+    },
+    {
+      "name": "Escape with navigation closed preserves focus",
+      "pass": true
+    },
+    {
+      "name": "Primary hover does not move or resize the button",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 58,
+          "y": 396.03125,
+          "width": 199.03125,
+          "height": 50
+        },
+        "after": {
+          "x": 58,
+          "y": 396.03125,
+          "width": 199.03125,
+          "height": 50
+        }
+      }
+    },
+    {
+      "name": "Live reduced-motion change removes animated canvas",
+      "pass": true
+    },
+    {
+      "name": "Live reduced-motion change reveals the portrait poster",
+      "pass": true
+    },
+    {
+      "name": "Restoring motion creates one renderer",
+      "pass": true
+    },
+    {
+      "name": "One renderer after breakpoint change 375x900",
+      "pass": true
+    },
+    {
+      "name": "Appropriate frame resolution after breakpoint change 375x900",
+      "pass": true
+    },
+    {
+      "name": "Resized scroll reaches the end frame 375x900",
+      "pass": true
+    },
+    {
+      "name": "One renderer after breakpoint change 1440x900",
+      "pass": true
+    },
+    {
+      "name": "Appropriate frame resolution after breakpoint change 1440x900",
+      "pass": true
+    },
+    {
+      "name": "Resized scroll reaches the end frame 1440x900",
+      "pass": true
+    },
+    {
+      "name": "One renderer after breakpoint change 375x667",
+      "pass": true
+    },
+    {
+      "name": "Appropriate frame resolution after breakpoint change 375x667",
+      "pass": true
+    },
+    {
+      "name": "Resized scroll reaches the end frame 375x667",
+      "pass": true
+    },
+    {
+      "name": "Enlarged desktop copy grows without trust-card overlap",
+      "pass": true,
+      "detail": {
+        "copy": 789,
+        "trust": 853,
+        "width": 1440
+      }
+    },
+    {
+      "name": "Content-driven height change refreshes scroll endpoint",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion content flow has no empty animation runway",
+      "pass": true,
+      "detail": {
+        "stage": 1001,
+        "scroll": 1001
+      }
+    },
+    {
+      "name": "Reduced motion hides the animation scroll prompt",
+      "pass": true
+    },
+    {
+      "name": "Mobile divider stroke hidden",
+      "pass": true
+    },
+    {
+      "name": "Mobile programme links readable in expanded menu",
+      "pass": true
+    },
+    {
+      "name": "Tabbing out closes the mobile disclosure",
+      "pass": true
+    },
+    {
+      "name": "Tabbing out reaches the unobscured hero action",
+      "pass": true
+    },
+    {
+      "name": "Changing preference during startup cannot resurrect animation",
+      "pass": true
+    },
+    {
+      "name": "Context loss cancels remaining frame downloads",
+      "pass": true,
+      "detail": {
+        "atLoss": 10,
+        "after": 10
+      }
+    },
+    {
+      "name": "Context loss restores visible static portrait",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors during lifecycle checks",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

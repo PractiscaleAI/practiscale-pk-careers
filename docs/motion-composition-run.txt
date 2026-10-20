@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "name": "Three.js frame renderer initialized",
+      "pass": true
+    },
+    {
+      "name": "Approved Prime sequence loaded",
+      "pass": true,
+      "detail": "5a9cf3ed-7741-427b-a175-55f4c55eb210"
+    },
+    {
+      "name": "All native frames available at both resolutions",
+      "pass": true,
+      "detail": 120
+    },
+    {
+      "name": "Scroll advances to frontal end frame",
+      "pass": true,
+      "detail": {
+        "a": 0,
+        "b": 119
+      }
+    },
+    {
+      "name": "Final pose remains fixed through final scroll segment",
+      "pass": true,
+      "detail": {
+        "frame": 119,
+        "holdFraction": 0.15
+      }
+    },
+    {
+      "name": "Reverse scroll reverses sequence",
+      "pass": true,
+      "detail": {
+        "b": 119,
+        "c": 31
+      }
+    },
+    {
+      "name": "Context loss shows poster",
+      "pass": true
+    },
+    {
+      "name": "No WebGL static fallback",
+      "pass": true
+    },
+    {
+      "name": "Mobile sequence responds to scroll",
+      "pass": true
+    },
+    {
+      "name": "Loader settles failed asset",
+      "pass": true
+    },
+    {
+      "name": "Escape closes introduction during font stall",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No render/asset console errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

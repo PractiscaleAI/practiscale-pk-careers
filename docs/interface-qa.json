@@ -1,0 +1,216 @@
+{
+  "checks": [
+    {
+      "name": "No decorative word; readable actions and portrait clearance 320",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 320",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 375",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 375",
+      "pass": true
+    },
+    {
+      "name": "Navbar stays visible through turn 375",
+      "pass": true,
+      "detail": {
+        "header": {
+          "x": 8,
+          "y": 8,
+          "width": 359,
+          "height": 100
+        },
+        "end": {
+          "x": 8,
+          "y": 8,
+          "width": 359,
+          "height": 100
+        }
+      }
+    },
+    {
+      "name": "Outside click closes mobile menu",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 430",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 430",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 768",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 206.078125,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 768",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 1024",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 1024",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 1200",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 1200",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 1440",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 24,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 1440",
+      "pass": true
+    },
+    {
+      "name": "Navbar stays visible through turn 1440",
+      "pass": true,
+      "detail": {
+        "header": {
+          "x": 14,
+          "y": 14,
+          "width": 1412,
+          "height": 122.296875
+        },
+        "end": {
+          "x": 14,
+          "y": 14,
+          "width": 1412,
+          "height": 122.296875
+        }
+      }
+    },
+    {
+      "name": "Hover keeps button bounds stable",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 58,
+          "y": 481.046875,
+          "width": 199.03125,
+          "height": 50
+        },
+        "after": {
+          "x": 58,
+          "y": 481.046875,
+          "width": 199.03125,
+          "height": 50
+        }
+      }
+    },
+    {
+      "name": "Hover surface appears",
+      "pass": true
+    },
+    {
+      "name": "Keyboard focus remains visible",
+      "pass": true
+    },
+    {
+      "name": "No decorative word; readable actions and portrait clearance 1920",
+      "pass": true,
+      "detail": {
+        "wordCount": 0,
+        "overflow": false,
+        "jobsHeight": 44,
+        "portraitGap": 71,
+        "buttonFont": "15px"
+      }
+    },
+    {
+      "name": "Careers enquiry destination 1920",
+      "pass": true
+    },
+    {
+      "name": "Loader visible on same-tab load 0",
+      "pass": true
+    },
+    {
+      "name": "Loader releases content 0",
+      "pass": true
+    },
+    {
+      "name": "Loader visible on same-tab load 1",
+      "pass": true
+    },
+    {
+      "name": "Loader releases content 1",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion disables arrow animation",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

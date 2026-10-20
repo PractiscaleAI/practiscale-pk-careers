@@ -1,0 +1,32 @@
+[
+  {
+    "file": "practiscale-logo-primary.png",
+    "size": [
+      363,
+      67
+    ],
+    "matches_previous_pdf_extraction_pixels": false,
+    "matches_user_asset_file_bytes": true,
+    "authority": "Original supplied logo PNG; reused without editing."
+  },
+  {
+    "file": "practiscale-logo-reversed.png",
+    "size": [
+      363,
+      67
+    ],
+    "matches_previous_pdf_extraction_pixels": false,
+    "matches_user_asset_file_bytes": true,
+    "authority": "Original supplied logo PNG; reused without editing."
+  },
+  {
+    "file": "practiscale-mark.png",
+    "size": [
+      64,
+      60
+    ],
+    "matches_previous_pdf_extraction_pixels": false,
+    "matches_user_asset_file_bytes": true,
+    "authority": "Original supplied logo PNG; reused without editing."
+  }
+]

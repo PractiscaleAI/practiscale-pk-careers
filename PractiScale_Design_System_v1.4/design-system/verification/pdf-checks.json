@@ -1,0 +1,136 @@
+{
+  "pages": 64,
+  "dimensions": [
+    960,
+    680
+  ],
+  "every_page_rendered": true,
+  "resolution": "180dpi / 2400 x 1700px",
+  "fonts_embedded": {
+    "/AAAAAA+JetBrainsMono-Regular": true,
+    "/AAAAAA+Sora-SemiBold": true,
+    "/AAAAAA+Manrope-Regular": true,
+    "/AAAAAA+Manrope-Bold": true
+  },
+  "outside_page_characters": [],
+  "unexpected_blank_pages": [],
+  "null_or_replacement_characters": 0,
+  "all_18_requested_files_included": true,
+  "source_hashes_match": true,
+  "code_listing_coverage": {
+    "tokens.json": {
+      "pages": [
+        48,
+        56
+      ],
+      "source_nonempty_lines": 354,
+      "missing_source_tokens": {}
+    },
+    "tokens.css": {
+      "pages": [
+        57,
+        60
+      ],
+      "source_nonempty_lines": 135,
+      "missing_source_tokens": {}
+    },
+    "components.css": {
+      "pages": [
+        61,
+        62
+      ],
+      "source_nonempty_lines": 32,
+      "missing_source_tokens": {}
+    },
+    "fonts.css": {
+      "pages": [
+        63,
+        63
+      ],
+      "source_nonempty_lines": 10,
+      "missing_source_tokens": {}
+    },
+    "components/bundle.css": {
+      "pages": [
+        64,
+        64
+      ],
+      "source_nonempty_lines": 4,
+      "missing_source_tokens": {}
+    }
+  },
+  "encrypted": false,
+  "pdf_sha256": "85e0235a7988e88250d7a51e41459c704c9d985d8229837d479b1bdd0f990ff7",
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "method": "Complete page contacts reviewed; final contents and source appendices inspected again. Render hashes confirm that previously reviewed pages 1-47 are unchanged except the updated contents, which was reviewed separately.",
+    "outcome": "No unintended clipping, overlap, missing glyph, missing image, or blank page observed."
+  },
+  "contents_links_verified": 22
+}

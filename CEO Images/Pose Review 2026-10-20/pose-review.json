@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-20",
+  "status": "poses_user_approved_video_attempt_failed",
+  "videoGenerationAllowed": true,
+  "videoSubmitted": true,
+  "newHiggsfieldCreditsUsed": 0,
+  "start": {
+    "filename": "start-side-body-turn.png",
+    "sourceGeneratedFile": "C:\\Users\\e laptop\\.codex\\generated_images\\01a15511-6104-7303-b70d-4ecf86429712\\exec-c79f6aa9-254a-4090-8fba-a21de649a0f6.png",
+    "targetHeadTurnDegrees": 38,
+    "targetTorsoTurnDegrees": 12,
+    "direction": "Subject's right / viewer's left; same direction as the preceding side-pose reference",
+    "prompt": "Revise the STARTING POSE for a matching pair of executive portrait keyframes. EDIT TARGET Image 1 is the existing frontal ending portrait; it is authoritative for the person, exact charcoal suit and black open-collar shirt, lighting, waist-up square composition, scale and centered position. Image 2 is the actual man's authentic three-quarter video-frame face, looking toward the viewer's LEFT. Image 3 is his authentic near-frontal face. Preserve the recognizable real photographed facial identity from Images 2 and 3: natural full cheek width, eye shapes and spacing, brows, nose profile, closed lips, dense beard shape and length, swept hair/hairline, skin tone and texture and natural asymmetry. No beautification, face slimming, generic-model substitution or invented facial proportions.\n\nPOSE CHANGE: rotate his TORSO approximately 12 degrees toward HIS RIGHT, which is the VIEWER'S LEFT, and rotate his HEAD approximately 38 degrees in that same direction, so the nose clearly points left on the image. The shoulders and chest must visibly follow the head a little: a subtle three-quarter body angle, not a square-front body with only the head turned. This is a modest body turn, not a full side-on torso. Both outer shoulder/upper-arm edges remain visible inside the canvas; preserve natural lapel perspective and anatomically plausible neck attachment. Eyes naturally open and looking in the same leftward direction. Chin level, no nod or sideways tilt; mouth gently closed with the same composed confident calm expression. Keep shoulders relaxed and level, torso upright, arms resting naturally as in Image 1, hands out of frame.\n\nCONTINUITY: rotate around the body's centered vertical axis; do not shift the character left or right in the image. Keep the same head size and height, hair top clearance, complete upper-arm silhouette, lower waist crop, exact jacket and shirt design, no accessories, the same soft facial key light and restrained teal rim light, and the identical deep teal studio background. Keep Image 1's fixed camera and lens. No text, border, duplicate person or pose sheet. Single square photorealistic portrait: this side-facing START will later rotate into the existing frontal END. For review only; create one still image.",
+    "sha256": "5f3e80470dca54e53c8c1ba6b0bc0436dfe3e0e341ed5b402936ddb1888489bb",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  "end": {
+    "filename": "end-front.png",
+    "sourceFile": "PractiScale-CEO-Footage-End.png",
+    "note": "Reused the existing frontal ending portrait at identical dimensions; no new end image generation.",
+    "sha256": "f4a310314ba7968481db9abec0976f9f0e24455b74e544f4c79d1a1d8a949d0b",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  "method": "Built-in image_gen identity-referenced edit for start pose. End portrait reused unchanged. Comparison board is a resized presentation only.",
+  "identityReferences": [
+    "PractiScale-CEO-Reference-Library/01-face-crops/01-front-neutral.png",
+    "PractiScale-CEO-Reference-Library/01-face-crops/04-three-quarter-viewer-left.png"
+  ],
+  "reviewNotes": [
+    "Recognizable likeness visually compared with the authentic footage references; do not claim exact or pixel-identical face reproduction.",
+    "Head and torso angles are generation targets, not measured anatomical rotations.",
+    "Eyes visibly open and lips closed in both stills; these stills do not establish blink-free motion.",
+    "Camera framing, wardrobe, shoulder clearance and studio lighting visually checked.",
+    "User must review the poses before any video generation or upload. No active website asset changed."
+  ],
+  "videoJobId": "d101b7fc-91b1-4338-a086-514e6e241795",
+  "quotedCredits": 8,
+  "approval": "User: use them for the video creation. Preserve the face quality in the video also.",
+  "videoLastStatus": "failed",
+  "alternativeAttemptStatus": "awaiting_quote_approval"
+}

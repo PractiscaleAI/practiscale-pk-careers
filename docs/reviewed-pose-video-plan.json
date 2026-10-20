@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "status": "failed_no_video_returned",
+  "jobId": "d101b7fc-91b1-4338-a086-514e6e241795",
+  "model": "minimax_h3",
+  "quotedCredits": 8,
+  "attemptCount": 1,
+  "userApproval": "User reviewed the head-and-torso starting pose and frontal ending pose, then instructed: use them for the video creation; preserve face quality in the video.",
+  "startImageId": "555656c2-8b12-47e3-baaf-4a43df7183d7",
+  "endImageId": "1e53994e-5ee7-4749-8196-40e79e055bb1",
+  "params": {
+    "model": "minimax_h3",
+    "count": 1,
+    "batch_size": 1,
+    "duration": 4,
+    "resolution": "2K",
+    "aspect_ratio": "1:1",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "555656c2-8b12-47e3-baaf-4a43df7183d7"
+      },
+      {
+        "role": "end_image",
+        "value": "1e53994e-5ee7-4749-8196-40e79e055bb1"
+      }
+    ],
+    "prompt": "A restrained premium corporate portrait, one silent four-second continuous shot from the exact supplied START and END keyframes. Preserve this man's exact identifiable face, natural cheek fullness, eye shape and spacing, nose, closed lips, hairline, swept hair, dense beard outline and length, skin tone, fine skin texture and facial asymmetry in every frame. Preserve the sharp facial detail in the supplied PNGs: crisp natural eyes, brows and beard hairs; stable fine detail and focus throughout, with no skin smoothing, beauty retouching, plastic texture, face replacement, morphing, warping, temporal flicker or motion blur. Keep the charcoal wool suit, black open-collar shirt and subtle teal rim lighting consistent.\n\nThe only action is ONE slow controlled coordinated turn. Begin exactly at the supplied left-looking three-quarter head and slightly turned torso pose. From 0.2 to 2.8 seconds rotate the head and shoulders smoothly in a single direction toward the supplied frontal END pose, decelerating gently to direct camera eye contact. The torso makes only the small rotation needed to match the ending image; body position and scale remain fixed. Hold the exact ending pose completely still for the remaining time. Calm confident expression, relaxed shoulders, level chin and gently CLOSED lips throughout. Both eyes stay naturally fully OPEN in every frame with a steady eyelid opening during the entire turn and hold. Zero blinks, winks, squinting, speech, lip motion, smile change, nods, chin lifts, head tilts, overshoot, reversal or second turn. No shoulder shrug, body sway or breathing motion.\n\nLocked camera and lens, constant size, position, exposure, lighting and depth of field. Uniform deep teal backdrop matching the keyframes. No pan, zoom, orbit, camera shake, cut, transition, text, props, sound or added animation. Precisely interpolate between the two matching reviewed portraits; retain identity and photographic face detail rather than inventing new facial features. Final pose is still and confident."
+  },
+  "productionMediaChanged": false,
+  "retryPolicy": "One attempt only; do not submit further paid generations without new authorization.",
+  "netCreditsSpent": 0,
+  "balanceAfter": 590.32,
+  "failureReason": "No detailed failure reason returned by jobs_wait; no output URL."
+}
