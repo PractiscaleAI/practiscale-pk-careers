@@ -33,7 +33,7 @@ export default function Footer() {
               src="/brand/logos/practiscale-logo-reversed.png"
               width="363"
               height="67"
-              alt="PractiScale — Built for growth"
+              alt="PractiScale. Built for growth"
             />
           </Link>
           <p>

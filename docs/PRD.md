@@ -1,258 +1,107 @@
-# PractiScale hero — Product requirements
+# PractiScale website: Product requirements
 
-Version 0.29 | 20 October 2026 | Status: Compact CTA columns and desktop clearance verified
+Version 0.40 | 22 October 2026 | Status: Shared homepage typography and spacing refined, with a clearer live cortical brain.
 
-## Scope and authority
+## Authority and current scope
 
-Build only the homepage hero, shared navigation and preloader. Other homepage sections, pages, footer, backend and deployment remain deferred. Current user instructions take precedence. Edition 1.4 supplies the website identity; the website PDF supplies content only. Preserve the supplied logo files and local Sora, Manrope and JetBrains Mono fonts.
+Current user instructions take precedence. Build three homepage sections in order: the approved CEO hero, the three-card career-problem section and one continuous training and hiring section. Navigation belongs to the hero. Preserve the original supplied preloader. The career section's three specified destination URLs resolve to focused program and hiring pages using supplied content and the existing enquiry flow. Other sections, pages, footer, backend and deployment remain deferred. Edition 1.4 supplies the brand identity; the website PDF supplies content only. Use the original logos and local Sora, Manrope and JetBrains Mono fonts.
+
+This document describes the current implementation requirements. Earlier revision history is archived in docs/history/ and does not override this version.
+
+## Typography and spacing
+
+Use one responsive scale across the three homepage sections. Preserve the hero's approved two-line headline. The problem and career section headings share a 28-44px scale, 1.18 line height and -0.045em tracking. Card titles share a 24-28px scale and 1.2 line height. Main descriptive copy uses Manrope 16px with 1.6 line height; keep paragraphs readable and avoid a single final orphaned word.
+
+Section eyebrows use JetBrains Mono 11px with consistent tracking. Leave 12px between the eyebrow and heading, then 24px before the card stage. Use the same responsive outer gutter for the two light sections. Primary actions use 15px labels, a 52px minimum height and 12px corners. Compact career buttons may reduce horizontal inset to keep labels on one line. Preserve natural flow when enlarged content cannot fit a pinned scene.
 
 ## Hero
 
-Composition requirement: keep desktop/tablet trust cards clear of the visible portrait silhouette. On narrow desktop/tablet, cards group below the CTA; on phones, use the available copy width with balanced responsive type and no orphaned final word. Mandatory composition QC is defined in AGENTS.md and COMPOSITION-QC.md.
+Retain the Deep Teal environment, approved localized teal/blue lighting and CEO frame sequence. Keep the existing headline, supporting copy and genuine enquiry destinations. The primary CTA remains Explore training. Preserve exactly 100+ / Team members and 46,000 / Candidates in our hiring portal.
 
-Use the portrait-led reference with a Deep Teal background and a localized teal/blue spotlight gradient behind the portrait. The decorative oversized GROWTH word has been removed. Primary action: Explore training. Preserve genuine WhatsApp enquiry destinations. Display exactly 100+ / Team members and 46,000 / Candidates in our hiring portal. These figures are user approved.
+Keep the Your next chapter / Starts with a skill link. Its text block and 44px outlined arrow circle form two columns with a 16px gap; the 18px diagonal arrow is centered against the complete eyebrow/label group. Keep real text bounds at least 15px clear of the circle, and the complete hit target inside the link. On phones, the circle sits at the right reading gutter.
 
-Keep the full hairstyle clear of the top divider and mobile reading content. Normal desktop windows must show the trust cards and Your next chapter / Starts with a skill before scrolling; outer margins count toward viewport height. Short phone/landscape windows and enlarged text may expand naturally to keep content readable and accessible. Do not squeeze or clip content to force every short screen into one viewport.
+Do not restore the decorative GROWTH word, the header divider, the standalone desktop Built for growth caption, Explore careers, Scroll to move forward, founder-name caption or visible skip-intro control. The original logo tagline remains part of supplied artwork.
 
-## Navigation
+Normal desktop windows show supporting hero content before scrolling. Short screens and enlarged text may expand naturally. Preserve full head clearance. Desktop/tablet trust cards must stay at least 16px clear of the visible portrait silhouette, including shoulders, throughout all 120 frames. Phone statistics sit below the portrait and never cover the face or reading/actions. Phone text uses the available reading column without orphaned final words.
 
-On desktop, float the original reversed logo separately from the light navigation panel and its CTA. The space between them remains transparent and allows underlying interactions. Add a Deep Teal backing only behind the logo after 24px of document scroll; remove it at the top. This shared navigation persists across future sections.
+## Navigation: latest clarification
 
-On phones, follow the latest supplied screenshot: one rounded light card holding the original primary logo and a dark teal two-line menu control. Keep the full logo 240px wide and the menu target 44px. Below 348px, use the original approved mark at 32px with protected clear space instead of shrinking the full logo. The enquiry CTA is available inside the expanded menu. This phone treatment supersedes the earlier separate mobile logo/menu surfaces. Menus support keyboard, Escape, outside click and link-close behavior.
+Render the logo and navigation inside the hero stage at their original visual coordinates. On desktop they stay with the pinned hero during its character animation, then leave naturally with that section. On phones they travel with the hero content. Once the visitor moves upward beyond the original header position, bring one floating navigation header into view. On continued downward scrolling, retain its document position and let it scroll away naturally. Return it to the hero when its original position is reached.
 
-## Original preloader — explicit user exception
+Do not automatically hide, fade or slide the navigation out. Upward reveal is allowed; downward movement releases it into document flow. Do not keep it fixed while scrolling down the entire page. Keep desktop logo/navigation as separate visual pieces, with a transparent space between them. Their Deep Teal hero provides logo contrast.
 
-Use the supplied original HTML animation as-is. Preserve its broad translucent ring, dotted boundaries, bottom-up logo fill, white wordmark, original colors/gradients and upper-wing zoom. Default timing: 3-second fill, 450ms hold, 260ms opening, 1.6-second zoom. This original animation is an explicit exception to the website design tokens and supersedes the earlier redesigned resource-progress loader. Its progress describes the introduction animation, not network download readiness.
+Keep the mobile rounded Fog card, original primary logo and dark teal two-line menu button. Use a 240px wordmark and 44px menu target; below 348px use the original 32px mark with protected clear space. Menus support keyboard, Escape, outside click and link-close behavior. Skip to content must bypass navigation and focus the reading content.
 
-The original demo page and preview controls do not appear to visitors; the window reveals the actual hero. Keep every-refresh playback, Escape dismissal, keyboard focus containment, scroll locking through completion, no-JavaScript visibility, original reduced-motion behavior and a bounded host-failure escape. Do not redesign its SVG or animation to approximate the reference.
+## Problem cards and scroll sequence
 
-## Portrait motion and spending
+Eyebrow: The problem
 
-Current approved portrait source: Wan 3.0 Prime job 5a9cf3ed-7741-427b-a175-55f4c55eb210. The user explicitly accepts its natural blink. Use this video with the charcoal suit, black open-collar shirt and teal rim light; keep one turn toward the visitor and a fixed final-pose hold. All 120 source frames remain in order. No blink removal, eye synthesis or further generation is authorized. The 24-credit attempt is complete. Older no-blink/pending replacement statements below are historical and superseded for this accepted clip.
+Heading: Why careers in Pakistan get stuck.
 
-## Acceptance and maintenance
+Place exactly one Explore training CTA below the cards. Retain the training enquiry URL: https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.
 
-Verify the original preloader source, visible fill/open/zoom phases, completion, cached refresh, Escape dismissal, keyboard, failure recovery, reduced motion and no JavaScript. Check hero layouts, mobile navbar, links, footer visibility, text enlargement, portrait clearance, scroll/reverse, rendering fallback and automated accessibility. Inspect screenshots after tests; automated checks do not certify subjective likeness or premium video quality. Keep this PRD and the TRD current when the user adds scope.
+Use exactly these three stories:
 
-## Independent visual QC and shared alignment — 20 October 2026
+1. A degree without a marketable skill
+   You have the qualification. Employers also need practical skills and experience you can bring to the job.
+2. More effort, little financial progress
+   You take on more responsibility and deliver better results, but your income does not reflect the value you create.
+3. Income with no real stability
+   Freelancing brings opportunity. Inconsistent projects and demand make it hard to rely on a steady income.
 
-Treat visual QC as part of completion: inspect real desktop/tablet/mobile renders and scroll states, identify and fix spacing/alignment/typography issues without waiting for the user to report them. Functional tests alone do not certify visual quality. Preserve scope and original artwork.
+No fourth/transition card, added explanation or extra CTA. Do not use em dash punctuation in website copy or related responses.
 
-Use shared responsive gutters for desktop logo, navigation edge, divider, reading content, trust cards and hero footer. Keep 24px between header bottom and divider; align the supporting text block with the main editorial block. Strengthen navigation readability while retaining prescribed CTA type. Inset the phone card 8px inside the hero instead of touching its outer edges, with balanced internal padding. At widths below 348px use the approved original mark alone with proper clear space rather than shrinking the full logo below 240px.
+Follow the user's 21 October desktop and mobile screen recordings. At desktop widths of 1024px and above, a mountain landscape settles into the section, separates into three panels, flips horizontally in 3D and opens into three readable fanned cards. The user rejected the large opening portrait and subsequent ripple texture. Their supplied red landscape defines the artwork direction, but their latest correction requires PractiScale's Deep Teal, surface teal and restrained mint colours. The red original is archived and inactive. Retain the landscape's broad forms and grain, the three accepted front photos, exact story copy, Fog surrounding canvas, fonts and gradient CTA. Scroll position drives and reverses the sequence; the last part holds the readable fan. Do not introduce reference-site wording or another palette.
 
-## Whole-hero QC � 20 October 2026
+Keep the artwork continuous across joined panels, with square internal joins and rounded outer corners. Round each panel only as it separates. Preserve aspect ratio with a shared cover crop. The built-in image-editing tool supplies the brand-colour variant; its prompt, source checksum and edited master are recorded in problem-art-selection.json. Inspiration research is recorded in problem-design-reference-notes.md.
 
-The secondary �Starts with a skill� action opens the same approved training enquiry as the primary CTA, rather than a self-anchor. Closed navigation must leave Escape focus unchanged; leaving the disclosure with the keyboard closes it. Motion preference changes apply immediately without a reload. Switching the phone/desktop breakpoint selects the appropriate frame resolution and cancels the previous renderer/requests. Layout-driven hero height changes refresh scroll geometry. Context loss releases frame resources and stops downloads while restoring the original static portrait.
+Use no previous/next arrows, pagination dots, carousel roles, horizontal swipe navigation or custom arrow-key shortcuts. This latest user request supersedes the earlier request to retain mobile arrows. Below 1024px, follow the supplied mobile recording: cards rise vertically into a layered stack, with slight tilt only during transitions and upright reading holds. Incoming cards cover their predecessors, and reverse scrolling unwinds the stack. Reserve space for upward-revealed navigation without altering its existing behavior. On shorter phones pin only the card stage; the heading and bottom CTA remain in document flow. Use a normal list if the card alone cannot fit or enlarged text needs more space. Native touch scrolling, PageDown/PageUp and normal browser keys advance the sequence without interception. Expose all three stories to assistive technology in document order. Reduced motion shows the completed desktop fan or a phone list without scroll-driven animation. No JavaScript also shows every story as a vertical list.
 
-Existing video pixels and preloader artwork/timing remain unchanged. The current video's blinks and post-frontal drift remain pending the separately cost-reviewed media revision. No generation credits are used for local QC.
+Fit the desktop reading scene, including heading, cards and bottom CTA, within normal viewport height, including 1536x696 CSS pixels. Shorten the landscape opening so the fronts are fully revealed by 48% of desktop travel, leaving the final 52% for reading. Keep outer cards at 2.5 degrees and full scale in that hold. The extra document height is intentional scroll travel for the animation. Keep the section readable at 320-443px widths; normal 375x812 and 430x932 views should fit. At 320x568 and 443x646 keep the card stage within the viewport and release it naturally before the CTA. If enlarged desktop copy cannot fit, show the readable fan in natural flow and disable its pin. Keep faces complete and copy clear.
 
-Phone refinement: hide the divider stroke below the header at widths below 768px. Preserve its spacing and the introductory tagline; the desktop divider remains visible.
+Retain the existing brand palette: Deep Teal for strong surfaces, Fog for reading space, muted teal for depth, mint for small highlights and the original teal-to-blue gradient for primary actions. Improve consistency through restrained colour use. Balance the three accepted photos with subtle CSS exposure/contrast/saturation and a short photo-to-reading fade, preserving the source files and natural skin tones.
 
-Reduced-motion layouts omit the extra animation scroll range, including tall content and short landscape windows. Retain ordinary scrolling needed to read content. The scroll hint has since been removed at all viewport sizes. This setting also responds to changes without refreshing.
+## Current photography selection
 
-Version 0.8 verification: production build passed; 108 checks passed across responsive layout (13 viewports), whole-hero interaction/lifecycle, accessibility, forward/reverse motion and original-preloader suites. No automated WCAG A/AA violations or runtime errors were found. Actual desktop, tablet, phone, short phone, open menu, enlarged-text and scroll-end renders were inspected. Original fill/open/zoom phases were reviewed after an isolated timing run; the original source is unchanged. The existing no-blink/single-turn media requirement remains pending. No credits spent.
+The latest user accepts the two male photos currently displayed. Keep graduate-v1.webp and freelancer-v1.webp. Replace only the woman with professional-v2.webp, showing a more natural working pose, skin texture and ordinary office environment. The newly generated male v2 alternatives are not active.
 
-## Consistent first visit and reload introduction � 20 October 2026
+These are generated editorial illustrations, not actual staff portraits or testimonials. Active selection is recorded in career-image-selection.json. Prompts/provenance are in career-image-prompts.json and career-image-prompts-v2.json. Assets are local responsive WebPs. No Higgsfield credits were used for these images.
 
-Use the same complete original animation and reveal on both the first visit and subsequent reloads. Mount the original iframe only after the host has installed its message listener, focus containment and scroll lock. The opaque server-rendered host remains visible before startup. This prevents a fast iframe from losing its initial ready event during delayed hydration, which previously left an opaque backing behind the logo-window reveal. Preserve the original SVG, script, artwork, colors and timings. Verify delayed page scripts, uncached visits, repeat reloads, skip and the original phases.
+## Continuous training and hiring section
 
-Remove the �Scroll to move forward� link and arrow from the hero on every screen size, per the latest user request. Retain the existing scroll-driven portrait behavior and hash compatibility.
+Place one semantic section after the problem cards. Its eyebrow is Two ways in; H2 is Two ways to start your career at PractiScale. Keep the heading in normal document flow above the animated stage. The latest user removes the introductory sentence.
 
-Version 0.9 verification: production build and 52 focused preloader/reload checks passed. A deliberately delayed first visit and two subsequent reloads were tested at 1440�900 and 375�812. The host consistently received readiness with scroll locked, showed a transparent backing during the logo-window reveal and unlocked on original completion. First-visit/reload renders were visually reviewed. Original source preservation, skip/Escape, focus containment, orientation, reduced motion, no JavaScript and failed-bridge recovery passed. The removed scroll hint was absent on all six visits. No media generated or credits spent.
+The latest user correction replaces the original four-chapter proposal with exactly two homepage cards. Remove the visible Start with training and I have experience buttons. Keyboard-only jump links become visible on focus so both cards remain reachable. Do not add program chapters, earnings, pagination dots or carousel arrows to this section.
 
-## Intro control removal and stat alignment � 20 October 2026
+1. Training Programs. Path 1 of 2 · Start with training. Label: No experience needed. Body: Start with training. Learn the skill, pass the role assessment and move into a paid role on our team or our clients' accounts. CTA View Training Programs goes to /training-programs/appointment-setter.
+2. Jobs. Path 2 of 2 · Bring your experience. Label: For experienced professionals. Body: Bring your experience in sales, design, video, development, AI, recruitment or operations. Apply directly for an open role. CTA See Open Jobs goes to /jobs.
 
-Remove the visible Skip introduction button entirely. Retain Escape dismissal, focus containment on the introduction dialog, automatic completion and failure recovery. Preserve the original animation and consistent first-visit/reload startup.
+Focused program destinations keep the previously supplied program details separately, with after-hiring qualifiers adjacent to earning figures. Do not invent duration, fees, certifications, placement rates or guaranteed hiring. Existing career-area listings invite visitors to confirm current openings with hiring; they are not a live vacancy feed.
 
-On desktop/tablet, align the lower edges of both trust cards with the bottom-right hero link using the existing 36px inset. The deleted scroll hint no longer needs a reserved row under the cards. Keep equal card heights, consistent numeric/label baselines and a two-line minimum label slot; preserve exactly 100+ and 46,000. Phone cards retain the existing stacked footer spacing and content-flow behavior.
+At suitable desktop widths, use one viewport-height stage below the real returning-header footprint. Follow the first exchange in the user's recording: one shared visual panel slides from right to left across the outgoing text, the next text panel rises behind it on the right, and the next visual state reveals downward from the top of the moving footprint. The text groups have a restrained vertical stagger. Begin Training text left and visual right; finish Jobs visual left and text right. Panels retain 24px rounded clipping. Do not uniformly translate two complete text/visual pairs.
 
-Version 0.10 verification: production build and 73 focused checks passed. Responsive/stat geometry was tested at 14 viewport sizes, including 1858�874, with equal card heights/widths, shared number and label rows, common internal insets and desktop alignment to the bottom hero link. Actual large desktop, short desktop and phone renders were inspected. The preloader has no visible skip control; original source preservation, completion, cached refresh, Escape, dialog focus containment, reduced motion, no JavaScript and failure recovery passed. Existing QA setup now uses the retained Escape action. No media generation or credits used.
+Preserve the same dense live triangular-fragment sculpture through dispersal and reassembly. The latest user rejects the gateway, S curve and procedural brain approximation. Training uses the actual ICBM152 cortical surface in a recognizable near-frontal bilateral view, with visible folds and depth occlusion. Jobs illustrates people joining one team through a clear hub and five spaced satellite nodes. Fine connections terminate at the surfaces instead of crossing through the centre or unrelated nodes. Give each node a consistent teal, blue, mint or ivory colour, with depth occlusion and restrained particle sizes. Remove all unrelated floating triangles and decorative visual captions. Frame complete main surfaces at every aspect ratio. Keep the reference's scroll-driven card exchange, including phones. When a short phone can fit the copy but not artwork, retain horizontally exchanging text cards. These are PractiScale interpretations, not recovered reference meshes or claims about the source implementation.
 
-## Hero background gradient � explicit user exception, 20 October 2026
+Reuse Deep Teal, Fog, mint, local Sora/Manrope/JetBrains Mono, established buttons and existing GSAP/Three.js. No replacement palette, bloom, stock imagery, prerecorded visual or second scroll engine. Small pointer parallax applies only on fine-pointer devices. Keep native scrolling, continuous reverse motion and useful reading holds. Finish by releasing the stage naturally, without a second exit effect.
 
-The latest user reference authorizes a professional gradient behind the hero portrait. This is an exception to Edition 1.4's background-gradient restriction for this hero only. Use Deep Teal and its existing surface tone, Growth Teal and Bridge Blue; keep Proof Amber reserved for verified numbers. Use a prominent soft halo around the portrait�s head and shoulders, dark reading areas at the edges and a phone-specific lower focal point with dark upper/lower protection for text. Keep the original preloader, logo and button gradients intact.
+Refine the brain through smaller, finer outlined particles, controlled teal/blue/mint/ivory regions and directional lighting with a gentle opposing fill. Use the existing real cortical surface for a quiet shaded foundation, so folds and the central fissure remain readable. Preserve its geometry, near-frontal angle, camera framing and the Jobs network. The static Training fallback must match the live treatment and contain only the sculpture, without captured navigation.
 
-Implement as static CSS background layers, with a Deep Teal fallback and no extra image, media generation or animation loop. Verify rendered text contrast against the actual gradient, inspect desktop/tablet/phone renders and retain the established hero layout, stat alignment and scroll behavior.
+The latest user requires the mobile experience to remain scroll-driven. On suitable phones and tablets, use a compact pinned composition with live particles above a readable text panel. Native vertical touch scrolling drives a horizontal Training-to-Jobs exchange below, synchronized with the same particle morph and reversible reading holds. Use a reduced particle budget and capped pixel ratio. Keep both panels, complete copy and CTA inside the available viewport.
 
-Gradient refinement: the user explicitly requested a more prominent halo around the character. Increase the off-center teal and blue light sources; use smooth dark edge masks on desktop and separate tablet/phone focal points to protect reading contrast. Keep the effect static and preserve the portrait pixels.
+Reduced motion, unavailable WebGL, insufficient height, enlarged text that cannot fit and no JavaScript show both complete cards in normal document order with static previews and both route links. No long empty fallback scroll rail. Decorative canvas has no semantic content; inactive or unreadable overlapping cards cannot accept focus. Explicit keyboard-only jump links may focus the selected heading; scrolling alone never moves focus.
 
-Version 0.11 verification: production build passed. The final prominent halo was captured at nine viewport sizes in initial/end scroll states. All 151 conservative gradient-text checks passed; ordinary text over the gradient measured at least 5.7:1. This figure excludes buttons/cards, which retain their previously approved opaque surfaces and CTA gradient. All 22 browser interaction/accessibility checks passed with no automated WCAG A/AA violations or runtime errors. Desktop, tablet, phone and short-phone end renders were visually reviewed. Static CSS adds no animation loop or media generation; no credits spent. Original portrait/video and preloader assets remain unchanged.
+The supplied recordings, consecutive-frame observations and fidelity choices are documented in career-section-motion-review.md. Preserve the existing hero, accepted blink and problem card behavior.
 
-## Hero CTA simplification - 20 October 2026
+## Approved CEO media and budget
 
-Remove the Explore careers link and its arrow beneath Explore training, as requested. The editorial action group contains only Explore training. Let the phone portrait follow the shorter content group naturally; verify its clearance, trust-card spacing and footer visibility.
+Preserve Wan 3.0 Prime job 5a9cf3ed-7741-427b-a175-55f4c55eb210: charcoal suit, black open-collar shirt, teal rim light, one turn toward the visitor and a final-pose hold. Preserve all 120 native frames in order and the natural blink explicitly accepted by the user. Do not synthesize eyes, remove the blink or spend further generation credits without authorization.
 
-CTA-removal QC found a phone layout mismatch at 375x860: shortening the copy selected viewport mode while CSS still required content flow, shifting stats and footer gutters. Match HeroLayout to the existing phone content-flow breakpoint (height up to 860px) and verify common reading gutters at that boundary.
+## Original preloader
 
-Version 0.12 verification: production build and 61 responsive/layout checks passed across 15 viewport sizes. The removed hero careers action is absent. The 375x860 boundary now preserves the same copy, stat and footer gutters. Desktop, tablet and phone renders were inspected. The full PRD was restored from its saved copy after an interrupted encoding write; both requirements documents are intact and saved as UTF-8.
+Use the supplied original HTML animation as-is: broad translucent ring, dotted boundaries, bottom-up logo fill, white wordmark and upper-wing zoom. Original colors/gradients are an explicit user exception to website tokens. Default timing is 3s fill, 450ms hold, 260ms opening and 1.6s zoom. Progress describes the intro animation, not network readiness.
 
-## CEO video replacement preflight - 20 October 2026
+Hide original demo/preview controls. Reveal the actual page and replay on every refresh. Preserve keyboard focus containment, Escape dismissal, scroll locking until completion, original reduced-motion behavior, no-JavaScript visibility and bounded failure recovery. Do not approximate or redesign the original artwork.
 
-Higgsfield connection verified. Afra - CEO Master Identity is completed with 80 reference images; selected starting-image job ef274b1d-5243-437d-8e5e-32709567a7b3 is completed and accessible. Reuse this portrait and its existing teal suit; no new still generation is planned.
+## QC and maintenance
 
-The user approved exactly one silent, square, four-second Kling 3.0 Pro attempt at 7 credits. Job f2a2311d-84d0-41af-9af3-5da3a24c9e47 completed on 20 October 2026, reusing the existing teal suit and black shirt. All 97 extracted frames were visually reviewed at 24fps. The candidate failed QC: visible eyelid closures around frames 34, 64 and 85 (one-based), plus chin lift and post-turn pose changes. It has not replaced production. Balance changed from 597.32 to 590.32 credits, confirming 7 credits used. Full parameters are in ceo-video-replacement-plan.json; review evidence is recorded in ceo-video-qc.json. No further paid attempt was submitted or authorized.
-
-Require one monotonic head turn into direct frontal eye contact, then a stable hold, with eyes open throughout, mouth closed, no lip movement, upright head, fixed shoulders/body and fixed framing/exposure. Preserve the original face, full beard, hair and suit. The original prompt's permission for one blink is explicitly superseded.
-
-Inspect every retained frame for blinks, expression changes, facial artifacts and likeness. Only a clean candidate may replace production. Freeze the last accepted frontal frame in the website to prevent post-turn drift; do not rely on generated idle movement. The prior optical-flow blink-removal experiment remains rejected. Any further paid attempt requires a new cost review.
-
-
-## CEO video review outcome - 20 October 2026
-
-Version 0.13 media review: the approved replacement attempt is rejected. Keep the existing production assets and renderer unchanged; the no-blink/single-turn replacement requirement remains outstanding. Freezing an endpoint cannot repair a blink occurring earlier in the turn, and simply removing those frames would introduce motion jumps. No optical-flow repair was used. Source and review evidence were saved for reference. No website source code or active media changed in this revision, so prior interface validation remains historical and no new build is claimed.
-
-
-## Original-footage CEO reference library - 20 October 2026
-
-The user rejected the generated charcoal portraits because the likeness did not match and stopped that video workflow. Those generated images are not approved identity references. No new Higgsfield attempt or portrait upload was completed.
-
-The user supplied C6874.MP4 and C6876.MP4 and requested frame-by-frame review plus a few character shots for future use. Decode and review completed locally at the original 25 fps: 468 frames from C6874 and 156 from C6876, 624 total, with no review-index omissions. Every frame was inspected in consecutive face contact sheets; the six selected native-resolution crops were inspected separately.
-
-Saved six authentic photographed reference shots under CEO Images/Reference Library 2026-10-20/. Include six unretouched native-pixel face crops, six corresponding 3840 x 2160 PNG frames, a labelled preview, source/frame/timestamp manifest and verification report. Pixel comparison confirms each crop exactly matches its rectangle in the decoded source frame. Original source-video hashes are unchanged. The ZIP passed its integrity check.
-
-Use the near-frontal neutral shot as the primary reference, side/three-quarter views for facial geometry, and the smile shot only for an intended smiling expression. C6876 clips the hair crown in the original video; retain that honestly and use C6874 for the full hairstyle. No generative reconstruction, beauty retouching, upscaling, mirroring or background removal was applied. Future generated media still requires a likeness review against the real footage.
-
-This revision adds a reusable local reference library only. Active website media and UI remain unchanged. No new website build or browser validation is claimed. No generation credits were used and no face data was uploaded to an external service for this reference-library task.
-
-
-## Head-and-torso pose review - 20 October 2026
-
-The user requests still poses for review before any video creation. Video generation and new portrait uploads are on hold until that review. Prepared a revised side-facing start with a target 35-40 degree head turn and 10-15 degree torso turn in the same direction (subject right / viewer left). Reused the matching frontal end portrait unchanged. Keep charcoal suit, black open-collar shirt, restrained teal rim light, full hair/shoulder clearance and fixed camera framing. These are approximate pose targets; no anatomical angle measurements are claimed.
-
-Review files and the exact starting-image prompt are saved in CEO Images/Pose Review 2026-10-20/pose-review.json, with the two full-resolution 1254 x 1254 PNGs and a labelled comparison board. The ending PNG matches the previous end file byte for byte. Both stills were visually checked for open eyes, closed lips, framing, clothing and recognizable likeness against the original-footage references. Generated stills are not pixel-exact original photographs; user review is required. These drafts are not approved identity ground truth or approved video keyframes.
-
-If the user approves this pair, the proposed subsequent motion changes from head-only rotation to one restrained coordinated head/torso turn into the frontal end, followed by a still hold. No new video was submitted, no additional Higgsfield credits were spent, and no active website assets changed in this revision. No new website build or browser validation is claimed.
-
-
-## Reviewed pose video attempt - 20 October 2026
-
-The user reviewed the revised side-facing head/torso start and frontal end and explicitly instructed that they be used for video creation, with face quality preserved. This approval fulfills the prior pose-review hold. Uploaded only the two approved full-resolution 1254 x 1254 PNG keyframes to Higgsfield; both uploads returned HTTP 200 and were confirmed.
-
-Submitted exactly one MiniMax H3 four-second 2K attempt, job d101b7fc-91b1-4338-a086-514e6e241795. Exact cost preflight: 8 credits. The prompt requests a single restrained coordinated head/torso turn, steady open eyes, closed lips, fixed camera, stable identity, natural skin/beard detail and a motionless frontal finish. No automatic retries are authorized. Full parameters are in reviewed-pose-video-plan.json.
-
-The result must be inspected frame by frame for blinks, softness, facial drift, flicker, warping, expression changes and unintended motion. A prompt or 2K output label does not establish preserved likeness or native facial detail. Keep active website media unchanged until a clean candidate is verified; freeze a clean final endpoint if integrated. Generation is currently pending.
-
-
-## Provider failure and alternative quotes - 20 October 2026
-
-MiniMax H3 job d101b7fc-91b1-4338-a086-514e6e241795 ended in failed status with no video or detailed failure reason returned. No frames exist to inspect. Higgsfield balance is still 590.32 credits, unchanged from before submission; net credit use for this failed attempt is zero. Keep the user-approved PNG poses and current website unchanged.
-
-The user authorized researching other models while protecting credits and allowing approval requests. Read-only cost estimates using the confirmed approved starting/ending media returned: Veo 3.1 Lite four seconds, silent, auto ratio: 6 credits; Wan 2.7 four seconds at 1080p: 10; Wan 3.0 four seconds at 1080p with thinking enabled and audio off: 14; Wan 3.0 Prime with those settings: 24. None of these alternatives has been submitted.
-
-Recommend one Veo 3.1 Lite attempt at 6 credits, awaiting user cost approval. It supports both approved keyframes. The connector does not expose a resolution control for this model, so record actual delivered dimensions and inspect face quality before using any result. Do not infer quality superiority or guaranteed blink suppression from the model name. Full ready parameters and quote comparison are in alternative-video-plan.json. Do not generate a batch, change models or submit an additional paid attempt without authorization.
-
-
-## Veo two-keyframe duration restriction - 20 October 2026
-
-The user approved one four-second Veo 3.1 Lite attempt for 6 credits. Submission was rejected before any job was created: the provider requires duration 8 when both start_image and end_image are present. The catalog and price-only preflight had not exposed this combined-input constraint. No video resulted and no credits were spent; balance remains 590.32. Do not drop an approved keyframe or increase duration/cost silently.
-
-New read-only quotes with the same confirmed poses: Veo 3.1 Lite eight seconds, silent: 12 credits; Wan 2.7 two seconds at 1080p: 5 credits; Kling 3.0 Pro three seconds, silent: 5.25 exact credits. Quotes establish price, not successful provider validation or output quality.
-
-Recommend one Wan 2.7 attempt at 5 credits as a different model within the user's desired small budget. Its catalog supports both starting/ending images, square output, 1080p and two-second duration. This model change awaits user approval. A shorter source sequence can still be scrubbed slowly with website scroll and end on a fixed clean pose. Full request is saved in wan-budget-video-plan.json. No alternative job submitted, no active website files changed, no new browser/build checks claimed. Keep face-detail and no-blink QC requirements intact.
-
-
-## Approved Wan 2.7 attempt - 20 October 2026
-
-The user explicitly approved one Wan 2.7 attempt for 5 credits. Submitted job 9b84ff14-a82f-4702-8efd-f960e9944d59, two seconds at 1080p, square, using the same two confirmed reviewed PNG keyframes. One output only. Preserve all face-detail, likeness, open-eye, closed-mouth and single coordinated-turn requirements. Actual output dimensions/frame cadence and every native frame must be reviewed before using the result. Website assets remain unchanged while generation is pending. No further paid attempt is authorized.
-
-## Wan 2.7 result and quality decision - 20 October 2026
-
-Job 9b84ff14-a82f-4702-8efd-f960e9944d59 completed. Exactly 5 credits were spent (590.32 to 585.32). The requested two-second 1080p tier delivered 60 native video frames at 30 fps, 1440 x 1440 pixels. Delivered dimensions do not establish additional original facial detail.
-
-All 60 native frames were inspected in consecutive full-frame and face-crop sheets, with six enlarged crops checked for detail. One blink occurs during the turn at approximately frames 9-15 (one-based), 0.267-0.467 seconds; frame 11 at 0.333 seconds visibly shows eye closure. This fails the mandatory no-blink requirement. Facial identity is broadly recognizable, but motion introduces some texture softening/change; exact likeness and unchanged fine detail cannot be certified. The pose becomes mostly frontal by about one second and retains slight residual movement afterward. The mouth appears closed without obvious speaking.
-
-The candidate is rejected for hero integration. Holding the final frame cannot repair a blink during the turn. Do not skip blink frames or use the previously rejected ghosting eye interpolation. The provider also included AAC audio despite the silent-shot prompt; the review MP4 removes audio by video stream copy without re-encoding the video.
-
-The approved keyframes remain approved. Active website media and code are unchanged, and the existing hero video still has its previously documented blink issue. No website build or browser tests were rerun for this media-only review. No further paid attempt is authorized. See wan-video-qc.json and the saved review evidence. Earlier pending-generation and pre-approval entries above are historical; this result is the current status.
-
-## Wan 3.0 Prime approval and expression correction - 20 October 2026
-
-The user selected Wan 3.0 Prime at 24 credits and requested the exact prompts. This authorizes one four-second, 1080p, square video with thinking enabled and audio disabled, subject to the existing reviewed-pose workflow; no automatic paid retries. No Prime video has been submitted or additional Higgsfield credits spent.
-
-The user correctly identified that the generated keyframes themselves contained a slight smiling expression. Correct both proposed starting and ending portraits toward a matching neutral resting expression before another video attempt. Two sibling neutral-expression candidates were created with the built-in image editor using the reviewed composition and genuine footage identity references. The original approved poses are preserved. Proposed images and exact image-edit/video prompts are saved in the local output folder PractiScale-CEO-Wan-Prime-Review. These revised poses await user review before upload/submission. Generative edits cannot be assumed pixel-identical or perfectly identity-preserving; compare full portraits and genuine footage references.
-
-The planned four-second video holds the start for 0.3 seconds, makes one coordinated head/shoulder turn until 3.0 seconds, then holds frontal eye contact to 4.0 seconds. Neutral expression, closed relaxed lips, open eyes, stable facial detail and no extra motion remain mandatory QC criteria. Cost and prompt constraints do not guarantee those outcomes. Website code and media remain unchanged; no new UI tests are claimed for this image/prompt review.
-
-## Approved neutral poses submitted to Wan 3.0 Prime - 20 October 2026
-
-The user approved both revised neutral-expression portraits with "use them." Both full-resolution PNGs were uploaded and confirmed. Submitted exactly one job: 5a9cf3ed-7741-427b-a175-55f4c55eb210, Wan 3.0 Prime, four seconds, 1080p, square, thinking enabled, audio disabled, using the exact shared prompt. Final cost preflight confirmed 24 credits. Balance before submission: 585.32. No retry is authorized. Provider completion, actual output metadata and all-native-frame QC are pending; active website media/code remain unchanged. The preceding pose-review-pending entry is historical and is superseded by this approval.
-
-## Current approved hero video - 20 October 2026
-
-Wan 3.0 Prime job 5a9cf3ed-7741-427b-a175-55f4c55eb210 completed: four seconds, 1440 x 1440 actual pixels, 30 fps, 120 native frames, no audio. Exactly 24 credits were spent (585.32 to 561.32). All 120 source frames were visually inspected in consecutive face/full-frame contact sheets. There is one blink during the turn around 0.53-0.77 seconds. The user explicitly accepted it: "its still have a eye blink but use this video." This acceptance supersedes the no-blink requirement for this specific clip. Do not reject, regenerate, skip blink frames or synthesize replacement eyes. Approved neutral-expression keyframes and original source footage remain preserved.
-
-Integrate every native frame in source order, locally segmented to RGBA WebP at 960px desktop / 540px mobile. Face RGB is not retouched; normal resizing and compression apply. Active assets use /media/ceo-prime-v1/ and the updated hero-manifest.json. The first-frame transparent poster supplies static/reduced-motion/WebGL-failure fallback; the matching composited social poster is used for metadata. Old /media/frames and root ceo-* assets are legacy preserved files and are no longer the active portrait.
-
-The source turn reaches mostly frontal around one second, sooner than requested, and contains minor residual motion. The website scrubs the real source at 0.65-second smoothing, then clamps the last frame through the final 15 percent of scroll to stop continuing movement. Reverse scrolling remains supported. Exact facial likeness and perfect expression constancy are not certified by functional browser tests. Build, responsive actual-render, motion/fallback and existing preloader regressions must pass before reporting integration complete. No further paid generation is authorized.
-
-## Prime video integration verified - 20 October 2026
-
-The accepted Prime video is now the active hero sequence. All 120 native frames, including the user-accepted blink, remain in source order at both desktop and mobile resolutions. Matching poster fallback and social metadata are installed. The final frame is fixed during the last 15 percent of scroll; reverse scrolling works. No further generation occurred after the single 24-credit attempt.
-
-Production build and TypeScript passed. Final regression results: 22 browser/accessibility checks, 13 motion/fallback checks, 61 responsive layout checks across 15 viewport cases, 27 whole-hero lifecycle checks and 22 original-preloader checks: 145 passed, no runtime errors or automated accessibility violations. Six additional actual-render checks passed for the approved source at desktop/tablet/mobile start and end. Independently inspected these renders plus mobile menu, short-phone endpoint, enlarged-text desktop and original-preloader fill evidence. The motion test wait now covers the existing nine-second intro recovery guard; lifecycle tests await the observable new-resolution request and visible fallback rather than racing React updates. These were test synchronization corrections; preloader artwork/timing is unchanged.
-
-The current integration report is wan-prime-integration-qa.json. Historical pending, rejected and no-blink requirements above are superseded for this specifically accepted source. The original source MP4 and final screenshots are saved in the local output folder PractiScale-CEO-Wan-Prime-Review. Only the homepage hero, shared navigation and original introduction remain in scope; no deployment or new sections were added.
-
-## Portrait/card separation and phone text QC - 20 October 2026
-
-The user identified that the visible jacket was hidden behind desktop trust cards and phone copy left an unnecessarily empty right strip. Earlier visual QC missed these defects even though prior automated suites passed. Correct this through explicit composition checks rather than relying on test counts alone.
-
-At 1200px and above, offset the portrait only as far right as needed to clear the trust cards. At 768-1199px, group the cards 24px below the CTA/copy and position the portrait beside them, preserving the full head and separation from supporting copy. HeroLayout publishes --hero-copy-bottom from the measured editorial position/copy height and cleans it up on unmount. Phone headings/paragraphs use the full content column, with responsive heading size and natural wrapping instead of inherited 11ch/29ch limits; avoid an orphaned last word. Keep normal content-sized CTA buttons and deliberate gutters.
-
-Permanent requirements now appear in AGENTS.md and COMPOSITION-QC.md; a memory update note was saved at the user's explicit request. The npm test:composition regression projects the visible alpha envelope of all 120 source frames into real viewport layouts, requires at least 16px portrait/card separation for desktop/tablet, checks head/supporting-copy clearance and verifies mobile paragraph measure, final-word grouping, two-line heading and balanced width. It detected 13 failures on the old layout and passes all 54 assertions after the fix.
-
-Production build and TypeScript passed. Final focused checks: composition 54, responsive layout 61 across 15 viewport cases, browser/accessibility 22 and motion/fallback 13, all 150 passed with no runtime errors or automated accessibility violations. Actual start/end renders were captured at nine viewport sizes and independently inspected, including 1192px narrow desktop, 768px tablet, 530px phone, 430/375px phone and 320px short phone. Current artifacts: composition-verification.json and composition-qa.json. No source video, blink, original preloader artwork/timing, brand identity or other sections were changed. No further generation credits were spent.
-
-
-## Mobile editorial refinement - 20 October 2026 (current)
-
-Remove the hero header divider stroke at every width while retaining its tagline, location and spacing. Hide the separate Built for growth label on desktop/tablet; preserve the supplied logo artwork and its embedded tagline. This supersedes earlier statements that the desktop divider remains visible.
-
-Preserve every existing CTA label and destination: Explore training, Your next chapter / Starts with a skill and Apply on WhatsApp. Retain all approved copy, trust figures, local fonts and palette. The approved video, ordered 120-frame sequence, final hold and accepted blink are unchanged; no paid media generation is authorized.
-
-Phone composition uses consistent responsive reading gutters, a two-line Sora heading, readable Manrope body copy and a content-sized primary action. Give the portrait a dedicated cinematic frame with static teal/blue atmospheric lighting, full-head clearance and a soft lower-body fade. Place aligned proof figures below the portrait instead of floating over it. Keep the next-chapter invitation below the proof row with an adjacent arrow and a generous touch target. The light floating mobile header retains the original logo/mark and dark menu control; refine padding, press feedback, disclosure rotation and a restrained menu entrance. Respect reduced motion and safe areas.
-
-Mobile content grows naturally on short screens and with enlarged text; do not force the whole hero into one viewport. Let the reading content scroll normally; pin only the portrait frame below the header and near the viewport center while its approved sequence turns. Reserve the scrub distance within the portrait region, then release into the statistics and next-chapter invitation, with no additional page sections. Future sections remain out of scope. Verify 320-430px widths, 530px and tablet/desktop regression cases, source-frame silhouette clearance, live forward/reverse/hold motion, menu/focus, text reflow, actual renders and the original preloader before sign-off.
-
-
-## Version 0.26 verification - 20 October 2026
-
-The final default npm.cmd run build passed with Turbopack and TypeScript. All 318 checks passed: mobile-editorial 118, composition 54, layout 61, hero 22, motion 13, whole-hero 28, preloader 22. The mobile suite sweeps every CSS width from 320 through 430, checks exact CTA wording and statistics, normal/enlarged reading flow, header fit, menu/Escape behavior, and actual start/turn/end states on short and tall phones. The composition suite projects all 120 source-frame alpha silhouettes across phone/tablet/desktop layouts. Motion and lifecycle checks cover forward/reverse/hold, resize-at-bottom, reverse after resize, reduced motion, context loss and cleanup. No runtime errors or automated accessibility violations were found.
-
-Mobile uses a dedicated sticky portrait frame rather than pinning the entire hero. The explicit region height creates real scroll travel; its trigger is refreshed after the original introduction unlocks main. An explicit GSAP from/to range and refresh synchronization preserve correct initial/end poses during breakpoint changes. The 15% final-frame hold, approved source and accepted blink remain intact. The original-preloader source, phases, refresh, Escape, no-JavaScript visibility and failure recovery passed. No generation credits spent. Actual desktop, tablet, phone, menu, enlarged-text and live-turn renders were independently inspected. Verification is local Chrome; physical-device testing has not been performed. See mobile-editorial-verification.json and docs/qa/mobile-editorial/.
-
-
-## Mobile gradient continuity and circular CTA - 20 October 2026 (current)
-
-The user identified a hard rectangular edge at the top of the mobile portrait lighting and unused space beside the next-chapter invitation. Keep the existing portrait sequence, brand colors, exact CTA copy and enquiry links. Apply a transparent-to-opaque-to-transparent mask only to the atmospheric light layer, so it starts and ends without a clipped rectangle. Never fade, blur or recolor the face to conceal this seam.
-
-Use the supplied thin circular-arrow reference for the secondary invitation: a 56px outlined circle with a restrained diagonal arrow, hover/focus/press feedback and the existing link semantics. On phones the existing CTA label stays left-aligned and the circle aligns to the opposite reading gutter, making the whole row a usable link. This supersedes the earlier instruction to keep a bare arrow immediately beside the text. Retain the existing label and heading exactly. Verify actual screenshot pixels at the light boundary in static and pinned scroll states, circle/label clearance at 320-430px, enlarged text, desktop/tablet composition and the existing motion behavior before sign-off.
-
-
-## Version 0.27 verification - 20 October 2026
-
-Production build and TypeScript passed. All 283 focused checks passed: hero-finish 15, mobile-editorial 118, composition 54, layout 61, hero 22, motion 13. Screenshot-pixel regression reproduces the former clipped glow (maximum channel step 6) and verifies a maximum step of 1 at the corrected top boundary at 320, 375, 430 and 530px, including the live pinned portrait state. The 56px circle, centered diagonal arrow, right-gutter alignment, exact copy/link destinations, visible keyboard focus and text enlargement passed. The existing all-frame silhouette, responsive layout, browser/accessibility and forward/reverse/hold/fallback checks passed, with no runtime errors or automated accessibility violations.
-
-Actual full mobile layouts, live pinned lighting, enlarged text and desktop CTA/card alignment were visually reviewed. The original preloader, source video, native frame assets and accepted blink were not changed. No generation credits spent. These are local Chrome checks; physical-device testing has not been performed. See hero-finish-verification.json and docs/qa/hero-finish/.
-
-
-## CTA vertical centering - 20 October 2026 (current)
-
-Center the complete 56px circular arrow against the full next-chapter block, including its eyebrow and link label. Keep the circle at the right reading gutter and reserve space in the link so enlarged text stays clear. Preserve the exact wording, destination, existing lighting, portrait and scroll sequence. Add a regression that compares the circle center with the complete CTA block center.
-
-
-## Version 0.28 verification - 20 October 2026
-
-Production build and TypeScript passed. All 287 focused regression checks passed. At 320, 375, 430 and 530px, the circle center matches the complete CTA block center within 1 CSS pixel. The existing mobile suite also covers every width from 320 to 430 and enlarged text; responsive, composition, browser/accessibility and motion checks passed. Actual mobile CTA and enlarged-text renders were visually inspected. Copy, destinations, lighting and source media are preserved. No generation credits used. Validation is in local Chrome.
-
-
-## Compact CTA columns - 20 October 2026 (current)
-
-The user reported the desktop caption overlapping the absolutely positioned circle and excessive empty space inside that circle. Replace the overlay arrangement with a real two-column link: the existing eyebrow/label form one text group, and a 44px outlined circle with an 18px diagonal arrow forms the other. Use a 16px gap and vertical center alignment. The whole group remains one accessible enquiry link named by the unchanged Starts with a skill label. Phones retain the right-gutter circle; desktop text remains right-aligned. This supersedes the 56px circle and absolute positioning described in older entries.
-
-Verify the real caption and label rectangles stay at least 15px clear of the circle on phone, tablet and desktop, including 1192px and enlarged-text cases. Check complete-link hit containment as well as geometric centering. Preserve all copy, brand colors, lighting, source video and original preloader.
-
-
-## Version 0.29 verification - 20 October 2026
-
-Production build and TypeScript passed. All 309 focused checks passed: {'hero-finish': 41, 'mobile-editorial': 118, 'composition': 54, 'layout': 61, 'hero': 22, 'motion': 13}. Actual caption and label bounds remain at least 15px clear of the compact circle at ten widths from 320 through 1920, including 768/1024/1192px and enlarged phone text. The icon remains vertically centered and fully inside the single link. Desktop/tablet full-hero and CTA renders, mobile CTA and enlarged text were visually inspected. Exact CTA wording and enquiry destination remain intact. No runtime errors or automated accessibility violations were found. Portrait assets, lighting and the original preloader are unchanged; no generation credits spent. Validation uses local Chrome. See compact-cta-verification.json.
+Independently inspect actual desktop, tablet and phone renders, hero start/turn/end and menu states. Verify all three sections, hero-bound navigation, card reading-scene fit, exact copy/CTA/figures, contrast, clipping, enlarged text, native scroll behavior, fallbacks and original preloader. Automated results support visual QC; they do not certify photographic realism or facial likeness. Follow AGENTS.md and COMPOSITION-QC.md. Update this PRD and the TRD when scope changes.

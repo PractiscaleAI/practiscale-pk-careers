@@ -1,0 +1,128 @@
+{
+  "revision": "0.40",
+  "clientDate": "22 October 2026",
+  "verifiedAt": "2026-10-21T19:41:24.813Z",
+  "scope": "Typography, spacing, sizing across all three homepage sections and a clearer live cortical brain.",
+  "changes": {
+    "type": "Shared section and card-title roles; 16px/1.6 descriptive copy; matching section eyebrows and 12px/24px heading rhythm.",
+    "controls": "52px main CTA height, 15px labels, 12px corners, single-line labels including 320px.",
+    "brain": "Smaller outlined particles, brighter derived brand blue, growth teal, mint and ivory; key/fill shading and the original cortical surface for depth.",
+    "preserved": "Original brain geometry and near-frontal pose, approved CEO media, problem photographs, desktop/mobile scroll choreography and Jobs network."
+  },
+  "suites": [
+    {
+      "name": "typography",
+      "report": "docs/typography-qa.json",
+      "checks": 109,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T18:55:19.527Z"
+    },
+    {
+      "name": "problem-scroll",
+      "report": "docs/problem-scroll-qa.json",
+      "checks": 192,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T18:48:43.109Z"
+    },
+    {
+      "name": "career-section",
+      "report": "docs/career-section-qa.json",
+      "checks": 133,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:38:37.563Z"
+    },
+    {
+      "name": "composition",
+      "report": "docs/composition-qa.json",
+      "checks": 54,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:23:11.357Z"
+    },
+    {
+      "name": "mobile-hero",
+      "report": "docs/mobile-editorial-qa.json",
+      "checks": 118,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:24:21.063Z"
+    },
+    {
+      "name": "layout",
+      "report": "docs/layout-qa.json",
+      "checks": 61,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:25:00.708Z"
+    },
+    {
+      "name": "hero-finish",
+      "report": "docs/hero-finish-qa.json",
+      "checks": 41,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:31:55.706Z"
+    },
+    {
+      "name": "motion",
+      "report": "docs/motion-qa.json",
+      "checks": 13,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:32:37.475Z"
+    },
+    {
+      "name": "scroll-navigation",
+      "report": "docs/scroll-navigation-qa.json",
+      "checks": 107,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:33:21.854Z"
+    },
+    {
+      "name": "browser",
+      "report": "docs/hero-qa.json",
+      "checks": 22,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "reportUpdatedAt": "2026-10-21T19:34:16.345Z"
+    }
+  ],
+  "totalChecks": 850,
+  "allChecksPassed": true,
+  "build": {
+    "command": "npm.cmd run build -- --webpack",
+    "exitCode": 0
+  },
+  "formatting": "Targeted Prettier checks passed.",
+  "brain": {
+    "surfaceSha256": "baaf531b2250e884f6efa633fd558d884cdde54cfaab0f8d9031c4cbf9c5b842",
+    "depthSha256": "da05aa52cb8bd8fb6f95fb33a30ae9fc4b6fca434b558a2cd4ced2ccc65aec41",
+    "poster": {
+      "path": "public/media/career-paths/training-refined.webp",
+      "sha256": "db873638108a6280424f899c15574633484fbb2ac3911d7e94bdd84dc9941718",
+      "bytes": 161354,
+      "method": "Native local live-scene export at 720x720; navigation and overlays hidden."
+    }
+  },
+  "visualReview": {
+    "inspected": [
+      "Desktop hero and problem fan",
+      "Tablet and phone career headings and both reading holds",
+      "Brightened live brain on desktop, tablet and phone",
+      "Short-phone compact Training and Jobs controls",
+      "Phone hero turn, menu and enlarged text",
+      "Clean matching static brain fallback"
+    ],
+    "directories": [
+      "docs/qa/career-section/v039-two-paths/",
+      "docs/qa/problem-scroll/v038/",
+      "docs/qa/mobile-editorial/",
+      "docs/qa/hero-finish/"
+    ],
+    "limits": "Local Chrome viewport emulation with software WebGL. This does not establish real-device frame rate."
+  }
+}

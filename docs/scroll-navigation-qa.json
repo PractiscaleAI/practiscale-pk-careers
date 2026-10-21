@@ -1,0 +1,1487 @@
+{
+  "checks": [
+    {
+      "name": "Header is anchored to hero 320",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 320",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 320",
+      "pass": true,
+      "detail": {
+        "top": -244,
+        "bottom": -180,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "CTA below the carousel 320",
+      "pass": true,
+      "detail": {
+        "height": 1773,
+        "layout": "stage",
+        "stageHeight": 448,
+        "clearance": 96,
+        "viewport": 568,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 320",
+      "pass": true,
+      "detail": {
+        "height": 1773,
+        "layout": "stage",
+        "stageHeight": 448,
+        "clearance": 96,
+        "viewport": 568,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 320x568",
+      "pass": true,
+      "detail": {
+        "height": 1773,
+        "layout": "stage",
+        "stageHeight": 448,
+        "clearance": 96,
+        "viewport": 568,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 320",
+      "pass": true,
+      "detail": {
+        "top": -1095,
+        "bottom": -1031,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 320",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1087,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1095
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 320",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 320",
+      "pass": true,
+      "detail": {
+        "top": 0,
+        "bottom": 64,
+        "relativeTop": 1087,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1095
+      }
+    },
+    {
+      "name": "Released header stays at its document position 320",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1087,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1095
+        },
+        "flowed": {
+          "top": -16,
+          "bottom": 48,
+          "relativeTop": 1087,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1095
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 320",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Header is anchored to hero 375",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 375",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 375",
+      "pass": true,
+      "detail": {
+        "top": -244,
+        "bottom": -180,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "CTA below the carousel 375",
+      "pass": true,
+      "detail": {
+        "height": 812,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 812,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 375",
+      "pass": true,
+      "detail": {
+        "height": 812,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 812,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 375x812",
+      "pass": true,
+      "detail": {
+        "height": 812,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 812,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 375",
+      "pass": true,
+      "detail": {
+        "top": -1233,
+        "bottom": -1169,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 375",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1225,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1233
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 375",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 375",
+      "pass": true,
+      "detail": {
+        "top": 0,
+        "bottom": 64,
+        "relativeTop": 1225,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1233
+      }
+    },
+    {
+      "name": "Released header stays at its document position 375",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1225,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1233
+        },
+        "flowed": {
+          "top": -16,
+          "bottom": 48,
+          "relativeTop": 1225,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1233
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 375",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Header is anchored to hero 430",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 430",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 430",
+      "pass": true,
+      "detail": {
+        "top": -244,
+        "bottom": -180,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "CTA below the carousel 430",
+      "pass": true,
+      "detail": {
+        "height": 932,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 932,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 430",
+      "pass": true,
+      "detail": {
+        "height": 932,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 932,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 430x932",
+      "pass": true,
+      "detail": {
+        "height": 932,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 96,
+        "viewport": 932,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 430",
+      "pass": true,
+      "detail": {
+        "top": -1354,
+        "bottom": -1290,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 430",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1346,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1354
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 430",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 430",
+      "pass": true,
+      "detail": {
+        "top": 0,
+        "bottom": 64,
+        "relativeTop": 1346,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1354
+      }
+    },
+    {
+      "name": "Released header stays at its document position 430",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1346,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1354
+        },
+        "flowed": {
+          "top": -16,
+          "bottom": 48,
+          "relativeTop": 1346,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1354
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 430",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Header is anchored to hero 443",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 443",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 443",
+      "pass": true,
+      "detail": {
+        "top": -244,
+        "bottom": -180,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "CTA below the carousel 443",
+      "pass": true,
+      "detail": {
+        "height": 1992,
+        "layout": "stage",
+        "stageHeight": 526,
+        "clearance": 96,
+        "viewport": 646,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 443",
+      "pass": true,
+      "detail": {
+        "height": 1992,
+        "layout": "stage",
+        "stageHeight": 526,
+        "clearance": 96,
+        "viewport": 646,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 443x646",
+      "pass": true,
+      "detail": {
+        "height": 1992,
+        "layout": "stage",
+        "stageHeight": 526,
+        "clearance": 96,
+        "viewport": 646,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 443",
+      "pass": true,
+      "detail": {
+        "top": -1241,
+        "bottom": -1177,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 443",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1233,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1241
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 443",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 443",
+      "pass": true,
+      "detail": {
+        "top": 0,
+        "bottom": 64,
+        "relativeTop": 1233,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1241
+      }
+    },
+    {
+      "name": "Released header stays at its document position 443",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1233,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1241
+        },
+        "flowed": {
+          "top": -16,
+          "bottom": 48,
+          "relativeTop": 1233,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1241
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 443",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 8,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 16
+      }
+    },
+    {
+      "name": "Header is anchored to hero 768",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 768",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 768",
+      "pass": true,
+      "detail": {
+        "top": 18,
+        "bottom": 82,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 278
+      }
+    },
+    {
+      "name": "CTA below the carousel 768",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 768",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 768x900",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "stack",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 768",
+      "pass": true,
+      "detail": {
+        "top": -734,
+        "bottom": -670,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 645
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 768",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 1365,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1379
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 768",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 768",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1365,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1379
+      }
+    },
+    {
+      "name": "Released header stays at its document position 768",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 16,
+          "bottom": 80,
+          "relativeTop": 1365,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1379
+        },
+        "flowed": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1365,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1379
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 768",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header is anchored to hero 1192",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Mobile menu remains usable 1192",
+      "pass": true
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 1192",
+      "pass": true,
+      "detail": {
+        "top": 18,
+        "bottom": 82,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 278
+      }
+    },
+    {
+      "name": "CTA below the carousel 1192",
+      "pass": true,
+      "detail": {
+        "height": 768,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 768,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 1192",
+      "pass": true,
+      "detail": {
+        "height": 768,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 768,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 1192x768",
+      "pass": true,
+      "detail": {
+        "height": 768,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 768,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 1192",
+      "pass": true,
+      "detail": {
+        "top": -601.8125,
+        "bottom": -537.8125,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 559.1875
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 1192",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 1147,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1161
+      }
+    },
+    {
+      "name": "Revealed mobile menu works 1192",
+      "pass": true
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 1192",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1147,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1161
+      }
+    },
+    {
+      "name": "Released header stays at its document position 1192",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 16,
+          "bottom": 80,
+          "relativeTop": 1147,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1161
+        },
+        "flowed": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1147,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1161
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 1192",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header is anchored to hero 1440",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 1440",
+      "pass": true,
+      "detail": {
+        "top": 18,
+        "bottom": 82,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 278
+      }
+    },
+    {
+      "name": "CTA below the carousel 1440",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 1440",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 1440x900",
+      "pass": true,
+      "detail": {
+        "height": 900,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 900,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 1440",
+      "pass": true,
+      "detail": {
+        "top": -734,
+        "bottom": -670,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 645
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 1440",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 1365,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1379
+      }
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 1440",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1365,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1379
+      }
+    },
+    {
+      "name": "Released header stays at its document position 1440",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 16,
+          "bottom": 80,
+          "relativeTop": 1365,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1379
+        },
+        "flowed": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1365,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1379
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 1440",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header is anchored to hero 1536",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 1536",
+      "pass": true,
+      "detail": {
+        "top": 18,
+        "bottom": 82,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 278
+      }
+    },
+    {
+      "name": "CTA below the carousel 1536",
+      "pass": true,
+      "detail": {
+        "height": 696,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 112,
+        "viewport": 696,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 1536",
+      "pass": true,
+      "detail": {
+        "height": 696,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 112,
+        "viewport": 696,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 1536x696",
+      "pass": true,
+      "detail": {
+        "height": 696,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 112,
+        "viewport": 696,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 1536",
+      "pass": true,
+      "detail": {
+        "top": -529.609375,
+        "bottom": -465.609375,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 512.390625
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 1536",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 1028,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1042
+      }
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 1536",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1028,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1042
+      }
+    },
+    {
+      "name": "Released header stays at its document position 1536",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 16,
+          "bottom": 80,
+          "relativeTop": 1028,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1042
+        },
+        "flowed": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1028,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1042
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 1536",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header is anchored to hero 1920",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "Header keeps its hero position through scrolling 1920",
+      "pass": true,
+      "detail": {
+        "top": 18,
+        "bottom": 82,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 278
+      }
+    },
+    {
+      "name": "CTA below the carousel 1920",
+      "pass": true,
+      "detail": {
+        "height": 1080,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 1080,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Both sections have no horizontal overflow 1920",
+      "pass": true,
+      "detail": {
+        "height": 1080,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 1080,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Problem reading scene fits viewport 1920x1080",
+      "pass": true,
+      "detail": {
+        "height": 1080,
+        "layout": "fan",
+        "stageHeight": 0,
+        "clearance": 120,
+        "viewport": 1080,
+        "ctaAfterCarousel": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Header naturally leaves with hero 1920",
+      "pass": true,
+      "detail": {
+        "top": -914,
+        "bottom": -850,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 762
+      }
+    },
+    {
+      "name": "Upward scroll reveals navigation 1920",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 1662,
+        "position": "fixed",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "up",
+        "pageTop": 1676
+      }
+    },
+    {
+      "name": "Downward scroll releases navigation into page flow 1920",
+      "pass": true,
+      "detail": {
+        "top": 16,
+        "bottom": 80,
+        "relativeTop": 1662,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": false,
+        "mode": "released",
+        "pageTop": 1676
+      }
+    },
+    {
+      "name": "Released header stays at its document position 1920",
+      "pass": true,
+      "detail": {
+        "released": {
+          "top": 16,
+          "bottom": 80,
+          "relativeTop": 1662,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1676
+        },
+        "flowed": {
+          "top": 0,
+          "bottom": 64,
+          "relativeTop": 1662,
+          "position": "absolute",
+          "visibility": "visible",
+          "transform": "none",
+          "inHero": false,
+          "mode": "released",
+          "pageTop": 1676
+        }
+      }
+    },
+    {
+      "name": "Header returns to original hero position 1920",
+      "pass": true,
+      "detail": {
+        "top": 32,
+        "bottom": 96,
+        "relativeTop": 18,
+        "position": "absolute",
+        "visibility": "visible",
+        "transform": "none",
+        "inHero": true,
+        "mode": "hero",
+        "pageTop": 32
+      }
+    },
+    {
+      "name": "User-selected image versions retained",
+      "pass": true
+    },
+    {
+      "name": "Skip link bypasses navigation and focuses hero content",
+      "pass": true
+    },
+    {
+      "name": "No automatic hide state remains",
+      "pass": true
+    },
+    {
+      "name": "Keyboard can reveal and focus navigation",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

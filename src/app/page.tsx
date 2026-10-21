@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import HeroLayout from "@/components/hero-layout";
+import Navigation from "@/components/navigation";
 import HeroSequence from "@/components/hero-sequence";
+import ProblemSection from "@/components/problem-section";
+import CareerSection from "@/components/career-section";
 import { Action, Eyebrow } from "@/components/ui";
 export const metadata: Metadata = {
   title: "PractiScale | Build a Skill. Build Your Career.",
@@ -10,16 +13,17 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <main id="main">
+    <main>
       <HeroLayout />
       <section className="hero-scroll">
         <div className="hero-stage" id="founder">
+          <Navigation />
           <div className="hero-topline">
             <Eyebrow>Pakistan's ambition. A global stage.</Eyebrow>
             <span className="hero-location">Rawalpindi &middot; Remote</span>
           </div>
           <div className="hero-editorial">
-            <div className="hero-copy">
+            <div className="hero-copy" id="main" tabIndex={-1}>
               <h1>
                 Learn a skill
                 <br />
@@ -83,6 +87,8 @@ export default function Home() {
         </div>
         <span id="hero-end" className="hero-end" aria-hidden="true" />
       </section>
+      <ProblemSection />
+      <CareerSection />
     </main>
   );
 }

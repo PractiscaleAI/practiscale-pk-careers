@@ -1,0 +1,7 @@
+npm notice run practiscale-website@0.1.0 test:scroll-navigation
+npm notice run node scripts/qa-scroll-navigation.cjs
+{
+  "checks": 94,
+  "failed": [],
+  "errors": []
+}

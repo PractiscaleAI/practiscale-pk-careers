@@ -32,9 +32,14 @@ const fs = require("fs");
       .locator(".preloader")
       .waitFor({ state: "hidden", timeout: 8000 });
     check("Homepage returns 200", r.status() === 200);
-    check("Hero-only page", (await page.locator("main>section").count()) === 1);
     check(
-      "No footer or other homepage sections",
+      "Hero, problem cards and one integrated career section",
+      (await page.locator("main>section").count()) === 3 &&
+        (await page.locator("#the-problem article").count()) === 3 &&
+        (await page.locator("#career-paths article").count()) === 2,
+    );
+    check(
+      "No footer or unrequested homepage sections",
       (await page.locator("footer,.intro-section,.path-section").count()) === 0,
     );
     check("One H1", (await page.locator("h1").count()) === 1);

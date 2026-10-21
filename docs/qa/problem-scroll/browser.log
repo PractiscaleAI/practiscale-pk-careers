@@ -1,0 +1,110 @@
+npm notice run practiscale-website@0.1.0 test:browser
+npm notice run node scripts/qa-site.cjs
+{
+  "checks": [
+    {
+      "name": "Homepage returns 200",
+      "pass": true
+    },
+    {
+      "name": "Approved hero and problem carousel only",
+      "pass": true
+    },
+    {
+      "name": "No footer or unrequested homepage sections",
+      "pass": true
+    },
+    {
+      "name": "One H1",
+      "pass": true
+    },
+    {
+      "name": "Original logo 240px minimum",
+      "pass": true
+    },
+    {
+      "name": "No corrupted text",
+      "pass": true
+    },
+    {
+      "name": "Exact trust figures",
+      "pass": true
+    },
+    {
+      "name": "Visible founder caption removed",
+      "pass": true
+    },
+    {
+      "name": "No overflow 375",
+      "pass": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375
+      }
+    },
+    {
+      "name": "H1 visible 375",
+      "pass": true
+    },
+    {
+      "name": "No overflow 768",
+      "pass": true,
+      "detail": {
+        "viewport": 768,
+        "document": 768
+      }
+    },
+    {
+      "name": "H1 visible 768",
+      "pass": true
+    },
+    {
+      "name": "No overflow 1440",
+      "pass": true,
+      "detail": {
+        "viewport": 1440,
+        "document": 1440
+      }
+    },
+    {
+      "name": "H1 visible 1440",
+      "pass": true
+    },
+    {
+      "name": "Founder menu works",
+      "pass": true
+    },
+    {
+      "name": "Escape returns focus",
+      "pass": true
+    },
+    {
+      "name": "Program enquiry has real destination",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu closes after anchor",
+      "pass": true
+    },
+    {
+      "name": "No-JavaScript hero remains visible",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion static portrait",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No automated accessibility violations",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "violations": [],
+  "errors": []
+}

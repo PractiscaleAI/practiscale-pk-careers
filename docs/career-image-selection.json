@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-20",
+  "active": {
+    "graduate": "/media/career-problems/graduate-v1.webp",
+    "professional": "/media/career-problems/professional-v2.webp",
+    "freelancer": "/media/career-problems/freelancer-v1.webp"
+  },
+  "decision": "The user asked to keep the two male portraits currently displayed and change only the woman. New v2 male images are not active.",
+  "generation": "Built-in image_gen, with original prompts retained in career-image-prompts.json and career-image-prompts-v2.json. Generated illustrations are not testimonials or identified employees."
+}

@@ -4181,7 +4181,7 @@
       "name": "Live turn portrait remains visible",
       "pass": true,
       "detail": {
-        "frame": 60,
+        "frame": 61,
         "top": 55.21875,
         "bottom": 791.859375,
         "viewport": 812
@@ -4205,7 +4205,7 @@
       "name": "Full face in viewport during pinned turn 320 at 0",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -219,
         "top": 119,
         "bottom": 356.79999999999995,
         "viewport": 568,
@@ -4216,7 +4216,7 @@
       "name": "Full face in viewport during pinned turn 320 at 0.45",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -334,
         "top": 119,
         "bottom": 356.79999999999995,
         "viewport": 568,
@@ -4227,7 +4227,7 @@
       "name": "Full face in viewport during pinned turn 320 at 0.95",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -462,
         "top": 119,
         "bottom": 356.79999999999995,
         "viewport": 568,
@@ -4238,7 +4238,7 @@
       "name": "Full face in viewport during pinned turn 430 at 0",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -83,
         "top": 253.40625,
         "bottom": 572.6328125,
         "viewport": 932,
@@ -4249,7 +4249,7 @@
       "name": "Full face in viewport during pinned turn 430 at 0.45",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -272,
         "top": 253.140625,
         "bottom": 572.3671875,
         "viewport": 932,
@@ -4260,7 +4260,7 @@
       "name": "Full face in viewport during pinned turn 430 at 0.95",
       "pass": true,
       "detail": {
-        "header": 80,
+        "header": -481,
         "top": 253.140625,
         "bottom": 572.3671875,
         "viewport": 932,

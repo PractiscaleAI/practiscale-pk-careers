@@ -1,0 +1,14 @@
+{
+  "revision": "0.37",
+  "source": "User attachment codex-clipboard-8d43537a-fa09-4112-913e-dffe82b3181b.png, 21 October 2026",
+  "originalSourceSha256": "86037144d2dcb7bf92fb2ff21a1f8e881f23e8859ca2326db2d99f262ea84048",
+  "archivedOriginal": "/media/problem-art/red-landscape-reference.png",
+  "activeAsset": "/media/problem-art/teal-landscape-v1.webp",
+  "editedMaster": "/media/problem-art/teal-landscape-v1.png",
+  "width": 1840,
+  "height": 854,
+  "editedSha256": "a56e7009b98070b65f77346076a8c6e94c04439476fc21140c18c799451b28c4",
+  "method": "Built-in image generation tool, reference-guided image edit, single attempt. Runtime derivative uses WebP compression only.",
+  "changes": "Brand teal and restrained mint grading, following the latest user instruction. The red reference is archived and inactive.",
+  "prompt": "Edit the supplied landscape image with a STRICT COLOR GRADE ONLY for the PractiScale website. Preserve the exact existing composition, single mountain peak, every main contour, all background layers, framing, lighting direction and fine subtle grain. Replace the entire red palette with the actual brand palette: deepest shadow #0a2a2d, Deep Teal #134143, teal surface midtones #1c5052, raised midtones #265f61, gently brighter teal #3d7375. Restrained pale mint #9be3d6 only in the lightest small highlights, never bright neon. Use cool natural teal shadows and dimensional tonal separation. Zero red, orange, pink or purple. Keep the broad sculptural mountain forms and professional fine grain, with no ripples, no glossy plastic, no added objects, no text, no logo, no border and no new effects. The reference is the edit target, not an invitation to redesign the landscape. Keep the original very wide landscape framing and fill the whole rectangle."
+}

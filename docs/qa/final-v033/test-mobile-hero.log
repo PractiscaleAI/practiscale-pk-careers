@@ -1,0 +1,7 @@
+npm notice run practiscale-website@0.1.0 test:mobile-hero
+npm notice run node scripts/qa-mobile-editorial.cjs
+{
+  "checks": 118,
+  "failed": [],
+  "errors": []
+}

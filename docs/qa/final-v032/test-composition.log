@@ -1,0 +1,7 @@
+npm notice run practiscale-website@0.1.0 test:composition
+npm notice run node scripts/qa-composition.cjs
+{
+  "checks": 54,
+  "failed": [],
+  "errors": []
+}

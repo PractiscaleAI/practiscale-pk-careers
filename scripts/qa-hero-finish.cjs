@@ -22,7 +22,12 @@ const { dismissIntroduction } = require("./qa-helpers.cjs");
     ],
   });
   async function edge(page, name) {
-    const rect = await page.locator(".hero-frame").boundingBox();
+    let rect = await page.locator(".hero-frame").boundingBox();
+    const viewport = page.viewportSize();
+    if (rect.y < 2 || rect.y >= viewport.height - 2) {
+      await page.locator(".hero-frame").scrollIntoViewIfNeeded();
+      rect = await page.locator(".hero-frame").boundingBox();
+    }
     const png = await page.screenshot({ path: `${dir}/${name}.png` });
     const { data, info } = await sharp(png)
       .removeAlpha()
@@ -157,6 +162,20 @@ const { dismissIntroduction } = require("./qa-helpers.cjs");
       320, 375, 430, 530, 768, 1024, 1192, 1280, 1440, 1920,
     ]) {
       await ap.setViewportSize({ width, height: 900 });
+      // Wait for the actual media-query layout after a viewport change.
+      // Software-rendered Chrome can acknowledge a resize before applying it.
+      await ap.waitForFunction(
+        (phone) => {
+          const hero = document.querySelector(".hero-scroll");
+          return (
+            parseFloat(getComputedStyle(hero).marginLeft) ===
+              (phone ? 8 : 14) &&
+            document.documentElement.scrollWidth <= innerWidth
+          );
+        },
+        width < 768,
+        { timeout: 5000 },
+      );
       const g = await ap.locator(".hero-bottom-right").evaluate((el) => {
         const box = (s) => {
           const r = el.querySelector(s).getBoundingClientRect();

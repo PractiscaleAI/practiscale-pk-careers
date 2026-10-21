@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "@/components/navigation";
 import Preloader from "@/components/preloader";
 import { siteUrl } from "@/lib/content";
 export const metadata: Metadata = {
@@ -53,7 +52,6 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Navigation />
         <Preloader />
         {children}
         <script

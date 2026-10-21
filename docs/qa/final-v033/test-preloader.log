@@ -1,0 +1,129 @@
+npm notice run practiscale-website@0.1.0 test:preloader
+npm notice run node scripts/qa-preloader.cjs
+{
+  "checks": [
+    {
+      "name": "Original animation script preserved verbatim",
+      "pass": true
+    },
+    {
+      "name": "Original SVG/template preserved verbatim",
+      "pass": true
+    },
+    {
+      "name": "Original visual CSS preserved verbatim",
+      "pass": true
+    },
+    {
+      "name": "No visible skip control is rendered",
+      "pass": true
+    },
+    {
+      "name": "Original broad annulus and bottom-up mark fill",
+      "pass": true,
+      "detail": {
+        "progress": 36,
+        "hole": "0",
+        "clip": 25.17,
+        "circles": [
+          "191",
+          "88"
+        ],
+        "controls": "none",
+        "wordmark": "brightness(0) invert(1)"
+      }
+    },
+    {
+      "name": "No early aperture or visible preview controls",
+      "pass": true,
+      "detail": {
+        "progress": 36,
+        "hole": "0",
+        "clip": 25.17,
+        "circles": [
+          "191",
+          "88"
+        ],
+        "controls": "none",
+        "wordmark": "brightness(0) invert(1)"
+      }
+    },
+    {
+      "name": "Original white wordmark filter preserved",
+      "pass": true,
+      "detail": "brightness(0) invert(1)"
+    },
+    {
+      "name": "Original upper-wing zoom advances",
+      "pass": true,
+      "detail": {
+        "first": "translate(289.23 264.15) scale(1.3169) translate(-45.6 -21.3)",
+        "second": "translate(285.59 270.39) scale(41.5677) translate(-45.6 -21.3)"
+      }
+    },
+    {
+      "name": "Scroll and underlying controls locked through reveal",
+      "pass": true
+    },
+    {
+      "name": "Original completion releases overlay; guard not used",
+      "pass": true
+    },
+    {
+      "name": "Original replays on cached refresh 0",
+      "pass": true
+    },
+    {
+      "name": "Original replays on cached refresh 1",
+      "pass": true
+    },
+    {
+      "name": "Keyboard focus remains in introduction",
+      "pass": true
+    },
+    {
+      "name": "Reverse Tab remains in introduction",
+      "pass": true
+    },
+    {
+      "name": "Escape skips and restores scroll",
+      "pass": true
+    },
+    {
+      "name": "Original ring fits phone screen",
+      "pass": true,
+      "detail": {
+        "x": 63.75,
+        "y": 282.25,
+        "width": 247.5,
+        "height": 247.5
+      }
+    },
+    {
+      "name": "Orientation change completes without stuck overlay",
+      "pass": true
+    },
+    {
+      "name": "Original reduced-motion fill duration retained",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion leaves visible static portrait",
+      "pass": true
+    },
+    {
+      "name": "No-JavaScript hero visible without overlay",
+      "pass": true
+    },
+    {
+      "name": "Failed introduction bridge cannot trap visitor",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,51 @@
+npm notice run practiscale-website@0.1.0 test:hero-finish
+npm notice run node scripts/qa-hero-finish.cjs
+{
+  "checks": 41,
+  "failed": [],
+  "boundaries": [
+    {
+      "name": "320-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.3055555555555556,
+      "y": 417.625,
+      "samples": 216
+    },
+    {
+      "name": "375-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.5232558139534884,
+      "y": 404.21875,
+      "samples": 258
+    },
+    {
+      "name": "375-reproduced-old-boundary",
+      "maxChannelStep": 7,
+      "meanChannelStep": 1.7403100775193798,
+      "y": 110.21875,
+      "samples": 258
+    },
+    {
+      "name": "430-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.4,
+      "y": 416.40625,
+      "samples": 300
+    },
+    {
+      "name": "530-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.37333333333333335,
+      "y": 438.5625,
+      "samples": 375
+    },
+    {
+      "name": "375-pinned-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.5465116279069767,
+      "y": 220.375,
+      "samples": 258
+    }
+  ],
+  "errors": []
+}

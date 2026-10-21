@@ -1,0 +1,87 @@
+{
+  "version": "0.33",
+  "date": "2026-10-20",
+  "status": "Passed, including independent rendered visual inspection",
+  "suites": [
+    {
+      "report": "docs/hero-qa.json",
+      "checks": 22,
+      "passed": 22,
+      "failed": 0
+    },
+    {
+      "report": "docs/mobile-editorial-qa.json",
+      "checks": 118,
+      "passed": 118,
+      "failed": 0
+    },
+    {
+      "report": "docs/composition-qa.json",
+      "checks": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "report": "docs/layout-qa.json",
+      "checks": 61,
+      "passed": 61,
+      "failed": 0
+    },
+    {
+      "report": "docs/hero-finish-qa.json",
+      "checks": 41,
+      "passed": 41,
+      "failed": 0
+    },
+    {
+      "report": "docs/motion-qa.json",
+      "checks": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    {
+      "report": "docs/preloader-qa.json",
+      "checks": 22,
+      "passed": 22,
+      "failed": 0
+    },
+    {
+      "report": "docs/problem-carousel-qa.json",
+      "checks": 81,
+      "passed": 81,
+      "failed": 0
+    },
+    {
+      "report": "docs/scroll-navigation-qa.json",
+      "checks": 94,
+      "passed": 94,
+      "failed": 0
+    }
+  ],
+  "totalChecks": 506,
+  "navigation": "Hero anchor on downward scrolling; one floating header returns on upward scrolling; subsequent downward movement releases it at its document position.",
+  "preserved": [
+    "Approved 120-frame CEO sequence and accepted blink",
+    "Original supplied preloader",
+    "Exact CTA wording and brand colors",
+    "Two accepted male v1 images"
+  ],
+  "images": {
+    "activeWoman": "public/media/career-problems/professional-v2.webp",
+    "prompts": [
+      "docs/career-image-prompts.json",
+      "docs/career-image-prompts-v2.json"
+    ],
+    "generator": "Built-in image_gen"
+  },
+  "visualReview": [
+    "Desktop 1536x696 hero and compact carousel",
+    "Phone 375x812 carousel and hero start/turn/final",
+    "Tablet 768x900 carousel and section flow",
+    "Upward revealed navigation on desktop and phone",
+    "Mobile menu and original preloader",
+    "Enlarged text portrait scale"
+  ],
+  "coverageLimit": "Chrome viewport emulation; no real-device Safari run. Generated career illustrations do not represent identified employees.",
+  "build": "Production webpack compile, TypeScript and static generation passed. Final CSS formatting only afterward."
+}

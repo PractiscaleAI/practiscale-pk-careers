@@ -1,0 +1,33 @@
+{
+  "version": "0.34",
+  "date": "2026-10-21",
+  "scope": "The problem card scroll sequence",
+  "reference": "20261021-0949-49.8323664.mp4",
+  "desktop": "One continuous photograph splits, flips and opens into a three-card fan; native scroll reverses the motion.",
+  "mobile": "Readable portrait carousel with bottom controls, swipe and keyboard.",
+  "sourceImagesPreserved": [
+    "graduate-v1.webp",
+    "professional-v2.webp",
+    "freelancer-v1.webp"
+  ],
+  "checks": {
+    "heroMotion": 13,
+    "problemScroll": 122,
+    "site": 22,
+    "navigation": 94
+  },
+  "failed": [],
+  "runtimeErrors": [],
+  "productionBuild": "passed",
+  "visualReview": [
+    "1536x696 opening, split, flip and fan",
+    "1440x900 fan",
+    "320px short phone natural flow",
+    "375x812 phone",
+    "430x932 phone",
+    "768x900 tablet"
+  ],
+  "browser": "Chrome desktop and emulated viewports",
+  "heroAndApprovedCeoFrames": "unchanged",
+  "paidMediaGeneration": "none"
+}

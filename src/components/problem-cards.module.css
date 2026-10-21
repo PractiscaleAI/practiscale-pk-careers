@@ -1,0 +1,325 @@
+.section {
+  --nav-clearance: 120px;
+  background: var(--fog);
+  color: var(--ink);
+  overflow: clip;
+  scroll-margin-top: 0;
+}
+.scene {
+  padding: var(--nav-clearance) 0 24px;
+}
+.section[data-motion="scroll"] {
+  min-height: calc(var(--scene-height) + var(--scroll-travel));
+}
+.section[data-motion="scroll"] .scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: var(--scene-height);
+}
+.section[data-motion="scroll"] .scene > div {
+  flex-shrink: 0;
+}
+.heading {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto var(--section-heading-gap);
+  padding-inline: var(--section-gutter);
+  text-align: center;
+}
+.heading > p {
+  margin-inline: auto;
+  color: var(--muted);
+}
+.heading h2 {
+  margin-top: 12px;
+  font-size: var(--section-title-size);
+  line-height: 1.18;
+  letter-spacing: -0.045em;
+}
+.cards {
+  --deck-space: 48px;
+  --card-width: clamp(260px, min(24vw, calc((100vw - 176px) / 3)), 340px);
+  --card-height: 500px;
+  --card-min-height: 500px;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.viewport {
+  padding: 16px 24px;
+  touch-action: pan-y pinch-zoom;
+}
+.deck {
+  display: grid;
+  gap: 32px;
+}
+.shell {
+  position: relative;
+  width: min(100%, var(--card-width));
+  margin-inline: auto;
+}
+.rotor {
+  position: relative;
+  height: 100%;
+}
+.back {
+  display: none;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  isolation: isolate;
+  width: 100%;
+  min-height: var(--card-height);
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--deep);
+  color: white;
+  box-shadow: 0 22px 42px -20px rgb(19 65 67 / 0.25);
+}
+.card picture {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  max-height: max(var(--card-min-height), calc(var(--card-width) * 1.5));
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(1.02) contrast(0.98) saturate(0.96);
+  user-select: none;
+}
+.card[data-story="progress"] img {
+  filter: brightness(1.06) contrast(0.98) saturate(0.96);
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    transparent calc(100% - var(--copy-height, 250px) - 64px),
+    rgb(19 65 67 / 0.25) calc(100% - var(--copy-height, 250px) - 24px),
+    rgb(19 65 67 / 0.98) calc(100% - var(--copy-height, 250px) + 4px),
+    var(--deep) 100%
+  );
+}
+.number {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgb(255 255 255 / 0.6);
+  border-radius: 50%;
+  background: rgb(19 65 67 / 0.8);
+  font:
+    12px "JetBrains Mono",
+    monospace;
+}
+.copy {
+  position: relative;
+  padding: 24px;
+}
+.copy h3 {
+  max-width: 14em;
+  font-size: var(--card-title-size);
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+}
+.copy p {
+  margin-top: 12px;
+  max-width: none;
+  font-size: var(--body-copy-size);
+  line-height: var(--body-copy-leading);
+  text-wrap: pretty;
+  color: white;
+}
+.cards[data-enhanced="true"]:not([data-layout="list"]) .deck {
+  position: relative;
+  display: block;
+  height: calc(var(--card-height) + 40px);
+  perspective: 1800px;
+}
+.cards[data-enhanced="true"]:not([data-layout="list"]) .shell {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: var(--card-width);
+  height: var(--card-height);
+  margin-left: calc(var(--card-width) / -2);
+  transform-origin: center;
+}
+.cards[data-enhanced="true"]:not([data-layout="list"]) .card {
+  height: 100%;
+}
+.cards[data-layout="fan"][data-enhanced="true"] .viewport {
+  padding: 0;
+}
+.cards[data-layout="fan"] {
+  --deck-space: 60px;
+}
+.cards[data-layout="fan"][data-enhanced="true"] .deck {
+  height: calc(var(--card-height) + var(--deck-space));
+}
+.cards[data-layout="fan"][data-enhanced="true"] .shell {
+  top: 18px;
+}
+.cards[data-layout="fan"][data-enhanced="true"] .shell:first-child {
+  transform: translateX(calc(-1 * (var(--card-width) + min(30px, 2vw))))
+    translateY(10px) rotate(-2.5deg);
+}
+.cards[data-layout="fan"][data-enhanced="true"] .shell:last-child {
+  transform: translateX(calc(var(--card-width) + min(30px, 2vw)))
+    translateY(10px) rotate(2.5deg);
+}
+.cards[data-motion="scroll"] .shell,
+.cards[data-motion="scroll"] .rotor {
+  transform-style: preserve-3d;
+}
+.cards[data-motion="scroll"] .card,
+.cards[data-motion="scroll"] .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cards[data-layout="fan"][data-motion="scroll"] .card {
+  transform: rotateY(180deg);
+}
+.cards[data-layout="fan"][data-motion="scroll"] .back {
+  position: absolute;
+  display: block;
+  inset: 0 -1px;
+  border-radius: 24px;
+  background-color: var(--deep);
+  --art-width: max(
+    calc(var(--card-width) * 3),
+    calc(var(--card-height) * 2.15457)
+  );
+  background-image: url("/media/problem-art/teal-landscape-v1.webp");
+  background-size: var(--art-width) auto;
+  background-position: calc(
+      (var(--card-width) * 3 - var(--art-width)) / 2 - var(--index) *
+        var(--card-width) + 1px
+    )
+    center;
+  background-repeat: no-repeat;
+}
+.cards[data-layout="stack"][data-enhanced="true"] .viewport {
+  overflow: clip;
+  padding: 0;
+}
+.cards[data-layout="stack"][data-enhanced="true"] .deck {
+  height: calc(var(--card-height) + 48px);
+}
+.cards[data-layout="stack"][data-enhanced="true"] .shell {
+  top: 24px;
+}
+.cards[data-layout="stack"] .card,
+.cards[data-layout="stage"] .card {
+  box-shadow: 0 12px 28px -16px rgb(19 65 67 / 0.3);
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  margin: 20px 24px 0;
+}
+.cta a {
+  min-height: var(--control-height);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cards {
+    --card-width: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    --nav-clearance: 96px;
+  }
+  .scene {
+    padding-top: var(--nav-clearance);
+    padding-bottom: 20px;
+  }
+  .heading {
+    padding-inline: var(--section-gutter);
+    max-width: 460px;
+  }
+  .heading h2 {
+    margin-top: 12px;
+  }
+  .cards {
+    --card-width: clamp(256px, calc(100vw - 64px), 330px);
+  }
+  .copy {
+    padding: 20px;
+  }
+  .copy h3 {
+    line-height: 1.2;
+  }
+  .copy p {
+    line-height: var(--body-copy-leading);
+  }
+  .number {
+    top: 24px;
+    width: 36px;
+    height: 36px;
+  }
+  .cards[data-enhanced="true"]:not([data-layout="list"]) .deck {
+    height: calc(var(--card-height) + 24px);
+  }
+  .cards[data-enhanced="true"]:not([data-layout="list"]) .shell {
+    top: 12px;
+  }
+  .cards[data-layout="stack"][data-enhanced="true"] .deck {
+    height: calc(var(--card-height) + 48px);
+  }
+  .cards[data-layout="stack"][data-enhanced="true"] .shell {
+    top: 24px;
+  }
+  .cta {
+    margin-top: 16px;
+  }
+}
+.cards[data-layout="stage"][data-enhanced="true"] {
+  height: calc(var(--stage-height) + var(--scroll-travel));
+}
+.cards[data-layout="stage"][data-enhanced="true"] .viewport {
+  position: sticky;
+  top: var(--stage-top);
+  height: var(--stage-height);
+  overflow: clip;
+  padding: 0;
+}
+.cards[data-layout="stage"][data-enhanced="true"] .deck {
+  height: var(--stage-height);
+}
+.cards[data-layout="stage"][data-enhanced="true"] .shell {
+  top: 24px;
+}
+@media (min-width: 1024px) and (max-height: 760px) {
+  .section {
+    --nav-clearance: 112px;
+  }
+  .scene {
+    padding-bottom: 16px;
+  }
+  .cards[data-layout="fan"] {
+    --deck-space: 40px;
+  }
+  .cards[data-layout="fan"][data-enhanced="true"] .shell {
+    top: 8px;
+  }
+  .cta {
+    margin-top: 16px;
+  }
+}

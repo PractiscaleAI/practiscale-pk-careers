@@ -1,0 +1,55 @@
+{
+  "version": "0.38",
+  "date": "2026-10-21",
+  "result": "passed",
+  "scope": "Shorter problem copy, calmer desktop fan, upright mobile reading holds, earlier front reveal, balanced photo rendering, header clearance and independently pinned short-phone card stage.",
+  "checks": {
+    "typecheck": { "command": "npm.cmd run typecheck", "result": "passed" },
+    "productionBuild": {
+      "command": "npm.cmd run build -- --webpack",
+      "result": "passed",
+      "note": "Used the existing documented Windows Webpack fallback. Default build script unchanged."
+    },
+    "problemCards": {
+      "command": "npm.cmd run test:problem-scroll",
+      "passed": 192,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "accessibilityViolations": 0,
+      "report": "docs/problem-scroll-qa.json"
+    },
+    "navigation": {
+      "command": "npm.cmd run test:scroll-navigation",
+      "passed": 107,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "report": "docs/scroll-navigation-qa.json"
+    },
+    "wholePage": {
+      "command": "npm.cmd run test:browser",
+      "passed": 22,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "accessibilityViolations": 0,
+      "report": "docs/hero-qa.json"
+    }
+  },
+  "visualReview": {
+    "method": "Rendered Chrome screenshots inspected directly: desktop joined landscape, split and reading fan; tablet and phone reading holds; short-phone heading with returning navigation, card-only pin and CTA release; existing hero renders.",
+    "examples": [
+      "docs/qa/problem-scroll/v038/1440-0.png",
+      "docs/qa/problem-scroll/v038/1440-0.2.png",
+      "docs/qa/problem-scroll/v038/1536-0.85.png",
+      "docs/qa/problem-scroll/v038/375-story-2.png",
+      "docs/qa/problem-scroll/v038/320-story-3.png",
+      "docs/qa/problem-scroll/v038/443-heading-navigation.png",
+      "docs/qa/problem-scroll/v038/443-stage-release.png",
+      "docs/qa/problem-scroll/v038/768-story-3.png",
+      "docs/qa/scroll-navigation/1536-hero-top.png"
+    ],
+    "coverageLimit": "Chrome viewport emulation, not real-device Safari coverage or proof of photographic realism."
+  },
+  "palette": "Core brand tokens retained: Deep Teal, Fog, restrained mint/amber emphasis and existing teal-to-blue action gradient. Refinements use spacing, photo exposure and a shorter reading fade.",
+  "media": "Accepted graduate-v1, professional-v2, freelancer-v1 and teal-landscape-v1 source files retained. No new media generation or credits used.",
+  "deployment": "Not deployed. Local development server at http://127.0.0.1:3000/."
+}

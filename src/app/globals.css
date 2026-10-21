@@ -57,6 +57,14 @@
   --link: #0d77a9;
   --primary: linear-gradient(90deg, #0f8272, #0b6b98);
   --radius: 11px;
+  --section-title-size: clamp(28px, min(3.1vw, 4.6svh), 44px);
+  --card-title-size: clamp(24px, 1.8vw, 28px);
+  --section-gutter: clamp(24px, 4vw, 64px);
+  --section-heading-gap: 24px;
+  --body-copy-size: 16px;
+  --body-copy-leading: 1.6;
+  --control-height: 52px;
+  --control-radius: 12px;
   color-scheme: light;
 }
 * {
@@ -164,10 +172,10 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 50px;
-  padding: 13px 20px;
+  min-height: var(--control-height);
+  padding: 14px 20px;
   border: 1px solid #0f8272;
-  border-radius: 11px;
+  border-radius: var(--control-radius);
   background: var(--primary);
   color: white;
   font-size: 15px;
@@ -1870,13 +1878,13 @@ p {
 }
 
 .hero-copy p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: var(--body-copy-size);
+  line-height: var(--body-copy-leading);
 }
 @media (max-width: 767px) {
   .hero-copy p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: var(--body-copy-size);
+    line-height: var(--body-copy-leading);
   }
   .hero-portrait {
     width: 510px;
@@ -2024,7 +2032,7 @@ p {
 .hero-copy .action {
   font-size: 15px;
   line-height: 20px;
-  min-height: 50px;
+  min-height: var(--control-height);
 }
 .hero-jobs {
   display: flex;
@@ -2919,11 +2927,11 @@ p {
     color: var(--dark-muted);
   }
   .hero-copy .action {
-    min-height: 52px;
+    min-height: var(--control-height);
     margin-top: 22px;
-    padding: 14px 18px;
-    gap: 28px;
-    border-radius: 12px;
+    padding: 14px 20px;
+    gap: 24px;
+    border-radius: var(--control-radius);
     font-size: 15px;
   }
   .hero-visual {
@@ -3196,5 +3204,26 @@ p {
 @media (prefers-reduced-motion: reduce) {
   .hero-next-icon {
     transition: none;
+  }
+}
+
+/* Navigation belongs to the hero stage and travels with that section. */
+.hero-stage > .site-header.floating-header {
+  position: absolute;
+  top: 18px;
+  left: var(--hero-gutter);
+  right: var(--hero-gutter);
+  transform: none;
+  visibility: visible;
+  transition: none;
+}
+.hero-stage > .floating-header > .brand::before {
+  display: none;
+}
+@media (max-width: 767px) {
+  .hero-stage > .site-header.floating-header {
+    top: 8px;
+    left: 8px;
+    right: 8px;
   }
 }

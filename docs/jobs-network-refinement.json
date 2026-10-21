@@ -1,0 +1,87 @@
+{
+  "verifiedAt": "2026-10-21T18:22:32.499Z",
+  "findings": [
+    "Thick links crossed at the centre and through unrelated nodes.",
+    "Rear fragments showed through front surfaces.",
+    "Jobs inherited random brain colour assignments.",
+    "Common framing left the smaller network undersized on short phone panels."
+  ],
+  "changes": [
+    "One hub, five satellites and five slim surface-to-surface links.",
+    "Separate node colours and finer, denser front-facing particle surfaces.",
+    "One merged invisible depth surface prevents rear-particle bleed.",
+    "Separate endpoint framing preserves the brain and fits the network to the current viewport.",
+    "Layout rebuilds synchronize to native scroll position instead of resetting the active scene."
+  ],
+  "preserved": {
+    "brain": "6532fa2af3d18a0159fc8930c163cd78a709f824d82bcb214ec86ffd6452dd40",
+    "brainNormals": "2bba8fc517dcf3ed582b9fae0f07528c71458be94cda2b660436161713bcfa04",
+    "seeds": "902b2a61ac4a3cd56176a4c987c23002cafd44b88c33d559c26fb7038035b5c9",
+    "scatter": "d972052ae4872f04d72e7c8c0f5f12d716e36576faca1e98c97b48f99a6e4052"
+  },
+  "careerChecks": 133,
+  "finalScrollStates": 25,
+  "spacing": [
+    {
+      "width": 1440,
+      "height": 900,
+      "cameraDistance": 4.592,
+      "nodeGap": 86.26757592780348,
+      "linkGap": 159.8962905773953,
+      "nodes": 6,
+      "links": 5
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "cameraDistance": 6.222,
+      "nodeGap": 67.14335052971244,
+      "linkGap": 120.58501966209647,
+      "nodes": 6,
+      "links": 5
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "cameraDistance": 3.718,
+      "nodeGap": 37.18543036990305,
+      "linkGap": 71.00622568352892,
+      "nodes": 6,
+      "links": 5
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "cameraDistance": 3.718,
+      "nodeGap": 31.244476845961525,
+      "linkGap": 59.66187165830887,
+      "nodes": 6,
+      "links": 5
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "cameraDistance": 3.718,
+      "nodeGap": 24.697600014653204,
+      "linkGap": 47.160496544942035,
+      "nodes": 6,
+      "links": 5
+    }
+  ],
+  "directJobsLink": true,
+  "build": {
+    "command": "npm.cmd run build -- --webpack",
+    "exitCode": 0
+  },
+  "visualReview": {
+    "desktop": "docs/qa/career-section/v039-two-paths/jobs-network-desktop.png",
+    "phone": "docs/qa/career-section/v039-two-paths/jobs-network-layout-375x667.png",
+    "inspected": [
+      "Desktop complete network and both scroll holds",
+      "Tablet and short-phone network fit",
+      "Midpoint and reverse state continuity",
+      "All nodes remain separated and connectors avoid unrelated nodes"
+    ]
+  },
+  "coverage": "Chrome viewport and touch emulation, not real-device Safari FPS certification."
+}

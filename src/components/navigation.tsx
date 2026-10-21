@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { whatsapp } from "@/lib/content";
@@ -21,27 +22,123 @@ const groups = [
     ],
   },
 ];
+type Placement = { mode: "hero" | "up" | "released"; pageTop: number };
 export default function Navigation() {
   const [mobile, setMobile] = useState(false),
-    [open, setOpen] = useState<string | null>(null),
-    [scrolled, setScrolled] = useState(false);
+    [open, setOpen] = useState<string | null>(null);
   const path = usePathname();
   const ref = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
-  const sentinel = useRef<HTMLSpanElement>(null);
-  useEffect(() => {
-    const marker = sentinel.current;
-    if (!marker) return;
-    const observer = new IntersectionObserver(([entry]) => {
-      setScrolled(!entry.isIntersecting);
-    });
-    observer.observe(marker);
-    return () => observer.disconnect();
+  const [placement, setPlacement] = useState<Placement>({
+    mode: "hero",
+    pageTop: 0,
+  });
+  const currentPlacement = useRef(placement);
+  const place = useCallback((next: Placement) => {
+    if (
+      currentPlacement.current.mode === next.mode &&
+      currentPlacement.current.pageTop === next.pageTop
+    )
+      return;
+    currentPlacement.current = next;
+    setPlacement(next);
   }, []);
   useEffect(() => {
     setMobile(false);
     setOpen(null);
-  }, [path]);
+    place({ mode: "hero", pageTop: 0 });
+  }, [path, place]);
+  useEffect(() => {
+    const stage = document.querySelector<HTMLElement>(".hero-stage");
+    if (!stage) return;
+    let lastY = Math.max(0, window.scrollY),
+      direction = 0,
+      distance = 0,
+      turnY = lastY,
+      frame = 0,
+      focusFrame = 0;
+    const anchorInPlace = () =>
+      stage.getBoundingClientRect().top + (innerWidth < 768 ? 8 : 18) >=
+      (innerWidth < 768 ? 16 : 32) - 1;
+    const update = () => {
+      frame = 0;
+      const y = Math.max(
+        0,
+        Math.min(
+          window.scrollY,
+          document.documentElement.scrollHeight - innerHeight,
+        ),
+      );
+      const previousY = lastY,
+        delta = y - previousY;
+      lastY = y;
+      const focused =
+        ref.current?.contains(document.activeElement) &&
+        document.activeElement?.matches(":focus-visible");
+      if (mobile || open || focused) {
+        if (!anchorInPlace()) place({ mode: "up", pageTop: 0 });
+        return;
+      }
+      if (anchorInPlace()) {
+        place({ mode: "hero", pageTop: 0 });
+        distance = 0;
+        return;
+      }
+      if (Math.abs(delta) < 0.5) return;
+      const nextDirection = Math.sign(delta);
+      if (nextDirection !== direction) {
+        distance = 0;
+        turnY = previousY;
+      }
+      direction = nextDirection;
+      distance += Math.abs(delta);
+      if (distance < 8) return;
+      if (direction < 0) place({ mode: "up", pageTop: 0 });
+      else if (currentPlacement.current.mode === "up")
+        place({
+          mode: "released",
+          pageTop: turnY + (innerWidth < 768 ? 16 : 32),
+        });
+      else if (
+        currentPlacement.current.mode === "released" &&
+        ref.current &&
+        ref.current.getBoundingClientRect().bottom < 0
+      )
+        place({ mode: "hero", pageTop: 0 });
+    };
+    const scroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    const keyboard = (event: KeyboardEvent) => {
+      if (
+        event.key !== "Tab" ||
+        document.activeElement !== document.body ||
+        anchorInPlace() ||
+        document.querySelector("main")?.inert
+      )
+        return;
+      event.preventDefault();
+      place({ mode: "up", pageTop: 0 });
+      focusFrame = requestAnimationFrame(() => {
+        const controls = [
+          ...(ref.current?.querySelectorAll<HTMLElement>("a,button") ?? []),
+        ].filter((el) => el.getClientRects().length > 0);
+        (event.shiftKey ? controls.at(-1) : controls[0])?.focus({
+          preventScroll: true,
+        });
+      });
+    };
+    window.addEventListener("scroll", scroll, { passive: true });
+    window.addEventListener("resize", scroll, { passive: true });
+    document.addEventListener("keydown", keyboard);
+    return () => {
+      window.removeEventListener("scroll", scroll);
+      window.removeEventListener("resize", scroll);
+      document.removeEventListener("keydown", keyboard);
+      cancelAnimationFrame(frame);
+      cancelAnimationFrame(focusFrame);
+    };
+  }, [mobile, open, place]);
   useEffect(() => {
     const close = (e: KeyboardEvent) => {
       if (e.key === "Escape" && (mobile || open)) {
@@ -67,12 +164,17 @@ export default function Navigation() {
       document.removeEventListener("pointerdown", outside);
     };
   }, [mobile, open]);
-  return (
+  const navigation = (
     <>
-      <span ref={sentinel} className="nav-scroll-marker" aria-hidden="true" />
       <header
-        className={`site-header floating-header ${path === "/" ? "home-header" : ""} ${scrolled ? "is-scrolled" : ""}`}
+        className={`site-header floating-header ${path === "/" ? "home-header" : ""} ${placement.mode !== "hero" ? "is-scrolled" : ""}`}
         ref={ref}
+        data-placement={placement.mode}
+        style={
+          placement.mode === "released"
+            ? { position: "absolute", top: placement.pageTop }
+            : undefined
+        }
         onBlur={(event) => {
           if (!event.currentTarget.contains(event.relatedTarget)) {
             setMobile(false);
@@ -193,4 +295,7 @@ export default function Navigation() {
       </header>
     </>
   );
+  return placement.mode === "hero"
+    ? navigation
+    : createPortal(navigation, document.body);
 }

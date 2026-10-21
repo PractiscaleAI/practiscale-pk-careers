@@ -1,0 +1,1241 @@
+npm notice run practiscale-website@0.1.0 test:carousel
+npm notice run node scripts/qa-problem-carousel.cjs
+{
+  "checks": [
+    {
+      "name": "Exactly two authorized homepage sections",
+      "pass": true
+    },
+    {
+      "name": "No pagination dots",
+      "pass": true
+    },
+    {
+      "name": "No em dashes in visible page copy",
+      "pass": true
+    },
+    {
+      "name": "Exactly three original problem cards",
+      "pass": true
+    },
+    {
+      "name": "Exact heading and eyebrow",
+      "pass": true
+    },
+    {
+      "name": "Exact card titles",
+      "pass": true
+    },
+    {
+      "name": "Exact card bodies",
+      "pass": true
+    },
+    {
+      "name": "One real section CTA",
+      "pass": true
+    },
+    {
+      "name": "Only one accessible slide",
+      "pass": true
+    },
+    {
+      "name": "Next advances",
+      "pass": true
+    },
+    {
+      "name": "Previous reverses",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps",
+      "pass": true
+    },
+    {
+      "name": "Next wraps",
+      "pass": true
+    },
+    {
+      "name": "Direct keyboard selection 1",
+      "pass": true
+    },
+    {
+      "name": "Direct keyboard selection 2",
+      "pass": true
+    },
+    {
+      "name": "Direct keyboard selection 3",
+      "pass": true
+    },
+    {
+      "name": "Keyboard Home",
+      "pass": true
+    },
+    {
+      "name": "Keyboard ArrowRight",
+      "pass": true
+    },
+    {
+      "name": "Keyboard ArrowLeft",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End",
+      "pass": true
+    },
+    {
+      "name": "Visible keyboard focus",
+      "pass": true,
+      "detail": {
+        "outline": "solid",
+        "width": 2
+      }
+    },
+    {
+      "name": "No autoplay",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 320",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 288,
+        "width": 256,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 204.6931610107422,
+            "right": 421.47174072265625,
+            "width": 216.77857971191406,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -101.47174835205078,
+            "right": 115.30684661865234,
+            "width": 216.77859497070312,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 320",
+      "pass": true,
+      "detail": [
+        {
+          "x": 204.6931610107422,
+          "right": 421.47174072265625,
+          "width": 216.77857971191406,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -101.47174835205078,
+          "right": 115.30684661865234,
+          "width": 216.77859497070312,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 320",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 288,
+        "width": 256,
+        "height": 520,
+        "headingTop": 316.875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": -101.47174835205078,
+            "right": 115.30684661865234,
+            "width": 216.77859497070312,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": 204.6931610107422,
+            "right": 421.47174072265625,
+            "width": 216.77857971191406,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 320",
+      "pass": true,
+      "detail": [
+        {
+          "x": -101.47174835205078,
+          "right": 115.30684661865234,
+          "width": 216.77859497070312,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": 204.6931610107422,
+          "right": 421.47174072265625,
+          "width": 216.77857971191406,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 320",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 288,
+        "width": 256,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 204.6931610107422,
+            "right": 421.47174072265625,
+            "width": 216.77857971191406,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -101.47174835205078,
+            "right": 115.30684661865234,
+            "width": 216.77859497070312,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 320",
+      "pass": true,
+      "detail": [
+        {
+          "x": 204.6931610107422,
+          "right": 421.47174072265625,
+          "width": 216.77857971191406,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -101.47174835205078,
+          "right": 115.30684661865234,
+          "width": 216.77859497070312,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 320",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 375",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 343,
+        "width": 311,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 241.64146423339844,
+            "right": 506.0764617919922,
+            "width": 264.43499755859375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -131.07643127441406,
+            "right": 133.35853576660156,
+            "width": 264.4349670410156,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 375",
+      "pass": true,
+      "detail": [
+        {
+          "x": 241.64146423339844,
+          "right": 506.0764617919922,
+          "width": 264.43499755859375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -131.07643127441406,
+          "right": 133.35853576660156,
+          "width": 264.4349670410156,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 375",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 343,
+        "width": 311,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": -131.07643127441406,
+            "right": 133.35853576660156,
+            "width": 264.4349670410156,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": 241.64146423339844,
+            "right": 506.0764617919922,
+            "width": 264.43499755859375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 375",
+      "pass": true,
+      "detail": [
+        {
+          "x": -131.07643127441406,
+          "right": 133.35853576660156,
+          "width": 264.4349670410156,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": 241.64146423339844,
+          "right": 506.0764617919922,
+          "width": 264.43499755859375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 375",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "right": 343,
+        "width": 311,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 241.64146423339844,
+            "right": 506.0764617919922,
+            "width": 264.43499755859375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -131.07643127441406,
+            "right": 133.35853576660156,
+            "width": 264.4349670410156,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 375",
+      "pass": true,
+      "detail": [
+        {
+          "x": 241.64146423339844,
+          "right": 506.0764617919922,
+          "width": 264.43499755859375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -131.07643127441406,
+          "right": 133.35853576660156,
+          "width": 264.4349670410156,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 375",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 430",
+      "pass": true,
+      "detail": {
+        "x": 50,
+        "right": 380,
+        "width": 330,
+        "height": 520,
+        "headingTop": 363.25,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 272.39300537109375,
+            "right": 553.3812255859375,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -123.38123321533203,
+            "right": 157.60698699951172,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 430",
+      "pass": true,
+      "detail": [
+        {
+          "x": 272.39300537109375,
+          "right": 553.3812255859375,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -123.38123321533203,
+          "right": 157.60698699951172,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 430",
+      "pass": true,
+      "detail": {
+        "x": 50,
+        "right": 380,
+        "width": 330,
+        "height": 520,
+        "headingTop": 340.0625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": -123.38123321533203,
+            "right": 157.60698699951172,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": 272.39300537109375,
+            "right": 553.3812255859375,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 430",
+      "pass": true,
+      "detail": [
+        {
+          "x": -123.38123321533203,
+          "right": 157.60698699951172,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": 272.39300537109375,
+          "right": 553.3812255859375,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 430",
+      "pass": true,
+      "detail": {
+        "x": 50,
+        "right": 380,
+        "width": 330,
+        "height": 520,
+        "headingTop": 363.25,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 272.39300537109375,
+            "right": 553.3812255859375,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          },
+          {
+            "x": -123.38123321533203,
+            "right": 157.60698699951172,
+            "width": 280.98822021484375,
+            "opacity": 0.34,
+            "blur": "blur(2px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 430",
+      "pass": true,
+      "detail": [
+        {
+          "x": 272.39300537109375,
+          "right": 553.3812255859375,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        },
+        {
+          "x": -123.38123321533203,
+          "right": 157.60698699951172,
+          "width": 280.98822021484375,
+          "opacity": 0.34,
+          "blur": "blur(2px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 430",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 768",
+      "pass": true,
+      "detail": {
+        "x": 199,
+        "right": 569,
+        "width": 370,
+        "height": 560,
+        "headingTop": 394.8125,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 431.3140563964844,
+            "right": 746.6358642578125,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 21.364126205444336,
+            "right": 336.68593406677246,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 768",
+      "pass": true,
+      "detail": [
+        {
+          "x": 431.3140563964844,
+          "right": 746.6358642578125,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 21.364126205444336,
+          "right": 336.68593406677246,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 768",
+      "pass": true,
+      "detail": {
+        "x": 199,
+        "right": 569,
+        "width": 370,
+        "height": 560,
+        "headingTop": 394.8125,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 21.364126205444336,
+            "right": 336.68593406677246,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 431.3140563964844,
+            "right": 746.6358642578125,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 768",
+      "pass": true,
+      "detail": [
+        {
+          "x": 21.364126205444336,
+          "right": 336.68593406677246,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 431.3140563964844,
+          "right": 746.6358642578125,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 768",
+      "pass": true,
+      "detail": {
+        "x": 199,
+        "right": 569,
+        "width": 370,
+        "height": 560,
+        "headingTop": 422.40625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 431.3140563964844,
+            "right": 746.6358642578125,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 21.364126205444336,
+            "right": 336.68593406677246,
+            "width": 315.3218078613281,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 768",
+      "pass": true,
+      "detail": [
+        {
+          "x": 431.3140563964844,
+          "right": 746.6358642578125,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 21.364126205444336,
+          "right": 336.68593406677246,
+          "width": 315.3218078613281,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 768",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 1024",
+      "pass": true,
+      "detail": {
+        "x": 312,
+        "right": 712,
+        "width": 400,
+        "height": 560,
+        "headingTop": 394.8125,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 547.2813110351562,
+            "right": 888.2018432617188,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 135.79818725585938,
+            "right": 476.7187194824219,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 547.2813110351562,
+          "right": 888.2018432617188,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 135.79818725585938,
+          "right": 476.7187194824219,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 1024",
+      "pass": true,
+      "detail": {
+        "x": 312,
+        "right": 712,
+        "width": 400,
+        "height": 560,
+        "headingTop": 394.8125,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 135.79818725585938,
+            "right": 476.7187194824219,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 547.2813110351562,
+            "right": 888.2018432617188,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 135.79818725585938,
+          "right": 476.7187194824219,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 547.2813110351562,
+          "right": 888.2018432617188,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 1024",
+      "pass": true,
+      "detail": {
+        "x": 312,
+        "right": 712,
+        "width": 400,
+        "height": 560,
+        "headingTop": 422.40625,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 547.2813110351562,
+            "right": 888.2018432617188,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 135.79818725585938,
+            "right": 476.7187194824219,
+            "width": 340.9205322265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 547.2813110351562,
+          "right": 888.2018432617188,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 135.79818725585938,
+          "right": 476.7187194824219,
+          "width": 340.9205322265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 1024",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 1440",
+      "pass": true,
+      "detail": {
+        "x": 520,
+        "right": 920,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 785.8015747070312,
+            "right": 1128.0267333984375,
+            "width": 342.22515869140625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 311.97320556640625,
+            "right": 654.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 785.8015747070312,
+          "right": 1128.0267333984375,
+          "width": 342.22515869140625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 311.97320556640625,
+          "right": 654.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 1440",
+      "pass": true,
+      "detail": {
+        "x": 520,
+        "right": 920,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 311.97320556640625,
+            "right": 654.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 785.8015747070312,
+            "right": 1128.0267333984375,
+            "width": 342.22515869140625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 311.97320556640625,
+          "right": 654.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 785.8015747070312,
+          "right": 1128.0267333984375,
+          "width": 342.22515869140625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 1440",
+      "pass": true,
+      "detail": {
+        "x": 520,
+        "right": 920,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 785.8015747070312,
+            "right": 1128.0267333984375,
+            "width": 342.22515869140625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 311.97320556640625,
+            "right": 654.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 785.8015747070312,
+          "right": 1128.0267333984375,
+          "width": 342.22515869140625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 311.97320556640625,
+          "right": 654.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 1440",
+      "pass": true
+    },
+    {
+      "name": "Readable card 1 at 1920",
+      "pass": true,
+      "detail": {
+        "x": 760,
+        "right": 1160,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 1025.801513671875,
+            "right": 1368.0267333984375,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 551.9732055664062,
+            "right": 894.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 1 at 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 1025.801513671875,
+          "right": 1368.0267333984375,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 551.9732055664062,
+          "right": 894.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 2 at 1920",
+      "pass": true,
+      "detail": {
+        "x": 760,
+        "right": 1160,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 551.9732055664062,
+            "right": 894.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 1025.801513671875,
+            "right": 1368.0267333984375,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 2 at 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 551.9732055664062,
+          "right": 894.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 1025.801513671875,
+          "right": 1368.0267333984375,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Readable card 3 at 1920",
+      "pass": true,
+      "detail": {
+        "x": 760,
+        "right": 1160,
+        "width": 400,
+        "height": 560,
+        "headingTop": 385.21875,
+        "gap": 12,
+        "copyFits": true,
+        "loaded": true,
+        "side": [
+          {
+            "x": 1025.801513671875,
+            "right": 1368.0267333984375,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          },
+          {
+            "x": 551.9732055664062,
+            "right": 894.1984252929688,
+            "width": 342.2252197265625,
+            "opacity": 0.4,
+            "blur": "blur(3px)"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "name": "Layered previews 3 at 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 1025.801513671875,
+          "right": 1368.0267333984375,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        },
+        {
+          "x": 551.9732055664062,
+          "right": 894.1984252929688,
+          "width": 342.2252197265625,
+          "opacity": 0.4,
+          "blur": "blur(3px)"
+        }
+      ]
+    },
+    {
+      "name": "Touch targets 1920",
+      "pass": true
+    },
+    {
+      "name": "Navigation remains attached to hero above the carousel",
+      "pass": true
+    },
+    {
+      "name": "Horizontal drag advances",
+      "pass": true
+    },
+    {
+      "name": "Touch scroll and pinch remain native",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text and spacing remain readable",
+      "pass": true,
+      "detail": {
+        "fits": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Reduced motion advances without animated transition",
+      "pass": true
+    },
+    {
+      "name": "No automated section accessibility violations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No JavaScript shows all three stories",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript hides inactive controls",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "violations": []
+}

@@ -1,0 +1,1482 @@
+npm notice run practiscale-website@0.1.0 test:problem-scroll
+npm notice run node scripts/qa-problem-scroll.cjs
+{
+  "checks": [
+    {
+      "name": "Exactly two homepage sections",
+      "pass": true
+    },
+    {
+      "name": "Exact problem titles",
+      "pass": true
+    },
+    {
+      "name": "Exact problem descriptions",
+      "pass": true
+    },
+    {
+      "name": "Exact heading",
+      "pass": true
+    },
+    {
+      "name": "Exactly one Explore training link below the cards",
+      "pass": true
+    },
+    {
+      "name": "No pagination dots or em dashes",
+      "pass": true
+    },
+    {
+      "name": "Accepted image selection unchanged",
+      "pass": true
+    },
+    {
+      "name": "Scroll scene enabled 1024x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 974,
+        "mode": "scroll",
+        "sceneHeight": 696
+      }
+    },
+    {
+      "name": "Unified image has adjoining panels 1024",
+      "pass": true,
+      "detail": [
+        {
+          "left": 104.45001983642578,
+          "right": 376.1500015258789,
+          "top": 384.76312255859375,
+          "bottom": 949.0631103515625
+        },
+        {
+          "left": 376.1499938964844,
+          "right": 647.8499755859375,
+          "top": 384.76312255859375,
+          "bottom": 949.0631103515625
+        },
+        {
+          "left": 647.8499755859375,
+          "right": 919.5499877929688,
+          "top": 384.76312255859375,
+          "bottom": 949.0631103515625
+        }
+      ]
+    },
+    {
+      "name": "Opening photo preserves the full head 1024",
+      "pass": true,
+      "detail": {
+        "top": 48.75,
+        "bottom": 276.25,
+        "height": 540
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2167
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.3865
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.6483
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1024x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 402,
+          "y": 795.453125,
+          "width": 220,
+          "height": 50,
+          "top": 795.453125,
+          "right": 622,
+          "bottom": 845.453125,
+          "left": 402
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 85.22761535644531,
+              "y": 200.25677490234375,
+              "width": 292.58477783203125,
+              "height": 547.3948974609375,
+              "top": 200.25677490234375,
+              "right": 377.81239318847656,
+              "bottom": 747.6516723632812,
+              "left": 85.22761535644531
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 382.2058410644531,
+              "y": 193.0582733154297,
+              "width": 259.9517517089844,
+              "height": 540.756103515625,
+              "top": 193.0582733154297,
+              "right": 642.1575927734375,
+              "bottom": 733.8143768310547,
+              "left": 382.2058410644531
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 645.9520874023438,
+              "y": 202.70355224609375,
+              "width": 295.63568115234375,
+              "height": 547.2771606445312,
+              "top": 202.70355224609375,
+              "right": 941.5877685546875,
+              "bottom": 749.980712890625,
+              "left": 645.9520874023438
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 900,
+          "top": 0,
+          "right": 1024,
+          "bottom": 900,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1024",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the same image 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 104.45001983642578,
+          "y": 196.76312255859375,
+          "width": 271.6999816894531,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 376.1500015258789,
+          "bottom": 761.0631103515625,
+          "left": 104.45001983642578
+        },
+        {
+          "x": 376.1499938964844,
+          "y": 196.76312255859375,
+          "width": 271.6999816894531,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 647.8499755859375,
+          "bottom": 761.0631103515625,
+          "left": 376.1499938964844
+        },
+        {
+          "x": 647.8499755859375,
+          "y": 196.76312255859375,
+          "width": 271.70001220703125,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 919.5499877929688,
+          "bottom": 761.0631103515625,
+          "left": 647.8499755859375
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1192x768",
+      "pass": true,
+      "detail": {
+        "top": 1281.1875,
+        "travel": 1075,
+        "mode": "scroll",
+        "sceneHeight": 768
+      }
+    },
+    {
+      "name": "Unified image has adjoining panels 1192",
+      "pass": true,
+      "detail": [
+        {
+          "left": 147.66238403320312,
+          "right": 446.614013671875,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        },
+        {
+          "left": 446.5323791503906,
+          "right": 745.4840087890625,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        },
+        {
+          "left": 745.40234375,
+          "right": 1044.35400390625,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        }
+      ]
+    },
+    {
+      "name": "Opening photo preserves the full head 1192",
+      "pass": true,
+      "detail": {
+        "top": 53.64,
+        "bottom": 303.96000000000004,
+        "height": 448
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.1875,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.28
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5005
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8502
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1192x768",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 486,
+          "y": 687.671875,
+          "width": 220,
+          "height": 50,
+          "top": 687.671875,
+          "right": 706,
+          "bottom": 737.671875,
+          "left": 486
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 121.97435760498047,
+              "y": 187.10232543945312,
+              "width": 328.38690185546875,
+              "height": 465.1391296386719,
+              "top": 187.10232543945312,
+              "right": 450.3612594604492,
+              "bottom": 652.241455078125,
+              "left": 121.97435760498047
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 452.96875,
+              "y": 177.671875,
+              "width": 286.078125,
+              "height": 448,
+              "top": 177.671875,
+              "right": 739.046875,
+              "bottom": 625.671875,
+              "left": 452.96875
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 741.6543579101562,
+              "y": 187.10232543945312,
+              "width": 328.38690185546875,
+              "height": 465.1391296386719,
+              "top": 187.10232543945312,
+              "right": 1070.041259765625,
+              "bottom": 652.241455078125,
+              "left": 741.6543579101562
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1192,
+          "height": 768,
+          "top": 0,
+          "right": 1192,
+          "bottom": 768,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1192",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the same image 1192",
+      "pass": true,
+      "detail": [
+        {
+          "x": 147.66238403320312,
+          "y": 183.2393798828125,
+          "width": 298.9516296386719,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 446.614013671875,
+          "bottom": 651.3993530273438,
+          "left": 147.66238403320312
+        },
+        {
+          "x": 446.5323791503906,
+          "y": 183.2393798828125,
+          "width": 298.9516296386719,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 745.4840087890625,
+          "bottom": 651.3993530273438,
+          "left": 446.5323791503906
+        },
+        {
+          "x": 745.40234375,
+          "y": 183.2393798828125,
+          "width": 298.95166015625,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 1044.35400390625,
+          "bottom": 651.3993530273438,
+          "left": 745.40234375
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1440x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 1260,
+        "mode": "scroll",
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Unified image has adjoining panels 1440",
+      "pass": true,
+      "detail": [
+        {
+          "left": 187.04998779296875,
+          "right": 542.3499755859375,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        },
+        {
+          "left": 542.3499755859375,
+          "right": 897.6499633789062,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        },
+        {
+          "left": 897.6499633789062,
+          "right": 1252.949951171875,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        }
+      ]
+    },
+    {
+      "name": "Opening photo preserves the full head 1440",
+      "pass": true,
+      "detail": {
+        "top": 63.75,
+        "bottom": 361.25,
+        "height": 540
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2802
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.85
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1440x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 610,
+          "y": 806.859375,
+          "width": 220,
+          "height": 50,
+          "top": 806.859375,
+          "right": 830,
+          "bottom": 856.859375,
+          "left": 610
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 155.611572265625,
+              "y": 212.81527709960938,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 212.81527709960938,
+              "right": 546.7884521484375,
+              "bottom": 772.9035339355469,
+              "left": 155.611572265625
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 550,
+              "y": 204.859375,
+              "width": 340,
+              "height": 540,
+              "top": 204.859375,
+              "right": 890,
+              "bottom": 744.859375,
+              "left": 550
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 893.2115478515625,
+              "y": 212.81527709960938,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 212.81527709960938,
+              "right": 1284.388427734375,
+              "bottom": 772.9035339355469,
+              "left": 893.2115478515625
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1440",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the same image 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 187.04998779296875,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 542.3499755859375,
+          "bottom": 772.4693603515625,
+          "left": 187.04998779296875
+        },
+        {
+          "x": 542.3499755859375,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 897.6499633789062,
+          "bottom": 772.4693603515625,
+          "left": 542.3499755859375
+        },
+        {
+          "x": 897.6499633789062,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 1252.949951171875,
+          "bottom": 772.4693603515625,
+          "left": 897.6499633789062
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1536x696",
+      "pass": true,
+      "detail": {
+        "top": 1162.390625,
+        "travel": 974,
+        "mode": "scroll",
+        "sceneHeight": 696
+      }
+    },
+    {
+      "name": "Unified image has adjoining panels 1536",
+      "pass": true,
+      "detail": [
+        {
+          "left": 235.04998779296875,
+          "right": 590.3499755859375,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        },
+        {
+          "left": 590.3499755859375,
+          "right": 945.6499633789062,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        },
+        {
+          "left": 945.6499633789062,
+          "right": 1300.949951171875,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        }
+      ]
+    },
+    {
+      "name": "Opening photo preserves the full head 1536",
+      "pass": true,
+      "detail": {
+        "top": 63.75,
+        "bottom": 361.25,
+        "height": 389
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.390625,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2803
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8501
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1536x696",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 658,
+          "y": 618.265625,
+          "width": 220,
+          "height": 50,
+          "top": 618.265625,
+          "right": 878,
+          "bottom": 668.265625,
+          "left": 658
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 211.33665466308594,
+              "y": 172.41064453125,
+              "width": 373.32666015625,
+              "height": 414.7099609375,
+              "top": 172.41064453125,
+              "right": 584.6633148193359,
+              "bottom": 587.12060546875,
+              "left": 211.33665466308594
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 598,
+              "y": 167.265625,
+              "width": 340,
+              "height": 389,
+              "top": 167.265625,
+              "right": 938,
+              "bottom": 556.265625,
+              "left": 598
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 951.336669921875,
+              "y": 172.41064453125,
+              "width": 373.32666015625,
+              "height": 414.7099609375,
+              "top": 172.41064453125,
+              "right": 1324.663330078125,
+              "bottom": 587.12060546875,
+              "left": 951.336669921875
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 696,
+          "top": 0,
+          "right": 1536,
+          "bottom": 696,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1536",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the same image 1536",
+      "pass": true,
+      "detail": [
+        {
+          "x": 235.04998779296875,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 590.3499755859375,
+          "bottom": 580.8686981201172,
+          "left": 235.04998779296875
+        },
+        {
+          "x": 590.3499755859375,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 945.6499633789062,
+          "bottom": 580.8686981201172,
+          "left": 590.3499755859375
+        },
+        {
+          "x": 945.6499633789062,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 1300.949951171875,
+          "bottom": 580.8686981201172,
+          "left": 945.6499633789062
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1920x1080",
+      "pass": true,
+      "detail": {
+        "top": 1796,
+        "travel": 1512,
+        "mode": "scroll",
+        "sceneHeight": 1080
+      }
+    },
+    {
+      "name": "Unified image has adjoining panels 1920",
+      "pass": true,
+      "detail": [
+        {
+          "left": 427.04998779296875,
+          "right": 782.3499755859375,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        },
+        {
+          "left": 782.3499755859375,
+          "right": 1137.64990234375,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        },
+        {
+          "left": 1137.64990234375,
+          "right": 1492.949951171875,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        }
+      ]
+    },
+    {
+      "name": "Opening photo preserves the full head 1920",
+      "pass": true,
+      "detail": {
+        "top": 63.75,
+        "bottom": 361.25,
+        "height": 540
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2798
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8499
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1920x1080",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 850,
+          "y": 899.90625,
+          "width": 220,
+          "height": 50,
+          "top": 899.90625,
+          "right": 1070,
+          "bottom": 949.90625,
+          "left": 850
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 394.41156005859375,
+              "y": 305.8621520996094,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 305.8621520996094,
+              "right": 785.5884399414062,
+              "bottom": 865.9504089355469,
+              "left": 394.41156005859375
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 790,
+              "y": 297.90625,
+              "width": 340,
+              "height": 540,
+              "top": 297.90625,
+              "right": 1130,
+              "bottom": 837.90625,
+              "left": 790
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 1134.41162109375,
+              "y": 305.8621520996094,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 305.8621520996094,
+              "right": 1525.5885009765625,
+              "bottom": 865.9504089355469,
+              "left": 1134.41162109375
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1920",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the same image 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 427.04998779296875,
+          "y": 301.21624755859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 782.3499755859375,
+          "bottom": 865.5162353515625,
+          "left": 427.04998779296875
+        },
+        {
+          "x": 782.3499755859375,
+          "y": 301.21624755859375,
+          "width": 355.2999267578125,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 1137.64990234375,
+          "bottom": 865.5162353515625,
+          "left": 782.3499755859375
+        },
+        {
+          "x": 1137.64990234375,
+          "y": 301.21624755859375,
+          "width": 355.300048828125,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 1492.949951171875,
+          "bottom": 865.5162353515625,
+          "left": 1137.64990234375
+        }
+      ]
+    },
+    {
+      "name": "Small screens keep natural flow 320",
+      "pass": true,
+      "detail": {
+        "top": 1231.265625,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 743
+      }
+    },
+    {
+      "name": "Readable small-screen card 320/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 320/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 320/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 320",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 320",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 320",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 320",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 320",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 320",
+      "pass": true
+    },
+    {
+      "name": "Small screens keep natural flow 375",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "Readable small-screen card 375/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 164.65625,
+          "width": 311,
+          "height": 505,
+          "top": 164.65625,
+          "right": 343,
+          "bottom": 669.65625,
+          "left": 32
+        },
+        "copyBottom": 649.65625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 375/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 164.65625,
+          "width": 311,
+          "height": 505,
+          "top": 164.65625,
+          "right": 343,
+          "bottom": 669.65625,
+          "left": 32
+        },
+        "copyBottom": 649.65625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 375/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 164.65625,
+          "width": 311,
+          "height": 505,
+          "top": 164.65625,
+          "right": 343,
+          "bottom": 669.65625,
+          "left": 32
+        },
+        "copyBottom": 649.65625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 375",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 375",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 375",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 375",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 375",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 375",
+      "pass": true
+    },
+    {
+      "name": "Horizontal swipe advances a phone card",
+      "pass": true
+    },
+    {
+      "name": "Vertical drag does not change cards",
+      "pass": true
+    },
+    {
+      "name": "Dragging does not select card text",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 375x812",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "Small screens keep natural flow 430",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 838
+      }
+    },
+    {
+      "name": "Readable small-screen card 430/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 270.171875,
+          "width": 330,
+          "height": 520,
+          "top": 270.171875,
+          "right": 380,
+          "bottom": 790.171875,
+          "left": 50
+        },
+        "copyBottom": 770.171875,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 430/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 270.171875,
+          "width": 330,
+          "height": 520,
+          "top": 270.171875,
+          "right": 380,
+          "bottom": 790.171875,
+          "left": 50
+        },
+        "copyBottom": 770.171875,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 430/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 270.171875,
+          "width": 330,
+          "height": 520,
+          "top": 270.171875,
+          "right": 380,
+          "bottom": 790.171875,
+          "left": 50
+        },
+        "copyBottom": 770.171875,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 430",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 430",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 430",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 430",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 430",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 430",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 430x932",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 838
+      }
+    },
+    {
+      "name": "Small screens keep natural flow 768",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 863
+      }
+    },
+    {
+      "name": "Readable small-screen card 768/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 209.78125,
+          "width": 360,
+          "height": 520,
+          "top": 209.78125,
+          "right": 564,
+          "bottom": 729.78125,
+          "left": 204
+        },
+        "copyBottom": 707.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 768/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 209.78125,
+          "width": 360,
+          "height": 520,
+          "top": 209.78125,
+          "right": 564,
+          "bottom": 729.78125,
+          "left": 204
+        },
+        "copyBottom": 707.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 768/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 209.78125,
+          "width": 360,
+          "height": 520,
+          "top": 209.78125,
+          "right": 564,
+          "bottom": 729.78125,
+          "left": 204
+        },
+        "copyBottom": 707.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 768",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 768",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 768",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 768",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 768",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 768",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 768x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 863
+      }
+    },
+    {
+      "name": "Enlarged text disables the pin",
+      "pass": true
+    },
+    {
+      "name": "Enlarged card text remains inside its card",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion shows all desktop stories without a pin",
+      "pass": true
+    },
+    {
+      "name": "No automated section accessibility violations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No JavaScript keeps all three stories in normal flow",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript hides inactive controls",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "violations": []
+}

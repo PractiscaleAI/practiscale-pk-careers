@@ -1,0 +1,2193 @@
+{
+  "checks": [
+    {
+      "name": "Exactly two homepage sections",
+      "pass": true
+    },
+    {
+      "name": "Exact problem titles",
+      "pass": true
+    },
+    {
+      "name": "Exact problem descriptions",
+      "pass": true
+    },
+    {
+      "name": "Exact heading",
+      "pass": true
+    },
+    {
+      "name": "Exactly one Explore training link below the cards",
+      "pass": true
+    },
+    {
+      "name": "No pagination dots or em dashes",
+      "pass": true
+    },
+    {
+      "name": "Accepted image selection unchanged",
+      "pass": true
+    },
+    {
+      "name": "Scroll scene enabled 1024x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 1260,
+        "mode": "scroll",
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Unified artwork has adjoining panels 1024",
+      "pass": true,
+      "detail": [
+        {
+          "left": 104.45001983642578,
+          "right": 376.1500015258789,
+          "top": 196.76312255859375,
+          "bottom": 761.0631103515625
+        },
+        {
+          "left": 376.1499938964844,
+          "right": 647.8499755859375,
+          "top": 196.76312255859375,
+          "bottom": 761.0631103515625
+        },
+        {
+          "left": 647.8499755859375,
+          "right": 919.5499877929688,
+          "top": 196.76312255859375,
+          "bottom": 761.0631103515625
+        }
+      ]
+    },
+    {
+      "name": "Opening uses the supplied red artwork 1024",
+      "pass": true,
+      "detail": {
+        "image": "url(\"http://127.0.0.1:3000/media/problem-art/red-landscape.webp\")",
+        "oldPortrait": ""
+      }
+    },
+    {
+      "name": "Only outer corners are rounded at the joined opening 1024",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Red artwork has no white gaps at panel joins 1024",
+      "pass": true,
+      "detail": [
+        [
+          249,
+          45,
+          25
+        ],
+        [
+          249,
+          45,
+          25
+        ],
+        [
+          249,
+          45,
+          25
+        ],
+        [
+          249,
+          43,
+          26
+        ],
+        [
+          248,
+          41,
+          24
+        ],
+        [
+          250,
+          43,
+          26
+        ],
+        [
+          161,
+          8,
+          8
+        ],
+        [
+          161,
+          9,
+          8
+        ],
+        [
+          162,
+          10,
+          9
+        ],
+        [
+          240,
+          39,
+          22
+        ],
+        [
+          240,
+          40,
+          23
+        ],
+        [
+          240,
+          40,
+          23
+        ],
+        [
+          197,
+          16,
+          11
+        ],
+        [
+          192,
+          15,
+          10
+        ],
+        [
+          184,
+          14,
+          8
+        ],
+        [
+          141,
+          10,
+          5
+        ],
+        [
+          144,
+          12,
+          6
+        ],
+        [
+          145,
+          13,
+          7
+        ]
+      ]
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2802
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1024/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.85
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1024x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 402,
+          "y": 795.453125,
+          "width": 220,
+          "height": 50,
+          "top": 795.453125,
+          "right": 622,
+          "bottom": 845.453125,
+          "left": 402
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 74.44233703613281,
+              "y": 206.13755798339844,
+              "width": 314.15533447265625,
+              "height": 550.631103515625,
+              "top": 206.13755798339844,
+              "right": 388.59767150878906,
+              "bottom": 756.7686614990234,
+              "left": 74.44233703613281
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 382,
+              "y": 193.453125,
+              "width": 260,
+              "height": 540,
+              "top": 193.453125,
+              "right": 642,
+              "bottom": 733.453125,
+              "left": 382
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 635.40234375,
+              "y": 206.13755798339844,
+              "width": 314.15533447265625,
+              "height": 550.631103515625,
+              "top": 206.13755798339844,
+              "right": 949.5576782226562,
+              "bottom": 756.7686614990234,
+              "left": 635.40234375
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 900,
+          "top": 0,
+          "right": 1024,
+          "bottom": 900,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1024",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the artwork 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 104.45001983642578,
+          "y": 196.76312255859375,
+          "width": 271.6999816894531,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 376.1500015258789,
+          "bottom": 761.0631103515625,
+          "left": 104.45001983642578
+        },
+        {
+          "x": 376.1499938964844,
+          "y": 196.76312255859375,
+          "width": 271.6999816894531,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 647.8499755859375,
+          "bottom": 761.0631103515625,
+          "left": 376.1499938964844
+        },
+        {
+          "x": 647.8499755859375,
+          "y": 196.76312255859375,
+          "width": 271.70001220703125,
+          "height": 564.2999877929688,
+          "top": 196.76312255859375,
+          "right": 919.5499877929688,
+          "bottom": 761.0631103515625,
+          "left": 647.8499755859375
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1192x768",
+      "pass": true,
+      "detail": {
+        "top": 1281.1875,
+        "travel": 1075,
+        "mode": "scroll",
+        "sceneHeight": 768
+      }
+    },
+    {
+      "name": "Unified artwork has adjoining panels 1192",
+      "pass": true,
+      "detail": [
+        {
+          "left": 147.66238403320312,
+          "right": 446.614013671875,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        },
+        {
+          "left": 446.5323791503906,
+          "right": 745.4840087890625,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        },
+        {
+          "left": 745.40234375,
+          "right": 1044.35400390625,
+          "top": 183.2393798828125,
+          "bottom": 651.3993530273438
+        }
+      ]
+    },
+    {
+      "name": "Opening uses the supplied red artwork 1192",
+      "pass": true,
+      "detail": {
+        "image": "url(\"http://127.0.0.1:3000/media/problem-art/red-landscape.webp\")",
+        "oldPortrait": ""
+      }
+    },
+    {
+      "name": "Only outer corners are rounded at the joined opening 1192",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Red artwork has no white gaps at panel joins 1192",
+      "pass": true,
+      "detail": [
+        [
+          239,
+          44,
+          26
+        ],
+        [
+          245,
+          43,
+          25
+        ],
+        [
+          246,
+          44,
+          26
+        ],
+        [
+          240,
+          43,
+          28
+        ],
+        [
+          247,
+          42,
+          27
+        ],
+        [
+          246,
+          41,
+          26
+        ],
+        [
+          116,
+          12,
+          8
+        ],
+        [
+          120,
+          11,
+          7
+        ],
+        [
+          120,
+          11,
+          7
+        ],
+        [
+          230,
+          39,
+          22
+        ],
+        [
+          232,
+          38,
+          21
+        ],
+        [
+          235,
+          35,
+          18
+        ],
+        [
+          149,
+          11,
+          8
+        ],
+        [
+          152,
+          11,
+          8
+        ],
+        [
+          158,
+          12,
+          9
+        ],
+        [
+          128,
+          11,
+          7
+        ],
+        [
+          129,
+          10,
+          6
+        ],
+        [
+          132,
+          10,
+          5
+        ]
+      ]
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.1875,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.28
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5005
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1192/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8502
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1192x768",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 486,
+          "y": 687.671875,
+          "width": 220,
+          "height": 50,
+          "top": 687.671875,
+          "right": 706,
+          "bottom": 737.671875,
+          "left": 486
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 121.97435760498047,
+              "y": 187.10232543945312,
+              "width": 328.38690185546875,
+              "height": 465.1391296386719,
+              "top": 187.10232543945312,
+              "right": 450.3612594604492,
+              "bottom": 652.241455078125,
+              "left": 121.97435760498047
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 452.96875,
+              "y": 177.671875,
+              "width": 286.078125,
+              "height": 448,
+              "top": 177.671875,
+              "right": 739.046875,
+              "bottom": 625.671875,
+              "left": 452.96875
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 741.6543579101562,
+              "y": 187.10232543945312,
+              "width": 328.38690185546875,
+              "height": 465.1391296386719,
+              "top": 187.10232543945312,
+              "right": 1070.041259765625,
+              "bottom": 652.241455078125,
+              "left": 741.6543579101562
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1192,
+          "height": 768,
+          "top": 0,
+          "right": 1192,
+          "bottom": 768,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1192",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the artwork 1192",
+      "pass": true,
+      "detail": [
+        {
+          "x": 147.66238403320312,
+          "y": 183.2393798828125,
+          "width": 298.9516296386719,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 446.614013671875,
+          "bottom": 651.3993530273438,
+          "left": 147.66238403320312
+        },
+        {
+          "x": 446.5323791503906,
+          "y": 183.2393798828125,
+          "width": 298.9516296386719,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 745.4840087890625,
+          "bottom": 651.3993530273438,
+          "left": 446.5323791503906
+        },
+        {
+          "x": 745.40234375,
+          "y": 183.2393798828125,
+          "width": 298.95166015625,
+          "height": 468.15997314453125,
+          "top": 183.2393798828125,
+          "right": 1044.35400390625,
+          "bottom": 651.3993530273438,
+          "left": 745.40234375
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1440x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 1260,
+        "mode": "scroll",
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Unified artwork has adjoining panels 1440",
+      "pass": true,
+      "detail": [
+        {
+          "left": 187.04998779296875,
+          "right": 542.3499755859375,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        },
+        {
+          "left": 542.3499755859375,
+          "right": 897.6499633789062,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        },
+        {
+          "left": 897.6499633789062,
+          "right": 1252.949951171875,
+          "top": 208.16937255859375,
+          "bottom": 772.4693603515625
+        }
+      ]
+    },
+    {
+      "name": "Opening uses the supplied red artwork 1440",
+      "pass": true,
+      "detail": {
+        "image": "url(\"http://127.0.0.1:3000/media/problem-art/red-landscape.webp\")",
+        "oldPortrait": ""
+      }
+    },
+    {
+      "name": "Only outer corners are rounded at the joined opening 1440",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Red artwork has no white gaps at panel joins 1440",
+      "pass": true,
+      "detail": [
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          42,
+          27
+        ],
+        [
+          246,
+          41,
+          26
+        ],
+        [
+          244,
+          40,
+          25
+        ],
+        [
+          120,
+          12,
+          8
+        ],
+        [
+          119,
+          10,
+          6
+        ],
+        [
+          118,
+          9,
+          5
+        ],
+        [
+          239,
+          39,
+          23
+        ],
+        [
+          238,
+          38,
+          21
+        ],
+        [
+          238,
+          38,
+          21
+        ],
+        [
+          155,
+          10,
+          6
+        ],
+        [
+          154,
+          9,
+          6
+        ],
+        [
+          154,
+          9,
+          6
+        ],
+        [
+          134,
+          9,
+          5
+        ],
+        [
+          133,
+          8,
+          5
+        ],
+        [
+          132,
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2802
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1440/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.85
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1440x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 610,
+          "y": 806.859375,
+          "width": 220,
+          "height": 50,
+          "top": 806.859375,
+          "right": 830,
+          "bottom": 856.859375,
+          "left": 610
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 155.611572265625,
+              "y": 212.81527709960938,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 212.81527709960938,
+              "right": 546.7884521484375,
+              "bottom": 772.9035339355469,
+              "left": 155.611572265625
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 550,
+              "y": 204.859375,
+              "width": 340,
+              "height": 540,
+              "top": 204.859375,
+              "right": 890,
+              "bottom": 744.859375,
+              "left": 550
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 893.2115478515625,
+              "y": 212.81527709960938,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 212.81527709960938,
+              "right": 1284.388427734375,
+              "bottom": 772.9035339355469,
+              "left": 893.2115478515625
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1440",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the artwork 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 187.04998779296875,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 542.3499755859375,
+          "bottom": 772.4693603515625,
+          "left": 187.04998779296875
+        },
+        {
+          "x": 542.3499755859375,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 897.6499633789062,
+          "bottom": 772.4693603515625,
+          "left": 542.3499755859375
+        },
+        {
+          "x": 897.6499633789062,
+          "y": 208.16937255859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 208.16937255859375,
+          "right": 1252.949951171875,
+          "bottom": 772.4693603515625,
+          "left": 897.6499633789062
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1536x696",
+      "pass": true,
+      "detail": {
+        "top": 1162.390625,
+        "travel": 974,
+        "mode": "scroll",
+        "sceneHeight": 696
+      }
+    },
+    {
+      "name": "Unified artwork has adjoining panels 1536",
+      "pass": true,
+      "detail": [
+        {
+          "left": 235.04998779296875,
+          "right": 590.3499755859375,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        },
+        {
+          "left": 590.3499755859375,
+          "right": 945.6499633789062,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        },
+        {
+          "left": 945.6499633789062,
+          "right": 1300.949951171875,
+          "top": 174.36375427246094,
+          "bottom": 580.8686981201172
+        }
+      ]
+    },
+    {
+      "name": "Opening uses the supplied red artwork 1536",
+      "pass": true,
+      "detail": {
+        "image": "url(\"http://127.0.0.1:3000/media/problem-art/red-landscape.webp\")",
+        "oldPortrait": ""
+      }
+    },
+    {
+      "name": "Only outer corners are rounded at the joined opening 1536",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Red artwork has no white gaps at panel joins 1536",
+      "pass": true,
+      "detail": [
+        [
+          237,
+          40,
+          22
+        ],
+        [
+          238,
+          41,
+          23
+        ],
+        [
+          238,
+          41,
+          23
+        ],
+        [
+          243,
+          38,
+          23
+        ],
+        [
+          243,
+          38,
+          23
+        ],
+        [
+          243,
+          39,
+          24
+        ],
+        [
+          115,
+          10,
+          5
+        ],
+        [
+          118,
+          11,
+          7
+        ],
+        [
+          119,
+          11,
+          6
+        ],
+        [
+          234,
+          35,
+          23
+        ],
+        [
+          235,
+          36,
+          24
+        ],
+        [
+          235,
+          36,
+          24
+        ],
+        [
+          93,
+          10,
+          5
+        ],
+        [
+          95,
+          12,
+          7
+        ],
+        [
+          93,
+          9,
+          6
+        ],
+        [
+          127,
+          9,
+          5
+        ],
+        [
+          126,
+          8,
+          4
+        ],
+        [
+          126,
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.390625,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2803
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1536/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8501
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1536x696",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 658,
+          "y": 618.265625,
+          "width": 220,
+          "height": 50,
+          "top": 618.265625,
+          "right": 878,
+          "bottom": 668.265625,
+          "left": 658
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 211.33665466308594,
+              "y": 172.41064453125,
+              "width": 373.32666015625,
+              "height": 414.7099609375,
+              "top": 172.41064453125,
+              "right": 584.6633148193359,
+              "bottom": 587.12060546875,
+              "left": 211.33665466308594
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 598,
+              "y": 167.265625,
+              "width": 340,
+              "height": 389,
+              "top": 167.265625,
+              "right": 938,
+              "bottom": 556.265625,
+              "left": 598
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 951.336669921875,
+              "y": 172.41064453125,
+              "width": 373.32666015625,
+              "height": 414.7099609375,
+              "top": 172.41064453125,
+              "right": 1324.663330078125,
+              "bottom": 587.12060546875,
+              "left": 951.336669921875
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 696,
+          "top": 0,
+          "right": 1536,
+          "bottom": 696,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1536",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the artwork 1536",
+      "pass": true,
+      "detail": [
+        {
+          "x": 235.04998779296875,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 590.3499755859375,
+          "bottom": 580.8686981201172,
+          "left": 235.04998779296875
+        },
+        {
+          "x": 590.3499755859375,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 945.6499633789062,
+          "bottom": 580.8686981201172,
+          "left": 590.3499755859375
+        },
+        {
+          "x": 945.6499633789062,
+          "y": 174.36375427246094,
+          "width": 355.29998779296875,
+          "height": 406.50494384765625,
+          "top": 174.36375427246094,
+          "right": 1300.949951171875,
+          "bottom": 580.8686981201172,
+          "left": 945.6499633789062
+        }
+      ]
+    },
+    {
+      "name": "Scroll scene enabled 1920x1080",
+      "pass": true,
+      "detail": {
+        "top": 1796,
+        "travel": 1512,
+        "mode": "scroll",
+        "sceneHeight": 1080
+      }
+    },
+    {
+      "name": "Unified artwork has adjoining panels 1920",
+      "pass": true,
+      "detail": [
+        {
+          "left": 427.04998779296875,
+          "right": 782.3499755859375,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        },
+        {
+          "left": 782.3499755859375,
+          "right": 1137.64990234375,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        },
+        {
+          "left": 1137.64990234375,
+          "right": 1492.949951171875,
+          "top": 301.21624755859375,
+          "bottom": 865.5162353515625
+        }
+      ]
+    },
+    {
+      "name": "Opening uses the supplied red artwork 1920",
+      "pass": true,
+      "detail": {
+        "image": "url(\"http://127.0.0.1:3000/media/problem-art/red-landscape.webp\")",
+        "oldPortrait": ""
+      }
+    },
+    {
+      "name": "Only outer corners are rounded at the joined opening 1920",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Red artwork has no white gaps at panel joins 1920",
+      "pass": true,
+      "detail": [
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          45,
+          27
+        ],
+        [
+          247,
+          42,
+          27
+        ],
+        [
+          246,
+          41,
+          26
+        ],
+        [
+          244,
+          40,
+          25
+        ],
+        [
+          120,
+          12,
+          8
+        ],
+        [
+          119,
+          10,
+          6
+        ],
+        [
+          118,
+          9,
+          5
+        ],
+        [
+          239,
+          39,
+          23
+        ],
+        [
+          238,
+          38,
+          21
+        ],
+        [
+          238,
+          38,
+          21
+        ],
+        [
+          155,
+          10,
+          6
+        ],
+        [
+          154,
+          9,
+          6
+        ],
+        [
+          154,
+          9,
+          6
+        ],
+        [
+          134,
+          9,
+          5
+        ],
+        [
+          133,
+          8,
+          5
+        ],
+        [
+          132,
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.28",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.2798
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.5
+      }
+    },
+    {
+      "name": "Native sticky scene stays aligned at 1920/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false,
+        "progress": 0.8499
+      }
+    },
+    {
+      "name": "Three readable cards within viewport 1920x1080",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 850,
+          "y": 899.90625,
+          "width": 220,
+          "height": 50,
+          "top": 899.90625,
+          "right": 1070,
+          "bottom": 949.90625,
+          "left": 850
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 394.41156005859375,
+              "y": 305.8621520996094,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 305.8621520996094,
+              "right": 785.5884399414062,
+              "bottom": 865.9504089355469,
+              "left": 394.41156005859375
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 790,
+              "y": 297.90625,
+              "width": 340,
+              "height": 540,
+              "top": 297.90625,
+              "right": 1130,
+              "bottom": 837.90625,
+              "left": 790
+            },
+            "loaded": true,
+            "bodySize": 16
+          },
+          {
+            "rect": {
+              "x": 1134.41162109375,
+              "y": 305.8621520996094,
+              "width": 391.1768798828125,
+              "height": 560.0882568359375,
+              "top": 305.8621520996094,
+              "right": 1525.5885009765625,
+              "bottom": 865.9504089355469,
+              "left": 1134.41162109375
+            },
+            "loaded": true,
+            "bodySize": 16
+          }
+        ],
+        "scene": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "left": 0
+        },
+        "visibleStories": 3
+      }
+    },
+    {
+      "name": "Desktop no redundant carousel controls 1920",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll rejoins the artwork 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 427.04998779296875,
+          "y": 301.21624755859375,
+          "width": 355.29998779296875,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 782.3499755859375,
+          "bottom": 865.5162353515625,
+          "left": 427.04998779296875
+        },
+        {
+          "x": 782.3499755859375,
+          "y": 301.21624755859375,
+          "width": 355.2999267578125,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 1137.64990234375,
+          "bottom": 865.5162353515625,
+          "left": 782.3499755859375
+        },
+        {
+          "x": 1137.64990234375,
+          "y": 301.21624755859375,
+          "width": 355.300048828125,
+          "height": 564.2999877929688,
+          "top": 301.21624755859375,
+          "right": 1492.949951171875,
+          "bottom": 865.5162353515625,
+          "left": 1137.64990234375
+        }
+      ]
+    },
+    {
+      "name": "Decorative artwork needs no additional WebGL renderer",
+      "pass": true
+    },
+    {
+      "name": "Responsive motion mode 320",
+      "pass": true,
+      "detail": {
+        "top": 1231.265625,
+        "travel": 0,
+        "mode": "static",
+        "sceneHeight": 743
+      }
+    },
+    {
+      "name": "Small screens use DOM cards 320",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 320/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 320/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 320/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 20.765625,
+          "width": 256,
+          "height": 405,
+          "top": 20.765625,
+          "right": 288,
+          "bottom": 425.765625,
+          "left": 32
+        },
+        "copyBottom": 405.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 320/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 320",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 320",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 320",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 320",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 320",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 320",
+      "pass": true
+    },
+    {
+      "name": "Responsive motion mode 375",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "travel": 1949,
+        "mode": "scroll",
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "Small screens use DOM cards 375",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 375/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 22.878881454467773,
+          "y": 230.29443359375,
+          "width": 329.24224853515625,
+          "height": 438.1611328125,
+          "top": 230.29443359375,
+          "right": 352.121129989624,
+          "bottom": 668.45556640625,
+          "left": 22.878881454467773
+        },
+        "copyBottom": 647.6021728515625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 375/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 24.6785831451416,
+          "y": 231.57757568359375,
+          "width": 325.642822265625,
+          "height": 435.5948486328125,
+          "top": 231.57757568359375,
+          "right": 350.3214054107666,
+          "bottom": 667.1724243164062,
+          "left": 24.6785831451416
+        },
+        "copyBottom": 646.486572265625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 375/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 26.490684509277344,
+          "y": 232.87730407714844,
+          "width": 322.01861572265625,
+          "height": 432.995361328125,
+          "top": 232.87730407714844,
+          "right": 348.5093002319336,
+          "bottom": 665.8726654052734,
+          "left": 26.490684509277344
+        },
+        "copyBottom": 645.3560180664062,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 375/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 375",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 375",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 375",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 375",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 375",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 375",
+      "pass": true
+    },
+    {
+      "name": "Second card rises from below 375",
+      "pass": true,
+      "detail": {
+        "startY": 746.5775756835938,
+        "secondY": 231.57757568359375
+      }
+    },
+    {
+      "name": "Native forward scroll reveals the third story 375",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll restores the second story 375",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears the pinned mobile heading 375",
+      "pass": true,
+      "detail": {
+        "x": 24,
+        "y": 106.625,
+        "width": 327,
+        "height": 92.25
+      }
+    },
+    {
+      "name": "Reverse scroll returns the first story 375",
+      "pass": true
+    },
+    {
+      "name": "Horizontal swipe advances a phone card",
+      "pass": true
+    },
+    {
+      "name": "Vertical drag does not change cards",
+      "pass": true
+    },
+    {
+      "name": "Dragging does not select card text",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 375x812",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "travel": 1949,
+        "mode": "scroll",
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "Responsive motion mode 430",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "travel": 2237,
+        "mode": "scroll",
+        "sceneHeight": 932
+      }
+    },
+    {
+      "name": "Small screens use DOM cards 430",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 430/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 38.816001892089844,
+          "y": 247.86276245117188,
+          "width": 352.36798095703125,
+          "height": 533.8994140625,
+          "top": 247.86276245117188,
+          "right": 391.1839828491211,
+          "bottom": 781.7621765136719,
+          "left": 38.816001892089844
+        },
+        "copyBottom": 760.9088745117188,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 430/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 41.02664566040039,
+          "y": 249.21246337890625,
+          "width": 347.94671630859375,
+          "height": 531.2000732421875,
+          "top": 249.21246337890625,
+          "right": 388.97336196899414,
+          "bottom": 780.4125366210938,
+          "left": 41.02664566040039
+        },
+        "copyBottom": 759.7267456054688,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 430/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 43.25053405761719,
+          "y": 250.5823974609375,
+          "width": 343.4989013671875,
+          "height": 528.460205078125,
+          "top": 250.5823974609375,
+          "right": 386.7494354248047,
+          "bottom": 779.0426025390625,
+          "left": 43.25053405761719
+        },
+        "copyBottom": 758.5259399414062,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 430/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 430",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 430",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 430",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 430",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 430",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 430",
+      "pass": true
+    },
+    {
+      "name": "Second card rises from below 430",
+      "pass": true,
+      "detail": {
+        "startY": 859.2124633789062,
+        "secondY": 249.21246337890625
+      }
+    },
+    {
+      "name": "Native forward scroll reveals the third story 430",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll restores the second story 430",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears the pinned mobile heading 430",
+      "pass": true,
+      "detail": {
+        "x": 24,
+        "y": 113.6875,
+        "width": 382,
+        "height": 103.125
+      }
+    },
+    {
+      "name": "Reverse scroll returns the first story 430",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 430x932",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "travel": 2237,
+        "mode": "scroll",
+        "sceneHeight": 932
+      }
+    },
+    {
+      "name": "Responsive motion mode 768",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 2160,
+        "mode": "scroll",
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Small screens use DOM cards 768",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 768/0",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 192.8302764892578,
+          "y": 215.78659057617188,
+          "width": 382.3394775390625,
+          "height": 535.2080078125,
+          "top": 215.78659057617188,
+          "right": 575.1697540283203,
+          "bottom": 750.9945983886719,
+          "left": 192.8302764892578
+        },
+        "copyBottom": 728.0559692382812,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/0",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 768/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 195.03578186035156,
+          "y": 217.26710510253906,
+          "width": 377.928466796875,
+          "height": 532.2470703125,
+          "top": 217.26710510253906,
+          "right": 572.9642486572266,
+          "bottom": 749.5141754150391,
+          "left": 195.03578186035156
+        },
+        "copyBottom": 726.759765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/1",
+      "pass": true
+    },
+    {
+      "name": "Readable small-screen card 768/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 197.25567626953125,
+          "y": 218.7678680419922,
+          "width": 373.4886474609375,
+          "height": 529.2454833984375,
+          "top": 218.7678680419922,
+          "right": 570.7443237304688,
+          "bottom": 748.0133514404297,
+          "left": 197.25567626953125
+        },
+        "copyBottom": 725.4450073242188,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "One accessible small-screen slide 768/2",
+      "pass": true
+    },
+    {
+      "name": "Next wraps 768",
+      "pass": true
+    },
+    {
+      "name": "Previous wraps 768",
+      "pass": true
+    },
+    {
+      "name": "Keyboard advances 768",
+      "pass": true
+    },
+    {
+      "name": "Keyboard End 768",
+      "pass": true
+    },
+    {
+      "name": "44px touch targets 768",
+      "pass": true
+    },
+    {
+      "name": "Native touch scrolling 768",
+      "pass": true
+    },
+    {
+      "name": "Second card rises from below 768",
+      "pass": true,
+      "detail": {
+        "startY": 827.26708984375,
+        "secondY": 217.26710510253906
+      }
+    },
+    {
+      "name": "Native forward scroll reveals the third story 768",
+      "pass": true
+    },
+    {
+      "name": "Reverse scroll restores the second story 768",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears the pinned mobile heading 768",
+      "pass": true,
+      "detail": {
+        "x": 32,
+        "y": 112.609375,
+        "width": 704,
+        "height": 70.78125
+      }
+    },
+    {
+      "name": "Reverse scroll returns the first story 768",
+      "pass": true
+    },
+    {
+      "name": "Normal phone/tablet scene fits 768x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "travel": 2160,
+        "mode": "scroll",
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Enlarged text disables the pin",
+      "pass": true
+    },
+    {
+      "name": "Enlarged card text remains inside its card",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion shows all desktop stories without a pin",
+      "pass": true
+    },
+    {
+      "name": "No automated section accessibility violations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Reduced motion uses the unpinned phone carousel",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion controls work without scroll animation",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript keeps all three stories in normal flow",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript hides inactive controls",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "violations": []
+}

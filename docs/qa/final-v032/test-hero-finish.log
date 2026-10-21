@@ -1,0 +1,24 @@
+npm notice run practiscale-website@0.1.0 test:hero-finish
+npm notice run node scripts/qa-hero-finish.cjs
+{
+  "checks": 8,
+  "failed": [],
+  "boundaries": [
+    {
+      "name": "320-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.3055555555555556,
+      "y": 417.625,
+      "samples": 216
+    },
+    {
+      "name": "375-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.5232558139534884,
+      "y": 404.21875,
+      "samples": 258
+    }
+  ],
+  "errors": [],
+  "failure": "Error: Boundary outside screenshot\n    at edge (D:\\PractiScale\\Practiscale.Pk\\practiscale\\scripts\\qa-hero-finish.cjs:34:13)\n    at async D:\\PractiScale\\Practiscale.Pk\\practiscale\\scripts\\qa-hero-finish.cjs:136:26"
+}

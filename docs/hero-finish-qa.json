@@ -193,38 +193,38 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 262,
-          "right": 306,
-          "top": 859.40625,
-          "bottom": 903.40625,
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 14,
-          "right": 246,
-          "top": 856.78125,
-          "bottom": 873.28125,
-          "width": 232,
-          "height": 16.5
+          "left": 30,
+          "right": 230,
+          "top": 900.625,
+          "bottom": 915.625,
+          "width": 200,
+          "height": 15
         },
         "label": {
-          "left": 14,
-          "right": 246,
-          "top": 881.28125,
-          "bottom": 906.03125,
-          "width": 232,
-          "height": 24.75
+          "left": 30,
+          "right": 230,
+          "top": 923.625,
+          "bottom": 951.671875,
+          "width": 200,
+          "height": 28.046875
         },
         "anchor": {
-          "left": 14,
-          "right": 306,
-          "top": 856.78125,
-          "bottom": 906.03125,
-          "width": 292,
-          "height": 49.25
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
         },
-        "centerOffset": 0,
+        "centerOffset": -0.0078125,
         "overflow": false
       }
     },
@@ -233,38 +233,38 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 262,
-          "right": 306,
-          "top": 859.40625,
-          "bottom": 903.40625,
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 14,
-          "right": 246,
-          "top": 856.78125,
-          "bottom": 873.28125,
-          "width": 232,
-          "height": 16.5
+          "left": 30,
+          "right": 230,
+          "top": 900.625,
+          "bottom": 915.625,
+          "width": 200,
+          "height": 15
         },
         "label": {
-          "left": 14,
-          "right": 246,
-          "top": 881.28125,
-          "bottom": 906.03125,
-          "width": 232,
-          "height": 24.75
+          "left": 30,
+          "right": 230,
+          "top": 923.625,
+          "bottom": 951.671875,
+          "width": 200,
+          "height": 28.046875
         },
         "anchor": {
-          "left": 14,
-          "right": 306,
-          "top": 856.78125,
-          "bottom": 906.03125,
-          "width": 292,
-          "height": 49.25
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
         },
-        "centerOffset": 0,
+        "centerOffset": -0.0078125,
         "overflow": false
       }
     },
@@ -279,32 +279,32 @@
         "icon": {
           "left": 299,
           "right": 343,
-          "top": 882.984375,
-          "bottom": 926.984375,
+          "top": 536.984375,
+          "bottom": 580.984375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 32,
           "right": 283,
-          "top": 879.46875,
-          "bottom": 894.46875,
+          "top": 533.46875,
+          "bottom": 548.46875,
           "width": 251,
           "height": 15
         },
         "label": {
           "left": 32,
           "right": 283,
-          "top": 902.46875,
-          "bottom": 930.515625,
+          "top": 556.46875,
+          "bottom": 584.515625,
           "width": 251,
           "height": 28.046875
         },
         "anchor": {
           "left": 32,
           "right": 343,
-          "top": 879.46875,
-          "bottom": 930.515625,
+          "top": 533.46875,
+          "bottom": 584.515625,
           "width": 311,
           "height": 51.046875
         },
@@ -319,32 +319,32 @@
         "icon": {
           "left": 299,
           "right": 343,
-          "top": 882.984375,
-          "bottom": 926.984375,
+          "top": 536.984375,
+          "bottom": 580.984375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 32,
           "right": 283,
-          "top": 879.46875,
-          "bottom": 894.46875,
+          "top": 533.46875,
+          "bottom": 548.46875,
           "width": 251,
           "height": 15
         },
         "label": {
           "left": 32,
           "right": 283,
-          "top": 902.46875,
-          "bottom": 930.515625,
+          "top": 556.46875,
+          "bottom": 584.515625,
           "width": 251,
           "height": 28.046875
         },
         "anchor": {
           "left": 32,
           "right": 343,
-          "top": 879.46875,
-          "bottom": 930.515625,
+          "top": 533.46875,
+          "bottom": 584.515625,
           "width": 311,
           "height": 51.046875
         },
@@ -359,32 +359,32 @@
         "icon": {
           "left": 350.484375,
           "right": 394.484375,
-          "top": 918.609375,
-          "bottom": 962.609375,
+          "top": 603.609375,
+          "bottom": 647.609375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 35.515625,
           "right": 334.484375,
-          "top": 915.09375,
-          "bottom": 930.09375,
+          "top": 600.09375,
+          "bottom": 615.09375,
           "width": 298.96875,
           "height": 15
         },
         "label": {
           "left": 35.515625,
           "right": 334.484375,
-          "top": 938.09375,
-          "bottom": 966.140625,
+          "top": 623.09375,
+          "bottom": 651.140625,
           "width": 298.96875,
           "height": 28.046875
         },
         "anchor": {
           "left": 35.515625,
           "right": 394.484375,
-          "top": 915.09375,
-          "bottom": 966.140625,
+          "top": 600.09375,
+          "bottom": 651.140625,
           "width": 358.96875,
           "height": 51.046875
         },
@@ -399,32 +399,32 @@
         "icon": {
           "left": 350.484375,
           "right": 394.484375,
-          "top": 918.609375,
-          "bottom": 962.609375,
+          "top": 603.609375,
+          "bottom": 647.609375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 35.515625,
           "right": 334.484375,
-          "top": 915.09375,
-          "bottom": 930.09375,
+          "top": 600.09375,
+          "bottom": 615.09375,
           "width": 298.96875,
           "height": 15
         },
         "label": {
           "left": 35.515625,
           "right": 334.484375,
-          "top": 938.09375,
-          "bottom": 966.140625,
+          "top": 623.09375,
+          "bottom": 651.140625,
           "width": 298.96875,
           "height": 28.046875
         },
         "anchor": {
           "left": 35.515625,
           "right": 394.484375,
-          "top": 915.09375,
-          "bottom": 966.140625,
+          "top": 600.09375,
+          "bottom": 651.140625,
           "width": 358.96875,
           "height": 51.046875
         },
@@ -443,32 +443,32 @@
         "icon": {
           "left": 446,
           "right": 490,
-          "top": 906.84375,
-          "bottom": 950.84375,
+          "top": 681.84375,
+          "bottom": 725.84375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 40,
           "right": 430,
-          "top": 903.328125,
-          "bottom": 918.328125,
+          "top": 678.328125,
+          "bottom": 693.328125,
           "width": 390,
           "height": 15
         },
         "label": {
           "left": 40,
           "right": 430,
-          "top": 926.328125,
-          "bottom": 954.375,
+          "top": 701.328125,
+          "bottom": 729.375,
           "width": 390,
           "height": 28.046875
         },
         "anchor": {
           "left": 40,
           "right": 490,
-          "top": 903.328125,
-          "bottom": 954.375,
+          "top": 678.328125,
+          "bottom": 729.375,
           "width": 450,
           "height": 51.046875
         },
@@ -483,32 +483,32 @@
         "icon": {
           "left": 446,
           "right": 490,
-          "top": 906.84375,
-          "bottom": 950.84375,
+          "top": 681.84375,
+          "bottom": 725.84375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 40,
           "right": 430,
-          "top": 903.328125,
-          "bottom": 918.328125,
+          "top": 678.328125,
+          "bottom": 693.328125,
           "width": 390,
           "height": 15
         },
         "label": {
           "left": 40,
           "right": 430,
-          "top": 926.328125,
-          "bottom": 954.375,
+          "top": 701.328125,
+          "bottom": 729.375,
           "width": 390,
           "height": 28.046875
         },
         "anchor": {
           "left": 40,
           "right": 490,
-          "top": 903.328125,
-          "bottom": 954.375,
+          "top": 678.328125,
+          "bottom": 729.375,
           "width": 450,
           "height": 51.046875
         },
@@ -523,32 +523,32 @@
         "icon": {
           "left": 680,
           "right": 724,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 540.578125,
           "right": 664,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 540.578125,
           "right": 664,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 540.578125,
           "right": 724,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -563,32 +563,32 @@
         "icon": {
           "left": 680,
           "right": 724,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 540.578125,
           "right": 664,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 540.578125,
           "right": 664,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 540.578125,
           "right": 724,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -603,32 +603,32 @@
         "icon": {
           "left": 936,
           "right": 980,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 796.578125,
           "right": 920,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 796.578125,
           "right": 920,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 796.578125,
           "right": 980,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -643,32 +643,32 @@
         "icon": {
           "left": 936,
           "right": 980,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 796.578125,
           "right": 920,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 796.578125,
           "right": 920,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 796.578125,
           "right": 980,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -683,32 +683,32 @@
         "icon": {
           "left": 1104,
           "right": 1148,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 964.578125,
           "right": 1088,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 964.578125,
           "right": 1088,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 964.578125,
           "right": 1148,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -723,32 +723,32 @@
         "icon": {
           "left": 1104,
           "right": 1148,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 964.578125,
           "right": 1088,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 964.578125,
           "right": 1088,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 964.578125,
           "right": 1148,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -761,34 +761,34 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1178,
-          "right": 1222,
-          "top": 803.375,
-          "bottom": 847.375,
+          "left": 1192,
+          "right": 1236,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1038.578125,
-          "right": 1162,
-          "top": 800.75,
-          "bottom": 817.25,
+          "left": 1052.578125,
+          "right": 1176,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1038.578125,
-          "right": 1162,
-          "top": 825.25,
-          "bottom": 850,
+          "left": 1052.578125,
+          "right": 1176,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1038.578125,
-          "right": 1222,
-          "top": 800.75,
-          "bottom": 850,
+          "left": 1052.578125,
+          "right": 1236,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -801,34 +801,34 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1178,
-          "right": 1222,
-          "top": 803.375,
-          "bottom": 847.375,
+          "left": 1192,
+          "right": 1236,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1038.578125,
-          "right": 1162,
-          "top": 800.75,
-          "bottom": 817.25,
+          "left": 1052.578125,
+          "right": 1176,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1038.578125,
-          "right": 1162,
-          "top": 825.25,
-          "bottom": 850,
+          "left": 1052.578125,
+          "right": 1176,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1038.578125,
-          "right": 1222,
-          "top": 800.75,
-          "bottom": 850,
+          "left": 1052.578125,
+          "right": 1236,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -843,32 +843,32 @@
         "icon": {
           "left": 1338,
           "right": 1382,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 1198.578125,
           "right": 1322,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 1198.578125,
           "right": 1322,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 1198.578125,
           "right": 1382,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -883,32 +883,32 @@
         "icon": {
           "left": 1338,
           "right": 1382,
-          "top": 803.375,
-          "bottom": 847.375,
+          "top": 664.375,
+          "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
           "left": 1198.578125,
           "right": 1322,
-          "top": 800.75,
-          "bottom": 817.25,
+          "top": 661.75,
+          "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
           "left": 1198.578125,
           "right": 1322,
-          "top": 825.25,
-          "bottom": 850,
+          "top": 686.25,
+          "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
           "left": 1198.578125,
           "right": 1382,
-          "top": 800.75,
-          "bottom": 850,
+          "top": 661.75,
+          "bottom": 711,
           "width": 183.421875,
           "height": 49.25
         },
@@ -921,34 +921,34 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1792,
-          "right": 1836,
-          "top": 803.375,
-          "bottom": 847.375,
+          "left": 1818,
+          "right": 1862,
+          "top": 658.375,
+          "bottom": 702.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1652.578125,
-          "right": 1776,
-          "top": 800.75,
-          "bottom": 817.25,
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 655.75,
+          "bottom": 672.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1652.578125,
-          "right": 1776,
-          "top": 825.25,
-          "bottom": 850,
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 680.25,
+          "bottom": 705,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1652.578125,
-          "right": 1836,
-          "top": 800.75,
-          "bottom": 850,
+          "left": 1678.578125,
+          "right": 1862,
+          "top": 655.75,
+          "bottom": 705,
           "width": 183.421875,
           "height": 49.25
         },
@@ -961,34 +961,34 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1792,
-          "right": 1836,
-          "top": 803.375,
-          "bottom": 847.375,
+          "left": 1818,
+          "right": 1862,
+          "top": 658.375,
+          "bottom": 702.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1652.578125,
-          "right": 1776,
-          "top": 800.75,
-          "bottom": 817.25,
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 655.75,
+          "bottom": 672.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1652.578125,
-          "right": 1776,
-          "top": 825.25,
-          "bottom": 850,
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 680.25,
+          "bottom": 705,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1652.578125,
-          "right": 1836,
-          "top": 800.75,
-          "bottom": 850,
+          "left": 1678.578125,
+          "right": 1862,
+          "top": 655.75,
+          "bottom": 705,
           "width": 183.421875,
           "height": 49.25
         },
@@ -1032,8 +1032,8 @@
     {
       "name": "375-reproduced-old-boundary",
       "maxChannelStep": 7,
-      "meanChannelStep": 1.7403100775193798,
-      "y": 300.21875,
+      "meanChannelStep": 1.744186046511628,
+      "y": 110.21875,
       "samples": 258
     },
     {

@@ -1,0 +1,2703 @@
+{
+  "checks": [
+    {
+      "name": "Three authorized homepage sections",
+      "pass": true
+    },
+    {
+      "name": "Exact problem titles",
+      "pass": true
+    },
+    {
+      "name": "Exact problem descriptions",
+      "pass": true
+    },
+    {
+      "name": "Exact heading",
+      "pass": true
+    },
+    {
+      "name": "Exactly one training CTA",
+      "pass": true
+    },
+    {
+      "name": "No arrows, pagination or carousel role",
+      "pass": true
+    },
+    {
+      "name": "No em dash in site copy",
+      "pass": true
+    },
+    {
+      "name": "Accepted front photographs unchanged",
+      "pass": true
+    },
+    {
+      "name": "Desktop scroll scene 1024x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "start": 1499,
+        "clearance": 120,
+        "travel": 990,
+        "mode": "scroll",
+        "layout": "fan",
+        "stageHeight": 0,
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Artwork joins at start 1024",
+      "pass": true,
+      "detail": [
+        {
+          "x": 114.20000457763672,
+          "y": 230.3887481689453,
+          "width": 265.1999816894531,
+          "height": 544.6799926757812,
+          "top": 230.3887481689453,
+          "right": 379.39998626708984,
+          "bottom": 775.0687408447266,
+          "left": 114.20000457763672
+        },
+        {
+          "x": 379.3999938964844,
+          "y": 230.3887481689453,
+          "width": 265.1999816894531,
+          "height": 544.6799926757812,
+          "top": 230.3887481689453,
+          "right": 644.5999755859375,
+          "bottom": 775.0687408447266,
+          "left": 379.3999938964844
+        },
+        {
+          "x": 644.5999755859375,
+          "y": 230.3887481689453,
+          "width": 265.20001220703125,
+          "height": 544.6799926757812,
+          "top": 230.3887481689453,
+          "right": 909.7999877929688,
+          "bottom": 775.0687408447266,
+          "left": 644.5999755859375
+        }
+      ]
+    },
+    {
+      "name": "Teal artwork is active 1024",
+      "pass": true
+    },
+    {
+      "name": "Joined internal corners stay square 1024",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Panel joins have teal pixels without light gaps 1024",
+      "pass": true,
+      "detail": [
+        [
+          47,
+          127,
+          125
+        ],
+        [
+          49,
+          129,
+          127
+        ],
+        [
+          47,
+          127,
+          125
+        ],
+        [
+          42,
+          119,
+          120
+        ],
+        [
+          42,
+          119,
+          120
+        ],
+        [
+          41,
+          118,
+          119
+        ],
+        [
+          15,
+          76,
+          77
+        ],
+        [
+          16,
+          76,
+          77
+        ],
+        [
+          16,
+          76,
+          77
+        ],
+        [
+          42,
+          120,
+          119
+        ],
+        [
+          40,
+          118,
+          117
+        ],
+        [
+          40,
+          118,
+          117
+        ],
+        [
+          52,
+          124,
+          116
+        ],
+        [
+          36,
+          107,
+          103
+        ],
+        [
+          38,
+          109,
+          105
+        ],
+        [
+          12,
+          67,
+          68
+        ],
+        [
+          13,
+          67,
+          68
+        ],
+        [
+          13,
+          67,
+          68
+        ]
+      ]
+    },
+    {
+      "name": "Aligned scroll scene 1024/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1024/0.2",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1024/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1024/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Readable fan and CTA fit 1024x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 412.484375,
+          "y": 823.96875,
+          "width": 199.03125,
+          "height": 52,
+          "top": 823.96875,
+          "right": 611.515625,
+          "bottom": 875.96875,
+          "left": 412.484375
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 89.99734497070312,
+              "y": 232.55235290527344,
+              "width": 283.0452880859375,
+              "height": 544.832763671875,
+              "top": 232.55235290527344,
+              "right": 373.0426330566406,
+              "bottom": 777.3851165771484,
+              "left": 89.99734497070312
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 382,
+              "y": 227.96875,
+              "width": 260,
+              "height": 534,
+              "top": 227.96875,
+              "right": 642,
+              "bottom": 761.96875,
+              "left": 382
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 650.9573364257812,
+              "y": 232.55235290527344,
+              "width": 283.04534912109375,
+              "height": 544.832763671875,
+              "top": 232.55235290527344,
+              "right": 934.002685546875,
+              "bottom": 777.3851165771484,
+              "left": 650.9573364257812
+            },
+            "bodySize": 16,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "All three stories accessible 1024",
+      "pass": true
+    },
+    {
+      "name": "Calm desktop reading angles 1024",
+      "pass": true,
+      "detail": [
+        {
+          "angle": -2.500001277003086,
+          "scale": 0.9999997791801556
+        },
+        {
+          "angle": 0,
+          "scale": 1
+        },
+        {
+          "angle": 2.500001277003086,
+          "scale": 0.9999997791801556
+        }
+      ]
+    },
+    {
+      "name": "Reverse scroll reunites artwork 1024",
+      "pass": true
+    },
+    {
+      "name": "Desktop scroll scene 1192x768",
+      "pass": true,
+      "detail": {
+        "top": 1281.1875,
+        "start": 1281.1875,
+        "clearance": 120,
+        "travel": 845,
+        "mode": "scroll",
+        "layout": "fan",
+        "stageHeight": 0,
+        "sceneHeight": 768
+      }
+    },
+    {
+      "name": "Artwork joins at start 1192",
+      "pass": true,
+      "detail": [
+        {
+          "x": 158.3881378173828,
+          "y": 236.06124877929688,
+          "width": 291.7996826171875,
+          "height": 405.9599914550781,
+          "top": 236.06124877929688,
+          "right": 450.1878204345703,
+          "bottom": 642.021240234375,
+          "left": 158.3881378173828
+        },
+        {
+          "x": 450.1081237792969,
+          "y": 236.06124877929688,
+          "width": 291.7997131347656,
+          "height": 405.9599914550781,
+          "top": 236.06124877929688,
+          "right": 741.9078369140625,
+          "bottom": 642.021240234375,
+          "left": 450.1081237792969
+        },
+        {
+          "x": 741.828125,
+          "y": 236.06124877929688,
+          "width": 291.7998046875,
+          "height": 405.9599914550781,
+          "top": 236.06124877929688,
+          "right": 1033.6279296875,
+          "bottom": 642.021240234375,
+          "left": 741.828125
+        }
+      ]
+    },
+    {
+      "name": "Teal artwork is active 1192",
+      "pass": true
+    },
+    {
+      "name": "Joined internal corners stay square 1192",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Panel joins have teal pixels without light gaps 1192",
+      "pass": true,
+      "detail": [
+        [
+          50,
+          129,
+          128
+        ],
+        [
+          47,
+          127,
+          125
+        ],
+        [
+          47,
+          125,
+          125
+        ],
+        [
+          45,
+          122,
+          123
+        ],
+        [
+          41,
+          118,
+          119
+        ],
+        [
+          41,
+          118,
+          119
+        ],
+        [
+          7,
+          51,
+          52
+        ],
+        [
+          7,
+          51,
+          52
+        ],
+        [
+          9,
+          53,
+          54
+        ],
+        [
+          40,
+          118,
+          119
+        ],
+        [
+          42,
+          119,
+          120
+        ],
+        [
+          44,
+          121,
+          122
+        ],
+        [
+          8,
+          44,
+          45
+        ],
+        [
+          6,
+          42,
+          43
+        ],
+        [
+          6,
+          42,
+          44
+        ],
+        [
+          9,
+          56,
+          58
+        ],
+        [
+          8,
+          55,
+          58
+        ],
+        [
+          9,
+          57,
+          59
+        ]
+      ]
+    },
+    {
+      "name": "Aligned scroll scene 1192/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.1875,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1192/0.2",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1192/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1192/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Readable fan and CTA fit 1192x768",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 496.484375,
+          "y": 692.09375,
+          "width": 199.03125,
+          "height": 52,
+          "top": 692.09375,
+          "right": 695.515625,
+          "bottom": 744.09375,
+          "left": 496.484375
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 134.5846405029297,
+              "y": 236.04388427734375,
+              "width": 303.1663818359375,
+              "height": 410.0997314453125,
+              "top": 236.04388427734375,
+              "right": 437.7510223388672,
+              "bottom": 646.1436157226562,
+              "left": 134.5846405029297
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 452.96875,
+              "y": 232.09375,
+              "width": 286.078125,
+              "height": 398,
+              "top": 232.09375,
+              "right": 739.046875,
+              "bottom": 630.09375,
+              "left": 452.96875
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 754.2646484375,
+              "y": 236.04388427734375,
+              "width": 303.1663818359375,
+              "height": 410.0997314453125,
+              "top": 236.04388427734375,
+              "right": 1057.4310302734375,
+              "bottom": 646.1436157226562,
+              "left": 754.2646484375
+            },
+            "bodySize": 16,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "All three stories accessible 1192",
+      "pass": true
+    },
+    {
+      "name": "Calm desktop reading angles 1192",
+      "pass": true,
+      "detail": [
+        {
+          "angle": -2.500001277003086,
+          "scale": 0.9999997791801556
+        },
+        {
+          "angle": 0,
+          "scale": 1
+        },
+        {
+          "angle": 2.500001277003086,
+          "scale": 0.9999997791801556
+        }
+      ]
+    },
+    {
+      "name": "Reverse scroll reunites artwork 1192",
+      "pass": true
+    },
+    {
+      "name": "Desktop scroll scene 1440x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "start": 1499,
+        "clearance": 120,
+        "travel": 990,
+        "mode": "scroll",
+        "layout": "fan",
+        "stageHeight": 0,
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Artwork joins at start 1440",
+      "pass": true,
+      "detail": [
+        {
+          "x": 199.8000030517578,
+          "y": 241.71751403808594,
+          "width": 346.79998779296875,
+          "height": 533.4599609375,
+          "top": 241.71751403808594,
+          "right": 546.5999908447266,
+          "bottom": 775.1774749755859,
+          "left": 199.8000030517578
+        },
+        {
+          "x": 546.5999755859375,
+          "y": 241.71751403808594,
+          "width": 346.79998779296875,
+          "height": 533.4599609375,
+          "top": 241.71751403808594,
+          "right": 893.3999633789062,
+          "bottom": 775.1774749755859,
+          "left": 546.5999755859375
+        },
+        {
+          "x": 893.3999633789062,
+          "y": 241.71751403808594,
+          "width": 346.79998779296875,
+          "height": 533.4599609375,
+          "top": 241.71751403808594,
+          "right": 1240.199951171875,
+          "bottom": 775.1774749755859,
+          "left": 893.3999633789062
+        }
+      ]
+    },
+    {
+      "name": "Teal artwork is active 1440",
+      "pass": true
+    },
+    {
+      "name": "Joined internal corners stay square 1440",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Panel joins have teal pixels without light gaps 1440",
+      "pass": true,
+      "detail": [
+        [
+          45,
+          125,
+          123
+        ],
+        [
+          45,
+          125,
+          123
+        ],
+        [
+          45,
+          125,
+          123
+        ],
+        [
+          42,
+          120,
+          121
+        ],
+        [
+          42,
+          119,
+          121
+        ],
+        [
+          41,
+          118,
+          119
+        ],
+        [
+          8,
+          49,
+          50
+        ],
+        [
+          8,
+          49,
+          51
+        ],
+        [
+          8,
+          49,
+          50
+        ],
+        [
+          39,
+          118,
+          117
+        ],
+        [
+          41,
+          120,
+          118
+        ],
+        [
+          41,
+          120,
+          118
+        ],
+        [
+          20,
+          82,
+          82
+        ],
+        [
+          18,
+          79,
+          79
+        ],
+        [
+          18,
+          80,
+          79
+        ],
+        [
+          9,
+          57,
+          59
+        ],
+        [
+          9,
+          56,
+          58
+        ],
+        [
+          8,
+          56,
+          57
+        ]
+      ]
+    },
+    {
+      "name": "Aligned scroll scene 1440/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1440/0.2",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1440/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1440/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Readable fan and CTA fit 1440x900",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 620.484375,
+          "y": 824.1875,
+          "width": 199.03125,
+          "height": 52,
+          "top": 824.1875,
+          "right": 819.515625,
+          "bottom": 876.1875,
+          "left": 620.484375
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 169.95533752441406,
+              "y": 242.02108764648438,
+              "width": 362.4893798828125,
+              "height": 537.332763671875,
+              "top": 242.02108764648438,
+              "right": 532.4447174072266,
+              "bottom": 779.3538513183594,
+              "left": 169.95533752441406
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 550,
+              "y": 239.1875,
+              "width": 340,
+              "height": 523,
+              "top": 239.1875,
+              "right": 890,
+              "bottom": 762.1875,
+              "left": 550
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 907.5552978515625,
+              "y": 242.02108764648438,
+              "width": 362.4893798828125,
+              "height": 537.332763671875,
+              "top": 242.02108764648438,
+              "right": 1270.044677734375,
+              "bottom": 779.3538513183594,
+              "left": 907.5552978515625
+            },
+            "bodySize": 16,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "All three stories accessible 1440",
+      "pass": true
+    },
+    {
+      "name": "Calm desktop reading angles 1440",
+      "pass": true,
+      "detail": [
+        {
+          "angle": -2.500001277003086,
+          "scale": 0.9999997791801556
+        },
+        {
+          "angle": 0,
+          "scale": 1
+        },
+        {
+          "angle": 2.500001277003086,
+          "scale": 0.9999997791801556
+        }
+      ]
+    },
+    {
+      "name": "Reverse scroll reunites artwork 1440",
+      "pass": true
+    },
+    {
+      "name": "Desktop scroll scene 1536x696",
+      "pass": true,
+      "detail": {
+        "top": 1162.390625,
+        "start": 1162.390625,
+        "clearance": 112,
+        "travel": 766,
+        "mode": "scroll",
+        "layout": "fan",
+        "stageHeight": 0,
+        "sceneHeight": 696
+      }
+    },
+    {
+      "name": "Artwork joins at start 1536",
+      "pass": true,
+      "detail": [
+        {
+          "x": 247.8000030517578,
+          "y": 214.5912628173828,
+          "width": 346.79998779296875,
+          "height": 377.4000244140625,
+          "top": 214.5912628173828,
+          "right": 594.5999908447266,
+          "bottom": 591.9912872314453,
+          "left": 247.8000030517578
+        },
+        {
+          "x": 594.5999755859375,
+          "y": 214.5912628173828,
+          "width": 346.79998779296875,
+          "height": 377.4000244140625,
+          "top": 214.5912628173828,
+          "right": 941.3999633789062,
+          "bottom": 591.9912872314453,
+          "left": 594.5999755859375
+        },
+        {
+          "x": 941.3999633789062,
+          "y": 214.5912628173828,
+          "width": 346.79998779296875,
+          "height": 377.4000244140625,
+          "top": 214.5912628173828,
+          "right": 1288.199951171875,
+          "bottom": 591.9912872314453,
+          "left": 941.3999633789062
+        }
+      ]
+    },
+    {
+      "name": "Teal artwork is active 1536",
+      "pass": true
+    },
+    {
+      "name": "Joined internal corners stay square 1536",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Panel joins have teal pixels without light gaps 1536",
+      "pass": true,
+      "detail": [
+        [
+          43,
+          118,
+          118
+        ],
+        [
+          41,
+          116,
+          116
+        ],
+        [
+          42,
+          117,
+          117
+        ],
+        [
+          39,
+          116,
+          117
+        ],
+        [
+          37,
+          115,
+          116
+        ],
+        [
+          39,
+          117,
+          118
+        ],
+        [
+          6,
+          45,
+          45
+        ],
+        [
+          6,
+          45,
+          45
+        ],
+        [
+          6,
+          45,
+          46
+        ],
+        [
+          40,
+          115,
+          115
+        ],
+        [
+          40,
+          115,
+          115
+        ],
+        [
+          38,
+          113,
+          114
+        ],
+        [
+          5,
+          41,
+          42
+        ],
+        [
+          5,
+          41,
+          42
+        ],
+        [
+          6,
+          42,
+          43
+        ],
+        [
+          6,
+          54,
+          56
+        ],
+        [
+          6,
+          54,
+          56
+        ],
+        [
+          7,
+          55,
+          57
+        ]
+      ]
+    },
+    {
+      "name": "Aligned scroll scene 1536/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0.390625,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1536/0.2",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1536/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1536/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Readable fan and CTA fit 1536x696",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 668.484375,
+          "y": 628.140625,
+          "width": 199.03125,
+          "height": 52,
+          "top": 628.140625,
+          "right": 867.515625,
+          "bottom": 680.140625,
+          "left": 668.484375
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 220.0922088623047,
+              "y": 212.9014129638672,
+              "width": 355.8155517578125,
+              "height": 384.47845458984375,
+              "top": 212.9014129638672,
+              "right": 575.9077606201172,
+              "bottom": 597.3798675537109,
+              "left": 220.0922088623047
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 598,
+              "y": 210.140625,
+              "width": 340,
+              "height": 370,
+              "top": 210.140625,
+              "right": 938,
+              "bottom": 580.140625,
+              "left": 598
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 960.0922241210938,
+              "y": 212.9014129638672,
+              "width": 355.81561279296875,
+              "height": 384.47845458984375,
+              "top": 212.9014129638672,
+              "right": 1315.9078369140625,
+              "bottom": 597.3798675537109,
+              "left": 960.0922241210938
+            },
+            "bodySize": 16,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "All three stories accessible 1536",
+      "pass": true
+    },
+    {
+      "name": "Calm desktop reading angles 1536",
+      "pass": true,
+      "detail": [
+        {
+          "angle": -2.500001277003086,
+          "scale": 0.9999997791801556
+        },
+        {
+          "angle": 0,
+          "scale": 1
+        },
+        {
+          "angle": 2.500001277003086,
+          "scale": 0.9999997791801556
+        }
+      ]
+    },
+    {
+      "name": "Reverse scroll reunites artwork 1536",
+      "pass": true
+    },
+    {
+      "name": "Desktop scroll scene 1920x1080",
+      "pass": true,
+      "detail": {
+        "top": 1796,
+        "start": 1796,
+        "clearance": 120,
+        "travel": 1188,
+        "mode": "scroll",
+        "layout": "fan",
+        "stageHeight": 0,
+        "sceneHeight": 1080
+      }
+    },
+    {
+      "name": "Artwork joins at start 1920",
+      "pass": true,
+      "detail": [
+        {
+          "x": 439.79998779296875,
+          "y": 324.5631103515625,
+          "width": 346.79998779296875,
+          "height": 550.7999877929688,
+          "top": 324.5631103515625,
+          "right": 786.5999755859375,
+          "bottom": 875.3630981445312,
+          "left": 439.79998779296875
+        },
+        {
+          "x": 786.5999755859375,
+          "y": 324.5631103515625,
+          "width": 346.7999267578125,
+          "height": 550.7999877929688,
+          "top": 324.5631103515625,
+          "right": 1133.39990234375,
+          "bottom": 875.3630981445312,
+          "left": 786.5999755859375
+        },
+        {
+          "x": 1133.39990234375,
+          "y": 324.5631103515625,
+          "width": 346.800048828125,
+          "height": 550.7999877929688,
+          "top": 324.5631103515625,
+          "right": 1480.199951171875,
+          "bottom": 875.3630981445312,
+          "left": 1133.39990234375
+        }
+      ]
+    },
+    {
+      "name": "Teal artwork is active 1920",
+      "pass": true
+    },
+    {
+      "name": "Joined internal corners stay square 1920",
+      "pass": true,
+      "detail": [
+        [
+          24,
+          0,
+          0,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          24,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Panel joins have teal pixels without light gaps 1920",
+      "pass": true,
+      "detail": [
+        [
+          45,
+          125,
+          123
+        ],
+        [
+          43,
+          123,
+          121
+        ],
+        [
+          43,
+          123,
+          121
+        ],
+        [
+          42,
+          120,
+          121
+        ],
+        [
+          43,
+          121,
+          122
+        ],
+        [
+          42,
+          119,
+          121
+        ],
+        [
+          8,
+          49,
+          51
+        ],
+        [
+          8,
+          48,
+          51
+        ],
+        [
+          7,
+          48,
+          50
+        ],
+        [
+          40,
+          117,
+          118
+        ],
+        [
+          39,
+          116,
+          117
+        ],
+        [
+          42,
+          119,
+          121
+        ],
+        [
+          19,
+          83,
+          84
+        ],
+        [
+          23,
+          86,
+          88
+        ],
+        [
+          23,
+          87,
+          88
+        ],
+        [
+          7,
+          57,
+          58
+        ],
+        [
+          7,
+          57,
+          58
+        ],
+        [
+          7,
+          56,
+          58
+        ]
+      ]
+    },
+    {
+      "name": "Aligned scroll scene 1920/0",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1920/0.2",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1920/0.5",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Aligned scroll scene 1920/0.85",
+      "pass": true,
+      "detail": {
+        "sceneTop": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Readable fan and CTA fit 1920x1080",
+      "pass": true,
+      "detail": {
+        "cta": {
+          "x": 860.484375,
+          "y": 924.203125,
+          "width": 199.03125,
+          "height": 52,
+          "top": 924.203125,
+          "right": 1059.515625,
+          "bottom": 976.203125,
+          "left": 860.484375
+        },
+        "cards": [
+          {
+            "rect": {
+              "x": 408.38458251953125,
+              "y": 325.0447998046875,
+              "width": 363.2308349609375,
+              "height": 554.316650390625,
+              "top": 325.0447998046875,
+              "right": 771.6154174804688,
+              "bottom": 879.3614501953125,
+              "left": 408.38458251953125
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 790,
+              "y": 322.203125,
+              "width": 340,
+              "height": 540,
+              "top": 322.203125,
+              "right": 1130,
+              "bottom": 862.203125,
+              "left": 790
+            },
+            "bodySize": 16,
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 1148.384521484375,
+              "y": 325.0447998046875,
+              "width": 363.23095703125,
+              "height": 554.316650390625,
+              "top": 325.0447998046875,
+              "right": 1511.615478515625,
+              "bottom": 879.3614501953125,
+              "left": 1148.384521484375
+            },
+            "bodySize": 16,
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "All three stories accessible 1920",
+      "pass": true
+    },
+    {
+      "name": "Calm desktop reading angles 1920",
+      "pass": true,
+      "detail": [
+        {
+          "angle": -2.500001277003086,
+          "scale": 0.9999997791801556
+        },
+        {
+          "angle": 0,
+          "scale": 1
+        },
+        {
+          "angle": 2.500001277003086,
+          "scale": 0.9999997791801556
+        }
+      ]
+    },
+    {
+      "name": "Reverse scroll reunites artwork 1920",
+      "pass": true
+    },
+    {
+      "name": "No decorative WebGL renderer",
+      "pass": true
+    },
+    {
+      "name": "Responsive reading mode 320x568",
+      "pass": true,
+      "detail": {
+        "top": 1231.265625,
+        "start": 1349.828125,
+        "clearance": 96,
+        "travel": 1022,
+        "mode": "stage",
+        "layout": "stage",
+        "stageHeight": 448,
+        "sceneHeight": 1773
+      }
+    },
+    {
+      "name": "No arrow controls 320",
+      "pass": true
+    },
+    {
+      "name": "All stories accessible 320",
+      "pass": true
+    },
+    {
+      "name": "Readable story 320/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 320/1",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 320/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 320/1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 320/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 320/2",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 320/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 320/2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 320/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 320/3",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 320/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 120,
+          "width": 256,
+          "height": 400,
+          "top": 120,
+          "right": 288,
+          "bottom": 520,
+          "left": 32
+        },
+        "copyBottom": 500,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 320/3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Pinned reading scene fits 320x568",
+      "pass": true,
+      "detail": {
+        "top": 1231.265625,
+        "start": 1349.828125,
+        "clearance": 96,
+        "travel": 1022,
+        "mode": "stage",
+        "layout": "stage",
+        "stageHeight": 448,
+        "sceneHeight": 1773
+      }
+    },
+    {
+      "name": "Next card rises instead of moving sideways 320",
+      "pass": true,
+      "detail": {
+        "before": 603.5750732421875,
+        "after": 120
+      }
+    },
+    {
+      "name": "Reverse restores previous story 320",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears heading 320",
+      "pass": true,
+      "detail": {
+        "heading": 124.765625,
+        "header": 80,
+        "placement": "up"
+      }
+    },
+    {
+      "name": "Card stage releases naturally for CTA 320",
+      "pass": true,
+      "detail": {
+        "pinned": {
+          "x": 0,
+          "y": 95.828125,
+          "width": 320,
+          "height": 448
+        },
+        "released": {
+          "x": 0,
+          "y": -4.171875,
+          "width": 320,
+          "height": 448
+        },
+        "cta": {
+          "x": 60.484375,
+          "y": 459.828125,
+          "width": 199.03125,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "Reverse reaches first story 320",
+      "pass": true
+    },
+    {
+      "name": "Native touch scroll and zoom 320",
+      "pass": true
+    },
+    {
+      "name": "Responsive reading mode 443x646",
+      "pass": true,
+      "detail": {
+        "top": 1376.59375,
+        "start": 1495.15625,
+        "clearance": 96,
+        "travel": 1163,
+        "mode": "stage",
+        "layout": "stage",
+        "stageHeight": 526,
+        "sceneHeight": 1992
+      }
+    },
+    {
+      "name": "No arrow controls 443",
+      "pass": true
+    },
+    {
+      "name": "All stories accessible 443",
+      "pass": true
+    },
+    {
+      "name": "Readable story 443/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 443/1",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 443/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 443/1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 443/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 443/2",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 443/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 443/2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 443/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 443/3",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 443/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 56.5,
+          "y": 120,
+          "width": 330,
+          "height": 478,
+          "top": 120,
+          "right": 386.5,
+          "bottom": 598,
+          "left": 56.5
+        },
+        "copyBottom": 578,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 443/3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Pinned reading scene fits 443x646",
+      "pass": true,
+      "detail": {
+        "top": 1376.59375,
+        "start": 1495.15625,
+        "clearance": 96,
+        "travel": 1163,
+        "mode": "stage",
+        "layout": "stage",
+        "stageHeight": 526,
+        "sceneHeight": 1992
+      }
+    },
+    {
+      "name": "Next card rises instead of moving sideways 443",
+      "pass": true,
+      "detail": {
+        "before": 679.848388671875,
+        "after": 120
+      }
+    },
+    {
+      "name": "Reverse restores previous story 443",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears heading 443",
+      "pass": true,
+      "detail": {
+        "heading": 124.09375,
+        "header": 80,
+        "placement": "up"
+      }
+    },
+    {
+      "name": "Card stage releases naturally for CTA 443",
+      "pass": true,
+      "detail": {
+        "pinned": {
+          "x": 0,
+          "y": 96,
+          "width": 443,
+          "height": 526
+        },
+        "released": {
+          "x": 0,
+          "y": -3.84375,
+          "width": 443,
+          "height": 526
+        },
+        "cta": {
+          "x": 121.984375,
+          "y": 538.15625,
+          "width": 199.03125,
+          "height": 52
+        }
+      }
+    },
+    {
+      "name": "Reverse reaches first story 443",
+      "pass": true
+    },
+    {
+      "name": "Native touch scroll and zoom 443",
+      "pass": true
+    },
+    {
+      "name": "Responsive reading mode 375x812",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "start": 1368.90625,
+        "clearance": 96,
+        "travel": 1786,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "No arrow controls 375",
+      "pass": true
+    },
+    {
+      "name": "All stories accessible 375",
+      "pass": true
+    },
+    {
+      "name": "Readable story 375/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 375/1",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 375/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 375/1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 375/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 375/2",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 375/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 375/2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 375/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 375/3",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 375/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 32,
+          "y": 238.78125,
+          "width": 311,
+          "height": 461,
+          "top": 238.78125,
+          "right": 343,
+          "bottom": 699.78125,
+          "left": 32
+        },
+        "copyBottom": 679.78125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 375/3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Pinned reading scene fits 375x812",
+      "pass": true,
+      "detail": {
+        "top": 1368.90625,
+        "start": 1368.90625,
+        "clearance": 96,
+        "travel": 1786,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 812
+      }
+    },
+    {
+      "name": "Next card rises instead of moving sideways 375",
+      "pass": true,
+      "detail": {
+        "before": 781.9589233398438,
+        "after": 238.78125
+      }
+    },
+    {
+      "name": "Reverse restores previous story 375",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears heading 375",
+      "pass": true,
+      "detail": {
+        "heading": 124.71875,
+        "header": 80,
+        "placement": "up"
+      }
+    },
+    {
+      "name": "Reverse reaches first story 375",
+      "pass": true
+    },
+    {
+      "name": "Native PageDown advances the stack movement",
+      "pass": true,
+      "detail": {
+        "progress": "0.3438",
+        "scroll": 1983
+      }
+    },
+    {
+      "name": "Native PageUp reverses the stack",
+      "pass": true
+    },
+    {
+      "name": "Native touch scroll and zoom 375",
+      "pass": true
+    },
+    {
+      "name": "Responsive reading mode 430x932",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "start": 1489.546875,
+        "clearance": 96,
+        "travel": 2050,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 932
+      }
+    },
+    {
+      "name": "No arrow controls 430",
+      "pass": true
+    },
+    {
+      "name": "All stories accessible 430",
+      "pass": true
+    },
+    {
+      "name": "Readable story 430/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 430/1",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 430/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 430/1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 430/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 430/2",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 430/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 430/2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 430/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 430/3",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 430/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 50,
+          "y": 269.28125,
+          "width": 330,
+          "height": 520,
+          "top": 269.28125,
+          "right": 380,
+          "bottom": 789.28125,
+          "left": 50
+        },
+        "copyBottom": 769.28125,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 430/3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Pinned reading scene fits 430x932",
+      "pass": true,
+      "detail": {
+        "top": 1489.546875,
+        "start": 1489.546875,
+        "clearance": 96,
+        "travel": 2050,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 932
+      }
+    },
+    {
+      "name": "Next card rises instead of moving sideways 430",
+      "pass": true,
+      "detail": {
+        "before": 871.0021362304688,
+        "after": 269.28125
+      }
+    },
+    {
+      "name": "Reverse restores previous story 430",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears heading 430",
+      "pass": true,
+      "detail": {
+        "heading": 155.21875,
+        "header": 80,
+        "placement": "up"
+      }
+    },
+    {
+      "name": "Reverse reaches first story 430",
+      "pass": true
+    },
+    {
+      "name": "Native touch scroll and zoom 430",
+      "pass": true
+    },
+    {
+      "name": "Responsive reading mode 768x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "start": 1499,
+        "clearance": 120,
+        "travel": 1980,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "No arrow controls 768",
+      "pass": true
+    },
+    {
+      "name": "All stories accessible 768",
+      "pass": true
+    },
+    {
+      "name": "Readable story 768/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 768/1",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 768/1",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 768/1",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 768/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 768/2",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 768/2",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 768/2",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Readable story 768/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Scroll selects story 768/3",
+      "pass": true
+    },
+    {
+      "name": "Story fits its reading area 768/3",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 204,
+          "y": 244.765625,
+          "width": 360,
+          "height": 520,
+          "top": 244.765625,
+          "right": 564,
+          "bottom": 764.765625,
+          "left": 204
+        },
+        "copyBottom": 740.765625,
+        "bodySize": 16,
+        "loaded": true,
+        "overflow": false,
+        "angle": 0
+      }
+    },
+    {
+      "name": "Active mobile card is upright 768/3",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Pinned reading scene fits 768x900",
+      "pass": true,
+      "detail": {
+        "top": 1499,
+        "start": 1499,
+        "clearance": 120,
+        "travel": 1980,
+        "mode": "scroll",
+        "layout": "stack",
+        "stageHeight": 0,
+        "sceneHeight": 900
+      }
+    },
+    {
+      "name": "Next card rises instead of moving sideways 768",
+      "pass": true,
+      "detail": {
+        "before": 845.7014770507812,
+        "after": 244.765625
+      }
+    },
+    {
+      "name": "Reverse restores previous story 768",
+      "pass": true
+    },
+    {
+      "name": "Upward navigation clears heading 768",
+      "pass": true,
+      "detail": {
+        "heading": 163.734375,
+        "header": 96,
+        "placement": "up"
+      }
+    },
+    {
+      "name": "Reverse reaches first story 768",
+      "pass": true
+    },
+    {
+      "name": "Native touch scroll and zoom 768",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text removes the pin",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text stays inside cards",
+      "pass": true
+    },
+    {
+      "name": "Enlarged phone text uses a complete list",
+      "pass": true,
+      "detail": {
+        "metrics": {
+          "top": 1368.90625,
+          "start": 1368.90625,
+          "clearance": 96,
+          "travel": 0,
+          "mode": "static",
+          "layout": "list",
+          "stageHeight": 0,
+          "sceneHeight": 3408
+        },
+        "accessible": 3
+      }
+    },
+    {
+      "name": "Reduced motion shows the completed desktop fan",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion shows every phone story in a natural list",
+      "pass": true
+    },
+    {
+      "name": "No automated section accessibility violations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No JavaScript keeps all stories in normal flow",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript has no inactive controls",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "violations": []
+}

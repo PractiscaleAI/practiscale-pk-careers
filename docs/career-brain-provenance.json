@@ -1,0 +1,30 @@
+{
+  "source": "https://github.com/neurolabusc/surf-ice/blob/master/BrainNet/BrainMesh_ICBM152.mz3",
+  "sourceSha256": "00764d049040604cd8ed2b37261111ab58daea0c3f12f9838aceebc3ef9ae2d1",
+  "sourceVertices": 81924,
+  "sourceFaces": 163840,
+  "count": 10000,
+  "seed": 89271,
+  "method": "Area-weighted barycentric sampling of the actual cortex, visibility-filtered in the reference-facing bilateral pose, with interpolated normals. Centered and uniformly scaled with one rigid orientation transform. No ellipsoid approximation.",
+  "pose": {
+    "sourceRotationRadians": {
+      "x": 0.28,
+      "y": 0.33
+    },
+    "runtimeHoldRadians": {
+      "x": -0.06,
+      "y": -0.27
+    },
+    "description": "Near frontal, slight downward view, both hemispheres and central fissure visible."
+  },
+  "output": "/media/career-paths/brain-surface-v1.bin",
+  "bytes": 240008,
+  "sha256": "baaf531b2250e884f6efa633fd558d884cdde54cfaab0f8d9031c4cbf9c5b842",
+  "depthMesh": {
+    "output": "/media/career-paths/brain-depth-v1.bin.gz",
+    "bytes": 1578822,
+    "sha256": "da05aa52cb8bd8fb6f95fb33a30ae9fc4b6fca434b558a2cd4ced2ccc65aec41",
+    "purpose": "Original cortex geometry for depth occlusion and quiet surface shading."
+  },
+  "notices": "/media/career-paths/THIRD-PARTY-NOTICES.txt"
+}

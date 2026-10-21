@@ -416,7 +416,7 @@
       "name": "Cards clear every visible portrait frame 1192x720",
       "pass": true,
       "detail": {
-        "minimumGapPx": 94.3,
+        "minimumGapPx": 95.2,
         "requiredGapPx": 16
       }
     },

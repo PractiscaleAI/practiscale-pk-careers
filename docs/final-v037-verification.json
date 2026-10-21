@@ -1,0 +1,54 @@
+{
+  "version": "0.37",
+  "date": "2026-10-21",
+  "result": "passed",
+  "scope": "Brand-teal landscape artwork, desktop split/flip/fan, mobile scroll stack, no arrows or carousel input handlers, natural reading fallbacks.",
+  "checks": {
+    "typecheck": { "command": "npm.cmd run typecheck", "result": "passed" },
+    "productionBuild": {
+      "command": "npm.cmd run build -- --webpack",
+      "result": "passed",
+      "note": "Used the documented Webpack fallback after the sandboxed Turbopack CSS worker exited before connecting. The default build script is unchanged."
+    },
+    "problemCards": {
+      "command": "npm.cmd run test:problem-scroll",
+      "passed": 150,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "accessibilityViolations": 0,
+      "report": "docs/problem-scroll-qa.json"
+    },
+    "navigation": {
+      "command": "npm.cmd run test:scroll-navigation",
+      "passed": 94,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "report": "docs/scroll-navigation-qa.json"
+    },
+    "wholePage": {
+      "command": "npm.cmd run test:browser",
+      "passed": 22,
+      "failed": 0,
+      "runtimeErrors": 0,
+      "accessibilityViolations": 0,
+      "report": "docs/hero-qa.json"
+    }
+  },
+  "visualReview": {
+    "method": "Rendered Chrome screenshots plus the current in-app browser. Desktop opening, separation, flip and reading hold; phone/tablet story holds; natural-flow short-screen fallback.",
+    "examples": [
+      "docs/qa/problem-scroll/v037/1440-0.png",
+      "docs/qa/problem-scroll/v037/1440-0.28.png",
+      "docs/qa/problem-scroll/v037/1536-0.85.png",
+      "docs/qa/problem-scroll/v037/375-story-3.png",
+      "docs/qa/problem-scroll/v037/768-story-3.png"
+    ],
+    "coverageLimit": "Chrome viewport emulation and desktop in-app browser, not real-device Safari coverage."
+  },
+  "artwork": {
+    "asset": "public/media/problem-art/teal-landscape-v1.webp",
+    "recordAndPrompt": "docs/problem-art-selection.json",
+    "method": "One built-in image-editing attempt, followed by WebP compression. No Higgsfield generation."
+  },
+  "deployment": "Not deployed. Existing local development server remains available at http://127.0.0.1:3000/."
+}

@@ -14,7 +14,12 @@
     "test:layout": "node scripts/qa-layout.cjs",
     "test:composition": "node scripts/qa-composition.cjs",
     "test:mobile-hero": "node scripts/qa-mobile-editorial.cjs",
-    "test:hero-finish": "node scripts/qa-hero-finish.cjs"
+    "test:hero-finish": "node scripts/qa-hero-finish.cjs",
+    "test:carousel": "node scripts/qa-problem-scroll.cjs",
+    "test:problem-scroll": "node scripts/qa-problem-scroll.cjs",
+    "test:scroll-navigation": "node scripts/qa-scroll-navigation.cjs",
+    "test:career-section": "node scripts/qa-career-section.cjs",
+    "test:typography": "node scripts/qa-typography.cjs"
   },
   "dependencies": {
     "gsap": "3.15.0",
