@@ -1,0 +1,37 @@
+{
+  "qa": {
+    "checks": 76,
+    "failed": 0,
+    "runtimeErrors": 0,
+    "fatal": null
+  },
+  "qa-native": {
+    "checks": 7,
+    "failed": 0,
+    "runtimeErrors": 0,
+    "fatal": null
+  },
+  "browser": {
+    "checks": 22,
+    "failed": 0
+  },
+  "typography": {
+    "checks": 109,
+    "failed": 0
+  },
+  "proofLinks": {
+    "checks": 32,
+    "failed": 0
+  },
+  "build": "optimized Next.js production build and TypeScript passed",
+  "originalVideo": "preserved in Downloads",
+  "webVideo": {
+    "frames": 950,
+    "fps": 30,
+    "duration": 31.666667,
+    "duplicates": 0,
+    "dropped": 0,
+    "audio": false
+  },
+  "scope": "desktop section; no new mobile video experience"
+}

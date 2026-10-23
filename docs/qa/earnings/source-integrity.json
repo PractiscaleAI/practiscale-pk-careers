@@ -1,0 +1,120 @@
+{
+  "desktop": {
+    "frames": 600,
+    "sequence": "0000 through 0599",
+    "allCopiedBytesIdentical": true,
+    "samples": [
+      {
+        "seconds": 0,
+        "frame": 0,
+        "videoSize": [
+          1920,
+          1080
+        ],
+        "frameSize": [
+          1600,
+          900
+        ],
+        "meanPixelDifference": 1.38
+      },
+      {
+        "seconds": 6,
+        "frame": 180,
+        "videoSize": [
+          1920,
+          1080
+        ],
+        "frameSize": [
+          1600,
+          900
+        ],
+        "meanPixelDifference": 1.309
+      },
+      {
+        "seconds": 12,
+        "frame": 360,
+        "videoSize": [
+          1920,
+          1080
+        ],
+        "frameSize": [
+          1600,
+          900
+        ],
+        "meanPixelDifference": 1.376
+      },
+      {
+        "seconds": 19.9,
+        "frame": 597,
+        "videoSize": [
+          1920,
+          1080
+        ],
+        "frameSize": [
+          1600,
+          900
+        ],
+        "meanPixelDifference": 1.347
+      }
+    ]
+  },
+  "mobile": {
+    "frames": 600,
+    "sequence": "0000 through 0599",
+    "allCopiedBytesIdentical": true,
+    "samples": [
+      {
+        "seconds": 0,
+        "frame": 0,
+        "videoSize": [
+          720,
+          1280
+        ],
+        "frameSize": [
+          720,
+          1280
+        ],
+        "meanPixelDifference": 1.411
+      },
+      {
+        "seconds": 6,
+        "frame": 180,
+        "videoSize": [
+          720,
+          1280
+        ],
+        "frameSize": [
+          720,
+          1280
+        ],
+        "meanPixelDifference": 1.407
+      },
+      {
+        "seconds": 12,
+        "frame": 360,
+        "videoSize": [
+          720,
+          1280
+        ],
+        "frameSize": [
+          720,
+          1280
+        ],
+        "meanPixelDifference": 1.439
+      },
+      {
+        "seconds": 19.9,
+        "frame": 597,
+        "videoSize": [
+          720,
+          1280
+        ],
+        "frameSize": [
+          720,
+          1280
+        ],
+        "meanPixelDifference": 1.543
+      }
+    ]
+  }
+}

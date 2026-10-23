@@ -1,0 +1,32 @@
+{
+  "revision": "0.47",
+  "scope": "Desktop single-video expansion with synchronized diagonal background opening",
+  "build": "TypeScript and optimized production build passed",
+  "suites": {
+    "motion": {
+      "failed": 0,
+      "checks": 90,
+      "runtimeErrors": 0
+    },
+    "native": {
+      "failed": 0,
+      "checks": 10,
+      "runtimeErrors": 0
+    },
+    "browser": {
+      "failed": 0,
+      "checks": 22,
+      "runtimeErrors": 0
+    }
+  },
+  "visualReview": [
+    "Opening at 1024, 1280 and 1440 desktop widths",
+    "Opening expansion and opposing background movement",
+    "Fullscreen doorway, office and final vision",
+    "1024px embedded vision text",
+    "Short desktop, failed video and unchanged phone layout"
+  ],
+  "media": "Existing 950-frame web film and original Downloads file unchanged",
+  "preview": "http://127.0.0.1:3000/?review=v047#who-we-are",
+  "limitations": "Chromium viewport emulation; no physical-device, Safari or Firefox certification"
+}

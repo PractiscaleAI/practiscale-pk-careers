@@ -1,7 +1,7 @@
 {
   "checks": [
     {
-      "name": "Career section follows the preserved problem section",
+      "name": "Career section follows the company film and preserved problem section",
       "pass": true
     },
     {
@@ -46,7 +46,7 @@
       "detail": {
         "mode": "pinned",
         "engine": "three",
-        "start": 3507.953125,
+        "start": 9699.953125,
         "travel": 1375,
         "top": 112
       }
@@ -307,7 +307,7 @@
       "name": "Live particle sculpture is visible 1440/1",
       "pass": true,
       "detail": {
-        "lit": 55813,
+        "lit": 55826,
         "pixels": 500420
       }
     },
@@ -373,6 +373,10 @@
         "sameCanvas": true,
         "inactive": true
       }
+    },
+    {
+      "name": "The next laptop does not allocate a renderer during career holds",
+      "pass": true
     },
     {
       "name": "Composition fits within 100vh 1440/2",
@@ -567,7 +571,7 @@
       "name": "Live particle sculpture is visible 1440/2",
       "pass": true,
       "detail": {
-        "lit": 32076,
+        "lit": 32155,
         "pixels": 501184
       }
     },
@@ -799,7 +803,7 @@
       "detail": {
         "mode": "pinned",
         "engine": "three",
-        "start": 2999.296875,
+        "start": 9059.296875,
         "travel": 1138,
         "top": 112
       }
@@ -1060,7 +1064,7 @@
       "name": "Live particle sculpture is visible 1366/1",
       "pass": true,
       "detail": {
-        "lit": 47823,
+        "lit": 47768,
         "pixels": 392472
       }
     },
@@ -1320,7 +1324,7 @@
       "name": "Live particle sculpture is visible 1366/2",
       "pass": true,
       "detail": {
-        "lit": 28670,
+        "lit": 28802,
         "pixels": 393104
       }
     },
@@ -1552,7 +1556,7 @@
       "detail": {
         "mode": "pinned",
         "engine": "three",
-        "start": 3459.109375,
+        "start": 9651.109375,
         "travel": 1375,
         "top": 112
       }
@@ -1813,7 +1817,7 @@
       "name": "Live particle sculpture is visible 1024/1",
       "pass": true,
       "detail": {
-        "lit": 28690,
+        "lit": 28639,
         "pixels": 354496
       }
     },
@@ -2073,7 +2077,7 @@
       "name": "Live particle sculpture is visible 1024/2",
       "pass": true,
       "detail": {
-        "lit": 16975,
+        "lit": 16936,
         "pixels": 354496
       }
     },
@@ -2323,12 +2327,12 @@
       "name": "Continuous native scrolling advances through both cards",
       "pass": true,
       "detail": [
-        "0.1004",
+        "0.2099",
         "0.2102",
         "0.3207",
-        "0.3952",
+        "0.4305",
         "0.5404",
-        "0.6494",
+        "0.6502",
         "0.7607",
         "0.8705"
       ]
@@ -2918,12 +2922,12 @@
         "overflow": false,
         "cta": {
           "x": 89.765625,
-          "y": 636.234375,
+          "y": 636.046875,
           "width": 253.46875,
           "height": 52,
-          "top": 636.234375,
+          "top": 636.046875,
           "right": 343.234375,
-          "bottom": 688.234375,
+          "bottom": 688.046875,
           "left": 89.765625
         }
       }
@@ -2937,12 +2941,12 @@
         "overflow": false,
         "cta": {
           "x": 89.765625,
-          "y": 635.609375,
+          "y": 636.421875,
           "width": 190.546875,
           "height": 52,
-          "top": 635.609375,
+          "top": 636.421875,
           "right": 280.3125,
-          "bottom": 687.609375,
+          "bottom": 688.421875,
           "left": 89.765625
         }
       }
@@ -2964,8 +2968,8 @@
       "name": "Native mobile touch scroll advances the live card sequence",
       "pass": true,
       "detail": {
-        "beforeTouch": 0.0193,
-        "afterTouch": 0.3282
+        "beforeTouch": 0.1003,
+        "afterTouch": 0.4093
       }
     },
     {

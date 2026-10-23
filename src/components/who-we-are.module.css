@@ -1,0 +1,216 @@
+.section {
+  --who-neutral: #e6ecec;
+  display: none;
+  position: relative;
+  background: var(--fog);
+  color: var(--ink);
+  color-scheme: light;
+}
+@media (min-width: 1024px) {
+  .section {
+    display: block;
+  }
+}
+.rail {
+  position: relative;
+}
+.viewport {
+  position: relative;
+  overflow: clip;
+  isolation: isolate;
+  background: var(--fog);
+  padding: 120px var(--section-gutter) 64px;
+}
+.plane,
+.planeLeft {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.backdrop {
+  display: none;
+}
+.plane {
+  background: var(--who-neutral);
+  clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
+}
+.planeLeft {
+  background: var(--deep);
+  clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
+}
+.copy {
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+  background: var(--fog);
+}
+.copy > p:first-child {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.copy h2 {
+  font-size: var(--section-title-size);
+  line-height: 1.18;
+  letter-spacing: var(--section-title-tracking);
+  outline: none;
+}
+.copy h2:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 6px;
+}
+.lede {
+  font-size: var(--body-copy-size);
+  line-height: var(--body-copy-leading);
+  color: var(--muted);
+  margin-top: 24px;
+  max-width: 68ch;
+  text-wrap: pretty;
+}
+.frame {
+  position: relative;
+  max-width: 920px;
+  margin: 48px auto 0;
+  border-radius: 20px;
+  background: var(--deep);
+  overflow: clip;
+}
+.matte {
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--deep);
+}
+.surface video {
+  color-scheme: dark;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--deep);
+}
+.error {
+  position: relative;
+  z-index: 6;
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 16px;
+  color: var(--dark-muted);
+  background: var(--deep);
+  padding: 16px 24px;
+  border-radius: 12px;
+}
+.error[hidden] {
+  display: none;
+}
+.error a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.error a:focus-visible {
+  outline-color: var(--accent);
+}
+.skip {
+  position: absolute;
+  z-index: 8;
+  top: 16px;
+  left: var(--section-gutter);
+  padding: 12px 16px;
+  min-height: 44px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--deep);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+}
+.skip:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  outline-color: var(--accent);
+}
+.rail[data-mode="motion"] {
+  height: calc(100vh + var(--who-travel, 5400px));
+}
+.rail[data-mode="motion"] .viewport {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 0;
+}
+.rail[data-mode="motion"] .copy {
+  position: absolute;
+  left: calc(var(--section-gutter) + 32px);
+  top: 128px;
+  width: calc(58vw - var(--section-gutter) - 64px);
+  max-width: 720px;
+  background: var(--deep);
+  color: white;
+}
+.rail[data-mode="motion"] .copy > p:first-child {
+  color: var(--accent);
+}
+.rail[data-mode="motion"] .copy h2:focus-visible {
+  outline-color: var(--accent);
+}
+.rail[data-mode="motion"] .lede {
+  position: absolute;
+  z-index: 1;
+  right: calc(var(--section-gutter) + 32px);
+  bottom: 128px;
+  width: min(560px, calc(56vw - var(--section-gutter) - 64px));
+  max-width: none;
+  margin: 0;
+  color: var(--ink);
+  background: var(--who-neutral);
+}
+.rail[data-mode="motion"] .backdrop {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--surface);
+  pointer-events: none;
+  will-change: clip-path;
+}
+.rail[data-mode="motion"] .plane,
+.rail[data-mode="motion"] .planeLeft {
+  will-change: transform;
+}
+.rail[data-mode="motion"] .frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: clip;
+  will-change: clip-path;
+}
+.rail[data-mode="motion"] .matte {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+.rail[data-mode="motion"] .surface {
+  position: absolute;
+  transform-origin: 50% 50%;
+  contain: layout paint;
+  will-change: transform;
+}
+.rail[data-mode="motion"] video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rail {
+    height: auto !important;
+  }
+  .viewport {
+    position: relative !important;
+    height: auto !important;
+  }
+}

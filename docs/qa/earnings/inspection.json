@@ -1,0 +1,834 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "entry",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "945",
+      "playTravel": "5220",
+      "totalTravel": "6435",
+      "target": "0",
+      "expansion": "0.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -0.046875,
+      "width": 1440,
+      "height": 7335
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "surface": {
+      "x": 613.625,
+      "y": 233.78125,
+      "width": 768.78125,
+      "height": 432.4375
+    },
+    "slot": {
+      "x": 613.625,
+      "y": 233.78125,
+      "width": 768.78125,
+      "height": 432.4375
+    },
+    "copy": {
+      "x": 57.59375,
+      "y": 349.296875,
+      "width": 484.03125,
+      "height": 201.40625
+    },
+    "heading": "41.4px",
+    "overflow": 0
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "expand",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "945",
+      "playTravel": "5220",
+      "totalTravel": "6435",
+      "target": "0",
+      "expansion": "0.4995",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -472.046875,
+      "width": 1440,
+      "height": 7335
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "surface": {
+      "x": 307.29949951171875,
+      "y": 117.07616424560547,
+      "width": 1103.85791015625,
+      "height": 665.84765625
+    },
+    "slot": {
+      "x": 613.625,
+      "y": 233.78125,
+      "width": 768.78125,
+      "height": 432.4375
+    },
+    "copy": {
+      "x": 57.59375,
+      "y": 334.13653564453125,
+      "width": 484.03125,
+      "height": 201.40625
+    },
+    "heading": "41.4px",
+    "overflow": 0
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "full",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "945",
+      "playTravel": "5220",
+      "totalTravel": "6435",
+      "target": "0",
+      "expansion": "1.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -945.046875,
+      "width": 1440,
+      "height": 7335
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "slot": {
+      "x": 613.625,
+      "y": 233.78125,
+      "width": 768.78125,
+      "height": 432.4375
+    },
+    "copy": {
+      "x": 57.59375,
+      "y": 333.296875,
+      "width": 484.03125,
+      "height": 201.40625
+    },
+    "heading": "41.4px",
+    "overflow": 0
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "play",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "16",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "945",
+      "playTravel": "5220",
+      "totalTravel": "6435",
+      "target": "299",
+      "expansion": "1.0000",
+      "progress": "0.5000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "299"
+    },
+    "rail": {
+      "x": 0,
+      "y": -3555.046875,
+      "width": 1440,
+      "height": 7335
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "slot": {
+      "x": 613.625,
+      "y": 233.78125,
+      "width": 768.78125,
+      "height": 432.4375
+    },
+    "copy": {
+      "x": 57.59375,
+      "y": 333.296875,
+      "width": 484.03125,
+      "height": 201.40625
+    },
+    "heading": "41.4px",
+    "overflow": 0
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "label": "entry",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "933.8",
+      "playTravel": "5521.599999999999",
+      "totalTravel": "6699",
+      "target": "0",
+      "expansion": "0.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": 0.46875,
+      "width": 375,
+      "height": 7511
+    },
+    "layout": {
+      "x": 0,
+      "y": 0.46875,
+      "width": 375,
+      "height": 812
+    },
+    "surface": {
+      "x": 68.75,
+      "y": 298.578125,
+      "width": 237.5,
+      "height": 422.234375
+    },
+    "slot": {
+      "x": 68.75,
+      "y": 298.578125,
+      "width": 237.5,
+      "height": 422.234375
+    },
+    "copy": {
+      "x": 24,
+      "y": 49.1875,
+      "width": 327,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "label": "expand",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "933.8",
+      "playTravel": "5521.599999999999",
+      "totalTravel": "6699",
+      "target": "0",
+      "expansion": "0.5001",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -466.53125,
+      "width": 375,
+      "height": 7511
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 812
+    },
+    "surface": {
+      "x": 34.363956451416016,
+      "y": 149.00680541992188,
+      "width": 306.2720947265625,
+      "height": 617.1798095703125
+    },
+    "slot": {
+      "x": 68.75,
+      "y": 298.109375,
+      "width": 237.5,
+      "height": 422.234375
+    },
+    "copy": {
+      "x": 24,
+      "y": 33.545867919921875,
+      "width": 327,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "label": "full",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "933.8",
+      "playTravel": "5521.599999999999",
+      "totalTravel": "6699",
+      "target": "0",
+      "expansion": "1.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -933.53125,
+      "width": 375,
+      "height": 7511
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 812
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 812
+    },
+    "slot": {
+      "x": 68.75,
+      "y": 298.109375,
+      "width": 237.5,
+      "height": 422.234375
+    },
+    "copy": {
+      "x": 24,
+      "y": 32.71875,
+      "width": 327,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "label": "play",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "12",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "933.8",
+      "playTravel": "5521.599999999999",
+      "totalTravel": "6699",
+      "target": "300",
+      "expansion": "1.0000",
+      "progress": "0.5001",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "300"
+    },
+    "rail": {
+      "x": 0,
+      "y": -3694.53125,
+      "width": 375,
+      "height": 7511
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 812
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 812
+    },
+    "slot": {
+      "x": 68.75,
+      "y": 298.109375,
+      "width": 237.5,
+      "height": 422.234375
+    },
+    "copy": {
+      "x": 24,
+      "y": 32.71875,
+      "width": 327,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "entry",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "653.1999999999999",
+      "playTravel": "3862.4",
+      "totalTravel": "4686",
+      "target": "0",
+      "expansion": "0.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": 0.421875,
+      "width": 320,
+      "height": 5254
+    },
+    "layout": {
+      "x": 0,
+      "y": 0.421875,
+      "width": 320,
+      "height": 568
+    },
+    "surface": {
+      "x": 76.9375,
+      "y": 232.65625,
+      "width": 166.125,
+      "height": 295.359375
+    },
+    "slot": {
+      "x": 76.9375,
+      "y": 232.65625,
+      "width": 166.125,
+      "height": 295.359375
+    },
+    "copy": {
+      "x": 24,
+      "y": 34.5,
+      "width": 272,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "expand",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "653.1999999999999",
+      "playTravel": "3862.4",
+      "totalTravel": "4686",
+      "target": "0",
+      "expansion": "0.5006",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -326.578125,
+      "width": 320,
+      "height": 5254
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 568
+    },
+    "surface": {
+      "x": 38.39807891845703,
+      "y": 115.90386962890625,
+      "width": 243.203857421875,
+      "height": 431.93011474609375
+    },
+    "slot": {
+      "x": 76.9375,
+      "y": 232.234375,
+      "width": 166.125,
+      "height": 295.359375
+    },
+    "copy": {
+      "x": 24,
+      "y": 18.89533805847168,
+      "width": 272,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "full",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "7",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "653.1999999999999",
+      "playTravel": "3862.4",
+      "totalTravel": "4686",
+      "target": "0",
+      "expansion": "1.0000",
+      "progress": "0.0002",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -653.578125,
+      "width": 320,
+      "height": 5254
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 568
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 568
+    },
+    "slot": {
+      "x": 76.9375,
+      "y": 232.234375,
+      "width": 166.125,
+      "height": 295.359375
+    },
+    "copy": {
+      "x": 24,
+      "y": 18.078125,
+      "width": 272,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "play",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "12",
+      "inflight": "0",
+      "variant": "mobile",
+      "expandTravel": "653.1999999999999",
+      "playTravel": "3862.4",
+      "totalTravel": "4686",
+      "target": "300",
+      "expansion": "1.0000",
+      "progress": "0.5002",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "300"
+    },
+    "rail": {
+      "x": 0,
+      "y": -2584.578125,
+      "width": 320,
+      "height": 5254
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 568
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 568
+    },
+    "slot": {
+      "x": 76.9375,
+      "y": 232.234375,
+      "width": 166.125,
+      "height": 295.359375
+    },
+    "copy": {
+      "x": 24,
+      "y": 18.078125,
+      "width": 272,
+      "height": 165.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "entry",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "1075.2",
+      "playTravel": "5939.2",
+      "totalTravel": "7321.599999999999",
+      "target": "0",
+      "expansion": "0.0000",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": 0.125,
+      "width": 768,
+      "height": 8345.59375
+    },
+    "layout": {
+      "x": 0,
+      "y": 0.125,
+      "width": 768,
+      "height": 1024
+    },
+    "surface": {
+      "x": 374.328125,
+      "y": 410.046875,
+      "width": 362.9375,
+      "height": 204.140625
+    },
+    "slot": {
+      "x": 374.328125,
+      "y": 410.046875,
+      "width": 362.9375,
+      "height": 204.140625
+    },
+    "copy": {
+      "x": 30.71875,
+      "y": 427.25,
+      "width": 315.609375,
+      "height": 169.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "expand",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "1075.2",
+      "playTravel": "5939.2",
+      "totalTravel": "7321.599999999999",
+      "target": "0",
+      "expansion": "0.5003",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -537.875,
+      "width": 768,
+      "height": 8345.59375
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "surface": {
+      "x": 186.97052001953125,
+      "y": 204.74899291992188,
+      "width": 565.6781616210938,
+      "height": 614.494140625
+    },
+    "slot": {
+      "x": 374.328125,
+      "y": 409.921875,
+      "width": 362.9375,
+      "height": 204.140625
+    },
+    "copy": {
+      "x": 30.71875,
+      "y": 411.94744873046875,
+      "width": 315.609375,
+      "height": 169.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "full",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "9",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "1075.2",
+      "playTravel": "5939.2",
+      "totalTravel": "7321.599999999999",
+      "target": "0",
+      "expansion": "0.9998",
+      "progress": "0.0000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "0"
+    },
+    "rail": {
+      "x": 0,
+      "y": -1074.875,
+      "width": 768,
+      "height": 8345.59375
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "surface": {
+      "x": 0.00006501438474515453,
+      "y": 0.00007119640940800309,
+      "width": 767.9998779296875,
+      "height": 1023.9998779296875
+    },
+    "slot": {
+      "x": 374.328125,
+      "y": 409.921875,
+      "width": 362.9375,
+      "height": 204.140625
+    },
+    "copy": {
+      "x": 30.71875,
+      "y": 411.125,
+      "width": 315.609375,
+      "height": 169.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "play",
+    "dataset": {
+      "earningsScroll": "true",
+      "cached": "16",
+      "inflight": "0",
+      "variant": "desktop",
+      "expandTravel": "1075.2",
+      "playTravel": "5939.2",
+      "totalTravel": "7321.599999999999",
+      "target": "299",
+      "expansion": "1.0000",
+      "progress": "0.5000",
+      "mode": "motion",
+      "ready": "true",
+      "drawn": "299"
+    },
+    "rail": {
+      "x": 0,
+      "y": -4044.875,
+      "width": 768,
+      "height": 8345.59375
+    },
+    "layout": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "surface": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "slot": {
+      "x": 374.328125,
+      "y": 409.921875,
+      "width": 362.9375,
+      "height": 204.140625
+    },
+    "copy": {
+      "x": 30.71875,
+      "y": 411.125,
+      "width": 315.609375,
+      "height": 169.75
+    },
+    "heading": "28px",
+    "overflow": 0
+  }
+]

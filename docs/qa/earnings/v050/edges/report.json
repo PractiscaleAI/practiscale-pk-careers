@@ -1,0 +1,1159 @@
+{
+  "checks": [
+    {
+      "name": "1440: campus section and renderer removed",
+      "pass": true
+    },
+    {
+      "name": "1440: exactly four canonical facts",
+      "pass": true,
+      "data": [
+        {
+          "value": "500+",
+          "label": "US healthcare businesses served",
+          "font": 16,
+          "box": {
+            "x": 57.59375,
+            "y": 746.796875,
+            "r": 364.796875,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "100+",
+          "label": "Team members in Pakistan",
+          "font": 16,
+          "box": {
+            "x": 396.796875,
+            "y": 746.796875,
+            "r": 704,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "46,000",
+          "label": "Candidates in our hiring portal",
+          "font": 16,
+          "box": {
+            "x": 736,
+            "y": 746.796875,
+            "r": 1043.203125,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "29",
+          "label": "Published client case studies",
+          "font": 16,
+          "box": {
+            "x": 1075.203125,
+            "y": 746.796875,
+            "r": 1382.40625,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        }
+      ]
+    },
+    {
+      "name": "1440: labels remain readable",
+      "pass": true
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440: no sound or extra footer controls",
+      "pass": true
+    },
+    {
+      "name": "1440: copy and device have separate space",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.00001,
+        "introHidden": "false",
+        "rail": {
+          "x": 0,
+          "y": -0.046875,
+          "r": 1440,
+          "b": 9899.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 297.8984375,
+          "r": 517.59375,
+          "b": 555.1015625,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 662.4000244140625,
+          "y": 162,
+          "r": 1382.4000244140625,
+          "b": 691,
+          "w": 720,
+          "h": 529
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 721.796875,
+          "r": 1382.40625,
+          "b": 860,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 746.796875,
+              "r": 364.796875,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 746.796875,
+              "r": 704,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 746.796875,
+              "r": 1043.203125,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 746.796875,
+              "r": 1382.40625,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "3169.600",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440: facts fit below the opening with clear gutters",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.00001,
+        "introHidden": "false",
+        "rail": {
+          "x": 0,
+          "y": -0.046875,
+          "r": 1440,
+          "b": 9899.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 297.8984375,
+          "r": 517.59375,
+          "b": 555.1015625,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 662.4000244140625,
+          "y": 162,
+          "r": 1382.4000244140625,
+          "b": 691,
+          "w": 720,
+          "h": 529
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 721.796875,
+          "r": 1382.40625,
+          "b": 860,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 746.796875,
+              "r": 364.796875,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 746.796875,
+              "r": 704,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 746.796875,
+              "r": 1043.203125,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 746.796875,
+              "r": 1382.40625,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "3169.600",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440: forward-facing laptop",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "The people behind the numbers",
+        "numberKey": "",
+        "renderedAt": "3169.600",
+        "frontYaw": "0",
+        "lidOpen": "0.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+        "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+        "record": "-1"
+      }
+    },
+    {
+      "name": "1440/0.02: complete text groups clear the expanding laptop",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.02001,
+        "introHidden": "false",
+        "rail": {
+          "x": 0,
+          "y": -180.046875,
+          "r": 1440,
+          "b": 9719.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 224.75897216796875,
+          "r": 517.59375,
+          "b": 481.96209716796875,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 630.1962890625,
+          "y": 154.1240997314453,
+          "r": 1385.2001953125,
+          "b": 701.1609039306641,
+          "w": 755.00390625,
+          "h": 547.0368041992188
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 747.3135986328125,
+          "r": 1382.40625,
+          "b": 885.5167236328125,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 772.3135986328125,
+              "r": 364.796875,
+              "b": 885.5167236328125,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 772.3135986328125,
+              "r": 704,
+              "b": 885.5167236328125,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 772.3135986328125,
+              "r": 1043.203125,
+              "b": 885.5167236328125,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 772.3135986328125,
+              "r": 1382.40625,
+              "b": 885.5167236328125,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "4333.100",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440/0.04: complete text groups clear the expanding laptop",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.04001,
+        "introHidden": "false",
+        "rail": {
+          "x": 0,
+          "y": -360.046875,
+          "r": 1440,
+          "b": 9539.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": -131.079833984375,
+          "r": 517.59375,
+          "b": 126.123291015625,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 546.1831665039062,
+          "y": 133.577392578125,
+          "r": 1392.505859375,
+          "b": 727.6686401367188,
+          "w": 846.3226928710938,
+          "h": 594.0912475585938
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 871.4576416015625,
+          "r": 1382.40625,
+          "b": 1009.6607666015625,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 896.4576416015625,
+              "r": 364.796875,
+              "b": 1009.6607666015625,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 896.4576416015625,
+              "r": 704,
+              "b": 1009.6607666015625,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 896.4576416015625,
+              "r": 1043.203125,
+              "b": 1009.6607666015625,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 896.4576416015625,
+              "r": 1382.40625,
+              "b": 1009.6607666015625,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "4407.100",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440/0.06: complete text groups clear the expanding laptop",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.06001,
+        "introHidden": "true",
+        "rail": {
+          "x": 0,
+          "y": -540.046875,
+          "r": 1440,
+          "b": 9359.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": -281.1015625,
+          "r": 517.59375,
+          "b": -23.8984375,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 429.20208740234375,
+          "y": 104.96790313720703,
+          "r": 1402.677978515625,
+          "b": 764.5784378051758,
+          "w": 973.4758911132812,
+          "h": 659.6105346679688
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 923.796875,
+          "r": 1382.40625,
+          "b": 1062,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 948.796875,
+              "r": 364.796875,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 948.796875,
+              "r": 704,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 948.796875,
+              "r": 1043.203125,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 948.796875,
+              "r": 1382.40625,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "4482.800",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440: both text groups leave when expansion completes",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.15001,
+        "introHidden": "true",
+        "rail": {
+          "x": 0,
+          "y": -1350.046875,
+          "r": 1440,
+          "b": 8549.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": -281.1015625,
+          "r": 517.59375,
+          "b": -23.8984375,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 923.796875,
+          "r": 1382.40625,
+          "b": 1062,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 948.796875,
+              "r": 364.796875,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 948.796875,
+              "r": 704,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 948.796875,
+              "r": 1043.203125,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 948.796875,
+              "r": 1382.40625,
+              "b": 1062,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "4632.700",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440: laptop window fits the viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "r": 1440,
+        "b": 900,
+        "w": 1440,
+        "h": 900
+      }
+    },
+    {
+      "name": "1440: earnings begin after the lid opens",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "4730.900",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":244.03085858552717,\"right\":955.9691414144728,\"top\":83.99999999999994,\"bottom\":715.9999999999999}",
+        "screenBounds": "{\"left\":270.8357571938207,\"right\":929.1642428061793,\"top\":112.07243889369285,\"bottom\":505.71816585153266}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "1440: reverse scroll restores both text groups",
+      "pass": true,
+      "data": {
+        "w": 1440,
+        "h": 900,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.00001,
+        "introHidden": "false",
+        "rail": {
+          "x": 0,
+          "y": -0.046875,
+          "r": 1440,
+          "b": 9899.953125,
+          "w": 1440,
+          "h": 9900
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "r": 1440,
+          "b": 900,
+          "w": 1440,
+          "h": 900
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 297.8984375,
+          "r": 517.59375,
+          "b": 555.1015625,
+          "w": 460,
+          "h": 257.203125
+        },
+        "window": {
+          "x": 662.4000244140625,
+          "y": 162,
+          "r": 1382.4000244140625,
+          "b": 691,
+          "w": 720,
+          "h": 529
+        },
+        "metrics": {
+          "x": 57.59375,
+          "y": 721.796875,
+          "r": 1382.40625,
+          "b": 860,
+          "w": 1324.8125,
+          "h": 138.203125
+        },
+        "copyClip": "none",
+        "metricClip": "none",
+        "stats": [
+          {
+            "value": "500+",
+            "label": "US healthcare businesses served",
+            "font": 16,
+            "box": {
+              "x": 57.59375,
+              "y": 746.796875,
+              "r": 364.796875,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "100+",
+            "label": "Team members in Pakistan",
+            "font": 16,
+            "box": {
+              "x": 396.796875,
+              "y": 746.796875,
+              "r": 704,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "46,000",
+            "label": "Candidates in our hiring portal",
+            "font": 16,
+            "box": {
+              "x": 736,
+              "y": 746.796875,
+              "r": 1043.203125,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          },
+          {
+            "value": "29",
+            "label": "Published client case studies",
+            "font": 16,
+            "box": {
+              "x": 1075.203125,
+              "y": 746.796875,
+              "r": 1382.40625,
+              "b": 860,
+              "w": 307.203125,
+              "h": 113.203125
+            }
+          }
+        ],
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "5249.200",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "canvases": 1,
+        "overflow": 0,
+        "removedCampus": true,
+        "audioControls": 0
+      }
+    },
+    {
+      "name": "1440: full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "All ten original records render in order",
+      "pass": true,
+      "data": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Active resize preserves progress",
+      "pass": true
+    },
+    {
+      "name": "Enlarged statistics release the pin",
+      "pass": true
+    },
+    {
+      "name": "Content-fit fallback disposes the renderer",
+      "pass": true
+    },
+    {
+      "name": "Restoring text size recovers one live laptop",
+      "pass": true
+    },
+    {
+      "name": "Keyboard skip reaches the end",
+      "pass": true
+    },
+    {
+      "name": "No audio contexts are created",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "w": 1440,
+      "h": 900,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0.00001,
+      "introHidden": "false",
+      "rail": {
+        "x": 0,
+        "y": -0.046875,
+        "r": 1440,
+        "b": 9899.953125,
+        "w": 1440,
+        "h": 9900
+      },
+      "view": {
+        "x": 0,
+        "y": 0,
+        "r": 1440,
+        "b": 900,
+        "w": 1440,
+        "h": 900
+      },
+      "copy": {
+        "x": 57.59375,
+        "y": 297.8984375,
+        "r": 517.59375,
+        "b": 555.1015625,
+        "w": 460,
+        "h": 257.203125
+      },
+      "window": {
+        "x": 662.4000244140625,
+        "y": 162,
+        "r": 1382.4000244140625,
+        "b": 691,
+        "w": 720,
+        "h": 529
+      },
+      "metrics": {
+        "x": 57.59375,
+        "y": 721.796875,
+        "r": 1382.40625,
+        "b": 860,
+        "w": 1324.8125,
+        "h": 138.203125
+      },
+      "copyClip": "none",
+      "metricClip": "none",
+      "stats": [
+        {
+          "value": "500+",
+          "label": "US healthcare businesses served",
+          "font": 16,
+          "box": {
+            "x": 57.59375,
+            "y": 746.796875,
+            "r": 364.796875,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "100+",
+          "label": "Team members in Pakistan",
+          "font": 16,
+          "box": {
+            "x": 396.796875,
+            "y": 746.796875,
+            "r": 704,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "46,000",
+          "label": "Candidates in our hiring portal",
+          "font": 16,
+          "box": {
+            "x": 736,
+            "y": 746.796875,
+            "r": 1043.203125,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        },
+        {
+          "value": "29",
+          "label": "Published client case studies",
+          "font": 16,
+          "box": {
+            "x": 1075.203125,
+            "y": 746.796875,
+            "r": 1382.40625,
+            "b": 860,
+            "w": 307.203125,
+            "h": 113.203125
+          }
+        }
+      ],
+      "canvas": {
+        "engine": "three.js r186",
+        "screenText": "The people behind the numbers",
+        "numberKey": "",
+        "renderedAt": "3169.600",
+        "frontYaw": "0",
+        "lidOpen": "0.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+        "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+        "record": "-1"
+      },
+      "canvases": 1,
+      "overflow": 0,
+      "removedCampus": true,
+      "audioControls": 0
+    }
+  ]
+}

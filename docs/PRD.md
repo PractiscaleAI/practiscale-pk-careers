@@ -1,18 +1,42 @@
 # PractiScale website: Product requirements
 
-Version 0.40 | 22 October 2026 | Status: Shared homepage typography and spacing refined, with a clearer live cortical brain.
+Version 0.51 | Status: Opposite-corner copy and a centered company-film zoom.
 
 ## Authority and current scope
 
-Current user instructions take precedence. Build three homepage sections in order: the approved CEO hero, the three-card career-problem section and one continuous training and hiring section. Navigation belongs to the hero. Preserve the original supplied preloader. The career section's three specified destination URLs resolve to focused program and hiring pages using supplied content and the existing enquiry flow. Other sections, pages, footer, backend and deployment remain deferred. Edition 1.4 supplies the brand identity; the website PDF supplies content only. Use the original logos and local Sora, Manrope and JetBrains Mono fonts.
+Current user instructions take precedence. Build five homepage sections in order: the approved CEO hero, the three-card career-problem section, the desktop Who we are film, one continuous training and hiring section, then laptop earnings proof with the four company facts. Navigation belongs to the hero. Preserve the original supplied preloader. The career section's three specified destination URLs resolve to focused program and hiring pages using supplied content and the existing enquiry flow. Other sections, pages, footer, backend and deployment remain deferred. Edition 1.4 supplies the brand identity; the website PDF supplies content only. Use the original logos and local Sora, Manrope and JetBrains Mono fonts.
 
 This document describes the current implementation requirements. Earlier revision history is archived in docs/history/ and does not override this version.
 
 ## Typography and spacing
 
-Use one responsive scale across the three homepage sections. Preserve the hero's approved two-line headline. The problem and career section headings share a 28-44px scale, 1.18 line height and -0.045em tracking. Card titles share a 24-28px scale and 1.2 line height. Main descriptive copy uses Manrope 16px with 1.6 line height; keep paragraphs readable and avoid a single final orphaned word.
+Use one responsive scale across all five homepage sections. Preserve the hero's approved two-line headline. The problem, company film, career, stats and earnings section headings share a 28-44px scale, 1.18 line height and -0.03em tracking. Card titles share a 24-28px scale, 1.2 line height and -0.025em tracking. Main descriptive copy uses Manrope 16px with 1.6 line height; keep paragraphs readable and avoid a single final orphaned word.
 
 Section eyebrows use JetBrains Mono 11px with consistent tracking. Leave 12px between the eyebrow and heading, then 24px before the card stage. Use the same responsive outer gutter for the two light sections. Primary actions use 15px labels, a 52px minimum height and 12px corners. Compact career buttons may reduce horizontal inset to keep labels on one line. Preserve natural flow when enlarged content cannot fit a pinned scene.
+
+## Desktop Who we are
+
+Insert the supplied office film after The Problem and before Two Ways In. Use one video window without stacked stills, a white card border or caption footer. Copy: eyebrow "Who we are"; H2 "Step inside PractiScale."; body "PractiScale helps US healthcare businesses grow through professional referral relationships. We find the right referral partners in each client's area, reach out, qualify them and set up introductions. All of it is done here, by people we trained.".
+
+Follow the supplied diagonal-split reference. Inset its backdrop by the shared side gutters and 96px equally above and below, with 24px rounded outer corners. Use Deep Teal and the approved light secondary surface #E6ECEC, surrounded by Fog. Place the heading upper-left and the complete healthcare-referral paragraph lower-right, with matching side offsets and 128px top/bottom offsets. Keep the single 16:9 video exactly centered on both axes at every scroll position. Measure its initial size to clear both text blocks by at least 32px. As the visitor scrolls, both text blocks mask away, the video uniformly zooms to a visible window of exactly 100vh, and both diagonal background halves open apart. The image remains proportional and clipped to that window; other viewport ratios can crop source edges. Reverse scrolling closes the background and restores the opposite-corner copy and centered opening. Do not replace this choreography with a sideways expansion. Keep important people, signage and the embedded ending legible. Map all 31.666667 seconds in order, without new media or source edits. The homepage stays silent.
+
+Show this section only at widths of at least 1024px. Do not add phone/tablet film travel or download the desktop video there. Reduced motion, Save-Data, short desktop viewports, enlarged content and failure use a normal native player. Retain the keyboard skip and accessible description.
+
+## Removed campus section
+
+The latest user removes the separate "The work behind the numbers" campus section from the homepage. Do not render its heading, geometry, scroll rail or GPU world. Keep historical source and exported files. The four company figures remain in the laptop opening: 500+ US healthcare businesses served; 100+ Team members in Pakistan; 46,000 Candidates in our hiring portal; 29 Published client case studies. Do not add a separate stats section or duplicate these figures there.
+
+## Laptop earnings proof
+
+Replace the former homepage frame-sequence player with the accepted front-facing laptop concept. Keep the copy exactly: eyebrow "The proof"; H2 "What our closers actually took home"; subheadline "Real commissions paid to our sales team. Not projections. Not averages."
+
+Start with copy on the left and the closed laptop on the right on desktop, or copy above the laptop on portrait devices. Place the four company facts at the bottom of this opening, below copy and device: four columns on desktop and a 2x2 portrait grid with labels at least 16px. Their DOM order remains healthcare, team, candidates, publications. Reserve their measured height before placing the device; release the pin if the complete opening cannot fit. The complete facts group moves down and the complete introductory copy moves up over the same progress interval, clearing the laptop before it can cover either group. Avoid clipping numbers separately from labels. Native scrolling expands the panel to the viewport, opens the lid, moves through all ten records, shows the combined total with its different-reporting-period qualification, then closes the lid. Reverse scrolling unwinds the same path. Keep the model facing the visitor, without lateral yaw. Retain the approved cursor-responsive contour background over the flat Deep Teal environment. The entire homepage stays silent. Remove sound controls, the audio engine, the outer EARNINGS / SALES TEAM caption and the outer record counter. Add no second progress bar, autoplay, table or visible details disclosure.
+
+Preserve the ten canonical earnings records and reporting periods in earnings-content.ts, including the combined Rs 9,596,865. The combined figure is not a same-month result or an average. Keep the full record list available to assistive technology. Do not alter or delete the original Downloads frame package or public/earnings-v7 archive; they are retained as historical sources and are no longer requested by the homepage.
+
+Observe actual copy dimensions and release extended scroll travel when content cannot fit. Reduced motion, Save-Data, no JavaScript and initialization/context failure use a complete final laptop poster in natural flow with readable HTML copy and semantic records. Direct #the-proof links settle after fonts, the original introduction and preceding scene measurements. Real user input cancels temporary alignment. Keyboard-only skip links reach the earnings heading and end of the presentation without intercepting native page keys.
+
+Edition 1.4's approximate 60/30/10 allocation describes overall visual emphasis, rather than a per-section pixel quota. Deep Teal carries the proof opening, Fog/White give the models and figures contrast, mint supplies restrained secondary detail, and Proof Amber activates verified milestones. No footer or deployment is added.
 
 ## Hero
 
@@ -104,4 +128,4 @@ Hide original demo/preview controls. Reveal the actual page and replay on every 
 
 ## QC and maintenance
 
-Independently inspect actual desktop, tablet and phone renders, hero start/turn/end and menu states. Verify all three sections, hero-bound navigation, card reading-scene fit, exact copy/CTA/figures, contrast, clipping, enlarged text, native scroll behavior, fallbacks and original preloader. Automated results support visual QC; they do not certify photographic realism or facial likeness. Follow AGENTS.md and COMPOSITION-QC.md. Update this PRD and the TRD when scope changes.
+Independently inspect actual desktop, tablet and phone renders, hero start/turn/end and menu states. Verify all five sections, hero-bound navigation, card reading-scene fit, exact copy/CTA/figures, contrast, clipping, enlarged text, native scroll behavior, fallbacks and original preloader. Automated results support visual QC; they do not certify photographic realism or facial likeness. Follow AGENTS.md and COMPOSITION-QC.md. Update this PRD and the TRD when scope changes.

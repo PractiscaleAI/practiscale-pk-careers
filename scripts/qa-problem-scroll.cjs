@@ -80,8 +80,8 @@ const bodies = [
         };
       });
     check(
-      "Three authorized homepage sections",
-      (await page.locator("main > section").count()) === 3,
+      "Five authorized homepage sections including the company film",
+      (await page.locator("main > section").count()) === 5,
     );
     check(
       "Exact problem titles",

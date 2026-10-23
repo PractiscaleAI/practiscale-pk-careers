@@ -97,7 +97,9 @@ const fs = require("node:fs");
           clone.remove();
           return [...lines.values()];
         };
-        const headings = all("#problem-heading,#career-heading").map((el) => ({
+        const headings = all(
+          "#problem-heading,#career-heading,#proof-heading",
+        ).map((el) => ({
           ...type(el),
           id: el.id,
           before:
@@ -105,13 +107,16 @@ const fs = require("node:fs");
             parseFloat(
               getComputedStyle(el.previousElementSibling).marginBottom,
             ),
-          after: parseFloat(getComputedStyle(el.parentElement).marginBottom),
+          after:
+            el.id === "proof-heading"
+              ? parseFloat(getComputedStyle(el.nextElementSibling).marginTop)
+              : parseFloat(getComputedStyle(el.parentElement).marginBottom),
         }));
         const cardTitles = all(
           "[data-problem-copy] h3,[data-career-text] h3",
         ).map(type);
         const bodies = all(
-          ".hero-copy>p,[data-problem-copy]>p,[data-career-text] [data-career-group]:nth-child(2)>p",
+          ".hero-copy>p,[data-problem-copy]>p,[data-career-text] [data-career-group]:nth-child(2)>p,[data-laptop-copy]>p:not(.eyebrow):not([data-laptop-note])",
         ).map((el) => ({
           ...type(el),
           text: el.textContent,
@@ -140,9 +145,9 @@ const fs = require("node:fs");
           bodies,
           actions,
           hero: type(document.querySelector("h1")),
-          eyebrows: all("#the-problem .eyebrow,#career-paths .eyebrow").map(
-            type,
-          ),
+          eyebrows: all(
+            "#the-problem .eyebrow,#career-paths .eyebrow,#the-proof .eyebrow",
+          ).map(type),
           overflow: document.documentElement.scrollWidth > innerWidth,
           problem: document.querySelector("#the-problem").dataset.motion,
           career: document.querySelector("[data-career-rail]").dataset.mode,

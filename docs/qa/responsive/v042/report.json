@@ -1,0 +1,259 @@
+{
+  "version": "0.42",
+  "date": "2026-10-22",
+  "timeZone": "Asia/Karachi",
+  "browser": "Isolated Google Chrome / Chromium",
+  "physicalDevicesTested": false,
+  "layouts": [
+    {
+      "name": "small-phone",
+      "width": 320,
+      "height": 568,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "compact-android",
+      "width": 360,
+      "height": 640,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "iphone-se",
+      "width": 375,
+      "height": 667,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "iphone-13",
+      "width": 390,
+      "height": 844,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "pixel-7",
+      "width": 412,
+      "height": 915,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "large-phone",
+      "width": 430,
+      "height": 932,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "phone-landscape",
+      "width": 667,
+      "height": 375,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "wide-phone-landscape",
+      "width": 844,
+      "height": 390,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "ipad-mini",
+      "width": 768,
+      "height": 1024,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "ipad-air",
+      "width": 820,
+      "height": 1180,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "ipad-pro",
+      "width": 1024,
+      "height": 1366,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "mobile",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "touchEmulation": true,
+      "devicePixelRatio": 2,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "narrow-desktop",
+      "width": 1192,
+      "height": 768,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "short-desktop",
+      "width": 1536,
+      "height": 696,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "large-desktop",
+      "width": 1920,
+      "height": 1080,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    },
+    {
+      "name": "wide-desktop",
+      "width": 2560,
+      "height": 1440,
+      "touchEmulation": false,
+      "devicePixelRatio": 1,
+      "animation": "motion",
+      "variant": "desktop",
+      "horizontalOverflow": false
+    }
+  ],
+  "fixes": [
+    "Landscape phones retain expansion and frame playback when their content fits.",
+    "Portrait tablets, including 1024px models, use the supplied portrait frames.",
+    "Text size and spacing overrides trigger measured readable fallback.",
+    "Proof deep links settle after the original introduction and preceding scene layout, without overriding user input.",
+    "The duplicate added progress bar is removed; original baked progress artwork remains."
+  ],
+  "sourceMedia": "Both original 600-frame sequences are unchanged. Source integrity evidence remains in docs/qa/earnings/source-integrity.json.",
+  "targetedFixes": [
+    {
+      "width": 375,
+      "height": 812,
+      "anchorY": 0.46875,
+      "variant": "mobile"
+    },
+    {
+      "enlarged": "content-fit",
+      "posterHeight": 581.328125
+    },
+    {
+      "width": 1024,
+      "height": 1366,
+      "anchorY": 0,
+      "variant": "mobile"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "anchorY": -0.046875,
+      "variant": "desktop"
+    }
+  ],
+  "regressionResults": {
+    "earnings": {
+      "checksPassed": 296,
+      "report": "docs/qa/earnings/report.json"
+    },
+    "wholePage": {
+      "checksPassed": 22,
+      "report": "docs/hero-qa.json"
+    },
+    "layout": {
+      "checksPassed": 61,
+      "report": "docs/layout-qa.json"
+    },
+    "typography": {
+      "checksPassed": 109,
+      "report": "docs/typography-qa.json"
+    },
+    "problemScroll": {
+      "checksPassed": 192,
+      "report": "docs/problem-scroll-qa.json"
+    },
+    "careerScroll": {
+      "checksPassed": 133,
+      "report": "docs/career-section-qa.json"
+    },
+    "navigation": {
+      "checksPassed": 107,
+      "report": "docs/scroll-navigation-qa.json"
+    },
+    "mobileHero": {
+      "checksPassed": 118,
+      "report": "docs/mobile-editorial-qa.json"
+    }
+  },
+  "limits": "Responsive and touch emulation, not physical device, Safari or Firefox certification.",
+  "testHarnessNote": "The whole-page browser smoke timeout is now 12 seconds to accommodate the original loader existing 9-second guard. Loader implementation and supplied introduction remain unchanged.",
+  "productionBuildPassed": true,
+  "typecheckPassed": true
+}

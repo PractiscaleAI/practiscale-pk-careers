@@ -1,0 +1,9 @@
+{
+  "info": {
+    "drawCalls": "60",
+    "instances": "371",
+    "renderMs": "2.50"
+  },
+  "deterministicReverse": true,
+  "errors": []
+}

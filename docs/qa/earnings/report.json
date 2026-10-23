@@ -1,0 +1,4435 @@
+{
+  "checks": [
+    {
+      "name": "1440x900: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "1440x900: exact heading",
+      "pass": true
+    },
+    {
+      "name": "1440x900: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "1440x900: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "1440x900: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "3",
+        "inflight": "3",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1440x900: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "3",
+          "inflight": "3",
+          "variant": "desktop",
+          "expandTravel": "945",
+          "playTravel": "5220",
+          "totalTravel": "6435",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 613.625,
+          "y": 233.78125,
+          "width": 768.78125,
+          "height": 432.4375,
+          "right": 1382.40625,
+          "bottom": 666.21875
+        },
+        "slot": {
+          "x": 613.625,
+          "y": 233.78125,
+          "width": 768.78125,
+          "height": 432.4375,
+          "right": 1382.40625,
+          "bottom": 666.21875
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 349.296875,
+          "width": 484.03125,
+          "height": 201.40625,
+          "right": 541.625,
+          "bottom": 550.703125
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1440x900: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 613.625,
+        "y": 233.78125,
+        "width": 768.78125,
+        "height": 432.4375,
+        "right": 1382.40625,
+        "bottom": 666.21875
+      }
+    },
+    {
+      "name": "1440x900: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "3",
+          "inflight": "3",
+          "variant": "desktop",
+          "expandTravel": "945",
+          "playTravel": "5220",
+          "totalTravel": "6435",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 613.625,
+          "y": 233.78125,
+          "width": 768.78125,
+          "height": 432.4375,
+          "right": 1382.40625,
+          "bottom": 666.21875
+        },
+        "slot": {
+          "x": 613.625,
+          "y": 233.78125,
+          "width": 768.78125,
+          "height": 432.4375,
+          "right": 1382.40625,
+          "bottom": 666.21875
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 349.296875,
+          "width": 484.03125,
+          "height": 201.40625,
+          "right": 541.625,
+          "bottom": 550.703125
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1440x900: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "3",
+        "inflight": "3",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1440x900: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "0",
+        "expansion": "0.4995",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1440x900: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "1440x900: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "945",
+          "playTravel": "5220",
+          "totalTravel": "6435",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "right": 1440,
+          "bottom": 900
+        },
+        "slot": {
+          "x": 613.625,
+          "y": 233.78125,
+          "width": 768.78125,
+          "height": 432.4375,
+          "right": 1382.40625,
+          "bottom": 666.21875
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 333.296875,
+          "width": 484.03125,
+          "height": 201.40625,
+          "right": 541.625,
+          "bottom": 534.703125
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "1440x900: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1440x900: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1440x900: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "2",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3699",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1440x900: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "2",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3699",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1440x900: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "1",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1440x900: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "1",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1440x900: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "3",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1440x900: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "3",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1440x900: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1440x900: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1440x900: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "1440x900: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "1440x900: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "1440x900: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "945",
+        "playTravel": "5220",
+        "totalTravel": "6435",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1440x900: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "Desktop-to-mobile resize preserves story position",
+      "pass": true,
+      "detail": {
+        "before": 98,
+        "after": "98"
+      }
+    },
+    {
+      "name": "Only one earnings canvas after resize",
+      "pass": true
+    },
+    {
+      "name": "1440x900: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "1440x900: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: exact heading",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1920x1080: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "1134",
+          "playTravel": "6264",
+          "totalTravel": "7722",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 854,
+          "y": 312.59375,
+          "width": 810,
+          "height": 455.625,
+          "right": 1664,
+          "bottom": 768.21875
+        },
+        "slot": {
+          "x": 854,
+          "y": 312.59375,
+          "width": 810,
+          "height": 455.625,
+          "right": 1664,
+          "bottom": 768.21875
+        },
+        "copy": {
+          "x": 256,
+          "y": 436.65625,
+          "width": 510,
+          "height": 207.5,
+          "right": 766,
+          "bottom": 644.15625
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 854,
+        "y": 312.59375,
+        "width": 810,
+        "height": 455.625,
+        "right": 1664,
+        "bottom": 768.21875
+      }
+    },
+    {
+      "name": "1920x1080: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "1134",
+          "playTravel": "6264",
+          "totalTravel": "7722",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 854,
+          "y": 312.59375,
+          "width": 810,
+          "height": 455.625,
+          "right": 1664,
+          "bottom": 768.21875
+        },
+        "slot": {
+          "x": 854,
+          "y": 312.59375,
+          "width": 810,
+          "height": 455.625,
+          "right": 1664,
+          "bottom": 768.21875
+        },
+        "copy": {
+          "x": 256,
+          "y": 436.65625,
+          "width": 510,
+          "height": 207.5,
+          "right": 766,
+          "bottom": 644.15625
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1920x1080: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "0",
+        "expansion": "0.5000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1920x1080: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "1920x1080: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "1134",
+          "playTravel": "6264",
+          "totalTravel": "7722",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "right": 1920,
+          "bottom": 1080
+        },
+        "slot": {
+          "x": 854,
+          "y": 312.1875,
+          "width": 810,
+          "height": 455.625,
+          "right": 1664,
+          "bottom": 767.8125
+        },
+        "copy": {
+          "x": 256,
+          "y": 420.25,
+          "width": 510,
+          "height": 207.5,
+          "right": 766,
+          "bottom": 627.75
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "1920x1080: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1920x1080: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1920x1080: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1920x1080: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1920x1080: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1920x1080: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1920x1080: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1920x1080: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1920x1080: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1920x1080: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1920x1080: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "1920x1080: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "1134",
+        "playTravel": "6264",
+        "totalTravel": "7722",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1920x1080: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1920x1080: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "1920x1080: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "1536x696: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "1536x696: exact heading",
+      "pass": true
+    },
+    {
+      "name": "1536x696: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "1536x696: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "1536x696: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1536x696: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "730.8000000000001",
+          "playTravel": "4036.7999999999997",
+          "totalTravel": "4976.4",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 654.53125,
+          "y": 117.359375,
+          "width": 820.03125,
+          "height": 461.265625,
+          "right": 1474.5625,
+          "bottom": 578.625
+        },
+        "slot": {
+          "x": 654.53125,
+          "y": 117.359375,
+          "width": 820.03125,
+          "height": 461.265625,
+          "right": 1474.5625,
+          "bottom": 578.625
+        },
+        "copy": {
+          "x": 61.4375,
+          "y": 258.390625,
+          "width": 516.296875,
+          "height": 179.21875,
+          "right": 577.734375,
+          "bottom": 437.609375
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1536x696: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 654.53125,
+        "y": 117.359375,
+        "width": 820.03125,
+        "height": 461.265625,
+        "right": 1474.5625,
+        "bottom": 578.625
+      }
+    },
+    {
+      "name": "1536x696: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "730.8000000000001",
+          "playTravel": "4036.7999999999997",
+          "totalTravel": "4976.4",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 654.53125,
+          "y": 117.359375,
+          "width": 820.03125,
+          "height": 461.265625,
+          "right": 1474.5625,
+          "bottom": 578.625
+        },
+        "slot": {
+          "x": 654.53125,
+          "y": 117.359375,
+          "width": 820.03125,
+          "height": 461.265625,
+          "right": 1474.5625,
+          "bottom": 578.625
+        },
+        "copy": {
+          "x": 61.4375,
+          "y": 258.390625,
+          "width": 516.296875,
+          "height": 179.21875,
+          "right": 577.734375,
+          "bottom": 437.609375
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1536x696: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1536x696: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "0",
+        "expansion": "0.4995",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1536x696: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "1536x696: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "730.8000000000001",
+          "playTravel": "4036.7999999999997",
+          "totalTravel": "4976.4",
+          "target": "0",
+          "expansion": "0.9990",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0.0020191576331853867,
+          "y": 0.00036204091156832874,
+          "width": 1535.997802734375,
+          "height": 695.999267578125,
+          "right": 1535.9998218920082,
+          "bottom": 695.9996296190366
+        },
+        "slot": {
+          "x": 654.53125,
+          "y": 117.359375,
+          "width": 820.03125,
+          "height": 461.265625,
+          "right": 1474.5625,
+          "bottom": 578.625
+        },
+        "copy": {
+          "x": 61.4375,
+          "y": 242.390625,
+          "width": 516.296875,
+          "height": 179.21875,
+          "right": 577.734375,
+          "bottom": 421.609375
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "1536x696: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1536x696: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1536x696: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3699",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1536x696: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3699",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1536x696: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1536x696: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1536x696: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1536x696: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1536x696: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "0.9999",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1536x696: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "0.9999",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1536x696: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "1536x696: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "1536x696: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "1536x696: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "730.8000000000001",
+        "playTravel": "4036.7999999999997",
+        "totalTravel": "4976.4",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1536x696: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1536x696: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "1536x696: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "1536x696: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "768x1024: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "768x1024: exact heading",
+      "pass": true
+    },
+    {
+      "name": "768x1024: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "768x1024: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "768x1024: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "768x1024: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1177.6",
+          "playTravel": "6963.2",
+          "totalTravel": "8448",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 374.328125,
+          "y": 189.515625,
+          "width": 362.9375,
+          "height": 645.21875,
+          "right": 737.265625,
+          "bottom": 834.734375
+        },
+        "slot": {
+          "x": 374.328125,
+          "y": 189.515625,
+          "width": 362.9375,
+          "height": 645.21875,
+          "right": 737.265625,
+          "bottom": 834.734375
+        },
+        "copy": {
+          "x": 30.71875,
+          "y": 427.25,
+          "width": 315.609375,
+          "height": 169.75,
+          "right": 346.328125,
+          "bottom": 597
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "768x1024: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 374.328125,
+        "y": 189.515625,
+        "width": 362.9375,
+        "height": 645.21875,
+        "right": 737.265625,
+        "bottom": 834.734375
+      }
+    },
+    {
+      "name": "768x1024: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1177.6",
+          "playTravel": "6963.2",
+          "totalTravel": "8448",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 374.328125,
+          "y": 189.515625,
+          "width": 362.9375,
+          "height": 645.21875,
+          "right": 737.265625,
+          "bottom": 834.734375
+        },
+        "slot": {
+          "x": 374.328125,
+          "y": 189.515625,
+          "width": 362.9375,
+          "height": 645.21875,
+          "right": 737.265625,
+          "bottom": 834.734375
+        },
+        "copy": {
+          "x": 30.71875,
+          "y": 427.25,
+          "width": 315.609375,
+          "height": 169.75,
+          "right": 346.328125,
+          "bottom": 597
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "768x1024: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "768x1024: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "0",
+        "expansion": "0.5002",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "768x1024: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "768x1024: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1177.6",
+          "playTravel": "6963.2",
+          "totalTravel": "8448",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0001",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024,
+          "right": 768,
+          "bottom": 1024
+        },
+        "slot": {
+          "x": 374.328125,
+          "y": 189.390625,
+          "width": 362.9375,
+          "height": 645.21875,
+          "right": 737.265625,
+          "bottom": 834.609375
+        },
+        "copy": {
+          "x": 30.71875,
+          "y": 411.125,
+          "width": 315.609375,
+          "height": 169.75,
+          "right": 346.328125,
+          "bottom": 580.875
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "768x1024: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "768x1024: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "768x1024: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "768x1024: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "768x1024: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "768x1024: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "768x1024: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "768x1024: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "768x1024: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "768x1024: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "768x1024: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "768x1024: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "768x1024: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "768x1024: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1177.6",
+        "playTravel": "6963.2",
+        "totalTravel": "8448",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "768x1024: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "768x1024: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "768x1024: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "768x1024: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: exact heading",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1024x1366: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1570.8999999999999",
+          "playTravel": "9288.8",
+          "totalTravel": "11269.499999999998",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 436.34375,
+          "y": 197.046875,
+          "width": 546.703125,
+          "height": 971.90625,
+          "right": 983.046875,
+          "bottom": 1168.953125
+        },
+        "slot": {
+          "x": 436.34375,
+          "y": 197.046875,
+          "width": 546.703125,
+          "height": 971.90625,
+          "right": 983.046875,
+          "bottom": 1168.953125
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 593.703125,
+          "width": 344.203125,
+          "height": 178.59375,
+          "right": 385.15625,
+          "bottom": 772.296875
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1024x1366: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 436.34375,
+        "y": 197.046875,
+        "width": 546.703125,
+        "height": 971.90625,
+        "right": 983.046875,
+        "bottom": 1168.953125
+      }
+    },
+    {
+      "name": "1024x1366: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1570.8999999999999",
+          "playTravel": "9288.8",
+          "totalTravel": "11269.499999999998",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 436.34375,
+          "y": 197.046875,
+          "width": 546.703125,
+          "height": 971.90625,
+          "right": 983.046875,
+          "bottom": 1168.953125
+        },
+        "slot": {
+          "x": 436.34375,
+          "y": 197.046875,
+          "width": 546.703125,
+          "height": 971.90625,
+          "right": 983.046875,
+          "bottom": 1168.953125
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 593.703125,
+          "width": 344.203125,
+          "height": 178.59375,
+          "right": 385.15625,
+          "bottom": 772.296875
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "1024x1366: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1024x1366: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "0",
+        "expansion": "0.4997",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1024x1366: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "1024x1366: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "1570.8999999999999",
+          "playTravel": "9288.8",
+          "totalTravel": "11269.499999999998",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1366,
+          "right": 1024,
+          "bottom": 1366
+        },
+        "slot": {
+          "x": 436.34375,
+          "y": 197.046875,
+          "width": 546.703125,
+          "height": 971.90625,
+          "right": 983.046875,
+          "bottom": 1168.953125
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 577.703125,
+          "width": 344.203125,
+          "height": 178.59375,
+          "right": 385.15625,
+          "bottom": 756.296875
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "1024x1366: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1024x1366: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "1024x1366: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1024x1366: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "1024x1366: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1024x1366: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "1024x1366: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1024x1366: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "1024x1366: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1024x1366: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "1024x1366: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "1024x1366: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "1570.8999999999999",
+        "playTravel": "9288.8",
+        "totalTravel": "11269.499999999998",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "1024x1366: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1024x1366: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "1024x1366: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "667x375: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "667x375: exact heading",
+      "pass": true
+    },
+    {
+      "name": "667x375: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "667x375: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "667x375: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "667x375: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "393.75",
+          "playTravel": "2175",
+          "totalTravel": "2681.25",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 328.65625,
+          "y": 100.15625,
+          "width": 311.671875,
+          "height": 175.3125,
+          "right": 640.328125,
+          "bottom": 275.46875
+        },
+        "slot": {
+          "x": 328.65625,
+          "y": 100.15625,
+          "width": 311.671875,
+          "height": 175.3125,
+          "right": 640.328125,
+          "bottom": 275.46875
+        },
+        "copy": {
+          "x": 26.671875,
+          "y": 102.9375,
+          "width": 281.984375,
+          "height": 169.75,
+          "right": 308.65625,
+          "bottom": 272.6875
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "667x375: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 328.65625,
+        "y": 100.15625,
+        "width": 311.671875,
+        "height": 175.3125,
+        "right": 640.328125,
+        "bottom": 275.46875
+      }
+    },
+    {
+      "name": "667x375: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "393.75",
+          "playTravel": "2175",
+          "totalTravel": "2681.25",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 328.65625,
+          "y": 100.15625,
+          "width": 311.671875,
+          "height": 175.3125,
+          "right": 640.328125,
+          "bottom": 275.46875
+        },
+        "slot": {
+          "x": 328.65625,
+          "y": 100.15625,
+          "width": 311.671875,
+          "height": 175.3125,
+          "right": 640.328125,
+          "bottom": 275.46875
+        },
+        "copy": {
+          "x": 26.671875,
+          "y": 102.9375,
+          "width": 281.984375,
+          "height": 169.75,
+          "right": 308.65625,
+          "bottom": 272.6875
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "667x375: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "667x375: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "0",
+        "expansion": "0.5002",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "667x375: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "667x375: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "393.75",
+          "playTravel": "2175",
+          "totalTravel": "2681.25",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0001",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 667,
+          "height": 375,
+          "right": 667,
+          "bottom": 375
+        },
+        "slot": {
+          "x": 328.65625,
+          "y": 99.84375,
+          "width": 311.671875,
+          "height": 175.3125,
+          "right": 640.328125,
+          "bottom": 275.15625
+        },
+        "copy": {
+          "x": 26.671875,
+          "y": 86.625,
+          "width": 281.984375,
+          "height": 169.75,
+          "right": 308.65625,
+          "bottom": 256.375
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "667x375: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "667x375: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "667x375: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "667x375: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "667x375: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "667x375: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "667x375: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "667x375: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8499",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "667x375: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "0.9998",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "667x375: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "0.9998",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "667x375: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "667x375: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "667x375: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "667x375: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "393.75",
+        "playTravel": "2175",
+        "totalTravel": "2681.25",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "667x375: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "667x375: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "667x375: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "667x375: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "844x390: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "844x390: exact heading",
+      "pass": true
+    },
+    {
+      "name": "844x390: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "844x390: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "844x390: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "844x390: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "409.5",
+          "playTravel": "2262",
+          "totalTravel": "2788.5",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 409.875,
+          "y": 82.6875,
+          "width": 400.359375,
+          "height": 225.1875,
+          "right": 810.234375,
+          "bottom": 307.875
+        },
+        "slot": {
+          "x": 409.875,
+          "y": 82.6875,
+          "width": 400.359375,
+          "height": 225.1875,
+          "right": 810.234375,
+          "bottom": 307.875
+        },
+        "copy": {
+          "x": 33.75,
+          "y": 110.40625,
+          "width": 348.125,
+          "height": 169.75,
+          "right": 381.875,
+          "bottom": 280.15625
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "844x390: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 409.875,
+        "y": 82.6875,
+        "width": 400.359375,
+        "height": 225.1875,
+        "right": 810.234375,
+        "bottom": 307.875
+      }
+    },
+    {
+      "name": "844x390: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "409.5",
+          "playTravel": "2262",
+          "totalTravel": "2788.5",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 409.875,
+          "y": 82.6875,
+          "width": 400.359375,
+          "height": 225.1875,
+          "right": 810.234375,
+          "bottom": 307.875
+        },
+        "slot": {
+          "x": 409.875,
+          "y": 82.6875,
+          "width": 400.359375,
+          "height": 225.1875,
+          "right": 810.234375,
+          "bottom": 307.875
+        },
+        "copy": {
+          "x": 33.75,
+          "y": 110.40625,
+          "width": 348.125,
+          "height": 169.75,
+          "right": 381.875,
+          "bottom": 280.15625
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "844x390: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "844x390: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "9",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "0",
+        "expansion": "0.5005",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "844x390: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "844x390: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "9",
+          "inflight": "0",
+          "variant": "desktop",
+          "expandTravel": "409.5",
+          "playTravel": "2262",
+          "totalTravel": "2788.5",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0002",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390,
+          "right": 844,
+          "bottom": 390
+        },
+        "slot": {
+          "x": 409.875,
+          "y": 82.40625,
+          "width": 400.359375,
+          "height": 225.1875,
+          "right": 810.234375,
+          "bottom": 307.59375
+        },
+        "copy": {
+          "x": 33.75,
+          "y": 94.125,
+          "width": 348.125,
+          "height": 169.75,
+          "right": 381.875,
+          "bottom": 263.875
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "844x390: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "844x390: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1500",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "844x390: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "844x390: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3701",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "844x390: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "844x390: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6199",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "844x390: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8497",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "844x390: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8497",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "844x390: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "844x390: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "844x390: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "844x390: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "844x390: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "844x390: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "16",
+        "inflight": "0",
+        "variant": "desktop",
+        "expandTravel": "409.5",
+        "playTravel": "2262",
+        "totalTravel": "2788.5",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "844x390: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "844x390: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "844x390: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "844x390: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "375x812: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "375x812: exact heading",
+      "pass": true
+    },
+    {
+      "name": "375x812: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "375x812: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "375x812: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "375x812: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "933.8",
+          "playTravel": "5521.599999999999",
+          "totalTravel": "6699",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 68.75,
+          "y": 300.578125,
+          "width": 237.5,
+          "height": 422.234375,
+          "right": 306.25,
+          "bottom": 722.8125
+        },
+        "slot": {
+          "x": 68.75,
+          "y": 300.578125,
+          "width": 237.5,
+          "height": 422.234375,
+          "right": 306.25,
+          "bottom": 722.8125
+        },
+        "copy": {
+          "x": 24,
+          "y": 49.1875,
+          "width": 327,
+          "height": 169.75,
+          "right": 351,
+          "bottom": 218.9375
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "375x812: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 68.75,
+        "y": 300.578125,
+        "width": 237.5,
+        "height": 422.234375,
+        "right": 306.25,
+        "bottom": 722.8125
+      }
+    },
+    {
+      "name": "375x812: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "933.8",
+          "playTravel": "5521.599999999999",
+          "totalTravel": "6699",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 68.75,
+          "y": 300.578125,
+          "width": 237.5,
+          "height": 422.234375,
+          "right": 306.25,
+          "bottom": 722.8125
+        },
+        "slot": {
+          "x": 68.75,
+          "y": 300.578125,
+          "width": 237.5,
+          "height": 422.234375,
+          "right": 306.25,
+          "bottom": 722.8125
+        },
+        "copy": {
+          "x": 24,
+          "y": 49.1875,
+          "width": 327,
+          "height": 169.75,
+          "right": 351,
+          "bottom": 218.9375
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "375x812: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "375x812: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "0",
+        "expansion": "0.5001",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "375x812: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "375x812: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "933.8",
+          "playTravel": "5521.599999999999",
+          "totalTravel": "6699",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 812,
+          "right": 375,
+          "bottom": 812
+        },
+        "slot": {
+          "x": 68.75,
+          "y": 300.109375,
+          "width": 237.5,
+          "height": 422.234375,
+          "right": 306.25,
+          "bottom": 722.34375
+        },
+        "copy": {
+          "x": 24,
+          "y": 32.71875,
+          "width": 327,
+          "height": 169.75,
+          "right": 351,
+          "bottom": 202.46875
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "375x812: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "375x812: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "375x812: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "375x812: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3700",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "375x812: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "375x812: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6201",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "375x812: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "375x812: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "375x812: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "375x812: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "375x812: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "375x812: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "375x812: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "375x812: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "933.8",
+        "playTravel": "5521.599999999999",
+        "totalTravel": "6699",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "375x812: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "375x812: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "375x812: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "375x812: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "320x568: supplied frame indicator is the only progress treatment",
+      "pass": true
+    },
+    {
+      "name": "320x568: exact heading",
+      "pass": true
+    },
+    {
+      "name": "320x568: exact supporting copy",
+      "pass": true
+    },
+    {
+      "name": "320x568: earnings follows career paths",
+      "pass": true
+    },
+    {
+      "name": "320x568: motion enabled",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "320x568: no overflow",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "653.1999999999999",
+          "playTravel": "3862.4",
+          "totalTravel": "4686",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 76.9375,
+          "y": 234.65625,
+          "width": 166.125,
+          "height": 295.359375,
+          "right": 243.0625,
+          "bottom": 530.015625
+        },
+        "slot": {
+          "x": 76.9375,
+          "y": 234.65625,
+          "width": 166.125,
+          "height": 295.359375,
+          "right": 243.0625,
+          "bottom": 530.015625
+        },
+        "copy": {
+          "x": 24,
+          "y": 34.5,
+          "width": 272,
+          "height": 169.75,
+          "right": 296,
+          "bottom": 204.25
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "320x568: starts smaller than viewport",
+      "pass": true,
+      "detail": {
+        "x": 76.9375,
+        "y": 234.65625,
+        "width": 166.125,
+        "height": 295.359375,
+        "right": 243.0625,
+        "bottom": 530.015625
+      }
+    },
+    {
+      "name": "320x568: requested initial layout",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "653.1999999999999",
+          "playTravel": "3862.4",
+          "totalTravel": "4686",
+          "target": "0",
+          "expansion": "0.0000",
+          "progress": "0.0000",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 76.9375,
+          "y": 234.65625,
+          "width": 166.125,
+          "height": 295.359375,
+          "right": 243.0625,
+          "bottom": 530.015625
+        },
+        "slot": {
+          "x": 76.9375,
+          "y": 234.65625,
+          "width": 166.125,
+          "height": 295.359375,
+          "right": 243.0625,
+          "bottom": 530.015625
+        },
+        "copy": {
+          "x": 24,
+          "y": 34.5,
+          "width": 272,
+          "height": 169.75,
+          "right": 296,
+          "bottom": 204.25
+        },
+        "overflow": 0,
+        "copyOpacity": "1"
+      }
+    },
+    {
+      "name": "320x568: intro frame zero",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "320x568: expansion holds original first frame",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "7",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "0",
+        "expansion": "0.5006",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "320x568: copy clears before overlap",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "320x568: surface fills viewport before playback",
+      "pass": true,
+      "detail": {
+        "data": {
+          "earningsScroll": "true",
+          "cached": "7",
+          "inflight": "0",
+          "variant": "mobile",
+          "expandTravel": "653.1999999999999",
+          "playTravel": "3862.4",
+          "totalTravel": "4686",
+          "target": "0",
+          "expansion": "1.0000",
+          "progress": "0.0002",
+          "mode": "motion",
+          "ready": "true",
+          "drawn": "0"
+        },
+        "surface": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "right": 320,
+          "bottom": 568
+        },
+        "slot": {
+          "x": 76.9375,
+          "y": 234.234375,
+          "width": 166.125,
+          "height": 295.359375,
+          "right": 243.0625,
+          "bottom": 529.59375
+        },
+        "copy": {
+          "x": 24,
+          "y": 18.078125,
+          "width": 272,
+          "height": 169.75,
+          "right": 296,
+          "bottom": 187.828125
+        },
+        "overflow": 0,
+        "copyOpacity": "0"
+      }
+    },
+    {
+      "name": "320x568: exact supplied frame at 0.15",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "320x568: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "90",
+        "expansion": "1.0000",
+        "progress": "0.1501",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "90"
+      }
+    },
+    {
+      "name": "320x568: exact supplied frame at 0.37",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3702",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "320x568: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "222",
+        "expansion": "1.0000",
+        "progress": "0.3702",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "222"
+      }
+    },
+    {
+      "name": "320x568: exact supplied frame at 0.62",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "320x568: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "371",
+        "expansion": "1.0000",
+        "progress": "0.6200",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "371"
+      }
+    },
+    {
+      "name": "320x568: exact supplied frame at 0.85",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "320x568: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "509",
+        "expansion": "1.0000",
+        "progress": "0.8502",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "509"
+      }
+    },
+    {
+      "name": "320x568: exact supplied frame at 1",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "320x568: bounded decoded frames",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "599",
+        "expansion": "1.0000",
+        "progress": "1.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "599"
+      }
+    },
+    {
+      "name": "320x568: chapters advance in source order",
+      "pass": true,
+      "detail": [
+        90,
+        222,
+        371,
+        509,
+        599
+      ]
+    },
+    {
+      "name": "320x568: scroll-driven, no autoplay",
+      "pass": true
+    },
+    {
+      "name": "320x568: reverses to the same source frame",
+      "pass": true
+    },
+    {
+      "name": "320x568: reverse restores opening",
+      "pass": true,
+      "detail": {
+        "earningsScroll": "true",
+        "cached": "12",
+        "inflight": "0",
+        "variant": "mobile",
+        "expandTravel": "653.1999999999999",
+        "playTravel": "3862.4",
+        "totalTravel": "4686",
+        "target": "0",
+        "expansion": "0.0000",
+        "progress": "0.0000",
+        "mode": "motion",
+        "ready": "true",
+        "drawn": "0"
+      }
+    },
+    {
+      "name": "320x568: only matching source sequence requested",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x568: native wheel controls playback",
+      "pass": true
+    },
+    {
+      "name": "320x568: keyboard skip focuses earnings records",
+      "pass": true
+    },
+    {
+      "name": "320x568: all ten exact records available",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: no extended scroll scene",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: no animation frames fetched",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "reduced-motion: final poster shown",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: records readable",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: accessibility scan",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "save-data: no extended scroll scene",
+      "pass": true
+    },
+    {
+      "name": "save-data: no animation frames fetched",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "save-data: final poster shown",
+      "pass": true
+    },
+    {
+      "name": "save-data: records readable",
+      "pass": true
+    },
+    {
+      "name": "save-data: accessibility scan",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Deep link lands on the proof introduction 375",
+      "pass": true
+    },
+    {
+      "name": "Deep link preserves starting frame 375",
+      "pass": true
+    },
+    {
+      "name": "Deep link lands on the proof introduction 1024",
+      "pass": true
+    },
+    {
+      "name": "Deep link preserves starting frame 1024",
+      "pass": true
+    },
+    {
+      "name": "Deep link lands on the proof introduction 1440",
+      "pass": true
+    },
+    {
+      "name": "Deep link preserves starting frame 1440",
+      "pass": true
+    },
+    {
+      "name": "Enlarged copy releases the pin instead of collapsing the preview",
+      "pass": true
+    },
+    {
+      "name": "Enlarged copy and supplied poster remain visible",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text keeps the whole page within its viewport",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript: real copy and supplied picture",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript: full earnings breakdown works",
+      "pass": true
+    },
+    {
+      "name": "Missing target frame releases scene and shows final poster",
+      "pass": true
+    },
+    {
+      "name": "Missing frame leaves records reachable",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1440x900-entry.png",
+    "1440x900-expanding.png",
+    "1440x900-ending.png",
+    "1440x900-playback.png",
+    "1920x1080-entry.png",
+    "1920x1080-ending.png",
+    "1920x1080-playback.png",
+    "1536x696-entry.png",
+    "1536x696-ending.png",
+    "1536x696-playback.png",
+    "768x1024-entry.png",
+    "768x1024-ending.png",
+    "768x1024-playback.png",
+    "1024x1366-entry.png",
+    "1024x1366-ending.png",
+    "1024x1366-playback.png",
+    "667x375-entry.png",
+    "667x375-ending.png",
+    "667x375-playback.png",
+    "844x390-entry.png",
+    "844x390-ending.png",
+    "844x390-playback.png",
+    "375x812-entry.png",
+    "375x812-expanding.png",
+    "375x812-ending.png",
+    "375x812-playback.png",
+    "320x568-entry.png",
+    "320x568-ending.png",
+    "320x568-playback.png",
+    "reduced-motion.png",
+    "save-data.png"
+  ]
+}

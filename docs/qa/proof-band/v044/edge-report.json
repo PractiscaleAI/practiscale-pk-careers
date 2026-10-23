@@ -1,0 +1,192 @@
+{
+  "checks": [
+    {
+      "name": "Proof renderer stops at a settled scroll state",
+      "pass": true
+    },
+    {
+      "name": "Repeated forward/reverse passes keep one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "Repeated-pass JS heap growth below 12 MB",
+      "pass": true,
+      "data": {
+        "before": 10745524,
+        "after": 17343447,
+        "growth": 6597923
+      }
+    },
+    {
+      "name": "Proof resize preserves progress",
+      "pass": true,
+      "data": "0.44000"
+    },
+    {
+      "name": "Native wheel advances proof",
+      "pass": true
+    },
+    {
+      "name": "Native PageDown advances the page",
+      "pass": true
+    },
+    {
+      "name": "Proof pin releases naturally",
+      "pass": true,
+      "data": {
+        "pinTop": 0,
+        "releasedTop": -129.90625
+      }
+    },
+    {
+      "name": "Keyboard skip focuses earnings heading",
+      "pass": true
+    },
+    {
+      "name": "Sound controls and footer are absent",
+      "pass": true
+    },
+    {
+      "name": "All ten records render in the original order",
+      "pass": true,
+      "data": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "No AudioContext is created after scrolling or gestures",
+      "pass": true
+    },
+    {
+      "name": "No sound source starts after scrolling or gestures",
+      "pass": true
+    },
+    {
+      "name": "Offscreen proof does not render",
+      "pass": true
+    },
+    {
+      "name": "Earnings keyboard skip reaches end sentinel",
+      "pass": true
+    },
+    {
+      "name": "Enlarged proof text releases its pin",
+      "pass": true
+    },
+    {
+      "name": "Enlarged earnings copy releases its pin",
+      "pass": true
+    },
+    {
+      "name": "Content-fit fallback releases the laptop canvas",
+      "pass": true
+    },
+    {
+      "name": "Content-fit fallback keeps poster visible",
+      "pass": true
+    },
+    {
+      "name": "Context loss restores static proof without a long rail",
+      "pass": true
+    },
+    {
+      "name": "Slow initialization retains the final poster",
+      "pass": true
+    },
+    {
+      "name": "slow-chunk: injected asset condition was exercised",
+      "pass": true
+    },
+    {
+      "name": "slow-chunk: scene retains reserved layout",
+      "pass": true,
+      "data": {
+        "heightBefore": 684,
+        "afterHeight": 684
+      }
+    },
+    {
+      "name": "slow-chunk: usable final mode",
+      "pass": true,
+      "data": {
+        "proofWorld": "true",
+        "mode": "flow",
+        "progress": "0.79937",
+        "live": "true"
+      }
+    },
+    {
+      "name": "failed-chunk: injected asset condition was exercised",
+      "pass": true
+    },
+    {
+      "name": "failed-chunk: scene retains reserved layout",
+      "pass": true,
+      "data": {
+        "heightBefore": 684,
+        "afterHeight": 684
+      }
+    },
+    {
+      "name": "failed-chunk: usable final mode",
+      "pass": true,
+      "data": {
+        "proofWorld": "true",
+        "mode": "static",
+        "progress": "1.00000",
+        "live": "false"
+      }
+    },
+    {
+      "name": "Back navigation restores the proof scroll state",
+      "pass": true,
+      "data": {
+        "before": "0.44000",
+        "after": "0.44000"
+      }
+    },
+    {
+      "name": "Back navigation creates at most one owned canvas",
+      "pass": true
+    },
+    {
+      "name": "Forward navigation still reaches the Jobs page",
+      "pass": true
+    }
+  ],
+  "consoleErrors": [],
+  "measurements": {
+    "heap": {
+      "before": 10745524,
+      "after": 17343447,
+      "growth": 6597923
+    },
+    "scriptUrls": [
+      "http://127.0.0.1:3000/_next/static/chunks/3dzmx-nty2gto.css",
+      "http://127.0.0.1:3000/_next/static/chunks/0-islmtvcxu4a.css",
+      "http://127.0.0.1:3000/_next/static/chunks/1x6obpmlu1_c2.js",
+      "http://127.0.0.1:3000/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "http://127.0.0.1:3000/_next/static/chunks/2r4s4h5xul1n-.js",
+      "http://127.0.0.1:3000/_next/static/chunks/2leb8hd3k-rij.js",
+      "http://127.0.0.1:3000/_next/static/chunks/40c06cil3r0lq.js",
+      "http://127.0.0.1:3000/_next/static/chunks/2e268anpfvdoc.js",
+      "http://127.0.0.1:3000/_next/static/chunks/2khxl0v1q4i6n.js",
+      "http://127.0.0.1:3000/_next/static/chunks/0e_ywdwovrgzg.js",
+      "http://127.0.0.1:3000/_next/static/chunks/33gmt_h6848x7.js",
+      "http://127.0.0.1:3000/_next/static/chunks/068zha8ihk4je.js",
+      "http://127.0.0.1:3000/_next/static/chunks/2rddabonmgj_g.css",
+      "http://127.0.0.1:3000/_next/static/chunks/32py93oq9ti9l.js",
+      "http://127.0.0.1:3000/_next/static/chunks/109-11mj2el4j.js"
+    ],
+    "proofCodeChunk": "http://127.0.0.1:3000/_next/static/chunks/068zha8ihk4je.js"
+  }
+}

@@ -16,6 +16,7 @@
 .intro h2 {
   max-width: 32ch;
   font-size: var(--section-title-size);
+  letter-spacing: var(--section-title-tracking);
   line-height: 1.18;
   text-align: left;
   text-wrap: balance;
@@ -98,6 +99,7 @@
 }
 .mainCopy h3 {
   font-size: var(--card-title-size);
+  letter-spacing: var(--card-title-tracking);
   line-height: 1.2;
   max-width: 16ch;
   text-wrap: pretty;

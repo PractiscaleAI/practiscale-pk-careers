@@ -1,0 +1,44 @@
+{
+  "revision": "0.51",
+  "source": {
+    "file": "AI - Office Video (website).mp4",
+    "sha256": "4A460F8D4A39784F3AD61D7A97A5C6676816383429FB163066E67B703A029176",
+    "bytes": 45170333,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 31.666667,
+    "frames": 950,
+    "preserved": true
+  },
+  "web": {
+    "file": "/media/who-we-are/office-scroll.mp4",
+    "bytes": 30585604,
+    "sha256": "b0bfb0cf3456e1b1e0e9639f602e932689f09bf9ded337c235b8657cb93cf9d1",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 31.666667,
+    "frames": 950,
+    "codec": "H.264 high / yuv420p",
+    "audio": false,
+    "keyframeInterval": 8,
+    "bFrames": 0,
+    "fastStart": true,
+    "ffmpeg": "libx264 preset medium crf 21 g8 keyint_min8 sc_threshold0 bf0 movflags+faststart -an",
+    "decode": {
+      "frames": 950,
+      "duplicates": 0,
+      "dropped": 0,
+      "errors": 0
+    }
+  },
+  "stills": {
+    "opening.webp": 0,
+    "reception.webp": 14.2,
+    "team.webp": 21.5
+  },
+  "treatment": "No new encode, generated frames, recolouring, cuts or face edits. The existing H.264 encode is lossy. One source-aspect video stays centered horizontally and vertically while uniformly zooming into a strictly clipped 100vh window. The heading and paragraph occupy opposite corners, with measured clearance. The rounded diagonal background uses symmetric insets, Deep Teal and approved #E6ECEC. Source chronology and proportions are preserved.",
+  "activePoster": "opening.webp",
+  "retainedUnusedStills": ["reception.webp", "team.webp"]
+}

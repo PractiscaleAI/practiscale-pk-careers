@@ -19,7 +19,12 @@
     "test:problem-scroll": "node scripts/qa-problem-scroll.cjs",
     "test:scroll-navigation": "node scripts/qa-scroll-navigation.cjs",
     "test:career-section": "node scripts/qa-career-section.cjs",
-    "test:typography": "node scripts/qa-typography.cjs"
+    "test:typography": "node scripts/qa-typography.cjs",
+    "test:earnings": "node scripts/qa-proof-band.cjs",
+    "test:proof-band": "node scripts/qa-proof-band.cjs",
+    "test:proof-edges": "node scripts/qa-proof-edges.cjs",
+    "render:proof": "node scripts/export-proof-band.cjs",
+    "test:proof-links": "node scripts/qa-proof-links.cjs"
   },
   "dependencies": {
     "gsap": "3.15.0",

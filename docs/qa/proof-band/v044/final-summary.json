@@ -1,0 +1,32 @@
+{
+  "report": {
+    "checks": 131,
+    "failed": 0,
+    "fatal": null
+  },
+  "edge-report": {
+    "checks": 29,
+    "failed": 0,
+    "fatal": null
+  },
+  "final-links": {
+    "checks": 32,
+    "failed": 0,
+    "fatal": null
+  },
+  "visual": {
+    "states": 33,
+    "runtimeErrors": 0,
+    "a11yViolations": 0
+  },
+  "typography": {
+    "checks": 109,
+    "failed": 0
+  },
+  "wholePage": {
+    "checks": 22,
+    "failed": 0
+  },
+  "build": "passed; TypeScript included",
+  "landscapeRefinement": "32 direct-link and short-screen assertions passed after the final scoped CSS adjustment"
+}

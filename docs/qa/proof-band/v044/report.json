@@ -1,0 +1,2236 @@
+{
+  "checks": [
+    {
+      "name": "360: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "360: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "360: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "360: responsive proof mode",
+      "pass": true,
+      "data": "flow"
+    },
+    {
+      "name": "360: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "360: completed campus visible before exit",
+      "pass": true,
+      "data": {
+        "x": 24,
+        "y": 184.53125,
+        "w": 312,
+        "h": 249.59375,
+        "b": 434.125,
+        "right": 336
+      }
+    },
+    {
+      "name": "360: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.00003,
+        "rail": {
+          "x": 0,
+          "y": -0.21875,
+          "w": 360,
+          "h": 8800,
+          "b": 8799.78125,
+          "right": 360
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 800,
+          "b": 800,
+          "right": 360
+        },
+        "copy": {
+          "x": 24,
+          "y": 92,
+          "w": 312,
+          "h": 203.890625,
+          "b": 295.890625,
+          "right": 336
+        },
+        "window": {
+          "x": 23.999998092651367,
+          "y": 319.8905944824219,
+          "w": 312,
+          "h": 438.1094055175781,
+          "b": 758,
+          "right": 335.99999809265137
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "5380.900",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "360: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 92,
+          "w": 312,
+          "h": 203.890625,
+          "b": 295.890625,
+          "right": 336
+        },
+        "window": {
+          "x": 23.999998092651367,
+          "y": 319.8905944824219,
+          "w": 312,
+          "h": 438.1094055175781,
+          "b": 758,
+          "right": 335.99999809265137
+        }
+      }
+    },
+    {
+      "name": "360: details table removed",
+      "pass": true
+    },
+    {
+      "name": "360: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "360: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "360: visual fact order follows document order",
+      "pass": true
+    },
+    {
+      "name": "360: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "360: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 800,
+        "b": 800,
+        "right": 360
+      }
+    },
+    {
+      "name": "360: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "6205.700",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":205.07876987998014,\"bottom\":694.9212301200199}",
+        "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":226.83679603919649,\"bottom\":531.93868109617}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "360: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "360: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "390: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "390: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "390: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "390: responsive proof mode",
+      "pass": true,
+      "data": "flow"
+    },
+    {
+      "name": "390: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "390: completed campus visible before exit",
+      "pass": true,
+      "data": {
+        "x": 24,
+        "y": 189.0625,
+        "w": 342,
+        "h": 273.59375,
+        "b": 462.65625,
+        "right": 366
+      }
+    },
+    {
+      "name": "390: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 0.3125,
+          "w": 390,
+          "h": 9284,
+          "b": 9284.3125,
+          "right": 390
+        },
+        "view": {
+          "x": 0,
+          "y": 0.3125,
+          "w": 390,
+          "h": 844,
+          "b": 844.3125,
+          "right": 390
+        },
+        "copy": {
+          "x": 24,
+          "y": 92.3125,
+          "w": 342,
+          "h": 203.890625,
+          "b": 296.203125,
+          "right": 366
+        },
+        "window": {
+          "x": 24,
+          "y": 320.203125,
+          "w": 342,
+          "h": 482.109375,
+          "b": 802.3125,
+          "right": 366
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "2722.400",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "390: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 92.3125,
+          "w": 342,
+          "h": 203.890625,
+          "b": 296.203125,
+          "right": 366
+        },
+        "window": {
+          "x": 24,
+          "y": 320.203125,
+          "w": 342,
+          "h": 482.109375,
+          "b": 802.3125,
+          "right": 366
+        }
+      }
+    },
+    {
+      "name": "390: details table removed",
+      "pass": true
+    },
+    {
+      "name": "390: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "390: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "390: visual fact order follows document order",
+      "pass": true
+    },
+    {
+      "name": "390: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "390: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "b": 844,
+        "right": 390
+      }
+    },
+    {
+      "name": "390: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "3771.600",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":205.07876987998014,\"bottom\":694.9212301200199}",
+        "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":226.83679603919649,\"bottom\":531.93868109617}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "390: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "390: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "390: new sections accessibility scan",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "430: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "430: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "430: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "430: responsive proof mode",
+      "pass": true,
+      "data": "flow"
+    },
+    {
+      "name": "430: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "430: completed campus visible before exit",
+      "pass": true,
+      "data": {
+        "x": 24,
+        "y": 198.140625,
+        "w": 382,
+        "h": 305.59375,
+        "b": 503.734375,
+        "right": 406
+      }
+    },
+    {
+      "name": "430: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 0.390625,
+          "w": 430,
+          "h": 10252,
+          "b": 10252.390625,
+          "right": 430
+        },
+        "view": {
+          "x": 0,
+          "y": 0.390625,
+          "w": 430,
+          "h": 932,
+          "b": 932.390625,
+          "right": 430
+        },
+        "copy": {
+          "x": 24,
+          "y": 92.390625,
+          "w": 382,
+          "h": 203.890625,
+          "b": 296.28125,
+          "right": 406
+        },
+        "window": {
+          "x": 24,
+          "y": 320.28125,
+          "w": 382,
+          "h": 570.109375,
+          "b": 890.390625,
+          "right": 406
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "2566.200",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "430: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 92.390625,
+          "w": 382,
+          "h": 203.890625,
+          "b": 296.28125,
+          "right": 406
+        },
+        "window": {
+          "x": 24,
+          "y": 320.28125,
+          "w": 382,
+          "h": 570.109375,
+          "b": 890.390625,
+          "right": 406
+        }
+      }
+    },
+    {
+      "name": "430: details table removed",
+      "pass": true
+    },
+    {
+      "name": "430: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "430: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "430: visual fact order follows document order",
+      "pass": true
+    },
+    {
+      "name": "430: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "430: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 430,
+        "h": 932,
+        "b": 932,
+        "right": 430
+      }
+    },
+    {
+      "name": "430: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "3921.800",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":205.07876987998014,\"bottom\":694.9212301200199}",
+        "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":226.83679603919649,\"bottom\":531.93868109617}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "430: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "430: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "768: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "768: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "768: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "768: responsive proof mode",
+      "pass": true,
+      "data": "flow"
+    },
+    {
+      "name": "768: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "768: completed campus visible before exit",
+      "pass": true,
+      "data": {
+        "x": 30.71875,
+        "y": 215.15625,
+        "w": 706.5625,
+        "h": 455.84375,
+        "b": 671,
+        "right": 737.28125
+      }
+    },
+    {
+      "name": "768: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 0.09375,
+          "w": 768,
+          "h": 11264,
+          "b": 11264.09375,
+          "right": 768
+        },
+        "view": {
+          "x": 0,
+          "y": 0.09375,
+          "w": 768,
+          "h": 1024,
+          "b": 1024.09375,
+          "right": 768
+        },
+        "copy": {
+          "x": 30.71875,
+          "y": 96.09375,
+          "w": 600,
+          "h": 209.546875,
+          "b": 305.640625,
+          "right": 630.71875
+        },
+        "window": {
+          "x": 30.719999313354492,
+          "y": 329.640625,
+          "w": 706.5599975585938,
+          "h": 652.453125,
+          "b": 982.09375,
+          "right": 737.2799968719482
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "3207.400",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "768: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 30.71875,
+          "y": 96.09375,
+          "w": 600,
+          "h": 209.546875,
+          "b": 305.640625,
+          "right": 630.71875
+        },
+        "window": {
+          "x": 30.719999313354492,
+          "y": 329.640625,
+          "w": 706.5599975585938,
+          "h": 652.453125,
+          "b": 982.09375,
+          "right": 737.2799968719482
+        }
+      }
+    },
+    {
+      "name": "768: details table removed",
+      "pass": true
+    },
+    {
+      "name": "768: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "768: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "768: visual fact order follows document order",
+      "pass": true
+    },
+    {
+      "name": "768: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "768: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 1024,
+        "b": 1024,
+        "right": 768
+      }
+    },
+    {
+      "name": "768: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "4492.900",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":205.07876987998014,\"bottom\":694.9212301200199}",
+        "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":226.83679603919649,\"bottom\":531.93868109617}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "768: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "768: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1280: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "1280: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "1280: responsive proof mode",
+      "pass": true,
+      "data": "pin"
+    },
+    {
+      "name": "1280: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/desktop-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "1280: reverse restores proof progress",
+      "pass": true,
+      "data": 0.44
+    },
+    {
+      "name": "1280: metrics fit pinned stage",
+      "pass": true
+    },
+    {
+      "name": "1280: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 0.09375,
+          "w": 1280,
+          "h": 8800,
+          "b": 8800.09375,
+          "right": 1280
+        },
+        "view": {
+          "x": 0,
+          "y": 0.09375,
+          "w": 1280,
+          "h": 800,
+          "b": 800.09375,
+          "right": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 268.9453125,
+          "w": 460,
+          "h": 246.296875,
+          "b": 515.2421875,
+          "right": 511.1875
+        },
+        "window": {
+          "x": 588.7999877929688,
+          "y": 176.09375,
+          "w": 640.0000610351562,
+          "h": 488,
+          "b": 664.09375,
+          "right": 1228.800048828125
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "4170.600",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "1280: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 51.1875,
+          "y": 268.9453125,
+          "w": 460,
+          "h": 246.296875,
+          "b": 515.2421875,
+          "right": 511.1875
+        },
+        "window": {
+          "x": 588.7999877929688,
+          "y": 176.09375,
+          "w": 640.0000610351562,
+          "h": 488,
+          "b": 664.09375,
+          "right": 1228.800048828125
+        }
+      }
+    },
+    {
+      "name": "1280: details table removed",
+      "pass": true
+    },
+    {
+      "name": "1280: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "1280: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "1280: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "1280: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 800,
+        "b": 800,
+        "right": 1280
+      }
+    },
+    {
+      "name": "1280: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "7910.500",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":244.03085858552717,\"right\":955.9691414144728,\"top\":83.99999999999994,\"bottom\":715.9999999999999}",
+        "screenBounds": "{\"left\":270.8357571938207,\"right\":929.1642428061793,\"top\":112.07243889369285,\"bottom\":505.71816585153266}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "1280: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "1280: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440: four readable metrics",
+      "pass": true
+    },
+    {
+      "name": "1440: one proof canvas",
+      "pass": true
+    },
+    {
+      "name": "1440: responsive proof mode",
+      "pass": true,
+      "data": "pin"
+    },
+    {
+      "name": "1440: posters available",
+      "pass": true,
+      "data": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/desktop-summary.webp",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "1440: reverse restores proof progress",
+      "pass": true,
+      "data": 0.44
+    },
+    {
+      "name": "1440: metrics fit pinned stage",
+      "pass": true
+    },
+    {
+      "name": "1440: laptop motion available",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.00001,
+        "rail": {
+          "x": 0,
+          "y": -0.046875,
+          "w": 1440,
+          "h": 9900,
+          "b": 9899.953125,
+          "right": 1440
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "b": 900,
+          "right": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 312.3984375,
+          "w": 460,
+          "h": 257.203125,
+          "b": 569.6015625,
+          "right": 517.59375
+        },
+        "window": {
+          "x": 662.4000244140625,
+          "y": 198,
+          "w": 720,
+          "h": 549,
+          "b": 747,
+          "right": 1382.4000244140625
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "7060.800",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":224.15095095364552,\"right\":975.8490490463546,\"top\":255.34998457354897,\"bottom\":544.650015426451}",
+          "screenBounds": "{\"left\":252.45283018867926,\"right\":947.5471698113207,\"top\":288.30107055892677,\"bottom\":497.66294251183024}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      }
+    },
+    {
+      "name": "1440: copy and initial panel do not overlap",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 57.59375,
+          "y": 312.3984375,
+          "w": 460,
+          "h": 257.203125,
+          "b": 569.6015625,
+          "right": 517.59375
+        },
+        "window": {
+          "x": 662.4000244140625,
+          "y": 198,
+          "w": 720,
+          "h": 549,
+          "b": 747,
+          "right": 1382.4000244140625
+        }
+      }
+    },
+    {
+      "name": "1440: details table removed",
+      "pass": true
+    },
+    {
+      "name": "1440: footer and sound controls removed",
+      "pass": true
+    },
+    {
+      "name": "1440: metrics use readable labels",
+      "pass": true
+    },
+    {
+      "name": "1440: laptop faces forward",
+      "pass": true
+    },
+    {
+      "name": "1440: expanded scene covers viewport",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900,
+        "b": 900,
+        "right": 1440
+      }
+    },
+    {
+      "name": "1440: record advances after opening",
+      "pass": true,
+      "data": {
+        "engine": "three.js r186",
+        "screenText": "Kashaf Abbasi | Rs 1,171,240 | 3 month commissions",
+        "numberKey": "record:2",
+        "renderedAt": "7937.700",
+        "frontYaw": "0",
+        "lidOpen": "1.0000",
+        "drawCalls": "38",
+        "modelBounds": "{\"left\":244.03085858552717,\"right\":955.9691414144728,\"top\":83.99999999999994,\"bottom\":715.9999999999999}",
+        "screenBounds": "{\"left\":270.8357571938207,\"right\":929.1642428061793,\"top\":112.07243889369285,\"bottom\":505.71816585153266}",
+        "record": "2"
+      }
+    },
+    {
+      "name": "1440: laptop settles without idle rendering",
+      "pass": true
+    },
+    {
+      "name": "1440: reverse/jumps preserve exact record",
+      "pass": true,
+      "data": "1"
+    },
+    {
+      "name": "1440: new sections accessibility scan",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Active resize preserves laptop progress",
+      "pass": true,
+      "data": {
+        "before": 0.88001,
+        "after": 0.87999
+      }
+    },
+    {
+      "name": "Orientation resize preserves laptop progress",
+      "pass": true,
+      "data": {
+        "before": 0.88001,
+        "phone": 0.88006
+      }
+    },
+    {
+      "name": "reduced: proof natural flow",
+      "pass": true,
+      "data": 700.28125
+    },
+    {
+      "name": "reduced: laptop natural flow",
+      "pass": true,
+      "data": 557.75
+    },
+    {
+      "name": "reduced: fallback copy clear of poster",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 356.796875,
+          "w": 342,
+          "h": 169.75,
+          "b": 526.546875,
+          "right": 366
+        },
+        "poster": {
+          "x": 24,
+          "y": 558.546875,
+          "w": 342,
+          "h": 228,
+          "b": 786.546875,
+          "right": 366
+        }
+      }
+    },
+    {
+      "name": "reduced: summary posters loaded",
+      "pass": true
+    },
+    {
+      "name": "reduced: no visible earnings table",
+      "pass": true
+    },
+    {
+      "name": "reduced: no decorative WebGL download/init",
+      "pass": true
+    },
+    {
+      "name": "no-js: proof natural flow",
+      "pass": true,
+      "data": 684.28125
+    },
+    {
+      "name": "no-js: laptop natural flow",
+      "pass": true,
+      "data": 557.75
+    },
+    {
+      "name": "no-js: fallback copy clear of poster",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 357.59375,
+          "w": 342,
+          "h": 169.75,
+          "b": 527.34375,
+          "right": 366
+        },
+        "poster": {
+          "x": 24,
+          "y": 559.34375,
+          "w": 342,
+          "h": 228,
+          "b": 787.34375,
+          "right": 366
+        }
+      }
+    },
+    {
+      "name": "no-js: summary posters loaded",
+      "pass": true
+    },
+    {
+      "name": "no-js: no visible earnings table",
+      "pass": true
+    },
+    {
+      "name": "no-js: no decorative WebGL download/init",
+      "pass": true
+    },
+    {
+      "name": "webgl-failure: proof natural flow",
+      "pass": true,
+      "data": 684.28125
+    },
+    {
+      "name": "webgl-failure: laptop natural flow",
+      "pass": true,
+      "data": 557.75
+    },
+    {
+      "name": "webgl-failure: fallback copy clear of poster",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 357.03125,
+          "w": 342,
+          "h": 169.75,
+          "b": 526.78125,
+          "right": 366
+        },
+        "poster": {
+          "x": 24,
+          "y": 558.78125,
+          "w": 342,
+          "h": 228,
+          "b": 786.78125,
+          "right": 366
+        }
+      }
+    },
+    {
+      "name": "webgl-failure: summary posters loaded",
+      "pass": true
+    },
+    {
+      "name": "webgl-failure: no visible earnings table",
+      "pass": true
+    },
+    {
+      "name": "save-data: proof natural flow",
+      "pass": true,
+      "data": 684.28125
+    },
+    {
+      "name": "save-data: laptop natural flow",
+      "pass": true,
+      "data": 557.75
+    },
+    {
+      "name": "save-data: fallback copy clear of poster",
+      "pass": true,
+      "data": {
+        "copy": {
+          "x": 24,
+          "y": 357.3125,
+          "w": 342,
+          "h": 169.75,
+          "b": 527.0625,
+          "right": 366
+        },
+        "poster": {
+          "x": 24,
+          "y": 559.0625,
+          "w": 342,
+          "h": 228,
+          "b": 787.0625,
+          "right": 366
+        }
+      }
+    },
+    {
+      "name": "save-data: summary posters loaded",
+      "pass": true
+    },
+    {
+      "name": "save-data: no visible earnings table",
+      "pass": true
+    },
+    {
+      "name": "save-data: no decorative WebGL download/init",
+      "pass": true
+    },
+    {
+      "name": "Direct laptop deep link aligns after preceding scenes",
+      "pass": true,
+      "data": -0.046875
+    },
+    {
+      "name": "Real input cancels anchor realignment",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "width": 360,
+      "height": 800,
+      "overflow": 0,
+      "proof": {
+        "mode": "flow",
+        "live": "true",
+        "p": 1,
+        "rail": {
+          "x": 0,
+          "y": 79.5,
+          "w": 360,
+          "h": 684.28125,
+          "b": 763.78125,
+          "right": 360
+        },
+        "view": {
+          "x": 0,
+          "y": 79.5,
+          "w": 360,
+          "h": 684.28125,
+          "b": 763.78125,
+          "right": 360
+        },
+        "figure": {
+          "x": 24,
+          "y": 184.53125,
+          "w": 312,
+          "h": 249.59375,
+          "b": 434.125,
+          "right": 336
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "1.00000",
+          "active": "-1",
+          "drawCalls": "60",
+          "instances": "351",
+          "renderMs": "4.30",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 24,
+              "y": 476.125,
+              "w": 144,
+              "h": 117.828125,
+              "b": 593.953125,
+              "right": 168
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 192,
+              "y": 476.125,
+              "w": 144,
+              "h": 117.828125,
+              "b": 593.953125,
+              "right": 336
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 24,
+              "y": 621.953125,
+              "w": 144,
+              "h": 93.828125,
+              "b": 715.78125,
+              "right": 168
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 192,
+              "y": 621.953125,
+              "w": 144,
+              "h": 93.828125,
+              "b": 715.78125,
+              "right": 336
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 764.78125,
+          "w": 360,
+          "h": 8800,
+          "b": 9564.78125,
+          "right": 360
+        },
+        "view": {
+          "x": 0,
+          "y": 764.78125,
+          "w": 360,
+          "h": 800,
+          "b": 1564.78125,
+          "right": 360
+        },
+        "copy": {
+          "x": 24,
+          "y": 856.78125,
+          "w": 312,
+          "h": 203.890625,
+          "b": 1060.671875,
+          "right": 336
+        },
+        "window": {
+          "x": 24,
+          "y": 1084.671875,
+          "w": 312,
+          "h": 438.109375,
+          "b": 1522.78125,
+          "right": 336
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "5213.700",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "proof": {
+        "mode": "flow",
+        "live": "true",
+        "p": 1,
+        "rail": {
+          "x": 0,
+          "y": 84.03125,
+          "w": 390,
+          "h": 684.28125,
+          "b": 768.3125,
+          "right": 390
+        },
+        "view": {
+          "x": 0,
+          "y": 84.03125,
+          "w": 390,
+          "h": 684.28125,
+          "b": 768.3125,
+          "right": 390
+        },
+        "figure": {
+          "x": 24,
+          "y": 189.0625,
+          "w": 342,
+          "h": 273.59375,
+          "b": 462.65625,
+          "right": 366
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "1.00000",
+          "active": "-1",
+          "drawCalls": "60",
+          "instances": "351",
+          "renderMs": "4.10",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 24,
+              "y": 504.65625,
+              "w": 159,
+              "h": 93.828125,
+              "b": 598.484375,
+              "right": 183
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 207,
+              "y": 504.65625,
+              "w": 159,
+              "h": 93.828125,
+              "b": 598.484375,
+              "right": 366
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 24,
+              "y": 626.484375,
+              "w": 159,
+              "h": 93.828125,
+              "b": 720.3125,
+              "right": 183
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 207,
+              "y": 626.484375,
+              "w": 159,
+              "h": 93.828125,
+              "b": 720.3125,
+              "right": 366
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 769.3125,
+          "w": 390,
+          "h": 9284,
+          "b": 10053.3125,
+          "right": 390
+        },
+        "view": {
+          "x": 0,
+          "y": 769.3125,
+          "w": 390,
+          "h": 844,
+          "b": 1613.3125,
+          "right": 390
+        },
+        "copy": {
+          "x": 24,
+          "y": 861.3125,
+          "w": 342,
+          "h": 203.890625,
+          "b": 1065.203125,
+          "right": 366
+        },
+        "window": {
+          "x": 24,
+          "y": 1089.203125,
+          "w": 342,
+          "h": 482.109375,
+          "b": 1571.3125,
+          "right": 366
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "2722.400",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": 0,
+      "proof": {
+        "mode": "flow",
+        "live": "true",
+        "p": 1,
+        "rail": {
+          "x": 0,
+          "y": 93.109375,
+          "w": 430,
+          "h": 716.28125,
+          "b": 809.390625,
+          "right": 430
+        },
+        "view": {
+          "x": 0,
+          "y": 93.109375,
+          "w": 430,
+          "h": 716.28125,
+          "b": 809.390625,
+          "right": 430
+        },
+        "figure": {
+          "x": 24,
+          "y": 198.140625,
+          "w": 382,
+          "h": 305.59375,
+          "b": 503.734375,
+          "right": 406
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "1.00000",
+          "active": "-1",
+          "drawCalls": "60",
+          "instances": "351",
+          "renderMs": "2.80",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 24,
+              "y": 545.734375,
+              "w": 179,
+              "h": 93.828125,
+              "b": 639.5625,
+              "right": 203
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 227,
+              "y": 545.734375,
+              "w": 179,
+              "h": 93.828125,
+              "b": 639.5625,
+              "right": 406
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 24,
+              "y": 667.5625,
+              "w": 179,
+              "h": 93.828125,
+              "b": 761.390625,
+              "right": 203
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 227,
+              "y": 667.5625,
+              "w": 179,
+              "h": 93.828125,
+              "b": 761.390625,
+              "right": 406
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 810.390625,
+          "w": 430,
+          "h": 10252,
+          "b": 11062.390625,
+          "right": 430
+        },
+        "view": {
+          "x": 0,
+          "y": 810.390625,
+          "w": 430,
+          "h": 932,
+          "b": 1742.390625,
+          "right": 430
+        },
+        "copy": {
+          "x": 24,
+          "y": 902.390625,
+          "w": 382,
+          "h": 203.890625,
+          "b": 1106.28125,
+          "right": 406
+        },
+        "window": {
+          "x": 24,
+          "y": 1130.28125,
+          "w": 382,
+          "h": 570.109375,
+          "b": 1700.390625,
+          "right": 406
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "2566.200",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/mobile-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "proof": {
+        "mode": "flow",
+        "live": "true",
+        "p": 1,
+        "rail": {
+          "x": 0,
+          "y": 102.125,
+          "w": 768,
+          "h": 883.96875,
+          "b": 986.09375,
+          "right": 768
+        },
+        "view": {
+          "x": 0,
+          "y": 102.125,
+          "w": 768,
+          "h": 883.96875,
+          "b": 986.09375,
+          "right": 768
+        },
+        "figure": {
+          "x": 30.71875,
+          "y": 215.15625,
+          "w": 706.5625,
+          "h": 455.84375,
+          "b": 671,
+          "right": 737.28125
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "1.00000",
+          "active": "-1",
+          "drawCalls": "60",
+          "instances": "371",
+          "renderMs": "3.80",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 30.71875,
+              "y": 719,
+              "w": 337.28125,
+              "h": 102.546875,
+              "b": 821.546875,
+              "right": 368
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 400,
+              "y": 719,
+              "w": 337.28125,
+              "h": 102.546875,
+              "b": 821.546875,
+              "right": 737.28125
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 30.71875,
+              "y": 851.546875,
+              "w": 337.28125,
+              "h": 78.546875,
+              "b": 930.09375,
+              "right": 368
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 400,
+              "y": 851.546875,
+              "w": 337.28125,
+              "h": 78.546875,
+              "b": 930.09375,
+              "right": 737.28125
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "rail": {
+          "x": 0,
+          "y": 987.09375,
+          "w": 768,
+          "h": 11264,
+          "b": 12251.09375,
+          "right": 768
+        },
+        "view": {
+          "x": 0,
+          "y": 987.09375,
+          "w": 768,
+          "h": 1024,
+          "b": 2011.09375,
+          "right": 768
+        },
+        "copy": {
+          "x": 30.71875,
+          "y": 1083.09375,
+          "w": 600,
+          "h": 209.546875,
+          "b": 1292.640625,
+          "right": 630.71875
+        },
+        "window": {
+          "x": 30.719999313354492,
+          "y": 1316.640625,
+          "w": 706.5599975585938,
+          "h": 652.453125,
+          "b": 1969.09375,
+          "right": 737.2799968719482
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "engine": "three.js r186",
+          "screenText": "The people behind the numbers",
+          "numberKey": "",
+          "renderedAt": "3207.400",
+          "frontYaw": "0",
+          "lidOpen": "0.0000",
+          "drawCalls": "38",
+          "modelBounds": "{\"left\":34.099999999999994,\"right\":585.9000000000001,\"top\":343.81657514521004,\"bottom\":556.1834248547899}",
+          "screenBounds": "{\"left\":54.875597279701445,\"right\":565.1244027202986,\"top\":368.0050216676449,\"bottom\":521.6915631618127}",
+          "record": "-1"
+        },
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/mobile-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "overflow": 0,
+      "proof": {
+        "mode": "pin",
+        "live": "true",
+        "p": 0.44,
+        "rail": {
+          "x": 0,
+          "y": -439.90625,
+          "w": 1280,
+          "h": 1800,
+          "b": 1360.09375,
+          "right": 1280
+        },
+        "view": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "b": 800,
+          "right": 1280
+        },
+        "figure": {
+          "x": 51.1875,
+          "y": 190.546875,
+          "w": 1177.625,
+          "h": 344,
+          "b": 534.546875,
+          "right": 1228.8125
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "0.44000",
+          "active": "1",
+          "drawCalls": "60",
+          "instances": "371",
+          "renderMs": "4.50",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 51.1875,
+              "y": 585.546875,
+              "w": 270.40625,
+              "h": 107.296875,
+              "b": 692.84375,
+              "right": 321.59375
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 353.59375,
+              "y": 585.546875,
+              "w": 270.40625,
+              "h": 107.296875,
+              "b": 692.84375,
+              "right": 624
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 656,
+              "y": 585.546875,
+              "w": 270.40625,
+              "h": 107.296875,
+              "b": 692.84375,
+              "right": 926.40625
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 958.40625,
+              "y": 585.546875,
+              "w": 270.40625,
+              "h": 107.296875,
+              "b": 692.84375,
+              "right": 1228.8125
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "p": null,
+        "rail": {
+          "x": 0,
+          "y": 1361.09375,
+          "w": 1280,
+          "h": 8800,
+          "b": 10161.09375,
+          "right": 1280
+        },
+        "view": {
+          "x": 0,
+          "y": 1361.09375,
+          "w": 1280,
+          "h": 800,
+          "b": 2161.09375,
+          "right": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 1629.9453125,
+          "w": 460,
+          "h": 246.296875,
+          "b": 1876.2421875,
+          "right": 511.1875
+        },
+        "window": {
+          "x": 0,
+          "y": 1361.09375,
+          "w": 1280,
+          "h": 800,
+          "b": 2161.09375,
+          "right": 1280
+        },
+        "canvasCount": 0,
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/desktop-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": 0,
+      "proof": {
+        "mode": "pin",
+        "live": "true",
+        "p": 0.44,
+        "rail": {
+          "x": 0,
+          "y": -455.046875,
+          "w": 1440,
+          "h": 1945,
+          "b": 1489.953125,
+          "right": 1440
+        },
+        "view": {
+          "x": 0,
+          "y": 40,
+          "w": 1440,
+          "h": 820,
+          "b": 860,
+          "right": 1440
+        },
+        "figure": {
+          "x": 80,
+          "y": 218.828125,
+          "w": 1280,
+          "h": 387,
+          "b": 605.828125,
+          "right": 1360
+        },
+        "canvasCount": 1,
+        "canvas": {
+          "proofCanvas": "",
+          "engine": "three.js r186",
+          "progress": "0.44000",
+          "active": "1",
+          "drawCalls": "60",
+          "instances": "371",
+          "renderMs": "3.00",
+          "renderCount": "3"
+        },
+        "stats": [
+          {
+            "text": "US healthcare businesses served500+",
+            "box": {
+              "x": 100,
+              "y": 656.828125,
+              "w": 286,
+              "h": 113.203125,
+              "b": 770.03125,
+              "right": 386
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Team members in Pakistan100+",
+            "box": {
+              "x": 418,
+              "y": 656.828125,
+              "w": 286,
+              "h": 113.203125,
+              "b": 770.03125,
+              "right": 704
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Candidates in our hiring portal46,000",
+            "box": {
+              "x": 736,
+              "y": 656.828125,
+              "w": 286,
+              "h": 113.203125,
+              "b": 770.03125,
+              "right": 1022
+            },
+            "opacity": "1"
+          },
+          {
+            "text": "Published client case studies29",
+            "box": {
+              "x": 1054,
+              "y": 656.828125,
+              "w": 286,
+              "h": 113.203125,
+              "b": 770.03125,
+              "right": 1340
+            },
+            "opacity": "1"
+          }
+        ]
+      },
+      "laptop": {
+        "mode": "motion",
+        "p": null,
+        "rail": {
+          "x": 0,
+          "y": 1490.953125,
+          "w": 1440,
+          "h": 9900,
+          "b": 11390.953125,
+          "right": 1440
+        },
+        "view": {
+          "x": 0,
+          "y": 1490.953125,
+          "w": 1440,
+          "h": 900,
+          "b": 2390.953125,
+          "right": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 1803.3515625,
+          "w": 460,
+          "h": 257.203125,
+          "b": 2060.5546875,
+          "right": 517.59375
+        },
+        "window": {
+          "x": 0,
+          "y": 1490.953125,
+          "w": 1440,
+          "h": 900,
+          "b": 2390.953125,
+          "right": 1440
+        },
+        "canvasCount": 0,
+        "hasRemovedOverlay": false
+      },
+      "posters": [
+        {
+          "src": "http://127.0.0.1:3000/media/proof-band/desktop-final.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:3000/media/earnings-laptop/desktop-summary.webp",
+          "loaded": true
+        }
+      ],
+      "visibleTable": false,
+      "sections": [
+        "",
+        "the-problem",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ]
+}

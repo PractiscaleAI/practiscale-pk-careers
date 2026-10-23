@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "1440/#the-proof: current and legacy links reach the earnings section",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": -0.046875,
+        "r": 1440,
+        "b": 9899.953125,
+        "w": 1440,
+        "h": 9900
+      }
+    },
+    {
+      "name": "1440/#the-proof: removed campus stays absent",
+      "pass": true
+    },
+    {
+      "name": "390/#the-proof: current and legacy links reach the earnings section",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0.03125,
+        "r": 390,
+        "b": 9284.03125,
+        "w": 390,
+        "h": 9284
+      }
+    },
+    {
+      "name": "390/#the-proof: removed campus stays absent",
+      "pass": true
+    },
+    {
+      "name": "320/#the-proof: current and legacy links reach the earnings section",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0.421875,
+        "r": 320,
+        "b": 812.15625,
+        "w": 320,
+        "h": 811.734375
+      }
+    },
+    {
+      "name": "320/#the-proof: removed campus stays absent",
+      "pass": true
+    },
+    {
+      "name": "1440/#proof-band: current and legacy links reach the earnings section",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": -0.046875,
+        "r": 1440,
+        "b": 9899.953125,
+        "w": 1440,
+        "h": 9900
+      }
+    },
+    {
+      "name": "1440/#proof-band: removed campus stays absent",
+      "pass": true
+    },
+    {
+      "name": "390/#proof-band-heading: current and legacy links reach the earnings section",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0.03125,
+        "r": 390,
+        "b": 9284.03125,
+        "w": 390,
+        "h": 9284
+      }
+    },
+    {
+      "name": "390/#proof-band-heading: removed campus stays absent",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "layouts": []
+}

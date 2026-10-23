@@ -1,0 +1,95 @@
+{
+  "Revision": "0.51",
+  "Preview": "http://127.0.0.1:3000/?review=v051#who-we-are",
+  "ServerProcess": 20640,
+  "Build": "passed",
+  "Suites": [
+    {
+      "Suite": "Who",
+      "Checks": 165,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\qa\\who-we-are\\v051\\main\\report.json"
+    },
+    {
+      "Suite": "WhoNative",
+      "Checks": 10,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\qa\\who-we-are\\v051\\native\\report.json"
+    },
+    {
+      "Suite": "Problem",
+      "Checks": 192,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\problem-scroll-qa.json"
+    },
+    {
+      "Suite": "Career",
+      "Checks": 134,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\career-section-qa.json"
+    },
+    {
+      "Suite": "Navigation",
+      "Checks": 107,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\scroll-navigation-qa.json"
+    },
+    {
+      "Suite": "Earnings",
+      "Checks": 134,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\qa\\earnings\\v050\\main\\report.json"
+    },
+    {
+      "Suite": "EarningsEdges",
+      "Checks": 23,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\qa\\earnings\\v050\\edges\\report.json"
+    },
+    {
+      "Suite": "EarningsLinks",
+      "Checks": 10,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\qa\\earnings\\v050\\links\\report.json"
+    },
+    {
+      "Suite": "Browser",
+      "Checks": 22,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\hero-qa.json"
+    },
+    {
+      "Suite": "Typography",
+      "Checks": 109,
+      "Failed": 0,
+      "Errors": 0,
+      "Report": "D:\\PractiScale\\Practiscale.Pk\\practiscale\\docs\\typography-qa.json"
+    }
+  ],
+  "VisualReview": [
+    "Centered horizontal and vertical zoom",
+    "Upper-left heading and lower-right paragraph",
+    "Rounded diagonal background and approved light secondary neutral",
+    "Desktop, tablet and phone card reading holds and reverse states",
+    "Full-screen company-film ending",
+    "Phone earnings facts and closed device"
+  ],
+  "Preserved": [
+    "Original film source and chronological mapping",
+    "Hero and navigation",
+    "Problem and career choreography",
+    "Four facts in laptop opening",
+    "Removed campus section",
+    "Silent homepage"
+  ],
+  "Coverage": "Current company-film placement rerun in v051. Unchanged-section suites passed in v050 before this scoped text and centering adjustment. Chromium viewport emulation; no physical-device certification."
+}

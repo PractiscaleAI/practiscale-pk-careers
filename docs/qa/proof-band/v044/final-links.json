@@ -1,0 +1,281 @@
+{
+  "checks": [
+    {
+      "name": "1440: direct proof link aligns to section",
+      "pass": true,
+      "data": {
+        "top": 38.953125,
+        "desired": 40
+      }
+    },
+    {
+      "name": "1440: direct proof link shows the intended entry",
+      "pass": true,
+      "data": "0.00000"
+    },
+    {
+      "name": "1440x900/proof-band: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "390: direct proof link aligns to section",
+      "pass": true,
+      "data": {
+        "top": -0.96875,
+        "desired": 0
+      }
+    },
+    {
+      "name": "390: direct proof link shows the intended entry",
+      "pass": true,
+      "data": "1.00000"
+    },
+    {
+      "name": "390x844/proof-band: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "320: direct proof link aligns to section",
+      "pass": true,
+      "data": {
+        "top": -0.578125,
+        "desired": 0
+      }
+    },
+    {
+      "name": "320: direct proof link shows the intended entry",
+      "pass": true,
+      "data": "1.00000"
+    },
+    {
+      "name": "320x568/proof-band: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "844x390: complete campus fits short landscape",
+      "pass": true,
+      "data": {
+        "top": 97.3125,
+        "bottom": 323.5,
+        "left": 33.75,
+        "right": 810.25
+      }
+    },
+    {
+      "name": "844: direct proof link aligns to section",
+      "pass": true,
+      "data": {
+        "top": -0.71875,
+        "desired": 0
+      }
+    },
+    {
+      "name": "844: direct proof link shows the intended entry",
+      "pass": true,
+      "data": "1.00000"
+    },
+    {
+      "name": "844x390/proof-band: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1024: direct proof link aligns to section",
+      "pass": true,
+      "data": {
+        "top": -0.5625,
+        "desired": 0
+      }
+    },
+    {
+      "name": "1024: direct proof link shows the intended entry",
+      "pass": true,
+      "data": "0.00000"
+    },
+    {
+      "name": "1024x620/proof-band: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440x900: direct laptop link aligns",
+      "pass": true,
+      "data": -0.046875
+    },
+    {
+      "name": "1440x900: readable layout has no overlap",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 313.3515625,
+          "bottom": 570.5546875,
+          "left": 57.59375,
+          "right": 517.59375
+        },
+        "window": {
+          "top": 198.953125,
+          "bottom": 747.953125,
+          "left": 662.4000244140625,
+          "right": 1382.4000244140625
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "1440x900/the-proof: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "390x844: direct laptop link aligns",
+      "pass": true,
+      "data": 0.3125
+    },
+    {
+      "name": "390x844: readable layout has no overlap",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 93.3125,
+          "bottom": 297.203125,
+          "left": 24,
+          "right": 366
+        },
+        "window": {
+          "top": 321.203125,
+          "bottom": 803.3125,
+          "left": 24,
+          "right": 366
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "390x844/the-proof: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "844x390: direct laptop link aligns",
+      "pass": true,
+      "data": -0.40625
+    },
+    {
+      "name": "844x390: readable layout has no overlap",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 87.9140625,
+          "bottom": 295.4609375,
+          "left": 33.75,
+          "right": 354.46875
+        },
+        "window": {
+          "top": 86.39375305175781,
+          "bottom": 320.59375,
+          "left": 388.239990234375,
+          "right": 810.239990234375
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "844x390/the-proof: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "667x375: direct laptop link aligns",
+      "pass": true,
+      "data": -0.0625
+    },
+    {
+      "name": "667x375: readable layout has no overlap",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 51.6015625,
+          "bottom": 317.7734375,
+          "left": 26.671875,
+          "right": 280.125
+        },
+        "window": {
+          "top": 83.4375,
+          "bottom": 305.9375,
+          "left": 306.82000732421875,
+          "right": 640.3200073242188
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "667x375/the-proof: no page overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "320x568: direct laptop link aligns",
+      "pass": true,
+      "data": -0.265625
+    },
+    {
+      "name": "320x568: readable layout has no overlap",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 92.734375,
+          "bottom": 296.625,
+          "left": 24,
+          "right": 296
+        },
+        "window": {
+          "top": 320.625,
+          "bottom": 526.734375,
+          "left": 24,
+          "right": 296
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "Short phone retains a fitting preview or a visible static fallback",
+      "pass": true,
+      "data": {
+        "mode": "motion",
+        "ready": "true",
+        "copy": {
+          "top": 92.734375,
+          "bottom": 296.625,
+          "left": 24,
+          "right": 296
+        },
+        "window": {
+          "top": 320.625,
+          "bottom": 526.734375,
+          "left": 24,
+          "right": 296
+        },
+        "posterVisible": "hidden"
+      }
+    },
+    {
+      "name": "320x568/the-proof: no page overflow",
+      "pass": true,
+      "data": 0
+    }
+  ],
+  "errors": []
+}

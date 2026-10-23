@@ -37,7 +37,7 @@
   margin-top: 12px;
   font-size: var(--section-title-size);
   line-height: 1.18;
-  letter-spacing: -0.045em;
+  letter-spacing: var(--section-title-tracking);
 }
 .cards {
   --deck-space: 48px;
@@ -136,7 +136,7 @@
   max-width: 14em;
   font-size: var(--card-title-size);
   line-height: 1.2;
-  letter-spacing: -0.045em;
+  letter-spacing: var(--card-title-tracking);
 }
 .copy p {
   margin-top: 12px;

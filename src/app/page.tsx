@@ -5,7 +5,9 @@ import HeroLayout from "@/components/hero-layout";
 import Navigation from "@/components/navigation";
 import HeroSequence from "@/components/hero-sequence";
 import ProblemSection from "@/components/problem-section";
+import WhoWeAre from "@/components/who-we-are";
 import CareerSection from "@/components/career-section";
+import EarningsSection from "@/components/earnings-section";
 import { Action, Eyebrow } from "@/components/ui";
 export const metadata: Metadata = {
   title: "PractiScale | Build a Skill. Build Your Career.",
@@ -69,10 +71,7 @@ export default function Home() {
             </div>
           </dl>
           <div className="hero-bottom-right">
-            <Link
-              href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details."
-              aria-labelledby="hero-next-label"
-            >
+            <Link href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.">
               <span className="hero-next-copy">
                 <span className="eyebrow">Your next chapter</span>
                 <span className="hero-next-label" id="hero-next-label">
@@ -88,7 +87,9 @@ export default function Home() {
         <span id="hero-end" className="hero-end" aria-hidden="true" />
       </section>
       <ProblemSection />
+      <WhoWeAre />
       <CareerSection />
+      <EarningsSection />
     </main>
   );
 }

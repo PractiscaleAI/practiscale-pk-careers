@@ -30,11 +30,17 @@ const fs = require("fs");
     });
     await page
       .locator(".preloader")
-      .waitFor({ state: "hidden", timeout: 8000 });
+      .waitFor({ state: "hidden", timeout: 12000 });
     check("Homepage returns 200", r.status() === 200);
     check(
-      "Hero, problem cards and one integrated career section",
-      (await page.locator("main>section").count()) === 3 &&
+      "Hero, problem, company film, career paths and laptop earnings",
+      (await page.locator("main>section").count()) === 5 &&
+        (await page.locator("#who-we-are").count()) === 1 &&
+        (await page.locator("#the-proof").count()) === 1 &&
+        (await page.locator("#the-proof [data-proof-stat]").count()) === 4 &&
+        (await page
+          .locator("[data-proof-world], section#proof-band")
+          .count()) === 0 &&
         (await page.locator("#the-problem article").count()) === 3 &&
         (await page.locator("#career-paths article").count()) === 2,
     );
@@ -134,7 +140,7 @@ const fs = require("fs");
     });
     const rp = await rm.newPage();
     await rp.goto("http://127.0.0.1:3000", { waitUntil: "networkidle" });
-    await rp.locator(".preloader").waitFor({ state: "hidden", timeout: 8000 });
+    await rp.locator(".preloader").waitFor({ state: "hidden", timeout: 12000 });
     check(
       "Reduced motion static portrait",
       (await rp.locator(".hero-portrait canvas").count()) === 0,

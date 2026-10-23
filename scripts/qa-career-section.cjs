@@ -84,16 +84,39 @@ const bodies = [
         top,
       );
       await page.waitForTimeout(900);
+      // Check reading holds after the real scrub settles. A fixed delay alone
+      // can sample an intentionally clipped incoming group on software WebGL.
+      await page.waitForFunction(
+        () => {
+          const root = document.querySelector("[data-career-rail]");
+          if (root.dataset.mode !== "pinned") return true;
+          const top = parseFloat(
+            getComputedStyle(root.closest("section")).getPropertyValue(
+              "--career-top",
+            ),
+          );
+          const start = scrollY + root.getBoundingClientRect().top - top;
+          const travel = parseFloat(
+            root.style.getPropertyValue("--career-travel"),
+          );
+          const expected = Math.max(0, Math.min(1, (scrollY - start) / travel));
+          return Math.abs(Number(root.dataset.progress) - expected) < 0.001;
+        },
+        null,
+        { polling: 100, timeout: 15000 },
+      );
     };
     check(
-      "Career section follows the preserved problem section",
+      "Career section follows the company film and preserved problem section",
       await page
         .locator("main>section")
         .evaluateAll(
           (els) =>
-            els.length === 3 &&
+            els.length === 5 &&
             els[1].id === "the-problem" &&
-            els[2].id === "career-paths",
+            els[2].id === "who-we-are" &&
+            els[3].id === "career-paths" &&
+            els[4].id === "the-proof",
         ),
     );
     check(
@@ -266,6 +289,12 @@ const bodies = [
             g.sameCanvas,
           g,
         );
+        if (width === 1440 && index === 1) {
+          check(
+            "The next laptop does not allocate a renderer during career holds",
+            (await page.locator("[data-laptop-world] canvas").count()) === 0,
+          );
+        }
         check(
           `Composition fits within 100vh ${width}/${index + 1}`,
           g.viewport.top >= m.top - 1 &&

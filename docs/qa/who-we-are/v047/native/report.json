@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "name": "Direct company-film link aligns",
+      "pass": true
+    },
+    {
+      "name": "Initial/transition 0 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Initial/transition 0.04 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Initial/transition 0.1 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Real wheel advances the company scene",
+      "pass": true,
+      "data": 0.04157
+    },
+    {
+      "name": "Native PageDown advances the scene",
+      "pass": true,
+      "data": 0.17215
+    },
+    {
+      "name": "Final vision frame is retained",
+      "pass": true
+    },
+    {
+      "name": "Short desktop releases extended travel",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 600,
+        "overflow": 0,
+        "mode": "static",
+        "ready": "true",
+        "p": 1,
+        "split": 1,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 31.6333,
+        "actual": 31.633333,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": -0.46875,
+          "w": 1280,
+          "h": 860.625,
+          "b": 860.15625,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 119.53125,
+          "w": 620,
+          "h": 111.125,
+          "b": 230.65625,
+          "r": 671.1875
+        },
+        "windowRect": {
+          "x": 180,
+          "y": 278.65625,
+          "w": 920,
+          "h": 517.5,
+          "b": 796.15625,
+          "r": 1100
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 180,
+          "y": 278.65625,
+          "w": 920,
+          "h": 517.5,
+          "b": 796.15625,
+          "r": 1100
+        },
+        "imageRect": {
+          "x": 180,
+          "y": 278.65625,
+          "r": 1100,
+          "b": 796.15625
+        }
+      }
+    },
+    {
+      "name": "Releasing the pin keeps the company film in view",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": -0.46875,
+        "w": 1280,
+        "h": 860.625,
+        "b": 860.15625,
+        "r": 1280
+      }
+    },
+    {
+      "name": "Failure recovery text keeps accessible contrast",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "layouts": [],
+  "accessibility": []
+}

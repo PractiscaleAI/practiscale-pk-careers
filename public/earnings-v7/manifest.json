@@ -1,0 +1,22 @@
+{
+  "frameCount": 600,
+  "hasAudio": false,
+  "desktop": {
+    "width": 1600,
+    "height": 900,
+    "pattern": "desktop/frame-{index:04d}.webp"
+  },
+  "mobile": {
+    "width": 720,
+    "height": 1280,
+    "pattern": "mobile/frame-{index:04d}.webp",
+    "motionVersion": 4,
+    "motionLanguage": "Opaque hinged proof blocks, front-to-numbered-back flips, elevated featured layout and immediate-content total reveal"
+  },
+  "palette": {
+    "teal": "#134143",
+    "mint": "#9BE3D6",
+    "amber": "#F5B041",
+    "white": "#FFFFFF"
+  }
+}

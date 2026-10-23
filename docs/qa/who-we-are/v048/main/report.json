@@ -1,0 +1,4098 @@
+{
+  "checks": [
+    {
+      "name": "Entry shares the preceding Fog background without a hard split cut",
+      "pass": true,
+      "data": [
+        [
+          243,
+          246,
+          246
+        ],
+        [
+          243,
+          246,
+          246
+        ],
+        [
+          243,
+          246,
+          246
+        ],
+        [
+          243,
+          246,
+          246
+        ]
+      ]
+    },
+    {
+      "name": "1440: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 6192,
+          "b": 6192,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 284.569,
+          "y": 346.141,
+          "w": 870.8620000000001,
+          "h": 489.8589999999999,
+          "b": 836,
+          "r": 1155.431
+        },
+        "clip": "inset(346.141px 284.569px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 284.5694580078125,
+          "y": 318.9262390136719,
+          "w": 870.861083984375,
+          "h": 544.2880859375,
+          "b": 863.2143249511719,
+          "r": 1155.4305419921875
+        },
+        "imageRect": {
+          "x": 284.5694580078125,
+          "y": 346.1406021118164,
+          "r": 1155.4305419921875,
+          "b": 835.9999618530273
+        }
+      }
+    },
+    {
+      "name": "1440: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "1440: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "1440: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 6192,
+          "b": 6192,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 284.569,
+          "y": 346.141,
+          "w": 870.8620000000001,
+          "h": 489.8589999999999,
+          "b": 836,
+          "r": 1155.431
+        },
+        "clip": "inset(346.141px 284.569px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 284.5694580078125,
+          "y": 318.9262390136719,
+          "w": 870.861083984375,
+          "h": 544.2880859375,
+          "b": 863.2143249511719,
+          "r": 1155.4305419921875
+        },
+        "imageRect": {
+          "x": 284.5694580078125,
+          "y": 346.1406021118164,
+          "r": 1155.4305419921875,
+          "b": 835.9999618530273
+        }
+      }
+    },
+    {
+      "name": "1440: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 6192,
+          "b": 6192,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 284.569,
+          "y": 346.141,
+          "w": 870.8620000000001,
+          "h": 489.8589999999999,
+          "b": 836,
+          "r": 1155.431
+        },
+        "clip": "inset(346.141px 284.569px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 284.5694580078125,
+          "y": 318.9262390136719,
+          "w": 870.861083984375,
+          "h": 544.2880859375,
+          "b": 863.2143249511719,
+          "r": 1155.4305419921875
+        },
+        "imageRect": {
+          "x": 284.5694580078125,
+          "y": 346.1406021118164,
+          "r": 1155.4305419921875,
+          "b": 835.9999618530273
+        }
+      }
+    },
+    {
+      "name": "1440: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 6192,
+          "b": 6192,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 284.569,
+          "y": 346.141,
+          "w": 870.8620000000001,
+          "h": 489.8589999999999,
+          "b": 836,
+          "r": 1155.431
+        },
+        "clip": "inset(346.141px 284.569px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 284.5694580078125,
+          "y": 318.9262390136719,
+          "w": 870.861083984375,
+          "h": 544.2880859375,
+          "b": 863.2143249511719,
+          "r": 1155.4305419921875
+        },
+        "imageRect": {
+          "x": 284.5694580078125,
+          "y": 346.1406021118164,
+          "r": 1155.4305419921875,
+          "b": 835.9999618530273
+        }
+      }
+    },
+    {
+      "name": "1440: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 284.569,
+        "y": 346.141,
+        "w": 870.8620000000001,
+        "h": 489.8589999999999,
+        "b": 836,
+        "r": 1155.431
+      }
+    },
+    {
+      "name": "1440: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "1440: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440/0.1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.09996,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "Both diagonal panels open apart during video expansion",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.09996,
+        "split": 0.4556,
+        "leftX": -656.063,
+        "rightX": 656.063,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -529,
+          "w": 1440,
+          "h": 6192,
+          "b": 5663,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 96,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 274.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 131.147,
+          "y": 159.523,
+          "w": 1177.7060000000001,
+          "h": 710.9818,
+          "b": 870.5048,
+          "r": 1308.853
+        },
+        "clip": "inset(159.523px 131.147px 29.4952px round 9.21724px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 131.147216796875,
+          "y": 146.98092651367188,
+          "w": 1177.70556640625,
+          "h": 736.06591796875,
+          "b": 883.0468444824219,
+          "r": 1308.852783203125
+        },
+        "imageRect": {
+          "x": 131.147216796875,
+          "y": 183.78419494628906,
+          "r": 1308.852783203125,
+          "b": 846.2435760498047
+        }
+      }
+    },
+    {
+      "name": "1440/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "1440: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1440,
+        "rightX": 1440,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1440,
+          "h": 6192,
+          "b": 5160,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 96,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 274.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "b": 900,
+          "r": 1440
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "b": 900,
+          "r": 1440
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 45,
+          "r": 1440,
+          "b": 855
+        }
+      }
+    },
+    {
+      "name": "1440: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 45,
+        "r": 1440,
+        "b": 855
+      }
+    },
+    {
+      "name": "1440: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1440,
+        "rightX": 1440,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1440,
+          "h": 6192,
+          "b": 5160,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 96,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 274.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "b": 900,
+          "r": 1440
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "b": 900,
+          "r": 1440
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 45,
+          "r": 1440,
+          "b": 855
+        }
+      }
+    },
+    {
+      "name": "1440/0.38: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.38001,
+        "target": 7.5321,
+        "actual": 7.52671
+      }
+    },
+    {
+      "name": "1440/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.718627
+      }
+    },
+    {
+      "name": "1440/0.9: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.90004,
+        "target": 29.9134,
+        "actual": 29.908606
+      }
+    },
+    {
+      "name": "1440/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "1440/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.737951
+      }
+    },
+    {
+      "name": "1440/0.38: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.38001,
+        "target": 7.5321,
+        "actual": 7.536867
+      }
+    },
+    {
+      "name": "1440/0: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "Reverse scroll closes both background panels with the video",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 6192,
+          "b": 6192,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 663.671875,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 721.265625
+        },
+        "windowRect": {
+          "x": 284.569,
+          "y": 346.141,
+          "w": 870.8620000000001,
+          "h": 489.8589999999999,
+          "b": 836,
+          "r": 1155.431
+        },
+        "clip": "inset(346.141px 284.569px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 284.5694580078125,
+          "y": 318.9262390136719,
+          "w": 870.861083984375,
+          "h": 544.2880859375,
+          "b": 863.2143249511719,
+          "r": 1155.4305419921875
+        },
+        "imageRect": {
+          "x": 284.5694580078125,
+          "y": 346.1406021118164,
+          "r": 1155.4305419921875,
+          "b": 835.9999618530273
+        }
+      }
+    },
+    {
+      "name": "Full desktop page passes accessibility scan",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Resize preserves active film progress",
+      "pass": true,
+      "data": {
+        "before": 0.64002,
+        "after": 0.64002
+      }
+    },
+    {
+      "name": "Keyboard skip focuses the following section",
+      "pass": true
+    },
+    {
+      "name": "1280: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6092,
+          "b": 6092,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 292.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 288.611,
+          "y": 340.688,
+          "w": 702.778,
+          "h": 395.312,
+          "b": 736,
+          "r": 991.389
+        },
+        "clip": "inset(340.688px 288.611px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 288.6111145019531,
+          "y": 318.7257080078125,
+          "w": 702.77783203125,
+          "h": 439.236083984375,
+          "b": 757.9617919921875,
+          "r": 991.3889465332031
+        },
+        "imageRect": {
+          "x": 288.6111145019531,
+          "y": 340.68748474121094,
+          "r": 991.3889465332031,
+          "b": 736.0000152587891
+        }
+      }
+    },
+    {
+      "name": "1280: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "1280: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1280: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "1280: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6092,
+          "b": 6092,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 292.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 288.611,
+          "y": 340.688,
+          "w": 702.778,
+          "h": 395.312,
+          "b": 736,
+          "r": 991.389
+        },
+        "clip": "inset(340.688px 288.611px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 288.6111145019531,
+          "y": 318.7257080078125,
+          "w": 702.77783203125,
+          "h": 439.236083984375,
+          "b": 757.9617919921875,
+          "r": 991.3889465332031
+        },
+        "imageRect": {
+          "x": 288.6111145019531,
+          "y": 340.68748474121094,
+          "r": 991.3889465332031,
+          "b": 736.0000152587891
+        }
+      }
+    },
+    {
+      "name": "1280: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6092,
+          "b": 6092,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 292.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 288.611,
+          "y": 340.688,
+          "w": 702.778,
+          "h": 395.312,
+          "b": 736,
+          "r": 991.389
+        },
+        "clip": "inset(340.688px 288.611px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 288.6111145019531,
+          "y": 318.7257080078125,
+          "w": 702.77783203125,
+          "h": 439.236083984375,
+          "b": 757.9617919921875,
+          "r": 991.3889465332031
+        },
+        "imageRect": {
+          "x": 288.6111145019531,
+          "y": 340.68748474121094,
+          "r": 991.3889465332031,
+          "b": 736.0000152587891
+        }
+      }
+    },
+    {
+      "name": "1280: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6092,
+          "b": 6092,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 292.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 288.611,
+          "y": 340.688,
+          "w": 702.778,
+          "h": 395.312,
+          "b": 736,
+          "r": 991.389
+        },
+        "clip": "inset(340.688px 288.611px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 288.6111145019531,
+          "y": 318.7257080078125,
+          "w": 702.77783203125,
+          "h": 439.236083984375,
+          "b": 757.9617919921875,
+          "r": 991.3889465332031
+        },
+        "imageRect": {
+          "x": 288.6111145019531,
+          "y": 340.68748474121094,
+          "r": 991.3889465332031,
+          "b": 736.0000152587891
+        }
+      }
+    },
+    {
+      "name": "1280: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 288.611,
+        "y": 340.688,
+        "w": 702.778,
+        "h": 395.312,
+        "b": 736,
+        "r": 991.389
+      }
+    },
+    {
+      "name": "1280: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "1280: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1280/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "1280: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1280,
+        "rightX": 1280,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1280,
+          "h": 6092,
+          "b": 5060,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 96,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 268.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "b": 800,
+          "r": 1280
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "b": 800,
+          "r": 1280
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 40,
+          "r": 1280,
+          "b": 760
+        }
+      }
+    },
+    {
+      "name": "1280: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 40,
+        "r": 1280,
+        "b": 760
+      }
+    },
+    {
+      "name": "1280: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 800,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1280,
+        "rightX": 1280,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1280,
+          "h": 6092,
+          "b": 5060,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 96,
+          "w": 663.671875,
+          "h": 172.6875,
+          "b": 268.6875,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "b": 800,
+          "r": 1280
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "b": 800,
+          "r": 1280
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 40,
+          "r": 1280,
+          "b": 760
+        }
+      }
+    },
+    {
+      "name": "1280/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.722027
+      }
+    },
+    {
+      "name": "1280/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "1024: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0.1875,
+          "w": 1024,
+          "h": 6060,
+          "b": 6060.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 120.1875,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 286.921875,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 184.32,
+          "y": 334.9215,
+          "w": 655.3600000000001,
+          "h": 368.6404,
+          "b": 703.5619,
+          "r": 839.6800000000001
+        },
+        "clip": "inset(334.734px 184.32px 64.6256px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 184.32000732421875,
+          "y": 273.48187255859375,
+          "w": 655.3599853515625,
+          "h": 491.51995849609375,
+          "b": 765.0018310546875,
+          "r": 839.6799926757812
+        },
+        "imageRect": {
+          "x": 184.32000732421875,
+          "y": 334.9218559265137,
+          "r": 839.6799926757812,
+          "b": 703.5618476867676
+        }
+      }
+    },
+    {
+      "name": "1024: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "1024: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1024: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "1024: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0.1875,
+          "w": 1024,
+          "h": 6060,
+          "b": 6060.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 120.1875,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 286.921875,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 184.32,
+          "y": 334.9215,
+          "w": 655.3600000000001,
+          "h": 368.6404,
+          "b": 703.5619,
+          "r": 839.6800000000001
+        },
+        "clip": "inset(334.734px 184.32px 64.6256px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 184.32000732421875,
+          "y": 273.48187255859375,
+          "w": 655.3599853515625,
+          "h": 491.51995849609375,
+          "b": 765.0018310546875,
+          "r": 839.6799926757812
+        },
+        "imageRect": {
+          "x": 184.32000732421875,
+          "y": 334.9218559265137,
+          "r": 839.6799926757812,
+          "b": 703.5618476867676
+        }
+      }
+    },
+    {
+      "name": "1024: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0.1875,
+          "w": 1024,
+          "h": 6060,
+          "b": 6060.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 120.1875,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 286.921875,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 184.32,
+          "y": 334.9215,
+          "w": 655.3600000000001,
+          "h": 368.6404,
+          "b": 703.5619,
+          "r": 839.6800000000001
+        },
+        "clip": "inset(334.734px 184.32px 64.6256px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 184.32000732421875,
+          "y": 273.48187255859375,
+          "w": 655.3599853515625,
+          "h": 491.51995849609375,
+          "b": 765.0018310546875,
+          "r": 839.6799926757812
+        },
+        "imageRect": {
+          "x": 184.32000732421875,
+          "y": 334.9218559265137,
+          "r": 839.6799926757812,
+          "b": 703.5618476867676
+        }
+      }
+    },
+    {
+      "name": "1024: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0.1875,
+          "w": 1024,
+          "h": 6060,
+          "b": 6060.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 120.1875,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 286.921875,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 184.32,
+          "y": 334.9215,
+          "w": 655.3600000000001,
+          "h": 368.6404,
+          "b": 703.5619,
+          "r": 839.6800000000001
+        },
+        "clip": "inset(334.734px 184.32px 64.6256px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 184.32000732421875,
+          "y": 273.48187255859375,
+          "w": 655.3599853515625,
+          "h": 491.51995849609375,
+          "b": 765.0018310546875,
+          "r": 839.6799926757812
+        },
+        "imageRect": {
+          "x": 184.32000732421875,
+          "y": 334.9218559265137,
+          "r": 839.6799926757812,
+          "b": 703.5618476867676
+        }
+      }
+    },
+    {
+      "name": "1024: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 184.32,
+        "y": 334.9215,
+        "w": 655.3600000000001,
+        "h": 368.6404,
+        "b": 703.5619,
+        "r": 839.6800000000001
+      }
+    },
+    {
+      "name": "1024: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "1024: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "1024: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1024/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "1024: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1024,
+        "rightX": 1024,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1031.8125,
+          "w": 1024,
+          "h": 6060,
+          "b": 5028.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 96,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 262.734375,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 768,
+          "b": 768,
+          "r": 1024
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 768,
+          "b": 768,
+          "r": 1024
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 96,
+          "r": 1024,
+          "b": 672
+        }
+      }
+    },
+    {
+      "name": "1024: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 96,
+        "r": 1024,
+        "b": 672
+      }
+    },
+    {
+      "name": "1024: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 1024,
+        "height": 768,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1024,
+        "rightX": 1024,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1031.8125,
+          "w": 1024,
+          "h": 6060,
+          "b": 5028.1875,
+          "r": 1024
+        },
+        "copy": {
+          "x": 40.953125,
+          "y": 96,
+          "w": 663.671875,
+          "h": 166.734375,
+          "b": 262.734375,
+          "r": 704.625
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 768,
+          "b": 768,
+          "r": 1024
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 768,
+          "b": 768,
+          "r": 1024
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 96,
+          "r": 1024,
+          "b": 672
+        }
+      }
+    },
+    {
+      "name": "1024/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.72207
+      }
+    },
+    {
+      "name": "1024/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "1920: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 6372,
+          "b": 6372,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 500,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1420
+        },
+        "clip": "inset(367.2px 500px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1420
+        },
+        "imageRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "r": 1420,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "1920: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "1920: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1920: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "1920: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 6372,
+          "b": 6372,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 500,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1420
+        },
+        "clip": "inset(367.2px 500px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1420
+        },
+        "imageRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "r": 1420,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "1920: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 6372,
+          "b": 6372,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 500,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1420
+        },
+        "clip": "inset(367.2px 500px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1420
+        },
+        "imageRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "r": 1420,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "1920: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 6372,
+          "b": 6372,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 500,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1420
+        },
+        "clip": "inset(367.2px 500px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1420
+        },
+        "imageRect": {
+          "x": 500,
+          "y": 367.20001220703125,
+          "r": 1420,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "1920: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 500,
+        "y": 367.2,
+        "w": 920,
+        "h": 517.5,
+        "b": 884.7,
+        "r": 1420
+      }
+    },
+    {
+      "name": "1920: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "1920: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "1920: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1920/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "1920: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1920,
+        "rightX": 1920,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1920,
+          "h": 6372,
+          "b": 5340,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 96,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 277.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "b": 1080,
+          "r": 1920
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "b": 1080,
+          "r": 1920
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 0,
+          "r": 1920,
+          "b": 1080
+        }
+      }
+    },
+    {
+      "name": "1920: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "r": 1920,
+        "b": 1080
+      }
+    },
+    {
+      "name": "1920: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 1920,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1920,
+        "rightX": 1920,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1920,
+          "h": 6372,
+          "b": 5340,
+          "r": 1920
+        },
+        "copy": {
+          "x": 64,
+          "y": 96,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 277.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "b": 1080,
+          "r": 1920
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080,
+          "b": 1080,
+          "r": 1920
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 0,
+          "r": 1920,
+          "b": 1080
+        }
+      }
+    },
+    {
+      "name": "1920/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.722027
+      }
+    },
+    {
+      "name": "1920/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "2560: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 6372,
+          "b": 6372,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 820,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1740
+        },
+        "clip": "inset(367.2px 820px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 666.6666870117188,
+          "y": 367.20001220703125,
+          "w": 1226.66650390625,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1893.3331909179688
+        },
+        "imageRect": {
+          "x": 819.9999389648438,
+          "y": 367.20001220703125,
+          "r": 1739.9999389648438,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "2560: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "2560: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "2560: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "2560: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 6372,
+          "b": 6372,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 820,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1740
+        },
+        "clip": "inset(367.2px 820px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 666.6666870117188,
+          "y": 367.20001220703125,
+          "w": 1226.66650390625,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1893.3331909179688
+        },
+        "imageRect": {
+          "x": 819.9999389648438,
+          "y": 367.20001220703125,
+          "r": 1739.9999389648438,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "2560: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 6372,
+          "b": 6372,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 820,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1740
+        },
+        "clip": "inset(367.2px 820px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 666.6666870117188,
+          "y": 367.20001220703125,
+          "w": 1226.66650390625,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1893.3331909179688
+        },
+        "imageRect": {
+          "x": 819.9999389648438,
+          "y": 367.20001220703125,
+          "r": 1739.9999389648438,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "2560: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 6372,
+          "b": 6372,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 120,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 301.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 820,
+          "y": 367.2,
+          "w": 920,
+          "h": 517.5,
+          "b": 884.7,
+          "r": 1740
+        },
+        "clip": "inset(367.2px 820px 195.3px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 666.6666870117188,
+          "y": 367.20001220703125,
+          "w": 1226.66650390625,
+          "h": 517.5,
+          "b": 884.7000122070312,
+          "r": 1893.3331909179688
+        },
+        "imageRect": {
+          "x": 819.9999389648438,
+          "y": 367.20001220703125,
+          "r": 1739.9999389648438,
+          "b": 884.7000122070312
+        }
+      }
+    },
+    {
+      "name": "2560: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 820,
+        "y": 367.2,
+        "w": 920,
+        "h": 517.5,
+        "b": 884.7,
+        "r": 1740
+      }
+    },
+    {
+      "name": "2560: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "2560: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "2560: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "2560/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "2560: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -2560,
+        "rightX": 2560,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 2560,
+          "h": 6372,
+          "b": 5340,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 96,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 277.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 1080,
+          "b": 1080,
+          "r": 2560
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 1080,
+          "b": 1080,
+          "r": 2560
+        },
+        "imageRect": {
+          "x": 320,
+          "y": 0,
+          "r": 2240,
+          "b": 1080
+        }
+      }
+    },
+    {
+      "name": "2560: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 320,
+        "y": 0,
+        "r": 2240,
+        "b": 1080
+      }
+    },
+    {
+      "name": "2560: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 2560,
+        "height": 1080,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -2560,
+        "rightX": 2560,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 2560,
+          "h": 6372,
+          "b": 5340,
+          "r": 2560
+        },
+        "copy": {
+          "x": 64,
+          "y": 96,
+          "w": 663.671875,
+          "h": 181.1875,
+          "b": 277.1875,
+          "r": 727.671875
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 1080,
+          "b": 1080,
+          "r": 2560
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 2560,
+          "h": 1080,
+          "b": 1080,
+          "r": 2560
+        },
+        "imageRect": {
+          "x": 320,
+          "y": 0,
+          "r": 2240,
+          "b": 1080
+        }
+      }
+    },
+    {
+      "name": "2560/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.717378
+      }
+    },
+    {
+      "name": "2560/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "1280: desktop motion enabled",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6012,
+          "b": 6012,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 288.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 355.875,
+          "y": 336.359,
+          "w": 568.25,
+          "h": 319.641,
+          "b": 656,
+          "r": 924.125
+        },
+        "clip": "inset(336.359px 355.875px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "w": 568.25,
+          "h": 319.640625,
+          "b": 656,
+          "r": 924.125
+        },
+        "imageRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "r": 924.125,
+          "b": 656
+        }
+      }
+    },
+    {
+      "name": "1280: exact section order",
+      "pass": true,
+      "data": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ]
+    },
+    {
+      "name": "1280: opening is unadvanced",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1280: complete supplied company description is present",
+      "pass": true
+    },
+    {
+      "name": "1280: single video with no stacked layers or card footer",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6012,
+          "b": 6012,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 288.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 355.875,
+          "y": 336.359,
+          "w": 568.25,
+          "h": 319.641,
+          "b": 656,
+          "r": 924.125
+        },
+        "clip": "inset(336.359px 355.875px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "w": 568.25,
+          "h": 319.640625,
+          "b": 656,
+          "r": 924.125
+        },
+        "imageRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "r": 924.125,
+          "b": 656
+        }
+      }
+    },
+    {
+      "name": "1280: both background panels start closed",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6012,
+          "b": 6012,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 288.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 355.875,
+          "y": 336.359,
+          "w": 568.25,
+          "h": 319.641,
+          "b": 656,
+          "r": 924.125
+        },
+        "clip": "inset(336.359px 355.875px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "w": 568.25,
+          "h": 319.640625,
+          "b": 656,
+          "r": 924.125
+        },
+        "imageRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "r": 924.125,
+          "b": 656
+        }
+      }
+    },
+    {
+      "name": "1280: copy clear of the opening video",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 6012,
+          "b": 6012,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 120,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 288.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 355.875,
+          "y": 336.359,
+          "w": 568.25,
+          "h": 319.641,
+          "b": 656,
+          "r": 924.125
+        },
+        "clip": "inset(336.359px 355.875px 64px round 20px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "w": 568.25,
+          "h": 319.640625,
+          "b": 656,
+          "r": 924.125
+        },
+        "imageRect": {
+          "x": 355.875,
+          "y": 336.359375,
+          "r": 924.125,
+          "b": 656
+        }
+      }
+    },
+    {
+      "name": "1280: opening video fits viewport at its source aspect",
+      "pass": true,
+      "data": {
+        "x": 355.875,
+        "y": 336.359,
+        "w": 568.25,
+        "h": 319.641,
+        "b": 656,
+        "r": 924.125
+      }
+    },
+    {
+      "name": "1280: native paused silent film",
+      "pass": true
+    },
+    {
+      "name": "1280: source aspect is never distorted",
+      "pass": true
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1280/0.195: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.19501,
+        "target": 0,
+        "actual": 0
+      }
+    },
+    {
+      "name": "1280: expansion precedes film",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1280,
+        "rightX": 1280,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1280,
+          "h": 6012,
+          "b": 4980,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 96,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 264.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720,
+          "b": 720,
+          "r": 1280
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720,
+          "b": 720,
+          "r": 1280
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 0,
+          "r": 1280,
+          "b": 720
+        }
+      }
+    },
+    {
+      "name": "1280: expanded film stays within 100vh with no source cropping",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "r": 1280,
+        "b": 720
+      }
+    },
+    {
+      "name": "1280: both background panels fully open with fullscreen film",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 720,
+        "overflow": 0,
+        "mode": "motion",
+        "ready": "true",
+        "p": 0.19501,
+        "split": 1,
+        "leftX": -1280,
+        "rightX": 1280,
+        "target": 0,
+        "actual": 0,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": false,
+        "section": {
+          "x": 0,
+          "y": -1032,
+          "w": 1280,
+          "h": 6012,
+          "b": 4980,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 96,
+          "w": 663.671875,
+          "h": 168.359375,
+          "b": 264.359375,
+          "r": 714.859375
+        },
+        "windowRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720,
+          "b": 720,
+          "r": 1280
+        },
+        "clip": "inset(0px)",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720,
+          "b": 720,
+          "r": 1280
+        },
+        "imageRect": {
+          "x": 0,
+          "y": 0,
+          "r": 1280,
+          "b": 720
+        }
+      }
+    },
+    {
+      "name": "1280/0.64: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 0.64002,
+        "target": 18.7228,
+        "actual": 18.722027
+      }
+    },
+    {
+      "name": "1280/1: rendered film follows scroll",
+      "pass": true,
+      "data": {
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333
+      }
+    },
+    {
+      "name": "390: desktop section omitted from layout",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "b": 0,
+        "r": 0
+      }
+    },
+    {
+      "name": "390: desktop film not downloaded",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "390: unchanged mobile page has no overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "768: desktop section omitted from layout",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "b": 0,
+        "r": 0
+      }
+    },
+    {
+      "name": "768: desktop film not downloaded",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "768: unchanged mobile page has no overflow",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "reduced: normal flow fallback",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "static",
+        "p": null,
+        "split": null,
+        "leftX": 0,
+        "rightX": 0,
+        "target": null,
+        "actual": 0,
+        "duration": null,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": 0.359375,
+          "w": 1440,
+          "h": 927.640625,
+          "b": 928,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120.359375,
+          "w": 720,
+          "h": 178.140625,
+          "b": 298.5,
+          "r": 777.59375
+        },
+        "windowRect": {
+          "x": 260,
+          "y": 346.5,
+          "w": 920,
+          "h": 517.5,
+          "b": 864,
+          "r": 1180
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 260,
+          "y": 346.5,
+          "w": 920,
+          "h": 517.5,
+          "b": 864,
+          "r": 1180
+        },
+        "imageRect": {
+          "x": 260,
+          "y": 346.5,
+          "r": 1180,
+          "b": 864
+        }
+      }
+    },
+    {
+      "name": "reduced: native film control retained",
+      "pass": true
+    },
+    {
+      "name": "no-js: normal flow fallback",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "static",
+        "p": null,
+        "split": null,
+        "leftX": 0,
+        "rightX": 0,
+        "target": null,
+        "actual": 0,
+        "duration": null,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": 0.359375,
+          "w": 1440,
+          "h": 927.640625,
+          "b": 928,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120.359375,
+          "w": 720,
+          "h": 178.140625,
+          "b": 298.5,
+          "r": 777.59375
+        },
+        "windowRect": {
+          "x": 260,
+          "y": 346.5,
+          "w": 920,
+          "h": 517.5,
+          "b": 864,
+          "r": 1180
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 260,
+          "y": 346.5,
+          "w": 920,
+          "h": 517.5,
+          "b": 864,
+          "r": 1180
+        },
+        "imageRect": {
+          "x": 260,
+          "y": 346.5,
+          "r": 1180,
+          "b": 864
+        }
+      }
+    },
+    {
+      "name": "no-js: native film control retained",
+      "pass": true
+    },
+    {
+      "name": "save-data: normal flow fallback",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "static",
+        "p": null,
+        "split": null,
+        "leftX": 0,
+        "rightX": 0,
+        "target": null,
+        "actual": 0,
+        "duration": null,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 927.640625,
+          "b": 927.640625,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 720,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 777.59375
+        },
+        "windowRect": {
+          "x": 260,
+          "y": 346.140625,
+          "w": 920,
+          "h": 517.5,
+          "b": 863.640625,
+          "r": 1180
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 260,
+          "y": 346.140625,
+          "w": 920,
+          "h": 517.5,
+          "b": 863.640625,
+          "r": 1180
+        },
+        "imageRect": {
+          "x": 260,
+          "y": 346.140625,
+          "r": 1180,
+          "b": 863.640625
+        }
+      }
+    },
+    {
+      "name": "save-data: native film control retained",
+      "pass": true
+    },
+    {
+      "name": "failed-video: normal flow fallback",
+      "pass": true,
+      "data": {
+        "width": 1440,
+        "height": 900,
+        "overflow": 0,
+        "mode": "static",
+        "ready": "false",
+        "p": 0,
+        "split": 0,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 0,
+        "actual": 0,
+        "duration": null,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 1010.03125,
+          "b": 1010.03125,
+          "r": 1440
+        },
+        "copy": {
+          "x": 57.59375,
+          "y": 120,
+          "w": 720,
+          "h": 178.140625,
+          "b": 298.140625,
+          "r": 777.59375
+        },
+        "windowRect": {
+          "x": 260,
+          "y": 346.140625,
+          "w": 920,
+          "h": 517.5,
+          "b": 863.640625,
+          "r": 1180
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 260,
+          "y": 346.140625,
+          "w": 920,
+          "h": 517.5,
+          "b": 863.640625,
+          "r": 1180
+        },
+        "imageRect": {
+          "x": 260,
+          "y": 346.140625,
+          "r": 1180,
+          "b": 863.640625
+        }
+      }
+    },
+    {
+      "name": "failed-video: native film control retained",
+      "pass": true
+    },
+    {
+      "name": "Failure offers the source film link",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 6192,
+        "b": 6192,
+        "r": 1440
+      },
+      "copy": {
+        "x": 57.59375,
+        "y": 120,
+        "w": 663.671875,
+        "h": 178.140625,
+        "b": 298.140625,
+        "r": 721.265625
+      },
+      "windowRect": {
+        "x": 284.569,
+        "y": 346.141,
+        "w": 870.8620000000001,
+        "h": 489.8589999999999,
+        "b": 836,
+        "r": 1155.431
+      },
+      "clip": "inset(346.141px 284.569px 64px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 284.5694580078125,
+        "y": 318.9262390136719,
+        "w": 870.861083984375,
+        "h": 544.2880859375,
+        "b": 863.2143249511719,
+        "r": 1155.4305419921875
+      },
+      "imageRect": {
+        "x": 284.5694580078125,
+        "y": 346.1406021118164,
+        "r": 1155.4305419921875,
+        "b": 835.9999618530273
+      }
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 6092,
+        "b": 6092,
+        "r": 1280
+      },
+      "copy": {
+        "x": 51.1875,
+        "y": 120,
+        "w": 663.671875,
+        "h": 172.6875,
+        "b": 292.6875,
+        "r": 714.859375
+      },
+      "windowRect": {
+        "x": 288.611,
+        "y": 340.688,
+        "w": 702.778,
+        "h": 395.312,
+        "b": 736,
+        "r": 991.389
+      },
+      "clip": "inset(340.688px 288.611px 64px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 288.6111145019531,
+        "y": 318.7257080078125,
+        "w": 702.77783203125,
+        "h": 439.236083984375,
+        "b": 757.9617919921875,
+        "r": 991.3889465332031
+      },
+      "imageRect": {
+        "x": 288.6111145019531,
+        "y": 340.68748474121094,
+        "r": 991.3889465332031,
+        "b": 736.0000152587891
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0.1875,
+        "w": 1024,
+        "h": 6060,
+        "b": 6060.1875,
+        "r": 1024
+      },
+      "copy": {
+        "x": 40.953125,
+        "y": 120.1875,
+        "w": 663.671875,
+        "h": 166.734375,
+        "b": 286.921875,
+        "r": 704.625
+      },
+      "windowRect": {
+        "x": 184.32,
+        "y": 334.9215,
+        "w": 655.3600000000001,
+        "h": 368.6404,
+        "b": 703.5619,
+        "r": 839.6800000000001
+      },
+      "clip": "inset(334.734px 184.32px 64.6256px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 184.32000732421875,
+        "y": 273.48187255859375,
+        "w": 655.3599853515625,
+        "h": 491.51995849609375,
+        "b": 765.0018310546875,
+        "r": 839.6799926757812
+      },
+      "imageRect": {
+        "x": 184.32000732421875,
+        "y": 334.9218559265137,
+        "r": 839.6799926757812,
+        "b": 703.5618476867676
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 6372,
+        "b": 6372,
+        "r": 1920
+      },
+      "copy": {
+        "x": 64,
+        "y": 120,
+        "w": 663.671875,
+        "h": 181.1875,
+        "b": 301.1875,
+        "r": 727.671875
+      },
+      "windowRect": {
+        "x": 500,
+        "y": 367.2,
+        "w": 920,
+        "h": 517.5,
+        "b": 884.7,
+        "r": 1420
+      },
+      "clip": "inset(367.2px 500px 195.3px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 500,
+        "y": 367.20001220703125,
+        "w": 920,
+        "h": 517.5,
+        "b": 884.7000122070312,
+        "r": 1420
+      },
+      "imageRect": {
+        "x": 500,
+        "y": 367.20001220703125,
+        "r": 1420,
+        "b": 884.7000122070312
+      }
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0,
+        "w": 2560,
+        "h": 6372,
+        "b": 6372,
+        "r": 2560
+      },
+      "copy": {
+        "x": 64,
+        "y": 120,
+        "w": 663.671875,
+        "h": 181.1875,
+        "b": 301.1875,
+        "r": 727.671875
+      },
+      "windowRect": {
+        "x": 820,
+        "y": 367.2,
+        "w": 920,
+        "h": 517.5,
+        "b": 884.7,
+        "r": 1740
+      },
+      "clip": "inset(367.2px 820px 195.3px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 666.6666870117188,
+        "y": 367.20001220703125,
+        "w": 1226.66650390625,
+        "h": 517.5,
+        "b": 884.7000122070312,
+        "r": 1893.3331909179688
+      },
+      "imageRect": {
+        "x": 819.9999389648438,
+        "y": 367.20001220703125,
+        "r": 1739.9999389648438,
+        "b": 884.7000122070312
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": 0,
+      "mode": "motion",
+      "ready": "true",
+      "p": 0,
+      "split": 0,
+      "leftX": 0,
+      "rightX": 0,
+      "target": 0,
+      "actual": 0,
+      "duration": 31.666667,
+      "paused": true,
+      "muted": true,
+      "controls": false,
+      "section": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 6012,
+        "b": 6012,
+        "r": 1280
+      },
+      "copy": {
+        "x": 51.1875,
+        "y": 120,
+        "w": 663.671875,
+        "h": 168.359375,
+        "b": 288.359375,
+        "r": 714.859375
+      },
+      "windowRect": {
+        "x": 355.875,
+        "y": 336.359,
+        "w": 568.25,
+        "h": 319.641,
+        "b": 656,
+        "r": 924.125
+      },
+      "clip": "inset(336.359px 355.875px 64px round 20px)",
+      "backCount": 0,
+      "captionCount": 0,
+      "videoCount": 1,
+      "fit": "contain",
+      "sections": [
+        "",
+        "the-problem",
+        "who-we-are",
+        "career-paths",
+        "proof-band",
+        "the-proof"
+      ],
+      "videoRect": {
+        "x": 355.875,
+        "y": 336.359375,
+        "w": 568.25,
+        "h": 319.640625,
+        "b": 656,
+        "r": 924.125
+      },
+      "imageRect": {
+        "x": 355.875,
+        "y": 336.359375,
+        "r": 924.125,
+        "b": 656
+      }
+    }
+  ],
+  "accessibility": [
+    []
+  ]
+}

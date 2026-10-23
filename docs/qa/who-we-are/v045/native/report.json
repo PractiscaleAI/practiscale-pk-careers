@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "name": "Direct company-film link aligns",
+      "pass": true
+    },
+    {
+      "name": "Initial/transition 0 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Initial/transition 0.04 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Real wheel advances the company scene",
+      "pass": true,
+      "data": 0.04157
+    },
+    {
+      "name": "Native PageDown advances the scene",
+      "pass": true,
+      "data": 0.17215
+    },
+    {
+      "name": "Final vision frame is retained",
+      "pass": true
+    },
+    {
+      "name": "Short desktop releases extended travel",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 600,
+        "overflow": 0,
+        "mode": "static",
+        "ready": "true",
+        "p": 1,
+        "target": 31.6333,
+        "actual": 31.633333,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": -5677.46875,
+          "w": 1280,
+          "h": 827.125,
+          "b": -4850.34375,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": -5613.46875,
+          "w": 620,
+          "h": 111.125,
+          "b": -5502.34375,
+          "r": 671.1875
+        },
+        "caption": {
+          "x": 264,
+          "y": -5003.34375,
+          "w": 752,
+          "h": 85,
+          "b": -4918.34375,
+          "r": 1016
+        },
+        "clip": "none",
+        "backCount": 2,
+        "fit": "contain",
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "proof-band",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 264,
+          "y": -5426.34375,
+          "w": 752,
+          "h": 423,
+          "b": -5003.34375,
+          "r": 1016
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "layouts": [],
+  "accessibility": []
+}

@@ -8,7 +8,7 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -18,9 +18,19 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 41.4,
+          "line": 48.852,
+          "tracking": "-1.242px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -43,7 +53,7 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -53,9 +63,19 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 41.4,
+          "line": 48.852,
+          "tracking": "-1.242px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -69,35 +89,35 @@
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         }
       ]
@@ -311,6 +331,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -469,6 +515,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -476,6 +539,13 @@
       "name": "Matching section labels 1440x900",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -555,7 +625,7 @@
             "family": "Sora, sans-serif",
             "size": 41.4,
             "line": 48.852,
-            "tracking": "-1.863px",
+            "tracking": "-1.242px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -565,9 +635,19 @@
             "family": "Sora, sans-serif",
             "size": 41.4,
             "line": 48.852,
-            "tracking": "-1.863px",
+            "tracking": "-1.242px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 41.4,
+            "line": 48.852,
+            "tracking": "-1.242px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -577,35 +657,35 @@
             "family": "Sora, sans-serif",
             "size": 25.92,
             "line": 31.104,
-            "tracking": "-1.1664px",
+            "tracking": "-0.648px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 25.92,
             "line": 31.104,
-            "tracking": "-1.1664px",
+            "tracking": "-0.648px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 25.92,
             "line": 31.104,
-            "tracking": "-1.1664px",
+            "tracking": "-0.648px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 25.92,
             "line": 31.104,
-            "tracking": "-1.1664px",
+            "tracking": "-0.648px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 25.92,
             "line": 31.104,
-            "tracking": "-1.1664px",
+            "tracking": "-0.648px",
             "weight": "600"
           }
         ],
@@ -815,6 +895,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -888,6 +994,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -903,7 +1016,7 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -913,9 +1026,19 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 44,
+          "line": 51.92,
+          "tracking": "-1.32px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -938,7 +1061,7 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -948,9 +1071,19 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 44,
+          "line": 51.92,
+          "tracking": "-1.32px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -964,35 +1097,35 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         }
       ]
@@ -1206,6 +1339,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -1364,6 +1523,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -1371,6 +1547,13 @@
       "name": "Matching section labels 1920x1080",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -1450,7 +1633,7 @@
             "family": "Sora, sans-serif",
             "size": 44,
             "line": 51.92,
-            "tracking": "-1.98px",
+            "tracking": "-1.32px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -1460,9 +1643,19 @@
             "family": "Sora, sans-serif",
             "size": 44,
             "line": 51.92,
-            "tracking": "-1.98px",
+            "tracking": "-1.32px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 44,
+            "line": 51.92,
+            "tracking": "-1.32px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -1472,35 +1665,35 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.6,
-            "tracking": "-1.26px",
+            "tracking": "-0.7px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.6,
-            "tracking": "-1.26px",
+            "tracking": "-0.7px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.6,
-            "tracking": "-1.26px",
+            "tracking": "-0.7px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.6,
-            "tracking": "-1.26px",
+            "tracking": "-0.7px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.6,
-            "tracking": "-1.26px",
+            "tracking": "-0.7px",
             "weight": "600"
           }
         ],
@@ -1710,6 +1903,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -1783,6 +2002,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -1798,7 +2024,7 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -1808,9 +2034,19 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 32.016,
+          "line": 37.7789,
+          "tracking": "-0.96048px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -1833,7 +2069,7 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -1843,9 +2079,19 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 32.016,
+          "line": 37.7789,
+          "tracking": "-0.96048px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -1859,35 +2105,35 @@
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         }
       ]
@@ -2101,6 +2347,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -2259,6 +2531,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -2266,6 +2555,13 @@
       "name": "Matching section labels 1536x696",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -2345,7 +2641,7 @@
             "family": "Sora, sans-serif",
             "size": 32.016,
             "line": 37.7789,
-            "tracking": "-1.44072px",
+            "tracking": "-0.96048px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -2355,9 +2651,19 @@
             "family": "Sora, sans-serif",
             "size": 32.016,
             "line": 37.7789,
-            "tracking": "-1.44072px",
+            "tracking": "-0.96048px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 32.016,
+            "line": 37.7789,
+            "tracking": "-0.96048px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -2367,35 +2673,35 @@
             "family": "Sora, sans-serif",
             "size": 27.648,
             "line": 33.1776,
-            "tracking": "-1.24416px",
+            "tracking": "-0.6912px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 27.648,
             "line": 33.1776,
-            "tracking": "-1.24416px",
+            "tracking": "-0.6912px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 27.648,
             "line": 33.1776,
-            "tracking": "-1.24416px",
+            "tracking": "-0.6912px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 27.648,
             "line": 33.1776,
-            "tracking": "-1.24416px",
+            "tracking": "-0.6912px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 27.648,
             "line": 33.1776,
-            "tracking": "-1.24416px",
+            "tracking": "-0.6912px",
             "weight": "600"
           }
         ],
@@ -2605,6 +2911,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -2678,6 +3010,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -2693,7 +3032,7 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -2703,9 +3042,19 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 35.328,
+          "line": 41.687,
+          "tracking": "-1.05984px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -2728,7 +3077,7 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -2738,9 +3087,19 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 35.328,
+          "line": 41.687,
+          "tracking": "-1.05984px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -2754,35 +3113,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -3002,6 +3361,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -3166,6 +3551,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -3173,6 +3575,13 @@
       "name": "Matching section labels 1192x768",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -3252,7 +3661,7 @@
             "family": "Sora, sans-serif",
             "size": 35.328,
             "line": 41.687,
-            "tracking": "-1.58976px",
+            "tracking": "-1.05984px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -3262,9 +3671,19 @@
             "family": "Sora, sans-serif",
             "size": 35.328,
             "line": 41.687,
-            "tracking": "-1.58976px",
+            "tracking": "-1.05984px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 35.328,
+            "line": 41.687,
+            "tracking": "-1.05984px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -3274,35 +3693,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -3518,6 +3937,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -3591,6 +4036,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -3606,7 +4058,7 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -3616,9 +4068,19 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 31.744,
+          "line": 37.4579,
+          "tracking": "-0.95232px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -3641,7 +4103,7 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -3651,9 +4113,19 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 31.744,
+          "line": 37.4579,
+          "tracking": "-0.95232px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -3667,35 +4139,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -3921,6 +4393,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -4091,6 +4589,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -4098,6 +4613,13 @@
       "name": "Matching section labels 1024x900",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -4177,7 +4699,7 @@
             "family": "Sora, sans-serif",
             "size": 31.744,
             "line": 37.4579,
-            "tracking": "-1.42848px",
+            "tracking": "-0.95232px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -4187,9 +4709,19 @@
             "family": "Sora, sans-serif",
             "size": 31.744,
             "line": 37.4579,
-            "tracking": "-1.42848px",
+            "tracking": "-0.95232px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 31.744,
+            "line": 37.4579,
+            "tracking": "-0.95232px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -4199,35 +4731,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -4449,6 +4981,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -4522,6 +5080,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -4537,7 +5102,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -4547,9 +5112,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -4572,7 +5147,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -4582,9 +5157,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -4598,35 +5183,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -4840,6 +5425,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -4998,6 +5609,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -5005,6 +5633,13 @@
       "name": "Matching section labels 768x1024",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -5084,7 +5719,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -5094,9 +5729,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -5106,35 +5751,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -5344,6 +5989,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -5417,6 +6088,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -5432,7 +6110,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -5442,9 +6120,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -5467,7 +6155,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -5477,9 +6165,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -5493,35 +6191,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -5735,6 +6433,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -5893,6 +6617,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -5900,6 +6641,13 @@
       "name": "Matching section labels 530x900",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -5979,7 +6727,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -5989,9 +6737,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -6001,35 +6759,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -6239,6 +6997,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -6312,6 +7096,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -6327,7 +7118,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -6337,9 +7128,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -6362,7 +7163,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -6372,9 +7173,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -6388,35 +7199,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -6630,6 +7441,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -6788,6 +7625,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -6795,6 +7649,13 @@
       "name": "Matching section labels 443x646",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -6874,7 +7735,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -6884,9 +7745,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -6896,35 +7767,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -7134,6 +8005,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -7207,6 +8104,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -7222,7 +8126,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -7232,9 +8136,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -7257,7 +8171,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -7267,9 +8181,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -7283,35 +8207,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -7525,6 +8449,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -7683,6 +8633,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team.",
+            "Not"
+          ],
+          [
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -7690,6 +8657,13 @@
       "name": "Matching section labels 430x932",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -7769,7 +8743,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -7779,9 +8753,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -7791,35 +8775,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -8029,6 +9013,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team.",
+                "Not"
+              ],
+              [
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -8102,6 +9112,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -8117,7 +9134,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -8127,9 +9144,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -8152,7 +9179,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -8162,9 +9189,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -8178,35 +9215,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -8430,6 +9467,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team."
+            ],
+            [
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -8598,6 +9661,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team."
+          ],
+          [
+            "Not",
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -8605,6 +9685,13 @@
       "name": "Matching section labels 375x812",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -8684,7 +9771,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -8694,9 +9781,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -8706,35 +9803,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -8954,6 +10051,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team."
+              ],
+              [
+                "Not",
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -9027,6 +10150,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -9042,7 +10172,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -9052,9 +10182,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -9077,7 +10217,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -9087,9 +10227,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -9103,35 +10253,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -9355,6 +10505,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team."
+            ],
+            [
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -9523,6 +10699,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales",
+            "team."
+          ],
+          [
+            "Not",
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -9530,6 +10723,13 @@
       "name": "Matching section labels 375x667",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -9609,7 +10809,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -9619,9 +10819,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -9631,35 +10841,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -9879,6 +11089,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales",
+                "team."
+              ],
+              [
+                "Not",
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -9952,6 +11188,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -9967,7 +11210,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -9977,9 +11220,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -10002,7 +11255,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -10012,9 +11265,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -10028,35 +11291,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ]
@@ -10290,6 +11553,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales"
+            ],
+            [
+              "team.",
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ]
     },
@@ -10468,6 +11757,23 @@
             "open",
             "role."
           ]
+        ],
+        [
+          [
+            "Real",
+            "commissions",
+            "paid",
+            "to",
+            "our",
+            "sales"
+          ],
+          [
+            "team.",
+            "Not",
+            "projections.",
+            "Not",
+            "averages."
+          ]
         ]
       ]
     },
@@ -10475,6 +11781,13 @@
       "name": "Matching section labels 320x568",
       "pass": true,
       "detail": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -10554,7 +11867,7 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "problem-heading",
             "before": 12,
@@ -10564,9 +11877,19 @@
             "family": "Sora, sans-serif",
             "size": 28,
             "line": 33.04,
-            "tracking": "-1.26px",
+            "tracking": "-0.84px",
             "weight": "600",
             "id": "career-heading",
+            "before": 12,
+            "after": 24
+          },
+          {
+            "family": "Sora, sans-serif",
+            "size": 28,
+            "line": 33.04,
+            "tracking": "-0.84px",
+            "weight": "600",
+            "id": "proof-heading",
             "before": 12,
             "after": 24
           }
@@ -10576,35 +11899,35 @@
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           },
           {
             "family": "Sora, sans-serif",
             "size": 24,
             "line": 28.8,
-            "tracking": "-1.08px",
+            "tracking": "-0.6px",
             "weight": "600"
           }
         ],
@@ -10834,6 +12157,32 @@
               ]
             ],
             "overflow": false
+          },
+          {
+            "family": "Manrope, Arial, sans-serif",
+            "size": 16,
+            "line": 25.6,
+            "tracking": "normal",
+            "weight": "400",
+            "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+            "lines": [
+              [
+                "Real",
+                "commissions",
+                "paid",
+                "to",
+                "our",
+                "sales"
+              ],
+              [
+                "team.",
+                "Not",
+                "projections.",
+                "Not",
+                "averages."
+              ]
+            ],
+            "overflow": false
           }
         ],
         "actions": [
@@ -10907,6 +12256,13 @@
             "line": 16.5,
             "tracking": "0.66px",
             "weight": "400"
+          },
+          {
+            "family": "\"JetBrains Mono\", monospace",
+            "size": 11,
+            "line": 16.5,
+            "tracking": "0.66px",
+            "weight": "400"
           }
         ],
         "overflow": false,
@@ -10930,7 +12286,7 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -10940,9 +12296,19 @@
           "family": "Sora, sans-serif",
           "size": 41.4,
           "line": 48.852,
-          "tracking": "-1.863px",
+          "tracking": "-1.242px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 41.4,
+          "line": 48.852,
+          "tracking": "-1.242px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -10952,35 +12318,35 @@
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 25.92,
           "line": 31.104,
-          "tracking": "-1.1664px",
+          "tracking": "-0.648px",
           "weight": "600"
         }
       ],
@@ -11187,6 +12553,32 @@
               "an",
               "open",
               "role."
+            ]
+          ],
+          "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
             ]
           ],
           "overflow": false
@@ -11263,6 +12655,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -11277,7 +12676,7 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -11287,9 +12686,19 @@
           "family": "Sora, sans-serif",
           "size": 44,
           "line": 51.92,
-          "tracking": "-1.98px",
+          "tracking": "-1.32px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 44,
+          "line": 51.92,
+          "tracking": "-1.32px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -11299,35 +12708,35 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.6,
-          "tracking": "-1.26px",
+          "tracking": "-0.7px",
           "weight": "600"
         }
       ],
@@ -11534,6 +12943,32 @@
               "an",
               "open",
               "role."
+            ]
+          ],
+          "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
             ]
           ],
           "overflow": false
@@ -11610,6 +13045,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -11624,7 +13066,7 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -11634,9 +13076,19 @@
           "family": "Sora, sans-serif",
           "size": 32.016,
           "line": 37.7789,
-          "tracking": "-1.44072px",
+          "tracking": "-0.96048px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 32.016,
+          "line": 37.7789,
+          "tracking": "-0.96048px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -11646,35 +13098,35 @@
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 27.648,
           "line": 33.1776,
-          "tracking": "-1.24416px",
+          "tracking": "-0.6912px",
           "weight": "600"
         }
       ],
@@ -11884,6 +13336,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -11957,6 +13435,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -11971,7 +13456,7 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -11981,9 +13466,19 @@
           "family": "Sora, sans-serif",
           "size": 35.328,
           "line": 41.687,
-          "tracking": "-1.58976px",
+          "tracking": "-1.05984px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 35.328,
+          "line": 41.687,
+          "tracking": "-1.05984px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -11993,35 +13488,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -12237,6 +13732,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -12310,6 +13831,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -12324,7 +13852,7 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -12334,9 +13862,19 @@
           "family": "Sora, sans-serif",
           "size": 31.744,
           "line": 37.4579,
-          "tracking": "-1.42848px",
+          "tracking": "-0.95232px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 31.744,
+          "line": 37.4579,
+          "tracking": "-0.95232px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -12346,35 +13884,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -12596,6 +14134,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -12669,6 +14233,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -12683,7 +14254,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -12693,9 +14264,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -12705,35 +14286,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -12943,6 +14524,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -13016,6 +14623,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -13030,7 +14644,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -13040,9 +14654,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -13052,35 +14676,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -13290,6 +14914,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -13363,6 +15013,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -13377,7 +15034,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -13387,9 +15044,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -13399,35 +15066,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -13637,6 +15304,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -13710,6 +15403,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -13724,7 +15424,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -13734,9 +15434,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -13746,35 +15456,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -13984,6 +15694,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team.",
+              "Not"
+            ],
+            [
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -14057,6 +15793,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -14071,7 +15814,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -14081,9 +15824,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -14093,35 +15846,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -14341,6 +16094,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team."
+            ],
+            [
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -14401,6 +16180,13 @@
         "weight": "600"
       },
       "eyebrows": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,
@@ -14428,7 +16214,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -14438,9 +16224,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -14450,35 +16246,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -14698,6 +16494,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales",
+              "team."
+            ],
+            [
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -14771,6 +16593,13 @@
           "line": 16.5,
           "tracking": "0.66px",
           "weight": "400"
+        },
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
         }
       ],
       "overflow": false,
@@ -14785,7 +16614,7 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "problem-heading",
           "before": 12,
@@ -14795,9 +16624,19 @@
           "family": "Sora, sans-serif",
           "size": 28,
           "line": 33.04,
-          "tracking": "-1.26px",
+          "tracking": "-0.84px",
           "weight": "600",
           "id": "career-heading",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "family": "Sora, sans-serif",
+          "size": 28,
+          "line": 33.04,
+          "tracking": "-0.84px",
+          "weight": "600",
+          "id": "proof-heading",
           "before": 12,
           "after": 24
         }
@@ -14807,35 +16646,35 @@
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         },
         {
           "family": "Sora, sans-serif",
           "size": 24,
           "line": 28.8,
-          "tracking": "-1.08px",
+          "tracking": "-0.6px",
           "weight": "600"
         }
       ],
@@ -15065,6 +16904,32 @@
             ]
           ],
           "overflow": false
+        },
+        {
+          "family": "Manrope, Arial, sans-serif",
+          "size": 16,
+          "line": 25.6,
+          "tracking": "normal",
+          "weight": "400",
+          "text": "Real commissions paid to our sales team. Not projections. Not averages.",
+          "lines": [
+            [
+              "Real",
+              "commissions",
+              "paid",
+              "to",
+              "our",
+              "sales"
+            ],
+            [
+              "team.",
+              "Not",
+              "projections.",
+              "Not",
+              "averages."
+            ]
+          ],
+          "overflow": false
         }
       ],
       "actions": [
@@ -15125,6 +16990,13 @@
         "weight": "600"
       },
       "eyebrows": [
+        {
+          "family": "\"JetBrains Mono\", monospace",
+          "size": 11,
+          "line": 16.5,
+          "tracking": "0.66px",
+          "weight": "400"
+        },
         {
           "family": "\"JetBrains Mono\", monospace",
           "size": 11,

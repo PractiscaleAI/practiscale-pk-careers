@@ -1,7 +1,7 @@
 {
   "checks": [
     {
-      "name": "Three authorized homepage sections",
+      "name": "Five authorized homepage sections including the company film",
       "pass": true
     },
     {
