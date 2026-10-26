@@ -147,11 +147,12 @@ const bodies = [
         .locator("main>section")
         .evaluateAll(
           (els) =>
-            els.length === 5 &&
+            els.length === 6 &&
             els[1].id === "the-problem" &&
             els[2].id === "who-we-are" &&
             els[3].id === "career-paths" &&
-            els[4].id === "the-proof",
+            els[4].id === "the-proof" &&
+            els[5].id === "testimonials",
         ),
     );
     check(

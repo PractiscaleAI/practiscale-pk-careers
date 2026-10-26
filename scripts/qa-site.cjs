@@ -33,8 +33,11 @@ const fs = require("fs");
       .waitFor({ state: "hidden", timeout: 12000 });
     check("Homepage returns 200", r.status() === 200);
     check(
-      "Hero, problem, company film, career paths and laptop earnings",
-      (await page.locator("main>section").count()) === 5 &&
+      "Hero, problem, company film, career paths, laptop earnings and testimonials",
+      (await page.locator("main>section").count()) === 6 &&
+        (await page
+          .locator("#testimonials [data-testimonial-card]")
+          .count()) === 4 &&
         (await page.locator("#who-we-are").count()) === 1 &&
         (await page.locator("#the-proof").count()) === 1 &&
         (await page.locator("#the-proof [data-proof-stat]").count()) === 4 &&

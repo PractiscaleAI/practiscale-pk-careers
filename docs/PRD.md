@@ -1,16 +1,16 @@
 # PractiScale website: Product requirements
 
-Version 0.53 | Status: Continuous CEO playback with bounded decoding and preserved desktop film.
+Version 0.56 | Status: Team testimonials added after earnings; approved homepage motion preserved.
 
 ## Authority and current scope
 
-Current user instructions take precedence. Build five homepage sections in order: the approved CEO hero, the three-card career-problem section, the desktop Who we are film, one continuous training and hiring section, then laptop earnings proof with the four company facts. Navigation belongs to the hero. Preserve the original supplied preloader. The career section's three specified destination URLs resolve to focused program and hiring pages using supplied content and the existing enquiry flow. Other sections, pages, footer, backend and deployment remain deferred. Edition 1.4 supplies the brand identity; the website PDF supplies content only. Use the original logos and local Sora, Manrope and JetBrains Mono fonts.
+Current user instructions take precedence. Build six homepage sections in order: the approved CEO hero, the three-card career-problem section, the desktop Who we are film, one continuous training and hiring section, then laptop earnings proof with the four company facts, followed by team testimonials. Navigation belongs to the hero. Preserve the original supplied preloader. The career section's three specified destination URLs resolve to focused program and hiring pages using supplied content and the existing enquiry flow. Other sections, pages, footer, backend and deployment remain deferred. Edition 1.4 supplies the brand identity; the website PDF supplies content only. Use the original logos and local Sora, Manrope and JetBrains Mono fonts.
 
 This document describes the current implementation requirements. Earlier revision history is archived in docs/history/ and does not override this version.
 
 ## Typography and spacing
 
-Use one responsive scale across all five homepage sections. Preserve the hero's approved two-line headline. The problem, company film, career, stats and earnings section headings share a 28-44px scale, 1.18 line height and -0.03em tracking. Card titles share a 24-28px scale, 1.2 line height and -0.025em tracking. Main descriptive copy uses Manrope 16px with 1.6 line height; keep paragraphs readable and avoid a single final orphaned word.
+Use one responsive scale across all six homepage sections. Preserve the hero's approved two-line headline. The problem, company film, career, stats and earnings section headings share a 28-44px scale, 1.18 line height and -0.03em tracking. Card titles share a 24-28px scale, 1.2 line height and -0.025em tracking. Main descriptive copy uses Manrope 16px with 1.6 line height; keep paragraphs readable and avoid a single final orphaned word.
 
 Section eyebrows use JetBrains Mono 11px with consistent tracking. Leave 12px between the eyebrow and heading, then 24px before the card stage. Use the same responsive outer gutter for the two light sections. Primary actions use 15px labels, a 52px minimum height and 12px corners. Compact career buttons may reduce horizontal inset to keep labels on one line. Preserve natural flow when enlarged content cannot fit a pinned scene.
 
@@ -128,10 +128,20 @@ Hide original demo/preview controls. Reveal the actual page and replay on every 
 
 ## QC and maintenance
 
-Independently inspect actual desktop, tablet and phone renders, hero start/turn/end and menu states. Verify all five sections, hero-bound navigation, card reading-scene fit, exact copy/CTA/figures, contrast, clipping, enlarged text, native scroll behavior, fallbacks and original preloader. Automated results support visual QC; they do not certify photographic realism or facial likeness. Follow AGENTS.md and COMPOSITION-QC.md. Update this PRD and the TRD when scope changes.
+Independently inspect actual desktop, tablet and phone renders, hero start/turn/end and menu states. Verify all six sections, hero-bound navigation, card reading-scene fit, exact copy/CTA/figures, contrast, clipping, enlarged text, native scroll behavior, fallbacks and original preloader. Automated results support visual QC; they do not certify photographic realism or facial likeness. Follow AGENTS.md and COMPOSITION-QC.md. Update this PRD and the TRD when scope changes.
 
 ## Media loading revision 0.52
 
 The hero retains all 120 original frame URLs, the accepted blink, the Three.js shader and exact scroll-to-frame mapping. Two requests prioritize the current frame, then a directional window of twelve ahead and four behind. Cancel stale speculative requests on distant jumps, outside the hero or in hidden tabs. Keep at most 24 compressed frames and an eight-bitmap directional lookahead with two concurrent decodes. Prepare decoded neighbours ahead of demand. A completed frame may display if it moves the shown index toward the latest target; a late completion must never move away from that target or overwrite a closer frame. Reuse one GPU texture with linear sampling and no mipmap rebuilding. Close evicted bitmaps and all pending results on disposal. Versioned media paths receive immutable browser caching; mutable manifests do not. New media revisions require new filenames. The original introduction and all other section motion remain intact.
 
 A new delivery encode, office-scroll-v2.mp4, is made directly from the unchanged Downloads source: 1920x1080, 30fps, all 950 frames, 31.666667 seconds, H.264 High/yuv420p, CRF24, eight-frame keyframes, no B-frames, fast-start metadata and no audio. It is 22,092,382 bytes versus the previous 30,585,604 bytes, a 27.8% reduction. Full source-aligned SSIM is 0.989214; all 950 decoded presentation timestamps remain continuous at 1/30 seconds with zero decode errors. Original source checksum is unchanged. The former encode is retained. No content, frame order, cuts, faces or signage are regenerated or edited. See public/media/who-we-are/manifest.json and docs/qa/performance/v052.
+
+## Team testimonials, revision 0.56
+
+Add the four user-supplied quotes as a section after earnings. Eyebrow: Testimonials. H2: Growth, in their own words. Preserve every word, name and role in src/lib/testimonial-content.ts. The supplied screen recording is the visual/interaction reference: centered card, neighboring previews with less emphasis, pointer dragging, gentle settling, position selectors and changing decorative shapes.
+
+Use brand-colored career progression/support motifs, not the reference's social-media reactions. Initials are acceptable identity placeholders, with no invented portraits or links. Desktop, tablet and phone must retain the complete quote and attribution with no cropping. Native vertical scrolling advances through all four testimonials in a sticky reading stage. Reverse scroll returns to earlier quotes. Keep horizontal touch gestures, keyboard navigation and visible button alternatives synchronized to that reading progress. Reduced motion and insufficient vertical space release to natural flow. No autoplay or sound. Preserve the five preceding sections and all their motion.
+
+### Testimonial visual refinement 0.56
+
+Remove the navigation arrows. Keep four accessible selectors centered beneath the track, native grab/grabbing cursors, swiping and keyboard navigation. Give the centered card a pale brand-tinted reading surface with subtle depth. Enlarge the centered mint and soft-blue motifs to fill the card height behind the copy, matching the supplied visual scale. Preserve strong deep-teal text contrast and full quote/attribution visibility. Preserve the original wording, order and attribution.

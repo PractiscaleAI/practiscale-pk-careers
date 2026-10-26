@@ -1,0 +1,731 @@
+{
+  "checks": [
+    {
+      "name": "1440 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 21900
+      }
+    },
+    {
+      "name": "1440 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 22530
+      }
+    },
+    {
+      "name": "1440 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 23160
+      }
+    },
+    {
+      "name": "1440 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 23790
+      }
+    },
+    {
+      "name": "1440 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 23160
+      }
+    },
+    {
+      "name": "1440 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 22530
+      }
+    },
+    {
+      "name": "1440 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 21900
+      }
+    },
+    {
+      "name": "1440 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 22530
+      }
+    },
+    {
+      "name": "1440 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "1440 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "1440 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "Resize to 320 preserves reading state",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6895
+      }
+    },
+    {
+      "name": "Resize to 1440 preserves reading state",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 23790
+      }
+    },
+    {
+      "name": "Resize to 390 preserves reading state",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 17433
+      }
+    },
+    {
+      "name": "Resize to 1440 preserves reading state",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 23790
+      }
+    },
+    {
+      "name": "1440 reduced motion releases rail",
+      "pass": true
+    },
+    {
+      "name": "1536 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 17932
+      }
+    },
+    {
+      "name": "1536 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 18412
+      }
+    },
+    {
+      "name": "1536 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 18892
+      }
+    },
+    {
+      "name": "1536 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 19373
+      }
+    },
+    {
+      "name": "1536 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 18892
+      }
+    },
+    {
+      "name": "1536 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 18412
+      }
+    },
+    {
+      "name": "1536 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 17932
+      }
+    },
+    {
+      "name": "1536 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 18412
+      }
+    },
+    {
+      "name": "1536 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "1536 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "1536 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "1536 reduced motion releases rail",
+      "pass": true
+    },
+    {
+      "name": "768 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0.125,
+        "y": 18990
+      }
+    },
+    {
+      "name": "768 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 19707
+      }
+    },
+    {
+      "name": "768 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 20424
+      }
+    },
+    {
+      "name": "768 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 21140
+      }
+    },
+    {
+      "name": "768 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 20424
+      }
+    },
+    {
+      "name": "768 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 19707
+      }
+    },
+    {
+      "name": "768 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0.125,
+        "y": 18990
+      }
+    },
+    {
+      "name": "768 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 19707
+      }
+    },
+    {
+      "name": "768 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "768 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "768 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "768 reduced motion releases rail",
+      "pass": true
+    },
+    {
+      "name": "390 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0.03125,
+        "y": 15661
+      }
+    },
+    {
+      "name": "390 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 16252
+      }
+    },
+    {
+      "name": "390 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 16843
+      }
+    },
+    {
+      "name": "390 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 17433
+      }
+    },
+    {
+      "name": "390 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 16843
+      }
+    },
+    {
+      "name": "390 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 16252
+      }
+    },
+    {
+      "name": "390 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0.03125,
+        "y": 15661
+      }
+    },
+    {
+      "name": "390 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": 0,
+        "y": 16252
+      }
+    },
+    {
+      "name": "390 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "390 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "390 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "390 reduced motion releases rail",
+      "pass": true
+    },
+    {
+      "name": "375 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -91.8125,
+        "y": 6050
+      }
+    },
+    {
+      "name": "375 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 6517
+      }
+    },
+    {
+      "name": "375 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 6984
+      }
+    },
+    {
+      "name": "375 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 7451
+      }
+    },
+    {
+      "name": "375 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 6984
+      }
+    },
+    {
+      "name": "375 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 6517
+      }
+    },
+    {
+      "name": "375 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -91.8125,
+        "y": 6050
+      }
+    },
+    {
+      "name": "375 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -92,
+        "y": 6517
+      }
+    },
+    {
+      "name": "375 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "375 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "375 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "375 reduced motion releases rail",
+      "pass": true
+    },
+    {
+      "name": "320 forward 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -190.84375,
+        "y": 5635
+      }
+    },
+    {
+      "name": "320 forward 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6055
+      }
+    },
+    {
+      "name": "320 forward 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6475
+      }
+    },
+    {
+      "name": "320 forward 3",
+      "pass": true,
+      "detail": {
+        "active": 3,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6895
+      }
+    },
+    {
+      "name": "320 reverse 2",
+      "pass": true,
+      "detail": {
+        "active": 2,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6475
+      }
+    },
+    {
+      "name": "320 reverse 1",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6055
+      }
+    },
+    {
+      "name": "320 reverse 0",
+      "pass": true,
+      "detail": {
+        "active": 0,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -190.84375,
+        "y": 5635
+      }
+    },
+    {
+      "name": "320 rapid reversal settles latest target",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "center": 0,
+        "cardFits": true,
+        "controlsFit": true,
+        "top": -191,
+        "y": 6055
+      }
+    },
+    {
+      "name": "320 scrolling does not move focus",
+      "pass": true,
+      "detail": "BODY"
+    },
+    {
+      "name": "320 rail reaches final quote",
+      "pass": true
+    },
+    {
+      "name": "320 native document end reachable",
+      "pass": true
+    },
+    {
+      "name": "320 reduced motion releases rail",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

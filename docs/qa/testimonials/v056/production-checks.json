@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "name": "Production page 1440",
+      "pass": true
+    },
+    {
+      "name": "Cancelled drag releases and settles",
+      "pass": true,
+      "detail": {
+        "center": 0
+      }
+    },
+    {
+      "name": "No animation writes while idle",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "Endpoint drag resistance is bounded",
+      "pass": true,
+      "detail": 65
+    },
+    {
+      "name": "Endpoint release retains first quote",
+      "pass": true
+    },
+    {
+      "name": "Production page 768",
+      "pass": true
+    },
+    {
+      "name": "Production page 320",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

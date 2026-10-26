@@ -1,0 +1,536 @@
+{
+  "checks": [
+    {
+      "name": "Exact four supplied quotes",
+      "pass": true
+    },
+    {
+      "name": "Original five sections retained before testimonials",
+      "pass": true
+    },
+    {
+      "name": "No extra portrait/image/video/GPU assets",
+      "pass": true
+    },
+    {
+      "name": "Initial desktop center and full copy",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Horizontal drag advances",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "Drag settles exactly centered",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "End selects Hassan",
+      "pass": true
+    },
+    {
+      "name": "Next disabled at final slide",
+      "pass": true
+    },
+    {
+      "name": "Keyboard previous selects James",
+      "pass": true
+    },
+    {
+      "name": "Rapid commands interrupt without stale settlement",
+      "pass": true
+    },
+    {
+      "name": "Rapid input settlement",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Named selector works",
+      "pass": true
+    },
+    {
+      "name": "Reverse drag returns to first",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "Reverse settlement",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1920x1080 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1536x686 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1536x686 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1536x686 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1536x686 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1024x600 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0.0078125,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1024x600 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0.0078125,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1024x600 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0.0078125,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1024x600 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0.0078125,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "768x1024 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "768x1024 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "768x1024 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "768x1024 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Accessibility 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "violations": []
+      }
+    },
+    {
+      "name": "530x900 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "530x900 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "530x900 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "530x900 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390x844 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390x844 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390x844 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390x844 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Accessibility 390",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "violations": []
+      }
+    },
+    {
+      "name": "375x667 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "375x667 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "375x667 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "375x667 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "320x568 slide 1 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "320x568 slide 2 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "320x568 slide 3 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "320x568 slide 4 fits",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Accessibility 320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "violations": []
+      }
+    },
+    {
+      "name": "Resize preserves selected Hassan",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Resize retains selected person",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion selection is immediate",
+      "pass": true,
+      "detail": {
+        "center": 0,
+        "overflow": 0,
+        "quoteFits": true,
+        "personFits": true,
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "Reduced motion cursor absent",
+      "pass": true
+    },
+    {
+      "name": "Real touch swipe advances",
+      "pass": true
+    },
+    {
+      "name": "Vertical touch remains native page scroll",
+      "pass": true
+    },
+    {
+      "name": "Vertical gesture does not change testimonial",
+      "pass": true
+    },
+    {
+      "name": "No-JS retains all complete quotes",
+      "pass": true
+    },
+    {
+      "name": "No-JS has native horizontal overflow and no dead controls",
+      "pass": true
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "width": 768,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "violations": []
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # PractiScale design context
 
-Marketing website. Current authority is the user's accepted work, Edition 1.4, and docs/PRD.md + docs/TRD.md revision 0.53. Keep existing hero, navigation, original introduction, problem-card choreography and career-card exchange intact.
+Marketing website. Current authority is the user's accepted work, Edition 1.4, and docs/PRD.md + docs/TRD.md revision 0.56. Keep existing hero, navigation, original introduction, problem-card choreography and career-card exchange intact.
 
 ## Visual roles
 
@@ -13,7 +13,7 @@ Marketing website. Current authority is the user's accepted work, Edition 1.4, a
 
 ## Current composition
 
-Hero, The Problem, the desktop Who we are film, Two Ways In and laptop earnings are the five active homepage sections. The user removed the separate illustrative campus section. Preserve its sources and exports as historical work without mounting its renderer. The four company facts now appear once, at the bottom of the laptop opening. Labels stay at least 16px and order stays healthcare, team, candidates, publications.
+Hero, The Problem, the desktop Who we are film, Two Ways In, laptop earnings and team testimonials are the six active homepage sections. The user removed the separate illustrative campus section. Preserve its sources and exports as historical work without mounting its renderer. The four company facts now appear once, at the bottom of the laptop opening. Labels stay at least 16px and order stays healthcare, team, candidates, publications.
 
 The accepted front-facing laptop follows. Copy and the closed device start side by side on desktop, stacked on portrait devices. The four facts sit below the opening copy and closed device, in four desktop columns or a two-column portrait grid. A synchronized whole-group departure moves the intro upward and facts downward, clearing the device before overlap as scrolling expands the scene, opens the lid, presents ten qualified earnings records and the total, then closes it. Preserve the laptop's geometry and fixed front-facing orientation. The homepage is silent. Do not restore sound controls, sound synthesis, the outside earnings caption or the outside record counter. No visible detail table, added progress bar or prototype navigation.
 
@@ -34,3 +34,13 @@ The hero retains all 120 original frame URLs, the accepted blink, the Three.js s
 A new delivery encode, office-scroll-v2.mp4, is made directly from the unchanged Downloads source: 1920x1080, 30fps, all 950 frames, 31.666667 seconds, H.264 High/yuv420p, CRF24, eight-frame keyframes, no B-frames, fast-start metadata and no audio. It is 22,092,382 bytes versus the previous 30,585,604 bytes, a 27.8% reduction. Full source-aligned SSIM is 0.989214; all 950 decoded presentation timestamps remain continuous at 1/30 seconds with zero decode errors. Original source checksum is unchanged. The former encode is retained. No content, frame order, cuts, faces or signage are regenerated or edited. See public/media/who-we-are/manifest.json and docs/qa/performance/v052.
 
 Resize restoration uses the last stable scene owner recorded before viewport reflow. It must not capture a temporarily visible company film created by upstream pin changes. Record native scroll position without per-frame DOM geometry reads; cancel the temporary correction when navigation leaves the company scene. This prevents the company film from pulling the career section out of view after short-to-tall or phone-to-desktop resizing.
+
+## Team testimonials
+
+Follow the supplied Mojo carousel recording: one centered wide card, faded neighboring previews, direct horizontal dragging and a smooth settle. Place it after laptop earnings on Fog to move from numbers into the team's first-person stories. Keep all four supplied quotes verbatim and in order: Kashaf Abbasi, Jason Brown, James Ephrim, Hassan Ali. Initials identify people until approved portraits are supplied; do not invent photographs, social links, verification marks or endorsement ratings.
+
+Reuse Sora headings, Manrope quotations and attribution, JetBrains Mono metadata, the shared H2 scale, outer gutters and 24px card corners. Muted mint and blue SVG motifs suggest growth, an open ceiling, milestones and support. These are decorative, not earnings charts. Fog is dominant, deep teal carries the type and controls, and accents stay subordinate. The isolated CSS module derives colors from globals.css variables with color-mix; it adds no global palette tokens.
+
+Keep vertical page scrolling native. A CSS sticky reading stage advances one testimonial per scroll interval and reverses with upward scrolling; do not intercept the wheel or lock the page. Fast input replaces the current destination rather than queuing transitions. Keep each quote fully visible during its reading hold. Release the rail for reduced motion or when the carousel cannot fit the viewport. Four centered selectors and Left/Right/Home/End keys provide alternatives to dragging. The user removed the previous/next arrow buttons. Use the native grab/grabbing cursor, without a floating cursor overlay. Reduced motion selects immediately without motif parallax. No autoplay, sound, new media downloads or WebGL. Server-render all quotes; without JavaScript the same cards remain a native horizontal scroll-snap list. Do not change existing scene choreography.
+
+The centered card uses a lightly tinted reading surface and restrained shadow; neighboring cards recede into Fog while retaining legible text. Large centered mint/soft-blue growth motifs span the card height behind the quote, following the supplied scale reference. Deep-teal text stays fully opaque over every fill; motifs are decorative and ignore pointer input. A fine divider separates the attribution, with a deep-teal initials badge. Position selectors remain centered at every width with a scroll hint in the sticky scene and a drag/swipe hint in the natural-flow fallback. No navigation arrows or duplicate numeric indicators.

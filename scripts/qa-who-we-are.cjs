@@ -346,6 +346,7 @@ async function state(page) {
             "career-paths",
 
             "the-proof",
+            "testimonials",
           ]),
         s.sections,
       );
