@@ -4,7 +4,7 @@ const fs = require("node:fs/promises"),
   path = require("node:path");
 const out = path.join(
   __dirname,
-  "../docs/qa/who-we-are/v052",
+  "../docs/qa/who-we-are/v057",
   process.argv[2] === "native" ? "native" : "main",
 );
 const result = { checks: [], errors: [], layouts: [], accessibility: [] };
@@ -392,8 +392,47 @@ async function state(page) {
           h - s.description.b <= 128.1 &&
           s.description.y >= s.windowRect.b + 23.9 &&
           s.description.x > s.copy.x &&
-          s.descriptionColor === "rgb(19, 65, 67)",
+          s.descriptionColor === "rgb(70, 86, 91)",
         { heading: s.copy, description: s.description, window: s.windowRect },
+      );
+      const balance = await page
+        .locator("[data-who-rail]")
+        .evaluate((r, win) => {
+          const clip = getComputedStyle(
+            r.querySelector("[data-who-plane]"),
+          ).clipPath;
+          const points = clip.match(/calc\([^)]*\)/g);
+          const resolve = (value) => {
+            const m = value?.match(/calc\(([\d.]+)% ([+-]) ([\d.]+)px\)/);
+            if (!m) return NaN;
+            return (+m[1] / 100) * innerWidth + (m[2] === "+" ? 1 : -1) * +m[3];
+          };
+          const a = resolve(points?.[0]),
+            b = resolve(points?.[1]);
+          const at = (y) => a + ((b - a) * y) / innerHeight;
+          const crossings = [at(win.y), at(win.b)];
+          const style = getComputedStyle(
+            r.querySelector("[data-who-description]"),
+          );
+          return {
+            clip,
+            crossings,
+            cornerClearance: Math.min(
+              ...crossings.flatMap((x) => [x - win.x, win.r - x]),
+            ),
+            width: parseFloat(style.width),
+            font: parseFloat(style.fontSize),
+          };
+        }, s.windowRect);
+      check(
+        `${w}: diagonal crosses the video interior clear of corners`,
+        balance.cornerClearance >= s.windowRect.w * 0.3,
+        balance,
+      );
+      check(
+        `${w}: supporting paragraph has restrained measure and readable type`,
+        balance.width <= 500.1 && balance.font >= 15 && balance.font <= 16,
+        balance,
       );
       check(
         `${w}: opening video fits viewport at its source aspect`,
