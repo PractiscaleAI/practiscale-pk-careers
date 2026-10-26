@@ -153,8 +153,28 @@ async function deviceFill(page) {
           p = await ctx.newPage();
         p.on("pageerror", (e) => report.errors.push(String(e)));
         await ready(p, hash);
-        await wait(1500);
+        const alignmentStart = Date.now();
+        await p.waitForFunction(
+          () =>
+            Math.abs(
+              document
+                .querySelector("[data-laptop-rail]")
+                .getBoundingClientRect().top,
+            ) < 3,
+          null,
+          { timeout: 8000 },
+        );
+        const alignmentMs = Date.now() - alignmentStart;
+        // Check that later font/scene refreshes do not move a settled link.
+        await wait(1800);
         const f = await facts(p);
+        report.layouts.push({
+          width: w,
+          hash,
+          alignmentMs,
+          confirmationDelayMs: 1800,
+          rail: f.rail,
+        });
         check(
           `${w}/${hash}: current and legacy links reach the earnings section`,
           Math.abs(f.rail.y) < 3,

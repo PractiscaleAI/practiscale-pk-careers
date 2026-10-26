@@ -761,32 +761,32 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1192,
-          "right": 1236,
+          "left": 1178,
+          "right": 1222,
           "top": 664.375,
           "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1052.578125,
-          "right": 1176,
+          "left": 1038.578125,
+          "right": 1162,
           "top": 661.75,
           "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1052.578125,
-          "right": 1176,
+          "left": 1038.578125,
+          "right": 1162,
           "top": 686.25,
           "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1052.578125,
-          "right": 1236,
+          "left": 1038.578125,
+          "right": 1222,
           "top": 661.75,
           "bottom": 711,
           "width": 183.421875,
@@ -801,32 +801,32 @@
       "pass": true,
       "detail": {
         "icon": {
-          "left": 1192,
-          "right": 1236,
+          "left": 1178,
+          "right": 1222,
           "top": 664.375,
           "bottom": 708.375,
           "width": 44,
           "height": 44
         },
         "caption": {
-          "left": 1052.578125,
-          "right": 1176,
+          "left": 1038.578125,
+          "right": 1162,
           "top": 661.75,
           "bottom": 678.25,
           "width": 123.421875,
           "height": 16.5
         },
         "label": {
-          "left": 1052.578125,
-          "right": 1176,
+          "left": 1038.578125,
+          "right": 1162,
           "top": 686.25,
           "bottom": 711,
           "width": 123.421875,
           "height": 24.75
         },
         "anchor": {
-          "left": 1052.578125,
-          "right": 1236,
+          "left": 1038.578125,
+          "right": 1222,
           "top": 661.75,
           "bottom": 711,
           "width": 183.421875,
@@ -1032,7 +1032,7 @@
     {
       "name": "375-reproduced-old-boundary",
       "maxChannelStep": 7,
-      "meanChannelStep": 1.744186046511628,
+      "meanChannelStep": 1.7403100775193798,
       "y": 110.21875,
       "samples": 258
     },

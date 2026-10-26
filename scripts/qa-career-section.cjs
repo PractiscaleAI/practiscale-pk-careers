@@ -86,25 +86,60 @@ const bodies = [
       await page.waitForTimeout(900);
       // Check reading holds after the real scrub settles. A fixed delay alone
       // can sample an intentionally clipped incoming group on software WebGL.
-      await page.waitForFunction(
-        () => {
-          const root = document.querySelector("[data-career-rail]");
-          if (root.dataset.mode !== "pinned") return true;
-          const top = parseFloat(
-            getComputedStyle(root.closest("section")).getPropertyValue(
-              "--career-top",
-            ),
-          );
-          const start = scrollY + root.getBoundingClientRect().top - top;
-          const travel = parseFloat(
-            root.style.getPropertyValue("--career-travel"),
-          );
-          const expected = Math.max(0, Math.min(1, (scrollY - start) / travel));
-          return Math.abs(Number(root.dataset.progress) - expected) < 0.001;
-        },
-        null,
-        { polling: 100, timeout: 15000 },
-      );
+      await page
+        .waitForFunction(
+          () => {
+            const root = document.querySelector("[data-career-rail]");
+            if (root.dataset.mode !== "pinned") return true;
+            const top = parseFloat(
+              getComputedStyle(root.closest("section")).getPropertyValue(
+                "--career-top",
+              ),
+            );
+            const start = scrollY + root.getBoundingClientRect().top - top;
+            const travel = parseFloat(
+              root.style.getPropertyValue("--career-travel"),
+            );
+            const expected = Math.max(
+              0,
+              Math.min(1, (scrollY - start) / travel),
+            );
+            return Math.abs(Number(root.dataset.progress) - expected) < 0.001;
+          },
+          null,
+          { polling: 100, timeout: 15000 },
+        )
+        .catch(async (error) => {
+          report.scrollFailure = { requestedTop: top, samples: [] };
+          for (const delay of [0, 500, 1500]) {
+            if (delay) await page.waitForTimeout(delay);
+            report.scrollFailure.samples.push(
+              await page.evaluate(() => {
+                const data = (selector) => {
+                  const el = document.querySelector(selector);
+                  return (
+                    el && {
+                      ...el.dataset,
+                      rect: el.getBoundingClientRect().toJSON(),
+                      style: el.getAttribute("style"),
+                    }
+                  );
+                };
+                return {
+                  scrollY,
+                  width: innerWidth,
+                  height: innerHeight,
+                  career: data("[data-career-rail]"),
+                  world: data("[data-career-world]"),
+                  who: data("[data-who-rail]"),
+                  problem: data("[data-problem-scene]"),
+                };
+              }),
+            );
+          }
+          await page.screenshot({ path: `${dir}/scroll-failure.png` });
+          throw error;
+        });
     };
     check(
       "Career section follows the company film and preserved problem section",

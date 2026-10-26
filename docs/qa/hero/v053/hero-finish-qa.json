@@ -1,0 +1,1061 @@
+{
+  "checks": [
+    {
+      "name": "No rectangular lighting step at 320px",
+      "pass": true,
+      "detail": {
+        "name": "320-gradient",
+        "maxChannelStep": 1,
+        "meanChannelStep": 0.3055555555555556,
+        "y": 417.625,
+        "samples": 216
+      }
+    },
+    {
+      "name": "Outlined circle and centered arrow at 320px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 290,
+        "rowRight": 290,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "Circular arrow centers against the entire CTA block at 320px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 290,
+        "rowRight": 290,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "CTA keyboard focus remains visible at 320px",
+      "pass": true
+    },
+    {
+      "name": "No rectangular lighting step at 375px",
+      "pass": true,
+      "detail": {
+        "name": "375-gradient",
+        "maxChannelStep": 1,
+        "meanChannelStep": 0.5232558139534884,
+        "y": 404.21875,
+        "samples": 258
+      }
+    },
+    {
+      "name": "Outlined circle and centered arrow at 375px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 343,
+        "rowRight": 343,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "Circular arrow centers against the entire CTA block at 375px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 343,
+        "rowRight": 343,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "CTA keyboard focus remains visible at 375px",
+      "pass": true
+    },
+    {
+      "name": "Regression reproduces the reported clipped glow",
+      "pass": true,
+      "detail": {
+        "old": 7,
+        "current": 1
+      }
+    },
+    {
+      "name": "No rectangular lighting step at 430px",
+      "pass": true,
+      "detail": {
+        "name": "430-gradient",
+        "maxChannelStep": 1,
+        "meanChannelStep": 0.4,
+        "y": 416.40625,
+        "samples": 300
+      }
+    },
+    {
+      "name": "Outlined circle and centered arrow at 430px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 394.484375,
+        "rowRight": 394.484375,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "Circular arrow centers against the entire CTA block at 430px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 394.484375,
+        "rowRight": 394.484375,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "CTA keyboard focus remains visible at 430px",
+      "pass": true
+    },
+    {
+      "name": "No rectangular lighting step at 530px",
+      "pass": true,
+      "detail": {
+        "name": "530-gradient",
+        "maxChannelStep": 1,
+        "meanChannelStep": 0.37333333333333335,
+        "y": 438.5625,
+        "samples": 375
+      }
+    },
+    {
+      "name": "Outlined circle and centered arrow at 530px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 490,
+        "rowRight": 490,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "Circular arrow centers against the entire CTA block at 530px",
+      "pass": true,
+      "detail": {
+        "width": 44,
+        "height": 44,
+        "right": 490,
+        "rowRight": 490,
+        "blockCenterOffset": -0.0078125,
+        "border": "1px",
+        "radius": "50%",
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "name": "CTA keyboard focus remains visible at 530px",
+      "pass": true
+    },
+    {
+      "name": "Caption and label clear the compact icon at 320px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 30,
+          "right": 230,
+          "top": 900.625,
+          "bottom": 915.625,
+          "width": 200,
+          "height": 15
+        },
+        "label": {
+          "left": 30,
+          "right": 230,
+          "top": 923.625,
+          "bottom": 951.671875,
+          "width": 200,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 320px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 30,
+          "right": 230,
+          "top": 900.625,
+          "bottom": 915.625,
+          "width": 200,
+          "height": 15
+        },
+        "label": {
+          "left": 30,
+          "right": 230,
+          "top": 923.625,
+          "bottom": 951.671875,
+          "width": 200,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Enlarged CTA text remains clear of the icon at 320px",
+      "pass": true
+    },
+    {
+      "name": "Caption and label clear the compact icon at 375px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 299,
+          "right": 343,
+          "top": 536.984375,
+          "bottom": 580.984375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 32,
+          "right": 283,
+          "top": 533.46875,
+          "bottom": 548.46875,
+          "width": 251,
+          "height": 15
+        },
+        "label": {
+          "left": 32,
+          "right": 283,
+          "top": 556.46875,
+          "bottom": 584.515625,
+          "width": 251,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 32,
+          "right": 343,
+          "top": 533.46875,
+          "bottom": 584.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 375px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 299,
+          "right": 343,
+          "top": 536.984375,
+          "bottom": 580.984375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 32,
+          "right": 283,
+          "top": 533.46875,
+          "bottom": 548.46875,
+          "width": 251,
+          "height": 15
+        },
+        "label": {
+          "left": 32,
+          "right": 283,
+          "top": 556.46875,
+          "bottom": 584.515625,
+          "width": 251,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 32,
+          "right": 343,
+          "top": 533.46875,
+          "bottom": 584.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 430px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 603.609375,
+          "bottom": 647.609375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 35.515625,
+          "right": 334.484375,
+          "top": 600.09375,
+          "bottom": 615.09375,
+          "width": 298.96875,
+          "height": 15
+        },
+        "label": {
+          "left": 35.515625,
+          "right": 334.484375,
+          "top": 623.09375,
+          "bottom": 651.140625,
+          "width": 298.96875,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 600.09375,
+          "bottom": 651.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 430px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 603.609375,
+          "bottom": 647.609375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 35.515625,
+          "right": 334.484375,
+          "top": 600.09375,
+          "bottom": 615.09375,
+          "width": 298.96875,
+          "height": 15
+        },
+        "label": {
+          "left": 35.515625,
+          "right": 334.484375,
+          "top": 623.09375,
+          "bottom": 651.140625,
+          "width": 298.96875,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 600.09375,
+          "bottom": 651.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Enlarged CTA text remains clear of the icon at 430px",
+      "pass": true
+    },
+    {
+      "name": "Caption and label clear the compact icon at 530px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 446,
+          "right": 490,
+          "top": 681.84375,
+          "bottom": 725.84375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 40,
+          "right": 430,
+          "top": 678.328125,
+          "bottom": 693.328125,
+          "width": 390,
+          "height": 15
+        },
+        "label": {
+          "left": 40,
+          "right": 430,
+          "top": 701.328125,
+          "bottom": 729.375,
+          "width": 390,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 40,
+          "right": 490,
+          "top": 678.328125,
+          "bottom": 729.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 530px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 446,
+          "right": 490,
+          "top": 681.84375,
+          "bottom": 725.84375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 40,
+          "right": 430,
+          "top": 678.328125,
+          "bottom": 693.328125,
+          "width": 390,
+          "height": 15
+        },
+        "label": {
+          "left": 40,
+          "right": 430,
+          "top": 701.328125,
+          "bottom": 729.375,
+          "width": 390,
+          "height": 28.046875
+        },
+        "anchor": {
+          "left": 40,
+          "right": 490,
+          "top": 678.328125,
+          "bottom": 729.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "centerOffset": -0.0078125,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 768px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 680,
+          "right": 724,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 540.578125,
+          "right": 664,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 540.578125,
+          "right": 664,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 540.578125,
+          "right": 724,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 768px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 680,
+          "right": 724,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 540.578125,
+          "right": 664,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 540.578125,
+          "right": 664,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 540.578125,
+          "right": 724,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 1024px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 936,
+          "right": 980,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 796.578125,
+          "right": 920,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 796.578125,
+          "right": 920,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 796.578125,
+          "right": 980,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 1024px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 936,
+          "right": 980,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 796.578125,
+          "right": 920,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 796.578125,
+          "right": 920,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 796.578125,
+          "right": 980,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 1192px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1104,
+          "right": 1148,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 964.578125,
+          "right": 1088,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 964.578125,
+          "right": 1088,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 964.578125,
+          "right": 1148,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 1192px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1104,
+          "right": 1148,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 964.578125,
+          "right": 1088,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 964.578125,
+          "right": 1088,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 964.578125,
+          "right": 1148,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 1280px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1178,
+          "right": 1222,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1038.578125,
+          "right": 1162,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1038.578125,
+          "right": 1162,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1038.578125,
+          "right": 1222,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 1280px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1178,
+          "right": 1222,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1038.578125,
+          "right": 1162,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1038.578125,
+          "right": 1162,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1038.578125,
+          "right": 1222,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 1440px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1338,
+          "right": 1382,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1198.578125,
+          "right": 1322,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1198.578125,
+          "right": 1322,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1198.578125,
+          "right": 1382,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 1440px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1338,
+          "right": 1382,
+          "top": 664.375,
+          "bottom": 708.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1198.578125,
+          "right": 1322,
+          "top": 661.75,
+          "bottom": 678.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1198.578125,
+          "right": 1322,
+          "top": 686.25,
+          "bottom": 711,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1198.578125,
+          "right": 1382,
+          "top": 661.75,
+          "bottom": 711,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Caption and label clear the compact icon at 1920px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1818,
+          "right": 1862,
+          "top": 658.375,
+          "bottom": 702.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 655.75,
+          "bottom": 672.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 680.25,
+          "bottom": 705,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1678.578125,
+          "right": 1862,
+          "top": 655.75,
+          "bottom": 705,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Compact arrow stays centered and inside its link at 1920px",
+      "pass": true,
+      "detail": {
+        "icon": {
+          "left": 1818,
+          "right": 1862,
+          "top": 658.375,
+          "bottom": 702.375,
+          "width": 44,
+          "height": 44
+        },
+        "caption": {
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 655.75,
+          "bottom": 672.25,
+          "width": 123.421875,
+          "height": 16.5
+        },
+        "label": {
+          "left": 1678.578125,
+          "right": 1802,
+          "top": 680.25,
+          "bottom": 705,
+          "width": 123.421875,
+          "height": 24.75
+        },
+        "anchor": {
+          "left": 1678.578125,
+          "right": 1862,
+          "top": 655.75,
+          "bottom": 705,
+          "width": 183.421875,
+          "height": 49.25
+        },
+        "centerOffset": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Lighting stays seamless while the portrait is pinned",
+      "pass": true,
+      "detail": {
+        "name": "375-pinned-gradient",
+        "maxChannelStep": 1,
+        "meanChannelStep": 0.5465116279069767,
+        "y": 220.375,
+        "samples": 258
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "boundaries": [
+    {
+      "name": "320-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.3055555555555556,
+      "y": 417.625,
+      "samples": 216
+    },
+    {
+      "name": "375-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.5232558139534884,
+      "y": 404.21875,
+      "samples": 258
+    },
+    {
+      "name": "375-reproduced-old-boundary",
+      "maxChannelStep": 7,
+      "meanChannelStep": 1.7403100775193798,
+      "y": 110.21875,
+      "samples": 258
+    },
+    {
+      "name": "430-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.4,
+      "y": 416.40625,
+      "samples": 300
+    },
+    {
+      "name": "530-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.37333333333333335,
+      "y": 438.5625,
+      "samples": 375
+    },
+    {
+      "name": "375-pinned-gradient",
+      "maxChannelStep": 1,
+      "meanChannelStep": 0.5465116279069767,
+      "y": 220.375,
+      "samples": 258
+    }
+  ]
+}

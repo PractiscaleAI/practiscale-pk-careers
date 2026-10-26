@@ -40,24 +40,34 @@ export default function HeroSequence() {
       failed = false,
       requested = 0,
       shown = -1,
-      decoding = false;
+      near = true;
     let renderer: THREE.WebGLRenderer | undefined,
       observer: ResizeObserver | undefined,
       introductionObserver: MutationObserver | undefined,
+      proximityObserver: IntersectionObserver | undefined,
       context: gsap.Context | undefined,
       material: THREE.ShaderMaterial | undefined,
       geometry: THREE.PlaneGeometry | undefined,
       texture: THREE.Texture | undefined;
     const blobs = new Map<number, Blob>(),
-      bitmaps = new Map<number, ImageBitmap>();
+      bitmaps = new Map<number, ImageBitmap>(),
+      decoding = new Set<number>(),
+      requests = new Map<number, AbortController>(),
+      unavailable = new Set<number>();
     const controller = new AbortController();
-    let refreshFrame = 0;
+    let refreshFrame = 0,
+      paintFrame = 0;
+    let scheduleLoading = () => {};
     const dispose = () => {
       controller.abort();
+      requests.forEach((request) => request.abort());
+      requests.clear();
       cancelAnimationFrame(refreshFrame);
+      cancelAnimationFrame(paintFrame);
       context?.revert();
       observer?.disconnect();
       introductionObserver?.disconnect();
+      proximityObserver?.disconnect();
       texture?.dispose();
       geometry?.dispose();
       material?.dispose();
@@ -120,64 +130,79 @@ export default function HeroSequence() {
             "uniform sampler2D map; uniform vec3 keyColor; varying vec2 vUv; void main(){vec4 c=texture2D(map,vUv);gl_FragColor=c; }",
         });
         scene.add(new THREE.Mesh(geometry, material));
+        // Every source has the same dimensions. Update one GPU allocation and
+        // avoid rebuilding mipmaps for a portrait that is rendered at screen size.
+        texture = new THREE.Texture();
+        texture.colorSpace = THREE.NoColorSpace;
+        texture.generateMipmaps = false;
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+        material.uniforms.map.value = texture;
         const render = (index: number, bitmap: ImageBitmap) => {
-          if (stopped || failed || !material || !renderer) return;
-          const old = texture;
-          texture = new THREE.Texture(bitmap);
-          texture.colorSpace = THREE.NoColorSpace;
+          if (stopped || failed || !texture || !renderer) return;
+          texture.image = bitmap;
           texture.needsUpdate = true;
-          material.uniforms.map.value = texture;
           renderer.render(scene, camera);
-          old?.dispose();
           shown = index;
           el.dataset.frame = String(index);
           el.dataset.ready = "true";
           el.dataset.engine = "three";
         };
-        const paint = async () => {
-          if (stopped || failed || decoding || requested === shown) return;
-          const index = requested,
-            blob = blobs.get(index);
-          if (!blob) return;
-          decoding = true;
+        const paint = () => {
+          if (
+            stopped ||
+            failed ||
+            !near ||
+            document.hidden ||
+            requested === shown
+          )
+            return;
+          let candidate = shown;
+          for (const index of bitmaps.keys()) {
+            // A decode can finish after the scroll target has moved. Present it
+            // if it still advances toward that target; never move away from it
+            // or let a late forward decode overwrite a reverse-scroll frame.
+            if (
+              (requested > shown && index > candidate && index <= requested) ||
+              (requested < shown && index < candidate && index >= requested)
+            )
+              candidate = index;
+          }
+          const bitmap = bitmaps.get(candidate);
+          if (candidate !== shown && bitmap) render(candidate, bitmap);
+        };
+        let scheduleDecoding = () => {};
+        const queuePaint = () => {
+          if (stopped || failed || paintFrame) return;
+          paintFrame = requestAnimationFrame(() => {
+            paintFrame = 0;
+            paint();
+            scheduleDecoding();
+          });
+        };
+        const decode = async (index: number) => {
+          const blob = blobs.get(index);
+          if (!blob || bitmaps.has(index) || decoding.has(index)) return;
+          decoding.add(index);
           try {
-            let bitmap = bitmaps.get(index);
-            if (!bitmap) {
-              bitmap = await createImageBitmap(blob, {
-                imageOrientation: "flipY",
-                premultiplyAlpha: "none",
-              });
-              if (stopped || failed) {
-                bitmap.close();
-                return;
-              }
-              bitmaps.set(index, bitmap);
-            }
-            render(index, bitmap);
-            for (const [i, b] of bitmaps) {
-              if (bitmaps.size > 8 && i !== shown) {
-                b.close();
-                bitmaps.delete(i);
-              }
-            }
+            const bitmap = await createImageBitmap(blob, {
+              imageOrientation: "flipY",
+              premultiplyAlpha: "none",
+            });
+            if (stopped || failed || !near || document.hidden) bitmap.close();
+            else bitmaps.set(index, bitmap);
           } catch {
             fallback();
           } finally {
-            decoding = false;
-            if (
-              !stopped &&
-              !failed &&
-              requested !== shown &&
-              blobs.has(requested)
-            )
-              void paint();
+            decoding.delete(index);
+            queuePaint();
           }
         };
         const resize = () => {
           if (!renderer) return;
           const { width, height } = el.getBoundingClientRect();
           renderer.setSize(width, height, false);
-          if (texture) renderer.render(scene, camera);
+          if (texture?.image) renderer.render(scene, camera);
           cancelAnimationFrame(refreshFrame);
           refreshFrame = requestAnimationFrame(() => {
             if (!stopped && !failed && context) ScrollTrigger.refresh();
@@ -189,18 +214,19 @@ export default function HeroSequence() {
         if (scroll) observer.observe(scroll);
         resize();
         renderer.domElement.addEventListener("webglcontextlost", fallback);
-        const load = async (i: number) => {
+        const load = async (i: number, signal = controller.signal) => {
           try {
-            const r = await fetch(files[i], { signal: controller.signal });
+            const r = await fetch(files[i], { signal });
             if (r.ok) {
               const b = await r.blob();
-              if (!stopped && !failed) {
+              if (!stopped && !failed && !signal.aborted) {
                 blobs.set(i, b);
-                if (i === requested) void paint();
+                queuePaint();
               }
-            }
+            } else unavailable.add(i);
           } catch {
-            /* Keep the last valid frame or poster. */
+            if (!signal.aborted) unavailable.add(i);
+            // Keep the last valid frame or poster when a source cannot load.
           }
         };
         await load(0);
@@ -209,14 +235,99 @@ export default function HeroSequence() {
           fallback();
           return;
         }
-        await paint();
+        await decode(0);
+        paint();
         if (stopped || failed) return;
-        let cursor = 1;
-        const worker = async () => {
-          while (cursor < files.length && !stopped && !failed)
-            await load(cursor++);
+        let previousRequest = 0,
+          direction = 1;
+        scheduleDecoding = () => {
+          if (stopped || failed || !near || document.hidden) return;
+          const wanted: number[] = [];
+          const add = (index: number) => {
+            if (
+              index >= 0 &&
+              index < files.length &&
+              wanted.length < 8 &&
+              !wanted.includes(index)
+            )
+              wanted.push(index);
+          };
+          add(requested);
+          for (let distance = 1; distance <= 7; distance++) {
+            add(requested + direction * distance);
+            if (distance === 1) add(requested - direction * distance);
+          }
+          // At either end of the film, use spare slots for a quick reversal.
+          for (let distance = 2; distance <= 7; distance++)
+            add(requested - direction * distance);
+          if (!wanted.includes(shown) && wanted.length === 8) wanted.pop();
+          for (const [index, bitmap] of bitmaps) {
+            if (index !== shown && !wanted.includes(index)) {
+              bitmap.close();
+              bitmaps.delete(index);
+            }
+          }
+          for (const index of wanted) {
+            if (decoding.size >= 2) break;
+            if (bitmaps.has(index) || decoding.has(index) || !blobs.has(index))
+              continue;
+            void decode(index);
+          }
         };
-        void Promise.all(Array.from({ length: 4 }, worker));
+        scheduleLoading = () => {
+          if (stopped || failed) return;
+          if (requested !== previousRequest) {
+            direction = Math.sign(requested - previousRequest);
+            previousRequest = requested;
+          }
+          paint();
+          scheduleDecoding();
+          // A bounded window follows the native timeline, including reverse
+          // scroll. A distant jump takes priority over speculative neighbours.
+          const wanted: number[] = [];
+          const add = (i: number) => {
+            if (i >= 0 && i < files.length) wanted.push(i);
+          };
+          add(requested);
+          for (let distance = 1; distance <= 12; distance++) {
+            add(requested + direction * distance);
+            if (distance <= 4) add(requested - direction * distance);
+          }
+          for (const [i, request] of requests)
+            if (!near || document.hidden || !wanted.includes(i))
+              request.abort();
+          // Keep compressed sources as well as decoded bitmaps bounded.
+          const oldest = [...blobs.keys()].sort(
+            (a, b) => Math.abs(b - requested) - Math.abs(a - requested),
+          );
+          for (const i of oldest) {
+            if (blobs.size <= 24) break;
+            if (i !== requested && i !== shown) blobs.delete(i);
+          }
+          if (!near || document.hidden) return;
+          for (const i of wanted) {
+            if (requests.size >= 2) break;
+            if (blobs.has(i) || requests.has(i) || unavailable.has(i)) continue;
+            const request = new AbortController();
+            requests.set(i, request);
+            void load(i, request.signal).finally(() => {
+              requests.delete(i);
+              scheduleLoading();
+            });
+          }
+        };
+        proximityObserver = new IntersectionObserver(
+          ([entry]) => {
+            near = entry.isIntersecting;
+            scheduleLoading();
+          },
+          { rootMargin: "300px 0px" },
+        );
+        proximityObserver.observe(el);
+        document.addEventListener("visibilitychange", scheduleLoading, {
+          signal: controller.signal,
+        });
+        scheduleLoading();
         gsap.registerPlugin(ScrollTrigger);
         const driver = { frame: 0 };
         const phoneScene =
@@ -248,7 +359,7 @@ export default function HeroSequence() {
                         (1 - holdFraction),
                     ),
                   );
-                  void paint();
+                  scheduleLoading();
                 },
               },
               onUpdate: () => {
@@ -256,7 +367,7 @@ export default function HeroSequence() {
                   files.length - 1,
                   Math.round(driver.frame),
                 );
-                void paint();
+                scheduleLoading();
               },
             },
           );

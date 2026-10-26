@@ -1,0 +1,19 @@
+{
+  "sourceSha256": "4a460f8d4a39784f3ad61d7a97a5c6676816383429fb163066e67b703a029176",
+  "webSha256": "7b18f6cbed557f3cfbdf834110d53b22e248a55335572a58d5d899841c9b9ad6",
+  "sourceBytes": 45170333,
+  "webBytes": 22092382,
+  "ssimAgainstOriginal": 0.989214,
+  "decodedFrames": 950,
+  "continuousPts": true,
+  "timeBase": "1/30",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 31.666666666666668,
+  "keyframeInterval": 8,
+  "crf": 24,
+  "bFrames": 0,
+  "duplicateTimestamps": 0,
+  "decodeErrors": false
+}

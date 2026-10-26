@@ -1,5 +1,5 @@
 {
-  "revision": "0.51",
+  "revision": "0.52",
   "source": {
     "file": "AI - Office Video (website).mp4",
     "sha256": "4A460F8D4A39784F3AD61D7A97A5C6676816383429FB163066E67B703A029176",
@@ -12,6 +12,38 @@
     "preserved": true
   },
   "web": {
+    "file": "/media/who-we-are/office-scroll-v2.mp4",
+    "bytes": 22092382,
+    "sha256": "7b18f6cbed557f3cfbdf834110d53b22e248a55335572a58d5d899841c9b9ad6",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 31.666667,
+    "frames": 950,
+    "codec": "H.264 high / yuv420p",
+    "audio": false,
+    "keyframeInterval": 8,
+    "bFrames": 0,
+    "fastStart": true,
+    "ffmpeg": "libx264 preset medium crf24 g8 keyint_min8 sc_threshold0 bf0 threads4 movflags+faststart -an",
+    "decode": {
+      "frames": 950,
+      "continuousPresentationTimestamps": true,
+      "duplicateTimestamps": 0,
+      "droppedTimestamps": 0,
+      "errors": 0
+    },
+    "ssimAgainstOriginal": 0.989214
+  },
+  "stills": {
+    "opening.webp": 0,
+    "reception.webp": 14.2,
+    "team.webp": 21.5
+  },
+  "treatment": "A new delivery encode, office-scroll-v2.mp4, is made directly from the unchanged Downloads source: 1920x1080, 30fps, all 950 frames, 31.666667 seconds, H.264 High/yuv420p, CRF24, eight-frame keyframes, no B-frames, fast-start metadata and no audio. It is 22,092,382 bytes versus the previous 30,585,604 bytes, a 27.8% reduction. Full source-aligned SSIM is 0.989214; all 950 decoded presentation timestamps remain continuous at 1/30 seconds with zero decode errors. Original source checksum is unchanged. The former encode is retained. No content, frame order, cuts, faces or signage are regenerated or edited. See public/media/who-we-are/manifest.json and docs/qa/performance/v052. The diagonal backdrop keeps shared side gutters and 24px corners, with equal height-aware vertical insets from 16px on short windows to 96px on tall ones. The heading stays upper-left with at least 112px navigation clearance. The paragraph remains lower-right, 32px inside the backdrop. Keep 16px body text, shared heading sizes and a 24-32px measured clearance from both blocks to the opening video. Keep its exact horizontal and vertical center, proportional scaling and full 100vh expansion. Use content fit rather than a fixed 620px height cutoff: a 240px source-aspect opening must fit, otherwise release to native flow. This keeps 1536x550, 1920x686, 1366x600 and 1024x600 desktop windows in the intended scroll experience. Static players have a 72svh height bound. Below 1024px the section remains omitted.",
+  "activePoster": "opening.webp",
+  "retainedUnusedStills": ["reception.webp", "team.webp"],
+  "retainedPreviousWeb": {
     "file": "/media/who-we-are/office-scroll.mp4",
     "bytes": 30585604,
     "sha256": "b0bfb0cf3456e1b1e0e9639f602e932689f09bf9ded337c235b8657cb93cf9d1",
@@ -32,13 +64,5 @@
       "dropped": 0,
       "errors": 0
     }
-  },
-  "stills": {
-    "opening.webp": 0,
-    "reception.webp": 14.2,
-    "team.webp": 21.5
-  },
-  "treatment": "No new encode, generated frames, recolouring, cuts or face edits. The existing H.264 encode is lossy. One source-aspect video stays centered horizontally and vertically while uniformly zooming into a strictly clipped 100vh window. The heading and paragraph occupy opposite corners, with measured clearance. The rounded diagonal background uses symmetric insets, Deep Teal and approved #E6ECEC. Source chronology and proportions are preserved.",
-  "activePoster": "opening.webp",
-  "retainedUnusedStills": ["reception.webp", "team.webp"]
+  }
 }

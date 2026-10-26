@@ -4191,7 +4191,7 @@
       "name": "Live front portrait remains visible",
       "pass": true,
       "detail": {
-        "frame": 116,
+        "frame": 119,
         "top": -127.78125,
         "bottom": 608.859375,
         "viewport": 812

@@ -87,6 +87,9 @@
   object-fit: contain;
   background: var(--deep);
 }
+.rail[data-mode="static"] video {
+  max-height: 72svh;
+}
 .error {
   position: relative;
   z-index: 6;
@@ -140,7 +143,7 @@
 .rail[data-mode="motion"] .copy {
   position: absolute;
   left: calc(var(--section-gutter) + 32px);
-  top: 128px;
+  top: max(112px, calc(var(--who-panel-inset, 96px) + 32px));
   width: calc(58vw - var(--section-gutter) - 64px);
   max-width: 720px;
   background: var(--deep);
@@ -156,7 +159,7 @@
   position: absolute;
   z-index: 1;
   right: calc(var(--section-gutter) + 32px);
-  bottom: 128px;
+  bottom: calc(var(--who-panel-inset, 96px) + 32px);
   width: min(560px, calc(56vw - var(--section-gutter) - 64px));
   max-width: none;
   margin: 0;

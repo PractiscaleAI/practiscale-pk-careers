@@ -1,0 +1,126 @@
+{
+  "checks": [
+    {
+      "name": "1440: rapid hero reversal settles on original frame 119",
+      "pass": true,
+      "data": {
+        "elapsedMs": 213
+      }
+    },
+    {
+      "name": "1440: rapid hero reversal settles on original frame 0",
+      "pass": true,
+      "data": {
+        "elapsedMs": 494
+      }
+    },
+    {
+      "name": "1440: rapid film reversal reaches latest target 0.66",
+      "pass": true,
+      "data": {
+        "p": 0.65739,
+        "target": 19.4703,
+        "actual": 19.470295,
+        "elapsedMs": 445
+      }
+    },
+    {
+      "name": "1440: rapid film reversal reaches latest target 0.38",
+      "pass": true,
+      "data": {
+        "p": 0.38238,
+        "target": 7.6343,
+        "actual": 7.634306,
+        "elapsedMs": 432
+      }
+    },
+    {
+      "name": "1440: rapid cards settle without queued transitions",
+      "pass": true,
+      "data": {
+        "p": 0.8971,
+        "active": 1,
+        "elapsedMs": 469
+      }
+    },
+    {
+      "name": "1440: rapid cards settle without queued transitions",
+      "pass": true,
+      "data": {
+        "p": 0.1013,
+        "active": 0,
+        "elapsedMs": 376
+      }
+    },
+    {
+      "name": "1440: rapid earnings switches finish on record 4",
+      "pass": true,
+      "data": {
+        "elapsedMs": 631
+      }
+    },
+    {
+      "name": "1440: rapid earnings switches finish on record 1",
+      "pass": true,
+      "data": {
+        "elapsedMs": 113
+      }
+    },
+    {
+      "name": "1440: fast journey has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390: rapid hero reversal settles on original frame 119",
+      "pass": true,
+      "data": {
+        "elapsedMs": 329
+      }
+    },
+    {
+      "name": "390: rapid hero reversal settles on original frame 0",
+      "pass": true,
+      "data": {
+        "elapsedMs": 505
+      }
+    },
+    {
+      "name": "390: rapid cards settle without queued transitions",
+      "pass": true,
+      "data": {
+        "p": 0.8993,
+        "active": 1,
+        "elapsedMs": 489
+      }
+    },
+    {
+      "name": "390: rapid cards settle without queued transitions",
+      "pass": true,
+      "data": {
+        "p": 0.1022,
+        "active": 0,
+        "elapsedMs": 352
+      }
+    },
+    {
+      "name": "390: rapid earnings switches finish on record 4",
+      "pass": true,
+      "data": {
+        "elapsedMs": 366
+      }
+    },
+    {
+      "name": "390: rapid earnings switches finish on record 1",
+      "pass": true,
+      "data": {
+        "elapsedMs": 109
+      }
+    },
+    {
+      "name": "390: fast journey has no horizontal overflow",
+      "pass": true
+    }
+  ],
+  "samples": [],
+  "errors": []
+}

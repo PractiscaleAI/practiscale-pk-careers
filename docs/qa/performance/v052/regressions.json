@@ -1,0 +1,67 @@
+[
+  {
+    "suite": "qa-media-loading.cjs",
+    "exitCode": 0,
+    "elapsedMs": 10827
+  },
+  {
+    "suite": "qa-motion.cjs",
+    "exitCode": 0,
+    "elapsedMs": 35938
+  },
+  {
+    "suite": "qa-mobile-editorial.cjs",
+    "exitCode": 0,
+    "elapsedMs": 44509
+  },
+  {
+    "suite": "qa-site.cjs",
+    "exitCode": 0,
+    "elapsedMs": 37998
+  },
+  {
+    "suite": "qa-typography.cjs",
+    "exitCode": 0,
+    "elapsedMs": 16815
+  },
+  {
+    "suite": "qa-problem-scroll.cjs",
+    "exitCode": 0,
+    "elapsedMs": 107832
+  },
+  {
+    "suite": "qa-career-section.cjs",
+    "exitCode": 1,
+    "elapsedMs": 142792
+  },
+  {
+    "suite": "qa-scroll-navigation.cjs",
+    "exitCode": 0,
+    "elapsedMs": 24111
+  },
+  {
+    "suite": "qa-who-we-are.cjs",
+    "exitCode": 0,
+    "elapsedMs": 103091
+  },
+  {
+    "suite": "qa-who-we-are.cjs native",
+    "exitCode": 0,
+    "elapsedMs": 26396
+  },
+  {
+    "suite": "qa-earnings-layout.cjs",
+    "exitCode": 0,
+    "elapsedMs": 68257
+  },
+  {
+    "suite": "qa-earnings-layout.cjs edges",
+    "exitCode": 0,
+    "elapsedMs": 16204
+  },
+  {
+    "suite": "qa-earnings-layout.cjs links",
+    "exitCode": 0,
+    "elapsedMs": 22610
+  }
+]

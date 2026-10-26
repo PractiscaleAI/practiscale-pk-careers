@@ -1,0 +1,144 @@
+{
+  "checks": [
+    {
+      "name": "Direct company-film link aligns",
+      "pass": true
+    },
+    {
+      "name": "Initial/transition 0 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Initial/transition 0.04 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Initial/transition 0.1 full-page accessibility",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "Real wheel advances the company scene",
+      "pass": true,
+      "data": 0.04157
+    },
+    {
+      "name": "Native PageDown advances the scene",
+      "pass": true,
+      "data": 0.17215
+    },
+    {
+      "name": "Final vision frame is retained",
+      "pass": true
+    },
+    {
+      "name": "Content-constrained desktop releases extended travel",
+      "pass": true,
+      "data": {
+        "width": 1280,
+        "height": 420,
+        "overflow": 0,
+        "mode": "static",
+        "ready": "true",
+        "p": 1,
+        "split": 1,
+        "leftX": 0,
+        "rightX": 0,
+        "target": 31.6333,
+        "actual": 31.633333,
+        "duration": 31.666667,
+        "paused": true,
+        "muted": true,
+        "controls": true,
+        "section": {
+          "x": 0,
+          "y": -0.46875,
+          "w": 1280,
+          "h": 696.703125,
+          "b": 696.234375,
+          "r": 1280
+        },
+        "copy": {
+          "x": 51.1875,
+          "y": 119.53125,
+          "w": 720,
+          "h": 61.53125,
+          "b": 181.0625,
+          "r": 771.1875
+        },
+        "description": {
+          "x": 51.1875,
+          "y": 205.0625,
+          "w": 663.671875,
+          "h": 76.78125,
+          "b": 281.84375,
+          "r": 714.859375
+        },
+        "descriptionColor": "rgb(70, 86, 91)",
+        "windowRect": {
+          "x": 180,
+          "y": 329.84375,
+          "w": 920,
+          "h": 302.390625,
+          "b": 632.234375,
+          "r": 1100
+        },
+        "clip": "none",
+        "backCount": 0,
+        "captionCount": 0,
+        "videoCount": 1,
+        "fit": "contain",
+        "neutral": "rgb(230, 236, 236)",
+        "panelClip": "polygon(75% 0px, 100% 0px, 100% 100%, 35% 100%)",
+        "backdropClip": "none",
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "sections": [
+          "",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "the-proof"
+        ],
+        "videoRect": {
+          "x": 180,
+          "y": 329.84375,
+          "w": 920,
+          "h": 302.390625,
+          "b": 632.234375,
+          "r": 1100
+        },
+        "imageRect": {
+          "x": 371.2083333333333,
+          "y": 329.84375,
+          "r": 908.7916666666667,
+          "b": 632.234375
+        }
+      }
+    },
+    {
+      "name": "Releasing the pin keeps the company film in view",
+      "pass": true,
+      "data": {
+        "x": 0,
+        "y": -0.46875,
+        "w": 1280,
+        "h": 696.703125,
+        "b": 696.234375,
+        "r": 1280
+      }
+    },
+    {
+      "name": "Failure recovery text keeps accessible contrast",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "errors": [],
+  "layouts": [],
+  "accessibility": []
+}

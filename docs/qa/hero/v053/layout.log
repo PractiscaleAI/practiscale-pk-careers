@@ -1,0 +1,4275 @@
+{
+  "checks": [
+    {
+      "name": "Readable layout without horizontal overflow 320x568",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 30,
+              "height": 88,
+              "width": 120
+            },
+            "number": {
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 30,
+              "height": 31.046875,
+              "width": 120
+            },
+            "label": {
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 30,
+              "height": 38.375,
+              "width": 120
+            }
+          },
+          {
+            "card": {
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 170,
+              "height": 88,
+              "width": 120
+            },
+            "number": {
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 170,
+              "height": 31.046875,
+              "width": 120
+            },
+            "label": {
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 170,
+              "height": 38.375,
+              "width": 120
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 975.671875,
+          "left": 8,
+          "right": 312,
+          "height": 967.671875
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
+        },
+        "trust": {
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
+        },
+        "footer": {
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 304,
+          "height": 64
+        },
+        "logo": {
+          "top": 33,
+          "bottom": 63,
+          "left": 44,
+          "right": 76,
+          "height": 30
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 248,
+          "right": 292,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 320x568",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 767.625,
+            "bottom": 855.625,
+            "left": 30,
+            "height": 88,
+            "width": 120
+          },
+          "number": {
+            "top": 767.625,
+            "bottom": 798.671875,
+            "left": 30,
+            "height": 31.046875,
+            "width": 120
+          },
+          "label": {
+            "top": 808.671875,
+            "bottom": 847.046875,
+            "left": 30,
+            "height": 38.375,
+            "width": 120
+          }
+        },
+        {
+          "card": {
+            "top": 767.625,
+            "bottom": 855.625,
+            "left": 170,
+            "height": 88,
+            "width": 120
+          },
+          "number": {
+            "top": 767.625,
+            "bottom": 798.671875,
+            "left": 170,
+            "height": 31.046875,
+            "width": 120
+          },
+          "label": {
+            "top": 808.671875,
+            "bottom": 847.046875,
+            "left": 170,
+            "height": 38.375,
+            "width": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 320x568",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
+        },
+        "trust": {
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
+        },
+        "footer": {
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 320x568",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 30,
+              "height": 88,
+              "width": 120
+            },
+            "number": {
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 30,
+              "height": 31.046875,
+              "width": 120
+            },
+            "label": {
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 30,
+              "height": 38.375,
+              "width": 120
+            }
+          },
+          {
+            "card": {
+              "top": 767.625,
+              "bottom": 855.625,
+              "left": 170,
+              "height": 88,
+              "width": 120
+            },
+            "number": {
+              "top": 767.625,
+              "bottom": 798.671875,
+              "left": 170,
+              "height": 31.046875,
+              "width": 120
+            },
+            "label": {
+              "top": 808.671875,
+              "bottom": 847.046875,
+              "left": 170,
+              "height": 38.375,
+              "width": 120
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 975.671875,
+          "left": 8,
+          "right": 312,
+          "height": 967.671875
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 389.625,
+          "left": 30,
+          "right": 290,
+          "height": 239.625
+        },
+        "trust": {
+          "top": 747.625,
+          "bottom": 876.625,
+          "left": 30,
+          "right": 290,
+          "height": 129
+        },
+        "footer": {
+          "top": 900.625,
+          "bottom": 951.671875,
+          "left": 30,
+          "right": 290,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 304,
+          "height": 64
+        },
+        "logo": {
+          "top": 33,
+          "bottom": 63,
+          "left": 44,
+          "right": 76,
+          "height": 30
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 248,
+          "right": 292,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-mark.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 375x667",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 375x667",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
+          }
+        },
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 375x667",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 375x667",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 375x812",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 375x812",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
+          }
+        },
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 375x812",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 375x812",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 375x860",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 375x860",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
+          }
+        },
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 375x860",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 375x860",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 375x900",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 375x900",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 32,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 32,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 32,
+            "height": 38.375,
+            "width": 145.5
+          }
+        },
+        {
+          "card": {
+            "top": 795.46875,
+            "bottom": 883.46875,
+            "left": 197.5,
+            "height": 88,
+            "width": 145.5
+          },
+          "number": {
+            "top": 795.46875,
+            "bottom": 828.234375,
+            "left": 197.5,
+            "height": 32.765625,
+            "width": 145.5
+          },
+          "label": {
+            "top": 838.234375,
+            "bottom": 876.609375,
+            "left": 197.5,
+            "height": 38.375,
+            "width": 145.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 375x900",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 375x900",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 32,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 32,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 32,
+              "height": 38.375,
+              "width": 145.5
+            }
+          },
+          {
+            "card": {
+              "top": 795.46875,
+              "bottom": 883.46875,
+              "left": 197.5,
+              "height": 88,
+              "width": 145.5
+            },
+            "number": {
+              "top": 795.46875,
+              "bottom": 828.234375,
+              "left": 197.5,
+              "height": 32.765625,
+              "width": 145.5
+            },
+            "label": {
+              "top": 838.234375,
+              "bottom": 876.609375,
+              "left": 197.5,
+              "height": 38.375,
+              "width": 145.5
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1003.515625,
+          "left": 8,
+          "right": 367,
+          "height": 995.515625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 376.21875,
+          "left": 32,
+          "right": 343,
+          "height": 226.21875
+        },
+        "trust": {
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "left": 32,
+          "right": 343,
+          "height": 129
+        },
+        "footer": {
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "left": 32,
+          "right": 343,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 359,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 303,
+          "right": 347,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Enlarged text spacing reflows without clipping",
+      "pass": true,
+      "detail": {
+        "copy": 479.875,
+        "trust": 879.125,
+        "footer": 1081.375,
+        "stage": 1105.375,
+        "width": 375
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 430x932",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 35.515625,
+              "height": 88,
+              "width": 169.484375
+            },
+            "number": {
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 35.515625,
+              "height": 37.578125,
+              "width": 169.484375
+            },
+            "label": {
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 35.515625,
+              "height": 38.375,
+              "width": 169.484375
+            }
+          },
+          {
+            "card": {
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 225,
+              "height": 88,
+              "width": 169.484375
+            },
+            "number": {
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 225,
+              "height": 37.578125,
+              "width": 169.484375
+            },
+            "label": {
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 225,
+              "height": 38.375,
+              "width": 169.484375
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1070.140625,
+          "left": 8,
+          "right": 422,
+          "height": 1062.140625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
+        },
+        "trust": {
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
+        },
+        "footer": {
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 414,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 358,
+          "right": 402,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 430x932",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 862.09375,
+            "bottom": 950.09375,
+            "left": 35.515625,
+            "height": 88,
+            "width": 169.484375
+          },
+          "number": {
+            "top": 862.09375,
+            "bottom": 899.671875,
+            "left": 35.515625,
+            "height": 37.578125,
+            "width": 169.484375
+          },
+          "label": {
+            "top": 909.671875,
+            "bottom": 948.046875,
+            "left": 35.515625,
+            "height": 38.375,
+            "width": 169.484375
+          }
+        },
+        {
+          "card": {
+            "top": 862.09375,
+            "bottom": 950.09375,
+            "left": 225,
+            "height": 88,
+            "width": 169.484375
+          },
+          "number": {
+            "top": 862.09375,
+            "bottom": 899.671875,
+            "left": 225,
+            "height": 37.578125,
+            "width": 169.484375
+          },
+          "label": {
+            "top": 909.671875,
+            "bottom": 948.046875,
+            "left": 225,
+            "height": 38.375,
+            "width": 169.484375
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 430x932",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
+        },
+        "trust": {
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
+        },
+        "footer": {
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 430x932",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 35.515625,
+              "height": 88,
+              "width": 169.484375
+            },
+            "number": {
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 35.515625,
+              "height": 37.578125,
+              "width": 169.484375
+            },
+            "label": {
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 35.515625,
+              "height": 38.375,
+              "width": 169.484375
+            }
+          },
+          {
+            "card": {
+              "top": 862.09375,
+              "bottom": 950.09375,
+              "left": 225,
+              "height": 88,
+              "width": 169.484375
+            },
+            "number": {
+              "top": 862.09375,
+              "bottom": 899.671875,
+              "left": 225,
+              "height": 37.578125,
+              "width": 169.484375
+            },
+            "label": {
+              "top": 909.671875,
+              "bottom": 948.046875,
+              "left": 225,
+              "height": 38.375,
+              "width": 169.484375
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1070.140625,
+          "left": 8,
+          "right": 422,
+          "height": 1062.140625
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 388.40625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 238.40625
+        },
+        "trust": {
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 129
+        },
+        "footer": {
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "left": 35.515625,
+          "right": 394.484375,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 414,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 358,
+          "right": 402,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 768x1024",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 445,
+              "bottom": 557,
+              "left": 44,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 461,
+              "bottom": 495,
+              "left": 62,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 504,
+              "bottom": 540,
+              "left": 62,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 445,
+              "bottom": 557,
+              "left": 219,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 461,
+              "bottom": 495,
+              "left": 237,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 504,
+              "bottom": 540,
+              "left": 237,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 1010,
+          "left": 14,
+          "right": 754,
+          "height": 996
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 421.1875,
+          "left": 44,
+          "right": 381.90625,
+          "height": 237.1875
+        },
+        "trust": {
+          "top": 445,
+          "bottom": 557,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 924.75,
+          "bottom": 974,
+          "left": 540.578125,
+          "right": 724,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 44,
+          "right": 724,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 44,
+          "right": 284,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 40,
+          "bottom": 88,
+          "left": 676,
+          "right": 724,
+          "height": 48
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 768x1024",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 445,
+            "bottom": 557,
+            "left": 44,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 461,
+            "bottom": 495,
+            "left": 62,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 504,
+            "bottom": 540,
+            "left": 62,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 445,
+            "bottom": 557,
+            "left": 219,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 461,
+            "bottom": 495,
+            "left": 237,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 504,
+            "bottom": 540,
+            "left": 237,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tablet cards group below the CTA with clear spacing 768x1024",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 184,
+          "bottom": 421.1875,
+          "left": 44,
+          "right": 381.90625,
+          "height": 237.1875
+        },
+        "trust": {
+          "top": 445,
+          "bottom": 557,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 924.75,
+          "bottom": 974,
+          "left": 540.578125,
+          "right": 724,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 768x1024",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 445,
+              "bottom": 557,
+              "left": 44,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 461,
+              "bottom": 495,
+              "left": 62,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 504,
+              "bottom": 540,
+              "left": 62,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 445,
+              "bottom": 557,
+              "left": 219,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 461,
+              "bottom": 495,
+              "left": 237,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 504,
+              "bottom": 540,
+              "left": 237,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 1010,
+          "left": 14,
+          "right": 754,
+          "height": 996
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 421.1875,
+          "left": 44,
+          "right": 381.90625,
+          "height": 237.1875
+        },
+        "trust": {
+          "top": 445,
+          "bottom": 557,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 924.75,
+          "bottom": 974,
+          "left": 540.578125,
+          "right": 724,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 44,
+          "right": 724,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 44,
+          "right": 284,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 40,
+          "bottom": 88,
+          "left": 676,
+          "right": 724,
+          "height": 48
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1024x768",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 44,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 62,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 62,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 219,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 237,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 237,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 754,
+          "left": 14,
+          "right": 1010,
+          "height": 740
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 44,
+          "right": 404,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 430,
+          "bottom": 542,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 668.75,
+          "bottom": 718,
+          "left": 796.578125,
+          "right": 980,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 44,
+          "right": 980,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 44,
+          "right": 284,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 40,
+          "bottom": 88,
+          "left": 932,
+          "right": 980,
+          "height": 48
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1024x768",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 430,
+            "bottom": 542,
+            "left": 44,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 446,
+            "bottom": 480,
+            "left": 62,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 489,
+            "bottom": 525,
+            "left": 62,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 430,
+            "bottom": 542,
+            "left": 219,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 446,
+            "bottom": 480,
+            "left": 237,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 489,
+            "bottom": 525,
+            "left": 237,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tablet cards group below the CTA with clear spacing 1024x768",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 44,
+          "right": 404,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 430,
+          "bottom": 542,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 668.75,
+          "bottom": 718,
+          "left": 796.578125,
+          "right": 980,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1024x768",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 44,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 62,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 62,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 219,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 237,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 237,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 754,
+          "left": 14,
+          "right": 1010,
+          "height": 740
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 44,
+          "right": 404,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 430,
+          "bottom": 542,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 668.75,
+          "bottom": 718,
+          "left": 796.578125,
+          "right": 980,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 44,
+          "right": 980,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 44,
+          "right": 284,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 40,
+          "bottom": 88,
+          "left": 932,
+          "right": 980,
+          "height": 48
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1280x720",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 558,
+              "bottom": 670,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 574,
+              "bottom": 608,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 617,
+              "bottom": 653,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 558,
+              "bottom": 670,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 574,
+              "bottom": 608,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 617,
+              "bottom": 653,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 706,
+          "left": 14,
+          "right": 1266,
+          "height": 692
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 58,
+          "right": 478,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 558,
+          "bottom": 670,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 620.75,
+          "bottom": 670,
+          "left": 1038.578125,
+          "right": 1222,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1222,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1280x720",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 558,
+            "bottom": 670,
+            "left": 58,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 574,
+            "bottom": 608,
+            "left": 76,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 617,
+            "bottom": 653,
+            "left": 76,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 558,
+            "bottom": 670,
+            "left": 233,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 574,
+            "bottom": 608,
+            "left": 251,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 617,
+            "bottom": 653,
+            "left": 251,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stat cards align with the bottom hero link 1280x720",
+      "pass": true,
+      "detail": {
+        "trust": {
+          "top": 558,
+          "bottom": 670,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 620.75,
+          "bottom": 670,
+          "left": 1038.578125,
+          "right": 1222,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1280x720",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 558,
+              "bottom": 670,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 574,
+              "bottom": 608,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 617,
+              "bottom": 653,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 558,
+              "bottom": 670,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 574,
+              "bottom": 608,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 617,
+              "bottom": 653,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 706,
+          "left": 14,
+          "right": 1266,
+          "height": 692
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 58,
+          "right": 478,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 558,
+          "bottom": 670,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 620.75,
+          "bottom": 670,
+          "left": 1038.578125,
+          "right": 1222,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1222,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1440x900",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 738,
+              "bottom": 850,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 754,
+              "bottom": 788,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 797,
+              "bottom": 833,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 738,
+              "bottom": 850,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 754,
+              "bottom": 788,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 797,
+              "bottom": 833,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 886,
+          "left": 14,
+          "right": 1426,
+          "height": 872
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 447.21875,
+          "left": 58,
+          "right": 478,
+          "height": 263.21875
+        },
+        "trust": {
+          "top": 738,
+          "bottom": 850,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 800.75,
+          "bottom": 850,
+          "left": 1198.578125,
+          "right": 1382,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1382,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1440x900",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 738,
+            "bottom": 850,
+            "left": 58,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 754,
+            "bottom": 788,
+            "left": 76,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 797,
+            "bottom": 833,
+            "left": 76,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 738,
+            "bottom": 850,
+            "left": 233,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 754,
+            "bottom": 788,
+            "left": 251,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 797,
+            "bottom": 833,
+            "left": 251,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stat cards align with the bottom hero link 1440x900",
+      "pass": true,
+      "detail": {
+        "trust": {
+          "top": 738,
+          "bottom": 850,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 800.75,
+          "bottom": 850,
+          "left": 1198.578125,
+          "right": 1382,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1440x900",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 738,
+              "bottom": 850,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 754,
+              "bottom": 788,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 797,
+              "bottom": 833,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 738,
+              "bottom": 850,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 754,
+              "bottom": 788,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 797,
+              "bottom": 833,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 886,
+          "left": 14,
+          "right": 1426,
+          "height": 872
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 447.21875,
+          "left": 58,
+          "right": 478,
+          "height": 263.21875
+        },
+        "trust": {
+          "top": 738,
+          "bottom": 850,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 800.75,
+          "bottom": 850,
+          "left": 1198.578125,
+          "right": 1382,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1382,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1536x696",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 534,
+              "bottom": 646,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 550,
+              "bottom": 584,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 593,
+              "bottom": 629,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 534,
+              "bottom": 646,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 550,
+              "bottom": 584,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 593,
+              "bottom": 629,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 682,
+          "left": 14,
+          "right": 1522,
+          "height": 668
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 58,
+          "right": 478,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 534,
+          "bottom": 646,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 596.75,
+          "bottom": 646,
+          "left": 1294.578125,
+          "right": 1478,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1478,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1536x696",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 534,
+            "bottom": 646,
+            "left": 58,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 550,
+            "bottom": 584,
+            "left": 76,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 593,
+            "bottom": 629,
+            "left": 76,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 534,
+            "bottom": 646,
+            "left": 233,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 550,
+            "bottom": 584,
+            "left": 251,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 593,
+            "bottom": 629,
+            "left": 251,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stat cards align with the bottom hero link 1536x696",
+      "pass": true,
+      "detail": {
+        "trust": {
+          "top": 534,
+          "bottom": 646,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 596.75,
+          "bottom": 646,
+          "left": 1294.578125,
+          "right": 1478,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1536x696",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 534,
+              "bottom": 646,
+              "left": 58,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 550,
+              "bottom": 584,
+              "left": 76,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 593,
+              "bottom": 629,
+              "left": 76,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 534,
+              "bottom": 646,
+              "left": 233,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 550,
+              "bottom": 584,
+              "left": 251,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 593,
+              "bottom": 629,
+              "left": 251,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 682,
+          "left": 14,
+          "right": 1522,
+          "height": 668
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 58,
+          "right": 478,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 534,
+          "bottom": 646,
+          "left": 58,
+          "right": 398,
+          "height": 112
+        },
+        "footer": {
+          "top": 596.75,
+          "bottom": 646,
+          "left": 1294.578125,
+          "right": 1478,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 58,
+          "right": 1478,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 58,
+          "right": 298,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1920x1080",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 918,
+              "bottom": 1030,
+              "left": 84,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 934,
+              "bottom": 968,
+              "left": 102,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 977,
+              "bottom": 1013,
+              "left": 102,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 918,
+              "bottom": 1030,
+              "left": 259,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 934,
+              "bottom": 968,
+              "left": 277,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 977,
+              "bottom": 1013,
+              "left": 277,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 1066,
+          "left": 14,
+          "right": 1906,
+          "height": 1052
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 454.1875,
+          "left": 84,
+          "right": 504,
+          "height": 270.1875
+        },
+        "trust": {
+          "top": 918,
+          "bottom": 1030,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 980.75,
+          "bottom": 1030,
+          "left": 1652.578125,
+          "right": 1836,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 84,
+          "right": 1836,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 84,
+          "right": 324,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1920x1080",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 918,
+            "bottom": 1030,
+            "left": 84,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 934,
+            "bottom": 968,
+            "left": 102,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 977,
+            "bottom": 1013,
+            "left": 102,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 918,
+            "bottom": 1030,
+            "left": 259,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 934,
+            "bottom": 968,
+            "left": 277,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 977,
+            "bottom": 1013,
+            "left": 277,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stat cards align with the bottom hero link 1920x1080",
+      "pass": true,
+      "detail": {
+        "trust": {
+          "top": 918,
+          "bottom": 1030,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 980.75,
+          "bottom": 1030,
+          "left": 1652.578125,
+          "right": 1836,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1920x1080",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 918,
+              "bottom": 1030,
+              "left": 84,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 934,
+              "bottom": 968,
+              "left": 102,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 977,
+              "bottom": 1013,
+              "left": 102,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 918,
+              "bottom": 1030,
+              "left": 259,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 934,
+              "bottom": 968,
+              "left": 277,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 977,
+              "bottom": 1013,
+              "left": 277,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 1066,
+          "left": 14,
+          "right": 1906,
+          "height": 1052
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 454.1875,
+          "left": 84,
+          "right": 504,
+          "height": 270.1875
+        },
+        "trust": {
+          "top": 918,
+          "bottom": 1030,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 980.75,
+          "bottom": 1030,
+          "left": 1652.578125,
+          "right": 1836,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 84,
+          "right": 1836,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 84,
+          "right": 324,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 1858x874",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 712,
+              "bottom": 824,
+              "left": 84,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 728,
+              "bottom": 762,
+              "left": 102,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 771,
+              "bottom": 807,
+              "left": 102,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 712,
+              "bottom": 824,
+              "left": 259,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 728,
+              "bottom": 762,
+              "left": 277,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 771,
+              "bottom": 807,
+              "left": 277,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 860,
+          "left": 14,
+          "right": 1844,
+          "height": 846
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 454.1875,
+          "left": 84,
+          "right": 504,
+          "height": 270.1875
+        },
+        "trust": {
+          "top": 712,
+          "bottom": 824,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 774.75,
+          "bottom": 824,
+          "left": 1590.578125,
+          "right": 1774,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 84,
+          "right": 1774,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 84,
+          "right": 324,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 1858x874",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 712,
+            "bottom": 824,
+            "left": 84,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 728,
+            "bottom": 762,
+            "left": 102,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 771,
+            "bottom": 807,
+            "left": 102,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 712,
+            "bottom": 824,
+            "left": 259,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 728,
+            "bottom": 762,
+            "left": 277,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 771,
+            "bottom": 807,
+            "left": 277,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stat cards align with the bottom hero link 1858x874",
+      "pass": true,
+      "detail": {
+        "trust": {
+          "top": 712,
+          "bottom": 824,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 774.75,
+          "bottom": 824,
+          "left": 1590.578125,
+          "right": 1774,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Desktop footer and trust cards visible without scrolling 1858x874",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 712,
+              "bottom": 824,
+              "left": 84,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 728,
+              "bottom": 762,
+              "left": 102,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 771,
+              "bottom": 807,
+              "left": 102,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 712,
+              "bottom": 824,
+              "left": 259,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 728,
+              "bottom": 762,
+              "left": 277,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 771,
+              "bottom": 807,
+              "left": 277,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 860,
+          "left": 14,
+          "right": 1844,
+          "height": 846
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 454.1875,
+          "left": 84,
+          "right": 504,
+          "height": 270.1875
+        },
+        "trust": {
+          "top": 712,
+          "bottom": 824,
+          "left": 84,
+          "right": 424,
+          "height": 112
+        },
+        "footer": {
+          "top": 774.75,
+          "bottom": 824,
+          "left": 1590.578125,
+          "right": 1774,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 84,
+          "right": 1774,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 84,
+          "right": 324,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "height": 0
+        },
+        "layout": "viewport",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 844x390",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 44,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 62,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 62,
+              "height": 36,
+              "width": 129
+            }
+          },
+          {
+            "card": {
+              "top": 430,
+              "bottom": 542,
+              "left": 219,
+              "height": 112,
+              "width": 165
+            },
+            "number": {
+              "top": 446,
+              "bottom": 480,
+              "left": 237,
+              "height": 34,
+              "width": 129
+            },
+            "label": {
+              "top": 489,
+              "bottom": 525,
+              "left": 237,
+              "height": 36,
+              "width": 129
+            }
+          }
+        ],
+        "stage": {
+          "top": 14,
+          "bottom": 754,
+          "left": 14,
+          "right": 830,
+          "height": 740
+        },
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 44,
+          "right": 404,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 430,
+          "bottom": 542,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 668.75,
+          "bottom": 718,
+          "left": 616.578125,
+          "right": 800,
+          "height": 49.25
+        },
+        "header": {
+          "top": 32,
+          "bottom": 96,
+          "left": 44,
+          "right": 800,
+          "height": 64
+        },
+        "logo": {
+          "top": 41.84375,
+          "bottom": 86.140625,
+          "left": 44,
+          "right": 284,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 40,
+          "bottom": 88,
+          "left": 752,
+          "right": 800,
+          "height": 48
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgba(0, 0, 0, 0)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-reversed.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 844x390",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 430,
+            "bottom": 542,
+            "left": 44,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 446,
+            "bottom": 480,
+            "left": 62,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 489,
+            "bottom": 525,
+            "left": 62,
+            "height": 36,
+            "width": 129
+          }
+        },
+        {
+          "card": {
+            "top": 430,
+            "bottom": 542,
+            "left": 219,
+            "height": 112,
+            "width": 165
+          },
+          "number": {
+            "top": 446,
+            "bottom": 480,
+            "left": 237,
+            "height": 34,
+            "width": 129
+          },
+          "label": {
+            "top": 489,
+            "bottom": 525,
+            "left": 237,
+            "height": 36,
+            "width": 129
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tablet cards group below the CTA with clear spacing 844x390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 184,
+          "bottom": 405.5625,
+          "left": 44,
+          "right": 404,
+          "height": 221.5625
+        },
+        "trust": {
+          "top": 430,
+          "bottom": 542,
+          "left": 44,
+          "right": 384,
+          "height": 112
+        },
+        "footer": {
+          "top": 668.75,
+          "bottom": 718,
+          "left": 616.578125,
+          "right": 800,
+          "height": 49.25
+        }
+      }
+    },
+    {
+      "name": "Readable layout without horizontal overflow 720x450",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 89.765625,
+              "width": 310
+            },
+            "number": {
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 40,
+              "height": 41.390625,
+              "width": 310
+            },
+            "label": {
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 38.375,
+              "width": 310
+            }
+          },
+          {
+            "card": {
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 89.765625,
+              "width": 310
+            },
+            "number": {
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 370,
+              "height": 41.390625,
+              "width": 310
+            },
+            "label": {
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 38.375,
+              "width": 310
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1153.03125,
+          "left": 8,
+          "right": 712,
+          "height": 1145.03125
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
+        },
+        "trust": {
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
+        },
+        "footer": {
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 704,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 648,
+          "right": 692,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "Stat cards share heights and numeric/label rows 720x450",
+      "pass": true,
+      "detail": [
+        {
+          "card": {
+            "top": 943.21875,
+            "bottom": 1032.984375,
+            "left": 40,
+            "height": 89.765625,
+            "width": 310
+          },
+          "number": {
+            "top": 943.21875,
+            "bottom": 984.609375,
+            "left": 40,
+            "height": 41.390625,
+            "width": 310
+          },
+          "label": {
+            "top": 994.609375,
+            "bottom": 1032.984375,
+            "left": 40,
+            "height": 38.375,
+            "width": 310
+          }
+        },
+        {
+          "card": {
+            "top": 943.21875,
+            "bottom": 1032.984375,
+            "left": 370,
+            "height": 89.765625,
+            "width": 310
+          },
+          "number": {
+            "top": 943.21875,
+            "bottom": 984.609375,
+            "left": 370,
+            "height": 41.390625,
+            "width": 310
+          },
+          "label": {
+            "top": 994.609375,
+            "bottom": 1032.984375,
+            "left": 370,
+            "height": 38.375,
+            "width": 310
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phone stats and footer preserve reading gutters 720x450",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
+        },
+        "trust": {
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
+        },
+        "footer": {
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
+        }
+      }
+    },
+    {
+      "name": "Reference mobile navbar 720x450",
+      "pass": true,
+      "detail": {
+        "cards": [
+          {
+            "card": {
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 89.765625,
+              "width": 310
+            },
+            "number": {
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 40,
+              "height": 41.390625,
+              "width": 310
+            },
+            "label": {
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 40,
+              "height": 38.375,
+              "width": 310
+            }
+          },
+          {
+            "card": {
+              "top": 943.21875,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 89.765625,
+              "width": 310
+            },
+            "number": {
+              "top": 943.21875,
+              "bottom": 984.609375,
+              "left": 370,
+              "height": 41.390625,
+              "width": 310
+            },
+            "label": {
+              "top": 994.609375,
+              "bottom": 1032.984375,
+              "left": 370,
+              "height": 38.375,
+              "width": 310
+            }
+          }
+        ],
+        "stage": {
+          "top": 8,
+          "bottom": 1153.03125,
+          "left": 8,
+          "right": 712,
+          "height": 1145.03125
+        },
+        "copy": {
+          "top": 150,
+          "bottom": 415.21875,
+          "left": 40,
+          "right": 680,
+          "height": 265.21875
+        },
+        "trust": {
+          "top": 923.21875,
+          "bottom": 1053.984375,
+          "left": 40,
+          "right": 680,
+          "height": 130.765625
+        },
+        "footer": {
+          "top": 1077.984375,
+          "bottom": 1129.03125,
+          "left": 40,
+          "right": 680,
+          "height": 51.046875
+        },
+        "header": {
+          "top": 16,
+          "bottom": 80,
+          "left": 16,
+          "right": 704,
+          "height": 64
+        },
+        "logo": {
+          "top": 25.84375,
+          "bottom": 70.140625,
+          "left": 28,
+          "right": 268,
+          "height": 44.296875
+        },
+        "menu": {
+          "top": 26,
+          "bottom": 70,
+          "left": 648,
+          "right": 692,
+          "height": 44
+        },
+        "layout": "content",
+        "overflow": false,
+        "bg": "rgb(243, 246, 246)",
+        "logoSrc": "http://127.0.0.1:3000/brand/logos/practiscale-logo-primary.png"
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}
+

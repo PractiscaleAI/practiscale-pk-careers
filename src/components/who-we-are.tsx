@@ -2,7 +2,7 @@ import WhoWeAreStage from "./who-we-are-stage";
 import { Eyebrow } from "./ui";
 import styles from "./who-we-are.module.css";
 
-export const officeFilm = "/media/who-we-are/office-scroll.mp4";
+export const officeFilm = "/media/who-we-are/office-scroll-v2.mp4";
 
 export default function WhoWeAre() {
   return (

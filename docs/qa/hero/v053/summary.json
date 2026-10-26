@@ -1,0 +1,93 @@
+{
+  "checks": 374,
+  "suites": 9,
+  "failed": 0,
+  "runtimeErrors": 0,
+  "visualCaptures": 21,
+  "comparisons": [
+    {
+      "width": 1440,
+      "height": 900,
+      "extraDecodeLatencyMs": 0,
+      "direction": "forward",
+      "before": {
+        "frames": 49,
+        "maxHoldMs": 946.1999999955297
+      },
+      "after": {
+        "frames": 114,
+        "maxHoldMs": 83.5
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "extraDecodeLatencyMs": 0,
+      "direction": "reverse",
+      "before": {
+        "frames": 80,
+        "maxHoldMs": 540.5
+      },
+      "after": {
+        "frames": 115,
+        "maxHoldMs": 123.39999999850988
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "extraDecodeLatencyMs": 40,
+      "direction": "forward",
+      "before": {
+        "frames": 0,
+        "maxHoldMs": 4009.60000000149
+      },
+      "after": {
+        "frames": 77,
+        "maxHoldMs": 128.80000000447035
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "extraDecodeLatencyMs": 40,
+      "direction": "reverse",
+      "before": {
+        "frames": 5,
+        "maxHoldMs": 3610.6999999955297
+      },
+      "after": {
+        "frames": 67,
+        "maxHoldMs": 140.40000000596046
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "extraDecodeLatencyMs": 0,
+      "direction": "forward",
+      "before": {
+        "frames": 106,
+        "maxHoldMs": 103
+      },
+      "after": {
+        "frames": 114,
+        "maxHoldMs": 90.30000000447035
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "extraDecodeLatencyMs": 0,
+      "direction": "reverse",
+      "before": {
+        "frames": 115,
+        "maxHoldMs": 75.20000000298023
+      },
+      "after": {
+        "frames": 115,
+        "maxHoldMs": 74.80000000447035
+      }
+    }
+  ]
+}

@@ -218,7 +218,8 @@ const fs = require("node:fs");
       check(
         `Header returns to original hero position ${width}`,
         (await placement()).inHero &&
-          Math.abs((await placement()).top - first.top) < 1,
+          Math.abs((await placement()).pageTop - first.pageTop) < 1 &&
+          Math.abs((await placement()).relativeTop - first.relativeTop) < 1,
         await placement(),
       );
       if ([375, 1536].includes(width))

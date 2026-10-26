@@ -1,0 +1,2561 @@
+{
+  "states": [
+    {
+      "label": "0 short 320",
+      "at": 7777,
+      "scrollY": 3649,
+      "width": 320,
+      "height": 480,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "flow",
+        "active": "0",
+        "progress": "0",
+        "layout": "stacked",
+        "engine": "static",
+        "box": {
+          "x": 24,
+          "y": -603.171875,
+          "width": 272,
+          "height": 1286.90625,
+          "top": -603.171875,
+          "right": 296,
+          "bottom": 683.734375,
+          "left": 24
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 24,
+          "y": -603.171875,
+          "width": 272,
+          "height": 1286.90625,
+          "top": -603.171875,
+          "right": 296,
+          "bottom": 683.734375,
+          "left": 24
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "false",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "6",
+        "ready": "false",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "static",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "static",
+        "portrait": "true",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 731.734375,
+          "width": 320,
+          "height": 811.734375,
+          "top": 731.734375,
+          "right": 320,
+          "bottom": 1543.46875,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 7307.5,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 7307.5,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 7307.89999999851,
+          "args": [
+            0,
+            5566
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 7321.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 7321.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 7322,
+          "args": [
+            0,
+            4713
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 7355.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 7355.89999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 7357.20000000298,
+          "args": [
+            0,
+            4713
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 7577.89999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 7578,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 7615.89999999851,
+          "args": [
+            0,
+            2989
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        }
+      ]
+    },
+    {
+      "label": "0 short 1366",
+      "at": 9013,
+      "scrollY": 8084,
+      "width": 1366,
+      "height": 540,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "flow",
+        "active": "0",
+        "progress": "0",
+        "layout": "stacked",
+        "engine": "static",
+        "box": {
+          "x": 54.625,
+          "y": -550,
+          "width": 1256.75,
+          "height": 1272.75,
+          "top": -550,
+          "right": 1311.375,
+          "bottom": 722.75,
+          "left": 54.625
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 54.625,
+          "y": -550,
+          "width": 1256.75,
+          "height": 1272.75,
+          "top": -550,
+          "right": 1311.375,
+          "bottom": 722.75,
+          "left": 54.625
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "false",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "6",
+        "ready": "false",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -6590.46875,
+          "width": 1366,
+          "height": 5832,
+          "top": -6590.46875,
+          "right": 1366,
+          "bottom": -758.46875,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -1298.46875,
+          "width": 1366,
+          "height": 540,
+          "top": -1298.46875,
+          "right": 1366,
+          "bottom": -758.46875,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "static",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 770.75,
+          "width": 1366,
+          "height": 1171.890625,
+          "top": 770.75,
+          "right": 1366,
+          "bottom": 1942.640625,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 8394.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 8394.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 8395,
+          "args": [
+            0,
+            2787
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 8395.10000000149,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14287\n    at Array.map (<anonymous>)\n    at tE (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14264)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16294)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 8396.39999999851,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44625)"
+        },
+        {
+          "at": 8396.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8396.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8397.10000000149,
+          "args": [
+            0,
+            2787
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8397.10000000149,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14287\n    at Array.map (<anonymous>)\n    at tE (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14264)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16294)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8792.89999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8793.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 8806.10000000149,
+          "args": [
+            0,
+            7431
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        }
+      ]
+    },
+    {
+      "label": "0 before seek",
+      "at": 9656.89999999851,
+      "scrollY": 9845,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "0",
+        "progress": "0.1055",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -33.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -33.046875,
+          "right": 1382.40625,
+          "bottom": 2105.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "3",
+        "ready": "true",
+        "box": {
+          "x": 728.09375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 1382.59375,
+          "bottom": 876,
+          "left": 728.09375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -6456,
+          "width": 1440,
+          "height": 6192,
+          "top": -6456,
+          "right": 1440,
+          "bottom": -264,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -1164,
+          "width": 1440,
+          "height": 900,
+          "top": -1164,
+          "right": 1440,
+          "bottom": -264,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 2153.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 2153.953125,
+          "right": 1440,
+          "bottom": 12053.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 9186.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9186.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9193.39999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9373.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9373.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9375.20000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9411.89999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9557.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9557.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9559.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        }
+      ]
+    },
+    {
+      "label": "0 restore 500",
+      "at": 10296.5,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8994",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "4",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 9186.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9193.39999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9373.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9373.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9375.20000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9411.89999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9557.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9557.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9559.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9669.80000000447,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    },
+    {
+      "label": "0 restore 1500",
+      "at": 11906.70000000298,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8996",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "13",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 9186.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9193.39999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9373.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9373.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9375.20000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9411.89999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9557.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9557.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9559.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9669.80000000447,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    },
+    {
+      "label": "0 restore 6000",
+      "at": 18263.89999999851,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8996",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "51",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 9186.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9193.39999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 9373.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9373.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9375.20000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9409.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9411.89999999851,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 9557.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9557.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9559.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 9669.80000000447,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    },
+    {
+      "label": "1 short 320",
+      "at": 20415.70000000298,
+      "scrollY": 3649,
+      "width": 320,
+      "height": 480,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "flow",
+        "active": "0",
+        "progress": "0",
+        "layout": "stacked",
+        "engine": "static",
+        "box": {
+          "x": 24,
+          "y": -603.171875,
+          "width": 272,
+          "height": 1286.90625,
+          "top": -603.171875,
+          "right": 296,
+          "bottom": 683.734375,
+          "left": 24
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 24,
+          "y": -603.171875,
+          "width": 272,
+          "height": 1286.90625,
+          "top": -603.171875,
+          "right": 296,
+          "bottom": 683.734375,
+          "left": 24
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "false",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "58",
+        "ready": "false",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "static",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "static",
+        "portrait": "true",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 731.734375,
+          "width": 320,
+          "height": 811.734375,
+          "top": 731.734375,
+          "right": 320,
+          "bottom": 1543.46875,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 19878.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 19878.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 19878.70000000298,
+          "args": [
+            0,
+            5566
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:36866)"
+        },
+        {
+          "at": 19896.39999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 19896.5,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 19896.80000000447,
+          "args": [
+            0,
+            4713
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 19923.39999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 19923.39999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 19924.80000000447,
+          "args": [
+            0,
+            4713
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:26705"
+        },
+        {
+          "at": 20137.89999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 20138,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        },
+        {
+          "at": 20153.70000000298,
+          "args": [
+            0,
+            2989
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:3085)"
+        }
+      ]
+    },
+    {
+      "label": "1 short 1366",
+      "at": 21397.20000000298,
+      "scrollY": 8084,
+      "width": 1366,
+      "height": 540,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "flow",
+        "active": "0",
+        "progress": "0",
+        "layout": "stacked",
+        "engine": "static",
+        "box": {
+          "x": 54.625,
+          "y": -550,
+          "width": 1256.75,
+          "height": 1272.75,
+          "top": -550,
+          "right": 1311.375,
+          "bottom": 722.75,
+          "left": 54.625
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 54.625,
+          "y": -550,
+          "width": 1256.75,
+          "height": 1272.75,
+          "top": -550,
+          "right": 1311.375,
+          "bottom": 722.75,
+          "left": 54.625
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "false",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "58",
+        "ready": "false",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -6590.46875,
+          "width": 1366,
+          "height": 5832,
+          "top": -6590.46875,
+          "right": 1366,
+          "bottom": -758.46875,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -1298.46875,
+          "width": 1366,
+          "height": 540,
+          "top": -1298.46875,
+          "right": 1366,
+          "bottom": -758.46875,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "static",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 770.75,
+          "width": 1366,
+          "height": 1171.890625,
+          "top": 770.75,
+          "right": 1366,
+          "bottom": 1942.640625,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 20809.10000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 20809.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 20809.60000000149,
+          "args": [
+            0,
+            2787
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 20809.70000000298,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14287\n    at Array.map (<anonymous>)\n    at tE (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14264)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16294)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 20811.10000000149,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44625)"
+        },
+        {
+          "at": 20811.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 20811.89999999851,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 20812.10000000149,
+          "args": [
+            0,
+            2787
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 20812.20000000298,
+          "args": [
+            {
+              "top": 2787,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at V (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44836)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14287\n    at Array.map (<anonymous>)\n    at tE (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:14264)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16294)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 21204.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 21204.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        },
+        {
+          "at": 21215.39999999851,
+          "args": [
+            0,
+            7431
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:2406)"
+        }
+      ]
+    },
+    {
+      "label": "1 before seek",
+      "at": 22045.80000000447,
+      "scrollY": 9845,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "0",
+        "progress": "0.1055",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -33.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -33.046875,
+          "right": 1382.40625,
+          "bottom": 2105.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "0.0000",
+        "dispersion": "0.0000",
+        "frames": "3",
+        "ready": "true",
+        "box": {
+          "x": 728.09375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 1382.59375,
+          "bottom": 876,
+          "left": 728.09375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -6456,
+          "width": 1440,
+          "height": 6192,
+          "top": -6456,
+          "right": 1440,
+          "bottom": -264,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -1164,
+          "width": 1440,
+          "height": 900,
+          "top": -1164,
+          "right": 1440,
+          "bottom": -264,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 2153.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 2153.953125,
+          "right": 1440,
+          "bottom": 12053.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 21564.60000000149,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21564.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21567.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21754.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21754.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21755.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21783.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21930,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21930.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21933.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        }
+      ]
+    },
+    {
+      "label": "1 restore 500",
+      "at": 22654.70000000298,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8993",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "4",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 21564.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21567.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21754.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21754.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21755.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21783.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21930,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21930.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21933.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 22058,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    },
+    {
+      "label": "1 restore 1500",
+      "at": 24178,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8996",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "13",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 21564.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21567.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21754.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21754.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21755.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21783.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21930,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21930.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21933.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 22058,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    },
+    {
+      "label": "1 restore 6000",
+      "at": 30202.89999999851,
+      "scrollY": 10937,
+      "width": 1440,
+      "height": 900,
+      "inert": false,
+      "visibility": "visible",
+      "career": {
+        "careerRail": "true",
+        "mode": "pinned",
+        "active": "1",
+        "progress": "0.8996",
+        "layout": "split",
+        "engine": "three",
+        "box": {
+          "x": 57.59375,
+          "y": -1125.046875,
+          "width": 1324.8125,
+          "height": 2139,
+          "top": -1125.046875,
+          "right": 1382.40625,
+          "bottom": 1013.953125,
+          "left": 57.59375
+        }
+      },
+      "viewport": {
+        "careerViewport": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 1324.8125,
+          "height": 764,
+          "top": 112,
+          "right": 1382.40625,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "world": {
+        "careerWorld": "true",
+        "particles": "10000",
+        "buffers": "persistent",
+        "cameraDistance": "4.638",
+        "rendering": "true",
+        "morph": "1.0000",
+        "dispersion": "0.0000",
+        "frames": "45",
+        "ready": "true",
+        "box": {
+          "x": 57.59375,
+          "y": 112,
+          "width": 654.5,
+          "height": 764,
+          "top": 112,
+          "right": 712.09375,
+          "bottom": 876,
+          "left": 57.59375
+        }
+      },
+      "who": {
+        "whoRail": "true",
+        "mode": "motion",
+        "progress": "1.00000",
+        "targetTime": "31.6333",
+        "expanded": "true",
+        "split": "1.00000",
+        "duration": "31.6667",
+        "ready": "true",
+        "renderedTime": "31.6333",
+        "box": {
+          "x": 0,
+          "y": -7548,
+          "width": 1440,
+          "height": 6192,
+          "top": -7548,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "whoViewport": {
+        "whoViewport": "true",
+        "box": {
+          "x": 0,
+          "y": -2256,
+          "width": 1440,
+          "height": 900,
+          "top": -2256,
+          "right": 1440,
+          "bottom": -1356,
+          "left": 0
+        }
+      },
+      "laptop": {
+        "laptopRail": "true",
+        "mode": "motion",
+        "portrait": "false",
+        "ready": "false",
+        "introHidden": "false",
+        "box": {
+          "x": 0,
+          "y": 1061.953125,
+          "width": 1440,
+          "height": 9900,
+          "top": 1061.953125,
+          "right": 1440,
+          "bottom": 10961.953125,
+          "left": 0
+        }
+      },
+      "laptopCanvases": 0,
+      "scrolls": [
+        {
+          "at": 21564.70000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21567.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at b (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:38831)"
+        },
+        {
+          "at": 21754.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21754.30000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21755.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21780.80000000447,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21783.70000000298,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:44615)"
+        },
+        {
+          "at": 21930,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21930.20000000298,
+          "args": [
+            0,
+            0
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1164\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15501\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:15424)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 21933.30000000447,
+          "args": [
+            0,
+            9845
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:1347\n    at r (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:862)\n    at http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16151\n    at Array.forEach (<anonymous>)\n    at tD (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:16025)\n    at t0.refresh (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:1:37522)\n    at X (http://127.0.0.1:3000/_next/static/chunks/2spcsz0rleuhb.js:108:14347)"
+        },
+        {
+          "at": 22058,
+          "args": [
+            {
+              "top": 10937.453125,
+              "behavior": "instant"
+            }
+          ],
+          "stack": "Error\n    at window.scrollTo (<anonymous>:5:96)\n    at eval (eval at evaluate (:370:30), <anonymous>:4:5)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

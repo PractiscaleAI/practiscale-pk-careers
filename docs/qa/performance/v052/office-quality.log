@@ -1,0 +1,57 @@
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000190482a0b80] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\e laptop\Downloads\AI - Office Video (website).mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    creation_time   : 2026-10-23T13:14:13.000000Z
+    Hw              : 1
+    bitrate         : 15000000
+    maxrate         : 0
+    te_is_reencode  : 1
+    encoder         : Lavf61.1.100
+  Duration: 00:00:31.67, start: 0.000000, bitrate: 11409 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 11402 kb/s, 30 fps, 30 tbr, 30 tbn (default)
+      Metadata:
+        creation_time   : 2026-10-23T13:14:13.000000Z
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 2 kb/s (default)
+      Metadata:
+        creation_time   : 2026-10-23T13:14:13.000000Z
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\e laptop\Documents\Codex\2026-10-19\st\work\desktop-fit-v052\office-scroll-v2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:00:31.67, start: 0.000000, bitrate: 5581 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5579 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+Stream mapping:
+  Stream #0:0 (h264) -> ssim
+  Stream #1:0 (h264) -> ssim
+  ssim:default -> Stream #0:0 (wrapped_avframe)
+Press [q] to stop, [?] for help
+[Parsed_ssim_0 @ 0000019048a3edc0] not matching timebases found between first input: 1/30 and second input 1/15360, results may be incorrect!
+Output #0, null, to 'NUL':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    te_is_reencode  : 1
+    Hw              : 1
+    bitrate         : 15000000
+    maxrate         : 0
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 wrapped_avframe
+[Parsed_ssim_0 @ 0000019048a3edc0] SSIM Y:0.988060 (19.229803) U:0.991455 (20.682991) V:0.991589 (20.751644) All:0.989214 (19.671313)
+[out#0/null @ 00000190483476c0] video:408KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  950 fps= 82 q=-0.0 Lsize=N/A time=00:00:31.63 bitrate=N/A speed=2.73x    

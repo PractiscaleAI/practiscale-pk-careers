@@ -1,0 +1,5023 @@
+{
+  "checks": [
+    {
+      "name": "Exact CTA copy 320",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 320",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 320",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30,
+          "right": 290,
+          "top": 150,
+          "bottom": 389.625,
+          "width": 260,
+          "height": 239.625
+        },
+        "visual": {
+          "left": 8,
+          "right": 312,
+          "top": 417.625,
+          "bottom": 747.625,
+          "width": 304,
+          "height": 330
+        },
+        "portrait": {
+          "left": -45,
+          "right": 365,
+          "top": 417.625,
+          "bottom": 827.625,
+          "width": 410,
+          "height": 410
+        },
+        "trust": {
+          "left": 30,
+          "right": 290,
+          "top": 747.625,
+          "bottom": 876.625,
+          "width": 260,
+          "height": 129
+        },
+        "footer": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30,
+          "right": 229.03125,
+          "top": 337.625,
+          "bottom": 389.625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64
+        },
+        "menu": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 97.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 968,
+        "stageHeight": 968
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 320",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30,
+          "right": 290,
+          "top": 150,
+          "bottom": 389.625,
+          "width": 260,
+          "height": 239.625
+        },
+        "visual": {
+          "left": 8,
+          "right": 312,
+          "top": 417.625,
+          "bottom": 747.625,
+          "width": 304,
+          "height": 330
+        },
+        "portrait": {
+          "left": -45,
+          "right": 365,
+          "top": 417.625,
+          "bottom": 827.625,
+          "width": 410,
+          "height": 410
+        },
+        "trust": {
+          "left": 30,
+          "right": 290,
+          "top": 747.625,
+          "bottom": 876.625,
+          "width": 260,
+          "height": 129
+        },
+        "footer": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30,
+          "right": 229.03125,
+          "top": 337.625,
+          "bottom": 389.625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64
+        },
+        "menu": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 97.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 968,
+        "stageHeight": 968
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 320",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30,
+          "right": 290,
+          "top": 150,
+          "bottom": 389.625,
+          "width": 260,
+          "height": 239.625
+        },
+        "visual": {
+          "left": 8,
+          "right": 312,
+          "top": 417.625,
+          "bottom": 747.625,
+          "width": 304,
+          "height": 330
+        },
+        "portrait": {
+          "left": -45,
+          "right": 365,
+          "top": 417.625,
+          "bottom": 827.625,
+          "width": 410,
+          "height": 410
+        },
+        "trust": {
+          "left": 30,
+          "right": 290,
+          "top": 747.625,
+          "bottom": 876.625,
+          "width": 260,
+          "height": 129
+        },
+        "footer": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30,
+          "right": 229.03125,
+          "top": 337.625,
+          "bottom": 389.625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64
+        },
+        "menu": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 97.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 968,
+        "stageHeight": 968
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 320",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30,
+          "right": 290,
+          "top": 150,
+          "bottom": 389.625,
+          "width": 260,
+          "height": 239.625
+        },
+        "visual": {
+          "left": 8,
+          "right": 312,
+          "top": 417.625,
+          "bottom": 747.625,
+          "width": 304,
+          "height": 330
+        },
+        "portrait": {
+          "left": -45,
+          "right": 365,
+          "top": 417.625,
+          "bottom": 827.625,
+          "width": 410,
+          "height": 410
+        },
+        "trust": {
+          "left": 30,
+          "right": 290,
+          "top": 747.625,
+          "bottom": 876.625,
+          "width": 260,
+          "height": 129
+        },
+        "footer": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30,
+          "right": 229.03125,
+          "top": 337.625,
+          "bottom": 389.625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64
+        },
+        "menu": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 97.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 968,
+        "stageHeight": 968
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 320",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30,
+          "right": 290,
+          "top": 150,
+          "bottom": 389.625,
+          "width": 260,
+          "height": 239.625
+        },
+        "visual": {
+          "left": 8,
+          "right": 312,
+          "top": 417.625,
+          "bottom": 747.625,
+          "width": 304,
+          "height": 330
+        },
+        "portrait": {
+          "left": -45,
+          "right": 365,
+          "top": 417.625,
+          "bottom": 827.625,
+          "width": 410,
+          "height": 410
+        },
+        "trust": {
+          "left": 30,
+          "right": 290,
+          "top": 747.625,
+          "bottom": 876.625,
+          "width": 260,
+          "height": 129
+        },
+        "footer": {
+          "left": 30,
+          "right": 290,
+          "top": 900.625,
+          "bottom": 951.671875,
+          "width": 260,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30,
+          "right": 229.03125,
+          "top": 337.625,
+          "bottom": 389.625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 304,
+          "top": 16,
+          "bottom": 80,
+          "width": 288,
+          "height": 64
+        },
+        "menu": {
+          "left": 248,
+          "right": 292,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 97.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 246,
+          "right": 290,
+          "top": 904.140625,
+          "bottom": 948.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 968,
+        "stageHeight": 968
+      }
+    },
+    {
+      "name": "No hero header divider 320",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 320",
+      "pass": true,
+      "detail": {
+        "scroll": 968,
+        "stage": 968
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 320",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 320",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 320",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text flows 320",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clear": true,
+        "footer": true
+      }
+    },
+    {
+      "name": "Exact CTA copy 348",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 348",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 348",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 348",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 150,
+          "bottom": 395.84375,
+          "width": 287.46875,
+          "height": 245.84375
+        },
+        "visual": {
+          "left": 8,
+          "right": 340,
+          "top": 423.84375,
+          "bottom": 768.359375,
+          "width": 332,
+          "height": 344.515625
+        },
+        "portrait": {
+          "left": -48.71875,
+          "right": 396.71875,
+          "top": 423.84375,
+          "bottom": 869.28125,
+          "width": 445.4375,
+          "height": 445.4375
+        },
+        "trust": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 768.359375,
+          "bottom": 897.359375,
+          "width": 287.46875,
+          "height": 129
+        },
+        "footer": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 921.359375,
+          "bottom": 972.40625,
+          "width": 287.46875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30.265625,
+          "right": 229.296875,
+          "top": 343.84375,
+          "bottom": 395.84375,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 332,
+          "top": 16,
+          "bottom": 80,
+          "width": 316,
+          "height": 64
+        },
+        "menu": {
+          "left": 276,
+          "right": 320,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 125.03125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 273.734375,
+          "right": 317.734375,
+          "top": 924.875,
+          "bottom": 968.875,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.703125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 988,
+        "stageHeight": 988
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 348",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 150,
+          "bottom": 395.84375,
+          "width": 287.46875,
+          "height": 245.84375
+        },
+        "visual": {
+          "left": 8,
+          "right": 340,
+          "top": 423.84375,
+          "bottom": 768.359375,
+          "width": 332,
+          "height": 344.515625
+        },
+        "portrait": {
+          "left": -48.71875,
+          "right": 396.71875,
+          "top": 423.84375,
+          "bottom": 869.28125,
+          "width": 445.4375,
+          "height": 445.4375
+        },
+        "trust": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 768.359375,
+          "bottom": 897.359375,
+          "width": 287.46875,
+          "height": 129
+        },
+        "footer": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 921.359375,
+          "bottom": 972.40625,
+          "width": 287.46875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30.265625,
+          "right": 229.296875,
+          "top": 343.84375,
+          "bottom": 395.84375,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 332,
+          "top": 16,
+          "bottom": 80,
+          "width": 316,
+          "height": 64
+        },
+        "menu": {
+          "left": 276,
+          "right": 320,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 125.03125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 273.734375,
+          "right": 317.734375,
+          "top": 924.875,
+          "bottom": 968.875,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.703125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 988,
+        "stageHeight": 988
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 348",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 150,
+          "bottom": 395.84375,
+          "width": 287.46875,
+          "height": 245.84375
+        },
+        "visual": {
+          "left": 8,
+          "right": 340,
+          "top": 423.84375,
+          "bottom": 768.359375,
+          "width": 332,
+          "height": 344.515625
+        },
+        "portrait": {
+          "left": -48.71875,
+          "right": 396.71875,
+          "top": 423.84375,
+          "bottom": 869.28125,
+          "width": 445.4375,
+          "height": 445.4375
+        },
+        "trust": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 768.359375,
+          "bottom": 897.359375,
+          "width": 287.46875,
+          "height": 129
+        },
+        "footer": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 921.359375,
+          "bottom": 972.40625,
+          "width": 287.46875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30.265625,
+          "right": 229.296875,
+          "top": 343.84375,
+          "bottom": 395.84375,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 332,
+          "top": 16,
+          "bottom": 80,
+          "width": 316,
+          "height": 64
+        },
+        "menu": {
+          "left": 276,
+          "right": 320,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 125.03125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 273.734375,
+          "right": 317.734375,
+          "top": 924.875,
+          "bottom": 968.875,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.703125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 988,
+        "stageHeight": 988
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 348",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 150,
+          "bottom": 395.84375,
+          "width": 287.46875,
+          "height": 245.84375
+        },
+        "visual": {
+          "left": 8,
+          "right": 340,
+          "top": 423.84375,
+          "bottom": 768.359375,
+          "width": 332,
+          "height": 344.515625
+        },
+        "portrait": {
+          "left": -48.71875,
+          "right": 396.71875,
+          "top": 423.84375,
+          "bottom": 869.28125,
+          "width": 445.4375,
+          "height": 445.4375
+        },
+        "trust": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 768.359375,
+          "bottom": 897.359375,
+          "width": 287.46875,
+          "height": 129
+        },
+        "footer": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 921.359375,
+          "bottom": 972.40625,
+          "width": 287.46875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30.265625,
+          "right": 229.296875,
+          "top": 343.84375,
+          "bottom": 395.84375,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 332,
+          "top": 16,
+          "bottom": 80,
+          "width": 316,
+          "height": 64
+        },
+        "menu": {
+          "left": 276,
+          "right": 320,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 125.03125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 273.734375,
+          "right": 317.734375,
+          "top": 924.875,
+          "bottom": 968.875,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.703125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 988,
+        "stageHeight": 988
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 348",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 150,
+          "bottom": 395.84375,
+          "width": 287.46875,
+          "height": 245.84375
+        },
+        "visual": {
+          "left": 8,
+          "right": 340,
+          "top": 423.84375,
+          "bottom": 768.359375,
+          "width": 332,
+          "height": 344.515625
+        },
+        "portrait": {
+          "left": -48.71875,
+          "right": 396.71875,
+          "top": 423.84375,
+          "bottom": 869.28125,
+          "width": 445.4375,
+          "height": 445.4375
+        },
+        "trust": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 768.359375,
+          "bottom": 897.359375,
+          "width": 287.46875,
+          "height": 129
+        },
+        "footer": {
+          "left": 30.265625,
+          "right": 317.734375,
+          "top": 921.359375,
+          "bottom": 972.40625,
+          "width": 287.46875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 30.265625,
+          "right": 229.296875,
+          "top": 343.84375,
+          "bottom": 395.84375,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 332,
+          "top": 16,
+          "bottom": 80,
+          "width": 316,
+          "height": 64
+        },
+        "menu": {
+          "left": 276,
+          "right": 320,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 125.03125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 273.734375,
+          "right": 317.734375,
+          "top": 924.875,
+          "bottom": 968.875,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 161.703125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 988,
+        "stageHeight": 988
+      }
+    },
+    {
+      "name": "No hero header divider 348",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 348",
+      "pass": true,
+      "detail": {
+        "scroll": 988,
+        "stage": 988
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 348",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 348",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 348",
+      "pass": true
+    },
+    {
+      "name": "Exact CTA copy 360",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 360",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 360",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 360",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 150,
+          "bottom": 398.5,
+          "width": 297.9375,
+          "height": 248.5
+        },
+        "visual": {
+          "left": 8,
+          "right": 352,
+          "top": 426.5,
+          "bottom": 782.890625,
+          "width": 344,
+          "height": 356.390625
+        },
+        "portrait": {
+          "left": -50.3984375,
+          "right": 410.3984375,
+          "top": 426.5,
+          "bottom": 887.296875,
+          "width": 460.796875,
+          "height": 460.796875
+        },
+        "trust": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 782.890625,
+          "bottom": 911.890625,
+          "width": 297.9375,
+          "height": 129
+        },
+        "footer": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 935.890625,
+          "bottom": 986.9375,
+          "width": 297.9375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 31.03125,
+          "right": 230.0625,
+          "top": 346.5,
+          "bottom": 398.5,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64
+        },
+        "menu": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 135.5,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 284.96875,
+          "right": 328.96875,
+          "top": 939.40625,
+          "bottom": 983.40625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 162.46875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1003,
+        "stageHeight": 1003
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 360",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 150,
+          "bottom": 398.5,
+          "width": 297.9375,
+          "height": 248.5
+        },
+        "visual": {
+          "left": 8,
+          "right": 352,
+          "top": 426.5,
+          "bottom": 782.890625,
+          "width": 344,
+          "height": 356.390625
+        },
+        "portrait": {
+          "left": -50.3984375,
+          "right": 410.3984375,
+          "top": 426.5,
+          "bottom": 887.296875,
+          "width": 460.796875,
+          "height": 460.796875
+        },
+        "trust": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 782.890625,
+          "bottom": 911.890625,
+          "width": 297.9375,
+          "height": 129
+        },
+        "footer": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 935.890625,
+          "bottom": 986.9375,
+          "width": 297.9375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 31.03125,
+          "right": 230.0625,
+          "top": 346.5,
+          "bottom": 398.5,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64
+        },
+        "menu": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 135.5,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 284.96875,
+          "right": 328.96875,
+          "top": 939.40625,
+          "bottom": 983.40625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 162.46875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1003,
+        "stageHeight": 1003
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 360",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 150,
+          "bottom": 398.5,
+          "width": 297.9375,
+          "height": 248.5
+        },
+        "visual": {
+          "left": 8,
+          "right": 352,
+          "top": 426.5,
+          "bottom": 782.890625,
+          "width": 344,
+          "height": 356.390625
+        },
+        "portrait": {
+          "left": -50.3984375,
+          "right": 410.3984375,
+          "top": 426.5,
+          "bottom": 887.296875,
+          "width": 460.796875,
+          "height": 460.796875
+        },
+        "trust": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 782.890625,
+          "bottom": 911.890625,
+          "width": 297.9375,
+          "height": 129
+        },
+        "footer": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 935.890625,
+          "bottom": 986.9375,
+          "width": 297.9375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 31.03125,
+          "right": 230.0625,
+          "top": 346.5,
+          "bottom": 398.5,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64
+        },
+        "menu": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 135.5,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 284.96875,
+          "right": 328.96875,
+          "top": 939.40625,
+          "bottom": 983.40625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 162.46875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1003,
+        "stageHeight": 1003
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 360",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 150,
+          "bottom": 398.5,
+          "width": 297.9375,
+          "height": 248.5
+        },
+        "visual": {
+          "left": 8,
+          "right": 352,
+          "top": 426.5,
+          "bottom": 782.890625,
+          "width": 344,
+          "height": 356.390625
+        },
+        "portrait": {
+          "left": -50.3984375,
+          "right": 410.3984375,
+          "top": 426.5,
+          "bottom": 887.296875,
+          "width": 460.796875,
+          "height": 460.796875
+        },
+        "trust": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 782.890625,
+          "bottom": 911.890625,
+          "width": 297.9375,
+          "height": 129
+        },
+        "footer": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 935.890625,
+          "bottom": 986.9375,
+          "width": 297.9375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 31.03125,
+          "right": 230.0625,
+          "top": 346.5,
+          "bottom": 398.5,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64
+        },
+        "menu": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 135.5,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 284.96875,
+          "right": 328.96875,
+          "top": 939.40625,
+          "bottom": 983.40625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 162.46875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1003,
+        "stageHeight": 1003
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 360",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 150,
+          "bottom": 398.5,
+          "width": 297.9375,
+          "height": 248.5
+        },
+        "visual": {
+          "left": 8,
+          "right": 352,
+          "top": 426.5,
+          "bottom": 782.890625,
+          "width": 344,
+          "height": 356.390625
+        },
+        "portrait": {
+          "left": -50.3984375,
+          "right": 410.3984375,
+          "top": 426.5,
+          "bottom": 887.296875,
+          "width": 460.796875,
+          "height": 460.796875
+        },
+        "trust": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 782.890625,
+          "bottom": 911.890625,
+          "width": 297.9375,
+          "height": 129
+        },
+        "footer": {
+          "left": 31.03125,
+          "right": 328.96875,
+          "top": 935.890625,
+          "bottom": 986.9375,
+          "width": 297.9375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 31.03125,
+          "right": 230.0625,
+          "top": 346.5,
+          "bottom": 398.5,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 344,
+          "top": 16,
+          "bottom": 80,
+          "width": 328,
+          "height": 64
+        },
+        "menu": {
+          "left": 288,
+          "right": 332,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 135.5,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 284.96875,
+          "right": 328.96875,
+          "top": 939.40625,
+          "bottom": 983.40625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 162.46875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1003,
+        "stageHeight": 1003
+      }
+    },
+    {
+      "name": "No hero header divider 360",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 360",
+      "pass": true,
+      "detail": {
+        "scroll": 1003,
+        "stage": 1003
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 360",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 360",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 360",
+      "pass": true
+    },
+    {
+      "name": "Exact CTA copy 375",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 375",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 375",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 375",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32,
+          "right": 343,
+          "top": 150,
+          "bottom": 376.21875,
+          "width": 311,
+          "height": 226.21875
+        },
+        "visual": {
+          "left": 8,
+          "right": 367,
+          "top": 404.21875,
+          "bottom": 775.46875,
+          "width": 359,
+          "height": 371.25
+        },
+        "portrait": {
+          "left": -52.5,
+          "right": 427.5,
+          "top": 404.21875,
+          "bottom": 884.21875,
+          "width": 480,
+          "height": 480
+        },
+        "trust": {
+          "left": 32,
+          "right": 343,
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "width": 311,
+          "height": 129
+        },
+        "footer": {
+          "left": 32,
+          "right": 343,
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32,
+          "right": 231.03125,
+          "top": 324.21875,
+          "bottom": 376.21875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64
+        },
+        "menu": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 148.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 299,
+          "right": 343,
+          "top": 931.984375,
+          "bottom": 975.984375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 163.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 996,
+        "stageHeight": 996
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 375",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32,
+          "right": 343,
+          "top": 150,
+          "bottom": 376.21875,
+          "width": 311,
+          "height": 226.21875
+        },
+        "visual": {
+          "left": 8,
+          "right": 367,
+          "top": 404.21875,
+          "bottom": 775.46875,
+          "width": 359,
+          "height": 371.25
+        },
+        "portrait": {
+          "left": -52.5,
+          "right": 427.5,
+          "top": 404.21875,
+          "bottom": 884.21875,
+          "width": 480,
+          "height": 480
+        },
+        "trust": {
+          "left": 32,
+          "right": 343,
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "width": 311,
+          "height": 129
+        },
+        "footer": {
+          "left": 32,
+          "right": 343,
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32,
+          "right": 231.03125,
+          "top": 324.21875,
+          "bottom": 376.21875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64
+        },
+        "menu": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 148.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 299,
+          "right": 343,
+          "top": 931.984375,
+          "bottom": 975.984375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 163.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 996,
+        "stageHeight": 996
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 375",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32,
+          "right": 343,
+          "top": 150,
+          "bottom": 376.21875,
+          "width": 311,
+          "height": 226.21875
+        },
+        "visual": {
+          "left": 8,
+          "right": 367,
+          "top": 404.21875,
+          "bottom": 775.46875,
+          "width": 359,
+          "height": 371.25
+        },
+        "portrait": {
+          "left": -52.5,
+          "right": 427.5,
+          "top": 404.21875,
+          "bottom": 884.21875,
+          "width": 480,
+          "height": 480
+        },
+        "trust": {
+          "left": 32,
+          "right": 343,
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "width": 311,
+          "height": 129
+        },
+        "footer": {
+          "left": 32,
+          "right": 343,
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32,
+          "right": 231.03125,
+          "top": 324.21875,
+          "bottom": 376.21875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64
+        },
+        "menu": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 148.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 299,
+          "right": 343,
+          "top": 931.984375,
+          "bottom": 975.984375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 163.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 996,
+        "stageHeight": 996
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 375",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32,
+          "right": 343,
+          "top": 150,
+          "bottom": 376.21875,
+          "width": 311,
+          "height": 226.21875
+        },
+        "visual": {
+          "left": 8,
+          "right": 367,
+          "top": 404.21875,
+          "bottom": 775.46875,
+          "width": 359,
+          "height": 371.25
+        },
+        "portrait": {
+          "left": -52.5,
+          "right": 427.5,
+          "top": 404.21875,
+          "bottom": 884.21875,
+          "width": 480,
+          "height": 480
+        },
+        "trust": {
+          "left": 32,
+          "right": 343,
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "width": 311,
+          "height": 129
+        },
+        "footer": {
+          "left": 32,
+          "right": 343,
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32,
+          "right": 231.03125,
+          "top": 324.21875,
+          "bottom": 376.21875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64
+        },
+        "menu": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 148.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 299,
+          "right": 343,
+          "top": 931.984375,
+          "bottom": 975.984375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 163.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 996,
+        "stageHeight": 996
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 375",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32,
+          "right": 343,
+          "top": 150,
+          "bottom": 376.21875,
+          "width": 311,
+          "height": 226.21875
+        },
+        "visual": {
+          "left": 8,
+          "right": 367,
+          "top": 404.21875,
+          "bottom": 775.46875,
+          "width": 359,
+          "height": 371.25
+        },
+        "portrait": {
+          "left": -52.5,
+          "right": 427.5,
+          "top": 404.21875,
+          "bottom": 884.21875,
+          "width": 480,
+          "height": 480
+        },
+        "trust": {
+          "left": 32,
+          "right": 343,
+          "top": 775.46875,
+          "bottom": 904.46875,
+          "width": 311,
+          "height": 129
+        },
+        "footer": {
+          "left": 32,
+          "right": 343,
+          "top": 928.46875,
+          "bottom": 979.515625,
+          "width": 311,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32,
+          "right": 231.03125,
+          "top": 324.21875,
+          "bottom": 376.21875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 359,
+          "top": 16,
+          "bottom": 80,
+          "width": 343,
+          "height": 64
+        },
+        "menu": {
+          "left": 303,
+          "right": 347,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 148.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 299,
+          "right": 343,
+          "top": 931.984375,
+          "bottom": 975.984375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 163.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 996,
+        "stageHeight": 996
+      }
+    },
+    {
+      "name": "No hero header divider 375",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 375",
+      "pass": true,
+      "detail": {
+        "scroll": 996,
+        "stage": 996
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 375",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 375",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 375",
+      "pass": true
+    },
+    {
+      "name": "Exact CTA copy 390",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 390",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 150,
+          "bottom": 379.53125,
+          "width": 324.09375,
+          "height": 229.53125
+        },
+        "visual": {
+          "left": 8,
+          "right": 382,
+          "top": 407.53125,
+          "bottom": 793.625,
+          "width": 374,
+          "height": 386.09375
+        },
+        "portrait": {
+          "left": -54.59375,
+          "right": 444.59375,
+          "top": 407.53125,
+          "bottom": 906.71875,
+          "width": 499.1875,
+          "height": 499.1875
+        },
+        "trust": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 793.625,
+          "bottom": 922.625,
+          "width": 324.09375,
+          "height": 129
+        },
+        "footer": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 946.625,
+          "bottom": 997.671875,
+          "width": 324.09375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32.953125,
+          "right": 231.984375,
+          "top": 327.53125,
+          "bottom": 379.53125,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 374,
+          "top": 16,
+          "bottom": 80,
+          "width": 358,
+          "height": 64
+        },
+        "menu": {
+          "left": 318,
+          "right": 362,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 161.65625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 313.046875,
+          "right": 357.046875,
+          "top": 950.140625,
+          "bottom": 994.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 164.390625,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1014,
+        "stageHeight": 1014
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 150,
+          "bottom": 379.53125,
+          "width": 324.09375,
+          "height": 229.53125
+        },
+        "visual": {
+          "left": 8,
+          "right": 382,
+          "top": 407.53125,
+          "bottom": 793.625,
+          "width": 374,
+          "height": 386.09375
+        },
+        "portrait": {
+          "left": -54.59375,
+          "right": 444.59375,
+          "top": 407.53125,
+          "bottom": 906.71875,
+          "width": 499.1875,
+          "height": 499.1875
+        },
+        "trust": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 793.625,
+          "bottom": 922.625,
+          "width": 324.09375,
+          "height": 129
+        },
+        "footer": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 946.625,
+          "bottom": 997.671875,
+          "width": 324.09375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32.953125,
+          "right": 231.984375,
+          "top": 327.53125,
+          "bottom": 379.53125,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 374,
+          "top": 16,
+          "bottom": 80,
+          "width": 358,
+          "height": 64
+        },
+        "menu": {
+          "left": 318,
+          "right": 362,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 161.65625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 313.046875,
+          "right": 357.046875,
+          "top": 950.140625,
+          "bottom": 994.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 164.390625,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1014,
+        "stageHeight": 1014
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 150,
+          "bottom": 379.53125,
+          "width": 324.09375,
+          "height": 229.53125
+        },
+        "visual": {
+          "left": 8,
+          "right": 382,
+          "top": 407.53125,
+          "bottom": 793.625,
+          "width": 374,
+          "height": 386.09375
+        },
+        "portrait": {
+          "left": -54.59375,
+          "right": 444.59375,
+          "top": 407.53125,
+          "bottom": 906.71875,
+          "width": 499.1875,
+          "height": 499.1875
+        },
+        "trust": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 793.625,
+          "bottom": 922.625,
+          "width": 324.09375,
+          "height": 129
+        },
+        "footer": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 946.625,
+          "bottom": 997.671875,
+          "width": 324.09375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32.953125,
+          "right": 231.984375,
+          "top": 327.53125,
+          "bottom": 379.53125,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 374,
+          "top": 16,
+          "bottom": 80,
+          "width": 358,
+          "height": 64
+        },
+        "menu": {
+          "left": 318,
+          "right": 362,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 161.65625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 313.046875,
+          "right": 357.046875,
+          "top": 950.140625,
+          "bottom": 994.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 164.390625,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1014,
+        "stageHeight": 1014
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 150,
+          "bottom": 379.53125,
+          "width": 324.09375,
+          "height": 229.53125
+        },
+        "visual": {
+          "left": 8,
+          "right": 382,
+          "top": 407.53125,
+          "bottom": 793.625,
+          "width": 374,
+          "height": 386.09375
+        },
+        "portrait": {
+          "left": -54.59375,
+          "right": 444.59375,
+          "top": 407.53125,
+          "bottom": 906.71875,
+          "width": 499.1875,
+          "height": 499.1875
+        },
+        "trust": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 793.625,
+          "bottom": 922.625,
+          "width": 324.09375,
+          "height": 129
+        },
+        "footer": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 946.625,
+          "bottom": 997.671875,
+          "width": 324.09375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32.953125,
+          "right": 231.984375,
+          "top": 327.53125,
+          "bottom": 379.53125,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 374,
+          "top": 16,
+          "bottom": 80,
+          "width": 358,
+          "height": 64
+        },
+        "menu": {
+          "left": 318,
+          "right": 362,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 161.65625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 313.046875,
+          "right": 357.046875,
+          "top": 950.140625,
+          "bottom": 994.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 164.390625,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1014,
+        "stageHeight": 1014
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 390",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 150,
+          "bottom": 379.53125,
+          "width": 324.09375,
+          "height": 229.53125
+        },
+        "visual": {
+          "left": 8,
+          "right": 382,
+          "top": 407.53125,
+          "bottom": 793.625,
+          "width": 374,
+          "height": 386.09375
+        },
+        "portrait": {
+          "left": -54.59375,
+          "right": 444.59375,
+          "top": 407.53125,
+          "bottom": 906.71875,
+          "width": 499.1875,
+          "height": 499.1875
+        },
+        "trust": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 793.625,
+          "bottom": 922.625,
+          "width": 324.09375,
+          "height": 129
+        },
+        "footer": {
+          "left": 32.953125,
+          "right": 357.046875,
+          "top": 946.625,
+          "bottom": 997.671875,
+          "width": 324.09375,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 32.953125,
+          "right": 231.984375,
+          "top": 327.53125,
+          "bottom": 379.53125,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 374,
+          "top": 16,
+          "bottom": 80,
+          "width": 358,
+          "height": 64
+        },
+        "menu": {
+          "left": 318,
+          "right": 362,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 161.65625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 313.046875,
+          "right": 357.046875,
+          "top": 950.140625,
+          "bottom": 994.140625,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 164.390625,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1014,
+        "stageHeight": 1014
+      }
+    },
+    {
+      "name": "No hero header divider 390",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 390",
+      "pass": true,
+      "detail": {
+        "scroll": 1014,
+        "stage": 1014
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 390",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 390",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 390",
+      "pass": true
+    },
+    {
+      "name": "Exact CTA copy 414",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 414",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 414",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 414",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 150,
+          "bottom": 384.875,
+          "width": 345.03125,
+          "height": 234.875
+        },
+        "visual": {
+          "left": 8,
+          "right": 406,
+          "top": 412.875,
+          "bottom": 822.734375,
+          "width": 398,
+          "height": 409.859375
+        },
+        "portrait": {
+          "left": -57.953125,
+          "right": 471.953125,
+          "top": 412.875,
+          "bottom": 942.78125,
+          "width": 529.90625,
+          "height": 529.90625
+        },
+        "trust": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 822.734375,
+          "bottom": 951.734375,
+          "width": 345.03125,
+          "height": 129
+        },
+        "footer": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 975.734375,
+          "bottom": 1026.78125,
+          "width": 345.03125,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 34.484375,
+          "right": 233.515625,
+          "top": 332.875,
+          "bottom": 384.875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 398,
+          "top": 16,
+          "bottom": 80,
+          "width": 382,
+          "height": 64
+        },
+        "menu": {
+          "left": 342,
+          "right": 386,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 182.59375,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 335.515625,
+          "right": 379.515625,
+          "top": 979.25,
+          "bottom": 1023.25,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 165.921875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1043,
+        "stageHeight": 1043
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 414",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 150,
+          "bottom": 384.875,
+          "width": 345.03125,
+          "height": 234.875
+        },
+        "visual": {
+          "left": 8,
+          "right": 406,
+          "top": 412.875,
+          "bottom": 822.734375,
+          "width": 398,
+          "height": 409.859375
+        },
+        "portrait": {
+          "left": -57.953125,
+          "right": 471.953125,
+          "top": 412.875,
+          "bottom": 942.78125,
+          "width": 529.90625,
+          "height": 529.90625
+        },
+        "trust": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 822.734375,
+          "bottom": 951.734375,
+          "width": 345.03125,
+          "height": 129
+        },
+        "footer": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 975.734375,
+          "bottom": 1026.78125,
+          "width": 345.03125,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 34.484375,
+          "right": 233.515625,
+          "top": 332.875,
+          "bottom": 384.875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 398,
+          "top": 16,
+          "bottom": 80,
+          "width": 382,
+          "height": 64
+        },
+        "menu": {
+          "left": 342,
+          "right": 386,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 182.59375,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 335.515625,
+          "right": 379.515625,
+          "top": 979.25,
+          "bottom": 1023.25,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 165.921875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1043,
+        "stageHeight": 1043
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 414",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 150,
+          "bottom": 384.875,
+          "width": 345.03125,
+          "height": 234.875
+        },
+        "visual": {
+          "left": 8,
+          "right": 406,
+          "top": 412.875,
+          "bottom": 822.734375,
+          "width": 398,
+          "height": 409.859375
+        },
+        "portrait": {
+          "left": -57.953125,
+          "right": 471.953125,
+          "top": 412.875,
+          "bottom": 942.78125,
+          "width": 529.90625,
+          "height": 529.90625
+        },
+        "trust": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 822.734375,
+          "bottom": 951.734375,
+          "width": 345.03125,
+          "height": 129
+        },
+        "footer": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 975.734375,
+          "bottom": 1026.78125,
+          "width": 345.03125,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 34.484375,
+          "right": 233.515625,
+          "top": 332.875,
+          "bottom": 384.875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 398,
+          "top": 16,
+          "bottom": 80,
+          "width": 382,
+          "height": 64
+        },
+        "menu": {
+          "left": 342,
+          "right": 386,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 182.59375,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 335.515625,
+          "right": 379.515625,
+          "top": 979.25,
+          "bottom": 1023.25,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 165.921875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1043,
+        "stageHeight": 1043
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 414",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 150,
+          "bottom": 384.875,
+          "width": 345.03125,
+          "height": 234.875
+        },
+        "visual": {
+          "left": 8,
+          "right": 406,
+          "top": 412.875,
+          "bottom": 822.734375,
+          "width": 398,
+          "height": 409.859375
+        },
+        "portrait": {
+          "left": -57.953125,
+          "right": 471.953125,
+          "top": 412.875,
+          "bottom": 942.78125,
+          "width": 529.90625,
+          "height": 529.90625
+        },
+        "trust": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 822.734375,
+          "bottom": 951.734375,
+          "width": 345.03125,
+          "height": 129
+        },
+        "footer": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 975.734375,
+          "bottom": 1026.78125,
+          "width": 345.03125,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 34.484375,
+          "right": 233.515625,
+          "top": 332.875,
+          "bottom": 384.875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 398,
+          "top": 16,
+          "bottom": 80,
+          "width": 382,
+          "height": 64
+        },
+        "menu": {
+          "left": 342,
+          "right": 386,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 182.59375,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 335.515625,
+          "right": 379.515625,
+          "top": 979.25,
+          "bottom": 1023.25,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 165.921875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1043,
+        "stageHeight": 1043
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 414",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 150,
+          "bottom": 384.875,
+          "width": 345.03125,
+          "height": 234.875
+        },
+        "visual": {
+          "left": 8,
+          "right": 406,
+          "top": 412.875,
+          "bottom": 822.734375,
+          "width": 398,
+          "height": 409.859375
+        },
+        "portrait": {
+          "left": -57.953125,
+          "right": 471.953125,
+          "top": 412.875,
+          "bottom": 942.78125,
+          "width": 529.90625,
+          "height": 529.90625
+        },
+        "trust": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 822.734375,
+          "bottom": 951.734375,
+          "width": 345.03125,
+          "height": 129
+        },
+        "footer": {
+          "left": 34.484375,
+          "right": 379.515625,
+          "top": 975.734375,
+          "bottom": 1026.78125,
+          "width": 345.03125,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 34.484375,
+          "right": 233.515625,
+          "top": 332.875,
+          "bottom": 384.875,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 398,
+          "top": 16,
+          "bottom": 80,
+          "width": 382,
+          "height": 64
+        },
+        "menu": {
+          "left": 342,
+          "right": 386,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 182.59375,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 335.515625,
+          "right": 379.515625,
+          "top": 979.25,
+          "bottom": 1023.25,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 165.921875,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1043,
+        "stageHeight": 1043
+      }
+    },
+    {
+      "name": "No hero header divider 414",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 414",
+      "pass": true,
+      "detail": {
+        "scroll": 1043,
+        "stage": 1043
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 414",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 414",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 414",
+      "pass": true
+    },
+    {
+      "name": "Exact CTA copy 430",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 430",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 430",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 430",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 150,
+          "bottom": 388.40625,
+          "width": 358.96875,
+          "height": 238.40625
+        },
+        "visual": {
+          "left": 8,
+          "right": 422,
+          "top": 416.40625,
+          "bottom": 842.09375,
+          "width": 414,
+          "height": 425.6875
+        },
+        "portrait": {
+          "left": -60.1953125,
+          "right": 490.1953125,
+          "top": 416.40625,
+          "bottom": 966.796875,
+          "width": 550.390625,
+          "height": 550.390625
+        },
+        "trust": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "width": 358.96875,
+          "height": 129
+        },
+        "footer": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 35.515625,
+          "right": 234.546875,
+          "top": 336.40625,
+          "bottom": 388.40625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64
+        },
+        "menu": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 196.53125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 998.609375,
+          "bottom": 1042.609375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 166.953125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1062,
+        "stageHeight": 1062
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 430",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 150,
+          "bottom": 388.40625,
+          "width": 358.96875,
+          "height": 238.40625
+        },
+        "visual": {
+          "left": 8,
+          "right": 422,
+          "top": 416.40625,
+          "bottom": 842.09375,
+          "width": 414,
+          "height": 425.6875
+        },
+        "portrait": {
+          "left": -60.1953125,
+          "right": 490.1953125,
+          "top": 416.40625,
+          "bottom": 966.796875,
+          "width": 550.390625,
+          "height": 550.390625
+        },
+        "trust": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "width": 358.96875,
+          "height": 129
+        },
+        "footer": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 35.515625,
+          "right": 234.546875,
+          "top": 336.40625,
+          "bottom": 388.40625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64
+        },
+        "menu": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 196.53125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 998.609375,
+          "bottom": 1042.609375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 166.953125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1062,
+        "stageHeight": 1062
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 430",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 150,
+          "bottom": 388.40625,
+          "width": 358.96875,
+          "height": 238.40625
+        },
+        "visual": {
+          "left": 8,
+          "right": 422,
+          "top": 416.40625,
+          "bottom": 842.09375,
+          "width": 414,
+          "height": 425.6875
+        },
+        "portrait": {
+          "left": -60.1953125,
+          "right": 490.1953125,
+          "top": 416.40625,
+          "bottom": 966.796875,
+          "width": 550.390625,
+          "height": 550.390625
+        },
+        "trust": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "width": 358.96875,
+          "height": 129
+        },
+        "footer": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 35.515625,
+          "right": 234.546875,
+          "top": 336.40625,
+          "bottom": 388.40625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64
+        },
+        "menu": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 196.53125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 998.609375,
+          "bottom": 1042.609375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 166.953125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1062,
+        "stageHeight": 1062
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 430",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 150,
+          "bottom": 388.40625,
+          "width": 358.96875,
+          "height": 238.40625
+        },
+        "visual": {
+          "left": 8,
+          "right": 422,
+          "top": 416.40625,
+          "bottom": 842.09375,
+          "width": 414,
+          "height": 425.6875
+        },
+        "portrait": {
+          "left": -60.1953125,
+          "right": 490.1953125,
+          "top": 416.40625,
+          "bottom": 966.796875,
+          "width": 550.390625,
+          "height": 550.390625
+        },
+        "trust": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "width": 358.96875,
+          "height": 129
+        },
+        "footer": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 35.515625,
+          "right": 234.546875,
+          "top": 336.40625,
+          "bottom": 388.40625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64
+        },
+        "menu": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 196.53125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 998.609375,
+          "bottom": 1042.609375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 166.953125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1062,
+        "stageHeight": 1062
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 430",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 150,
+          "bottom": 388.40625,
+          "width": 358.96875,
+          "height": 238.40625
+        },
+        "visual": {
+          "left": 8,
+          "right": 422,
+          "top": 416.40625,
+          "bottom": 842.09375,
+          "width": 414,
+          "height": 425.6875
+        },
+        "portrait": {
+          "left": -60.1953125,
+          "right": 490.1953125,
+          "top": 416.40625,
+          "bottom": 966.796875,
+          "width": 550.390625,
+          "height": 550.390625
+        },
+        "trust": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 842.09375,
+          "bottom": 971.09375,
+          "width": 358.96875,
+          "height": 129
+        },
+        "footer": {
+          "left": 35.515625,
+          "right": 394.484375,
+          "top": 995.09375,
+          "bottom": 1046.140625,
+          "width": 358.96875,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 35.515625,
+          "right": 234.546875,
+          "top": 336.40625,
+          "bottom": 388.40625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 414,
+          "top": 16,
+          "bottom": 80,
+          "width": 398,
+          "height": 64
+        },
+        "menu": {
+          "left": 358,
+          "right": 402,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 196.53125,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 350.484375,
+          "right": 394.484375,
+          "top": 998.609375,
+          "bottom": 1042.609375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 166.953125,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1062,
+        "stageHeight": 1062
+      }
+    },
+    {
+      "name": "No hero header divider 430",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 430",
+      "pass": true,
+      "detail": {
+        "scroll": 1062,
+        "stage": 1062
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 430",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 430",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 430",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text flows 430",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clear": true,
+        "footer": true
+      }
+    },
+    {
+      "name": "Exact CTA copy 530",
+      "pass": true,
+      "detail": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ]
+    },
+    {
+      "name": "Exact trust figures 530",
+      "pass": true
+    },
+    {
+      "name": "No horizontal overflow 530",
+      "pass": true
+    },
+    {
+      "name": "Face stays above the lower portrait fade 530",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 40,
+          "right": 490,
+          "top": 150,
+          "bottom": 410.5625,
+          "width": 450,
+          "height": 260.5625
+        },
+        "visual": {
+          "left": 8,
+          "right": 522,
+          "top": 438.5625,
+          "bottom": 918.5625,
+          "width": 514,
+          "height": 480
+        },
+        "portrait": {
+          "left": -35,
+          "right": 565,
+          "top": 438.5625,
+          "bottom": 1038.5625,
+          "width": 600,
+          "height": 600
+        },
+        "trust": {
+          "left": 40,
+          "right": 490,
+          "top": 918.5625,
+          "bottom": 1049.328125,
+          "width": 450,
+          "height": 130.765625
+        },
+        "footer": {
+          "left": 40,
+          "right": 490,
+          "top": 1073.328125,
+          "bottom": 1124.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 40,
+          "right": 239.03125,
+          "top": 358.5625,
+          "bottom": 410.5625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 514,
+          "top": 16,
+          "bottom": 80,
+          "width": 498,
+          "height": 64
+        },
+        "menu": {
+          "left": 458,
+          "right": 502,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 287.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 446,
+          "right": 490,
+          "top": 1076.84375,
+          "bottom": 1120.84375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 171.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1140,
+        "stageHeight": 1140
+      }
+    },
+    {
+      "name": "Distinct reading, portrait, proof and invitation zones 530",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 40,
+          "right": 490,
+          "top": 150,
+          "bottom": 410.5625,
+          "width": 450,
+          "height": 260.5625
+        },
+        "visual": {
+          "left": 8,
+          "right": 522,
+          "top": 438.5625,
+          "bottom": 918.5625,
+          "width": 514,
+          "height": 480
+        },
+        "portrait": {
+          "left": -35,
+          "right": 565,
+          "top": 438.5625,
+          "bottom": 1038.5625,
+          "width": 600,
+          "height": 600
+        },
+        "trust": {
+          "left": 40,
+          "right": 490,
+          "top": 918.5625,
+          "bottom": 1049.328125,
+          "width": 450,
+          "height": 130.765625
+        },
+        "footer": {
+          "left": 40,
+          "right": 490,
+          "top": 1073.328125,
+          "bottom": 1124.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 40,
+          "right": 239.03125,
+          "top": 358.5625,
+          "bottom": 410.5625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 514,
+          "top": 16,
+          "bottom": 80,
+          "width": 498,
+          "height": 64
+        },
+        "menu": {
+          "left": 458,
+          "right": 502,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 287.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 446,
+          "right": 490,
+          "top": 1076.84375,
+          "bottom": 1120.84375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 171.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1140,
+        "stageHeight": 1140
+      }
+    },
+    {
+      "name": "Reading gutters and proof align 530",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 40,
+          "right": 490,
+          "top": 150,
+          "bottom": 410.5625,
+          "width": 450,
+          "height": 260.5625
+        },
+        "visual": {
+          "left": 8,
+          "right": 522,
+          "top": 438.5625,
+          "bottom": 918.5625,
+          "width": 514,
+          "height": 480
+        },
+        "portrait": {
+          "left": -35,
+          "right": 565,
+          "top": 438.5625,
+          "bottom": 1038.5625,
+          "width": 600,
+          "height": 600
+        },
+        "trust": {
+          "left": 40,
+          "right": 490,
+          "top": 918.5625,
+          "bottom": 1049.328125,
+          "width": 450,
+          "height": 130.765625
+        },
+        "footer": {
+          "left": 40,
+          "right": 490,
+          "top": 1073.328125,
+          "bottom": 1124.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 40,
+          "right": 239.03125,
+          "top": 358.5625,
+          "bottom": 410.5625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 514,
+          "top": 16,
+          "bottom": 80,
+          "width": 498,
+          "height": 64
+        },
+        "menu": {
+          "left": 458,
+          "right": 502,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 287.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 446,
+          "right": 490,
+          "top": 1076.84375,
+          "bottom": 1120.84375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 171.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1140,
+        "stageHeight": 1140
+      }
+    },
+    {
+      "name": "Circular secondary arrow balances the full CTA row 530",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 40,
+          "right": 490,
+          "top": 150,
+          "bottom": 410.5625,
+          "width": 450,
+          "height": 260.5625
+        },
+        "visual": {
+          "left": 8,
+          "right": 522,
+          "top": 438.5625,
+          "bottom": 918.5625,
+          "width": 514,
+          "height": 480
+        },
+        "portrait": {
+          "left": -35,
+          "right": 565,
+          "top": 438.5625,
+          "bottom": 1038.5625,
+          "width": 600,
+          "height": 600
+        },
+        "trust": {
+          "left": 40,
+          "right": 490,
+          "top": 918.5625,
+          "bottom": 1049.328125,
+          "width": 450,
+          "height": 130.765625
+        },
+        "footer": {
+          "left": 40,
+          "right": 490,
+          "top": 1073.328125,
+          "bottom": 1124.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 40,
+          "right": 239.03125,
+          "top": 358.5625,
+          "bottom": 410.5625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 514,
+          "top": 16,
+          "bottom": 80,
+          "width": 498,
+          "height": 64
+        },
+        "menu": {
+          "left": 458,
+          "right": 502,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 287.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 446,
+          "right": 490,
+          "top": 1076.84375,
+          "bottom": 1120.84375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 171.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1140,
+        "stageHeight": 1140
+      }
+    },
+    {
+      "name": "Touch targets and header clearance 530",
+      "pass": true,
+      "detail": {
+        "copy": {
+          "left": 40,
+          "right": 490,
+          "top": 150,
+          "bottom": 410.5625,
+          "width": 450,
+          "height": 260.5625
+        },
+        "visual": {
+          "left": 8,
+          "right": 522,
+          "top": 438.5625,
+          "bottom": 918.5625,
+          "width": 514,
+          "height": 480
+        },
+        "portrait": {
+          "left": -35,
+          "right": 565,
+          "top": 438.5625,
+          "bottom": 1038.5625,
+          "width": 600,
+          "height": 600
+        },
+        "trust": {
+          "left": 40,
+          "right": 490,
+          "top": 918.5625,
+          "bottom": 1049.328125,
+          "width": 450,
+          "height": 130.765625
+        },
+        "footer": {
+          "left": 40,
+          "right": 490,
+          "top": 1073.328125,
+          "bottom": 1124.375,
+          "width": 450,
+          "height": 51.046875
+        },
+        "action": {
+          "left": 40,
+          "right": 239.03125,
+          "top": 358.5625,
+          "bottom": 410.5625,
+          "width": 199.03125,
+          "height": 52
+        },
+        "header": {
+          "left": 16,
+          "right": 514,
+          "top": 16,
+          "bottom": 80,
+          "width": 498,
+          "height": 64
+        },
+        "menu": {
+          "left": 458,
+          "right": 502,
+          "top": 26,
+          "bottom": 70,
+          "width": 44,
+          "height": 44
+        },
+        "overflow": false,
+        "arrowGap": 287.5625,
+        "secondaryHeight": 51.046875,
+        "circle": {
+          "left": 446,
+          "right": 490,
+          "top": 1076.84375,
+          "bottom": 1120.84375,
+          "width": 44,
+          "height": 44
+        },
+        "labelRight": 171.4375,
+        "divider": "rgba(0, 0, 0, 0)",
+        "labels": [
+          "Explore training",
+          "Your next chapter",
+          "Starts with a skill",
+          "Apply on WhatsApp"
+        ],
+        "numbers": [
+          "100+",
+          "46,000"
+        ],
+        "scrollHeight": 1140,
+        "stageHeight": 1140
+      }
+    },
+    {
+      "name": "No hero header divider 530",
+      "pass": true,
+      "detail": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "name": "Reduced motion has no artificial runway 530",
+      "pass": true,
+      "detail": {
+        "scroll": 1140,
+        "stage": 1140
+      }
+    },
+    {
+      "name": "Menu accessible and fits viewport 530",
+      "pass": true
+    },
+    {
+      "name": "Training disclosure works 530",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus 530",
+      "pass": true
+    },
+    {
+      "name": "Every width from 320 to 430 preserves header clearance and no overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Live start portrait remains visible",
+      "pass": true,
+      "detail": {
+        "frame": 0,
+        "top": 220.21875,
+        "bottom": 956.859375,
+        "viewport": 812
+      }
+    },
+    {
+      "name": "Live turn portrait remains visible",
+      "pass": true,
+      "detail": {
+        "frame": 61,
+        "top": 55.21875,
+        "bottom": 791.859375,
+        "viewport": 812
+      }
+    },
+    {
+      "name": "Live front portrait remains visible",
+      "pass": true,
+      "detail": {
+        "frame": 119,
+        "top": -127.78125,
+        "bottom": 608.859375,
+        "viewport": 812
+      }
+    },
+    {
+      "name": "Phone reverse scroll preserves the approved sequence",
+      "pass": true
+    },
+    {
+      "name": "Full face in viewport during pinned turn 320 at 0",
+      "pass": true,
+      "detail": {
+        "header": -219,
+        "top": 119,
+        "bottom": 356.79999999999995,
+        "viewport": 568,
+        "frameBottom": 449
+      }
+    },
+    {
+      "name": "Full face in viewport during pinned turn 320 at 0.45",
+      "pass": true,
+      "detail": {
+        "header": -334,
+        "top": 119,
+        "bottom": 356.79999999999995,
+        "viewport": 568,
+        "frameBottom": 449
+      }
+    },
+    {
+      "name": "Full face in viewport during pinned turn 320 at 0.95",
+      "pass": true,
+      "detail": {
+        "header": -462,
+        "top": 119,
+        "bottom": 356.79999999999995,
+        "viewport": 568,
+        "frameBottom": 449
+      }
+    },
+    {
+      "name": "Full face in viewport during pinned turn 430 at 0",
+      "pass": true,
+      "detail": {
+        "header": -83,
+        "top": 253.40625,
+        "bottom": 572.6328125,
+        "viewport": 932,
+        "frameBottom": 679.09375
+      }
+    },
+    {
+      "name": "Full face in viewport during pinned turn 430 at 0.45",
+      "pass": true,
+      "detail": {
+        "header": -272,
+        "top": 253.140625,
+        "bottom": 572.3671875,
+        "viewport": 932,
+        "frameBottom": 678.828125
+      }
+    },
+    {
+      "name": "Full face in viewport during pinned turn 430 at 0.95",
+      "pass": true,
+      "detail": {
+        "header": -481,
+        "top": 253.140625,
+        "bottom": 572.3671875,
+        "viewport": 932,
+        "frameBottom": 678.828125
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 568,
+      "copy": {
+        "left": 30,
+        "right": 290,
+        "top": 150,
+        "bottom": 389.625,
+        "width": 260,
+        "height": 239.625
+      },
+      "visual": {
+        "left": 8,
+        "right": 312,
+        "top": 417.625,
+        "bottom": 747.625,
+        "width": 304,
+        "height": 330
+      },
+      "portrait": {
+        "left": -45,
+        "right": 365,
+        "top": 417.625,
+        "bottom": 827.625,
+        "width": 410,
+        "height": 410
+      },
+      "trust": {
+        "left": 30,
+        "right": 290,
+        "top": 747.625,
+        "bottom": 876.625,
+        "width": 260,
+        "height": 129
+      },
+      "footer": {
+        "left": 30,
+        "right": 290,
+        "top": 900.625,
+        "bottom": 951.671875,
+        "width": 260,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 30,
+        "right": 229.03125,
+        "top": 337.625,
+        "bottom": 389.625,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 304,
+        "top": 16,
+        "bottom": 80,
+        "width": 288,
+        "height": 64
+      },
+      "menu": {
+        "left": 248,
+        "right": 292,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 97.5625,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 246,
+        "right": 290,
+        "top": 904.140625,
+        "bottom": 948.140625,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 161.4375,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 968,
+      "stageHeight": 968
+    },
+    {
+      "width": 348,
+      "height": 740,
+      "copy": {
+        "left": 30.265625,
+        "right": 317.734375,
+        "top": 150,
+        "bottom": 395.84375,
+        "width": 287.46875,
+        "height": 245.84375
+      },
+      "visual": {
+        "left": 8,
+        "right": 340,
+        "top": 423.84375,
+        "bottom": 768.359375,
+        "width": 332,
+        "height": 344.515625
+      },
+      "portrait": {
+        "left": -48.71875,
+        "right": 396.71875,
+        "top": 423.84375,
+        "bottom": 869.28125,
+        "width": 445.4375,
+        "height": 445.4375
+      },
+      "trust": {
+        "left": 30.265625,
+        "right": 317.734375,
+        "top": 768.359375,
+        "bottom": 897.359375,
+        "width": 287.46875,
+        "height": 129
+      },
+      "footer": {
+        "left": 30.265625,
+        "right": 317.734375,
+        "top": 921.359375,
+        "bottom": 972.40625,
+        "width": 287.46875,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 30.265625,
+        "right": 229.296875,
+        "top": 343.84375,
+        "bottom": 395.84375,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 332,
+        "top": 16,
+        "bottom": 80,
+        "width": 316,
+        "height": 64
+      },
+      "menu": {
+        "left": 276,
+        "right": 320,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 125.03125,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 273.734375,
+        "right": 317.734375,
+        "top": 924.875,
+        "bottom": 968.875,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 161.703125,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 988,
+      "stageHeight": 988
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "copy": {
+        "left": 31.03125,
+        "right": 328.96875,
+        "top": 150,
+        "bottom": 398.5,
+        "width": 297.9375,
+        "height": 248.5
+      },
+      "visual": {
+        "left": 8,
+        "right": 352,
+        "top": 426.5,
+        "bottom": 782.890625,
+        "width": 344,
+        "height": 356.390625
+      },
+      "portrait": {
+        "left": -50.3984375,
+        "right": 410.3984375,
+        "top": 426.5,
+        "bottom": 887.296875,
+        "width": 460.796875,
+        "height": 460.796875
+      },
+      "trust": {
+        "left": 31.03125,
+        "right": 328.96875,
+        "top": 782.890625,
+        "bottom": 911.890625,
+        "width": 297.9375,
+        "height": 129
+      },
+      "footer": {
+        "left": 31.03125,
+        "right": 328.96875,
+        "top": 935.890625,
+        "bottom": 986.9375,
+        "width": 297.9375,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 31.03125,
+        "right": 230.0625,
+        "top": 346.5,
+        "bottom": 398.5,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 344,
+        "top": 16,
+        "bottom": 80,
+        "width": 328,
+        "height": 64
+      },
+      "menu": {
+        "left": 288,
+        "right": 332,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 135.5,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 284.96875,
+        "right": 328.96875,
+        "top": 939.40625,
+        "bottom": 983.40625,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 162.46875,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 1003,
+      "stageHeight": 1003
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "copy": {
+        "left": 32,
+        "right": 343,
+        "top": 150,
+        "bottom": 376.21875,
+        "width": 311,
+        "height": 226.21875
+      },
+      "visual": {
+        "left": 8,
+        "right": 367,
+        "top": 404.21875,
+        "bottom": 775.46875,
+        "width": 359,
+        "height": 371.25
+      },
+      "portrait": {
+        "left": -52.5,
+        "right": 427.5,
+        "top": 404.21875,
+        "bottom": 884.21875,
+        "width": 480,
+        "height": 480
+      },
+      "trust": {
+        "left": 32,
+        "right": 343,
+        "top": 775.46875,
+        "bottom": 904.46875,
+        "width": 311,
+        "height": 129
+      },
+      "footer": {
+        "left": 32,
+        "right": 343,
+        "top": 928.46875,
+        "bottom": 979.515625,
+        "width": 311,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 32,
+        "right": 231.03125,
+        "top": 324.21875,
+        "bottom": 376.21875,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 359,
+        "top": 16,
+        "bottom": 80,
+        "width": 343,
+        "height": 64
+      },
+      "menu": {
+        "left": 303,
+        "right": 347,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 148.5625,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 299,
+        "right": 343,
+        "top": 931.984375,
+        "bottom": 975.984375,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 163.4375,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 996,
+      "stageHeight": 996
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "copy": {
+        "left": 32.953125,
+        "right": 357.046875,
+        "top": 150,
+        "bottom": 379.53125,
+        "width": 324.09375,
+        "height": 229.53125
+      },
+      "visual": {
+        "left": 8,
+        "right": 382,
+        "top": 407.53125,
+        "bottom": 793.625,
+        "width": 374,
+        "height": 386.09375
+      },
+      "portrait": {
+        "left": -54.59375,
+        "right": 444.59375,
+        "top": 407.53125,
+        "bottom": 906.71875,
+        "width": 499.1875,
+        "height": 499.1875
+      },
+      "trust": {
+        "left": 32.953125,
+        "right": 357.046875,
+        "top": 793.625,
+        "bottom": 922.625,
+        "width": 324.09375,
+        "height": 129
+      },
+      "footer": {
+        "left": 32.953125,
+        "right": 357.046875,
+        "top": 946.625,
+        "bottom": 997.671875,
+        "width": 324.09375,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 32.953125,
+        "right": 231.984375,
+        "top": 327.53125,
+        "bottom": 379.53125,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 374,
+        "top": 16,
+        "bottom": 80,
+        "width": 358,
+        "height": 64
+      },
+      "menu": {
+        "left": 318,
+        "right": 362,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 161.65625,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 313.046875,
+        "right": 357.046875,
+        "top": 950.140625,
+        "bottom": 994.140625,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 164.390625,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 1014,
+      "stageHeight": 1014
+    },
+    {
+      "width": 414,
+      "height": 896,
+      "copy": {
+        "left": 34.484375,
+        "right": 379.515625,
+        "top": 150,
+        "bottom": 384.875,
+        "width": 345.03125,
+        "height": 234.875
+      },
+      "visual": {
+        "left": 8,
+        "right": 406,
+        "top": 412.875,
+        "bottom": 822.734375,
+        "width": 398,
+        "height": 409.859375
+      },
+      "portrait": {
+        "left": -57.953125,
+        "right": 471.953125,
+        "top": 412.875,
+        "bottom": 942.78125,
+        "width": 529.90625,
+        "height": 529.90625
+      },
+      "trust": {
+        "left": 34.484375,
+        "right": 379.515625,
+        "top": 822.734375,
+        "bottom": 951.734375,
+        "width": 345.03125,
+        "height": 129
+      },
+      "footer": {
+        "left": 34.484375,
+        "right": 379.515625,
+        "top": 975.734375,
+        "bottom": 1026.78125,
+        "width": 345.03125,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 34.484375,
+        "right": 233.515625,
+        "top": 332.875,
+        "bottom": 384.875,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 398,
+        "top": 16,
+        "bottom": 80,
+        "width": 382,
+        "height": 64
+      },
+      "menu": {
+        "left": 342,
+        "right": 386,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 182.59375,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 335.515625,
+        "right": 379.515625,
+        "top": 979.25,
+        "bottom": 1023.25,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 165.921875,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 1043,
+      "stageHeight": 1043
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "copy": {
+        "left": 35.515625,
+        "right": 394.484375,
+        "top": 150,
+        "bottom": 388.40625,
+        "width": 358.96875,
+        "height": 238.40625
+      },
+      "visual": {
+        "left": 8,
+        "right": 422,
+        "top": 416.40625,
+        "bottom": 842.09375,
+        "width": 414,
+        "height": 425.6875
+      },
+      "portrait": {
+        "left": -60.1953125,
+        "right": 490.1953125,
+        "top": 416.40625,
+        "bottom": 966.796875,
+        "width": 550.390625,
+        "height": 550.390625
+      },
+      "trust": {
+        "left": 35.515625,
+        "right": 394.484375,
+        "top": 842.09375,
+        "bottom": 971.09375,
+        "width": 358.96875,
+        "height": 129
+      },
+      "footer": {
+        "left": 35.515625,
+        "right": 394.484375,
+        "top": 995.09375,
+        "bottom": 1046.140625,
+        "width": 358.96875,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 35.515625,
+        "right": 234.546875,
+        "top": 336.40625,
+        "bottom": 388.40625,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 414,
+        "top": 16,
+        "bottom": 80,
+        "width": 398,
+        "height": 64
+      },
+      "menu": {
+        "left": 358,
+        "right": 402,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 196.53125,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 350.484375,
+        "right": 394.484375,
+        "top": 998.609375,
+        "bottom": 1042.609375,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 166.953125,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 1062,
+      "stageHeight": 1062
+    },
+    {
+      "width": 530,
+      "height": 900,
+      "copy": {
+        "left": 40,
+        "right": 490,
+        "top": 150,
+        "bottom": 410.5625,
+        "width": 450,
+        "height": 260.5625
+      },
+      "visual": {
+        "left": 8,
+        "right": 522,
+        "top": 438.5625,
+        "bottom": 918.5625,
+        "width": 514,
+        "height": 480
+      },
+      "portrait": {
+        "left": -35,
+        "right": 565,
+        "top": 438.5625,
+        "bottom": 1038.5625,
+        "width": 600,
+        "height": 600
+      },
+      "trust": {
+        "left": 40,
+        "right": 490,
+        "top": 918.5625,
+        "bottom": 1049.328125,
+        "width": 450,
+        "height": 130.765625
+      },
+      "footer": {
+        "left": 40,
+        "right": 490,
+        "top": 1073.328125,
+        "bottom": 1124.375,
+        "width": 450,
+        "height": 51.046875
+      },
+      "action": {
+        "left": 40,
+        "right": 239.03125,
+        "top": 358.5625,
+        "bottom": 410.5625,
+        "width": 199.03125,
+        "height": 52
+      },
+      "header": {
+        "left": 16,
+        "right": 514,
+        "top": 16,
+        "bottom": 80,
+        "width": 498,
+        "height": 64
+      },
+      "menu": {
+        "left": 458,
+        "right": 502,
+        "top": 26,
+        "bottom": 70,
+        "width": 44,
+        "height": 44
+      },
+      "overflow": false,
+      "arrowGap": 287.5625,
+      "secondaryHeight": 51.046875,
+      "circle": {
+        "left": 446,
+        "right": 490,
+        "top": 1076.84375,
+        "bottom": 1120.84375,
+        "width": 44,
+        "height": 44
+      },
+      "labelRight": 171.4375,
+      "divider": "rgba(0, 0, 0, 0)",
+      "labels": [
+        "Explore training",
+        "Your next chapter",
+        "Starts with a skill",
+        "Apply on WhatsApp"
+      ],
+      "numbers": [
+        "100+",
+        "46,000"
+      ],
+      "scrollHeight": 1140,
+      "stageHeight": 1140
+    }
+  ]
+}

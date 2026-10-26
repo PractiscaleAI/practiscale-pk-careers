@@ -24,7 +24,8 @@
     "test:proof-band": "node scripts/qa-proof-band.cjs",
     "test:proof-edges": "node scripts/qa-proof-edges.cjs",
     "render:proof": "node scripts/export-proof-band.cjs",
-    "test:proof-links": "node scripts/qa-proof-links.cjs"
+    "test:proof-links": "node scripts/qa-proof-links.cjs",
+    "test:hero-continuity": "node scripts/qa-hero-continuity.cjs"
   },
   "dependencies": {
     "gsap": "3.15.0",

@@ -1,0 +1,149 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "start",
+    "frame": 0,
+    "file": "1440x900-start.png"
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "turn",
+    "frame": 63,
+    "file": "1440x900-turn.png"
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "label": "front",
+    "frame": 119,
+    "file": "1440x900-front.png"
+  },
+  {
+    "width": 1920,
+    "height": 686,
+    "label": "start",
+    "frame": 0,
+    "file": "1920x686-start.png"
+  },
+  {
+    "width": 1920,
+    "height": 686,
+    "label": "turn",
+    "frame": 63,
+    "file": "1920x686-turn.png"
+  },
+  {
+    "width": 1920,
+    "height": 686,
+    "label": "front",
+    "frame": 119,
+    "file": "1920x686-front.png"
+  },
+  {
+    "width": 1192,
+    "height": 720,
+    "label": "start",
+    "frame": 0,
+    "file": "1192x720-start.png"
+  },
+  {
+    "width": 1192,
+    "height": 720,
+    "label": "turn",
+    "frame": 63,
+    "file": "1192x720-turn.png"
+  },
+  {
+    "width": 1192,
+    "height": 720,
+    "label": "front",
+    "frame": 119,
+    "file": "1192x720-front.png"
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "start",
+    "frame": 0,
+    "file": "768x1024-start.png"
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "turn",
+    "frame": 63,
+    "file": "768x1024-turn.png"
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "label": "front",
+    "frame": 119,
+    "file": "768x1024-front.png"
+  },
+  {
+    "width": 530,
+    "height": 900,
+    "label": "start",
+    "frame": 0,
+    "file": "530x900-start.png"
+  },
+  {
+    "width": 530,
+    "height": 900,
+    "label": "turn",
+    "frame": 63,
+    "file": "530x900-turn.png"
+  },
+  {
+    "width": 530,
+    "height": 900,
+    "label": "front",
+    "frame": 119,
+    "file": "530x900-front.png"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "label": "start",
+    "frame": 0,
+    "file": "390x844-start.png"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "label": "turn",
+    "frame": 63,
+    "file": "390x844-turn.png"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "label": "front",
+    "frame": 119,
+    "file": "390x844-front.png"
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "start",
+    "frame": 0,
+    "file": "320x568-start.png"
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "turn",
+    "frame": 63,
+    "file": "320x568-turn.png"
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "label": "front",
+    "frame": 119,
+    "file": "320x568-front.png"
+  }
+]

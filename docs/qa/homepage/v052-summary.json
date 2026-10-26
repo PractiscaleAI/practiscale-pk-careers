@@ -1,0 +1,165 @@
+{
+  "revision": "0.52",
+  "checkedAt": "2026-10-23T21:48:01.750Z",
+  "scope": "Local production build; Chrome emulation. Desktop-only company film; existing phone/tablet layouts preserved. Not physical-device frame-rate or Safari/Firefox certification.",
+  "suites": [
+    {
+      "name": "hero-motion",
+      "file": "docs/motion-qa.json",
+      "checks": 13,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:11:37.498Z"
+    },
+    {
+      "name": "phone-hero",
+      "file": "docs/mobile-editorial-qa.json",
+      "checks": 118,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:12:30.031Z"
+    },
+    {
+      "name": "browser",
+      "file": "docs/hero-qa.json",
+      "checks": 22,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:13:07.838Z"
+    },
+    {
+      "name": "typography",
+      "file": "docs/typography-qa.json",
+      "checks": 109,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:13:25.144Z"
+    },
+    {
+      "name": "problem-cards",
+      "file": "docs/problem-scroll-qa.json",
+      "checks": 192,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:15:12.984Z"
+    },
+    {
+      "name": "career-cards",
+      "file": "docs/career-section-qa.json",
+      "checks": 134,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:38:28.185Z"
+    },
+    {
+      "name": "scroll-navigation",
+      "file": "docs/scroll-navigation-qa.json",
+      "checks": 107,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:43:09.997Z"
+    },
+    {
+      "name": "desktop-film",
+      "file": "docs/qa/who-we-are/v052/main/report.json",
+      "checks": 253,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:31:16.340Z"
+    },
+    {
+      "name": "native-film",
+      "file": "docs/qa/who-we-are/v052/native/report.json",
+      "checks": 10,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:31:40.003Z"
+    },
+    {
+      "name": "earnings-layout",
+      "file": "docs/qa/earnings/v050/main/report.json",
+      "checks": 134,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:33:02.592Z"
+    },
+    {
+      "name": "earnings-recovery",
+      "file": "docs/qa/earnings/v050/edges/report.json",
+      "checks": 23,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:33:20.464Z"
+    },
+    {
+      "name": "earnings-links",
+      "file": "docs/qa/earnings/v050/links/report.json",
+      "checks": 10,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:46:35.614Z"
+    },
+    {
+      "name": "media-loading",
+      "file": "docs/qa/performance/v052/loading-regression.json",
+      "checks": 9,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:33:54.498Z"
+    },
+    {
+      "name": "fast-scroll",
+      "file": "docs/qa/performance/v052/fast-scroll/report.json",
+      "checks": 16,
+      "failed": 0,
+      "errors": 0,
+      "fatal": null,
+      "updated": "2026-10-23T21:39:33.990Z"
+    }
+  ],
+  "code": [
+    {
+      "file": "src/components/hero-sequence.tsx",
+      "sha256": "16d7dc8156eafcdaaeef7ebdd30ee4bd20dccaa23ba101e3432aa759e1f7c5b0"
+    },
+    {
+      "file": "src/components/who-we-are.tsx",
+      "sha256": "463f6cb5ede273d0b6c1c75dfacb9a76a7311976376e198635c363f7765bbc9e"
+    },
+    {
+      "file": "src/components/who-we-are.module.css",
+      "sha256": "44f4fe6b4d2d25aa3b71ca4a4255e719248f5e8e68460c63f3df2665df091e4f"
+    },
+    {
+      "file": "src/lib/who-we-are-player.ts",
+      "sha256": "873241909e7150cc75785d708472db47a2a81d1ab63bf1b2a62698cd03ad4b40"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "e621d20be6de7b3fabe3e99e42d8f02593e6b5cd0c709da212ba624797184896"
+    }
+  ],
+  "build": "passed",
+  "checks": 1150,
+  "allPassed": true,
+  "notes": [
+    "The complete career resize test exposed a real company-film scroll-ownership defect. The pre-reflow owner is now retained; before/after traces show that navigating into Jobs no longer jumps back to the film. The existing resize assertion was retained.",
+    "One subsequent software-rendered full career run timed out during a phone transition. An isolated complete rerun passed all 134 checks without changing production code or relaxing the timeout; rapid-scroll tests passed separately. Retain this as a test-reliability observation, not a hardware performance certification.",
+    "Navigation assertions compare the header document and parent coordinates, avoiding a one-pixel transient viewport-scroll offset.",
+    "Deep links await actual alignment, then retain a 1800ms stability hold covering later font/scene refreshes. The strict position tolerance is unchanged.",
+    "Raw failed-attempt exit summaries and resize traces are preserved alongside the final results."
+  ]
+}

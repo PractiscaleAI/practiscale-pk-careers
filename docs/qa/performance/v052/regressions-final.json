@@ -1,0 +1,42 @@
+[
+  {
+    "suite": "qa-career-section.cjs",
+    "exitCode": 1,
+    "elapsedMs": 99144
+  },
+  {
+    "suite": "qa-who-we-are.cjs",
+    "exitCode": 0,
+    "elapsedMs": 101605
+  },
+  {
+    "suite": "qa-who-we-are.cjs native",
+    "exitCode": 0,
+    "elapsedMs": 23647
+  },
+  {
+    "suite": "qa-scroll-navigation.cjs",
+    "exitCode": 1,
+    "elapsedMs": 16489
+  },
+  {
+    "suite": "qa-earnings-layout.cjs",
+    "exitCode": 0,
+    "elapsedMs": 66120
+  },
+  {
+    "suite": "qa-earnings-layout.cjs edges",
+    "exitCode": 0,
+    "elapsedMs": 17874
+  },
+  {
+    "suite": "qa-earnings-layout.cjs links",
+    "exitCode": 1,
+    "elapsedMs": 22648
+  },
+  {
+    "suite": "qa-media-loading.cjs",
+    "exitCode": 0,
+    "elapsedMs": 11346
+  }
+]

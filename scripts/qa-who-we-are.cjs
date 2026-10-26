@@ -4,7 +4,7 @@ const fs = require("node:fs/promises"),
   path = require("node:path");
 const out = path.join(
   __dirname,
-  "../docs/qa/who-we-are/v051",
+  "../docs/qa/who-we-are/v052",
   process.argv[2] === "native" ? "native" : "main",
 );
 const result = { checks: [], errors: [], layouts: [], accessibility: [] };
@@ -220,11 +220,11 @@ async function state(page) {
         "Final vision frame is retained",
         Math.abs((await state(page)).actual - 31.633333) < 0.07,
       );
-      await page.setViewportSize({ width: 1280, height: 600 });
+      await page.setViewportSize({ width: 1280, height: 420 });
       await pause(1000);
       s = await state(page);
       check(
-        "Short desktop releases extended travel",
+        "Content-constrained desktop releases extended travel",
         s.mode === "static" && s.controls && s.section.h < 1400,
         s,
       );
@@ -239,7 +239,7 @@ async function state(page) {
           viewport: { width: 1440, height: 900 },
         }),
         fp = await failed.newPage();
-      await failed.route("**/media/who-we-are/office-scroll.mp4", (r) =>
+      await failed.route("**/media/who-we-are/office-scroll*.mp4", (r) =>
         r.abort("failed"),
       );
       await ready(fp, "#who-we-are");
@@ -269,6 +269,10 @@ async function state(page) {
       [1920, 1080],
       [2560, 1080],
       [1280, 720],
+      [1920, 686],
+      [1536, 550],
+      [1366, 600],
+      [1024, 600],
     ]) {
       const ctx = await browser.newContext({
           viewport: { width: w, height: h },
@@ -350,7 +354,7 @@ async function state(page) {
         `${w}: rounded inset diagonal uses the approved soft neutral`,
         s.neutral === "rgb(230, 236, 236)" &&
           s.panelClip.startsWith("polygon(") &&
-          s.backdropClip.includes("96px") &&
+          s.backdropClip.startsWith("inset(") &&
           s.backdropClip.includes("round 24px"),
         { neutral: s.neutral, panel: s.panelClip, backdrop: s.backdropClip },
       );
@@ -374,17 +378,18 @@ async function state(page) {
       );
       check(
         `${w}: copy clear of the opening video`,
-        s.copy.b + 32 <= s.windowRect.y &&
+        s.copy.b + 23.9 <= s.windowRect.y &&
           Math.abs(s.windowRect.x + s.windowRect.w / 2 - w / 2) < 1 &&
-          s.copy.y >= 120 &&
+          s.copy.y >= 111.9 &&
           s.copy.b <= h - 48,
         s,
       );
       check(
         `${w}: description anchors bottom-right opposite the heading`,
         Math.abs(s.description.r - (w - s.copy.x)) < 1 &&
-          Math.abs(h - s.description.b - s.copy.y) < 1 &&
-          s.description.y >= s.windowRect.b + 31 &&
+          h - s.description.b >= 47.9 &&
+          h - s.description.b <= 128.1 &&
+          s.description.y >= s.windowRect.b + 23.9 &&
           s.description.x > s.copy.x &&
           s.descriptionColor === "rgb(19, 65, 67)",
         { heading: s.copy, description: s.description, window: s.windowRect },
@@ -406,7 +411,7 @@ async function state(page) {
         s.fit === "cover",
       );
       check(`${w}: no horizontal overflow`, s.overflow <= 1, s.overflow);
-      await page.screenshot({ path: path.join(out, `${w}-opening.png`) });
+      await page.screenshot({ path: path.join(out, `${w}x${h}-opening.png`) });
       const points =
         w === 1440
           ? [0.1, 0.195, 0.38, 0.64, 0.9, 1, 0.64, 0.38, 0]
@@ -471,7 +476,9 @@ async function state(page) {
             s,
           );
         if (w === 1440 || p === 1)
-          await page.screenshot({ path: path.join(out, `${w}-p${p}.png`) });
+          await page.screenshot({
+            path: path.join(out, `${w}x${h}-p${p}.png`),
+          });
       }
       if (w === 1440) {
         await progress(page, 0.64);
@@ -519,7 +526,7 @@ async function state(page) {
         page = await ctx.newPage(),
         requests = [];
       page.on("request", (r) => {
-        if (r.url().includes("office-scroll.mp4")) requests.push(r.url());
+        if (r.url().includes("office-scroll")) requests.push(r.url());
       });
       await ready(page);
       await page.locator("#career-paths").scrollIntoViewIfNeeded();
@@ -560,7 +567,7 @@ async function state(page) {
           }),
         );
       if (kind === "failed-video")
-        await ctx.route("**/media/who-we-are/office-scroll.mp4", (r) =>
+        await ctx.route("**/media/who-we-are/office-scroll*.mp4", (r) =>
           r.abort("failed"),
         );
       if (kind === "no-js")

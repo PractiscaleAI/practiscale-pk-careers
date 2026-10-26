@@ -1,0 +1,37 @@
+{
+  "profile": "5 Mbps down, 80 ms latency, 2x CPU slowdown, cold browser cache, local production server",
+  "cases": [
+    {
+      "width": 1440,
+      "height": 900,
+      "initial": {
+        "firstFrame": 2773.6999999955297,
+        "longTasks": 7,
+        "longTaskMs": 984,
+        "elapsed": 12010.60000000149,
+        "frameRequests": 50,
+        "frameTransferBytes": 4863546,
+        "totalTransferBytes": 5860999,
+        "engine": "three",
+        "filmRequested": false
+      },
+      "jumpToEndMs": 10970
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "initial": {
+        "firstFrame": 2414.7999999970198,
+        "longTasks": 7,
+        "longTaskMs": 793,
+        "elapsed": 12011.79999999702,
+        "frameRequests": 120,
+        "frameTransferBytes": 4044088,
+        "totalTransferBytes": 4809050,
+        "engine": "three",
+        "filmRequested": false
+      },
+      "jumpToEndMs": 506
+    }
+  ]
+}

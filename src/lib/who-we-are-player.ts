@@ -61,6 +61,10 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     targetTime = 0,
     duration = 31.666667;
   let resizeProgress: number | null = null;
+  let stableProgress: number | null = null;
+  let resizing = false;
+  let measuredWidth = 0,
+    measuredHeight = 0;
   let restoreFlow = false;
   delete video.dataset.loading;
 
@@ -139,29 +143,23 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     ])
       el.removeAttribute("style");
     geometry = undefined;
+    stableProgress = null;
     video.pause();
     video.controls = true;
     root.dataset.mode = "static";
     root.style.removeProperty("--who-travel");
+    root.style.removeProperty("--who-panel-inset");
   }
   function measure() {
     if (disposed) return;
-    const bounds = viewport.getBoundingClientRect();
-    const sceneVisible =
-      root.dataset.mode === "motion" && bounds.top <= 1 && bounds.bottom > 0;
-    const oldProgress =
-      resizeProgress ??
-      (tween && (tween.scrollTrigger?.isActive || sceneVisible)
-        ? state.progress
-        : null);
+    // Use the owner recorded before the viewport changed. A new upstream
+    // pin can temporarily put this scene under the viewport during reflow.
+    const oldProgress = resizing
+      ? resizeProgress
+      : (resizeProgress ?? stableProgress);
+    resizing = false;
     reset();
-    if (
-      !desktop.matches ||
-      reduced.matches ||
-      saveData ||
-      failed ||
-      innerHeight < 620
-    ) {
+    if (!desktop.matches || reduced.matches || saveData || failed) {
       resizeProgress = oldProgress;
       restoreFlow = oldProgress !== null && desktop.matches;
       clearTimeout(resizeRelease);
@@ -179,16 +177,26 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     restoreFlow = false;
     const w = document.documentElement.clientWidth,
       h = viewport.clientHeight;
+    // Reserve the floating navigation clearance, then give short desktop
+    // windows their space back without shrinking text or moving the film off-center.
+    const backdropTop = clamp((h - 500) / 4, 16, 96),
+      gap = clamp(h * 0.035, 24, 32);
+    root.style.setProperty("--who-panel-inset", `${backdropTop}px`);
     const gutter = parseFloat(getComputedStyle(copy).left) - 32,
-      backdropTop = 96,
       copyBottom = copy.offsetTop + copy.offsetHeight,
       descriptionTop = description.offsetTop,
-      halfRoom = Math.min(h / 2 - copyBottom - 32, descriptionTop - 32 - h / 2);
+      halfRoom = Math.min(
+        h / 2 - copyBottom - gap,
+        descriptionTop - gap - h / 2,
+      );
     const cw = Math.min(920, w * 0.64, (halfRoom * 2 * 16) / 9),
       ch = (cw * 9) / 16;
-    if (cw < 320 || halfRoom <= 0) {
+    if (cw < 240 || halfRoom <= 0) {
       reset();
+      resizeProgress = oldProgress;
+      restoreFlow = oldProgress !== null;
       ScrollTrigger.refresh();
+      restoreProgress();
       return;
     }
     const x = (w - cw) / 2,
@@ -207,6 +215,8 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       baseWidth,
       coverScale: Math.max(w, (h * 16) / 9) / baseWidth,
     };
+    measuredWidth = innerWidth;
+    measuredHeight = innerHeight;
     surface.style.width = `${baseWidth}px`;
     surface.style.height = `${baseHeight}px`;
     surface.style.left = `${(w - baseWidth) / 2}px`;
@@ -236,6 +246,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     load();
     ScrollTrigger.refresh();
     restoreProgress();
+    rememberPosition();
   }
   function restoreProgress() {
     const trigger = tween?.scrollTrigger;
@@ -343,17 +354,34 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     { rootMargin: "800px 0px" },
   );
   io.observe(viewport);
-  const resize = () => {
-    const bounds = viewport.getBoundingClientRect();
+  function rememberPosition() {
     if (
-      resizeProgress === null &&
-      tween &&
-      (tween.scrollTrigger?.isActive || (bounds.top <= 1 && bounds.bottom > 0))
+      resizing ||
+      !geometry ||
+      innerWidth !== measuredWidth ||
+      innerHeight !== measuredHeight
     )
-      resizeProgress = state.progress;
+      return;
+    const trigger = tween?.scrollTrigger;
+    const ownsPosition =
+      trigger && scrollY >= trigger.start - 1 && scrollY <= trigger.end + 1;
+    stableProgress = ownsPosition
+      ? clamp((scrollY - trigger.start) / (trigger.end - trigger.start))
+      : null;
+    // A new destination also cancels a temporary resize correction. Do not
+    // pull navigation or another scene back into the company film on refresh.
+    if (!ownsPosition && resizeProgress !== null) cancelRestore();
+  }
+  const resize = () => {
+    if (!resizing) resizeProgress = stableProgress;
+    resizing = true;
     clearTimeout(timer);
     timer = window.setTimeout(measure, 150);
   };
+  window.addEventListener("scroll", rememberPosition, {
+    passive: true,
+    signal,
+  });
   window.addEventListener("resize", resize, { passive: true, signal });
   reduced.addEventListener("change", measure, { signal });
   desktop.addEventListener("change", measure, { signal });
