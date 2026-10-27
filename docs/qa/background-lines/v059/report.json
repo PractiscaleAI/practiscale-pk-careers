@@ -1,0 +1,453 @@
+{
+  "checks": [
+    {
+      "name": "Every supplied path is preserved in order",
+      "pass": true,
+      "detail": 21
+    },
+    {
+      "name": "1440-light-no-preference: follows testimonials without changing section order",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-light-no-preference: both sets of source paths render",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-light-no-preference: original responsive height and no overflow",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-light-no-preference: correct theme",
+      "pass": true,
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "1440-light-no-preference: no invented copy and decorative semantics",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-light-no-preference: lines actually animate",
+      "pass": true,
+      "detail": {
+        "before": {
+          "offset": "517.52px",
+          "opacity": "1"
+        },
+        "after": {
+          "offset": "458.72px",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "1440-light-no-preference: animation unmounted offscreen",
+      "pass": true
+    },
+    {
+      "name": "1440-light-no-preference: resumes on re-entry",
+      "pass": true
+    },
+    {
+      "name": "1440-light-no-preference: hidden-tab simulation stops motion",
+      "pass": true
+    },
+    {
+      "name": "768-light-no-preference: follows testimonials without changing section order",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 1024,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "768-light-no-preference: both sets of source paths render",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 1024,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "768-light-no-preference: original responsive height and no overflow",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 1024,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "768-light-no-preference: correct theme",
+      "pass": true,
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "768-light-no-preference: no invented copy and decorative semantics",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 1024,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "768-light-no-preference: lines actually animate",
+      "pass": true,
+      "detail": {
+        "before": {
+          "offset": "521.12px",
+          "opacity": "1"
+        },
+        "after": {
+          "offset": "461.12px",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "768-light-no-preference: animation unmounted offscreen",
+      "pass": true
+    },
+    {
+      "name": "768-light-no-preference: resumes on re-entry",
+      "pass": true
+    },
+    {
+      "name": "768-light-no-preference: hidden-tab simulation stops motion",
+      "pass": true
+    },
+    {
+      "name": "390-light-no-preference: follows testimonials without changing section order",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-no-preference: both sets of source paths render",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-no-preference: original responsive height and no overflow",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-no-preference: correct theme",
+      "pass": true,
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "390-light-no-preference: no invented copy and decorative semantics",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-no-preference: lines actually animate",
+      "pass": true,
+      "detail": {
+        "before": {
+          "offset": "517.36px",
+          "opacity": "1"
+        },
+        "after": {
+          "offset": "457.44px",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "390-light-no-preference: animation unmounted offscreen",
+      "pass": true
+    },
+    {
+      "name": "390-light-no-preference: resumes on re-entry",
+      "pass": true
+    },
+    {
+      "name": "390-light-no-preference: hidden-tab simulation stops motion",
+      "pass": true
+    },
+    {
+      "name": "1440-dark-no-preference: follows testimonials without changing section order",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(0, 0, 0)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-dark-no-preference: both sets of source paths render",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(0, 0, 0)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-dark-no-preference: original responsive height and no overflow",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(0, 0, 0)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-dark-no-preference: correct theme",
+      "pass": true,
+      "detail": "rgb(0, 0, 0)"
+    },
+    {
+      "name": "1440-dark-no-preference: no invented copy and decorative semantics",
+      "pass": true,
+      "detail": {
+        "mode": "running",
+        "paths": 42,
+        "height": 900,
+        "background": "rgb(0, 0, 0)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "1440-dark-no-preference: lines actually animate",
+      "pass": true,
+      "detail": {
+        "before": {
+          "offset": "520.8px",
+          "opacity": "1"
+        },
+        "after": {
+          "offset": "460.8px",
+          "opacity": "1"
+        }
+      }
+    },
+    {
+      "name": "1440-dark-no-preference: animation unmounted offscreen",
+      "pass": true
+    },
+    {
+      "name": "1440-dark-no-preference: resumes on re-entry",
+      "pass": true
+    },
+    {
+      "name": "1440-dark-no-preference: hidden-tab simulation stops motion",
+      "pass": true
+    },
+    {
+      "name": "390-light-reduce: follows testimonials without changing section order",
+      "pass": true,
+      "detail": {
+        "mode": "static",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-reduce: both sets of source paths render",
+      "pass": true,
+      "detail": {
+        "mode": "static",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-reduce: original responsive height and no overflow",
+      "pass": true,
+      "detail": {
+        "mode": "static",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-reduce: correct theme",
+      "pass": true,
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "390-light-reduce: no invented copy and decorative semantics",
+      "pass": true,
+      "detail": {
+        "mode": "static",
+        "paths": 42,
+        "height": 320,
+        "background": "rgb(255, 255, 255)",
+        "content": "",
+        "previous": "testimonials",
+        "sections": 7,
+        "overflow": 0,
+        "decorative": "true"
+      }
+    },
+    {
+      "name": "390-light-reduce: static reduced-motion fallback",
+      "pass": true,
+      "detail": {
+        "before": {
+          "offset": "0px",
+          "opacity": "0.3"
+        },
+        "after": {
+          "offset": "0px",
+          "opacity": "0.3"
+        }
+      }
+    }
+  ],
+  "errors": []
+}

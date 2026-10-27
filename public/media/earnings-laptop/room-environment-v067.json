@@ -1,0 +1,9 @@
+{
+  "width": 336,
+  "height": 256,
+  "type": "HalfFloatType",
+  "mapping": "CubeUVReflectionMapping",
+  "colorSpace": "LinearSRGBColorSpace",
+  "source": "Three.js RoomEnvironment, PMREM sigma 0.06",
+  "bytes": 113333
+}

@@ -3,7 +3,8 @@ const { dismissIntroduction } = require("./qa-helpers.cjs");
 const fs = require("node:fs/promises");
 const path = require("node:path");
 
-const out = path.join(__dirname, "../docs/qa/hero/v053");
+const out =
+  process.env.QA_OUTPUT_DIR || path.join(__dirname, "../docs/qa/hero/v053");
 const report = {
   method:
     "Four-second continuous native-scroll sweeps in isolated local Chrome. The 40ms case adds asynchronous decoder latency; it is a robustness simulation, not a physical-device benchmark.",

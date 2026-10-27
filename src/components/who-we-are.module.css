@@ -2,7 +2,7 @@
   --who-neutral: #e6ecec;
   --who-split-top: calc(50% + 25vh);
   --who-split-bottom: calc(50% - 25vh);
-  display: none;
+  display: block;
   position: relative;
   background: var(--fog);
   color: var(--ink);
@@ -228,5 +228,62 @@
   .viewport {
     position: relative !important;
     height: auto !important;
+  }
+}
+
+/* The portrait film gets its own reading introduction before the pinned scene. */
+@media (max-width: 1023px) {
+  .mobileIntroduction {
+    padding: 64px 24px 32px;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+  .mobileIntroduction .copy,
+  .rail[data-mode="motion"] .mobileIntroduction .copy {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: none;
+    background: transparent;
+    color: var(--ink);
+  }
+  .mobileIntroduction .copy > p:first-child,
+  .rail[data-mode="motion"] .mobileIntroduction .copy > p:first-child {
+    color: var(--muted);
+  }
+  .mobileIntroduction .lede,
+  .rail[data-mode="motion"] .mobileIntroduction .lede {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .rail[data-mode="motion"] {
+    height: calc(
+      var(--who-intro-height, 0px) + 100dvh + var(--who-travel, 3600px)
+    );
+  }
+  .rail[data-mode="motion"] .viewport {
+    height: 100dvh;
+  }
+  .surface video {
+    aspect-ratio: 9 / 16;
+  }
+  .frame,
+  .matte,
+  .surface video {
+    background: var(--deep);
+  }
+  .rail[data-mode="static"] .viewport {
+    padding: 16px 24px 48px;
+  }
+  .rail[data-mode="static"] .frame {
+    width: min(100%, 400px);
+    margin-top: 0;
   }
 }

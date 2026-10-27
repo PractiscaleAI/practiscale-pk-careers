@@ -30,6 +30,17 @@ export function mountEarningsLaptop(root) {
     resizeProgress = null,
     lastProgress = 0,
     lastActive = false;
+  let presentedProgress = null,
+    lastDrawTime = 0;
+  let warm = false,
+    warmTimer = 0,
+    sceneModule = null;
+  const prepareModule = () => (sceneModule ??= import("./scene.js"));
+  function scheduleWarmup() {
+    clearTimeout(warmTimer);
+    if (warm && !world && !loading && !failed && visible)
+      warmTimer = setTimeout(() => void initialize(), 180);
+  }
   let pointer = { x: 0.5, y: 0.4 },
     target = { ...pointer };
   function drawTexture(p) {
@@ -63,7 +74,7 @@ export function mountEarningsLaptop(root) {
     for (let x = 17; x < W; x += 48)
       for (let y = 19; y < H; y += 48) ctx.fillRect(x, y, 0.7, 0.7);
   }
-  function draw() {
+  function draw(now = performance.now()) {
     raf = 0;
     if (
       disposed ||
@@ -82,14 +93,25 @@ export function mountEarningsLaptop(root) {
       copyExit,
       metricsExit,
     } = geometry;
-    const p = clamp((scrollY - geometry.top) / geometry.travel),
-      expand = range(p, 0, 0.15);
+    const targetProgress = clamp((scrollY - geometry.top) / geometry.travel);
     if (
       document.documentElement.clientWidth !== geometry.width ||
       viewport.clientHeight !== geometry.height
     )
       return;
-    lastProgress = p;
+    const elapsed = lastDrawTime
+      ? Math.min(100, now - lastDrawTime)
+      : 1000 / 60;
+    lastDrawTime = now;
+    if (presentedProgress === null) presentedProgress = targetProgress;
+    else
+      presentedProgress +=
+        (targetProgress - presentedProgress) * (1 - Math.exp(-elapsed / 75));
+    if (Math.abs(targetProgress - presentedProgress) < 0.00005)
+      presentedProgress = targetProgress;
+    const p = presentedProgress,
+      expand = range(p, 0, 0.15);
+    lastProgress = targetProgress;
     lastActive =
       scrollY >= geometry.top && scrollY <= geometry.top + geometry.travel;
     pointer.x = mix(pointer.x, target.x, 0.17);
@@ -112,7 +134,8 @@ export function mountEarningsLaptop(root) {
     const radius = mix(20, 0, expand);
     win.style.borderRadius = `${radius / sx}px / ${radius / sy}px`;
     worldHost.style.transform = `scale(${scale / sx},${scale / sy})`;
-    const introExit = range(p, 0.01, 0.055);
+    // Clear the text before the expanding panel reaches its horizontal column.
+    const introExit = range(p, 0.01, 0.043);
     copy.style.translate = `0 ${-copyExit * introExit}px`;
     metrics.style.translate = `0 ${metricsExit * introExit}px`;
     root.dataset.introHidden = String(introExit === 1);
@@ -125,16 +148,20 @@ export function mountEarningsLaptop(root) {
     root.dataset.expanded = String(expand === 1);
     drawTexture(p);
     if (
-      fine.matches &&
-      Math.abs(pointer.x - target.x) + Math.abs(pointer.y - target.y) > 0.001
+      p !== targetProgress ||
+      (fine.matches &&
+        Math.abs(pointer.x - target.x) + Math.abs(pointer.y - target.y) > 0.001)
     )
       requestDraw();
+    else lastDrawTime = 0;
   }
   function requestDraw() {
     if (!raf && !disposed && near && visible) raf = requestAnimationFrame(draw);
   }
   function measure(preserve = false) {
     if (disposed) return;
+    presentedProgress = null;
+    lastDrawTime = 0;
     const width = document.documentElement.clientWidth,
       portrait = width < innerHeight;
     const snapshot =
@@ -241,7 +268,7 @@ export function mountEarningsLaptop(root) {
       loading ||
       world ||
       failed ||
-      !near ||
+      (!near && !warm) ||
       main?.inert ||
       geometry?.staticMode
     )
@@ -253,7 +280,7 @@ export function mountEarningsLaptop(root) {
         document.fonts.load("400 16px Manrope"),
         document.fonts.load('400 12px "JetBrains Mono"'),
       ]);
-      const { createLaptop } = await import("./scene.js");
+      const { createLaptop } = await prepareModule();
       if (disposed || geometry?.staticMode) return;
       const created = await createLaptop(worldHost, (available) => {
         if (!disposed && !available) fallback();
@@ -264,19 +291,37 @@ export function mountEarningsLaptop(root) {
         return;
       }
       world = created;
-      root.dataset.ready = "true";
       measure();
+      // Present the current pose before removing the poster, including fast entry.
+      world.render(
+        storyAt(clamp((scrollY - geometry.top) / geometry.travel)),
+        true,
+      );
       draw();
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve)),
+      );
+      if (!disposed && world === created && !geometry?.staticMode) {
+        root.dataset.ready = "true";
+        requestDraw();
+      }
     } catch {
       if (!disposed) fallback();
     } finally {
       loading = false;
     }
   }
-  window.addEventListener("scroll", requestDraw, {
-    passive: true,
-    signal: abort.signal,
-  });
+  window.addEventListener(
+    "scroll",
+    () => {
+      requestDraw();
+      scheduleWarmup();
+    },
+    {
+      passive: true,
+      signal: abort.signal,
+    },
+  );
   viewport.addEventListener(
     "pointermove",
     (event) => {
@@ -323,6 +368,8 @@ export function mountEarningsLaptop(root) {
       if (!visible) {
         cancelAnimationFrame(raf);
         raf = 0;
+        presentedProgress = null;
+        lastDrawTime = 0;
       } else {
         requestDraw();
       }
@@ -351,13 +398,26 @@ export function mountEarningsLaptop(root) {
       } else {
         cancelAnimationFrame(raf);
         raf = 0;
+        presentedProgress = null;
+        lastDrawTime = 0;
       }
     },
-    // Keep GPU allocation out of the preceding career-card exchange.
-    // The server-rendered poster covers entry while this scene initializes.
+    // Immediate entry still works when a visitor skips the approach window.
     { rootMargin: "0px" },
   );
   io.observe(viewport);
+  const warmObserver = new IntersectionObserver(
+    ([entry]) => {
+      warm = entry.isIntersecting;
+      if (warm && !geometry?.staticMode && !main?.inert) {
+        // Fetch early without allocating a GPU world on every homepage visit.
+        void prepareModule().catch(() => {});
+        scheduleWarmup();
+      } else clearTimeout(warmTimer);
+    },
+    { rootMargin: "1200px 0px" },
+  );
+  warmObserver.observe(viewport);
   const mutation = new MutationObserver(() => {
     if (!main?.inert) {
       measure();
@@ -404,9 +464,11 @@ export function mountEarningsLaptop(root) {
     disposed = true;
     abort.abort();
     clearTimeout(resizeTimer);
+    clearTimeout(warmTimer);
     clearTimeout(resizeRelease);
     cancelAnimationFrame(raf);
     io.disconnect();
+    warmObserver.disconnect();
     mutation.disconnect();
     copyObserver.disconnect();
     cleanupAnchor();

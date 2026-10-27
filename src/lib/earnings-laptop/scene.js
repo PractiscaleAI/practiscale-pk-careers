@@ -1,6 +1,12 @@
 import * as THREE from "three";
-import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
-import { records, total, format, mix, range } from "./earnings-data.js";
+import {
+  records,
+  total,
+  format,
+  mix,
+  range,
+  storyAt,
+} from "./earnings-data.js";
 import {
   digitRevealAt,
   recordMotionAt,
@@ -8,6 +14,8 @@ import {
 } from "./number-cues.js";
 
 export async function createLaptop(parent, onContextChange) {
+  // Let input and painting run between expensive, one-time preparation stages.
+  const breathe = () => new Promise((resolve) => setTimeout(resolve, 0));
   const canvas = document.createElement("canvas");
   canvas.className = "laptop-3d";
   canvas.setAttribute("aria-hidden", "true");
@@ -31,19 +39,46 @@ export async function createLaptop(parent, onContextChange) {
   renderer.toneMappingExposure = 1.02;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.VSMShadowMap;
+  renderer.shadowMap.autoUpdate = false;
+  await breathe();
   const scene = new THREE.Scene();
-  const environment = new RoomEnvironment();
-  const pmrem = new THREE.PMREMGenerator(renderer);
-  const envTarget = pmrem.fromScene(environment, 0.06);
-  scene.environment = envTarget.texture;
+  // The same room lighting, prefiltered offline. Do not convolve a room on
+  // the visitor's GPU just as the proof section enters the screen.
+  let environmentTexture;
+  try {
+    const response = await fetch(
+      "/media/earnings-laptop/room-environment-v067.bin.gz",
+    );
+    if (!response.ok || !response.body) throw Error("Lighting unavailable");
+    const buffer = await new Response(
+      response.body.pipeThrough(new DecompressionStream("gzip")),
+    ).arrayBuffer();
+    if (buffer.byteLength !== 336 * 256 * 4 * 2)
+      throw Error("Invalid lighting data");
+    environmentTexture = new THREE.DataTexture(
+      new Uint16Array(buffer),
+      336,
+      256,
+      THREE.RGBAFormat,
+      THREE.HalfFloatType,
+    );
+    environmentTexture.mapping = THREE.CubeUVReflectionMapping;
+    environmentTexture.colorSpace = THREE.LinearSRGBColorSpace;
+    environmentTexture.minFilter = THREE.LinearFilter;
+    environmentTexture.magFilter = THREE.LinearFilter;
+    environmentTexture.generateMipmaps = false;
+    environmentTexture.needsUpdate = true;
+    scene.environment = environmentTexture;
+  } catch {
+    // Direct key/fill/rim lighting keeps the model readable offline.
+  }
   scene.environmentIntensity = 0.48;
-  environment.dispose();
-  pmrem.dispose();
+  await breathe();
   const camera = new THREE.OrthographicCamera(-5, 5, 4, -4, 0.1, 60);
   const key = new THREE.DirectionalLight(0xf5fff9, 2.2);
   key.position.set(-3, 9, 5);
   key.castShadow = true;
-  key.shadow.mapSize.set(1024, 1024);
+  key.shadow.mapSize.set(512, 512);
   Object.assign(key.shadow.camera, {
     left: -7,
     right: 7,
@@ -55,7 +90,7 @@ export async function createLaptop(parent, onContextChange) {
   key.shadow.normalBias = 0.015;
   key.shadow.bias = -0.0001;
   key.shadow.radius = 5;
-  key.shadow.blurSamples = 10;
+  key.shadow.blurSamples = 6;
   scene.add(key);
   const fill = new THREE.DirectionalLight(0xa4dae6, 0.9);
   fill.position.set(5, 3, 7);
@@ -215,6 +250,7 @@ export async function createLaptop(parent, onContextChange) {
     ["shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "shift"],
     ["fn", "ctrl", "opt", "cmd", "", "cmd", "opt", "←", "↑", "↓", "→"],
   ];
+  await breathe();
   const keyData = [];
   rows.forEach((labels, row) => {
     const weights = labels.map((label) =>
@@ -248,6 +284,7 @@ export async function createLaptop(parent, onContextChange) {
   keyboard.receiveShadow = true;
   laptop.add(keyboard);
   instanced.push(keyboard);
+  await breathe();
   const transform = new THREE.Object3D();
   keyData.forEach((item, i) => {
     transform.position.set(item.x, 0.274, item.z);
@@ -305,6 +342,7 @@ export async function createLaptop(parent, onContextChange) {
         speakers.setMatrixAt(k++, transform.matrix);
       }
   const lid = new THREE.Group();
+  await breathe();
   lid.position.set(0, 0.335, -2.055);
   laptop.add(lid);
   const cover = mesh(slab(6.61, 4.28, 0.105, 0.17, 0.022), metal, lid);
@@ -312,11 +350,26 @@ export async function createLaptop(parent, onContextChange) {
   const bezel = mesh(slab(6.46, 4.13, 0.017, 0.125, 0.005), black, lid);
   bezel.position.set(0, 2.14, 0.061);
   const screenCanvas = document.createElement("canvas");
-  screenCanvas.width = 1920;
-  screenCanvas.height = 1200;
-  const sc = screenCanvas.getContext("2d", { alpha: false });
-  const screenTexture = texture(screenCanvas);
+  screenCanvas.width = 1280;
+  screenCanvas.height = 800;
+  const sc = screenCanvas.getContext("2d", {
+    alpha: false,
+    willReadFrequently: true,
+  });
+  // Upload CPU pixels directly. Canvas-source uploads can synchronously stall
+  // the GPU process on integrated Windows graphics during every text change.
+  const screenTexture = new THREE.DataTexture(
+    new Uint8Array(screenCanvas.width * screenCanvas.height * 4),
+    screenCanvas.width,
+    screenCanvas.height,
+  );
+  textures.push(screenTexture);
+  screenTexture.colorSpace = THREE.SRGBColorSpace;
+  screenTexture.magFilter = THREE.LinearFilter;
   screenTexture.minFilter = THREE.LinearFilter;
+  screenTexture.generateMipmaps = false;
+  screenTexture.repeat.y = -1;
+  screenTexture.offset.y = 1;
   const screen = mesh(
     geo(new THREE.PlaneGeometry(6.14, 3.8375)),
     mat(new THREE.MeshBasicMaterial({ map: screenTexture, toneMapped: false })),
@@ -383,6 +436,7 @@ export async function createLaptop(parent, onContextChange) {
   );
   chin.position.set(0, 0.112, 0.077);
   chin.castShadow = false;
+  await breathe();
 
   function text(
     value,
@@ -399,6 +453,8 @@ export async function createLaptop(parent, onContextChange) {
     sc.fillText(value, x, y);
   }
   function drawScreen(state) {
+    const scale = screenCanvas.width / 1920;
+    sc.setTransform(scale, 0, 0, scale, 0, 0);
     const { record, phase, showingRecords, summary, screen: power } = state;
     sc.fillStyle = "#0d3033";
     sc.fillRect(0, 0, 1920, 1200);
@@ -476,6 +532,12 @@ export async function createLaptop(parent, onContextChange) {
       sc.fillStyle = `rgba(2,10,12,${1 - power})`;
       sc.fillRect(0, 0, 1920, 1200);
     }
+    screenTexture.image = sc.getImageData(
+      0,
+      0,
+      screenCanvas.width,
+      screenCanvas.height,
+    );
     screenTexture.needsUpdate = true;
     canvas.dataset.screenText = summary
       ? `Combined total | Rs ${format(total)} | Different reporting periods`
@@ -506,6 +568,7 @@ export async function createLaptop(parent, onContextChange) {
     portraitMode = false,
     compactMode = false,
     lastState = null,
+    lastScreenKey = "",
     disposed = false,
     lost = false;
   const v = new THREE.Vector3();
@@ -531,14 +594,30 @@ export async function createLaptop(parent, onContextChange) {
       state.staticMode === lastState.staticMode
     )
       return;
+    const poseChanged = force || !lastState || state.open !== lastState.open;
+    // Reading holds and the closed-laptop expansion have identical pixels.
+    // Reuse them instead of repainting and uploading the screen texture.
+    const screenKey =
+      state.screen === 0
+        ? "off"
+        : state.summary
+          ? `summary:${state.staticMode ? 1 : range(state.p, 0.819, 0.839)}:${state.screen}`
+          : state.showingRecords
+            ? `record:${state.record}:${state.phase >= 0.28 && state.phase <= 0.85 ? "hold" : state.phase}:${state.screen}`
+            : `intro:${state.screen}`;
+    const screenChanged = force || screenKey !== lastScreenKey;
     lastState = { ...state };
+    if (!poseChanged && !screenChanged) return;
+    if (screenChanged) {
+      drawScreen(state);
+      lastScreenKey = screenKey;
+    }
     // Locked front view. Neither scroll nor cursor can introduce horizontal yaw.
     laptop.rotation.set(0, 0, 0);
     camera.position.set(0, mix(8.0, 6.8, state.open), 14);
     const target = new THREE.Vector3(0, mix(0.3, 2.0, state.open), 0);
     camera.lookAt(target);
     lid.rotation.x = mix(Math.PI / 2, -0.035, state.open);
-    drawScreen(state);
     scene.updateMatrixWorld(true);
     camera.updateMatrixWorld();
     // Fit the complete physical bounds, including the base, at every lid angle.
@@ -576,6 +655,8 @@ export async function createLaptop(parent, onContextChange) {
     target.add(up);
     camera.lookAt(target);
     camera.updateMatrixWorld();
+    // Text transitions do not alter any shadow-casting geometry.
+    renderer.shadowMap.needsUpdate = poseChanged;
     renderer.render(scene, camera);
     const renderedAt = performance.now();
     const number = numberPresentationAt(state);
@@ -603,6 +684,15 @@ export async function createLaptop(parent, onContextChange) {
     compactMode = compact;
     width = portrait ? 620 : 1200;
     height = portrait ? 900 : 800;
+    const screenWidth = portrait ? 960 : 1280;
+    if (screenCanvas.width !== screenWidth) {
+      // WebGL texture storage cannot be resized by a smaller sub-image upload.
+      // Reallocate once on orientation changes; otherwise old screen pixels
+      // remain around the new portrait-sized upload after startup preparation.
+      screenTexture.dispose();
+      screenCanvas.width = screenWidth;
+      screenCanvas.height = screenWidth * 0.625;
+    }
     renderer.setSize(width, height, false);
     const frustumWidth = portrait ? 7.4 : 10.6,
       aspect = width / height;
@@ -636,13 +726,20 @@ export async function createLaptop(parent, onContextChange) {
     for (const m of materials) m.dispose();
     for (const t of textures) t.dispose();
     key.shadow.dispose();
-    envTarget.dispose();
+    environmentTexture?.dispose();
     renderer.dispose();
     canvas.remove();
   }
   try {
     resize(false);
     await renderer.compileAsync(scene, camera);
+    // Shader compilation alone does not prepare shadow passes or texture uploads.
+    // Complete both lid poses while the matching poster still owns the screen.
+    await breathe();
+    render(storyAt(0), true);
+    await breathe();
+    render(storyAt(0.285), true);
+    await breathe();
   } catch (error) {
     dispose();
     throw error;

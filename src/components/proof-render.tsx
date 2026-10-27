@@ -7,7 +7,7 @@ declare global {
     __proofExport?: {
       frame: (p: number, variant?: string) => string;
       poster: (variant?: string) => string;
-      laptopPoster: (variant?: string) => Promise<string>;
+      laptopPoster: (variant?: string, opening?: boolean) => Promise<string>;
       info: () => unknown;
     };
     __proofExportError?: string;
@@ -140,7 +140,7 @@ export default function ProofRender() {
             world!.render(1, true);
             return world!.canvas.toDataURL("image/webp", 0.93);
           },
-          async laptopPoster(variant = "desktop") {
+          async laptopPoster(variant = "desktop", opening = false) {
             if (!laptop) {
               const { createLaptop } =
                 await import("@/lib/earnings-laptop/scene.js");
@@ -150,7 +150,8 @@ export default function ProofRender() {
             const { storyAt } =
               await import("@/lib/earnings-laptop/earnings-data.js");
             laptop.resize(variant === "mobile");
-            laptop.render(storyAt(0, true), true);
+            laptop.render(storyAt(0, !opening), true);
+            if (opening) return laptop.canvas.toDataURL("image/webp", 0.93);
             const b = JSON.parse(laptop.canvas.dataset.modelBounds!);
             const ratio =
               laptop.canvas.width / (variant === "mobile" ? 620 : 1200);

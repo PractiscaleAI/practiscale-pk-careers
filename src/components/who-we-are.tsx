@@ -12,7 +12,25 @@ export default function WhoWeAre() {
       data-theme="fog"
       aria-labelledby="who-heading"
     >
-      <WhoWeAreStage>
+      <WhoWeAreStage
+        introduction={
+          <>
+            <div className={styles.copy} data-who-copy>
+              <Eyebrow>Who we are</Eyebrow>
+              <h2 id="who-heading" tabIndex={-1}>
+                Step inside PractiScale.
+              </h2>
+            </div>
+            <p className={styles.lede} data-who-description>
+              PractiScale helps US healthcare businesses grow through
+              professional referral relationships. We find the right referral
+              partners in each client&apos;s area, reach out, qualify them and
+              set up introductions. All of it is done here, by people we
+              trained.
+            </p>
+          </>
+        }
+      >
         <div className={styles.backdrop} data-who-background aria-hidden="true">
           <div
             className={styles.planeLeft}
@@ -21,18 +39,6 @@ export default function WhoWeAre() {
           />
           <div className={styles.plane} data-who-plane aria-hidden="true" />
         </div>
-        <div className={styles.copy} data-who-copy>
-          <Eyebrow>Who we are</Eyebrow>
-          <h2 id="who-heading" tabIndex={-1}>
-            Step inside PractiScale.
-          </h2>
-        </div>
-        <p className={styles.lede} data-who-description>
-          PractiScale helps US healthcare businesses grow through professional
-          referral relationships. We find the right referral partners in each
-          client&apos;s area, reach out, qualify them and set up introductions.
-          All of it is done here, by people we trained.
-        </p>
         <figure className={styles.frame} data-who-frame>
           <div className={styles.matte} data-who-matte>
             <div className={styles.surface} data-who-surface>
@@ -49,6 +55,11 @@ export default function WhoWeAre() {
                 controlsList="nodownload noremoteplayback"
               >
                 <source
+                  src="/media/who-we-are/office-mobile-v066.mp4"
+                  type="video/mp4"
+                  media="(max-width: 1023px)"
+                />
+                <source
                   src={officeFilm}
                   type="video/mp4"
                   media="(min-width: 1024px)"
@@ -60,10 +71,10 @@ export default function WhoWeAre() {
           </div>
         </figure>
         <p className="sr-only" id="who-film-description">
-          An Enter-key doorway leads into a film of PractiScale&apos;s building,
-          reception and working team. The ending presents a future ambition:
-          empowering 5,000 people to build meaningful careers in Pakistan. This
-          is a vision, not the current team size.
+          A film of PractiScale&apos;s building, reception and working team. The
+          ending presents a future ambition: empowering 5,000 people to build
+          meaningful careers in Pakistan. This is a vision, not the current team
+          size.
         </p>
         <p className={styles.error} data-who-error hidden role="status">
           The film could not load. <a href={officeFilm}>Open the film</a>.

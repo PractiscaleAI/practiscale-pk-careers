@@ -4,7 +4,9 @@ const { dismissIntroduction } = require("./qa-helpers.cjs");
 const fs = require("node:fs/promises"),
   path = require("node:path");
 const mode = process.argv[2] || "main",
-  out = path.join(__dirname, "../docs/qa/earnings/v050", mode);
+  out =
+    process.env.QA_OUTPUT_DIR ||
+    path.join(__dirname, "../docs/qa/earnings/v050", mode);
 const report = { checks: [], errors: [], layouts: [] };
 const check = (name, pass, data) => {
   report.checks.push({ name, pass: !!pass, data });
@@ -39,7 +41,7 @@ async function move(page, p) {
     (p) => {
       const r = document.querySelector("[data-laptop-rail]");
       if (r.dataset.mode === "static") return true;
-      if (Math.abs(Number(r.dataset.progress) - p) > 0.003) return false;
+      if (Math.abs(Number(r.dataset.progress) - p) > 0.00015) return false;
       if (p >= 0.3 && p < 0.82) {
         const canvas = r.querySelector("[data-laptop-world] canvas");
         return Number(canvas?.dataset.record) === Math.floor((p - 0.3) / 0.052);
@@ -281,7 +283,7 @@ async function deviceFill(page) {
         f.canvas?.frontYaw === "0",
         f.canvas,
       );
-      for (const p of [0.02, 0.04, 0.06]) {
+      for (const p of [0.02, 0.03, 0.035, 0.04, 0.06]) {
         await move(page, p);
         f = await facts(page);
         check(

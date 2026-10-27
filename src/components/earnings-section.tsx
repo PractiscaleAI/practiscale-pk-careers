@@ -45,7 +45,22 @@ export default function EarningsSection() {
             />
           </picture>
           <canvas className={styles.texture} data-laptop-texture />
-          <div className={styles.world} data-laptop-world />
+          <div className={styles.world} data-laptop-world>
+            <picture data-laptop-opening>
+              <source
+                media="(orientation: portrait)"
+                srcSet="/media/earnings-laptop/mobile-opening-v067.webp"
+              />
+              <img
+                src="/media/earnings-laptop/desktop-opening-v067.webp"
+                alt=""
+                width={1200}
+                height={800}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
         </div>
         <dl
           className={styles.metrics}

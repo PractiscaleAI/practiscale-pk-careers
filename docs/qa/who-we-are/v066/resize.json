@@ -1,0 +1,62 @@
+[
+  {
+    "width": 390,
+    "before": {
+      "progress": 0.49972,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "progress": 0.49972,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 844,
+    "before": {
+      "progress": 0,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "before": {
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "before": {
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4"
+    },
+    "after": {
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  }
+]

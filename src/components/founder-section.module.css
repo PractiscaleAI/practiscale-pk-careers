@@ -1,0 +1,340 @@
+.section {
+  position: relative;
+  background: #fff;
+  color: var(--ink);
+}
+.stage {
+  position: relative;
+  overflow: clip;
+  isolation: isolate;
+}
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.inner {
+  padding: 80px var(--section-gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.copy {
+  flex-shrink: 0;
+  text-align: center;
+  width: min(100%, 780px);
+  position: relative;
+  z-index: 1;
+}
+.copy h2 {
+  font-size: var(--section-title-size);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 18px auto 22px;
+  text-wrap: balance;
+}
+.copy h2 span {
+  color: var(--link);
+}
+.copy > p:last-child {
+  max-width: 660px;
+  margin: 0 auto;
+  font-size: var(--body-copy-size);
+  line-height: 1.65;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.slot {
+  width: min(720px, 76vw);
+  aspect-ratio: 1672/941;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #f3f8f7;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform-origin: center;
+}
+.watch {
+  display: none;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border: 1px solid #ffffff55;
+  border-radius: 999px;
+  background: var(--deep);
+  color: #fff;
+  padding: 12px 22px;
+  min-height: 44px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 10px;
+  align-items: center;
+}
+.watch:hover {
+  background: var(--surface);
+}
+.watch:active {
+  background: var(--raised);
+}
+.watch:focus-visible,
+.sound:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.hint {
+  margin: 0;
+  padding-top: 58px;
+  font-size: 12px;
+  color: var(--muted);
+  display: none;
+}
+.hint span {
+  margin-left: 12px;
+}
+.sound {
+  display: none;
+  position: absolute;
+  right: max(20px, env(safe-area-inset-right));
+  top: max(20px, env(safe-area-inset-top));
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid #ffffff66;
+  border-radius: 999px;
+  background: var(--deep);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sound:hover {
+  background: var(--surface);
+}
+.error {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  background: white;
+  color: var(--deep);
+  border-radius: 8px;
+  z-index: 5;
+}
+.error a {
+  text-decoration: underline;
+}
+.end {
+  position: absolute;
+  bottom: 0;
+}
+.section[data-enhanced="true"] {
+  height: 260svh;
+}
+.section[data-enhanced="true"] .stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+}
+.section[data-enhanced="true"] .inner {
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 18px;
+}
+.section[data-enhanced="true"] .slot {
+  position: static;
+}
+.section[data-enhanced="true"] .slot::before {
+  content: "";
+  position: absolute;
+  top: var(--preview-top);
+  left: 50%;
+  width: var(--preview-width);
+  height: var(--preview-height);
+  transform: translateX(-50%);
+  border-radius: 24px;
+  outline: 1px solid rgb(20 40 42 / 12%);
+  box-shadow:
+    0 22px 48px -20px rgb(20 40 42 / 26%),
+    0 3px 10px -3px rgb(20 40 42 / 12%);
+  opacity: var(--preview-depth, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+.section[data-enhanced="true"] .frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.section[data-enhanced="true"] .video {
+  visibility: hidden;
+}
+.section[data-expanded="true"][data-film-ready="true"] .video {
+  visibility: visible;
+}
+.section[data-enhanced="true"] .watch {
+  display: flex;
+  bottom: auto;
+  top: var(--watch-top);
+  z-index: 3;
+}
+.section[data-enhanced="true"] .hint {
+  display: block;
+}
+.section[data-expanded="true"] .frame {
+  pointer-events: auto;
+  background: #000;
+}
+.section[data-expanded="true"] .sound {
+  display: block;
+}
+@media (max-width: 767px) {
+  .inner {
+    padding: 64px 24px;
+    gap: 24px;
+  }
+  .copy h2 {
+    font-size: clamp(26px, 6.8vw, 34px);
+    margin: 14px 0 18px;
+  }
+  .copy > p:last-child {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .slot {
+    width: min(100%, 520px);
+  }
+  .frame {
+    border-radius: 18px;
+  }
+  .section[data-enhanced="true"] .inner {
+    padding-inline: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .background {
+    opacity: 0.25;
+  }
+}
+/* Keep the full-screen player outside the small preview slot: native focus and
+   scrollIntoView must resolve against the stage, not a clipped ancestor. */
+.section:not([data-enhanced="true"]) .slot {
+  display: none;
+}
+.section:not([data-enhanced="true"]) .inner {
+  padding-bottom: 28px;
+}
+.section:not([data-enhanced="true"]) .frame {
+  position: relative;
+  width: min(800px, calc(100% - 48px));
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 0 auto 80px;
+  outline: 1px solid rgb(20 40 42 / 12%);
+  box-shadow:
+    0 22px 48px -20px rgb(20 40 42 / 26%),
+    0 3px 10px -3px rgb(20 40 42 / 12%);
+}
+.copy > :global(.eyebrow) {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: center;
+}
+.background {
+  mask-image: radial-gradient(
+    ellipse 37% 36% at 50% 40%,
+    transparent 50%,
+    #000 100%
+  );
+}
+.sound {
+  top: auto;
+  bottom: max(82px, env(safe-area-inset-bottom));
+}
+
+/* A portrait edit keeps the founder prominent without clipping close-up faces. */
+.section[data-portrait="true"] .slot {
+  width: min(520px, 100%);
+  aspect-ratio: 1672/941;
+}
+.section[data-portrait="true"]:not([data-enhanced="true"]) .frame {
+  width: min(520px, calc(100% - 48px));
+  aspect-ratio: 1672/941;
+}
+.section[data-portrait="true"][data-film-ready="true"]:not(
+    [data-enhanced="true"]
+  )
+  .frame {
+  aspect-ratio: 9/16;
+}
+.loading {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: var(--deep);
+  color: white;
+  font-size: 14px;
+}
+.section[data-expanded="true"] .loading {
+  display: block;
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
+  .section:not([data-enhanced="true"]) .frame {
+    width: min(520px, calc(100% - 48px));
+    aspect-ratio: 1672/941;
+  }
+}
+.poster {
+  display: none;
+}
+.section[data-enhanced="true"] .poster {
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: #f3f8f7;
+  pointer-events: none;
+  transform-origin: center;
+  transition: opacity 180ms ease;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section[data-expanded="true"][data-film-ready="true"] .poster {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .poster {
+    transition: none;
+  }
+}

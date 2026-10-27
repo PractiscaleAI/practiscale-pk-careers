@@ -4,7 +4,7 @@ const fs = require("node:fs/promises"),
   path = require("node:path");
 const out = path.join(
   __dirname,
-  "../docs/qa/who-we-are/v057",
+  process.env.WHO_QA_OUT || "../docs/qa/who-we-are/v057",
   process.argv[2] === "native" ? "native" : "main",
 );
 const result = { checks: [], errors: [], layouts: [], accessibility: [] };

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import styles from "./testimonials.module.css";
+import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 
 type Controller = { select: (index: number) => void };
 
@@ -248,6 +249,9 @@ export default function TestimonialCarousel({
     host.dataset.enhanced = "true";
     mark(0);
     onScroll();
+    const cleanupAnchor = mountSceneAnchor(section, {
+      hashes: ["#testimonials", "#testimonials-heading"],
+    });
     controller.current = { select };
     viewport.addEventListener("pointerdown", down);
     viewport.addEventListener("pointermove", move);
@@ -259,6 +263,7 @@ export default function TestimonialCarousel({
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", resize);
     return () => {
+      cleanupAnchor();
       stop();
       clearTimeout(resizeTimer);
       observer.disconnect();

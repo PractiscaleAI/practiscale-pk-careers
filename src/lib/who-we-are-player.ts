@@ -66,6 +66,18 @@ export function mountWhoWeAre(root: HTMLDivElement) {
   let measuredWidth = 0,
     measuredHeight = 0;
   let restoreFlow = false;
+  let presentedTime = 0,
+    frameCallback = 0,
+    lastRawProgress: number | null = null,
+    scrollDirection = 0,
+    turnLimit: number | null = null;
+  const observeFrame = (_: number, metadata: VideoFrameCallbackMetadata) => {
+    presentedTime = metadata.mediaTime;
+    if (!disposed)
+      frameCallback = video.requestVideoFrameCallback(observeFrame);
+  };
+  if (video.requestVideoFrameCallback)
+    frameCallback = video.requestVideoFrameCallback(observeFrame);
   delete video.dataset.loading;
 
   function seek() {
@@ -117,6 +129,14 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     panelLeft.style.transform = `translate3d(${-splitDistance}px,0,0)`;
     plane.style.transform = `translate3d(${splitDistance}px,0,0)`;
     targetTime = clamp((p - 0.205) / 0.735) * Math.max(0, duration - 1 / 30);
+    if (!desktop.matches && turnLimit !== null) {
+      if (
+        (scrollDirection < 0 && targetTime > turnLimit) ||
+        (scrollDirection > 0 && targetTime < turnLimit)
+      )
+        targetTime = turnLimit;
+      else turnLimit = null;
+    }
     root.dataset.progress = p.toFixed(5);
     root.dataset.targetTime = targetTime.toFixed(4);
     root.dataset.expanded = String(e === 1);
@@ -144,6 +164,9 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       el.removeAttribute("style");
     geometry = undefined;
     stableProgress = null;
+    lastRawProgress = null;
+    scrollDirection = 0;
+    turnLimit = null;
     video.pause();
     video.controls = true;
     root.dataset.mode = "static";
@@ -159,16 +182,32 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       : (resizeProgress ?? stableProgress);
     resizing = false;
     reset();
-    if (!desktop.matches || reduced.matches || saveData || failed) {
+    const mobile = !desktop.matches;
+    const mediaPath = mobile
+      ? "/media/who-we-are/office-mobile-v066.mp4"
+      : "/media/who-we-are/office-scroll-v2.mp4";
+    video.poster = mobile
+      ? "/media/who-we-are/opening-mobile-v066.webp"
+      : "/media/who-we-are/opening.webp";
+    if (video.getAttribute("src") !== mediaPath) {
+      video.preload = "none";
+      video.src = mediaPath;
+      loaded = false;
+      failed = false;
+      delete video.dataset.loading;
+      root.dataset.ready = "false";
+      error.hidden = true;
+      clearTimeout(loadTimer);
+    }
+    error.querySelector("a")?.setAttribute("href", mediaPath);
+    root.style.setProperty(
+      "--who-intro-height",
+      `${root.querySelector<HTMLElement>("[data-who-introduction]")?.offsetHeight ?? 0}px`,
+    );
+    if (reduced.matches || saveData || failed) {
       resizeProgress = oldProgress;
-      restoreFlow = oldProgress !== null && desktop.matches;
+      restoreFlow = oldProgress !== null;
       clearTimeout(resizeRelease);
-      if (!desktop.matches && video.dataset.loading) {
-        video.preload = "none";
-        video.load();
-        delete video.dataset.loading;
-        loaded = false;
-      }
       ScrollTrigger.refresh();
       restoreProgress();
       return;
@@ -179,19 +218,22 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       h = viewport.clientHeight;
     // Reserve the floating navigation clearance, then give short desktop
     // windows their space back without shrinking text or moving the film off-center.
-    const backdropTop = clamp((h - 500) / 4, 16, 96),
+    const backdropTop = mobile ? 16 : clamp((h - 500) / 4, 16, 96),
       gap = clamp(h * 0.035, 24, 32);
     root.style.setProperty("--who-panel-inset", `${backdropTop}px`);
-    const gutter = parseFloat(getComputedStyle(copy).left) - 32,
+    const gutter = mobile ? 16 : parseFloat(getComputedStyle(copy).left) - 32,
       copyBottom = copy.offsetTop + copy.offsetHeight,
       descriptionTop = description.offsetTop,
       halfRoom = Math.min(
         h / 2 - copyBottom - gap,
         descriptionTop - gap - h / 2,
       );
-    const cw = Math.min(920, w * 0.64, (halfRoom * 2 * 16) / 9),
-      ch = (cw * 9) / 16;
-    if (cw < 240 || halfRoom <= 0) {
+    const ratio = mobile ? 9 / 16 : 16 / 9;
+    const cw = mobile
+        ? Math.min(w - 64, h * 0.62 * ratio, 420)
+        : Math.min(920, w * 0.64, (halfRoom * 2 * 16) / 9),
+      ch = cw / ratio;
+    if ((!mobile && (cw < 240 || halfRoom <= 0)) || (mobile && h < 300)) {
       reset();
       resizeProgress = oldProgress;
       restoreFlow = oldProgress !== null;
@@ -201,8 +243,8 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     }
     const x = (w - cw) / 2,
       y = (h - ch) / 2,
-      baseWidth = Math.min(w, (h * 16) / 9),
-      baseHeight = (baseWidth * 9) / 16;
+      baseWidth = Math.min(w, h * ratio),
+      baseHeight = baseWidth / ratio;
     geometry = {
       w,
       h,
@@ -213,7 +255,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       gutter,
       backdropTop,
       baseWidth,
-      coverScale: Math.max(w, (h * 16) / 9) / baseWidth,
+      coverScale: mobile ? 1 : Math.max(w, (h * 16) / 9) / baseWidth,
     };
     measuredWidth = innerWidth;
     measuredHeight = innerHeight;
@@ -223,7 +265,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     surface.style.top = `${(h - baseHeight) / 2}px`;
     root.style.setProperty(
       "--who-travel",
-      `${Math.round(Math.max(4200, Math.min(6400, duration * 145 + 700)))}px`,
+      `${Math.round(mobile ? Math.max(2600, Math.min(4200, duration * 95 + 600)) : Math.max(4200, Math.min(6400, duration * 145 + 700)))}px`,
     );
     video.controls = false;
     state.progress = 0;
@@ -232,11 +274,32 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       ease: "none",
       onUpdate: requestDraw,
       scrollTrigger: {
-        trigger: root,
+        trigger: viewport,
         start: "top top",
-        end: () => `+=${root.offsetHeight - viewport.offsetHeight}`,
+        end: () =>
+          `+=${parseFloat(root.style.getPropertyValue("--who-travel"))}`,
         scrub: 0.55,
         invalidateOnRefresh: true,
+        onUpdate: (trigger) => {
+          const delta =
+            lastRawProgress === null ? 0 : trigger.progress - lastRawProgress;
+          const direction =
+            Math.abs(delta) > 0.00001 ? Math.sign(delta) : scrollDirection;
+          if (
+            !desktop.matches &&
+            loaded &&
+            scrollDirection &&
+            direction !== scrollDirection
+          ) {
+            turnLimit = presentedTime;
+            // Cancel an old-direction seek instead of allowing it to drain
+            // behind the visitor's newly reversed scroll input.
+            if (Math.abs(video.currentTime - presentedTime) > 1 / 30)
+              video.currentTime = presentedTime;
+          }
+          scrollDirection = direction;
+          lastRawProgress = trigger.progress;
+        },
       },
     });
     tween.scrollTrigger?.refresh();
@@ -276,7 +339,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     }, 700);
   }
   function fail() {
-    if (disposed || !desktop.matches || failed) return;
+    if (disposed || failed) return;
     clearTimeout(loadTimer);
     failed = true;
     error.hidden = false;
@@ -287,7 +350,6 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     if (
       disposed ||
       !near ||
-      !desktop.matches ||
       root.dataset.mode !== "motion" ||
       failed ||
       video.dataset.loading
@@ -303,10 +365,12 @@ export function mountWhoWeAre(root: HTMLDivElement) {
   video.addEventListener(
     "loadedmetadata",
     () => {
+      const previousDuration = duration;
       if (Number.isFinite(video.duration)) duration = video.duration;
       root.dataset.duration = duration.toFixed(4);
       if (root.dataset.mode === "motion") {
         video.pause();
+        if (Math.abs(previousDuration - duration) > 0.05) measure();
         requestDraw();
       }
     },
@@ -338,7 +402,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     },
     { signal },
   );
-  video.addEventListener("error", fail, { signal, capture: true });
+  video.addEventListener("error", fail, { signal });
   const io = new IntersectionObserver(
     ([entry]) => {
       near = entry.isIntersecting;
@@ -460,6 +524,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     clearTimeout(loadTimer);
     clearTimeout(resizeRelease);
     cancelAnimationFrame(raf);
+    if (frameCallback) video.cancelVideoFrameCallback(frameCallback);
     io.disconnect();
     observer.disconnect();
     cleanupAnchor();

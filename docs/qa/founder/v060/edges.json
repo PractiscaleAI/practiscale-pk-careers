@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Resize then reverse reaches original copy",
+    "pass": true
+  },
+  {
+    "name": "Resize keeps preview centered",
+    "pass": true
+  },
+  {
+    "name": "Fast forward presents monotonic progress",
+    "pass": true,
+    "detail": [
+      0.001,
+      0.003,
+      0.008,
+      0.019,
+      0.038,
+      0.07,
+      0.119,
+      0.186,
+      0.263,
+      0.339,
+      0.405,
+      0.469,
+      0.524,
+      0.572,
+      0.613,
+      0.648,
+      0.679,
+      0.706,
+      0.728,
+      0.748,
+      0.764,
+      0.78,
+      0.794,
+      0.803,
+      0.84,
+      0.842,
+      0.844,
+      0.846,
+      0.847,
+      0.848,
+      0.848,
+      0.849,
+      0.849,
+      0.849,
+      0.849,
+      0.85,
+      0.85,
+      0.85,
+      0.85
+    ]
+  },
+  {
+    "name": "Fast forward settles at latest target",
+    "pass": true,
+    "detail": 0.85
+  },
+  {
+    "name": "Hidden tab pauses film",
+    "pass": true
+  },
+  {
+    "name": "Visible tab resumes previously playing film",
+    "pass": true
+  },
+  {
+    "name": "Short viewport falls back to normal controls",
+    "pass": true
+  },
+  {
+    "name": "Reduced motion uses stationary lines",
+    "pass": true
+  },
+  {
+    "name": "Save Data prevents scroll pin and autoplay",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript retains founder copy and controlled video",
+    "pass": true
+  }
+]

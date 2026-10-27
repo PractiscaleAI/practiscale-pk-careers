@@ -1,0 +1,314 @@
+[
+  {
+    "name": "1440x900: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7768865923726527,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 720,
+      "width": 720,
+      "clearance": 12,
+      "buttonBottom": 791.484375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1440x900: full thumbnail fits preview",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7768865923726527,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 720,
+      "width": 720,
+      "clearance": 12,
+      "buttonBottom": 791.484375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1440x900: button clear of artwork and viewport edge",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7768865923726527,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 720,
+      "width": 720,
+      "clearance": 12,
+      "buttonBottom": 791.484375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1440x900: thumbnail yields to playing film",
+    "pass": true
+  },
+  {
+    "name": "1440x900: reverse restores thumbnail",
+    "pass": true
+  },
+  {
+    "name": "1366x600: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769317354168046,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 419.3280971093335,
+      "width": 419.328125,
+      "clearance": 12,
+      "buttonBottom": 541.046875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1366x600: full thumbnail fits preview",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769317354168046,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 419.3280971093335,
+      "width": 419.328125,
+      "clearance": 12,
+      "buttonBottom": 541.046875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1366x600: button clear of artwork and viewport edge",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769317354168046,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 419.3280971093335,
+      "width": 419.328125,
+      "clearance": 12,
+      "buttonBottom": 541.046875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "1366x600: thumbnail yields to playing film",
+    "pass": true
+  },
+  {
+    "name": "1366x600: reverse restores thumbnail",
+    "pass": true
+  },
+  {
+    "name": "768x1024: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769234876394895,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 520,
+      "width": 520,
+      "clearance": 12,
+      "buttonBottom": 781.375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "768x1024: full thumbnail fits preview",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769234876394895,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 520,
+      "width": 520,
+      "clearance": 12,
+      "buttonBottom": 781.375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "768x1024: button clear of artwork and viewport edge",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769234876394895,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 520,
+      "width": 520,
+      "clearance": 12,
+      "buttonBottom": 781.375,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "768x1024: thumbnail yields to playing film",
+    "pass": true
+  },
+  {
+    "name": "768x1024: reverse restores thumbnail",
+    "pass": true
+  },
+  {
+    "name": "390x844: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769118363370677,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 342,
+      "width": 342,
+      "clearance": 12,
+      "buttonBottom": 673.46875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "390x844: full thumbnail fits preview",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769118363370677,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 342,
+      "width": 342,
+      "clearance": 12,
+      "buttonBottom": 673.46875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "390x844: button clear of artwork and viewport edge",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769118363370677,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 342,
+      "width": 342,
+      "clearance": 12,
+      "buttonBottom": 673.46875,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "390x844: thumbnail yields to playing film",
+    "pass": true
+  },
+  {
+    "name": "390x844: reverse restores thumbnail",
+    "pass": true
+  },
+  {
+    "name": "360x640: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769867402331583,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 312,
+      "width": 312,
+      "clearance": 12,
+      "buttonBottom": 562.578125,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "360x640: full thumbnail fits preview",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769867402331583,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 312,
+      "width": 312,
+      "clearance": 12,
+      "buttonBottom": 562.578125,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "360x640: button clear of artwork and viewport edge",
+    "pass": true,
+    "detail": {
+      "enhanced": true,
+      "src": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "complete": true,
+      "ratio": 1.7769867402331583,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": 312,
+      "width": 312,
+      "clearance": 12,
+      "buttonBottom": 562.578125,
+      "overflow": 0,
+      "tracks": 0
+    }
+  },
+  {
+    "name": "360x640: thumbnail yields to playing film",
+    "pass": true
+  },
+  {
+    "name": "360x640: reverse restores thumbnail",
+    "pass": true
+  },
+  {
+    "name": "390x844-reduced: supplied artwork and no captions",
+    "pass": true,
+    "detail": {
+      "enhanced": false,
+      "src": "",
+      "complete": false,
+      "ratio": null,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-v063.webp",
+      "imageWidth": null,
+      "width": 0,
+      "clearance": 0,
+      "buttonBottom": 0,
+      "overflow": 0,
+      "tracks": 0
+    }
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "name": "1366: video not fetched from page top",
+    "pass": true,
+    "detail": [
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4"
+    ]
+  },
+  {
+    "name": "1366: appropriately sized opening",
+    "pass": true,
+    "detail": {
+      "x": 421.671875,
+      "y": 243.96875,
+      "width": 522.65625,
+      "height": 293.984375
+    }
+  },
+  {
+    "name": "1366: text held at start",
+    "pass": true
+  },
+  {
+    "name": "1366: gradual text departure",
+    "pass": true
+  },
+  {
+    "name": "1366: waits for completed expansion",
+    "pass": true
+  },
+  {
+    "name": "1366: correct rendition and full duration",
+    "pass": true,
+    "detail": {
+      "width": 1600,
+      "height": 900,
+      "duration": 100.333333,
+      "src": "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4"
+    }
+  },
+  {
+    "name": "1366: no captions or subtitle tracks",
+    "pass": true
+  },
+  {
+    "name": "390: video not fetched from page top",
+    "pass": true,
+    "detail": [
+      "http://127.0.0.1:3000/media/founder/ceo-story-portrait-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-portrait-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-portrait-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-portrait-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4",
+      "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4"
+    ]
+  },
+  {
+    "name": "390: appropriately sized opening",
+    "pass": true,
+    "detail": {
+      "x": 68.25,
+      "y": 319.8125,
+      "width": 253.5,
+      "height": 450.65625
+    }
+  },
+  {
+    "name": "390: text held at start",
+    "pass": true
+  },
+  {
+    "name": "390: gradual text departure",
+    "pass": true
+  },
+  {
+    "name": "390: waits for completed expansion",
+    "pass": true
+  },
+  {
+    "name": "390: correct rendition and full duration",
+    "pass": true,
+    "detail": {
+      "width": 540,
+      "height": 960,
+      "duration": 100.333333,
+      "src": "http://127.0.0.1:3000/media/founder/ceo-story-portrait-v062.mp4"
+    }
+  },
+  {
+    "name": "390: no captions or subtitle tracks",
+    "pass": true
+  },
+  {
+    "name": "Rotation selects landscape and retains time",
+    "pass": true,
+    "detail": {
+      "time": 59.5,
+      "src": "http://127.0.0.1:3000/media/founder/ceo-story-desktop-v062.mp4"
+    }
+  },
+  {
+    "name": "Playback starts on simulated 1.6 Mbps connection",
+    "pass": true,
+    "detail": {
+      "startupMs": 1622
+    }
+  }
+]

@@ -1,0 +1,1463 @@
+{
+  "method": "Sequential local Chromium runs, continuous native scrolling and discrete wheel steps. Timing is diagnostic local-browser evidence, not a physical-device frame-rate guarantee.",
+  "cases": [
+    {
+      "width": 1440,
+      "name": "hero",
+      "scene": {
+        "top": 14,
+        "travel": 585,
+        "mode": "scroll"
+      },
+      "updates": 66,
+      "p95FrameGap": 16.800000000000182,
+      "maxFrameGap": 17,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 7946.70000000298,
+          "label": "forward-settled",
+          "value": 119,
+          "y": 599
+        },
+        {
+          "t": 11205,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 14
+        },
+        {
+          "t": 12247.60000000149,
+          "label": "fast-forward-settled",
+          "value": 119,
+          "y": 541
+        },
+        {
+          "t": 13279.800000000745,
+          "label": "fast-reverse-settled",
+          "value": 14,
+          "y": 73
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "problem",
+      "scene": {
+        "top": 1499,
+        "travel": 990,
+        "mode": "scroll"
+      },
+      "updates": 133,
+      "p95FrameGap": 16.80000000000109,
+      "maxFrameGap": 166.70000000000073,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 17963,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 2489
+        },
+        {
+          "t": 21228.60000000149,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 1499
+        },
+        {
+          "t": 22244.60000000149,
+          "label": "fast-forward-settled",
+          "value": 0.9,
+          "y": 2390
+        },
+        {
+          "t": 23277.400000002235,
+          "label": "fast-reverse-settled",
+          "value": 0.1,
+          "y": 1598
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "office",
+      "scene": {
+        "top": 3389,
+        "travel": 5292,
+        "mode": "motion"
+      },
+      "updates": 54,
+      "p95FrameGap": 16.799999999999272,
+      "maxFrameGap": 49.900000000001455,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 27860.400000002235,
+          "label": "forward-settled",
+          "value": 31.633333,
+          "y": 8681
+        },
+        {
+          "t": 31129.10000000149,
+          "label": "reverse-settled",
+          "value": 0.012179,
+          "y": 3389
+        },
+        {
+          "t": 32157.400000002235,
+          "label": "fast-forward-settled",
+          "value": 29.912738,
+          "y": 8152
+        },
+        {
+          "t": 33175.10000000149,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 3918
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "career",
+      "scene": {
+        "top": 9699.953125,
+        "travel": 1375,
+        "mode": "pinned"
+      },
+      "updates": 139,
+      "p95FrameGap": 16.80000000000291,
+      "maxFrameGap": 33.30000000000291,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 38872.70000000298,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 11075
+        },
+        {
+          "t": 42156,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 9700
+        },
+        {
+          "t": 43172.800000000745,
+          "label": "fast-forward-settled",
+          "value": 0.8996,
+          "y": 10937
+        },
+        {
+          "t": 44202.20000000298,
+          "label": "fast-reverse-settled",
+          "value": 0.0996,
+          "y": 9837
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "laptop",
+      "scene": {
+        "top": 11998.953125,
+        "travel": 9000,
+        "mode": "motion"
+      },
+      "updates": 31,
+      "p95FrameGap": 183.3000000000029,
+      "maxFrameGap": 266.5,
+      "longTasks": [
+        {
+          "start": 46821,
+          "duration": 278
+        }
+      ],
+      "settled": [
+        {
+          "t": 49968.20000000298,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 20999
+        },
+        {
+          "t": 53297.10000000149,
+          "label": "reverse-settled",
+          "value": 0.00001,
+          "y": 11999
+        },
+        {
+          "t": 54649.300000000745,
+          "label": "fast-forward-settled",
+          "value": 0.90001,
+          "y": 20099
+        },
+        {
+          "t": 55682.300000000745,
+          "label": "fast-reverse-settled",
+          "value": 0.10001,
+          "y": 12899
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "name": "testimonials",
+      "scene": {
+        "top": 21899.953125,
+        "travel": 2205,
+        "mode": "scroll"
+      },
+      "updates": 97,
+      "p95FrameGap": 16.80000000000291,
+      "maxFrameGap": 17,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 60080.800000000745,
+          "label": "forward-settled",
+          "value": 2172,
+          "y": 24105
+        },
+        {
+          "t": 63348.10000000149,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 21900
+        },
+        {
+          "t": 64369.400000002235,
+          "label": "fast-forward-settled",
+          "value": 2172,
+          "y": 23884
+        },
+        {
+          "t": 65403.300000000745,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 22120
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "name": "hero",
+      "scene": {
+        "top": 8,
+        "travel": 549,
+        "mode": "scroll"
+      },
+      "updates": 87,
+      "p95FrameGap": 16.899999999999636,
+      "maxFrameGap": 17,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 6685.699999999255,
+          "label": "forward-settled",
+          "value": 119,
+          "y": 557
+        },
+        {
+          "t": 9951.89999999851,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 8
+        },
+        {
+          "t": 10984.39999999851,
+          "label": "fast-forward-settled",
+          "value": 119,
+          "y": 502
+        },
+        {
+          "t": 12002,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 63
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "name": "problem",
+      "scene": {
+        "top": 1401.46875,
+        "travel": 1857,
+        "mode": "scroll"
+      },
+      "updates": 142,
+      "p95FrameGap": 16.899999999999636,
+      "maxFrameGap": 50.100000000000364,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 16466.29999999702,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 3258
+        },
+        {
+          "t": 19732.79999999702,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 1401
+        },
+        {
+          "t": 20749,
+          "label": "fast-forward-settled",
+          "value": 0.9004,
+          "y": 3073
+        },
+        {
+          "t": 21765.39999999851,
+          "label": "fast-reverse-settled",
+          "value": 0.1002,
+          "y": 1587
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "name": "career",
+      "scene": {
+        "top": 4205.03125,
+        "travel": 1303,
+        "mode": "pinned"
+      },
+      "updates": 139,
+      "p95FrameGap": 16.80000000000291,
+      "maxFrameGap": 33.29999999999927,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 27381.199999999255,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 5508
+        },
+        {
+          "t": 30661.699999999255,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 4205
+        },
+        {
+          "t": 31679.89999999851,
+          "label": "fast-forward-settled",
+          "value": 0.9002,
+          "y": 5378
+        },
+        {
+          "t": 32712.5,
+          "label": "fast-reverse-settled",
+          "value": 0.0998,
+          "y": 4335
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "name": "laptop",
+      "scene": {
+        "top": 6376.03125,
+        "travel": 8440,
+        "mode": "motion"
+      },
+      "updates": 28,
+      "p95FrameGap": 133.1999999999971,
+      "maxFrameGap": 133.3000000000029,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 38497.29999999702,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 14816
+        },
+        {
+          "t": 41790.79999999702,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 6376
+        },
+        {
+          "t": 42823.29999999702,
+          "label": "fast-forward-settled",
+          "value": 0.9,
+          "y": 13972
+        },
+        {
+          "t": 43856.39999999851,
+          "label": "fast-reverse-settled",
+          "value": 0.1,
+          "y": 7220
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "name": "testimonials",
+      "scene": {
+        "top": 15661.03125,
+        "travel": 2068,
+        "mode": "scroll"
+      },
+      "updates": 85,
+      "p95FrameGap": 16.89999999999418,
+      "maxFrameGap": 17,
+      "longTasks": [],
+      "settled": [
+        {
+          "t": 48206.5,
+          "label": "forward-settled",
+          "value": 1062,
+          "y": 17729
+        },
+        {
+          "t": 51486,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 15661
+        },
+        {
+          "t": 52505.099999997765,
+          "label": "fast-forward-settled",
+          "value": 1062,
+          "y": 17522
+        },
+        {
+          "t": 53536.5,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 15868
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "1440 hero advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "hero",
+        "scene": {
+          "top": 14,
+          "travel": 585,
+          "mode": "scroll"
+        },
+        "updates": 66,
+        "p95FrameGap": 16.800000000000182,
+        "maxFrameGap": 17,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 7946.70000000298,
+            "label": "forward-settled",
+            "value": 119,
+            "y": 599
+          },
+          {
+            "t": 11205,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 14
+          },
+          {
+            "t": 12247.60000000149,
+            "label": "fast-forward-settled",
+            "value": 119,
+            "y": 541
+          },
+          {
+            "t": 13279.800000000745,
+            "label": "fast-reverse-settled",
+            "value": 14,
+            "y": 73
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 hero reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 7946.70000000298,
+          "label": "forward-settled",
+          "value": 119,
+          "y": 599
+        },
+        {
+          "t": 11205,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 14
+        },
+        {
+          "t": 12247.60000000149,
+          "label": "fast-forward-settled",
+          "value": 119,
+          "y": 541
+        },
+        {
+          "t": 13279.800000000745,
+          "label": "fast-reverse-settled",
+          "value": 14,
+          "y": 73
+        }
+      ]
+    },
+    {
+      "name": "1440 problem advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "problem",
+        "scene": {
+          "top": 1499,
+          "travel": 990,
+          "mode": "scroll"
+        },
+        "updates": 133,
+        "p95FrameGap": 16.80000000000109,
+        "maxFrameGap": 166.70000000000073,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 17963,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 2489
+          },
+          {
+            "t": 21228.60000000149,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 1499
+          },
+          {
+            "t": 22244.60000000149,
+            "label": "fast-forward-settled",
+            "value": 0.9,
+            "y": 2390
+          },
+          {
+            "t": 23277.400000002235,
+            "label": "fast-reverse-settled",
+            "value": 0.1,
+            "y": 1598
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 problem reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 17963,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 2489
+        },
+        {
+          "t": 21228.60000000149,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 1499
+        },
+        {
+          "t": 22244.60000000149,
+          "label": "fast-forward-settled",
+          "value": 0.9,
+          "y": 2390
+        },
+        {
+          "t": 23277.400000002235,
+          "label": "fast-reverse-settled",
+          "value": 0.1,
+          "y": 1598
+        }
+      ]
+    },
+    {
+      "name": "1440 office advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "office",
+        "scene": {
+          "top": 3389,
+          "travel": 5292,
+          "mode": "motion"
+        },
+        "updates": 54,
+        "p95FrameGap": 16.799999999999272,
+        "maxFrameGap": 49.900000000001455,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 27860.400000002235,
+            "label": "forward-settled",
+            "value": 31.633333,
+            "y": 8681
+          },
+          {
+            "t": 31129.10000000149,
+            "label": "reverse-settled",
+            "value": 0.012179,
+            "y": 3389
+          },
+          {
+            "t": 32157.400000002235,
+            "label": "fast-forward-settled",
+            "value": 29.912738,
+            "y": 8152
+          },
+          {
+            "t": 33175.10000000149,
+            "label": "fast-reverse-settled",
+            "value": 0,
+            "y": 3918
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 office reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 27860.400000002235,
+          "label": "forward-settled",
+          "value": 31.633333,
+          "y": 8681
+        },
+        {
+          "t": 31129.10000000149,
+          "label": "reverse-settled",
+          "value": 0.012179,
+          "y": 3389
+        },
+        {
+          "t": 32157.400000002235,
+          "label": "fast-forward-settled",
+          "value": 29.912738,
+          "y": 8152
+        },
+        {
+          "t": 33175.10000000149,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 3918
+        }
+      ]
+    },
+    {
+      "name": "1440 career advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "career",
+        "scene": {
+          "top": 9699.953125,
+          "travel": 1375,
+          "mode": "pinned"
+        },
+        "updates": 139,
+        "p95FrameGap": 16.80000000000291,
+        "maxFrameGap": 33.30000000000291,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 38872.70000000298,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 11075
+          },
+          {
+            "t": 42156,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 9700
+          },
+          {
+            "t": 43172.800000000745,
+            "label": "fast-forward-settled",
+            "value": 0.8996,
+            "y": 10937
+          },
+          {
+            "t": 44202.20000000298,
+            "label": "fast-reverse-settled",
+            "value": 0.0996,
+            "y": 9837
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 career reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 38872.70000000298,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 11075
+        },
+        {
+          "t": 42156,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 9700
+        },
+        {
+          "t": 43172.800000000745,
+          "label": "fast-forward-settled",
+          "value": 0.8996,
+          "y": 10937
+        },
+        {
+          "t": 44202.20000000298,
+          "label": "fast-reverse-settled",
+          "value": 0.0996,
+          "y": 9837
+        }
+      ]
+    },
+    {
+      "name": "1440 laptop advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "laptop",
+        "scene": {
+          "top": 11998.953125,
+          "travel": 9000,
+          "mode": "motion"
+        },
+        "updates": 31,
+        "p95FrameGap": 183.3000000000029,
+        "maxFrameGap": 266.5,
+        "longTasks": [
+          {
+            "start": 46821,
+            "duration": 278
+          }
+        ],
+        "settled": [
+          {
+            "t": 49968.20000000298,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 20999
+          },
+          {
+            "t": 53297.10000000149,
+            "label": "reverse-settled",
+            "value": 0.00001,
+            "y": 11999
+          },
+          {
+            "t": 54649.300000000745,
+            "label": "fast-forward-settled",
+            "value": 0.90001,
+            "y": 20099
+          },
+          {
+            "t": 55682.300000000745,
+            "label": "fast-reverse-settled",
+            "value": 0.10001,
+            "y": 12899
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 laptop reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 49968.20000000298,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 20999
+        },
+        {
+          "t": 53297.10000000149,
+          "label": "reverse-settled",
+          "value": 0.00001,
+          "y": 11999
+        },
+        {
+          "t": 54649.300000000745,
+          "label": "fast-forward-settled",
+          "value": 0.90001,
+          "y": 20099
+        },
+        {
+          "t": 55682.300000000745,
+          "label": "fast-reverse-settled",
+          "value": 0.10001,
+          "y": 12899
+        }
+      ]
+    },
+    {
+      "name": "1440 testimonials advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "name": "testimonials",
+        "scene": {
+          "top": 21899.953125,
+          "travel": 2205,
+          "mode": "scroll"
+        },
+        "updates": 97,
+        "p95FrameGap": 16.80000000000291,
+        "maxFrameGap": 17,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 60080.800000000745,
+            "label": "forward-settled",
+            "value": 2172,
+            "y": 24105
+          },
+          {
+            "t": 63348.10000000149,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 21900
+          },
+          {
+            "t": 64369.400000002235,
+            "label": "fast-forward-settled",
+            "value": 2172,
+            "y": 23884
+          },
+          {
+            "t": 65403.300000000745,
+            "label": "fast-reverse-settled",
+            "value": 0,
+            "y": 22120
+          }
+        ]
+      }
+    },
+    {
+      "name": "1440 testimonials reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 60080.800000000745,
+          "label": "forward-settled",
+          "value": 2172,
+          "y": 24105
+        },
+        {
+          "t": 63348.10000000149,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 21900
+        },
+        {
+          "t": 64369.400000002235,
+          "label": "fast-forward-settled",
+          "value": 2172,
+          "y": 23884
+        },
+        {
+          "t": 65403.300000000745,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 22120
+        }
+      ]
+    },
+    {
+      "name": "Laptop wheel step is eased over intermediate poses",
+      "pass": false,
+      "detail": {
+        "distinct": 2,
+        "poses": [
+          {
+            "t": 66544.7,
+            "p": 0.03001
+          },
+          {
+            "t": 66561.4,
+            "p": 0.03001
+          },
+          {
+            "t": 66777.9,
+            "p": 0.04334
+          },
+          {
+            "t": 66794.6,
+            "p": 0.04334
+          },
+          {
+            "t": 66811.5,
+            "p": 0.04334
+          },
+          {
+            "t": 66828.1,
+            "p": 0.04334
+          },
+          {
+            "t": 66844.7,
+            "p": 0.04334
+          },
+          {
+            "t": 66861.6,
+            "p": 0.04334
+          },
+          {
+            "t": 66878,
+            "p": 0.04334
+          },
+          {
+            "t": 66894.6,
+            "p": 0.04334
+          },
+          {
+            "t": 66911.3,
+            "p": 0.04334
+          },
+          {
+            "t": 66927.9,
+            "p": 0.04334
+          },
+          {
+            "t": 66944.8,
+            "p": 0.04334
+          },
+          {
+            "t": 66961.4,
+            "p": 0.04334
+          },
+          {
+            "t": 66978.1,
+            "p": 0.04334
+          },
+          {
+            "t": 66994.7,
+            "p": 0.04334
+          },
+          {
+            "t": 67011.4,
+            "p": 0.04334
+          },
+          {
+            "t": 67028,
+            "p": 0.04334
+          },
+          {
+            "t": 67044.5,
+            "p": 0.04334
+          },
+          {
+            "t": 67061.2,
+            "p": 0.04334
+          },
+          {
+            "t": 67077.8,
+            "p": 0.04334
+          },
+          {
+            "t": 67094.5,
+            "p": 0.04334
+          },
+          {
+            "t": 67111.2,
+            "p": 0.04334
+          },
+          {
+            "t": 67127.9,
+            "p": 0.04334
+          },
+          {
+            "t": 67144.5,
+            "p": 0.04334
+          },
+          {
+            "t": 67161.1,
+            "p": 0.04334
+          },
+          {
+            "t": 67177.8,
+            "p": 0.04334
+          },
+          {
+            "t": 67194.4,
+            "p": 0.04334
+          },
+          {
+            "t": 67211.1,
+            "p": 0.04334
+          },
+          {
+            "t": 67227.8,
+            "p": 0.04334
+          },
+          {
+            "t": 67244.5,
+            "p": 0.04334
+          },
+          {
+            "t": 67261.2,
+            "p": 0.04334
+          },
+          {
+            "t": 67277.9,
+            "p": 0.04334
+          },
+          {
+            "t": 67294.5,
+            "p": 0.04334
+          },
+          {
+            "t": 67311.2,
+            "p": 0.04334
+          },
+          {
+            "t": 67328.1,
+            "p": 0.04334
+          },
+          {
+            "t": 67344.6,
+            "p": 0.04334
+          },
+          {
+            "t": 67361.2,
+            "p": 0.04334
+          },
+          {
+            "t": 67378.1,
+            "p": 0.04334
+          },
+          {
+            "t": 67394.4,
+            "p": 0.04334
+          },
+          {
+            "t": 67411.4,
+            "p": 0.04334
+          },
+          {
+            "t": 67428,
+            "p": 0.04334
+          },
+          {
+            "t": 67444.6,
+            "p": 0.04334
+          },
+          {
+            "t": 67461.3,
+            "p": 0.04334
+          },
+          {
+            "t": 67478.1,
+            "p": 0.04334
+          },
+          {
+            "t": 67494.7,
+            "p": 0.04334
+          },
+          {
+            "t": 67511.3,
+            "p": 0.04334
+          },
+          {
+            "t": 67527.9,
+            "p": 0.04334
+          },
+          {
+            "t": 67544.6,
+            "p": 0.04334
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 hero advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "name": "hero",
+        "scene": {
+          "top": 8,
+          "travel": 549,
+          "mode": "scroll"
+        },
+        "updates": 87,
+        "p95FrameGap": 16.899999999999636,
+        "maxFrameGap": 17,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 6685.699999999255,
+            "label": "forward-settled",
+            "value": 119,
+            "y": 557
+          },
+          {
+            "t": 9951.89999999851,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 8
+          },
+          {
+            "t": 10984.39999999851,
+            "label": "fast-forward-settled",
+            "value": 119,
+            "y": 502
+          },
+          {
+            "t": 12002,
+            "label": "fast-reverse-settled",
+            "value": 0,
+            "y": 63
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 hero reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 6685.699999999255,
+          "label": "forward-settled",
+          "value": 119,
+          "y": 557
+        },
+        {
+          "t": 9951.89999999851,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 8
+        },
+        {
+          "t": 10984.39999999851,
+          "label": "fast-forward-settled",
+          "value": 119,
+          "y": 502
+        },
+        {
+          "t": 12002,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 63
+        }
+      ]
+    },
+    {
+      "name": "390 problem advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "name": "problem",
+        "scene": {
+          "top": 1401.46875,
+          "travel": 1857,
+          "mode": "scroll"
+        },
+        "updates": 142,
+        "p95FrameGap": 16.899999999999636,
+        "maxFrameGap": 50.100000000000364,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 16466.29999999702,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 3258
+          },
+          {
+            "t": 19732.79999999702,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 1401
+          },
+          {
+            "t": 20749,
+            "label": "fast-forward-settled",
+            "value": 0.9004,
+            "y": 3073
+          },
+          {
+            "t": 21765.39999999851,
+            "label": "fast-reverse-settled",
+            "value": 0.1002,
+            "y": 1587
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 problem reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 16466.29999999702,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 3258
+        },
+        {
+          "t": 19732.79999999702,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 1401
+        },
+        {
+          "t": 20749,
+          "label": "fast-forward-settled",
+          "value": 0.9004,
+          "y": 3073
+        },
+        {
+          "t": 21765.39999999851,
+          "label": "fast-reverse-settled",
+          "value": 0.1002,
+          "y": 1587
+        }
+      ]
+    },
+    {
+      "name": "390 career advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "name": "career",
+        "scene": {
+          "top": 4205.03125,
+          "travel": 1303,
+          "mode": "pinned"
+        },
+        "updates": 139,
+        "p95FrameGap": 16.80000000000291,
+        "maxFrameGap": 33.29999999999927,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 27381.199999999255,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 5508
+          },
+          {
+            "t": 30661.699999999255,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 4205
+          },
+          {
+            "t": 31679.89999999851,
+            "label": "fast-forward-settled",
+            "value": 0.9002,
+            "y": 5378
+          },
+          {
+            "t": 32712.5,
+            "label": "fast-reverse-settled",
+            "value": 0.0998,
+            "y": 4335
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 career reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 27381.199999999255,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 5508
+        },
+        {
+          "t": 30661.699999999255,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 4205
+        },
+        {
+          "t": 31679.89999999851,
+          "label": "fast-forward-settled",
+          "value": 0.9002,
+          "y": 5378
+        },
+        {
+          "t": 32712.5,
+          "label": "fast-reverse-settled",
+          "value": 0.0998,
+          "y": 4335
+        }
+      ]
+    },
+    {
+      "name": "390 laptop advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "name": "laptop",
+        "scene": {
+          "top": 6376.03125,
+          "travel": 8440,
+          "mode": "motion"
+        },
+        "updates": 28,
+        "p95FrameGap": 133.1999999999971,
+        "maxFrameGap": 133.3000000000029,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 38497.29999999702,
+            "label": "forward-settled",
+            "value": 1,
+            "y": 14816
+          },
+          {
+            "t": 41790.79999999702,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 6376
+          },
+          {
+            "t": 42823.29999999702,
+            "label": "fast-forward-settled",
+            "value": 0.9,
+            "y": 13972
+          },
+          {
+            "t": 43856.39999999851,
+            "label": "fast-reverse-settled",
+            "value": 0.1,
+            "y": 7220
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 laptop reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 38497.29999999702,
+          "label": "forward-settled",
+          "value": 1,
+          "y": 14816
+        },
+        {
+          "t": 41790.79999999702,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 6376
+        },
+        {
+          "t": 42823.29999999702,
+          "label": "fast-forward-settled",
+          "value": 0.9,
+          "y": 13972
+        },
+        {
+          "t": 43856.39999999851,
+          "label": "fast-reverse-settled",
+          "value": 0.1,
+          "y": 7220
+        }
+      ]
+    },
+    {
+      "name": "390 testimonials advances during scroll",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "name": "testimonials",
+        "scene": {
+          "top": 15661.03125,
+          "travel": 2068,
+          "mode": "scroll"
+        },
+        "updates": 85,
+        "p95FrameGap": 16.89999999999418,
+        "maxFrameGap": 17,
+        "longTasks": [],
+        "settled": [
+          {
+            "t": 48206.5,
+            "label": "forward-settled",
+            "value": 1062,
+            "y": 17729
+          },
+          {
+            "t": 51486,
+            "label": "reverse-settled",
+            "value": 0,
+            "y": 15661
+          },
+          {
+            "t": 52505.099999997765,
+            "label": "fast-forward-settled",
+            "value": 1062,
+            "y": 17522
+          },
+          {
+            "t": 53536.5,
+            "label": "fast-reverse-settled",
+            "value": 0,
+            "y": 15868
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 testimonials reverse reaches opening",
+      "pass": true,
+      "detail": [
+        {
+          "t": 48206.5,
+          "label": "forward-settled",
+          "value": 1062,
+          "y": 17729
+        },
+        {
+          "t": 51486,
+          "label": "reverse-settled",
+          "value": 0,
+          "y": 15661
+        },
+        {
+          "t": 52505.099999997765,
+          "label": "fast-forward-settled",
+          "value": 1062,
+          "y": 17522
+        },
+        {
+          "t": 53536.5,
+          "label": "fast-reverse-settled",
+          "value": 0,
+          "y": 15868
+        }
+      ]
+    },
+    {
+      "name": "Testimonial deep link settles at its own section",
+      "pass": false,
+      "detail": {
+        "top": 21655.953125,
+        "active": "0"
+      }
+    }
+  ],
+  "errors": []
+}

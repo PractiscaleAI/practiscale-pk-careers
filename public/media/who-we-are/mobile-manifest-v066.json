@@ -1,0 +1,38 @@
+{
+  "source": {
+    "file": "assets/source/who-we-are/office-portrait-original.mp4",
+    "bytes": 54946400,
+    "sha256": "7c13e54eaac05f2abed605486e0a0299a01d61b219f6432ef5b033db99809a29",
+    "width": 1440,
+    "height": 2560,
+    "fps": 30.0,
+    "duration": 31.666666666666668,
+    "frames": 950,
+    "timestampGaps": 0,
+    "lastTimestamp": 31.633333333333333,
+    "maxKeyframeGap": 150
+  },
+  "web": {
+    "file": "public/media/who-we-are/office-mobile-v066.mp4",
+    "bytes": 11810231,
+    "sha256": "0623a07c67e49c6eaebd2f4d52e9982364919c3e42ee3075786c581b31f19829",
+    "width": 720,
+    "height": 1280,
+    "fps": 30.0,
+    "duration": 31.666666666666668,
+    "frames": 950,
+    "timestampGaps": 0,
+    "lastTimestamp": 31.633333333333333,
+    "maxKeyframeGap": 8
+  },
+  "encoding": {
+    "codec": "H.264 / yuv420p",
+    "crf": 26,
+    "preset": "medium",
+    "keyframeInterval": 8,
+    "bFrames": 0,
+    "faststart": true,
+    "audio": false,
+    "ssimAgainstScaledSource": 0.980166
+  }
+}

@@ -1,0 +1,896 @@
+{
+  "results": [
+    {
+      "name": "390: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "390: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "duration": 31.666667,
+        "width": 720,
+        "height": 1280,
+        "travel": "3608px"
+      }
+    },
+    {
+      "name": "390: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+      ]
+    },
+    {
+      "name": "390: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.09978,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "390: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "390: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.19983,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "390: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.49972,
+        "time": 12.678898,
+        "paused": true,
+        "target": 12.6845,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "390: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.93986,
+        "time": 31.62649,
+        "paused": true,
+        "target": 31.6271,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "390: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0.5625,
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "Phone forward: presented frames follow scroll",
+      "pass": true,
+      "detail": {
+        "updates": 110,
+        "backwards": [],
+        "maxGap": 50.59999999962747
+      }
+    },
+    {
+      "name": "Phone reverse: presented frames follow scroll",
+      "pass": true,
+      "detail": {
+        "updates": 109,
+        "backwards": [],
+        "maxGap": 150.19999999925494
+      }
+    },
+    {
+      "name": "320: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "320: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "duration": 31.666667,
+        "width": 720,
+        "height": 1280,
+        "travel": "3608px"
+      }
+    },
+    {
+      "name": "320: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+      ]
+    },
+    {
+      "name": "320: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.10006,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    },
+    {
+      "name": "320: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "320: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.19983,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    },
+    {
+      "name": "320: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.5,
+        "time": 12.69069,
+        "paused": true,
+        "target": 12.6964,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    },
+    {
+      "name": "320: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.93986,
+        "time": 31.621842,
+        "paused": true,
+        "target": 31.6271,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    },
+    {
+      "name": "320: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    },
+    {
+      "name": "430: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "430: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "430: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "duration": 31.666667,
+        "width": 720,
+        "height": 1280,
+        "travel": "3608px"
+      }
+    },
+    {
+      "name": "430: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+      ]
+    },
+    {
+      "name": "430: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.10006,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    },
+    {
+      "name": "430: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "430: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.20011,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    },
+    {
+      "name": "430: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.50028,
+        "time": 12.702612,
+        "paused": true,
+        "target": 12.7083,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    },
+    {
+      "name": "430: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.94013,
+        "time": 31.620508,
+        "paused": true,
+        "target": 31.6333,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    },
+    {
+      "name": "430: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0.00028,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    },
+    {
+      "name": "768: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "768: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "768: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "duration": 31.666667,
+        "width": 720,
+        "height": 1280,
+        "travel": "3608px"
+      }
+    },
+    {
+      "name": "768: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+      ]
+    },
+    {
+      "name": "768: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.09978,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "768: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "768: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.19983,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "768: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.5,
+        "time": 12.69082,
+        "paused": true,
+        "target": 12.6964,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "768: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.93986,
+        "time": 31.621842,
+        "paused": true,
+        "target": 31.6271,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "768: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "844: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "844: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "844: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "duration": 31.666667,
+        "width": 720,
+        "height": 1280,
+        "travel": "3608px"
+      }
+    },
+    {
+      "name": "844: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+      ]
+    },
+    {
+      "name": "844: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.10006,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "844: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "844: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.20011,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "844: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.5,
+        "time": 12.69082,
+        "paused": true,
+        "target": 12.6964,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "844: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.94013,
+        "time": 31.633333,
+        "paused": true,
+        "target": 31.6333,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "844: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0.34375,
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "1440: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "1440: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+        "duration": 31.666667,
+        "width": 1920,
+        "height": 1080,
+        "travel": "5292px"
+      }
+    },
+    {
+      "name": "1440: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4"
+      ]
+    },
+    {
+      "name": "1440: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.09996,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "1440: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "1440: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.19992,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "1440: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.5,
+        "time": 12.69069,
+        "paused": true,
+        "target": 12.6964,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "1440: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.93991,
+        "time": 31.628771,
+        "paused": true,
+        "target": 31.6294,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "1440: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    },
+    {
+      "name": "1366: no office download at page start",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1366: one heading and no overflow",
+      "pass": true
+    },
+    {
+      "name": "1366: correct rendition and motion",
+      "pass": true,
+      "detail": {
+        "mode": "motion",
+        "time": 0,
+        "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+        "duration": 31.666667,
+        "width": 1920,
+        "height": 1080,
+        "travel": "5292px"
+      }
+    },
+    {
+      "name": "1366: only matching film downloaded",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+        "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4"
+      ]
+    },
+    {
+      "name": "1366: scroll pose 0.1",
+      "pass": true,
+      "detail": {
+        "progress": 0.09996,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 600
+        }
+      }
+    },
+    {
+      "name": "1366: no black expansion backing",
+      "pass": true,
+      "detail": [
+        "rgb(19, 65, 67)",
+        "rgb(19, 65, 67)"
+      ]
+    },
+    {
+      "name": "1366: scroll pose 0.2",
+      "pass": true,
+      "detail": {
+        "progress": 0.19992,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 600
+        }
+      }
+    },
+    {
+      "name": "1366: scroll pose 0.5",
+      "pass": true,
+      "detail": {
+        "progress": 0.5,
+        "time": 12.69069,
+        "paused": true,
+        "target": 12.6964,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 600
+        }
+      }
+    },
+    {
+      "name": "1366: scroll pose 0.94",
+      "pass": true,
+      "detail": {
+        "progress": 0.93991,
+        "time": 31.628771,
+        "paused": true,
+        "target": 31.6294,
+        "expanded": "true",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 600
+        }
+      }
+    },
+    {
+      "name": "1366: scroll pose 0",
+      "pass": true,
+      "detail": {
+        "progress": 0,
+        "time": 0,
+        "paused": true,
+        "target": 0,
+        "expanded": "false",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 600
+        }
+      }
+    },
+    {
+      "name": "reduced: readable native fallback",
+      "pass": true
+    },
+    {
+      "name": "save-data: readable native fallback",
+      "pass": true
+    },
+    {
+      "name": "failed: readable native fallback",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

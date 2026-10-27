@@ -1,0 +1,183 @@
+[
+  {
+    "name": "1440: lines exist before entering",
+    "pass": true
+  },
+  {
+    "name": "1440: immediate visible prephased lines",
+    "pass": true,
+    "detail": [
+      {
+        "offset": 1000,
+        "opacity": 0.75,
+        "delay": 0,
+        "play": "running"
+      },
+      {
+        "offset": 381.966,
+        "opacity": 0.75,
+        "delay": -7.41641,
+        "play": "running"
+      },
+      {
+        "offset": 763.932,
+        "opacity": 0.75,
+        "delay": -2.83282,
+        "play": "running"
+      },
+      {
+        "offset": 145.898,
+        "opacity": 0.75,
+        "delay": -10.2492,
+        "play": "running"
+      }
+    ]
+  },
+  {
+    "name": "1440: moves without startup delay",
+    "pass": true
+  },
+  {
+    "name": "1440: pauses offscreen",
+    "pass": true
+  },
+  {
+    "name": "1440: return keeps same paths",
+    "pass": true
+  },
+  {
+    "name": "1440: visible immediately on return",
+    "pass": true
+  },
+  {
+    "name": "1440: reduced motion stays static",
+    "pass": true
+  },
+  {
+    "name": "1440: no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "768: lines exist before entering",
+    "pass": true
+  },
+  {
+    "name": "768: immediate visible prephased lines",
+    "pass": true,
+    "detail": [
+      {
+        "offset": 1000,
+        "opacity": 0.75,
+        "delay": 0,
+        "play": "running"
+      },
+      {
+        "offset": 381.966,
+        "opacity": 0.75,
+        "delay": -7.41641,
+        "play": "running"
+      },
+      {
+        "offset": 763.932,
+        "opacity": 0.75,
+        "delay": -2.83282,
+        "play": "running"
+      },
+      {
+        "offset": 145.898,
+        "opacity": 0.75,
+        "delay": -10.2492,
+        "play": "running"
+      }
+    ]
+  },
+  {
+    "name": "768: moves without startup delay",
+    "pass": true
+  },
+  {
+    "name": "768: pauses offscreen",
+    "pass": true
+  },
+  {
+    "name": "768: return keeps same paths",
+    "pass": true
+  },
+  {
+    "name": "768: visible immediately on return",
+    "pass": true
+  },
+  {
+    "name": "768: reduced motion stays static",
+    "pass": true
+  },
+  {
+    "name": "768: no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390: lines exist before entering",
+    "pass": true
+  },
+  {
+    "name": "390: immediate visible prephased lines",
+    "pass": true,
+    "detail": [
+      {
+        "offset": 995.842,
+        "opacity": 0.75,
+        "delay": 0,
+        "play": "running"
+      },
+      {
+        "offset": 377.808,
+        "opacity": 0.75,
+        "delay": -7.41641,
+        "play": "running"
+      },
+      {
+        "offset": 759.774,
+        "opacity": 0.75,
+        "delay": -2.83282,
+        "play": "running"
+      },
+      {
+        "offset": 141.74,
+        "opacity": 0.75,
+        "delay": -10.2492,
+        "play": "running"
+      }
+    ]
+  },
+  {
+    "name": "390: moves without startup delay",
+    "pass": true
+  },
+  {
+    "name": "390: pauses offscreen",
+    "pass": true
+  },
+  {
+    "name": "390: return keeps same paths",
+    "pass": true
+  },
+  {
+    "name": "390: visible immediately on return",
+    "pass": true
+  },
+  {
+    "name": "390: reduced motion stays static",
+    "pass": true
+  },
+  {
+    "name": "390: no browser errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "Lines included in initial HTML",
+    "pass": true
+  }
+]

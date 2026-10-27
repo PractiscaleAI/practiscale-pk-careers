@@ -1,0 +1,2872 @@
+{
+  "method": "Four-second continuous native-scroll sweeps in isolated local Chrome. The 40ms case adds asynchronous decoder latency; it is a robustness simulation, not a physical-device benchmark.",
+  "checks": [
+    {
+      "name": "1440x900, extra decode latency 0ms: forward keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 115
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: forward has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 88.20000000298023,
+        "p95HoldMs": 48.899999998509884
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: forward preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: forward settles at its source frame",
+      "pass": true,
+      "data": 118
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: reverse keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 114
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: reverse has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 163.59999999776483,
+        "p95HoldMs": 48.5
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: reverse preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: reverse settles at its source frame",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: parallel decoding stays bounded",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: bitmap memory stays bounded including in-flight work",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: continuous playback reuses its GPU texture",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: playback does not rebuild mipmaps",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 0ms: fallback closes all decoded bitmaps",
+      "pass": true,
+      "data": {
+        "live": 0,
+        "active": 0,
+        "engine": "poster"
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: forward keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 63
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: forward has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 136.90000000223517,
+        "p95HoldMs": 132
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: forward preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: forward settles at its source frame",
+      "pass": true,
+      "data": 118
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: reverse keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 83
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: reverse has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 181.29999999701977,
+        "p95HoldMs": 100.30000000074506
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: reverse preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: reverse settles at its source frame",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: parallel decoding stays bounded",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: bitmap memory stays bounded including in-flight work",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: continuous playback reuses its GPU texture",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: playback does not rebuild mipmaps",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "1440x900, extra decode latency 40ms: fallback closes all decoded bitmaps",
+      "pass": true,
+      "data": {
+        "live": 0,
+        "active": 0,
+        "engine": "poster"
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: forward keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 115
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: forward has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 85.80000000074506,
+        "p95HoldMs": 50
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: forward preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: forward settles at its source frame",
+      "pass": true,
+      "data": 118
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: reverse keeps presenting frames during scrolling",
+      "pass": true,
+      "data": {
+        "renderedFrames": 116
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: reverse has no long frozen hold",
+      "pass": true,
+      "data": {
+        "maxHoldMs": 68.20000000298023,
+        "p95HoldMs": 49.80000000074506
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: reverse preserves directional frame order",
+      "pass": true
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: reverse settles at its source frame",
+      "pass": true,
+      "data": 0
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: parallel decoding stays bounded",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: bitmap memory stays bounded including in-flight work",
+      "pass": true,
+      "data": {
+        "active": 0,
+        "peakActive": 2,
+        "live": 8,
+        "peakLive": 8,
+        "textures": 5,
+        "mipmaps": 0
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: continuous playback reuses its GPU texture",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: playback does not rebuild mipmaps",
+      "pass": true,
+      "data": {
+        "baseline": {
+          "textures": 5,
+          "mipmaps": 0
+        },
+        "resources": {
+          "active": 0,
+          "peakActive": 2,
+          "live": 8,
+          "peakLive": 8,
+          "textures": 5,
+          "mipmaps": 0
+        }
+      }
+    },
+    {
+      "name": "390x844, extra decode latency 0ms: fallback closes all decoded bitmaps",
+      "pass": true,
+      "data": {
+        "live": 0,
+        "active": 0,
+        "engine": "poster"
+      }
+    },
+    {
+      "name": "No runtime errors",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "cases": [
+    {
+      "width": 1440,
+      "height": 900,
+      "decodeDelayMs": 0,
+      "label": "forward",
+      "mark": 3380.5,
+      "end": 7395.900000002235,
+      "renderedFrames": 115,
+      "maxHoldMs": 88.20000000298023,
+      "p95HoldMs": 48.899999998509884,
+      "frames": [
+        {
+          "at": 3468.7000000029802,
+          "frame": 1
+        },
+        {
+          "at": 3518.60000000149,
+          "frame": 2
+        },
+        {
+          "at": 3568.60000000149,
+          "frame": 3
+        },
+        {
+          "at": 3603.2000000029802,
+          "frame": 4
+        },
+        {
+          "at": 3652.10000000149,
+          "frame": 5
+        },
+        {
+          "at": 3687.400000002235,
+          "frame": 6
+        },
+        {
+          "at": 3722,
+          "frame": 7
+        },
+        {
+          "at": 3755.400000002235,
+          "frame": 8
+        },
+        {
+          "at": 3784.400000002235,
+          "frame": 9
+        },
+        {
+          "at": 3817.300000000745,
+          "frame": 10
+        },
+        {
+          "at": 3851,
+          "frame": 11
+        },
+        {
+          "at": 3886.300000000745,
+          "frame": 12
+        },
+        {
+          "at": 3921.900000002235,
+          "frame": 13
+        },
+        {
+          "at": 3953.10000000149,
+          "frame": 14
+        },
+        {
+          "at": 3987,
+          "frame": 15
+        },
+        {
+          "at": 4018.5,
+          "frame": 16
+        },
+        {
+          "at": 4052.5,
+          "frame": 17
+        },
+        {
+          "at": 4085,
+          "frame": 18
+        },
+        {
+          "at": 4120.70000000298,
+          "frame": 19
+        },
+        {
+          "at": 4151.5,
+          "frame": 20
+        },
+        {
+          "at": 4211.800000000745,
+          "frame": 21
+        },
+        {
+          "at": 4233.10000000149,
+          "frame": 22
+        },
+        {
+          "at": 4269.20000000298,
+          "frame": 23
+        },
+        {
+          "at": 4301.300000000745,
+          "frame": 24
+        },
+        {
+          "at": 4334.5,
+          "frame": 25
+        },
+        {
+          "at": 4368.20000000298,
+          "frame": 26
+        },
+        {
+          "at": 4401.70000000298,
+          "frame": 27
+        },
+        {
+          "at": 4438.5,
+          "frame": 28
+        },
+        {
+          "at": 4469.70000000298,
+          "frame": 29
+        },
+        {
+          "at": 4504.5,
+          "frame": 30
+        },
+        {
+          "at": 4536,
+          "frame": 31
+        },
+        {
+          "at": 4571,
+          "frame": 32
+        },
+        {
+          "at": 4603.5,
+          "frame": 33
+        },
+        {
+          "at": 4635.400000002235,
+          "frame": 34
+        },
+        {
+          "at": 4671.10000000149,
+          "frame": 35
+        },
+        {
+          "at": 4701.400000002235,
+          "frame": 36
+        },
+        {
+          "at": 4736.400000002235,
+          "frame": 37
+        },
+        {
+          "at": 4768.5,
+          "frame": 38
+        },
+        {
+          "at": 4801.70000000298,
+          "frame": 39
+        },
+        {
+          "at": 4835.20000000298,
+          "frame": 40
+        },
+        {
+          "at": 4867.5,
+          "frame": 41
+        },
+        {
+          "at": 4900.70000000298,
+          "frame": 42
+        },
+        {
+          "at": 4934.70000000298,
+          "frame": 43
+        },
+        {
+          "at": 4985.5,
+          "frame": 44
+        },
+        {
+          "at": 5020.800000000745,
+          "frame": 45
+        },
+        {
+          "at": 5056.70000000298,
+          "frame": 46
+        },
+        {
+          "at": 5086,
+          "frame": 47
+        },
+        {
+          "at": 5119.70000000298,
+          "frame": 48
+        },
+        {
+          "at": 5152.800000000745,
+          "frame": 49
+        },
+        {
+          "at": 5188.10000000149,
+          "frame": 50
+        },
+        {
+          "at": 5219.300000000745,
+          "frame": 51
+        },
+        {
+          "at": 5252.70000000298,
+          "frame": 52
+        },
+        {
+          "at": 5286.20000000298,
+          "frame": 53
+        },
+        {
+          "at": 5318.5,
+          "frame": 54
+        },
+        {
+          "at": 5351.10000000149,
+          "frame": 55
+        },
+        {
+          "at": 5384.70000000298,
+          "frame": 56
+        },
+        {
+          "at": 5418.10000000149,
+          "frame": 57
+        },
+        {
+          "at": 5451.70000000298,
+          "frame": 58
+        },
+        {
+          "at": 5489.400000002235,
+          "frame": 59
+        },
+        {
+          "at": 5520,
+          "frame": 60
+        },
+        {
+          "at": 5554.10000000149,
+          "frame": 61
+        },
+        {
+          "at": 5589.70000000298,
+          "frame": 62
+        },
+        {
+          "at": 5622.10000000149,
+          "frame": 63
+        },
+        {
+          "at": 5654.800000000745,
+          "frame": 64
+        },
+        {
+          "at": 5689.20000000298,
+          "frame": 65
+        },
+        {
+          "at": 5735.60000000149,
+          "frame": 66
+        },
+        {
+          "at": 5769.900000002235,
+          "frame": 67
+        },
+        {
+          "at": 5803.60000000149,
+          "frame": 68
+        },
+        {
+          "at": 5836.300000000745,
+          "frame": 69
+        },
+        {
+          "at": 5870.10000000149,
+          "frame": 70
+        },
+        {
+          "at": 5903.400000002235,
+          "frame": 71
+        },
+        {
+          "at": 5936.300000000745,
+          "frame": 72
+        },
+        {
+          "at": 5958.400000002235,
+          "frame": 73
+        },
+        {
+          "at": 6003.800000000745,
+          "frame": 74
+        },
+        {
+          "at": 6035.800000000745,
+          "frame": 75
+        },
+        {
+          "at": 6070.900000002235,
+          "frame": 76
+        },
+        {
+          "at": 6101.300000000745,
+          "frame": 77
+        },
+        {
+          "at": 6134.20000000298,
+          "frame": 78
+        },
+        {
+          "at": 6167.400000002235,
+          "frame": 79
+        },
+        {
+          "at": 6202.20000000298,
+          "frame": 80
+        },
+        {
+          "at": 6234.60000000149,
+          "frame": 81
+        },
+        {
+          "at": 6268.400000002235,
+          "frame": 82
+        },
+        {
+          "at": 6301.10000000149,
+          "frame": 83
+        },
+        {
+          "at": 6334.20000000298,
+          "frame": 84
+        },
+        {
+          "at": 6368.70000000298,
+          "frame": 85
+        },
+        {
+          "at": 6401.20000000298,
+          "frame": 86
+        },
+        {
+          "at": 6435.70000000298,
+          "frame": 87
+        },
+        {
+          "at": 6470.20000000298,
+          "frame": 88
+        },
+        {
+          "at": 6505.70000000298,
+          "frame": 89
+        },
+        {
+          "at": 6553.800000000745,
+          "frame": 90
+        },
+        {
+          "at": 6571.300000000745,
+          "frame": 91
+        },
+        {
+          "at": 6619.900000002235,
+          "frame": 92
+        },
+        {
+          "at": 6658.900000002235,
+          "frame": 93
+        },
+        {
+          "at": 6675.300000000745,
+          "frame": 94
+        },
+        {
+          "at": 6720.900000002235,
+          "frame": 95
+        },
+        {
+          "at": 6743.900000002235,
+          "frame": 96
+        },
+        {
+          "at": 6791.800000000745,
+          "frame": 97
+        },
+        {
+          "at": 6821.60000000149,
+          "frame": 98
+        },
+        {
+          "at": 6854.900000002235,
+          "frame": 99
+        },
+        {
+          "at": 6888.5,
+          "frame": 100
+        },
+        {
+          "at": 6922.60000000149,
+          "frame": 101
+        },
+        {
+          "at": 6954.10000000149,
+          "frame": 102
+        },
+        {
+          "at": 6979.300000000745,
+          "frame": 103
+        },
+        {
+          "at": 7022.300000000745,
+          "frame": 104
+        },
+        {
+          "at": 7055.300000000745,
+          "frame": 105
+        },
+        {
+          "at": 7088.800000000745,
+          "frame": 106
+        },
+        {
+          "at": 7122.60000000149,
+          "frame": 107
+        },
+        {
+          "at": 7154.900000002235,
+          "frame": 108
+        },
+        {
+          "at": 7185.800000000745,
+          "frame": 109
+        },
+        {
+          "at": 7220.900000002235,
+          "frame": 110
+        },
+        {
+          "at": 7252.900000002235,
+          "frame": 111
+        },
+        {
+          "at": 7288.70000000298,
+          "frame": 112
+        },
+        {
+          "at": 7319,
+          "frame": 113
+        },
+        {
+          "at": 7351.5,
+          "frame": 114
+        },
+        {
+          "at": 7383.5,
+          "frame": 115
+        }
+      ],
+      "shown": 118
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "decodeDelayMs": 0,
+      "label": "reverse",
+      "mark": 9022.300000000745,
+      "end": 13027.900000002235,
+      "renderedFrames": 114,
+      "maxHoldMs": 163.59999999776483,
+      "p95HoldMs": 48.5,
+      "frames": [
+        {
+          "at": 9065.20000000298,
+          "frame": 117
+        },
+        {
+          "at": 9228.800000000745,
+          "frame": 115
+        },
+        {
+          "at": 9254.5,
+          "frame": 114
+        },
+        {
+          "at": 9283.400000002235,
+          "frame": 113
+        },
+        {
+          "at": 9316.5,
+          "frame": 112
+        },
+        {
+          "at": 9349.60000000149,
+          "frame": 111
+        },
+        {
+          "at": 9382.400000002235,
+          "frame": 110
+        },
+        {
+          "at": 9416.400000002235,
+          "frame": 109
+        },
+        {
+          "at": 9449.900000002235,
+          "frame": 108
+        },
+        {
+          "at": 9483.60000000149,
+          "frame": 107
+        },
+        {
+          "at": 9516.300000000745,
+          "frame": 106
+        },
+        {
+          "at": 9549.70000000298,
+          "frame": 105
+        },
+        {
+          "at": 9584.60000000149,
+          "frame": 104
+        },
+        {
+          "at": 9617.10000000149,
+          "frame": 103
+        },
+        {
+          "at": 9652.400000002235,
+          "frame": 102
+        },
+        {
+          "at": 9683.20000000298,
+          "frame": 101
+        },
+        {
+          "at": 9717.300000000745,
+          "frame": 100
+        },
+        {
+          "at": 9750.300000000745,
+          "frame": 99
+        },
+        {
+          "at": 9783.900000002235,
+          "frame": 98
+        },
+        {
+          "at": 9818.5,
+          "frame": 97
+        },
+        {
+          "at": 9850.300000000745,
+          "frame": 96
+        },
+        {
+          "at": 9886.900000002235,
+          "frame": 95
+        },
+        {
+          "at": 9916.60000000149,
+          "frame": 94
+        },
+        {
+          "at": 9968.10000000149,
+          "frame": 93
+        },
+        {
+          "at": 10001.300000000745,
+          "frame": 92
+        },
+        {
+          "at": 10034.300000000745,
+          "frame": 91
+        },
+        {
+          "at": 10070.70000000298,
+          "frame": 90
+        },
+        {
+          "at": 10101.20000000298,
+          "frame": 89
+        },
+        {
+          "at": 10133.900000002235,
+          "frame": 88
+        },
+        {
+          "at": 10166.70000000298,
+          "frame": 87
+        },
+        {
+          "at": 10200.5,
+          "frame": 86
+        },
+        {
+          "at": 10233.20000000298,
+          "frame": 85
+        },
+        {
+          "at": 10266.5,
+          "frame": 84
+        },
+        {
+          "at": 10299.900000002235,
+          "frame": 83
+        },
+        {
+          "at": 10333.5,
+          "frame": 82
+        },
+        {
+          "at": 10367.70000000298,
+          "frame": 81
+        },
+        {
+          "at": 10400.400000002235,
+          "frame": 80
+        },
+        {
+          "at": 10433.300000000745,
+          "frame": 79
+        },
+        {
+          "at": 10466,
+          "frame": 78
+        },
+        {
+          "at": 10500,
+          "frame": 77
+        },
+        {
+          "at": 10533.800000000745,
+          "frame": 76
+        },
+        {
+          "at": 10567.800000000745,
+          "frame": 75
+        },
+        {
+          "at": 10601.70000000298,
+          "frame": 74
+        },
+        {
+          "at": 10633.5,
+          "frame": 73
+        },
+        {
+          "at": 10666.400000002235,
+          "frame": 72
+        },
+        {
+          "at": 10702.900000002235,
+          "frame": 71
+        },
+        {
+          "at": 10733.900000002235,
+          "frame": 70
+        },
+        {
+          "at": 10784.60000000149,
+          "frame": 69
+        },
+        {
+          "at": 10818.60000000149,
+          "frame": 68
+        },
+        {
+          "at": 10852.5,
+          "frame": 67
+        },
+        {
+          "at": 10887.800000000745,
+          "frame": 66
+        },
+        {
+          "at": 10920.70000000298,
+          "frame": 65
+        },
+        {
+          "at": 10952.5,
+          "frame": 64
+        },
+        {
+          "at": 10985.800000000745,
+          "frame": 63
+        },
+        {
+          "at": 11020,
+          "frame": 62
+        },
+        {
+          "at": 11052.5,
+          "frame": 61
+        },
+        {
+          "at": 11085.60000000149,
+          "frame": 60
+        },
+        {
+          "at": 11122.800000000745,
+          "frame": 59
+        },
+        {
+          "at": 11151.70000000298,
+          "frame": 58
+        },
+        {
+          "at": 11184.10000000149,
+          "frame": 57
+        },
+        {
+          "at": 11216.800000000745,
+          "frame": 56
+        },
+        {
+          "at": 11250.20000000298,
+          "frame": 55
+        },
+        {
+          "at": 11282.800000000745,
+          "frame": 54
+        },
+        {
+          "at": 11317.70000000298,
+          "frame": 53
+        },
+        {
+          "at": 11352,
+          "frame": 52
+        },
+        {
+          "at": 11384.10000000149,
+          "frame": 51
+        },
+        {
+          "at": 11416.400000002235,
+          "frame": 50
+        },
+        {
+          "at": 11449.5,
+          "frame": 49
+        },
+        {
+          "at": 11485.900000002235,
+          "frame": 48
+        },
+        {
+          "at": 11518.5,
+          "frame": 47
+        },
+        {
+          "at": 11567,
+          "frame": 46
+        },
+        {
+          "at": 11603.60000000149,
+          "frame": 45
+        },
+        {
+          "at": 11632.400000002235,
+          "frame": 44
+        },
+        {
+          "at": 11666.60000000149,
+          "frame": 43
+        },
+        {
+          "at": 11703.5,
+          "frame": 42
+        },
+        {
+          "at": 11733.60000000149,
+          "frame": 41
+        },
+        {
+          "at": 11766.20000000298,
+          "frame": 40
+        },
+        {
+          "at": 11799.10000000149,
+          "frame": 39
+        },
+        {
+          "at": 11835.300000000745,
+          "frame": 38
+        },
+        {
+          "at": 11865.70000000298,
+          "frame": 37
+        },
+        {
+          "at": 11901,
+          "frame": 36
+        },
+        {
+          "at": 11933.10000000149,
+          "frame": 35
+        },
+        {
+          "at": 11965.900000002235,
+          "frame": 34
+        },
+        {
+          "at": 12004.300000000745,
+          "frame": 33
+        },
+        {
+          "at": 12034,
+          "frame": 32
+        },
+        {
+          "at": 12067.60000000149,
+          "frame": 31
+        },
+        {
+          "at": 12099.10000000149,
+          "frame": 30
+        },
+        {
+          "at": 12133.60000000149,
+          "frame": 29
+        },
+        {
+          "at": 12166,
+          "frame": 28
+        },
+        {
+          "at": 12199.300000000745,
+          "frame": 27
+        },
+        {
+          "at": 12233.10000000149,
+          "frame": 26
+        },
+        {
+          "at": 12268.10000000149,
+          "frame": 25
+        },
+        {
+          "at": 12299.400000002235,
+          "frame": 24
+        },
+        {
+          "at": 12357.5,
+          "frame": 23
+        },
+        {
+          "at": 12374.5,
+          "frame": 22
+        },
+        {
+          "at": 12400.10000000149,
+          "frame": 21
+        },
+        {
+          "at": 12449.70000000298,
+          "frame": 20
+        },
+        {
+          "at": 12483.20000000298,
+          "frame": 19
+        },
+        {
+          "at": 12517.800000000745,
+          "frame": 18
+        },
+        {
+          "at": 12550.20000000298,
+          "frame": 17
+        },
+        {
+          "at": 12586.10000000149,
+          "frame": 16
+        },
+        {
+          "at": 12617.900000002235,
+          "frame": 15
+        },
+        {
+          "at": 12650,
+          "frame": 14
+        },
+        {
+          "at": 12683,
+          "frame": 13
+        },
+        {
+          "at": 12717.60000000149,
+          "frame": 12
+        },
+        {
+          "at": 12749.5,
+          "frame": 11
+        },
+        {
+          "at": 12782,
+          "frame": 10
+        },
+        {
+          "at": 12815.70000000298,
+          "frame": 9
+        },
+        {
+          "at": 12848.900000002235,
+          "frame": 8
+        },
+        {
+          "at": 12883.300000000745,
+          "frame": 7
+        },
+        {
+          "at": 12917.5,
+          "frame": 6
+        },
+        {
+          "at": 12948.10000000149,
+          "frame": 5
+        },
+        {
+          "at": 12980.300000000745,
+          "frame": 4
+        },
+        {
+          "at": 13014.5,
+          "frame": 3
+        }
+      ],
+      "shown": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "decodeDelayMs": 40,
+      "label": "forward",
+      "mark": 3163.60000000149,
+      "end": 7170.60000000149,
+      "renderedFrames": 63,
+      "maxHoldMs": 136.90000000223517,
+      "p95HoldMs": 132,
+      "frames": [
+        {
+          "at": 3243.10000000149,
+          "frame": 1
+        },
+        {
+          "at": 3309.60000000149,
+          "frame": 2
+        },
+        {
+          "at": 3343.300000000745,
+          "frame": 3
+        },
+        {
+          "at": 3393,
+          "frame": 4
+        },
+        {
+          "at": 3426.60000000149,
+          "frame": 5
+        },
+        {
+          "at": 3459.5,
+          "frame": 6
+        },
+        {
+          "at": 3493.7000000029802,
+          "frame": 7
+        },
+        {
+          "at": 3528.5,
+          "frame": 8
+        },
+        {
+          "at": 3559.60000000149,
+          "frame": 9
+        },
+        {
+          "at": 3595.400000002235,
+          "frame": 10
+        },
+        {
+          "at": 3641.7000000029802,
+          "frame": 11
+        },
+        {
+          "at": 3679.2000000029802,
+          "frame": 12
+        },
+        {
+          "at": 3708.5,
+          "frame": 13
+        },
+        {
+          "at": 3745.300000000745,
+          "frame": 14
+        },
+        {
+          "at": 3775.10000000149,
+          "frame": 15
+        },
+        {
+          "at": 3809.800000000745,
+          "frame": 16
+        },
+        {
+          "at": 3841.7000000029802,
+          "frame": 17
+        },
+        {
+          "at": 3875.60000000149,
+          "frame": 18
+        },
+        {
+          "at": 3908.7000000029802,
+          "frame": 19
+        },
+        {
+          "at": 3943.300000000745,
+          "frame": 20
+        },
+        {
+          "at": 3975.2000000029802,
+          "frame": 21
+        },
+        {
+          "at": 4008.800000000745,
+          "frame": 22
+        },
+        {
+          "at": 4042.10000000149,
+          "frame": 23
+        },
+        {
+          "at": 4075,
+          "frame": 24
+        },
+        {
+          "at": 4108.5,
+          "frame": 25
+        },
+        {
+          "at": 4142.10000000149,
+          "frame": 26
+        },
+        {
+          "at": 4174.60000000149,
+          "frame": 27
+        },
+        {
+          "at": 4209.10000000149,
+          "frame": 28
+        },
+        {
+          "at": 4243.10000000149,
+          "frame": 29
+        },
+        {
+          "at": 4275,
+          "frame": 30
+        },
+        {
+          "at": 4309.60000000149,
+          "frame": 31
+        },
+        {
+          "at": 4358.70000000298,
+          "frame": 32
+        },
+        {
+          "at": 4392,
+          "frame": 33
+        },
+        {
+          "at": 4427,
+          "frame": 34
+        },
+        {
+          "at": 4459.900000002235,
+          "frame": 35
+        },
+        {
+          "at": 4492.800000000745,
+          "frame": 36
+        },
+        {
+          "at": 4527.20000000298,
+          "frame": 37
+        },
+        {
+          "at": 4561,
+          "frame": 38
+        },
+        {
+          "at": 4626.5,
+          "frame": 40
+        },
+        {
+          "at": 4741.10000000149,
+          "frame": 42
+        },
+        {
+          "at": 4862.70000000298,
+          "frame": 44
+        },
+        {
+          "at": 4950.900000002235,
+          "frame": 47
+        },
+        {
+          "at": 5085,
+          "frame": 50
+        },
+        {
+          "at": 5203.5,
+          "frame": 54
+        },
+        {
+          "at": 5335.900000002235,
+          "frame": 57
+        },
+        {
+          "at": 5442.5,
+          "frame": 61
+        },
+        {
+          "at": 5540.20000000298,
+          "frame": 63
+        },
+        {
+          "at": 5557,
+          "frame": 64
+        },
+        {
+          "at": 5641.60000000149,
+          "frame": 67
+        },
+        {
+          "at": 5771.5,
+          "frame": 70
+        },
+        {
+          "at": 5874.5,
+          "frame": 74
+        },
+        {
+          "at": 5995.300000000745,
+          "frame": 77
+        },
+        {
+          "at": 6110.5,
+          "frame": 81
+        },
+        {
+          "at": 6226,
+          "frame": 84
+        },
+        {
+          "at": 6324.800000000745,
+          "frame": 87
+        },
+        {
+          "at": 6413.900000002235,
+          "frame": 90
+        },
+        {
+          "at": 6502,
+          "frame": 93
+        },
+        {
+          "at": 6634,
+          "frame": 95
+        },
+        {
+          "at": 6653.70000000298,
+          "frame": 96
+        },
+        {
+          "at": 6756.60000000149,
+          "frame": 100
+        },
+        {
+          "at": 6886.300000000745,
+          "frame": 103
+        },
+        {
+          "at": 7023.20000000298,
+          "frame": 107
+        },
+        {
+          "at": 7141.60000000149,
+          "frame": 111
+        }
+      ],
+      "shown": 118
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "decodeDelayMs": 40,
+      "label": "reverse",
+      "mark": 8786.800000000745,
+      "end": 12805.60000000149,
+      "renderedFrames": 83,
+      "maxHoldMs": 181.29999999701977,
+      "p95HoldMs": 100.30000000074506,
+      "frames": [
+        {
+          "at": 8824.60000000149,
+          "frame": 117
+        },
+        {
+          "at": 8907,
+          "frame": 116
+        },
+        {
+          "at": 8957.60000000149,
+          "frame": 115
+        },
+        {
+          "at": 8990.300000000745,
+          "frame": 114
+        },
+        {
+          "at": 9040.5,
+          "frame": 113
+        },
+        {
+          "at": 9074,
+          "frame": 112
+        },
+        {
+          "at": 9106.70000000298,
+          "frame": 111
+        },
+        {
+          "at": 9139.60000000149,
+          "frame": 110
+        },
+        {
+          "at": 9174,
+          "frame": 109
+        },
+        {
+          "at": 9206.800000000745,
+          "frame": 108
+        },
+        {
+          "at": 9240.400000002235,
+          "frame": 107
+        },
+        {
+          "at": 9273.400000002235,
+          "frame": 106
+        },
+        {
+          "at": 9308,
+          "frame": 105
+        },
+        {
+          "at": 9339.900000002235,
+          "frame": 104
+        },
+        {
+          "at": 9372.900000002235,
+          "frame": 103
+        },
+        {
+          "at": 9423.70000000298,
+          "frame": 102
+        },
+        {
+          "at": 9457.60000000149,
+          "frame": 101
+        },
+        {
+          "at": 9489.900000002235,
+          "frame": 100
+        },
+        {
+          "at": 9523.60000000149,
+          "frame": 99
+        },
+        {
+          "at": 9556.900000002235,
+          "frame": 98
+        },
+        {
+          "at": 9589.900000002235,
+          "frame": 97
+        },
+        {
+          "at": 9623.300000000745,
+          "frame": 96
+        },
+        {
+          "at": 9657.20000000298,
+          "frame": 95
+        },
+        {
+          "at": 9689.800000000745,
+          "frame": 94
+        },
+        {
+          "at": 9723.60000000149,
+          "frame": 93
+        },
+        {
+          "at": 9756.400000002235,
+          "frame": 92
+        },
+        {
+          "at": 9791.800000000745,
+          "frame": 91
+        },
+        {
+          "at": 9824.300000000745,
+          "frame": 90
+        },
+        {
+          "at": 9857,
+          "frame": 89
+        },
+        {
+          "at": 9894,
+          "frame": 88
+        },
+        {
+          "at": 9923.400000002235,
+          "frame": 87
+        },
+        {
+          "at": 9956.800000000745,
+          "frame": 86
+        },
+        {
+          "at": 9989.5,
+          "frame": 85
+        },
+        {
+          "at": 10025.60000000149,
+          "frame": 84
+        },
+        {
+          "at": 10057.70000000298,
+          "frame": 83
+        },
+        {
+          "at": 10092.5,
+          "frame": 82
+        },
+        {
+          "at": 10123.70000000298,
+          "frame": 81
+        },
+        {
+          "at": 10172.70000000298,
+          "frame": 80
+        },
+        {
+          "at": 10205.900000002235,
+          "frame": 79
+        },
+        {
+          "at": 10239.5,
+          "frame": 78
+        },
+        {
+          "at": 10272.900000002235,
+          "frame": 77
+        },
+        {
+          "at": 10305.800000000745,
+          "frame": 76
+        },
+        {
+          "at": 10342.5,
+          "frame": 75
+        },
+        {
+          "at": 10372.400000002235,
+          "frame": 74
+        },
+        {
+          "at": 10406.60000000149,
+          "frame": 73
+        },
+        {
+          "at": 10439.400000002235,
+          "frame": 72
+        },
+        {
+          "at": 10473.800000000745,
+          "frame": 71
+        },
+        {
+          "at": 10507.300000000745,
+          "frame": 70
+        },
+        {
+          "at": 10555.900000002235,
+          "frame": 69
+        },
+        {
+          "at": 10572.300000000745,
+          "frame": 68
+        },
+        {
+          "at": 10640,
+          "frame": 67
+        },
+        {
+          "at": 10647.400000002235,
+          "frame": 66
+        },
+        {
+          "at": 10724.5,
+          "frame": 65
+        },
+        {
+          "at": 10741.300000000745,
+          "frame": 64
+        },
+        {
+          "at": 10809,
+          "frame": 63
+        },
+        {
+          "at": 10824.10000000149,
+          "frame": 62
+        },
+        {
+          "at": 10893.70000000298,
+          "frame": 61
+        },
+        {
+          "at": 10909.20000000298,
+          "frame": 60
+        },
+        {
+          "at": 11090.5,
+          "frame": 58
+        },
+        {
+          "at": 11172.800000000745,
+          "frame": 53
+        },
+        {
+          "at": 11191.70000000298,
+          "frame": 52
+        },
+        {
+          "at": 11275.5,
+          "frame": 50
+        },
+        {
+          "at": 11377,
+          "frame": 47
+        },
+        {
+          "at": 11501.400000002235,
+          "frame": 44
+        },
+        {
+          "at": 11626.60000000149,
+          "frame": 40
+        },
+        {
+          "at": 11706.5,
+          "frame": 36
+        },
+        {
+          "at": 11790.70000000298,
+          "frame": 34
+        },
+        {
+          "at": 11890.5,
+          "frame": 31
+        },
+        {
+          "at": 11973.900000002235,
+          "frame": 29
+        },
+        {
+          "at": 12056.5,
+          "frame": 27
+        },
+        {
+          "at": 12073.800000000745,
+          "frame": 26
+        },
+        {
+          "at": 12141.900000002235,
+          "frame": 25
+        },
+        {
+          "at": 12158.70000000298,
+          "frame": 24
+        },
+        {
+          "at": 12240.20000000298,
+          "frame": 22
+        },
+        {
+          "at": 12245.800000000745,
+          "frame": 21
+        },
+        {
+          "at": 12322.900000002235,
+          "frame": 19
+        },
+        {
+          "at": 12340.5,
+          "frame": 18
+        },
+        {
+          "at": 12406.20000000298,
+          "frame": 17
+        },
+        {
+          "at": 12412.5,
+          "frame": 16
+        },
+        {
+          "at": 12506.70000000298,
+          "frame": 13
+        },
+        {
+          "at": 12606.400000002235,
+          "frame": 10
+        },
+        {
+          "at": 12706.70000000298,
+          "frame": 7
+        },
+        {
+          "at": 12805.5,
+          "frame": 5
+        }
+      ],
+      "shown": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "decodeDelayMs": 0,
+      "label": "forward",
+      "mark": 3089.5,
+      "end": 7104.60000000149,
+      "renderedFrames": 115,
+      "maxHoldMs": 85.80000000074506,
+      "p95HoldMs": 50,
+      "frames": [
+        {
+          "at": 3175.300000000745,
+          "frame": 1
+        },
+        {
+          "at": 3242.10000000149,
+          "frame": 2
+        },
+        {
+          "at": 3275,
+          "frame": 3
+        },
+        {
+          "at": 3324.300000000745,
+          "frame": 4
+        },
+        {
+          "at": 3357.900000002235,
+          "frame": 5
+        },
+        {
+          "at": 3391.400000002235,
+          "frame": 6
+        },
+        {
+          "at": 3424.7000000029802,
+          "frame": 7
+        },
+        {
+          "at": 3458,
+          "frame": 8
+        },
+        {
+          "at": 3490.60000000149,
+          "frame": 9
+        },
+        {
+          "at": 3524.300000000745,
+          "frame": 10
+        },
+        {
+          "at": 3557.7000000029802,
+          "frame": 11
+        },
+        {
+          "at": 3590.7000000029802,
+          "frame": 12
+        },
+        {
+          "at": 3641.400000002235,
+          "frame": 13
+        },
+        {
+          "at": 3674.60000000149,
+          "frame": 14
+        },
+        {
+          "at": 3707.7000000029802,
+          "frame": 15
+        },
+        {
+          "at": 3740.800000000745,
+          "frame": 16
+        },
+        {
+          "at": 3774.300000000745,
+          "frame": 17
+        },
+        {
+          "at": 3807.400000002235,
+          "frame": 18
+        },
+        {
+          "at": 3841.10000000149,
+          "frame": 19
+        },
+        {
+          "at": 3874.7000000029802,
+          "frame": 20
+        },
+        {
+          "at": 3907.60000000149,
+          "frame": 21
+        },
+        {
+          "at": 3941,
+          "frame": 22
+        },
+        {
+          "at": 3974.2000000029802,
+          "frame": 23
+        },
+        {
+          "at": 4007.60000000149,
+          "frame": 24
+        },
+        {
+          "at": 4041.2000000029802,
+          "frame": 25
+        },
+        {
+          "at": 4074,
+          "frame": 26
+        },
+        {
+          "at": 4107.900000002235,
+          "frame": 27
+        },
+        {
+          "at": 4140.400000002235,
+          "frame": 28
+        },
+        {
+          "at": 4173.800000000745,
+          "frame": 29
+        },
+        {
+          "at": 4207.300000000745,
+          "frame": 30
+        },
+        {
+          "at": 4241.20000000298,
+          "frame": 31
+        },
+        {
+          "at": 4274.10000000149,
+          "frame": 32
+        },
+        {
+          "at": 4307.800000000745,
+          "frame": 33
+        },
+        {
+          "at": 4340.800000000745,
+          "frame": 34
+        },
+        {
+          "at": 4373.900000002235,
+          "frame": 35
+        },
+        {
+          "at": 4407.400000002235,
+          "frame": 36
+        },
+        {
+          "at": 4440.800000000745,
+          "frame": 37
+        },
+        {
+          "at": 4474.60000000149,
+          "frame": 38
+        },
+        {
+          "at": 4507.5,
+          "frame": 39
+        },
+        {
+          "at": 4540.70000000298,
+          "frame": 40
+        },
+        {
+          "at": 4590.300000000745,
+          "frame": 41
+        },
+        {
+          "at": 4623.800000000745,
+          "frame": 42
+        },
+        {
+          "at": 4657.10000000149,
+          "frame": 43
+        },
+        {
+          "at": 4690.60000000149,
+          "frame": 44
+        },
+        {
+          "at": 4723.70000000298,
+          "frame": 45
+        },
+        {
+          "at": 4757.10000000149,
+          "frame": 46
+        },
+        {
+          "at": 4790.60000000149,
+          "frame": 47
+        },
+        {
+          "at": 4823.800000000745,
+          "frame": 48
+        },
+        {
+          "at": 4857.10000000149,
+          "frame": 49
+        },
+        {
+          "at": 4890.20000000298,
+          "frame": 50
+        },
+        {
+          "at": 4923.70000000298,
+          "frame": 51
+        },
+        {
+          "at": 4957,
+          "frame": 52
+        },
+        {
+          "at": 4991,
+          "frame": 53
+        },
+        {
+          "at": 5023.60000000149,
+          "frame": 54
+        },
+        {
+          "at": 5057.300000000745,
+          "frame": 55
+        },
+        {
+          "at": 5090.5,
+          "frame": 56
+        },
+        {
+          "at": 5123.400000002235,
+          "frame": 57
+        },
+        {
+          "at": 5157.20000000298,
+          "frame": 58
+        },
+        {
+          "at": 5190.400000002235,
+          "frame": 59
+        },
+        {
+          "at": 5224.800000000745,
+          "frame": 60
+        },
+        {
+          "at": 5256.800000000745,
+          "frame": 61
+        },
+        {
+          "at": 5290,
+          "frame": 62
+        },
+        {
+          "at": 5323.900000002235,
+          "frame": 63
+        },
+        {
+          "at": 5357,
+          "frame": 64
+        },
+        {
+          "at": 5390.60000000149,
+          "frame": 65
+        },
+        {
+          "at": 5423.70000000298,
+          "frame": 66
+        },
+        {
+          "at": 5456.5,
+          "frame": 67
+        },
+        {
+          "at": 5490,
+          "frame": 68
+        },
+        {
+          "at": 5540.300000000745,
+          "frame": 69
+        },
+        {
+          "at": 5556.900000002235,
+          "frame": 70
+        },
+        {
+          "at": 5606.900000002235,
+          "frame": 71
+        },
+        {
+          "at": 5641.20000000298,
+          "frame": 72
+        },
+        {
+          "at": 5674,
+          "frame": 73
+        },
+        {
+          "at": 5707,
+          "frame": 74
+        },
+        {
+          "at": 5740.20000000298,
+          "frame": 75
+        },
+        {
+          "at": 5773.800000000745,
+          "frame": 76
+        },
+        {
+          "at": 5806.800000000745,
+          "frame": 77
+        },
+        {
+          "at": 5840.20000000298,
+          "frame": 78
+        },
+        {
+          "at": 5873.60000000149,
+          "frame": 79
+        },
+        {
+          "at": 5907.5,
+          "frame": 80
+        },
+        {
+          "at": 5940.5,
+          "frame": 81
+        },
+        {
+          "at": 5973.70000000298,
+          "frame": 82
+        },
+        {
+          "at": 6006.60000000149,
+          "frame": 83
+        },
+        {
+          "at": 6040.5,
+          "frame": 84
+        },
+        {
+          "at": 6073.300000000745,
+          "frame": 85
+        },
+        {
+          "at": 6106.70000000298,
+          "frame": 86
+        },
+        {
+          "at": 6140.300000000745,
+          "frame": 87
+        },
+        {
+          "at": 6173.70000000298,
+          "frame": 88
+        },
+        {
+          "at": 6207,
+          "frame": 89
+        },
+        {
+          "at": 6239.70000000298,
+          "frame": 90
+        },
+        {
+          "at": 6273.400000002235,
+          "frame": 91
+        },
+        {
+          "at": 6306.5,
+          "frame": 92
+        },
+        {
+          "at": 6340.10000000149,
+          "frame": 93
+        },
+        {
+          "at": 6373.300000000745,
+          "frame": 94
+        },
+        {
+          "at": 6423.70000000298,
+          "frame": 95
+        },
+        {
+          "at": 6456.5,
+          "frame": 96
+        },
+        {
+          "at": 6490,
+          "frame": 97
+        },
+        {
+          "at": 6523.60000000149,
+          "frame": 98
+        },
+        {
+          "at": 6556.900000002235,
+          "frame": 99
+        },
+        {
+          "at": 6589.800000000745,
+          "frame": 100
+        },
+        {
+          "at": 6623.20000000298,
+          "frame": 101
+        },
+        {
+          "at": 6656.800000000745,
+          "frame": 102
+        },
+        {
+          "at": 6690,
+          "frame": 103
+        },
+        {
+          "at": 6723.60000000149,
+          "frame": 104
+        },
+        {
+          "at": 6757.400000002235,
+          "frame": 105
+        },
+        {
+          "at": 6789.800000000745,
+          "frame": 106
+        },
+        {
+          "at": 6823.300000000745,
+          "frame": 107
+        },
+        {
+          "at": 6855.800000000745,
+          "frame": 108
+        },
+        {
+          "at": 6889.10000000149,
+          "frame": 109
+        },
+        {
+          "at": 6923.10000000149,
+          "frame": 110
+        },
+        {
+          "at": 6955.900000002235,
+          "frame": 111
+        },
+        {
+          "at": 6989.5,
+          "frame": 112
+        },
+        {
+          "at": 7022.60000000149,
+          "frame": 113
+        },
+        {
+          "at": 7055.70000000298,
+          "frame": 114
+        },
+        {
+          "at": 7089.20000000298,
+          "frame": 115
+        }
+      ],
+      "shown": 118
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "decodeDelayMs": 0,
+      "label": "reverse",
+      "mark": 8737,
+      "end": 12754.5,
+      "renderedFrames": 116,
+      "maxHoldMs": 68.20000000298023,
+      "p95HoldMs": 49.80000000074506,
+      "frames": [
+        {
+          "at": 8805.20000000298,
+          "frame": 117
+        },
+        {
+          "at": 8872.5,
+          "frame": 116
+        },
+        {
+          "at": 8905.400000002235,
+          "frame": 115
+        },
+        {
+          "at": 8955,
+          "frame": 114
+        },
+        {
+          "at": 8988.400000002235,
+          "frame": 113
+        },
+        {
+          "at": 9022,
+          "frame": 112
+        },
+        {
+          "at": 9055.20000000298,
+          "frame": 111
+        },
+        {
+          "at": 9088.70000000298,
+          "frame": 110
+        },
+        {
+          "at": 9138.900000002235,
+          "frame": 109
+        },
+        {
+          "at": 9155.70000000298,
+          "frame": 108
+        },
+        {
+          "at": 9206.10000000149,
+          "frame": 107
+        },
+        {
+          "at": 9238.900000002235,
+          "frame": 106
+        },
+        {
+          "at": 9272.60000000149,
+          "frame": 105
+        },
+        {
+          "at": 9305.800000000745,
+          "frame": 104
+        },
+        {
+          "at": 9339.20000000298,
+          "frame": 103
+        },
+        {
+          "at": 9372.400000002235,
+          "frame": 102
+        },
+        {
+          "at": 9405.800000000745,
+          "frame": 101
+        },
+        {
+          "at": 9438.800000000745,
+          "frame": 100
+        },
+        {
+          "at": 9472.10000000149,
+          "frame": 99
+        },
+        {
+          "at": 9505.5,
+          "frame": 98
+        },
+        {
+          "at": 9538.70000000298,
+          "frame": 97
+        },
+        {
+          "at": 9572.20000000298,
+          "frame": 96
+        },
+        {
+          "at": 9606,
+          "frame": 95
+        },
+        {
+          "at": 9638.900000002235,
+          "frame": 94
+        },
+        {
+          "at": 9672.20000000298,
+          "frame": 93
+        },
+        {
+          "at": 9705.5,
+          "frame": 92
+        },
+        {
+          "at": 9738.70000000298,
+          "frame": 91
+        },
+        {
+          "at": 9771.800000000745,
+          "frame": 90
+        },
+        {
+          "at": 9805.60000000149,
+          "frame": 89
+        },
+        {
+          "at": 9838.60000000149,
+          "frame": 88
+        },
+        {
+          "at": 9872,
+          "frame": 87
+        },
+        {
+          "at": 9905.5,
+          "frame": 86
+        },
+        {
+          "at": 9939,
+          "frame": 85
+        },
+        {
+          "at": 9972.20000000298,
+          "frame": 84
+        },
+        {
+          "at": 10005.60000000149,
+          "frame": 83
+        },
+        {
+          "at": 10038.800000000745,
+          "frame": 82
+        },
+        {
+          "at": 10072.10000000149,
+          "frame": 81
+        },
+        {
+          "at": 10105.300000000745,
+          "frame": 80
+        },
+        {
+          "at": 10155.10000000149,
+          "frame": 79
+        },
+        {
+          "at": 10189.60000000149,
+          "frame": 78
+        },
+        {
+          "at": 10222.5,
+          "frame": 77
+        },
+        {
+          "at": 10254.70000000298,
+          "frame": 76
+        },
+        {
+          "at": 10288.400000002235,
+          "frame": 75
+        },
+        {
+          "at": 10322,
+          "frame": 74
+        },
+        {
+          "at": 10355.5,
+          "frame": 73
+        },
+        {
+          "at": 10388.60000000149,
+          "frame": 72
+        },
+        {
+          "at": 10421.900000002235,
+          "frame": 71
+        },
+        {
+          "at": 10454.800000000745,
+          "frame": 70
+        },
+        {
+          "at": 10488.300000000745,
+          "frame": 69
+        },
+        {
+          "at": 10522.20000000298,
+          "frame": 68
+        },
+        {
+          "at": 10555.5,
+          "frame": 67
+        },
+        {
+          "at": 10588.70000000298,
+          "frame": 66
+        },
+        {
+          "at": 10621.70000000298,
+          "frame": 65
+        },
+        {
+          "at": 10655.60000000149,
+          "frame": 64
+        },
+        {
+          "at": 10688.400000002235,
+          "frame": 63
+        },
+        {
+          "at": 10722,
+          "frame": 62
+        },
+        {
+          "at": 10755.300000000745,
+          "frame": 61
+        },
+        {
+          "at": 10788.60000000149,
+          "frame": 60
+        },
+        {
+          "at": 10822.10000000149,
+          "frame": 59
+        },
+        {
+          "at": 10855.400000002235,
+          "frame": 58
+        },
+        {
+          "at": 10889,
+          "frame": 57
+        },
+        {
+          "at": 10921.800000000745,
+          "frame": 56
+        },
+        {
+          "at": 10954.900000002235,
+          "frame": 55
+        },
+        {
+          "at": 11005.400000002235,
+          "frame": 54
+        },
+        {
+          "at": 11022,
+          "frame": 53
+        },
+        {
+          "at": 11071.800000000745,
+          "frame": 52
+        },
+        {
+          "at": 11105.5,
+          "frame": 51
+        },
+        {
+          "at": 11138.5,
+          "frame": 50
+        },
+        {
+          "at": 11171.400000002235,
+          "frame": 49
+        },
+        {
+          "at": 11205,
+          "frame": 48
+        },
+        {
+          "at": 11238.70000000298,
+          "frame": 47
+        },
+        {
+          "at": 11272,
+          "frame": 46
+        },
+        {
+          "at": 11305.10000000149,
+          "frame": 45
+        },
+        {
+          "at": 11338.60000000149,
+          "frame": 44
+        },
+        {
+          "at": 11371.800000000745,
+          "frame": 43
+        },
+        {
+          "at": 11405.5,
+          "frame": 42
+        },
+        {
+          "at": 11438.400000002235,
+          "frame": 41
+        },
+        {
+          "at": 11471.800000000745,
+          "frame": 40
+        },
+        {
+          "at": 11504.900000002235,
+          "frame": 39
+        },
+        {
+          "at": 11538.10000000149,
+          "frame": 38
+        },
+        {
+          "at": 11571.400000002235,
+          "frame": 37
+        },
+        {
+          "at": 11604.70000000298,
+          "frame": 36
+        },
+        {
+          "at": 11638,
+          "frame": 35
+        },
+        {
+          "at": 11671.60000000149,
+          "frame": 34
+        },
+        {
+          "at": 11705.300000000745,
+          "frame": 33
+        },
+        {
+          "at": 11738.20000000298,
+          "frame": 32
+        },
+        {
+          "at": 11771.400000002235,
+          "frame": 31
+        },
+        {
+          "at": 11804.60000000149,
+          "frame": 30
+        },
+        {
+          "at": 11838.10000000149,
+          "frame": 29
+        },
+        {
+          "at": 11887.800000000745,
+          "frame": 28
+        },
+        {
+          "at": 11921.10000000149,
+          "frame": 27
+        },
+        {
+          "at": 11954.20000000298,
+          "frame": 26
+        },
+        {
+          "at": 11987.70000000298,
+          "frame": 25
+        },
+        {
+          "at": 12021.10000000149,
+          "frame": 24
+        },
+        {
+          "at": 12054.800000000745,
+          "frame": 23
+        },
+        {
+          "at": 12087.5,
+          "frame": 22
+        },
+        {
+          "at": 12121,
+          "frame": 21
+        },
+        {
+          "at": 12154.5,
+          "frame": 20
+        },
+        {
+          "at": 12187.70000000298,
+          "frame": 19
+        },
+        {
+          "at": 12221.300000000745,
+          "frame": 18
+        },
+        {
+          "at": 12254.400000002235,
+          "frame": 17
+        },
+        {
+          "at": 12287.60000000149,
+          "frame": 16
+        },
+        {
+          "at": 12321,
+          "frame": 15
+        },
+        {
+          "at": 12354.70000000298,
+          "frame": 14
+        },
+        {
+          "at": 12388.20000000298,
+          "frame": 13
+        },
+        {
+          "at": 12421.400000002235,
+          "frame": 12
+        },
+        {
+          "at": 12454.20000000298,
+          "frame": 11
+        },
+        {
+          "at": 12487.10000000149,
+          "frame": 10
+        },
+        {
+          "at": 12525.60000000149,
+          "frame": 9
+        },
+        {
+          "at": 12557.70000000298,
+          "frame": 8
+        },
+        {
+          "at": 12589.800000000745,
+          "frame": 7
+        },
+        {
+          "at": 12620.300000000745,
+          "frame": 6
+        },
+        {
+          "at": 12656.60000000149,
+          "frame": 5
+        },
+        {
+          "at": 12689.70000000298,
+          "frame": 4
+        },
+        {
+          "at": 12721.60000000149,
+          "frame": 3
+        },
+        {
+          "at": 12754.400000002235,
+          "frame": 2
+        }
+      ],
+      "shown": 0
+    }
+  ],
+  "errors": []
+}
