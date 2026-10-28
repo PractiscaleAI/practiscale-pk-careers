@@ -136,23 +136,31 @@ export const industries = [
 ];
 export const homeFaqs = [
   [
-    "What does PractiScale do?",
-    "We help US healthcare businesses build professional referral relationships. Our Pakistan teams research, reach out, qualify partners and coordinate introductions.",
+    "Is PractiScale a real company?",
+    "Yes. Our head office is on Imran Khan Ave, Chaklala Scheme 3, Rawalpindi. 100+ people work here, serving 500+ healthcare businesses in the US. You can see our client work at practiscale.com.",
   ],
   [
     "Do I need experience to apply?",
-    "Training paths are designed for freshers and career switchers. Experienced applicants can explore sales, creative, technology and operations roles. Ask the hiring team about current eligibility.",
+    "Not for our training programs, which are built for freshers and career switchers. Each open job lists the experience it requires.",
   ],
   [
     "Can I work from home?",
-    "Remote, onsite and hybrid opportunities depend on the role. Confirm the current work arrangement with our hiring team before applying.",
+    "Yes. Many roles are fully remote. Others are onsite in Rawalpindi or Islamabad, and some are hybrid. Every role shows its work mode.",
   ],
   [
-    "How does compensation work?",
-    "Compensation depends on the role and its performance structure. Ask for the current terms during screening. Earnings and offers are not guaranteed.",
+    "Who will I be working for?",
+    "You will work on PractiScale teams and on accounts for our US healthcare clients, including home care agencies, assisted living communities, NEMT providers and behavioral health practices.",
+  ],
+  [
+    "How much can I earn?",
+    "Most roles list a monthly earning range. Sales roles include commissions, so earnings grow with performance. Amounts shown on this site are individual results, not guarantees.",
+  ],
+  [
+    "Is the Virtual Assistant Program only for women?",
+    "Yes. It is part of our Women Empowerment Program and is fully remote.",
   ],
   [
     "How do I apply?",
-    "Contact us on WhatsApp at 0333 4000 600 or send your CV to hiring@practiscale.com. Include the role or program you’re interested in.",
+    "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
   ],
 ];

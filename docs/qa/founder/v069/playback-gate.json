@@ -1,0 +1,445 @@
+[
+  {
+    "name": "1440x900-1: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "1440x900-1: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "1366x600-1.25: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "768x1024-2: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.849,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "390x844-2: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "360x640-1: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "844x390-1: short-screen fallback stays paused",
+    "pass": true
+  },
+  {
+    "name": "Delayed media cannot start after visitor reverses",
+    "pass": true
+  }
+]

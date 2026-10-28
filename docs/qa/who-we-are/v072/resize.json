@@ -1,0 +1,104 @@
+[
+  {
+    "width": 390,
+    "before": {
+      "nativeProgress": 0.49987008037694014,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.500008661308204,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 844,
+    "before": {
+      "nativeProgress": 0.499991338691796,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.5001299196230599,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "before": {
+      "nativeProgress": 0.5001125970066519,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.49997401607538805,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "before": {
+      "nativeProgress": 0.49996456916099774,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.5000590513983371,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-scroll-v2.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 390,
+    "before": {
+      "nativeProgress": 0.49987008037694014,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.500008661308204,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  },
+  {
+    "width": 390,
+    "before": {
+      "nativeProgress": 0.5000909437361419,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4"
+    },
+    "after": {
+      "nativeProgress": 0.49995236280487804,
+      "progress": 0.5,
+      "src": "http://127.0.0.1:3000/media/who-we-are/office-mobile-v066.mp4",
+      "mode": "motion",
+      "overflow": false,
+      "heads": 1
+    },
+    "pass": true
+  }
+]

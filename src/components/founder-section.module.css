@@ -95,8 +95,7 @@
 .watch:active {
   background: var(--raised);
 }
-.watch:focus-visible,
-.sound:focus-visible {
+.watch:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
@@ -110,34 +109,42 @@
 .hint span {
   margin-left: 12px;
 }
-.sound {
-  display: none;
-  position: absolute;
-  right: max(20px, env(safe-area-inset-right));
-  top: max(20px, env(safe-area-inset-top));
-  min-height: 44px;
-  padding: 10px 18px;
-  border: 1px solid #ffffff66;
-  border-radius: 999px;
-  background: var(--deep);
-  color: #fff;
-  font: inherit;
-  font-size: 14px;
-  cursor: pointer;
-}
-.sound:hover {
-  background: var(--surface);
-}
 .error {
   position: absolute;
-  bottom: 64px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  padding: 14px 20px;
+  transform: translate(-50%, -50%);
+  width: min(400px, calc(100% - 32px));
+  padding: 20px;
   background: white;
   color: var(--deep);
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 15%);
+  font-size: 14px;
+  line-height: 1.6;
   z-index: 5;
+}
+.errorActions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.errorActions button {
+  min-height: 44px;
+  padding: 10px 16px;
+  background: var(--deep);
+  color: white;
+  border-radius: 8px;
+}
+.errorActions a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.section[data-enhanced="true"]:not([data-expanded="true"]) .error {
+  display: none;
 }
 .error a {
   text-decoration: underline;
@@ -191,6 +198,7 @@
 }
 .section[data-enhanced="true"] .video {
   visibility: hidden;
+  object-fit: cover;
 }
 .section[data-expanded="true"][data-film-ready="true"] .video {
   visibility: visible;
@@ -207,9 +215,6 @@
 .section[data-expanded="true"] .frame {
   pointer-events: auto;
   background: #000;
-}
-.section[data-expanded="true"] .sound {
-  display: block;
 }
 @media (max-width: 767px) {
   .inner {
@@ -271,19 +276,14 @@
     #000 100%
   );
 }
-.sound {
-  top: auto;
-  bottom: max(82px, env(safe-area-inset-bottom));
-}
-
 /* A portrait edit keeps the founder prominent without clipping close-up faces. */
 .section[data-portrait="true"] .slot {
   width: min(520px, 100%);
-  aspect-ratio: 1672/941;
+  aspect-ratio: 941/1672;
 }
 .section[data-portrait="true"]:not([data-enhanced="true"]) .frame {
   width: min(520px, calc(100% - 48px));
-  aspect-ratio: 1672/941;
+  aspect-ratio: 941/1672;
 }
 .section[data-portrait="true"][data-film-ready="true"]:not(
     [data-enhanced="true"]
@@ -310,7 +310,7 @@
 @media (max-width: 1023px) and (orientation: portrait) {
   .section:not([data-enhanced="true"]) .frame {
     width: min(520px, calc(100% - 48px));
-    aspect-ratio: 1672/941;
+    aspect-ratio: 941/1672;
   }
 }
 .poster {

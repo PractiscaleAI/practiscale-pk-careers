@@ -13,12 +13,22 @@ const brandLines = [
 const film = "/media/founder/ceo-story-desktop-v062.mp4";
 export default function FounderSection() {
   const section = useRef<HTMLElement>(null);
-  const [muted, setMuted] = useState(true);
   const [failed, setFailed] = useState(false);
   const [buffering, setBuffering] = useState(false);
+  const [activeFilm, setActiveFilm] = useState(film);
   useEffect(() => {
     if (!section.current) return;
-    return mountFounderFilm(section.current);
+    return mountFounderFilm(section.current, {
+      onLoading: () => {
+        setFailed(false);
+        setBuffering(false);
+      },
+      onFailure: () => {
+        setFailed(true);
+        setBuffering(false);
+      },
+      onSourceChange: setActiveFilm,
+    });
   }, []);
   return (
     <section
@@ -56,11 +66,18 @@ export default function FounderSection() {
           </div>
           <div className={styles.slot} data-founder-slot>
             <button className={styles.watch} data-founder-watch type="button">
-              <span aria-hidden="true">▶</span> Watch his story
+              <span aria-hidden="true">▶</span>{" "}
+              {failed ? "Retry video" : "Watch his story"}
             </button>
           </div>
           <p className={styles.hint} data-founder-hint>
-            Scroll to watch his story <span aria-hidden="true">↓</span>
+            {failed ? (
+              "Video connection interrupted. Please retry."
+            ) : (
+              <>
+                Scroll to watch his story <span aria-hidden="true">↓</span>
+              </>
+            )}
           </p>
         </div>
         <div className={styles.frame} data-founder-frame>
@@ -70,13 +87,8 @@ export default function FounderSection() {
             poster="/media/founder/founder-dream-v063.webp"
             preload="none"
             controls
-            muted
             playsInline
             aria-label="Afrasyab Ahmed, the story behind PractiScale"
-            onVolumeChange={(event) => setMuted(event.currentTarget.muted)}
-            onError={(event) => {
-              if (event.currentTarget.error) setFailed(true);
-            }}
             onLoadedData={() => setFailed(false)}
             onWaiting={() => setBuffering(true)}
             onPlaying={() => setBuffering(false)}
@@ -92,6 +104,20 @@ export default function FounderSection() {
             <a href={film}>Open the founder film</a>.
           </video>
           <picture className={styles.poster} aria-hidden="true">
+            <source
+              media="(max-width: 1023px) and (orientation: portrait)"
+              srcSet="/media/founder/founder-dream-portrait-v073.avif"
+              type="image/avif"
+              width="941"
+              height="1672"
+            />
+            <source
+              media="(max-width: 1023px) and (orientation: portrait)"
+              srcSet="/media/founder/founder-dream-portrait-v073.webp"
+              type="image/webp"
+              width="941"
+              height="1672"
+            />
             <source
               srcSet="/media/founder/founder-dream-v063.avif"
               type="image/avif"
@@ -111,23 +137,23 @@ export default function FounderSection() {
               Loading video...
             </p>
           )}
-          <button
-            className={styles.sound}
-            data-founder-sound
-            type="button"
-            onClick={() => {
-              const video = section.current?.querySelector("video");
-              if (video) video.muted = !video.muted;
-            }}
-          >
-            {muted ? "Turn sound on" : "Mute sound"}
-          </button>
+          {failed && (
+            <div className={styles.error} data-founder-error role="status">
+              <p>The video couldn’t load. Please try again.</p>
+              <div className={styles.errorActions}>
+                <button
+                  type="button"
+                  onClick={() =>
+                    section.current?.dispatchEvent(new Event("founder:retry"))
+                  }
+                >
+                  Retry video
+                </button>
+                <a href={activeFilm}>Open video directly</a>
+              </div>
+            </div>
+          )}
         </div>
-        {failed && (
-          <p className={styles.error} role="status">
-            The film could not load. <a href={film}>Open the video directly</a>.
-          </p>
-        )}
       </div>
       <span id="founder-film-end" className={styles.end} />
     </section>

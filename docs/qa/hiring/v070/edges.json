@@ -1,0 +1,160 @@
+[
+  {
+    "name": "reading travel is four viewport heights",
+    "pass": true,
+    "detail": {
+      "distance": 3600
+    }
+  },
+  {
+    "name": "400px scroll retains first reading hold",
+    "pass": true
+  },
+  {
+    "name": "forward continuous sweep",
+    "pass": true,
+    "detail": {
+      "monotonic": true,
+      "moving": 36,
+      "maxFrameGap": 16.900000000000546
+    }
+  },
+  {
+    "name": "reverse continuous sweep",
+    "pass": true,
+    "detail": {
+      "monotonic": true,
+      "moving": 33,
+      "maxFrameGap": 16.80000000000109
+    }
+  },
+  {
+    "name": "resize 390x844",
+    "pass": true,
+    "detail": {
+      "mode": "true",
+      "active": "2",
+      "angle": 135,
+      "progress": 0.5601,
+      "nativeProgress": 0.5600655361374408,
+      "overflow": false
+    }
+  },
+  {
+    "name": "resize 844x390",
+    "pass": true,
+    "detail": {
+      "mode": "false",
+      "active": "0",
+      "angle": -45,
+      "progress": 0,
+      "nativeProgress": -0.0005151098901098901,
+      "overflow": false
+    }
+  },
+  {
+    "name": "resize 1366x600",
+    "pass": true,
+    "detail": {
+      "mode": "true",
+      "active": "2",
+      "angle": 135,
+      "progress": 0.56,
+      "nativeProgress": 0.56,
+      "overflow": false
+    }
+  },
+  {
+    "name": "resize 1440x900",
+    "pass": true,
+    "detail": {
+      "mode": "true",
+      "active": "2",
+      "angle": 135,
+      "progress": 0.56,
+      "nativeProgress": 0.5600130208333334,
+      "overflow": false
+    }
+  },
+  {
+    "name": "live reduced motion releases sticky",
+    "pass": true
+  },
+  {
+    "name": "restored motion retains scroll mapping",
+    "pass": true,
+    "detail": {
+      "active": "2",
+      "progress": 0.56,
+      "nativeProgress": 0.5600130208333334
+    }
+  },
+  {
+    "name": "repeated rebuilds retain native scroll progress",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      },
+      {
+        "progress": 0.56,
+        "nativeProgress": 0.5600130208333334
+      }
+    ]
+  },
+  {
+    "name": "founder paused offscreen",
+    "pass": true
+  },
+  {
+    "name": "existing section order preserved",
+    "pass": true,
+    "detail": [
+      "",
+      "the-problem",
+      "who-we-are",
+      "career-paths",
+      "the-proof",
+      "testimonials",
+      "background-lines",
+      "how-hiring-works"
+    ]
+  },
+  {
+    "name": "no em dash in new copy",
+    "pass": true
+  },
+  {
+    "name": "static mobile intro clears navigation",
+    "pass": true
+  },
+  {
+    "name": "no JavaScript retains four descriptions",
+    "pass": true
+  }
+]

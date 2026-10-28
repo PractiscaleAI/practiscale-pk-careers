@@ -1,0 +1,29 @@
+[
+  {
+    "width": 390,
+    "readyBeforeEntry": true,
+    "maxGap": 17,
+    "progress": 0.29004,
+    "open": 1,
+    "canvases": 1,
+    "pass": true
+  },
+  {
+    "width": 768,
+    "readyBeforeEntry": true,
+    "maxGap": 49.80000000000018,
+    "progress": 0.29003,
+    "open": 1,
+    "canvases": 1,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "readyBeforeEntry": true,
+    "maxGap": 16.900000000000546,
+    "progress": 0.29001,
+    "open": 1,
+    "canvases": 1,
+    "pass": true
+  }
+]

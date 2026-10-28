@@ -56,6 +56,11 @@
       ]
     },
     {
+      "name": "390: expansion edge follows film without empty bands",
+      "pass": true,
+      "detail": 0.01025219726557225
+    },
+    {
       "name": "390: scroll pose 0.2",
       "pass": true,
       "detail": {
@@ -94,7 +99,7 @@
       "pass": true,
       "detail": {
         "progress": 0.93986,
-        "time": 31.62649,
+        "time": 31.621971,
         "paused": true,
         "target": 31.6271,
         "expanded": "true",
@@ -129,7 +134,7 @@
       "detail": {
         "updates": 110,
         "backwards": [],
-        "maxGap": 50.59999999962747
+        "maxGap": 35.09999999962747
       }
     },
     {
@@ -138,7 +143,7 @@
       "detail": {
         "updates": 109,
         "backwards": [],
-        "maxGap": 150.19999999925494
+        "maxGap": 131.90000000037253
       }
     },
     {
@@ -197,6 +202,11 @@
       ]
     },
     {
+      "name": "320: expansion edge follows film without empty bands",
+      "pass": true,
+      "detail": 0.000041821289073595835
+    },
+    {
       "name": "320: scroll pose 0.2",
       "pass": true,
       "detail": {
@@ -218,7 +228,7 @@
       "pass": true,
       "detail": {
         "progress": 0.5,
-        "time": 12.69069,
+        "time": 12.69082,
         "paused": true,
         "target": 12.6964,
         "expanded": "true",
@@ -235,7 +245,7 @@
       "pass": true,
       "detail": {
         "progress": 0.93986,
-        "time": 31.621842,
+        "time": 31.620551,
         "paused": true,
         "target": 31.6271,
         "expanded": "true",
@@ -320,6 +330,11 @@
       ]
     },
     {
+      "name": "430: expansion edge follows film without empty bands",
+      "pass": true,
+      "detail": 0.018691650390564973
+    },
+    {
       "name": "430: scroll pose 0.2",
       "pass": true,
       "detail": {
@@ -341,7 +356,7 @@
       "pass": true,
       "detail": {
         "progress": 0.50028,
-        "time": 12.702612,
+        "time": 12.702741,
         "paused": true,
         "target": 12.7083,
         "expanded": "true",
@@ -358,7 +373,7 @@
       "pass": true,
       "detail": {
         "progress": 0.94013,
-        "time": 31.620508,
+        "time": 31.633333,
         "paused": true,
         "target": 31.6333,
         "expanded": "true",
@@ -443,6 +458,11 @@
       ]
     },
     {
+      "name": "768: expansion edge follows film without empty bands",
+      "pass": true,
+      "detail": 0.00029113769531363687
+    },
+    {
       "name": "768: scroll pose 0.2",
       "pass": true,
       "detail": {
@@ -464,7 +484,7 @@
       "pass": true,
       "detail": {
         "progress": 0.5,
-        "time": 12.69082,
+        "time": 12.69069,
         "paused": true,
         "target": 12.6964,
         "expanded": "true",
@@ -481,7 +501,7 @@
       "pass": true,
       "detail": {
         "progress": 0.93986,
-        "time": 31.621842,
+        "time": 31.626404,
         "paused": true,
         "target": 31.6271,
         "expanded": "true",
@@ -566,6 +586,11 @@
       ]
     },
     {
+      "name": "844: expansion edge follows film without empty bands",
+      "pass": true,
+      "detail": 0.0003330078125145519
+    },
+    {
       "name": "844: scroll pose 0.2",
       "pass": true,
       "detail": {
@@ -604,7 +629,7 @@
       "pass": true,
       "detail": {
         "progress": 0.94013,
-        "time": 31.633333,
+        "time": 31.620465,
         "paused": true,
         "target": 31.6333,
         "expanded": "true",
@@ -727,7 +752,7 @@
       "pass": true,
       "detail": {
         "progress": 0.93991,
-        "time": 31.628771,
+        "time": 31.628728,
         "paused": true,
         "target": 31.6294,
         "expanded": "true",
@@ -833,7 +858,7 @@
       "pass": true,
       "detail": {
         "progress": 0.5,
-        "time": 12.69069,
+        "time": 12.69082,
         "paused": true,
         "target": 12.6964,
         "expanded": "true",
@@ -850,7 +875,7 @@
       "pass": true,
       "detail": {
         "progress": 0.93991,
-        "time": 31.628771,
+        "time": 31.629417,
         "paused": true,
         "target": 31.6294,
         "expanded": "true",

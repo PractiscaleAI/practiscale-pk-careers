@@ -1,0 +1,1102 @@
+[
+  {
+    "name": "1440x900-1: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.0065930023923783665,
+        0,
+        0.005718002392427479
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.0065930023923783665,
+        0,
+        0.005718002392427479
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.0065930023923783665,
+        0,
+        0.005718002392427479
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.06894799804689455,
+        0.00009562018732367505,
+        0.0690090332032014,
+        -0.000052817312734987354
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        27.187667724609383,
+        -0.00007984624980394983,
+        27.187728759765605,
+        -0.00010670171855053923
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        78.4148021875,
+        0.000022541258598351988,
+        78.41480218750007,
+        0.000005842039854542236
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1440x900-1: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        79.55389142890625,
+        -0.000007495725543704701,
+        79.55376935859385,
+        -0.00000856525673498254
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1440x900-1: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "1440x900-1: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "1440x900-1: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.000018680260382097913,
+        0.006353515624994088,
+        0.000018680260382097913,
+        0.005978515624974534
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.000018680260382097913,
+        0.006353515624994088,
+        0.000018680260382097913,
+        0.005978515624974534
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.000018680260382097913,
+        0.006353515624994088,
+        0.000018680260382097913,
+        0.005978515624974534
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.0003737193643473802,
+        0.08551904296876955,
+        0.00037371936423369334,
+        0.08468749999997272
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.00036601894595378326,
+        27.170760253906252,
+        0.0003660189461243135,
+        27.171181640625036
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.00001183299008644667,
+        78.49021340820312,
+        0.000011832990139737376,
+        78.49019842773441
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1900x910-1: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.00014037557299578785,
+        79.63933045898438,
+        -0.00010376505201747932,
+        79.63931945351567
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1900x910-1: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.849,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "1900x910-1: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "1900x910-1: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.00795144533333314,
+        0.006796020507806588,
+        0.008048554666856944,
+        0.006655761718775466
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.00795144533333314,
+        0.006796020507806588,
+        0.008048554666856944,
+        0.006655761718775466
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.00795144533333314,
+        0.006796020507806588,
+        0.008048554666856944,
+        0.006655761718775466
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.007891375583255922,
+        0.07996752929688,
+        0.008169659573013632,
+        0.08020703124998363
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.005418048660033037,
+        28.844312255859364,
+        0.005581951339991065,
+        28.84488632812497
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        -0.00014064345197972727,
+        83.16165512695312,
+        0.00020142686048529868,
+        83.16166264648439
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "1366x600-1.25: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.0000261599486280073,
+        84.37489455742187,
+        0.00015133026113289816,
+        84.37497206601563
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "1366x600-1.25: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "1366x600-1.25: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "1366x600-1.25: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.007844213750388462,
+        0,
+        0.00765817859416984
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.007844213750388462,
+        0,
+        0.00765817859416984
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.007844213750388462,
+        0,
+        0.00765817859416984
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.4706862792968707,
+        -0.00013193172475212123,
+        0.47074731445309226,
+        -0.000209568443324315
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        179.49627592773436,
+        0.0004151354337977864,
+        179.4963369628906,
+        0.00013290887136463425
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        518.1654124609375,
+        -0.00003415578739396352,
+        518.1654124609375,
+        -0.000019976099906671152
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "768x1024-2: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        525.6157676921875,
+        0.00003978318912041534,
+        525.6157676921875,
+        0.000012947251661898918
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "768x1024-2: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.849,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "768x1024-2: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "768x1024-2: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.004041881214504883,
+        0,
+        0.0042308460582489715
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.004041881214504883,
+        0,
+        0.0042308460582489715
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.004041881214504883,
+        0,
+        0.0042308460582489715
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.4790610351562492,
+        -0.000004715476848105027,
+        0.479061035156235,
+        0.0001451868669164469
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        189.60355043945313,
+        -0.00013793361245006963,
+        189.60348940429685,
+        -0.00018725001871189306
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        546.7356572226563,
+        -0.000013859512711711375,
+        546.7356572226563,
+        -0.000004953262987328344
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "390x844-2: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        554.6817934796875,
+        0.000021741790248580584,
+        554.6817934796875,
+        -0.000006155084633974184
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "390x844-2: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.849,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "390x844-2: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "390x844-2: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: preview has neutral depth",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: underlying film hidden at preview",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no advance at 0",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.00805770012522089,
+        0,
+        0.0072437352814631595
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: full artwork preserved initially",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.00805770012522089,
+        0,
+        0.0072437352814631595
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.1",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0.1",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0,
+        0.00805770012522089,
+        0,
+        0.0072437352814631595
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.19",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0.19",
+    "pass": true,
+    "detail": {
+      "edges": [
+        0.3858682373046882,
+        -0.00001058828541999901,
+        0.3858987548828168,
+        0.00046402108949905596
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: no teal backing",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no advance at 0.4",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0.4",
+    "pass": true,
+    "detail": {
+      "edges": [
+        133.1772982421875,
+        -0.00038523112752386623,
+        133.17729824218748,
+        0.0000559798098720421
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.7",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0.7",
+    "pass": true,
+    "detail": {
+      "edges": [
+        382.97562535546876,
+        0.000033752277905918504,
+        382.97562535546876,
+        -0.00002757584707069327
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: no advance at 0.735",
+    "pass": true,
+    "detail": {
+      "paused": true,
+      "time": 0
+    }
+  },
+  {
+    "name": "360x640-1: poster fills aperture at 0.735",
+    "pass": true,
+    "detail": {
+      "edges": [
+        388.50670264953123,
+        0.00003414225334430476,
+        388.50670264953123,
+        -0.00007884993419793318
+      ],
+      "complete": true
+    }
+  },
+  {
+    "name": "360x640-1: video fills full-screen frame",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: depth clears at full view",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: starts only after full view and poster departure",
+    "pass": true,
+    "detail": [
+      {
+        "progress": 0.85,
+        "poster": 0,
+        "top": 0
+      }
+    ]
+  },
+  {
+    "name": "360x640-1: immediate reverse pause",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: no hidden advancement",
+    "pass": true
+  },
+  {
+    "name": "360x640-1: premature play rejected",
+    "pass": true
+  },
+  {
+    "name": "844x390-1: short-screen fallback stays paused",
+    "pass": true
+  },
+  {
+    "name": "Delayed media cannot start after visitor reverses",
+    "pass": true
+  }
+]

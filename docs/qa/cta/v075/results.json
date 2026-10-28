@@ -1,0 +1,378 @@
+[
+  {
+    "name": "1440x900: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 225.609375,
+          "height": 56,
+          "left": 115.1875,
+          "right": 340.796875
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 182.3125,
+          "height": 56,
+          "left": 352.796875,
+          "right": 535.109375
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 165.046875,
+          "right": 274.890625
+        }
+      ],
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "1440x900: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1440x900: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "1440x900: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "1440x900: focus visible",
+    "pass": true
+  },
+  {
+    "name": "1440x900: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1440x900: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1366x600: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 225.609375,
+          "height": 56,
+          "left": 109.25,
+          "right": 334.859375
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 182.3125,
+          "height": 56,
+          "left": 346.859375,
+          "right": 529.171875
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 159.109375,
+          "right": 268.953125
+        }
+      ],
+      "settled": "true",
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "1366x600: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1366x600: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "1366x600: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "1366x600: focus visible",
+    "pass": true
+  },
+  {
+    "name": "1366x600: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1366x600: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1024x768: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 234,
+          "height": 56,
+          "left": 81.90625,
+          "right": 315.90625
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 234,
+          "height": 56,
+          "left": 81.90625,
+          "right": 315.90625
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 131.765625,
+          "right": 241.609375
+        }
+      ],
+      "settled": "true",
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "1024x768: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1024x768: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "1024x768: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "1024x768: focus visible",
+    "pass": true
+  },
+  {
+    "name": "1024x768: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1024x768: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "768x1024: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 234,
+          "height": 56,
+          "left": 66.71875,
+          "right": 300.71875
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 234,
+          "height": 56,
+          "left": 66.71875,
+          "right": 300.71875
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 116.578125,
+          "right": 226.421875
+        }
+      ],
+      "settled": "true",
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "768x1024: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "768x1024: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "768x1024: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "768x1024: focus visible",
+    "pass": true
+  },
+  {
+    "name": "768x1024: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "768x1024: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390x844: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 310,
+          "height": 56,
+          "left": 40,
+          "right": 350
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 310,
+          "height": 56,
+          "left": 40,
+          "right": 350
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 165,
+          "right": 274.84375
+        }
+      ],
+      "settled": "true",
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "390x844: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "390x844: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "390x844: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "390x844: focus visible",
+    "pass": true
+  },
+  {
+    "name": "390x844: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390x844: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 240,
+          "height": 56,
+          "left": 40,
+          "right": 280
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 240,
+          "height": 56,
+          "left": 40,
+          "right": 280
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 130,
+          "right": 239.84375
+        }
+      ],
+      "leaf": 1,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "320x568: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "320x568: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "320x568: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "320x568: focus visible",
+    "pass": true
+  },
+  {
+    "name": "320x568: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "Reduced motion: settled calendar without turn",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: all application destinations rendered",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: final calendar face exposed",
+    "pass": true
+  }
+]

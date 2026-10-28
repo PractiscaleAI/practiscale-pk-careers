@@ -1,0 +1,135 @@
+[
+  {
+    "name": "390x844: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 165,
+          "right": 274.84375
+        }
+      ],
+      "settled": "true",
+      "leaf": 0,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "390x844: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "390x844: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "390x844: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "390x844: focus visible",
+    "pass": true
+  },
+  {
+    "name": "390x844: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390x844: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: no horizontal clipping",
+    "pass": true,
+    "detail": {
+      "overflow": false,
+      "links": [
+        {
+          "href": "https://wa.me/923334000600",
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "href": "mailto:hiring@practiscale.com",
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "href": "tel:+923334000600",
+          "width": 109.84375,
+          "height": 21,
+          "left": 130,
+          "right": 239.84375
+        }
+      ],
+      "leaf": 1,
+      "heading": "Your next Monday could be your first day.",
+      "previous": "how-hiring-works",
+      "clipped": false
+    }
+  },
+  {
+    "name": "320x568: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "320x568: button targets fit",
+    "pass": true
+  },
+  {
+    "name": "320x568: calendar completes",
+    "pass": true
+  },
+  {
+    "name": "320x568: focus visible",
+    "pass": true
+  },
+  {
+    "name": "320x568: accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "Reduced motion: settled calendar without turn",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: all application destinations rendered",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: final calendar face exposed",
+    "pass": true
+  }
+]

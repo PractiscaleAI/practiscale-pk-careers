@@ -1,0 +1,103 @@
+[
+  {
+    "name": "1440 bounded retries",
+    "pass": true,
+    "detail": {
+      "attempts": 3
+    }
+  },
+  {
+    "name": "1440 exhausted request shows retry",
+    "pass": true
+  },
+  {
+    "name": "1440 no overlay on thumbnail",
+    "pass": true
+  },
+  {
+    "name": "1440 expanded error recovery controls visible",
+    "pass": true
+  },
+  {
+    "name": "1440 correct direct source",
+    "pass": true
+  },
+  {
+    "name": "1440 explicit retry plays",
+    "pass": true
+  },
+  {
+    "name": "1440 error cleared",
+    "pass": true
+  },
+  {
+    "name": "1440 recovery preserves pause on reverse",
+    "pass": true
+  },
+  {
+    "name": "390 bounded retries",
+    "pass": true,
+    "detail": {
+      "attempts": 3
+    }
+  },
+  {
+    "name": "390 exhausted request shows retry",
+    "pass": true
+  },
+  {
+    "name": "390 no overlay on thumbnail",
+    "pass": true
+  },
+  {
+    "name": "390 expanded error recovery controls visible",
+    "pass": true
+  },
+  {
+    "name": "390 correct direct source",
+    "pass": true
+  },
+  {
+    "name": "390 explicit retry plays",
+    "pass": true
+  },
+  {
+    "name": "390 error cleared",
+    "pass": true
+  },
+  {
+    "name": "390 recovery preserves pause on reverse",
+    "pass": true
+  },
+  {
+    "name": "390-static bounded retries",
+    "pass": true,
+    "detail": {
+      "attempts": 3
+    }
+  },
+  {
+    "name": "390-static exhausted request shows retry",
+    "pass": true
+  },
+  {
+    "name": "390-static correct direct source",
+    "pass": true
+  },
+  {
+    "name": "390-static explicit retry plays",
+    "pass": true
+  },
+  {
+    "name": "390-static error cleared",
+    "pass": true
+  },
+  {
+    "name": "transient failure recovers without starting early",
+    "pass": true
+  },
+  {
+    "name": "transient failure leaves no error box",
+    "pass": true
+  }
+]

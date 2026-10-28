@@ -33,6 +33,8 @@ async function jump(p, f) {
   try {
     for (const [w, h] of [
       [390, 844],
+      [360, 800],
+      [550, 694],
       [320, 568],
       [430, 932],
       [768, 1024],
@@ -147,7 +149,29 @@ async function jump(p, f) {
           const backing = await p.locator('[data-who-rail]').evaluate(r =>
             ['frame','matte'].map(n => getComputedStyle(r.querySelector(`[data-who-${n}]`)).backgroundColor));
           check(`${w}: no black expansion backing`, backing.every(c => c === 'rgb(19, 65, 67)'), backing);
+          if (w < 1024) {
+            const edgeError = await p.locator('[data-who-rail]').evaluate(r=>{
+              const frame=r.querySelector('[data-who-frame]'),surface=r.querySelector('[data-who-surface]');
+              const f=frame.getBoundingClientRect(),s=surface.getBoundingClientRect();
+              const values=frame.style.clipPath.match(/inset\(([^r]+)round/)[1].trim().split(/\s+/).map(parseFloat);
+              const [top,right=top,bottom=top,left=right]=values;
+              return Math.max(Math.abs(f.top+top-Math.max(f.top,s.top)),Math.abs(f.right-right-Math.min(f.right,s.right)),Math.abs(f.bottom-bottom-Math.min(f.bottom,s.bottom)),Math.abs(f.left+left-Math.max(f.left,s.left)));
+            });
+            check(`${w}: expansion edge follows film without empty bands`,edgeError<1,edgeError);
+          }
           await p.screenshot({path: `${out}/${w}-expanding.png`});
+        }
+        if (w < 1024 && f >= 0.2) {
+          const fit = await p.locator('[data-who-rail]').evaluate(r => {
+            const viewport=r.querySelector('[data-who-viewport]').getBoundingClientRect();
+            const surface=r.querySelector('[data-who-surface]').getBoundingClientRect();
+            const frame=r.querySelector('[data-who-frame]');
+            const insets=frame.style.clipPath.match(/inset\(([^r)]+)/)[1].trim().split(/\s+/).map(parseFloat);
+            const panel = new DOMMatrix(getComputedStyle(r.querySelector('[data-who-panel="left"]')).transform);
+            return {coverage:[viewport.left-surface.left,viewport.top-surface.top,surface.right-viewport.right,surface.bottom-viewport.bottom],insets,panelX:panel.m41,width:viewport.width};
+          });
+          check(`${w}: expanded film covers viewport at ${f}`,fit.coverage.every(n=>n>=-1)&&fit.insets.every(n=>Math.abs(n)<1),fit);
+          check(`${w}: split panels fully clear at ${f}`,Math.abs(fit.panelX)>=fit.width,fit);
         }
         if (f === 0.2 || f === 0.5 || f === 0.94)
           await p.screenshot({ path: `${out}/${w}-${f}.png` });

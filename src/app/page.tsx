@@ -10,6 +10,9 @@ import CareerSection from "@/components/career-section";
 import EarningsSection from "@/components/earnings-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import BackgroundLinesDemo from "@/components/background-lines-demo";
+import HiringSection from "@/components/hiring-section";
+import FaqSection from "@/components/faq-section";
+import FinalCTA from "@/components/final-cta";
 import { Action, Eyebrow } from "@/components/ui";
 export const metadata: Metadata = {
   title: "PractiScale | Build a Skill. Build Your Career.",
@@ -94,6 +97,9 @@ export default function Home() {
       <EarningsSection />
       <TestimonialsSection />
       <BackgroundLinesDemo />
+      <HiringSection />
+      <FinalCTA />
+      <FaqSection />
     </main>
   );
 }

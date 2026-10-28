@@ -1,0 +1,6978 @@
+[
+  {
+    "name": "1440x900 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "1440x900 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.055,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.555,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.555,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.055,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3751,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 900
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 57.59375,
+          "y": 157.5625,
+          "right": 1382.40625,
+          "bottom": 203.9375
+        },
+        {
+          "name": "01 Apply",
+          "x": 539.09375,
+          "y": 325.328125,
+          "right": 583.09375,
+          "bottom": 369.328125
+        },
+        {
+          "name": "02 Screen",
+          "x": 856.890625,
+          "y": 325.328125,
+          "right": 900.890625,
+          "bottom": 369.328125
+        },
+        {
+          "name": "03 Task",
+          "x": 856.890625,
+          "y": 643.125,
+          "right": 900.890625,
+          "bottom": 687.125
+        },
+        {
+          "name": "04 Offer",
+          "x": 539.09375,
+          "y": 643.125,
+          "right": 583.09375,
+          "bottom": 687.125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 80,
+          "y": 313.453125,
+          "right": 380,
+          "bottom": 438.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1060,
+          "y": 313.453125,
+          "right": 1360,
+          "bottom": 438.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1060,
+          "y": 583.484375,
+          "right": 1360,
+          "bottom": 708.203125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 80,
+          "y": 557.890625,
+          "right": 380,
+          "bottom": 708.203125
+        }
+      ],
+      "travel": 1890
+    }
+  },
+  {
+    "name": "1440x900 accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1366x600 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "1366x600 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3746,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1366x600 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3048,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 600
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 54.625,
+          "y": 137.40625,
+          "right": 1311.375,
+          "bottom": 168.765625
+        },
+        {
+          "name": "01 Apply",
+          "x": 555.0625,
+          "y": 249.140625,
+          "right": 599.0625,
+          "bottom": 293.140625
+        },
+        {
+          "name": "02 Screen",
+          "x": 766.921875,
+          "y": 249.140625,
+          "right": 810.921875,
+          "bottom": 293.140625
+        },
+        {
+          "name": "03 Task",
+          "x": 766.921875,
+          "y": 461,
+          "right": 810.921875,
+          "bottom": 505
+        },
+        {
+          "name": "04 Offer",
+          "x": 555.0625,
+          "y": 461,
+          "right": 599.0625,
+          "bottom": 505
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 54.625,
+          "y": 248.546875,
+          "right": 354.625,
+          "bottom": 339.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1011.375,
+          "y": 248.546875,
+          "right": 1311.375,
+          "bottom": 339.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1011.375,
+          "y": 421,
+          "right": 1311.375,
+          "bottom": 511.71875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 54.625,
+          "y": 395.40625,
+          "right": 354.625,
+          "bottom": 511.71875
+        }
+      ],
+      "travel": 1260
+    }
+  },
+  {
+    "name": "1920x686 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "1920x686 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3046,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5552,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.805,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5552,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3046,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0548,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3747,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.805,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1920x686 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3053,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 686
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 64,
+          "y": 155.75,
+          "right": 1856,
+          "bottom": 191.09375
+        },
+        {
+          "name": "01 Apply",
+          "x": 816.859375,
+          "y": 279.6875,
+          "right": 860.859375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "02 Screen",
+          "x": 1059.109375,
+          "y": 279.6875,
+          "right": 1103.109375,
+          "bottom": 323.6875
+        },
+        {
+          "name": "03 Task",
+          "x": 1059.109375,
+          "y": 521.9375,
+          "right": 1103.109375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "04 Offer",
+          "x": 816.859375,
+          "y": 521.9375,
+          "right": 860.859375,
+          "bottom": 565.9375
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 320,
+          "y": 275.875,
+          "right": 620,
+          "bottom": 370.421875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 1300,
+          "y": 275.875,
+          "right": 1600,
+          "bottom": 370.421875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 1300,
+          "y": 482.21875,
+          "right": 1600,
+          "bottom": 576.765625
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 320,
+          "y": 456.625,
+          "right": 620,
+          "bottom": 576.765625
+        }
+      ],
+      "travel": 1441
+    }
+  },
+  {
+    "name": "1024x768 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "1024x768 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0546,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.305,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5549,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8047,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5549,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.305,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0546,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3745,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8047,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "1024x768 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.305,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 768
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 40.953125,
+          "y": 132.234375,
+          "right": 983.046875,
+          "bottom": 167.78125
+        },
+        {
+          "name": "01 Apply",
+          "x": 354.390625,
+          "y": 275.609375,
+          "right": 398.390625,
+          "bottom": 319.609375
+        },
+        {
+          "name": "02 Screen",
+          "x": 625.578125,
+          "y": 275.609375,
+          "right": 669.578125,
+          "bottom": 319.609375
+        },
+        {
+          "name": "03 Task",
+          "x": 625.578125,
+          "y": 546.796875,
+          "right": 669.578125,
+          "bottom": 590.796875
+        },
+        {
+          "name": "04 Offer",
+          "x": 354.390625,
+          "y": 546.796875,
+          "right": 398.390625,
+          "bottom": 590.796875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 40.953125,
+          "y": 268.703125,
+          "right": 288.15625,
+          "bottom": 391.265625
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 735.84375,
+          "y": 268.703125,
+          "right": 983.046875,
+          "bottom": 391.265625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 735.84375,
+          "y": 482.984375,
+          "right": 983.046875,
+          "bottom": 605.546875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 40.953125,
+          "y": 457.390625,
+          "right": 288.15625,
+          "bottom": 605.546875
+        }
+      ],
+      "travel": 1613
+    }
+  },
+  {
+    "name": "768x1024 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.3125,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.484375,
+          "right": 737.28125,
+          "bottom": 274.84375
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.796875,
+          "right": 293.359375,
+          "bottom": 419.796875
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.796875,
+          "right": 542.625,
+          "bottom": 419.796875
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 621.0625,
+          "right": 542.625,
+          "bottom": 669.0625
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 621.0625,
+          "right": 293.359375,
+          "bottom": 669.0625
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 164,
+          "y": 724.4375,
+          "right": 604,
+          "bottom": 854.4375
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.3125,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.484375,
+          "right": 737.28125,
+          "bottom": 274.84375
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.796875,
+          "right": 293.359375,
+          "bottom": 419.796875
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.796875,
+          "right": 542.625,
+          "bottom": 419.796875
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 621.0625,
+          "right": 542.625,
+          "bottom": 669.0625
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 621.0625,
+          "right": 293.359375,
+          "bottom": 669.0625
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 164,
+          "y": 724.4375,
+          "right": 604,
+          "bottom": 854.4375
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "768x1024 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3051,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8051,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3051,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3753,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8051,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "768x1024 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3051,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 1024
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 30.71875,
+          "y": 243.171875,
+          "right": 737.28125,
+          "bottom": 274.53125
+        },
+        {
+          "name": "01 Apply",
+          "x": 225.359375,
+          "y": 371.484375,
+          "right": 293.359375,
+          "bottom": 419.484375
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.625,
+          "y": 371.484375,
+          "right": 542.625,
+          "bottom": 419.484375
+        },
+        {
+          "name": "03 Task",
+          "x": 474.625,
+          "y": 620.75,
+          "right": 542.625,
+          "bottom": 668.75
+        },
+        {
+          "name": "04 Offer",
+          "x": 225.359375,
+          "y": 620.75,
+          "right": 293.359375,
+          "bottom": 668.75
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 164,
+          "y": 724.125,
+          "right": 604,
+          "bottom": 854.125
+        }
+      ],
+      "travel": 2150
+    }
+  },
+  {
+    "name": "390x844 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.21875,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.890625,
+          "right": 366,
+          "bottom": 204.25
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.859375,
+          "right": 126.71875,
+          "bottom": 364.859375
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.859375,
+          "right": 331.25,
+          "bottom": 364.859375
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.390625,
+          "right": 331.25,
+          "bottom": 569.390625
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.390625,
+          "right": 126.71875,
+          "bottom": 569.390625
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 610.828125,
+          "right": 366,
+          "bottom": 740.828125
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.21875,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.890625,
+          "right": 366,
+          "bottom": 204.25
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.859375,
+          "right": 126.71875,
+          "bottom": 364.859375
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.859375,
+          "right": 331.25,
+          "bottom": 364.859375
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.390625,
+          "right": 331.25,
+          "bottom": 569.390625
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.390625,
+          "right": 126.71875,
+          "bottom": 569.390625
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 610.828125,
+          "right": 366,
+          "bottom": 740.828125
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "390x844 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3053,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8053,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3053,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0553,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3753,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8047,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3047,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 844
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 172.671875,
+          "right": 366,
+          "bottom": 204.03125
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 316.640625,
+          "right": 126.71875,
+          "bottom": 364.640625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 316.640625,
+          "right": 331.25,
+          "bottom": 364.640625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 521.171875,
+          "right": 331.25,
+          "bottom": 569.171875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 521.171875,
+          "right": 126.71875,
+          "bottom": 569.171875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 610.609375,
+          "right": 366,
+          "bottom": 740.609375
+        }
+      ],
+      "travel": 1772
+    }
+  },
+  {
+    "name": "390x844 accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "360x740 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 scroll mode",
+    "pass": true,
+    "detail": "true"
+  },
+  {
+    "name": "360x740 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0547,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3044,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5547,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 3",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.8044,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 2",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 2,
+      "angle": 135,
+      "progress": 0.5547,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 1",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3044,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 station 0",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 0,
+      "angle": -45,
+      "progress": 0.0547,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 rapid reverse latest target",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.3745,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 direct selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 3,
+      "angle": 225,
+      "progress": 0.805,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "360x740 keyboard selection",
+    "pass": true,
+    "detail": {
+      "scroll": "true",
+      "active": 1,
+      "angle": 45,
+      "progress": 0.305,
+      "overflow": false,
+      "stage": {
+        "top": 0,
+        "height": 740
+      },
+      "fits": true,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 138.875,
+          "right": 336,
+          "bottom": 170.234375
+        },
+        {
+          "name": "01 Apply",
+          "x": 56.328125,
+          "y": 277.25,
+          "right": 124.328125,
+          "bottom": 325.25
+        },
+        {
+          "name": "02 Screen",
+          "x": 235.65625,
+          "y": 277.25,
+          "right": 303.65625,
+          "bottom": 325.25
+        },
+        {
+          "name": "03 Task",
+          "x": 235.65625,
+          "y": 456.578125,
+          "right": 303.65625,
+          "bottom": 504.578125
+        },
+        {
+          "name": "04 Offer",
+          "x": 56.328125,
+          "y": 456.578125,
+          "right": 124.328125,
+          "bottom": 504.578125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 540.421875,
+          "right": 336,
+          "bottom": 670.421875
+        }
+      ],
+      "travel": 1554
+    }
+  },
+  {
+    "name": "320x568 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": -0.078125,
+        "height": 1020.6875
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 87.71875,
+          "right": 296,
+          "bottom": 119.078125
+        },
+        {
+          "name": "01 Apply",
+          "x": 39.4375,
+          "y": 224.703125,
+          "right": 107.4375,
+          "bottom": 272.703125
+        },
+        {
+          "name": "02 Screen",
+          "x": 212.546875,
+          "y": 224.703125,
+          "right": 280.546875,
+          "bottom": 272.703125
+        },
+        {
+          "name": "03 Task",
+          "x": 212.546875,
+          "y": 397.8125,
+          "right": 280.546875,
+          "bottom": 445.8125
+        },
+        {
+          "name": "04 Offer",
+          "x": 39.4375,
+          "y": 397.8125,
+          "right": 107.4375,
+          "bottom": 445.8125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 480.265625,
+          "right": 296,
+          "bottom": 570.328125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 598.328125,
+          "right": 296,
+          "bottom": 688.390625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 716.390625,
+          "right": 296,
+          "bottom": 806.453125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 834.453125,
+          "right": 296,
+          "bottom": 950.109375
+        }
+      ],
+      "travel": 0.3125
+    }
+  },
+  {
+    "name": "320x568 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": -0.078125,
+        "height": 1020.6875
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 87.71875,
+          "right": 296,
+          "bottom": 119.078125
+        },
+        {
+          "name": "01 Apply",
+          "x": 39.4375,
+          "y": 224.703125,
+          "right": 107.4375,
+          "bottom": 272.703125
+        },
+        {
+          "name": "02 Screen",
+          "x": 212.546875,
+          "y": 224.703125,
+          "right": 280.546875,
+          "bottom": 272.703125
+        },
+        {
+          "name": "03 Task",
+          "x": 212.546875,
+          "y": 397.8125,
+          "right": 280.546875,
+          "bottom": 445.8125
+        },
+        {
+          "name": "04 Offer",
+          "x": 39.4375,
+          "y": 397.8125,
+          "right": 107.4375,
+          "bottom": 445.8125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 480.265625,
+          "right": 296,
+          "bottom": 570.328125
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 598.328125,
+          "right": 296,
+          "bottom": 688.390625
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 716.390625,
+          "right": 296,
+          "bottom": 806.453125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 834.453125,
+          "right": 296,
+          "bottom": 950.109375
+        }
+      ],
+      "travel": 0.3125
+    }
+  },
+  {
+    "name": "320x568 scroll mode",
+    "pass": true,
+    "detail": "false"
+  },
+  {
+    "name": "320x568 static content accessible",
+    "pass": true
+  },
+  {
+    "name": "844x390 no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.234375,
+        "height": 766.96875
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 33.75,
+          "y": 92.03125,
+          "right": 810.25,
+          "bottom": 123.390625
+        },
+        {
+          "name": "01 Apply",
+          "x": 301.4375,
+          "y": 203.421875,
+          "right": 369.4375,
+          "bottom": 251.421875
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.546875,
+          "y": 203.421875,
+          "right": 542.546875,
+          "bottom": 251.421875
+        },
+        {
+          "name": "03 Task",
+          "x": 474.546875,
+          "y": 376.53125,
+          "right": 542.546875,
+          "bottom": 424.53125
+        },
+        {
+          "name": "04 Offer",
+          "x": 301.4375,
+          "y": 376.53125,
+          "right": 369.4375,
+          "bottom": 424.53125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 112,
+          "y": 462.984375,
+          "right": 408,
+          "bottom": 553.046875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 436,
+          "y": 462.984375,
+          "right": 732,
+          "bottom": 553.046875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 112,
+          "y": 581.046875,
+          "right": 408,
+          "bottom": 696.703125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 436,
+          "y": 581.046875,
+          "right": 732,
+          "bottom": 696.703125
+        }
+      ],
+      "travel": 0.03125
+    }
+  },
+  {
+    "name": "844x390 centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.234375,
+        "height": 766.96875
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 33.75,
+          "y": 92.03125,
+          "right": 810.25,
+          "bottom": 123.390625
+        },
+        {
+          "name": "01 Apply",
+          "x": 301.4375,
+          "y": 203.421875,
+          "right": 369.4375,
+          "bottom": 251.421875
+        },
+        {
+          "name": "02 Screen",
+          "x": 474.546875,
+          "y": 203.421875,
+          "right": 542.546875,
+          "bottom": 251.421875
+        },
+        {
+          "name": "03 Task",
+          "x": 474.546875,
+          "y": 376.53125,
+          "right": 542.546875,
+          "bottom": 424.53125
+        },
+        {
+          "name": "04 Offer",
+          "x": 301.4375,
+          "y": 376.53125,
+          "right": 369.4375,
+          "bottom": 424.53125
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 112,
+          "y": 462.984375,
+          "right": 408,
+          "bottom": 553.046875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 436,
+          "y": 462.984375,
+          "right": 732,
+          "bottom": 553.046875
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 112,
+          "y": 581.046875,
+          "right": 408,
+          "bottom": 696.703125
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 436,
+          "y": 581.046875,
+          "right": 732,
+          "bottom": 696.703125
+        }
+      ],
+      "travel": 0.03125
+    }
+  },
+  {
+    "name": "844x390 scroll mode",
+    "pass": true,
+    "detail": "false"
+  },
+  {
+    "name": "844x390 static content accessible",
+    "pass": true
+  },
+  {
+    "name": "390x844-reduced no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.25,
+        "height": 1040.484375
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 88.046875,
+          "right": 366,
+          "bottom": 119.40625
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 232.015625,
+          "right": 126.71875,
+          "bottom": 280.015625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 232.015625,
+          "right": 331.25,
+          "bottom": 280.015625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 436.546875,
+          "right": 331.25,
+          "bottom": 484.546875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 436.546875,
+          "right": 126.71875,
+          "bottom": 484.546875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 525.984375,
+          "right": 366,
+          "bottom": 616.046875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 644.046875,
+          "right": 366,
+          "bottom": 734.109375
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 762.109375,
+          "right": 366,
+          "bottom": 852.171875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 880.171875,
+          "right": 366,
+          "bottom": 970.234375
+        }
+      ],
+      "travel": -0.484375
+    }
+  },
+  {
+    "name": "390x844-reduced centered header",
+    "pass": true,
+    "detail": {
+      "scroll": "false",
+      "active": 0,
+      "angle": -45,
+      "progress": 0,
+      "overflow": false,
+      "stage": {
+        "top": 0.25,
+        "height": 1040.484375
+      },
+      "fits": false,
+      "headingClear": true,
+      "noCardOverlap": true,
+      "centeredHeading": true,
+      "visible": [
+        {
+          "name": "How hiring works",
+          "x": 24,
+          "y": 88.046875,
+          "right": 366,
+          "bottom": 119.40625
+        },
+        {
+          "name": "01 Apply",
+          "x": 58.71875,
+          "y": 232.015625,
+          "right": 126.71875,
+          "bottom": 280.015625
+        },
+        {
+          "name": "02 Screen",
+          "x": 263.25,
+          "y": 232.015625,
+          "right": 331.25,
+          "bottom": 280.015625
+        },
+        {
+          "name": "03 Task",
+          "x": 263.25,
+          "y": 436.546875,
+          "right": 331.25,
+          "bottom": 484.546875
+        },
+        {
+          "name": "04 Offer",
+          "x": 58.71875,
+          "y": 436.546875,
+          "right": 126.71875,
+          "bottom": 484.546875
+        },
+        {
+          "name": "01ApplySend your CV and a 60 s",
+          "x": 24,
+          "y": 525.984375,
+          "right": 366,
+          "bottom": 616.046875
+        },
+        {
+          "name": "02ScreenA 20 minute call to co",
+          "x": 24,
+          "y": 644.046875,
+          "right": 366,
+          "bottom": 734.109375
+        },
+        {
+          "name": "03TaskA real role test, such a",
+          "x": 24,
+          "y": 762.109375,
+          "right": 366,
+          "bottom": 852.171875
+        },
+        {
+          "name": "04OfferA conversation with lea",
+          "x": 24,
+          "y": 880.171875,
+          "right": 366,
+          "bottom": 970.234375
+        }
+      ],
+      "travel": -0.484375
+    }
+  },
+  {
+    "name": "390x844-reduced scroll mode",
+    "pass": true,
+    "detail": "false"
+  },
+  {
+    "name": "390x844-reduced static content accessible",
+    "pass": true
+  },
+  {
+    "name": "390x844-reduced accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "no runtime errors",
+    "pass": true,
+    "detail": []
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": true,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.webp",
+      "ratio": 0.5628010733568265,
+      "paused": true
+    }
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": true,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.webp",
+      "ratio": 0.5628010733568265,
+      "paused": true
+    }
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": true,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.webp",
+      "ratio": 0.5628010733568265,
+      "paused": true
+    }
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": true,
+      "poster": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.webp",
+      "ratio": 0.5628010733568265,
+      "paused": true
+    }
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-portrait-v073.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "progress": 0,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "progress": 0.4,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "progress": 0.735,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "progress": 0.85,
+    "pass": true,
+    "data": {
+      "fallback": false,
+      "source": "http://127.0.0.1:3000/media/founder/founder-dream-v063.avif",
+      "paused": true,
+      "safe": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  }
+]

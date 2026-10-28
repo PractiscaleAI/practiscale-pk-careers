@@ -2,7 +2,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { mountSceneAnchor } from "./scene-anchor.js";
 
-export function mountFounderFilm(root: HTMLElement) {
+export function mountFounderFilm(
+  root: HTMLElement,
+  media: {
+    onLoading?: () => void;
+    onFailure?: () => void;
+    onSourceChange?: (source: string) => void;
+  } = {},
+) {
   gsap.registerPlugin(ScrollTrigger);
   const get = <T extends HTMLElement>(name: string) =>
     root.querySelector<T>(`[data-founder-${name}]`)!;
@@ -33,6 +40,47 @@ export function mountFounderFilm(root: HTMLElement) {
   const state = { progress: 0 };
   let handoffTimer: ReturnType<typeof setTimeout> | undefined;
   let playbackReleased = false;
+  let retryTimer: ReturnType<typeof setTimeout> | undefined;
+  let retryCount = 0;
+  let restorePosition: (() => void) | undefined;
+  let checkpointOffered = false;
+  let recentHumanScroll = 0;
+  let checkpointTimer: ReturnType<typeof setTimeout> | undefined;
+  let noticeTimer: ReturnType<typeof setTimeout> | undefined;
+  function checkpointTarget() {
+    const trigger = tween?.scrollTrigger;
+    return trigger
+      ? trigger.start + (trigger.end - trigger.start) * 0.82
+      : undefined;
+  }
+  function offerCheckpoint() {
+    const target = checkpointTarget();
+    if (
+      target === undefined ||
+      checkpointOffered ||
+      disposed ||
+      reduced.matches ||
+      saveData ||
+      root.dataset.enhanced !== "true"
+    )
+      return;
+    checkpointOffered = true;
+    clearTimeout(checkpointTimer);
+    checkpointTimer = undefined;
+    window.scrollTo({ top: target, behavior: "smooth" });
+  }
+  function retainPosition(time: number) {
+    if (restorePosition)
+      video.removeEventListener("loadedmetadata", restorePosition);
+    restorePosition = () => {
+      if (time > 0 && Number.isFinite(video.duration))
+        video.currentTime = Math.min(time, video.duration);
+    };
+    video.addEventListener("loadedmetadata", restorePosition, {
+      once: true,
+      signal: abort.signal,
+    });
+  }
   function fullView() {
     const trigger = tween?.scrollTrigger;
     if (!trigger || document.hidden || disposed) return false;
@@ -79,12 +127,54 @@ export function mountFounderFilm(root: HTMLElement) {
     };
     handoffTimer = setTimeout(finishHandoff, 220);
   }
-  function load(eager = false) {
+  function load(eager = false, force = false) {
+    // Wait for responsive source selection instead of loading the SSR source
+    // and immediately aborting it when setup assigns the same URL to video.src.
+    if (!video.hasAttribute("src")) return;
     video.preload = eager ? "auto" : "metadata";
-    if (!loaded) {
+    if (!loaded || force) {
       loaded = true;
-      video.load();
+      media.onLoading?.();
+      // Changing preload resumes the selected source. Calling load() here too
+      // aborts that fresh request; reserve it for recovery from a real error.
+      if (force) video.load();
     }
+  }
+  function retry(manual = false) {
+    if (disposed) return;
+    clearTimeout(retryTimer);
+    retryTimer = undefined;
+    if (manual) retryCount = 0;
+    retainPosition(video.currentTime);
+    stopPlayback();
+    autoAttempted = false;
+    delete root.dataset.filmReady;
+    eligible = fullView();
+    load(true, true);
+    if (manual && root.dataset.enhanced !== "true") play();
+  }
+  function failed() {
+    if (!video.error || video.error.code === 1 || disposed) return;
+    stopPlayback();
+    autoAttempted = false;
+    delete root.dataset.filmReady;
+    clearTimeout(retryTimer);
+    // Chromium can report a failed HTTP request as MEDIA_ERR_SRC_NOT_SUPPORTED.
+    // Reload the same approved source at most twice, including that error code.
+    if (retryCount < 2 && navigator.onLine && !document.hidden) {
+      const delay = retryCount++ === 0 ? 650 : 1500;
+      retryTimer = setTimeout(() => {
+        retryTimer = undefined;
+        const rect = root.getBoundingClientRect();
+        if (
+          rect.bottom > -300 &&
+          rect.top < innerHeight + 300 &&
+          !document.hidden
+        )
+          retry();
+        else media.onFailure?.();
+      }, delay);
+    } else media.onFailure?.();
   }
   function play() {
     if (root.dataset.enhanced === "true" && (!playbackReleased || !fullView()))
@@ -100,8 +190,18 @@ export function mountFounderFilm(root: HTMLElement) {
         )
           video.pause();
       })
-      .catch(() => {
-        /* Native controls remain available if autoplay is blocked. */
+      .catch((error: DOMException) => {
+        // Scroll-only autoplay with audio can be blocked. Keep the film moving
+        // silently in that case; the native player lets visitors enable sound.
+        if (
+          error.name === "NotAllowedError" &&
+          !video.muted &&
+          !disposed &&
+          (root.dataset.enhanced !== "true" || (eligible && fullView()))
+        ) {
+          video.muted = true;
+          void video.play().catch(() => {});
+        }
       });
   }
   function draw() {
@@ -113,8 +213,22 @@ export function mountFounderFilm(root: HTMLElement) {
     const ratio = portrait.matches ? 9 / 16 : 16 / 9;
     const startScale = width / Math.min(vw, vh * ratio);
     video.style.transform = `translateY(${(y + height / 2 - vh / 2) * (1 - ease)}px) scale(${startScale + (1 - startScale) * ease})`;
-    const posterScale = width / Math.min(vw, vh * (1672 / 941));
-    poster.style.transform = `translateY(${(y + height / 2 - vh / 2) * (1 - ease)}px) scale(${posterScale + (1 - posterScale) * ease})`;
+    // Cover the current aperture, not just its initial and final widths. The
+    // aperture changes aspect ratio during expansion; contain leaves side bands.
+    const posterRatio = portrait.matches ? 941 / 1672 : 1672 / 941;
+    const posterWidth = Math.min(vw, vh * posterRatio);
+    const posterHeight = posterWidth / posterRatio;
+    const posterScale = Math.max(
+      (width + (vw - width) * ease) / posterWidth,
+      (height + (vh - height) * ease) / posterHeight,
+    );
+    // On wider portrait tablets, favour the headline instead of cropping equal
+    // amounts from the artwork's top and the less important lower chair.
+    const apertureHeight = height + (vh - height) * ease;
+    const portraitOffset = portrait.matches
+      ? Math.max(0, posterHeight * posterScale - apertureHeight) * 0.25
+      : 0;
+    poster.style.transform = `translateY(${(y + height / 2 - vh / 2) * (1 - ease) + portraitOffset}px) scale(${posterScale})`;
     const departure = Math.max(0, Math.min(1, (state.progress - 0.08) / 0.2));
     const fade = 1 - departure * departure * (3 - 2 * departure);
     copy.style.transform = `translateY(${-12 * (1 - fade)}px)`;
@@ -135,7 +249,14 @@ export function mountFounderFilm(root: HTMLElement) {
         load(true);
         releasePlayback();
       }
+      if (next && !checkpointOffered) {
+        clearTimeout(noticeTimer);
+        noticeTimer = setTimeout(() => {
+          if (fullView()) checkpointOffered = true;
+        }, 500);
+      }
       if (!next) {
+        clearTimeout(noticeTimer);
         stopPlayback();
         autoAttempted = false;
       }
@@ -143,6 +264,8 @@ export function mountFounderFilm(root: HTMLElement) {
   }
   function setup() {
     if (disposed) return;
+    clearTimeout(noticeTimer);
+    clearTimeout(checkpointTimer);
     stopPlayback();
     tween?.scrollTrigger?.kill();
     tween?.kill();
@@ -151,22 +274,23 @@ export function mountFounderFilm(root: HTMLElement) {
       ? "/media/founder/ceo-story-portrait-v062.mp4"
       : "/media/founder/ceo-story-desktop-v062.mp4";
     root.dataset.portrait = String(portrait.matches);
-    video.poster = "/media/founder/founder-dream-v063.webp";
+    video.poster = portrait.matches
+      ? "/media/founder/founder-dream-portrait-v073.webp"
+      : "/media/founder/founder-dream-v063.webp";
     if (video.getAttribute("src") !== mediaPath) {
+      clearTimeout(retryTimer);
+      retryTimer = undefined;
+      retryCount = 0;
+      loaded = false;
+      media.onLoading?.();
+      media.onSourceChange?.(mediaPath);
       delete root.dataset.filmReady;
-      const retainedTime = video.currentTime;
-      video.addEventListener(
-        "loadedmetadata",
-        () => {
-          if (retainedTime > 0)
-            video.currentTime = Math.min(
-              retainedTime,
-              video.duration || retainedTime,
-            );
-        },
-        { once: true, signal: abort.signal },
-      );
+      retainPosition(video.currentTime);
+      video.preload = "none";
       video.src = mediaPath;
+      const rect = root.getBoundingClientRect();
+      if (!saveData && rect.bottom > -300 && rect.top < innerHeight + 300)
+        load();
     }
     root.removeAttribute("data-enhanced");
     root.removeAttribute("data-expanded");
@@ -197,7 +321,7 @@ export function mountFounderFilm(root: HTMLElement) {
       parseFloat(layout.paddingTop) -
       parseFloat(layout.paddingBottom) -
       2 * parseFloat(layout.rowGap);
-    const ratio = 1672 / 941;
+    const ratio = portrait.matches ? 941 / 1672 : 1672 / 941;
     const desiredWidth = slot.getBoundingClientRect().width;
     slot.style.width = `${Math.max(0, Math.min(desiredWidth, availableHeight * ratio))}px`;
     const requiredHeight =
@@ -248,6 +372,21 @@ export function mountFounderFilm(root: HTMLElement) {
             stopPlayback();
           }
         },
+        onLeave: (trigger) => {
+          // A touch fling can cross the short playback window between two
+          // scroll samples. Bring a first-time visitor back to the film once,
+          // then leave every subsequent scroll entirely under their control.
+          if (
+            checkpointOffered ||
+            performance.now() - recentHumanScroll > 900 ||
+            window.scrollY - trigger.end > innerHeight * 1.25 ||
+            (location.hash &&
+              !["#background-lines", "#our-founder"].includes(location.hash))
+          )
+            return;
+          clearTimeout(checkpointTimer);
+          checkpointTimer = setTimeout(offerCheckpoint, 180);
+        },
       },
     });
     draw();
@@ -260,6 +399,18 @@ export function mountFounderFilm(root: HTMLElement) {
     { rootMargin: "300px" },
   );
   observer.observe(root);
+  video.addEventListener("error", failed, { signal: abort.signal });
+  root.addEventListener("founder:retry", () => retry(true), {
+    signal: abort.signal,
+  });
+  window.addEventListener(
+    "online",
+    () => {
+      const rect = root.getBoundingClientRect();
+      if (video.error && rect.bottom > 0 && rect.top < innerHeight) retry(true);
+    },
+    { signal: abort.signal },
+  );
   video.addEventListener(
     "playing",
     () => {
@@ -298,6 +449,59 @@ export function mountFounderFilm(root: HTMLElement) {
     },
     { passive: true, signal: abort.signal },
   );
+  window.addEventListener(
+    "wheel",
+    (event) => {
+      const target = checkpointTarget();
+      const trigger = tween?.scrollTrigger;
+      if (
+        trigger &&
+        window.scrollY >= trigger.start - innerHeight * 0.5 &&
+        window.scrollY <= trigger.end + innerHeight
+      )
+        recentHumanScroll = performance.now();
+      if (
+        target === undefined ||
+        !trigger ||
+        checkpointOffered ||
+        event.deltaY <= 0 ||
+        window.scrollY < trigger.start - innerHeight * 0.5 ||
+        window.scrollY >= target
+      )
+        return;
+      const delta =
+        event.deltaY *
+        (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1);
+      if (window.scrollY + delta >= target) {
+        event.preventDefault();
+        offerCheckpoint();
+      }
+    },
+    { passive: false, signal: abort.signal },
+  );
+  window.addEventListener(
+    "touchstart",
+    () => {
+      const rect = root.getBoundingClientRect();
+      if (rect.top < innerHeight && rect.bottom > 0)
+        recentHumanScroll = performance.now();
+    },
+    { passive: true, signal: abort.signal },
+  );
+  window.addEventListener(
+    "keydown",
+    (event) => {
+      const trigger = tween?.scrollTrigger;
+      if (
+        trigger &&
+        window.scrollY >= trigger.start - innerHeight * 0.5 &&
+        window.scrollY <= trigger.end + innerHeight &&
+        ["PageDown", "ArrowDown", " "].includes(event.key)
+      )
+        recentHumanScroll = performance.now();
+    },
+    { signal: abort.signal },
+  );
   const viewportObserver = new IntersectionObserver(
     ([entry]) => {
       if (!entry.isIntersecting) video.pause();
@@ -308,6 +512,9 @@ export function mountFounderFilm(root: HTMLElement) {
   watch.addEventListener(
     "click",
     () => {
+      checkpointOffered = true;
+      video.muted = false;
+      if (video.error) retry(true);
       if (!tween?.scrollTrigger) {
         play();
         return;
@@ -372,5 +579,8 @@ export function mountFounderFilm(root: HTMLElement) {
     tween?.kill();
     video.pause();
     clearTimeout(handoffTimer);
+    clearTimeout(retryTimer);
+    clearTimeout(checkpointTimer);
+    clearTimeout(noticeTimer);
   };
 }

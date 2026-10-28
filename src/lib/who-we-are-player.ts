@@ -107,13 +107,18 @@ export function mountWhoWeAre(root: HTMLDivElement) {
         geometry,
       p = clamp(state.progress),
       e = smooth(p / 0.19);
-    const left = x * (1 - e),
-      top = y * (1 - e),
-      right = (w - x - cw) * (1 - e),
-      bottom = (h - y - ch) * (1 - e),
+    const scale = mix(cw / baseWidth, coverScale, e);
+    const portraitFilm = !desktop.matches;
+    // The portrait aperture follows the actual image throughout expansion.
+    // Expanding a viewport-shaped matte faster exposed empty bands at its edges.
+    const imageWidth = baseWidth * scale,
+      imageHeight = (imageWidth * 16) / 9;
+    const left = portraitFilm ? Math.max(0, (w - imageWidth) / 2) : x * (1 - e),
+      top = portraitFilm ? Math.max(0, (h - imageHeight) / 2) : y * (1 - e),
+      right = portraitFilm ? left : (w - x - cw) * (1 - e),
+      bottom = portraitFilm ? top : (h - y - ch) * (1 - e),
       radius = 20 * (1 - e);
     frame.style.clipPath = `inset(${top}px ${right}px ${bottom}px ${left}px round ${radius}px)`;
-    const scale = mix(cw / baseWidth, coverScale, e);
     surface.style.transform = `scale(${scale})`;
     background.style.clipPath = `inset(${backdropTop * (1 - e)}px ${gutter * (1 - e)}px ${backdropTop * (1 - e)}px ${gutter * (1 - e)}px round ${24 * (1 - e)}px)`;
     const wipe = smooth(p / 0.045);
@@ -125,7 +130,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     description.style.visibility = wipe === 1 ? "hidden" : "visible";
     description.style.transform = `translate3d(0,${24 * wipe}px,0)`;
     const split = smooth((p - 0.02) / 0.17),
-      splitDistance = w * 0.78 * split;
+      splitDistance = w * (portraitFilm ? 1.05 : 0.78) * split;
     panelLeft.style.transform = `translate3d(${-splitDistance}px,0,0)`;
     plane.style.transform = `translate3d(${splitDistance}px,0,0)`;
     targetTime = clamp((p - 0.205) / 0.735) * Math.max(0, duration - 1 / 30);
@@ -255,7 +260,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       gutter,
       backdropTop,
       baseWidth,
-      coverScale: mobile ? 1 : Math.max(w, (h * 16) / 9) / baseWidth,
+      coverScale: Math.max(w, h * ratio) / baseWidth,
     };
     measuredWidth = innerWidth;
     measuredHeight = innerHeight;
@@ -269,17 +274,27 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     );
     video.controls = false;
     state.progress = 0;
-    tween = gsap.to(state, {
+    tween = gsap.fromTo(state, { progress: 0 }, {
       progress: 1,
       ease: "none",
       onUpdate: requestDraw,
       scrollTrigger: {
-        trigger: viewport,
-        start: "top top",
+        trigger: root,
+        // A sticky viewport already reports top:0 mid-scene. Measuring it on
+        // refresh shifts the start to the current scroll position. Use its
+        // natural-flow rail and the mobile introduction instead.
+        start: () => root.getBoundingClientRect().top + window.scrollY +
+          (root.querySelector<HTMLElement>("[data-who-introduction]")?.offsetHeight ?? 0),
         end: () =>
           `+=${parseFloat(root.style.getPropertyValue("--who-travel"))}`,
         scrub: 0.55,
-        invalidateOnRefresh: true,
+        // Re-measuring other pinned sections must not reset the film to zero.
+        // The endpoints are constant; only the scroll geometry needs refreshing.
+        onRefresh: (trigger) => {
+          trigger.animation?.totalProgress(trigger.progress);
+          state.progress = trigger.progress;
+          draw(true);
+        },
         onUpdate: (trigger) => {
           const delta =
             lastRawProgress === null ? 0 : trigger.progress - lastRawProgress;

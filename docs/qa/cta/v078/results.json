@@ -1,0 +1,162 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 510.03125,
+          "right": 735.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 747.640625,
+          "right": 929.953125
+        }
+      ]
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "height": 600,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 473.03125,
+          "right": 698.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 710.640625,
+          "right": 892.953125
+        }
+      ]
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 174.03125,
+          "right": 399.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 411.640625,
+          "right": 593.953125
+        }
+      ]
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "overflow": false,
+      "actions": [
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        }
+      ]
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "overflow": false,
+      "actions": [
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        }
+      ]
+    },
+    "axe": [],
+    "errors": []
+  }
+]

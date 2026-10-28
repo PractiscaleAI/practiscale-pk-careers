@@ -1,0 +1,229 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "markAboveHeading": true,
+      "markSize": [
+        64,
+        60
+      ],
+      "pathTransforms": [
+        "none",
+        "none"
+      ],
+      "markTransform": "matrix(1, 0, 0, 1, -32, 0)",
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 510.03125,
+          "right": 735.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 747.640625,
+          "right": 929.953125
+        }
+      ],
+      "pathsRippled": true
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "height": 600,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "markAboveHeading": true,
+      "markSize": [
+        64,
+        60
+      ],
+      "pathTransforms": [
+        "none",
+        "none"
+      ],
+      "markTransform": "matrix(1, 0, 0, 1, -32, 0)",
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 473.03125,
+          "right": 698.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 710.640625,
+          "right": 892.953125
+        }
+      ],
+      "pathsRippled": true
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "markAboveHeading": true,
+      "markSize": [
+        64,
+        60
+      ],
+      "pathTransforms": [
+        "none",
+        "none"
+      ],
+      "markTransform": "matrix(1, 0, 0, 1, -32, 0)",
+      "overflow": false,
+      "actions": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 174.03125,
+          "right": 399.640625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 411.640625,
+          "right": 593.953125
+        }
+      ],
+      "pathsRippled": true
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "markAboveHeading": true,
+      "markSize": [
+        64,
+        60
+      ],
+      "pathTransforms": [
+        "none",
+        "none"
+      ],
+      "markTransform": "matrix(1, 0, 0, 1, -32, 0)",
+      "overflow": false,
+      "actions": [
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        }
+      ],
+      "pathsRippled": true
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "pass": true,
+    "data": {
+      "heading": "Your next Monday could be your first day.",
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "markLoaded": true,
+      "pathCount": 4,
+      "markAboveHeading": true,
+      "markSize": [
+        64,
+        60
+      ],
+      "pathTransforms": [
+        "none",
+        "none"
+      ],
+      "markTransform": "matrix(1, 0, 0, 1, -32, 0)",
+      "overflow": false,
+      "actions": [
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        }
+      ],
+      "pathsRippled": true
+    },
+    "axe": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "reducedMotion": true,
+    "pass": true,
+    "staticPaths": [
+      "M0 93 C128 95 182 58 280 66 C371 74 424 105 490 93",
+      "M1200 93 C1072 95 1018 58 920 66 C829 74 776 105 710 93",
+      "M0 88 C28 90 55 67 79 69 C97 71 103 82 112 82",
+      "M390 88 C362 90 335 67 311 69 C293 71 287 82 278 82"
+    ]
+  }
+]

@@ -1,6 +1,10 @@
 # PractiScale website: Technical requirements
 
-Version 0.62 | Status: Founder film with native playback and scoped scroll expansion.
+Version 0.68 | Status: Lightweight SVG hiring compass added after the founder film.
+
+## Hiring compass addition
+
+The homepage now appends an eighth section, how-hiring-works, after background-lines. HiringSection server-renders its copy and SVG, then progressively enhances with existing GSAP ScrollTrigger. Revision 0.70 uses a 500svh CSS rail including the sticky viewport; a single scalar with 0.55-second scrub drives the pointer, arc and active station. Each station interval holds for 55% and travels for 45%, with the last interval resting on Offer. No wheel interception, external assets, new dependencies or WebGL. Direct station buttons and a focused skip link provide keyboard alternatives. Reduced motion and short screens release the sticky stage. Scoped cleanup removes the trigger, tween, listeners and deep-link observer. Isolated CSS module owns all new styles. QA: scripts/qa-hiring.cjs and scripts/qa-hiring-edges.cjs.
 
 ## Stack and routing
 
@@ -189,7 +193,7 @@ Protected source: assets/source/who-we-are/office-portrait-original.mp4, exclude
 
 ## Proof first-entry and office backing repair 0.67
 
-Mobile office frame/matte backing now uses brand Deep Teal instead of black. Keep the full 9:16 film and original timing; do not crop its final vision message to eliminate letterboxing.
+Mobile office aperture follows the transformed image bounds throughout expansion, eliminating empty strips at intermediate poses. Frame/matte backing uses brand Deep Teal instead of black. Keep the full 9:16 film and original timing; do not crop its final vision message to eliminate letterboxing.
 
 The laptop has a matching closed-pose loading image inside the same transformed world as its live canvas. The final-summary poster remains only for static/accessibility/failure fallback. Startup no longer replaces an open-summary image with a closed model. First pose is rendered before data-ready changes, with two animation frames allowed before handoff. Initial module preparation is limited to a 1200px approach window, and construction starts after 180ms without scrolling or immediately on actual entry. Cleanup cancels the warmup timer and observer. One canvas remains mounted.
 

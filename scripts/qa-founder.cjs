@@ -61,7 +61,7 @@ async function snapshot(page) {
       });
       const errors = [];
       page.on("pageerror", (e) => errors.push(e.message));
-      await page.goto("http://127.0.0.1:3000/#background-lines", {
+      await page.goto(`${process.env.QA_BASE_URL || "http://127.0.0.1:3000"}/#background-lines`, {
         waitUntil: "domcontentloaded",
       });
       await dismissIntroduction(page);
@@ -121,14 +121,12 @@ async function snapshot(page) {
           full,
         );
         check(
-          `${name}: muted autoplay at full size`,
-          !full.paused && full.muted && full.time > 0 && full.controls,
+          `${name}: playback at full size`,
+          !full.paused && full.time > 0 && full.controls,
           full,
         );
         await page.screenshot({ path: `${out}/${name}-full.png` });
-        await page.locator("[data-founder-sound]").click();
-        check(`${name}: sound control`, !(await snapshot(page)).muted);
-        await page.locator("[data-founder-sound]").click();
+        check(`${name}: no overlay sound button`, await page.locator("[data-founder-sound]").count() === 0);
         await page.locator("[data-founder-video]").evaluate((v) => v.pause());
         await page.waitForTimeout(400);
         check(`${name}: manual pause respected`, (await snapshot(page)).paused);
@@ -146,7 +144,8 @@ async function snapshot(page) {
         check(
           `${name}: watch button opens and plays`,
           (await snapshot(page)).expanded === "true" &&
-            !(await snapshot(page)).paused,
+            !(await snapshot(page)).paused &&
+            !(await snapshot(page)).muted,
         );
         // A fast reverse/forward jump must settle at the latest scroll target.
         await position(0.05);

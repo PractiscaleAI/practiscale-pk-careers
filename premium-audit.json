@@ -2,6 +2,15 @@
   "findings": [
     {
       "category": "unresolved",
+      "file": "src/components/faq-section.tsx",
+      "line": 422,
+      "message": "Native select is used without an explicit ownership decision.",
+      "remediation": "Record Select/Listbox as native or reuse the authored canonical owner.",
+      "ruleId": "ownership.native-select-undecided",
+      "severity": "error"
+    },
+    {
+      "category": "unresolved",
       "file": "src/components/job-board.tsx",
       "line": 33,
       "message": "Native select is used without an explicit ownership decision.",
@@ -12,7 +21,34 @@
     {
       "category": "violation",
       "file": "src/components/background-lines-demo.tsx",
-      "line": 58,
+      "line": 68,
+      "message": "Enabled literal button has no detectable action or submit behavior.",
+      "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
+      "ruleId": "affordance.actionless-button",
+      "severity": "error"
+    },
+    {
+      "category": "violation",
+      "file": "src/components/faq-section.tsx",
+      "line": 358,
+      "message": "Enabled literal button has no detectable action or submit behavior.",
+      "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
+      "ruleId": "affordance.actionless-button",
+      "severity": "error"
+    },
+    {
+      "category": "violation",
+      "file": "src/components/faq-section.tsx",
+      "line": 434,
+      "message": "Enabled literal button has no detectable action or submit behavior.",
+      "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
+      "ruleId": "affordance.actionless-button",
+      "severity": "error"
+    },
+    {
+      "category": "violation",
+      "file": "src/components/faq-section.tsx",
+      "line": 438,
       "message": "Enabled literal button has no detectable action or submit behavior.",
       "remediation": "Connect the button to a real action, make it a submit button, or disable/remove it.",
       "ruleId": "affordance.actionless-button",
@@ -23,10 +59,10 @@
   "projectRoot": "C:\\Dev\\PractiScale\\Practiscale.Pk\\practiscale",
   "schemaVersion": 1,
   "summary": {
-    "errors": 2,
-    "total": 2,
-    "unresolved": 1,
-    "violations": 1,
+    "errors": 6,
+    "total": 6,
+    "unresolved": 2,
+    "violations": 4,
     "warnings": 0
   }
 }

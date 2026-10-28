@@ -16,6 +16,7 @@ function check(name, pass, detail) {
   try {
     for (const [width, height, dpr] of [
       [1440, 900, 1],
+      [1900, 910, 1],
       [1366, 600, 1.25],
       [768, 1024, 2],
       [390, 844, 2],
@@ -85,6 +86,21 @@ function check(name, pass, detail) {
             s.paused && s.time < 0.05,
             s,
           );
+          const coverage = await p.locator('[data-founder-frame]').evaluate(frame => {
+            const img = frame.querySelector('[data-founder-poster]');
+            const r = img.getBoundingClientRect();
+            const f = frame.getBoundingClientRect();
+            const parts = getComputedStyle(frame).clipPath.match(/inset\((.*?) round/)[1].split(' ').map(parseFloat);
+            const inset = [parts[0], parts[1] ?? parts[0], parts[2] ?? parts[0], parts[3] ?? parts[1] ?? parts[0]];
+            const scale = Math.min(r.width/img.naturalWidth, r.height/img.naturalHeight);
+            const w = img.naturalWidth*scale, h = img.naturalHeight*scale;
+            const left = r.left+(r.width-w)/2, top = r.top+(r.height-h)/2;
+            const edges = [f.left+inset[3]-left, f.top+inset[0]-top, left+w-(f.right-inset[1]), top+h-(f.bottom-inset[2])];
+            return {edges, complete: img.complete && img.naturalWidth > 0};
+          });
+          check(`${name}: poster fills aperture at ${point}`, coverage.complete && coverage.edges.every(x=>x>=-1.5), coverage);
+          if (point === 0) check(`${name}: full artwork preserved initially`, coverage.edges.every(x=>Math.abs(x)<2), coverage);
+          if (point === 0.4) await p.screenshot({path:`${out}/${name}-expanding.png`});
           if (point === 0.19) {
             await p.screenshot({ path: `${out}/${name}-edges.png` });
             check(
@@ -105,6 +121,11 @@ function check(name, pass, detail) {
           () => !document.querySelector("[data-founder-video]").paused,
         );
         await p.waitForTimeout(350);
+        check(`${name}: video fills full-screen frame`, await p.locator('[data-founder-video]').evaluate(v => {
+          const r = v.getBoundingClientRect(), f = v.parentElement.getBoundingClientRect();
+          return getComputedStyle(v).objectFit === 'cover' && Math.abs(r.width-f.width)<1 && Math.abs(r.height-f.height)<1 && v.videoWidth>0;
+        }));
+        await p.screenshot({path:`${out}/${name}-playing.png`});
         const starts = await p.evaluate(() => window.__founderStarts);
         check(
           `${name}: depth clears at full view`,

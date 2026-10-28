@@ -1,6 +1,10 @@
 # PractiScale website: Product requirements
 
-Version 0.62 | Status: Founder story and expanding interview added after testimonials.
+Version 0.68 | Status: Circular hiring journey added after the founder story.
+
+## Latest authorized addition: How hiring works
+
+Append the user's four steps after the founder section: Apply, Screen, Task and Offer. Keep supplied descriptions verbatim. The centered compass-like ring follows the supplied circular instrument reference and advances clockwise on native scroll, pointing to the four surrounding steps. Deep Teal provides contrast after the preceding light sections. Active progress uses Mint. Desktop keeps all four descriptions visible; mobile keeps readable active copy below the ring. Preserve prior sections and their motion. Reduced motion and short viewports expose all steps in normal flow.
 
 ## Authority and current scope
 

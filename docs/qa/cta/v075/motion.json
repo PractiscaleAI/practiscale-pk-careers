@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Page turn has intermediate poses",
+    "pass": true,
+    "poses": 47
+  },
+  {
+    "name": "Cursor interaction leaves buttons stationary",
+    "pass": true
+  },
+  {
+    "name": "Calendar responds to cursor",
+    "pass": true
+  },
+  {
+    "name": "No repeated page turn on return",
+    "pass": true
+  }
+]

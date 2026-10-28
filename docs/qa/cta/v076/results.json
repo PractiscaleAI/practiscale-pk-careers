@@ -1,0 +1,644 @@
+[
+  {
+    "name": "1440x900: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "1440x900: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1440x900: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 962.484375,
+          "right": 1188.09375
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 1200.09375,
+          "right": 1382.40625
+        }
+      ],
+      "photoScale": "matrix(1.0833, 0, 0, 1.0833, 0, 0)"
+    }
+  },
+  {
+    "name": "1440x900: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 962.484375,
+          "right": 1188.09375
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 1200.09375,
+          "right": 1382.40625
+        }
+      ],
+      "photoScale": "matrix(1.0833, 0, 0, 1.0833, 0, 0)"
+    }
+  },
+  {
+    "name": "1440x900: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 225.609375,
+        "height": 56,
+        "left": 962.484375,
+        "right": 1188.09375
+      },
+      {
+        "width": 182.3125,
+        "height": 56,
+        "left": 1200.09375,
+        "right": 1382.40625
+      }
+    ]
+  },
+  {
+    "name": "1440x900: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1440x900: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1366x600: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "1366x600: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1366x600: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 891.453125,
+          "right": 1117.0625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 1129.0625,
+          "right": 1311.375
+        }
+      ],
+      "photoScale": "matrix(1.0717, 0, 0, 1.0717, 0, 0)"
+    }
+  },
+  {
+    "name": "1366x600: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 891.453125,
+          "right": 1117.0625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 1129.0625,
+          "right": 1311.375
+        }
+      ],
+      "photoScale": "matrix(1.0717, 0, 0, 1.0717, 0, 0)"
+    }
+  },
+  {
+    "name": "1366x600: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 225.609375,
+        "height": 56,
+        "left": 891.453125,
+        "right": 1117.0625
+      },
+      {
+        "width": 182.3125,
+        "height": 56,
+        "left": 1129.0625,
+        "right": 1311.375
+      }
+    ]
+  },
+  {
+    "name": "1366x600: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1366x600: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1024x768: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "1024x768: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "1024x768: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 40.953125,
+          "right": 266.5625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 278.5625,
+          "right": 460.875
+        }
+      ],
+      "photoScale": "matrix(1.0826, 0, 0, 1.0826, 0, 0)"
+    }
+  },
+  {
+    "name": "1024x768: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 40.953125,
+          "right": 266.5625
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 278.5625,
+          "right": 460.875
+        }
+      ],
+      "photoScale": "matrix(1.0826, 0, 0, 1.0826, 0, 0)"
+    }
+  },
+  {
+    "name": "1024x768: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 225.609375,
+        "height": 56,
+        "left": 40.953125,
+        "right": 266.5625
+      },
+      {
+        "width": 182.3125,
+        "height": 56,
+        "left": 278.5625,
+        "right": 460.875
+      }
+    ]
+  },
+  {
+    "name": "1024x768: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "1024x768: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "768x1024: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "768x1024: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "768x1024: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 30.71875,
+          "right": 256.328125
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 268.328125,
+          "right": 450.640625
+        }
+      ],
+      "photoScale": "matrix(1.0975, 0, 0, 1.0975, 0, 0)"
+    }
+  },
+  {
+    "name": "768x1024: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 225.609375,
+          "height": 56,
+          "left": 30.71875,
+          "right": 256.328125
+        },
+        {
+          "width": 182.3125,
+          "height": 56,
+          "left": 268.328125,
+          "right": 450.640625
+        }
+      ],
+      "photoScale": "matrix(1.0975, 0, 0, 1.0975, 0, 0)"
+    }
+  },
+  {
+    "name": "768x1024: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 225.609375,
+        "height": 56,
+        "left": 30.71875,
+        "right": 256.328125
+      },
+      {
+        "width": 182.3125,
+        "height": 56,
+        "left": 268.328125,
+        "right": 450.640625
+      }
+    ]
+  },
+  {
+    "name": "768x1024: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "768x1024: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390x844: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "390x844: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "390x844: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        }
+      ],
+      "photoScale": "matrix(1.0874, 0, 0, 1.0874, 0, 0)"
+    }
+  },
+  {
+    "name": "390x844: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        },
+        {
+          "width": 342,
+          "height": 56,
+          "left": 24,
+          "right": 366
+        }
+      ],
+      "photoScale": "matrix(1.0874, 0, 0, 1.0874, 0, 0)"
+    }
+  },
+  {
+    "name": "390x844: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 342,
+        "height": 56,
+        "left": 24,
+        "right": 366
+      },
+      {
+        "width": 342,
+        "height": 56,
+        "left": 24,
+        "right": 366
+      }
+    ]
+  },
+  {
+    "name": "390x844: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "390x844: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: exact heading",
+    "pass": true,
+    "detail": "Your next Monday could be your first day."
+  },
+  {
+    "name": "320x568: exact destinations",
+    "pass": true
+  },
+  {
+    "name": "320x568: image loads and clips",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        }
+      ],
+      "photoScale": "matrix(1.074, 0, 0, 1.074, 0, 0)"
+    }
+  },
+  {
+    "name": "320x568: no horizontal overflow",
+    "pass": true,
+    "detail": {
+      "links": [
+        "https://wa.me/923334000600",
+        "mailto:hiring@practiscale.com",
+        "tel:+923334000600"
+      ],
+      "loaded": true,
+      "imageSize": [
+        900,
+        506
+      ],
+      "photoClip": true,
+      "overflow": false,
+      "title": "Your next Monday could be your first day.",
+      "widths": [
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        },
+        {
+          "width": 272,
+          "height": 56,
+          "left": 24,
+          "right": 296
+        }
+      ],
+      "photoScale": "matrix(1.074, 0, 0, 1.074, 0, 0)"
+    }
+  },
+  {
+    "name": "320x568: usable buttons",
+    "pass": true,
+    "detail": [
+      {
+        "width": 272,
+        "height": 56,
+        "left": 24,
+        "right": 296
+      },
+      {
+        "width": 272,
+        "height": 56,
+        "left": 24,
+        "right": 296
+      }
+    ]
+  },
+  {
+    "name": "320x568: scoped accessibility",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "320x568: no runtime errors",
+    "pass": true,
+    "detail": []
+  },
+  {
+    "name": "Reduced motion: still image",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: all actions present",
+    "pass": true
+  },
+  {
+    "name": "No JavaScript: image present",
+    "pass": true
+  }
+]
