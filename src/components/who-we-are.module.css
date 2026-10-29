@@ -158,7 +158,7 @@
   top: max(112px, calc(var(--who-panel-inset, 96px) + 32px));
   width: calc(58vw - var(--section-gutter) - 64px);
   max-width: 720px;
-  background: var(--deep);
+  background: transparent;
   color: white;
 }
 .rail[data-mode="motion"] .copy > p:first-child {
@@ -177,7 +177,7 @@
   max-width: none;
   margin: 0;
   color: var(--muted);
-  background: var(--who-neutral);
+  background: transparent;
 }
 .rail[data-mode="motion"] .backdrop {
   display: block;

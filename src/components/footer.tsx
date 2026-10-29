@@ -1,82 +1,95 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { Action, Eyebrow } from "./ui";
-import { whatsapp } from "@/lib/content";
-export function Closing() {
-  return (
-    <section className="closing wrap">
-      <div>
-        <Eyebrow>Your next chapter</Eyebrow>
-        <h2>
-          Bring the ambition.
-          <br />
-          Build the skill.
-        </h2>
-      </div>
-      <div className="closing-right">
-        <p>
-          Start with training or bring your experience. Let’s find where you
-          fit.
-        </p>
-        <Action href={whatsapp()}>Apply on WhatsApp</Action>
-      </div>
-    </section>
-  );
-}
+import FooterFilm from "./footer-film";
+import styles from "./footer.module.css";
+
+const directions =
+  "https://www.google.com/maps/search/?api=1&query=Imran+Khan+Ave%2C+Chaklala+Scheme+3%2C+Rawalpindi+46000";
+
 export default function Footer() {
   return (
-    <footer className="site-footer wrap">
-      <div className="footer-top">
-        <div>
-          <Link href="/" className="brand">
-            <img
-              src="/brand/logos/practiscale-logo-reversed.png"
-              width="363"
-              height="67"
-              alt="PractiScale. Built for growth"
-            />
-          </Link>
-          <p>
-            Pakistani talent.
-            <br />
-            Real work. Room to grow.
+    <footer id="site-footer" className={styles.footer} aria-label="Site footer">
+      <FooterFilm />
+      <div className={styles.content}>
+        <div className={styles.left}>
+          <div className={styles.introduction}>
+            <p className={styles.kicker}>PractiScale / Pakistan</p>
+            <h2>Built for growth.</h2>
+            <p>
+              Pakistani talent, trained and hired for real work on US healthcare
+              accounts.
+            </p>
+          </div>
+
+          <nav className={styles.group} aria-label="Company">
+            <h3>Company</h3>
+            <Link href="/#background-lines">Our Story and Founder</Link>
+            <Link href="/#who-we-are">How We Work</Link>
+            <Link href="/#the-problem">Why PractiScale</Link>
+            <a href="https://practiscale.com/">Who We Serve</a>
+          </nav>
+
+          <nav className={styles.group} aria-label="Opportunities">
+            <h3>Opportunities</h3>
+            <Link href="/training-programs/appointment-setter">
+              Appointment Setter Program
+            </Link>
+            <Link href="/training-programs/virtual-assistant">
+              Virtual Assistant Program
+            </Link>
+            <Link href="/jobs">All Jobs</Link>
+          </nav>
+        </div>
+
+        <Link href="/" className={styles.logo} aria-label="PractiScale home">
+          <img
+            src="/brand/logos/practiscale-logo-primary.png"
+            width="363"
+            height="67"
+            alt="PractiScale. Built for growth."
+          />
+        </Link>
+
+        <div className={styles.right}>
+          <div className={styles.group}>
+            <h3>Apply</h3>
+            <a href="https://wa.me/923334000600">WhatsApp: 0333 4000 600</a>
+            <a href="mailto:hiring@practiscale.com">
+              Email: hiring@practiscale.com
+            </a>
+            <a href="tel:+923334000600">Call: 0333 4000 600</a>
+          </div>
+
+          <div className={`${styles.group} ${styles.business}`}>
+            <h3>For US healthcare businesses</h3>
+            <p>Grow through referral partner relationships.</p>
+            <a href="https://practiscale.com/">
+              Visit practiscale.com
+              <ArrowUpRight size={16} strokeWidth={1.7} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.baseline}>
+          <div className={styles.address}>
+            <span className={styles.metaLabel}>Head office</span>
+            <p>Imran Khan Ave, Chaklala Scheme 3, Rawalpindi 46000.</p>
+            <a href={directions}>
+              Get Directions
+              <ArrowUpRight size={15} strokeWidth={1.7} aria-hidden="true" />
+            </a>
+          </div>
+          <div className={styles.locations}>
+            <span className={styles.metaLabel}>Work locations</span>
+            <p>
+              Rawalpindi <span aria-hidden="true">|</span> Islamabad{" "}
+              <span aria-hidden="true">|</span> Remote
+            </p>
+          </div>
+          <p className={styles.copyright}>
+            © 2026 PractiScale. All rights reserved.
           </p>
         </div>
-        <div>
-          <h2>Explore</h2>
-          <Link href="/about/our-story">Our story</Link>
-          <Link href="/about/how-we-work">How we work</Link>
-          <Link href="/about/why-practiscale">Why PractiScale</Link>
-          <Link href="/who-we-serve">Who we serve</Link>
-        </div>
-        <div>
-          <h2>Your next step</h2>
-          <Link href="/training-programs/appointment-setter">
-            Appointment Setter
-          </Link>
-          <Link href="/training-programs/virtual-assistant">
-            Virtual Assistant
-          </Link>
-          <Link href="/jobs">Career opportunities</Link>
-        </div>
-        <div>
-          <h2>Talk to us</h2>
-          <a href="mailto:hiring@practiscale.com">hiring@practiscale.com</a>
-          <a href="tel:+923334000600">+92 333 4000 600</a>
-          <p className="footer-address">
-            Imran Khan Ave, Chaklala Scheme 3,
-            <br />
-            Rawalpindi 46000, Pakistan.
-          </p>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} PractiScale</span>
-        <span>Built for growth.</span>
-        <a href="https://practiscale.com/">
-          For US healthcare businesses
-          <ArrowUpRight size={15} aria-hidden="true" />
-        </a>
       </div>
     </footer>
   );

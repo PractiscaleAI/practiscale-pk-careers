@@ -9,14 +9,6 @@
   scroll-margin-top: 100px;
   border-radius: 28px 28px 0 0;
 }
-.section::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 5px;
-  background: linear-gradient(90deg, #20bfa8, #0d77a9);
-  opacity: 0.45;
-}
 .inner {
   position: relative;
   z-index: 1;

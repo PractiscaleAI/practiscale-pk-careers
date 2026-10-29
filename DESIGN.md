@@ -1,5 +1,53 @@
 # PractiScale design context
 
+## FAQ sculpture alignment, revision 1.05
+
+The FAQ diamond floor and circular tray share one visual center. On desktop, adjust the floor position and its shadow together; keep the sculpture's clearance below the heading. On phone widths, scale the complete Three.js stage so the question mark, dot and tray keep their proportions within the diamond. Match the non-WebGL fallback scale. Preserve the scroll-driven turn, descent, floor closure and immediate question handoff, with no changes to other sections.
+
+## FAQ question handoff, revision 1.04
+
+As the FAQ sculpture and circular tray sink into the diamond floor, the floor closes and the first real question row enters the same viewport. Overlap the natural-flow answer list with the final portion of the sticky introduction and tie its reveal directly to the floor closure, so the two crossfade without an empty beat. Center the list in a restrained reading column so its first row visually replaces the centered sculpture. Do not duplicate the first answer as an overlay. Preserve the seven-row reading order and the reduced-motion and no-JavaScript fallbacks.
+
+## FAQ floor closure, revision 1.03
+
+The FAQ question mark completes its vertical-axis turn while the circular tray remains underneath it. The entire mark and tray then descend into the pale diamond-shaped floor as one object. Once both are inside, the diamond floor and its small central shadow close smoothly to the middle. These movements are driven by the same native scroll progress and reverse when scrolling up. This refines the plinth motion in revision 1.02; the question list, copy, palette, and other homepage sections remain as specified there.
+
+## Reference-led FAQ scene, revision 1.02
+
+Use the supplied desktop and phone recording as the FAQ's sequence reference. Replace the earlier split heading/list and white answer cards with one pale brand-mint surface. Its first viewport centers the candidate heading over a solid bevelled deep-teal question mark and a restrained circular plinth on a subtle diamond floor. Native scroll gives the complete mark and dot one full turn around their vertical axis while the floor stays still, then lowers the mark through the circular plinth and diamond-floor scene. The intro uses enough native scroll distance for this turn and descent to read smoothly on desktop and phone, and the full-width question list enters after it. The list consists of seven fine-rule rows with a number, question, and one expanded answer. As a row reaches the reading line, its answer opens and the previous one closes, including when scrolling back or jumping quickly. Do not add decorative intro footers, list summaries, or diamond markers. Use the approved FAQ content and real contact links. Do not reintroduce the earlier pinned list, answer cards, progress bar, category sidebar, or vertical timeline. Keep the existing no-JavaScript and reduced-motion reading fallbacks, and load the 3D code only near this section.
+
+## Sculptural FAQ introduction, revision 0.99
+
+The FAQ remains a light neutral section after the CTA and before the footer. A full-viewport introduction centers the approved candidate heading above a genuine 3D deep-teal question mark on a circular plinth. Mint is reserved for the thin edge and seven small station details. Scroll turns the sculpture in place and carries the visitor into the answers, without a separate button, an auto-playing film, or a permanently running render loop. The seven supplied answers then advance from native scroll in the existing measured phone, tablet, and desktop layouts. Show one answer at a time with up to two upcoming titles where space permits; preserve the reverse journey and the no-JavaScript, reduced-motion, and short-window reading fallbacks. A static sculptural fallback appears immediately while the 3D code loads. This adapts the supplied desktop and phone reference's spatial transition and sequence to PractiScale's 60/30/10 palette and typography; it changes only the FAQ.
+
+## Light FAQ scroll sequence, revision 0.98
+
+The FAQ uses the established neutral #E6ECEC, Deep Teal, mint and blue palette. Its light neutral surface must read distinctly from the Fog final CTA immediately above; the active answer stays white. Keep the seven approved questions and answers, the candidate heading, and the section's position before the footer. The supplied FAQ image informs a clear vertical list, while its crossed-out category sidebar is excluded. PractiScale's section typography, fine rules and one active answer create the visual language. Do not use a vertical timeline, connecting line or marker dots beside the questions. The compact horizontal progress indicator and 01/07 reading status follow native scroll with a short catch-up; a quick scroll goes directly to the latest question, and reverse scroll restores earlier answers. Questions are informational rows, not click targets. On phones the active answer is followed by one or two upcoming question titles according to the measured available height, so 100% zoom has a balanced scroll scene; advancing reveals the next title at the end of that queue. Tablets use the full seven-row list when it fits and a three-row queue when it does not. Short desktop windows show one active answer. Genuinely short screens, reduced motion and no JavaScript show every answer in reading order. In guided mode a single low-opacity question mark is clipped inside the active white answer surface, balancing its text; the heading stays clear. Normal-flow fallbacks retain a pale heading motif. The mark must not reduce answer contrast or intercept interaction. This supersedes earlier dark split and orbit FAQ treatments without changing any other section.
+
+## Reference footer gaze and Who we are split, revision 0.93
+
+The homepage ends with a PractiScale footer after the FAQ. Keep the supplied company, opportunities, application, US healthcare, office, locations and copyright copy as real links where destinations exist. The user's studio-footer reference is defined by one full-screen, character-led video and cursor-driven eye direction. Use the supplied reference clip and its calibrated frame table; desktop pointer direction selects recorded eye frames while the clip stays paused, and tablet or phone plays the clip only when visible. Preserve the approved PractiScale logo, site typography, and real destinations. Mobile content stacks above the full-bleed film; allow clearance for the floating navigation at narrow widths. No new film generation is needed. The Who we are diagonal remains one smooth line at rest: its heading and description have transparent backgrounds so they cannot create rectangular notches across the opening split. Preserve the accepted zoom and panel motion.
+
+## FAQ answer motif, revision 0.91
+
+The FAQ's question mark belongs in the white answer panel at desktop, tablet and phone widths. Scale it as a pale mint background motif, following the testimonial cards' visual balance. Keep the answer text and links above it at full contrast; the motif must not intercept interaction. The dark teal heading area stays clear. Preserve the scroll-driven seven-step sequence and normal-flow fallbacks.
+
+## FAQ scroll-only route, revision 0.90
+
+The enhanced FAQ advances only from native page scrolling. Remove desktop topic buttons, the mobile question picker, Previous/Next controls, the skip link, hint and View all action. Center the now-unlabelled desktop ring; keep the mobile arc and use a taller teal panel to balance the answer without the controls. One question and answer is visible at each scroll position. Short-screen, reduced-motion and no-JavaScript fallbacks expose all seven answers in normal flow.
+
+## FAQ control reduction, revision 0.89
+
+Remove the FAQ skip link, scroll hint and View all questions action. Desktop keeps direct ring topic selection; guided mobile keeps its concise question picker and Previous/Next controls. Reduced-motion and short-screen layouts still expose every answer in normal reading flow. Do not leave an empty desktop control row or a blank gap where removed controls appeared.
+
+## Desktop route clarity, revision 0.88
+
+Keep the desktop FAQ marker visibly separate from its selected topic pill; the labels follow the ring without touching the marker. The final CTA's solid arc must reach the entire visible guide on every desktop width. Measure the rendered SVG route after its responsive stretch, and recalculate that length on resize so the reveal reflects actual pixels rather than unscaled viewBox units. Preserve native scroll progress and reverse behavior.
+
+## FAQ phone alignment, revision 0.87
+
+The guided phone layout uses the exact 27/73 viewport split, without the normal-flow visual panel's 280px minimum height. Anchor every answer at the same position beneath the white panel edge so the question counter never crosses into the teal panel. Keep enough room for the longest answer before the controls and use concise topic names in the native question picker so its open menu fits a narrow phone. Preserve the seven full questions and answers, scroll progression, and normal-flow fallbacks.
+
 ## Hiring section mobile dial, revision 0.86
 
 On phone-size guided views, keep only the four-station circular timeline and place the active step's supplied description inside its center. The duplicate numbered description block below the dial is visually hidden but remains in semantic list order for assistive technology. Compact the heading, dial and spacing so the guided scene fits a 360x640 viewport. At genuinely short heights, reduced motion, or without JavaScript, release the pin and show all four descriptions as a simple vertical reading list. Preserve the desktop and tablet timeline choreography.
@@ -141,7 +189,6 @@ This supersedes the earlier contained expansion and letterbox behavior. Keep the
 
 Separate the pale thumbnail from the section with a restrained two-layer charcoal shadow and a 1px neutral outline, following its exact 24px rounded bounds. Place the shadow on a separate, non-interactive layer below the preview so the video's clipping cannot cut it off. Fade depth with expansion progress and remove it fully at viewport playback. Native fallback players retain the same understated depth. Preserve all supplied artwork and the play button below it.
 
-
 ## Who we are on mobile, revision 0.66
 
 The supplied portrait office film enables this section below 1024px. Keep one semantic heading and the full supplied paragraph in normal reading flow above the sticky viewport, so short phones do not squeeze text around a miniature film. The portrait preview is exactly centered within the inset rounded teal/soft-neutral diagonal stage, expands with the panels opening, and only then advances through the film. Keep the complete 9:16 film visible at full size; use neutral black letterboxing on mismatched device ratios rather than cropping the office or final vision text. Native page scrolling reverses the sequence. The desktop composition and timeline remain unchanged. Reduced motion, Save Data and failure release to normal video controls.
@@ -161,4 +208,3 @@ For portrait viewports up to 1023px, use the dedicated 941x1672 founder artwork 
 ## Founder fast-scroll checkpoint 0.80
 
 A first fast wheel or touch pass through the enhanced founder scene settles once on the fully expanded film, where muted playback can start. The next gesture leaves normally; do not require the visitor to watch the full film. A visitor who already dwelled at full view or used the Watch action is not pulled back. Direct hash navigation, reduced motion, and Save Data bypass this checkpoint. Settle direct #apply links after the earlier scroll scenes finish measuring so the final CTA is actually visible. Keep the accepted poster expansion, playback handoff, reverse pause, and all adjacent scenes unchanged.
-
