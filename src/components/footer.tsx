@@ -1,15 +1,14 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import FooterFilm from "./footer-film";
+import FooterGuide from "./footer-guide";
 import styles from "./footer.module.css";
 
-const directions =
-  "https://www.google.com/maps/search/?api=1&query=Imran+Khan+Ave%2C+Chaklala+Scheme+3%2C+Rawalpindi+46000";
+const directions = "https://maps.app.goo.gl/Rw8dfvA1SNsVvoW26";
 
 export default function Footer() {
   return (
     <footer id="site-footer" className={styles.footer} aria-label="Site footer">
-      <FooterFilm />
+      <FooterGuide />
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.introduction}>
@@ -31,24 +30,15 @@ export default function Footer() {
 
           <nav className={styles.group} aria-label="Opportunities">
             <h3>Opportunities</h3>
-            <Link href="/training-programs/appointment-setter">
+            <Link href="#">
               Appointment Setter Program
             </Link>
-            <Link href="/training-programs/virtual-assistant">
+            <Link href="#">
               Virtual Assistant Program
             </Link>
-            <Link href="/jobs">All Jobs</Link>
+            <Link href="#">All Jobs</Link>
           </nav>
         </div>
-
-        <Link href="/" className={styles.logo} aria-label="PractiScale home">
-          <img
-            src="/brand/logos/practiscale-logo-primary.png"
-            width="363"
-            height="67"
-            alt="PractiScale. Built for growth."
-          />
-        </Link>
 
         <div className={styles.right}>
           <div className={styles.group}>
