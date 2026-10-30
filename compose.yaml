@@ -1,0 +1,23 @@
+name: practiscale
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SITE_URL: ${SITE_URL:-https://practiscale.pk}
+    image: practiscale-pk:local
+    environment:
+      SITE_URL: ${SITE_URL:-https://practiscale.pk}
+    ports:
+      - "127.0.0.1:3000:3000"
+    init: true
+    read_only: true
+    tmpfs:
+      - /app/.next/cache:uid=1001,gid=1001,mode=1770
+      - /tmp:uid=1001,gid=1001,mode=1770
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

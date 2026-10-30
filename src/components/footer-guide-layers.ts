@@ -7,7 +7,8 @@ const PLANE_WIDTH = 4.73;
 const PLANE_HEIGHT = 5.7;
 const FULL = { x: 0, y: 0, width: SOURCE_WIDTH, height: SOURCE_HEIGHT };
 const HEAD = { x: 380, y: 28, width: 425, height: 360 };
-const EYE_AREA = { x: 515, y: 160, width: 200, height: 128 };
+const VISOR = { x: 468, y: 96, width: 284, height: 238 };
+const EYE_AREA = { x: 505, y: 150, width: 235, height: 160 };
 const EYES = [
   { x: 564, y: 218, rx: 24, ry: 37 },
   { x: 675, y: 242, rx: 24, ry: 37 },
@@ -22,7 +23,11 @@ function makeCanvas(crop: Crop) {
   return canvas;
 }
 
-function drawCrop(context: CanvasRenderingContext2D, image: HTMLImageElement, crop: Crop) {
+function drawCrop(
+  context: CanvasRenderingContext2D,
+  image: HTMLImageElement,
+  crop: Crop,
+) {
   context.setTransform(SCALE, 0, 0, SCALE, -crop.x * SCALE, -crop.y * SCALE);
   context.drawImage(image, 0, 0, SOURCE_WIDTH, SOURCE_HEIGHT);
 }
@@ -48,6 +53,18 @@ function headOutline() {
   return path;
 }
 
+function visorInterior() {
+  // Stay inside the white rim, which remains on the head layer.
+  const path = new Path2D();
+  path.moveTo(543, 113);
+  path.bezierCurveTo(602, 101, 685, 130, 718, 174);
+  path.bezierCurveTo(746, 215, 720, 293, 678, 317);
+  path.bezierCurveTo(623, 331, 529, 297, 495, 266);
+  path.bezierCurveTo(469, 239, 482, 137, 543, 113);
+  path.closePath();
+  return path;
+}
+
 function textureFrom(canvas: HTMLCanvasElement) {
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
@@ -61,58 +78,83 @@ export function makeGuideLayers(image: HTMLImageElement) {
   const bodyContext = bodyCanvas.getContext("2d", { willReadFrequently: true });
   const headCanvas = makeCanvas(HEAD);
   const headContext = headCanvas.getContext("2d", { willReadFrequently: true });
+  const visorCanvas = makeCanvas(VISOR);
+  const visorContext = visorCanvas.getContext("2d");
   const eyesCanvas = makeCanvas(EYE_AREA);
   const eyesContext = eyesCanvas.getContext("2d", { willReadFrequently: true });
-  if (!bodyContext || !headContext || !eyesContext) {
+  if (!bodyContext || !headContext || !visorContext || !eyesContext) {
     throw new Error("The mascot canvas could not be created.");
   }
 
   drawCrop(bodyContext, image, FULL);
   bodyContext.globalCompositeOperation = "destination-out";
+  bodyContext.save();
+  bodyContext.beginPath();
+  bodyContext.moveTo(0, 0);
+  bodyContext.lineTo(SOURCE_WIDTH, 0);
+  bodyContext.lineTo(SOURCE_WIDTH, 380);
+  bodyContext.lineTo(650, 380);
+  bodyContext.lineTo(610, 315);
+  bodyContext.lineTo(0, 315);
+  bodyContext.closePath();
+  bodyContext.clip();
   bodyContext.fill(headPath);
+  bodyContext.restore();
+  // Keep the photographed neck instead of painting an artificial bridge.
 
   drawCrop(headContext, image, HEAD);
   headContext.globalCompositeOperation = "destination-in";
   headContext.fill(headPath);
   headContext.globalCompositeOperation = "source-over";
 
-  // Reconstruct the small face areas behind the original eyes from the
-  // neighboring face pixels. This avoids a visible duplicate when eyes move.
-  const headPixels = headContext.getImageData(0, 0, headCanvas.width, headCanvas.height);
-  const original = new Uint8ClampedArray(headPixels.data);
-  const repaired = headPixels.data;
-  for (const eye of EYES) {
-    const centerX = (eye.x - HEAD.x) * SCALE;
-    const centerY = (eye.y - HEAD.y) * SCALE;
-    const radiusX = eye.rx * 1.55 * SCALE;
-    const radiusY = eye.ry * 1.35 * SCALE;
-    const left = Math.round(centerX - radiusX - 3);
-    const right = Math.round(centerX + radiusX + 3);
-    for (let y = Math.floor(centerY - radiusY); y <= centerY + radiusY; y++) {
-      for (let x = Math.floor(centerX - radiusX); x <= centerX + radiusX; x++) {
-        const dx = (x - centerX) / radiusX;
-        const dy = (y - centerY) / radiusY;
-        const distance = Math.hypot(dx, dy);
-        if (distance >= 1) continue;
-        const weight = 1 - THREE.MathUtils.smoothstep(distance, 0.68, 1);
-        const index = (y * headCanvas.width + x) * 4;
-        const leftIndex = (y * headCanvas.width + left) * 4;
-        const rightIndex = (y * headCanvas.width + right) * 4;
-        const mix = (x - left) / (right - left);
-        for (let channel = 0; channel < 3; channel++) {
-          const face = original[leftIndex + channel] * (1 - mix) +
-            original[rightIndex + channel] * mix;
-          repaired[index + channel] = Math.round(
-            original[index + channel] * (1 - weight) + face * weight,
-          );
-        }
-      }
-    }
-  }
-  headContext.putImageData(headPixels, 0, 0);
+  // The source has eye shadows baked into its visor. A clean shaded surface
+  // behind the separately moving eyes avoids leaving those shadows behind.
+  // Keep the original helmet shell, rim and extracted luminous eyes intact.
+  visorContext.setTransform(
+    SCALE,
+    0,
+    0,
+    SCALE,
+    -VISOR.x * SCALE,
+    -VISOR.y * SCALE,
+  );
+  visorContext.save();
+  visorContext.clip(visorInterior());
+  const faceShade = visorContext.createLinearGradient(565, 100, 620, 330);
+  faceShade.addColorStop(0, "#0a6470");
+  faceShade.addColorStop(0.48, "#00545a");
+  faceShade.addColorStop(1, "#003e42");
+  visorContext.fillStyle = faceShade;
+  visorContext.fillRect(VISOR.x, VISOR.y, VISOR.width, VISOR.height);
+  const faceLight = visorContext.createRadialGradient(
+    644,
+    143,
+    4,
+    641,
+    153,
+    150,
+  );
+  faceLight.addColorStop(0, "rgba(112, 184, 196, 0.54)");
+  faceLight.addColorStop(0.55, "rgba(56, 139, 151, 0.18)");
+  faceLight.addColorStop(1, "rgba(3, 80, 87, 0)");
+  visorContext.fillStyle = faceLight;
+  visorContext.fillRect(VISOR.x, VISOR.y, VISOR.width, VISOR.height);
+  visorContext.restore();
+
+  // Remove the duplicate face from the shell. Only the single movable visor
+  // carries the face gradient, with a dark safety backing beneath its edges.
+  headContext.save();
+  headContext.fillStyle = "#073f43";
+  headContext.fill(visorInterior());
+  headContext.restore();
 
   drawCrop(eyesContext, image, EYE_AREA);
-  const pixels = eyesContext.getImageData(0, 0, eyesCanvas.width, eyesCanvas.height);
+  const pixels = eyesContext.getImageData(
+    0,
+    0,
+    eyesCanvas.width,
+    eyesCanvas.height,
+  );
   const data = pixels.data;
   for (let y = 0; y < eyesCanvas.height; y++) {
     for (let x = 0; x < eyesCanvas.width; x++) {
@@ -128,8 +170,15 @@ export function makeGuideLayers(image: HTMLImageElement) {
       }
       const green = data[index + 1];
       const red = data[index];
-      const glow = Math.min(1, Math.max(0, (green - 62) / 90));
-      data[index + 3] = Math.round(data[index + 3] * glow * (green > red * 1.25 ? 1 : 0));
+      const blue = data[index + 2];
+      // The teal visor is bright enough to pass a plain green threshold.
+      // Mint eye light has both greater brightness and a green-blue split.
+      const glow =
+        THREE.MathUtils.smoothstep(green, 130, 215) *
+        THREE.MathUtils.smoothstep(green - blue, 5, 30);
+      data[index + 3] = Math.round(
+        data[index + 3] * glow * (green > red * 1.25 ? 1 : 0),
+      );
     }
   }
   eyesContext.putImageData(pixels, 0, 0);
@@ -137,9 +186,15 @@ export function makeGuideLayers(image: HTMLImageElement) {
   return {
     body: textureFrom(bodyCanvas),
     head: textureFrom(headCanvas),
+    visor: textureFrom(visorCanvas),
     eyes: textureFrom(eyesCanvas),
     bodyPlacement: placement(FULL),
     headPlacement: placement(HEAD),
+    visorPlacement: placement(VISOR),
     eyePlacement: placement(EYE_AREA),
+    neckPivot: {
+      x: (570 / SOURCE_WIDTH - 0.5) * PLANE_WIDTH,
+      y: (0.5 - 348 / SOURCE_HEIGHT) * PLANE_HEIGHT,
+    },
   };
 }

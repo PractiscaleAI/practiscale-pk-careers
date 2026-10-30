@@ -30,12 +30,8 @@ export default function Footer() {
 
           <nav className={styles.group} aria-label="Opportunities">
             <h3>Opportunities</h3>
-            <Link href="#">
-              Appointment Setter Program
-            </Link>
-            <Link href="#">
-              Virtual Assistant Program
-            </Link>
+            <Link href="#">Appointment Setter Program</Link>
+            <Link href="#">Virtual Assistant Program</Link>
             <Link href="#">All Jobs</Link>
           </nav>
         </div>
@@ -43,7 +39,14 @@ export default function Footer() {
         <div className={styles.right}>
           <div className={styles.group}>
             <h3>Apply</h3>
-            <a href="https://wa.me/923334000600">WhatsApp: 0333 4000 600</a>
+            <a
+              className={styles.applyPrimary}
+              href="https://wa.me/923334000600"
+              aria-label="Apply on WhatsApp at 0333 4000 600"
+            >
+              Apply on WhatsApp
+              <ArrowUpRight size={16} strokeWidth={1.7} aria-hidden="true" />
+            </a>
             <a href="mailto:hiring@practiscale.com">
               Email: hiring@practiscale.com
             </a>

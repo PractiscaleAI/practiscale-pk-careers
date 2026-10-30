@@ -1,5 +1,11 @@
 # PractiScale design context
 
+## Footer hierarchy and browser zoom, revision 1.06
+
+The footer keeps its approved PractiScale mascot and three-column desktop composition. The mascot is slightly smaller so the actions retain visual priority. Apply on WhatsApp is the primary footer action; email, phone and company links stay legible without a second competing accent. Tablet content uses two columns where each column can hold the action without wrapping, then stacks at narrower widths. On phones the mascot appears before the office and legal details so it belongs to the composition instead of following the copyright. Preserve the existing bounded gaze interaction and its touch and reduced-motion stills.
+
+Browser zoom stays enabled for accessibility. When zoom or a comparable desktop viewport change reflows the long scroll scenes, retain the section at the center of the reader's view. Only correct a jump into another section, and relinquish that correction immediately on real scroll, touch, keyboard navigation or a new hash. The founder fast-scroll checkpoint must ignore zoom gestures and resize-induced exits. Keep all existing scroll choreography and the first fast-scroll checkpoint for normal navigation.
+
 ## FAQ sculpture alignment, revision 1.05
 
 The FAQ diamond floor and circular tray share one visual center. On desktop, adjust the floor position and its shadow together; keep the sculpture's clearance below the heading. On phone widths, scale the complete Three.js stage so the question mark, dot and tray keep their proportions within the diamond. Match the non-WebGL fallback scale. Preserve the scroll-driven turn, descent, floor closure and immediate question handoff, with no changes to other sections.

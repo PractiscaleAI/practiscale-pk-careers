@@ -1,0 +1,24 @@
+# Send only the application inputs to the Docker builder.
+**
+!package.json
+!package-lock.json
+!next.config.ts
+!postcss.config.mjs
+!tsconfig.json
+!next-env.d.ts
+!src/
+!src/**
+!public/
+!public/**
+
+# Never send credentials, even if one is placed inside an included directory.
+**/.env*
+**/.npmrc
+**/.pypirc
+**/*.pem
+**/*.key
+**/*.p8
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore

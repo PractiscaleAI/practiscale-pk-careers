@@ -3,10 +3,24 @@ node_modules/
 out/
 .env*
 !.env.example
+.vercel/
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.jks
+*.keystore
+.npmrc
+.pypirc
 playwright-report/
 test-results/
 *.tsbuildinfo
 
-# Protected local source, web renditions are in public/media/founder/
-assets/source/founder/*.mp4
-assets/source/who-we-are/*.mp4
+# Protected local source media. Only approved web renditions belong in public/.
+assets/source/**/*.mp4
+assets/source/**/*.mov
+assets/source/**/*.mkv
+assets/source/**/*.avi
+assets/source/**/*.wav

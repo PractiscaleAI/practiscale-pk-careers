@@ -14,6 +14,7 @@ import HiringSection from "@/components/hiring-section";
 import FaqSection from "@/components/faq-section";
 import FinalCTA from "@/components/final-cta";
 import Footer from "@/components/footer";
+import ViewportPositionKeeper from "@/components/viewport-position-keeper";
 import { Action, Eyebrow } from "@/components/ui";
 export const metadata: Metadata = {
   title: "PractiScale | Build a Skill. Build Your Career.",
@@ -104,6 +105,7 @@ export default function Home() {
         <FaqSection />
       </main>
       <Footer />
+      <ViewportPositionKeeper />
     </>
   );
 }

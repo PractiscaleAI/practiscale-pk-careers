@@ -45,6 +45,8 @@ export function mountFounderFilm(
   let restorePosition: (() => void) | undefined;
   let checkpointOffered = false;
   let recentHumanScroll = 0;
+  let viewportWidth = innerWidth;
+  let viewportRatio = devicePixelRatio || 1;
   let checkpointTimer: ReturnType<typeof setTimeout> | undefined;
   let noticeTimer: ReturnType<typeof setTimeout> | undefined;
   function checkpointTarget() {
@@ -452,6 +454,9 @@ export function mountFounderFilm(
   window.addEventListener(
     "wheel",
     (event) => {
+      // Ctrl or Command + wheel belongs to browser zoom, never to the film's
+      // fast-scroll checkpoint.
+      if (event.ctrlKey || event.metaKey) return;
       const target = checkpointTarget();
       const trigger = tween?.scrollTrigger;
       if (
@@ -551,6 +556,14 @@ export function mountFounderFilm(
   );
   let timer: ReturnType<typeof setTimeout>;
   const resize = () => {
+    const nextRatio = devicePixelRatio || 1;
+    if (
+      innerWidth !== viewportWidth ||
+      Math.abs(nextRatio - viewportRatio) > 0.01
+    )
+      recentHumanScroll = -Infinity;
+    viewportWidth = innerWidth;
+    viewportRatio = nextRatio;
     clearTimeout(timer);
     timer = setTimeout(() => {
       setup();

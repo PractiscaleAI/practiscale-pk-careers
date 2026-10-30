@@ -8,6 +8,7 @@ Use Node.js 22.12 or newer (Node 24 recommended). On Windows use npm.cmd if Powe
 - npm run dev: start local development.
 - npm run typecheck: verify TypeScript.
 - npm run build, then npm start: production build and local preview.
+- Docker Desktop: see `docs/docker.md` for the optional production-style container preview.
 - npm run test:browser and npm run test:motion: browser checks against localhost:3000 using installed Chrome. Override CHROME_PATH if needed.
 - npm run test:problem-scroll (legacy alias test:carousel): verify brand-coloured artwork, panel joins, desktop split/flip/fan, native mobile scroll stack, reverse motion, exact copy, absence of arrows, accessibility and fallbacks.
 - npm run test:career-section: verify exactly two career cards, the viewport-height horizontal scroll exchange, staggered text, persistent particles, exact copy/links, keyboard navigation, route changes, responsive/reduced-motion/WebGL/no-JavaScript fallbacks and accessibility.
@@ -18,7 +19,7 @@ Use Node.js 22.12 or newer (Node 24 recommended). On Windows use npm.cmd if Powe
 
 If the local Turbopack CSS worker exits before connecting on Windows, `npm.cmd run build -- --webpack` uses the supported build fallback. The default build script remains unchanged.
 
-PRD and TRD in docs describe current scope and implementation. Update them before adding new scope. Media prompts and provenance are in docs/hero-generation.json and docs/MEDIA.md. Former page drafts are retained as text outside active routes. SITE_URL is configurable; this site has not been deployed.
+PRD and TRD in docs describe the original scope and implementation. Media prompts and provenance are in docs/hero-generation.json and docs/MEDIA.md. Former page drafts are retained as text outside active routes. SITE_URL is configurable. The live practiscale.pk site is deployed on Vercel; the Docker preview is a separate local run option.
 
 Career-card photography uses the built-in image generation tool. Prompts and provenance are recorded in docs/career-image-prompts.json. Responsive local WebP assets are in public/media/career-problems/. These generated career scenes illustrate the problems; they do not represent testimonials or identified employees. No Higgsfield credits were used for this section.
 
