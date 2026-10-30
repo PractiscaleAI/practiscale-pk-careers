@@ -11,6 +11,7 @@ import {
 } from "@/lib/career-content";
 import { createCareerWorld, type CareerWorld } from "./career-world";
 import { loadCareerBrain } from "@/lib/career-brain";
+import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 import styles from "./career-section.module.css";
 
 export default function CareerStage({ children }: { children: ReactNode }) {
@@ -65,7 +66,10 @@ export default function CareerStage({ children }: { children: ReactNode }) {
         card.style.removeProperty("transform");
         card.style.removeProperty("visibility");
       });
-      texts.forEach((text) => text.style.removeProperty("transform"));
+      texts.forEach((text) => {
+        text.style.removeProperty("transform");
+        text.style.removeProperty("opacity");
+      });
       visual.style.removeProperty("transform");
       [
         "--career-stage-height",
@@ -263,11 +267,12 @@ export default function CareerStage({ children }: { children: ReactNode }) {
       const paint = (progress: number) => {
         const frame = careerFrame(progress);
         const swap = smooth(frame.exchange);
+        const stackedSwap = smooth((frame.exchange - 0.43) / 0.14);
         const rise = smooth((frame.exchange - 0.16) / 0.72);
         if (stacked) {
           visual.style.transform = "translate3d(0,0,0)";
-          texts[0].style.transform = `translate3d(${-(stageWidth + gap) * swap}px,0,0)`;
-          texts[1].style.transform = `translate3d(${(stageWidth + gap) * (1 - swap)}px,0,0)`;
+          texts[0].style.transform = `translate3d(${-(stageWidth + gap) * stackedSwap}px,0,0)`;
+          texts[1].style.transform = `translate3d(${(stageWidth + gap) * (1 - stackedSwap)}px,0,0)`;
         } else {
           visual.style.transform = `translate3d(${visualOffset * (1 - swap)}px,0,0)`;
           texts[1].style.transform = `translate3d(0,${panelHeight * (1 - rise)}px,0)`;
@@ -278,6 +283,13 @@ export default function CareerStage({ children }: { children: ReactNode }) {
           card.inert = index !== frame.chapter || readable < 0.85;
           card.setAttribute("aria-hidden", String(index !== frame.chapter));
           groups[index].forEach((group, order) => {
+            if (stacked) {
+              // The whole card is the moving unit on narrow screens. Keep its
+              // type opaque while it slides so neither half turns ghostly.
+              group.style.transform = "translate3d(0,0,0)";
+              group.style.opacity = "1";
+              return;
+            }
             const incoming = smooth(
               (frame.exchange - 0.22 - order * 0.04) / (0.7 - order * 0.04),
             );
@@ -309,6 +321,19 @@ export default function CareerStage({ children }: { children: ReactNode }) {
             end: `+=${travel}`,
             scrub: careerMotion.scrub,
             invalidateOnRefresh: true,
+            onRefresh: (self) => {
+              // A viewport resize can leave the browser at the same scrollY
+              // while upstream pinned scenes change height. Repaint from the
+              // final trigger bounds after the refresh completes.
+              requestAnimationFrame(() => {
+                if (disposed || timeline?.scrollTrigger !== self) return;
+                const position = clamp(
+                  (scrollY - self.start) / Math.max(1, self.end - self.start),
+                );
+                timeline.progress(position, true);
+                paint(position);
+              });
+            },
           },
         });
         timeline.to(model, {
@@ -366,6 +391,11 @@ export default function CareerStage({ children }: { children: ReactNode }) {
       [...text.children].forEach((child) => resize.observe(child)),
     );
     const main = section.closest("main");
+    // The company film above this section expands after first paint. Keep a
+    // requested career deep link aligned through that measured height change.
+    const removeAnchor = mountSceneAnchor(section, {
+      hashes: ["#career-paths", "#career-heading"],
+    });
     const intro = new MutationObserver(() => {
       if (!main?.inert) schedule();
     });
@@ -386,6 +416,7 @@ export default function CareerStage({ children }: { children: ReactNode }) {
       intersection.disconnect();
       resize.disconnect();
       intro.disconnect();
+      removeAnchor();
       rail.removeEventListener("click", click);
       removeEventListener("resize", schedule);
       reduced.removeEventListener("change", schedule);

@@ -392,10 +392,14 @@
   .section[data-scroll="true"] .steps {
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 130px;
+    min-height: 88px;
     max-width: 440px;
     text-align: center;
     gap: 0;
+  }
+  .section[data-scroll="true"] .stepTop,
+  .section[data-scroll="true"] .step::before {
+    display: none;
   }
   .section[data-scroll="true"] .step {
     grid-area: 1 / 1;

@@ -129,7 +129,10 @@ export function mountFaqSculpture(canvas: HTMLCanvasElement): Sculpture {
     const p = THREE.MathUtils.clamp(progress, 0, 1);
     const turnProgress = THREE.MathUtils.clamp((p - 0.02) / 0.64, 0, 1);
     const turn = turnProgress * turnProgress * (3 - 2 * turnProgress);
-    const sinkProgress = THREE.MathUtils.clamp((p - 0.52) / 0.31, 0, 1);
+    const sinkProgress =
+      canvas.clientWidth < 440
+        ? THREE.MathUtils.clamp((p - 0.5) / 0.2, 0, 1)
+        : THREE.MathUtils.clamp((p - 0.52) / 0.31, 0, 1);
     const sink = sinkProgress * sinkProgress * (3 - 2 * sinkProgress);
     stage.rotation.y = -0.1 + pointerX * 0.035;
     stage.position.y = -sink * 3.6;

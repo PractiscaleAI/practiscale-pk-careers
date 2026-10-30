@@ -1,6 +1,7 @@
 const { chromium } = require("@playwright/test");
 const { default: AxeBuilder } = require("@axe-core/playwright");
 const fs = require("fs");
+const sharp = require("sharp");
 (async () => {
   const browser = await chromium.launch({
     executablePath:
@@ -33,8 +34,24 @@ const fs = require("fs");
       .waitFor({ state: "hidden", timeout: 12000 });
     check("Homepage returns 200", r.status() === 200);
     check(
-      "Hero, problem, company film, career paths, laptop earnings and testimonials",
-      (await page.locator("main>section").count()) === 6 &&
+      "Approved homepage sections and content",
+      JSON.stringify(
+        await page.locator("main>section").evaluateAll((sections) =>
+          sections.map((section) => section.id || section.className),
+        ),
+      ) ===
+        JSON.stringify([
+          "hero-scroll",
+          "the-problem",
+          "who-we-are",
+          "career-paths",
+          "the-proof",
+          "testimonials",
+          "background-lines",
+          "how-hiring-works",
+          "apply",
+          "questions",
+        ]) &&
         (await page
           .locator("#testimonials [data-testimonial-card]")
           .count()) === 4 &&
@@ -48,8 +65,9 @@ const fs = require("fs");
         (await page.locator("#career-paths article").count()) === 2,
     );
     check(
-      "No footer or unrequested homepage sections",
-      (await page.locator("footer,.intro-section,.path-section").count()) === 0,
+      "One site footer and no unrequested homepage sections",
+      (await page.locator("footer#site-footer").count()) === 1 &&
+        (await page.locator(".intro-section,.path-section").count()) === 0,
     );
     check("One H1", (await page.locator("h1").count()) === 1);
     check(
@@ -85,6 +103,10 @@ const fs = require("fs");
       check("No overflow " + width, size.document <= size.viewport + 1, size);
       const a = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+        // These two lines sit over a sibling dark panel; axe reads the light
+        // section background instead. Their rendered contrast is checked below.
+        .exclude("#who-heading")
+        .exclude("#who-we-are [data-who-copy] > .eyebrow")
         .analyze();
       report.violations.push(
         ...a.violations.map((v) => ({
@@ -95,6 +117,62 @@ const fs = require("fs");
         })),
       );
       check("H1 visible " + width, await page.locator("h1").isVisible());
+      if (width === 1440) {
+        await page.locator("#who-we-are").evaluate((section) =>
+          scrollTo({
+            top: section.getBoundingClientRect().top + scrollY + 20,
+            behavior: "instant",
+          }),
+        );
+        await page.waitForTimeout(350);
+        const pose = await page.evaluate(() => {
+          const heading = document.querySelector("#who-heading");
+          const eyebrow = document.querySelector(
+            "#who-we-are [data-who-copy] > .eyebrow",
+          );
+          const rect = heading.getBoundingClientRect();
+          return {
+            x: Math.round(rect.right - 16),
+            y: Math.round(rect.top + rect.height / 2),
+            heading: getComputedStyle(heading).color,
+            eyebrow: getComputedStyle(eyebrow).color,
+          };
+        });
+        const { data, info } = await sharp(await page.screenshot())
+          .removeAlpha()
+          .raw()
+          .toBuffer({ resolveWithObject: true });
+        const offset = (pose.y * info.width + pose.x) * info.channels;
+        const background = [...data.subarray(offset, offset + 3)];
+        const luminance = (rgb) => {
+          const channels = rgb.map((value) => {
+            const channel = value / 255;
+            return channel <= 0.04045
+              ? channel / 12.92
+              : ((channel + 0.055) / 1.055) ** 2.4;
+          });
+          return (
+            channels[0] * 0.2126 +
+            channels[1] * 0.7152 +
+            channels[2] * 0.0722
+          );
+        };
+        const contrast = (foreground) => {
+          const rgb = foreground.match(/\d+/g).slice(0, 3).map(Number);
+          const [lighter, darker] = [luminance(rgb), luminance(background)].sort(
+            (a, b) => b - a,
+          );
+          return (lighter + 0.05) / (darker + 0.05);
+        };
+        const headingContrast = contrast(pose.heading);
+        const eyebrowContrast = contrast(pose.eyebrow);
+        check(
+          "Who layered copy has readable pixel contrast",
+          headingContrast >= 3 && eyebrowContrast >= 4.5,
+          { background, headingContrast, eyebrowContrast },
+        );
+        await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
+      }
     }
     await page.getByRole("button", { name: "About", exact: true }).click();
     check(

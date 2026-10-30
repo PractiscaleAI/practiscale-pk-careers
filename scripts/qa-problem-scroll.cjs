@@ -80,8 +80,8 @@ const bodies = [
         };
       });
     check(
-      "Six authorized homepage sections including team testimonials",
-      (await page.locator("main > section").count()) === 6,
+      "Ten current homepage sections including team testimonials",
+      (await page.locator("main > section").count()) === 10,
     );
     check(
       "Exact problem titles",
@@ -143,6 +143,8 @@ const bodies = [
     ]) {
       await page.setViewportSize({ width, height });
       await page.waitForTimeout(450);
+      await page.mouse.wheel(0, 1);
+      await page.waitForTimeout(250);
       const m = await metrics();
       check(
         `Desktop scroll scene ${width}x${height}`,
@@ -404,9 +406,9 @@ const bodies = [
           heading: document
             .querySelector("#problem-heading")
             .getBoundingClientRect().top,
-          header: document.querySelector("header").getBoundingClientRect()
+          header: document.querySelector(".site-header").getBoundingClientRect()
             .bottom,
-          placement: document.querySelector("header").dataset.placement,
+          placement: document.querySelector(".site-header").dataset.placement,
         }));
         check(
           `Upward navigation clears heading ${width}`,

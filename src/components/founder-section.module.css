@@ -203,6 +203,13 @@
 .section[data-expanded="true"][data-film-ready="true"] .video {
   visibility: visible;
 }
+/* The supplied portrait master includes black pixels above and below the
+   picture. Crop those pixels inside the media box so native controls stay put. */
+@supports (object-view-box: inset(12% 0 12% 0)) {
+  .section[data-portrait="true"][data-expanded="true"] .video {
+    object-view-box: inset(12% 0 12% 0);
+  }
+}
 .section[data-enhanced="true"] .watch {
   display: flex;
   bottom: auto;

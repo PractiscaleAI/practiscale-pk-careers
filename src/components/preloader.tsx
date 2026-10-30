@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Preloader() {
   const [active, setActive] = useState(true);
-  const [connected, setConnected] = useState(false);
   const [ready, setReady] = useState(false);
   const [landed, setLanded] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -62,13 +61,22 @@ export default function Preloader() {
     };
     const guard = setTimeout(() => finish(true), 9000);
     window.addEventListener("message", message);
-    // Mount the animation only after its host listener and scroll lock exist.
-    setConnected(true);
+    // The iframe starts with the server-rendered page. Request its current
+    // state in case it sent ready or complete before React hydrated.
+    const sync = () =>
+      frame.current?.contentWindow?.postMessage(
+        { source: "practiscale-host-preloader", type: "sync" },
+        location.origin,
+      );
+    const currentFrame = frame.current;
+    currentFrame?.addEventListener("load", sync);
+    sync();
     return () => {
       clearTimeout(guard);
       cancelAnimationFrame(focus);
       clearTimeout(release);
       window.removeEventListener("message", message);
+      currentFrame?.removeEventListener("load", sync);
       document.documentElement.style.overflow = overflow;
       content.forEach(({ el, inert }) => {
         el.inert = inert;
@@ -79,31 +87,32 @@ export default function Preloader() {
   return (
     <>
       <noscript>
-        <style>{`.preloader{display:none!important}.preloader~main .hero-stage{transform:none!important;opacity:1!important}`}</style>
+        <style>{`html:has(.preloader){overflow:auto!important}.preloader{display:none!important}.preloader~main .hero-stage{transform:none!important;opacity:1!important}`}</style>
       </noscript>
       {active && (
-        <div
-          ref={root}
-          className="preloader preloader-original"
-          tabIndex={-1}
-          data-ready={ready}
-          data-landed={landed}
-          role="dialog"
-          aria-modal="true"
-          aria-label="PractiScale introduction"
-          aria-description="Press Escape to close the introduction."
-          onKeyDown={(event) => {
-            if (event.key === "Escape") {
-              event.preventDefault();
-              finishRef.current();
-            }
-            if (event.key === "Tab") {
-              event.preventDefault();
-              root.current?.focus({ preventScroll: true });
-            }
-          }}
-        >
-          {connected && (
+        <>
+          <style>{`html:has(.preloader){overflow:hidden}`}</style>
+          <div
+            ref={root}
+            className="preloader preloader-original"
+            tabIndex={-1}
+            data-ready={ready}
+            data-landed={landed}
+            role="dialog"
+            aria-modal="true"
+            aria-label="PractiScale introduction"
+            aria-description="Press Escape to close the introduction."
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                event.preventDefault();
+                finishRef.current();
+              }
+              if (event.key === "Tab") {
+                event.preventDefault();
+                root.current?.focus({ preventScroll: true });
+              }
+            }}
+          >
             <iframe
               ref={frame}
               className="preloader-original-frame"
@@ -113,16 +122,16 @@ export default function Preloader() {
               tabIndex={-1}
               onError={() => finishRef.current()}
             />
-          )}
-          <div
-            className="sr-only"
-            role="progressbar"
-            aria-label="Introduction progress"
-            aria-valuemin={0}
-            aria-valuemax={100}
-            aria-valuenow={progress}
-          />
-        </div>
+            <div
+              className="sr-only"
+              role="progressbar"
+              aria-label="Introduction progress"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={progress}
+            />
+          </div>
+        </>
       )}
     </>
   );

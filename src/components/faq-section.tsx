@@ -83,14 +83,21 @@ export default function FaqSection() {
         "--faq-intro-progress",
         introPainted.toFixed(4),
       );
-      const closingProgress = clamp((introPainted - 0.84) / 0.1);
+      const closingProgress = clamp((introPainted - 0.66) / 0.04);
       const floorClose =
         closingProgress * closingProgress * (3 - 2 * closingProgress);
+      const answerProgress = clamp((introPainted - 0.67) / 0.06);
+      const answerReveal =
+        answerProgress * answerProgress * (3 - 2 * answerProgress);
       section!.style.setProperty("--faq-floor-close", floorClose.toFixed(4));
+      section!.style.setProperty("--faq-scene-exit", floorClose.toFixed(4));
       section!.style.setProperty(
         "--faq-question-reveal",
-        floorClose.toFixed(4),
+        answerReveal.toFixed(4),
       );
+      // Keep answer links out of keyboard navigation until the first row is
+      // visibly readable. Restore them as soon as the handoff completes.
+      list!.inert = enhanced && answerReveal < 0.5;
       sculpture?.render(introPainted, pointerX, pointerY);
       if (introPainted !== introTarget)
         paintFrame = requestAnimationFrame(paint);
@@ -120,6 +127,7 @@ export default function FaqSection() {
     function setup() {
       enhanced = !reduced.matches;
       section!.dataset.enhanced = String(enhanced);
+      list!.inert = enhanced && introPainted < 0.7;
       answers.forEach((answer, index) => {
         answer.style.height = "auto";
         items[index].style.setProperty(

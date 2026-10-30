@@ -114,11 +114,11 @@ const names = ["Kashaf Abbasi", "Jason Brown", "James Ephrim", "Hassan Ali"];
       ) === JSON.stringify(quotes),
     );
     check(
-      "Original five sections retained before testimonials",
+      "Original sections retained before testimonials",
       JSON.stringify(
         await page
           .locator("main>section")
-          .evaluateAll((es) => es.map((e) => e.id)),
+          .evaluateAll((es) => es.slice(0, 6).map((e) => e.id)),
       ) ===
         JSON.stringify([
           "",

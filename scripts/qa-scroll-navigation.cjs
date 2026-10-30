@@ -29,7 +29,7 @@ const fs = require("node:fs");
     await page
       .locator(".preloader")
       .waitFor({ state: "hidden", timeout: 11000 });
-    const header = page.locator("header");
+    const header = page.locator(".site-header");
     const scroll = async (top) => {
       await page.evaluate(
         (y) =>
@@ -43,7 +43,7 @@ const fs = require("node:fs");
     const settle = (mode) =>
       page.waitForFunction(
         (expected) =>
-          document.querySelector("header")?.dataset.placement === expected,
+          document.querySelector(".site-header")?.dataset.placement === expected,
         mode,
         { timeout: 5000 },
       );
@@ -76,6 +76,10 @@ const fs = require("node:fs");
       [1920, 1080],
     ]) {
       await page.setViewportSize({ width, height });
+      // Model the user's first scroll after resize. It releases the chapter
+      // position keeper before programmatic scroll probes begin.
+      await page.mouse.wheel(0, 1);
+      await page.waitForTimeout(250);
       await page.evaluate(() => document.activeElement?.blur());
       await scroll(1);
       await scroll(0);
@@ -172,7 +176,7 @@ const fs = require("node:fs");
         (await placement()).mode === "up" &&
           (await placement()).position === "fixed" &&
           (await placement()).top >= 0 &&
-          (await page.locator("header").count()) === 1,
+          (await page.locator(".site-header").count()) === 1,
         await placement(),
       );
       if ([375, 1536].includes(width))
@@ -263,7 +267,7 @@ const fs = require("node:fs");
     await page.keyboard.press("Tab");
     await settle("up");
     await page.waitForFunction(() =>
-      document.querySelector("header")?.contains(document.activeElement),
+      document.querySelector(".site-header")?.contains(document.activeElement),
     );
     check(
       "Keyboard can reveal and focus navigation",

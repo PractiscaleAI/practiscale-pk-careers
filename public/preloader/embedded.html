@@ -175,6 +175,15 @@ html,body{background:transparent!important}
 (function(){
   var send=function(type,extra){parent.postMessage(Object.assign({source:'practiscale-original-preloader',type:type},extra||{}),location.origin)};
   var pre=document.getElementById('pre'),landed=false,complete=false;
+  // The iframe may start before the hosting page hydrates. A host sync request
+  // replays its current state without restarting or altering the original art.
+  window.addEventListener('message',function(event){
+    if(event.source!==parent||event.origin!==location.origin||event.data?.source!=='practiscale-host-preloader'||event.data?.type!=='sync')return;
+    send('progress',{value:Number(pre.getAttribute('aria-valuenow')||0)});
+    if(document.body.classList.contains('landed'))send('landed');
+    if(pre.classList.contains('gone'))send('complete');
+    else send('ready');
+  });
   var observer=new MutationObserver(function(){
     send('progress',{value:Number(pre.getAttribute('aria-valuenow')||0)});
     if(!landed&&document.body.classList.contains('landed')){landed=true;send('landed')}

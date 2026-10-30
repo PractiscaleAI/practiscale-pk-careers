@@ -122,11 +122,12 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     surface.style.transform = `scale(${scale})`;
     background.style.clipPath = `inset(${backdropTop * (1 - e)}px ${gutter * (1 - e)}px ${backdropTop * (1 - e)}px ${gutter * (1 - e)}px round ${24 * (1 - e)}px)`;
     const wipe = smooth(p / 0.045);
-    copy.style.opacity = "1";
-    copy.style.clipPath = `inset(0 0 ${wipe * 100}% 0)`;
+    // Fade complete lines during the handoff. Clipping through the text was
+    // cutting the first line of the description in shorter desktop viewports.
+    copy.style.opacity = String(1 - wipe);
     copy.style.visibility = wipe === 1 ? "hidden" : "visible";
     copy.style.transform = `translate3d(0,${-24 * wipe}px,0)`;
-    description.style.clipPath = `inset(${wipe * 100}% 0 0 0)`;
+    description.style.opacity = String(1 - wipe);
     description.style.visibility = wipe === 1 ? "hidden" : "visible";
     description.style.transform = `translate3d(0,${24 * wipe}px,0)`;
     const split = smooth((p - 0.02) / 0.17),
@@ -514,6 +515,12 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     observer.observe(main, { attributes: true, attributeFilter: ["inert"] });
   const cleanupAnchor = mountSceneAnchor(root.closest("section"), {
     hashes: ["#who-we-are", "#who-heading"],
+    scrollTop: () => {
+      const sectionTop = root.closest("section")!.getBoundingClientRect().top + scrollY;
+      // A direct mobile hash opens with the floating wordmark visible. Keep
+      // the eyebrow below it without changing the ordinary scroll scene.
+      return sectionTop - (innerWidth < 1024 ? 64 : 0);
+    },
   });
   get<HTMLAnchorElement>("skip").addEventListener(
     "click",
