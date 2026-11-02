@@ -1,0 +1,33 @@
+.shell {
+  min-width: 0;
+  overflow: clip;
+  background: var(--fog);
+}
+
+.header {
+  position: relative;
+  z-index: 60;
+  min-height: 116px;
+  padding: 16px 16px 0;
+  background: var(--fog);
+}
+
+.header :global(.site-header) {
+  min-height: 82px;
+  margin: 0;
+}
+
+.main {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .header {
+    min-height: 100px;
+    padding: 8px 8px 0;
+  }
+
+  .header :global(.site-header) {
+    min-height: 78px;
+  }
+}

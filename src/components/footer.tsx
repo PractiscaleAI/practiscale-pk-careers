@@ -22,17 +22,21 @@ export default function Footer() {
 
           <nav className={styles.group} aria-label="Company">
             <h3>Company</h3>
-            <Link href="/#background-lines">Our Story and Founder</Link>
-            <Link href="/#who-we-are">How We Work</Link>
-            <Link href="/#the-problem">Why PractiScale</Link>
-            <a href="https://practiscale.com/">Who We Serve</a>
+            <Link href="/about/our-story">Our Story and Founder</Link>
+            <Link href="/about/how-we-work">How We Work</Link>
+            <Link href="/about/why-practiscale">Why PractiScale</Link>
+            <Link href="/who-we-serve">Who We Serve</Link>
           </nav>
 
           <nav className={styles.group} aria-label="Opportunities">
             <h3>Opportunities</h3>
-            <Link href="#">Appointment Setter Program</Link>
-            <Link href="#">Virtual Assistant Program</Link>
-            <Link href="#">All Jobs</Link>
+            <Link href="/training-programs/appointment-setter">
+              Appointment Setter Program
+            </Link>
+            <Link href="/training-programs/virtual-assistant">
+              Virtual Assistant Program
+            </Link>
+            <Link href="/jobs">All Jobs</Link>
           </nav>
         </div>
 

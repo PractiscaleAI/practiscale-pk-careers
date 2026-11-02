@@ -40,7 +40,7 @@ export default function ProblemSection() {
         </div>
         <ProblemCards items={careerProblems} />
         <div className={styles.cta} data-problem-cta>
-          <Action href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.">
+          <Action href="/training-programs/appointment-setter">
             Explore training
           </Action>
         </div>

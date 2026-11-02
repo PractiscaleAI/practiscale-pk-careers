@@ -1,5 +1,9 @@
 # PractiScale design context
 
+## Interior navigation, revision 1.09
+
+Inner pages use one restrained pale toolbar with the primary PractiScale wordmark and navigation aligned within the same page gutters. The current section has a quiet mint cue, and the compact menu preserves the full wordmark even at 320px. Keep the homepage navigation at its approved hero coordinates and retain its natural exit and upward-scroll return. The inner-page toolbar follows that scroll behavior without covering the page introduction.
+
 ## Founder film viewing, revision 1.08
 
 Keep the existing scroll zoom into the founder film. On first human arrival, a full-screen viewing stage catches a fast downward scroll so the story is noticed. Its film starts with sound after the visitor selects Play film with sound, or directly from the Watch his story button. Continue and Escape release the stage and restore normal scrolling; revisiting the section in the same page must not reopen the stage. Preserve the current responsive portrait and landscape edits, the film still before playback, and the reduced-motion and data-saving fallbacks. Do not generate another video or add captions. This revises the earlier muted-first autoplay and passive fast-scroll checkpoint behavior.

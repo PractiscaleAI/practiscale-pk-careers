@@ -1,0 +1,504 @@
+import Link from "next/link";
+import styles from "./training-program-page.module.css";
+
+type Item = { title: string; body: string };
+type Question = { question: string; answer: string };
+type Program = {
+  href: string;
+  seoTitle: string;
+  seoDescription: string;
+  keywords: string[];
+  eyebrow: string;
+  title: string;
+  introduction: string;
+  facts: string[];
+  applyLink: string;
+  premiseTitle: string;
+  premiseBody: string;
+  workTitle: string;
+  workBody?: string;
+  workItems: Item[];
+  audience: string[];
+  exclusion?: string;
+  steps: Item[];
+  quote?: { text: string; attribution: string; body: string };
+  questions: Question[];
+  closingTitle: string;
+  other: { label: string; href: string };
+  visual: string[];
+};
+
+const apply = (name: string) =>
+  "https://wa.me/923334000600?text=" +
+  encodeURIComponent(
+    "Hi PractiScale, I would like to apply for the " + name + " Program.",
+  );
+
+export const trainingPrograms = {
+  "appointment-setter": {
+    href: "/training-programs/appointment-setter",
+    seoTitle:
+      "Appointment Setter Training and Jobs in Pakistan | Freshers Welcome",
+    seoDescription:
+      "Get trained in appointment setting for US healthcare accounts, then get hired onsite in Rawalpindi or Islamabad. No experience needed. Earn Rs 30,000 to Rs 200,000 monthly.",
+    keywords: [
+      "appointment setter jobs in Pakistan",
+      "appointment setting training",
+      "sales training in Pakistan",
+      "jobs for freshers in Rawalpindi",
+      "sales jobs in Islamabad",
+    ],
+    eyebrow: "Training and hiring program",
+    title: "Appointment Setter Training and Hiring Program",
+    introduction:
+      "No experience? This is where you get it. Learn to open professional conversations with US healthcare contacts and book qualified meetings, then move into a paid role on our team.",
+    facts: [
+      "Freshers welcome",
+      "Onsite in Rawalpindi or Islamabad",
+      "Rs 30,000 to Rs 200,000 per month after hiring",
+    ],
+    applyLink: apply("Appointment Setter"),
+    premiseTitle: "Every job wants experience. Nobody wants to give it.",
+    premiseBody:
+      "This program breaks that loop. You get trained on the exact work, assessed on a real task and hired to do it.",
+    workTitle: "The first conversation behind every introduction",
+    workBody:
+      "Appointment setters start the conversations our clients depend on. You reach the right professionals, confirm their interest and book the meeting. Every introduction PractiScale makes begins with this work.",
+    workItems: [
+      {
+        title: "Professional outreach",
+        body: "How to start a conversation with a busy healthcare professional.",
+      },
+      {
+        title: "Qualifying",
+        body: "How to tell a genuine fit from a polite no.",
+      },
+      {
+        title: "Handling objections",
+        body: "How to respond calmly, without pressure.",
+      },
+      {
+        title: "Follow up",
+        body: "How to stay consistent without becoming a nuisance.",
+      },
+      {
+        title: "The US referral landscape",
+        body: "Who discharge planners, case managers and social workers are, and why they matter.",
+      },
+      {
+        title: "Tools and tracking",
+        body: "How to log every conversation so nothing slips.",
+      },
+    ],
+    audience: [
+      "Fresh graduates who want a skill employers pay for.",
+      "Career switchers from customer service, retail or call centers.",
+      "Anyone who communicates clearly and wants to get better at it.",
+    ],
+    exclusion:
+      "People looking only for a certificate. This program exists to train the people we plan to hire.",
+    steps: [
+      {
+        title: "Apply",
+        body: "Send your CV and a 60 second video on why you fit.",
+      },
+      {
+        title: "Screen",
+        body: "A short call to confirm fit and explain compensation.",
+      },
+      {
+        title: "Train",
+        body: "Learn through structured lessons, tests and practice.",
+      },
+      { title: "Assess", body: "Show what you learned in a real role test." },
+      {
+        title: "Start",
+        body: "Join the team in a paid role, onsite in Rawalpindi or Islamabad.",
+      },
+    ],
+    quote: {
+      text: "Before you learn how to build a business, learn how to sell.",
+      attribution: "Afrasyab Ahmed, Founder and CEO",
+      body: "Appointment setting builds the foundation of every sales career: communication, confidence and persistence. Our Closer roles, earning Rs 3 to 8 lakh per month, require B2B sales experience. This is where that experience starts.",
+    },
+    questions: [
+      {
+        question: "Do I need sales experience?",
+        answer: "No. Freshers are welcome.",
+      },
+      {
+        question: "Is there a job after training?",
+        answer:
+          "Yes. The program exists to hire. Candidates who pass the role assessment are offered a paid role on our team.",
+      },
+      {
+        question: "Is this role remote?",
+        answer:
+          "No. Appointment setters work onsite in Rawalpindi or Islamabad.",
+      },
+      {
+        question: "How much will I earn after hiring?",
+        answer:
+          "The earning range is Rs 30,000 to Rs 200,000 per month, depending on performance. Exact compensation is confirmed during your screening call.",
+      },
+      {
+        question: "How do I apply?",
+        answer:
+          "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
+      },
+    ],
+    closingTitle: "Learn the skill. Then get paid to use it.",
+    other: {
+      label: "Virtual Assistant Program",
+      href: "/training-programs/virtual-assistant",
+    },
+    visual: ["Open", "Qualify", "Book"],
+  },
+  "virtual-assistant": {
+    href: "/training-programs/virtual-assistant",
+    seoTitle:
+      "Work From Home Jobs for Women in Pakistan | Virtual Assistant Program",
+    seoDescription:
+      "A women only training and hiring program for remote virtual assistant roles on US healthcare accounts. Work from home and earn Rs 20,000 to Rs 150,000 per month.",
+    keywords: [
+      "work from home jobs for women in Pakistan",
+      "online jobs for women in Pakistan",
+      "virtual assistant jobs in Pakistan",
+      "remote virtual assistant training",
+    ],
+    eyebrow: "Women Empowerment Program",
+    title: "Virtual Assistant Training and Hiring Program for Women",
+    introduction:
+      "Professional, fully remote work on US healthcare accounts. We train you in the skills the role requires, then hire from the program.",
+    facts: [
+      "Women only",
+      "Fully remote",
+      "Rs 20,000 to Rs 150,000 per month after hiring",
+    ],
+    applyLink: apply("Virtual Assistant"),
+    premiseTitle: "Ability was never the problem. Access was.",
+    premiseBody:
+      "Many capable women in Pakistan are held back by limited access to stable, professional work. This program removes the commute and opens a real career path, so skill and effort decide how far you go.",
+    workTitle: "The work that keeps accounts running",
+    workItems: [
+      {
+        title: "Research",
+        body: "Find and verify healthcare professionals and organizations.",
+      },
+      {
+        title: "Data and records",
+        body: "Keep contact lists and account records accurate.",
+      },
+      {
+        title: "Coordination",
+        body: "Manage schedules, messages and follow ups.",
+      },
+      { title: "Reporting", body: "Prepare clear updates for the team." },
+    ],
+    audience: [
+      "Graduates and students who want professional remote work.",
+      "Women returning to work after a career break.",
+      "Women who are organized, reliable and detail oriented.",
+    ],
+    steps: [
+      {
+        title: "Apply",
+        body: "Send your CV and a 60 second video on why you fit.",
+      },
+      {
+        title: "Screen",
+        body: "A short call to confirm fit and explain compensation.",
+      },
+      {
+        title: "Train",
+        body: "Learn the tools and tasks through structured lessons and tests.",
+      },
+      { title: "Assess", body: "Complete a real role task." },
+      { title: "Start", body: "Begin remote work on PractiScale accounts." },
+    ],
+    questions: [
+      {
+        question: "Is this program only for women?",
+        answer: "Yes. It is part of our Women Empowerment Program.",
+      },
+      {
+        question: "Is there a job after training?",
+        answer:
+          "Yes. The program exists to hire. Candidates who pass the role assessment are offered a paid remote role.",
+      },
+      {
+        question: "Do I need to come to an office?",
+        answer:
+          "No. The role is fully remote. You will need a reliable device and internet connection.",
+      },
+      {
+        question: "Do I need experience?",
+        answer: "No prior virtual assistant experience is required.",
+      },
+      {
+        question: "How much will I earn after hiring?",
+        answer:
+          "The earning range is Rs 20,000 to Rs 150,000 per month, depending on performance. Exact compensation is confirmed during your screening call.",
+      },
+      {
+        question: "How do I apply?",
+        answer:
+          "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
+      },
+    ],
+    closingTitle: "Build a professional career from home.",
+    other: {
+      label: "Appointment Setter Program",
+      href: "/training-programs/appointment-setter",
+    },
+    visual: ["Research", "Organize", "Support"],
+  },
+} satisfies Record<string, Program>;
+
+export type TrainingProgramSlug = keyof typeof trainingPrograms;
+
+function Answer({ text }: { text: string }) {
+  return text
+    .split(/(0333 4000 600|hiring@practiscale\.com)/g)
+    .map((part, i) => {
+      if (part === "0333 4000 600")
+        return (
+          <a key={i} href="https://wa.me/923334000600">
+            {part}
+          </a>
+        );
+      if (part === "hiring@practiscale.com")
+        return (
+          <a key={i} href="mailto:hiring@practiscale.com">
+            {part}
+          </a>
+        );
+      return part;
+    });
+}
+
+export default function TrainingProgramPage({ program }: { program: Program }) {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: program.questions.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+  return (
+    <div className={styles.page}>
+      <section className={styles.hero} aria-labelledby="program-title">
+        <div className={styles.heroInner}>
+          <div className={styles.heroCopy}>
+            <span className={styles.eyebrow}>{program.eyebrow}</span>
+            <h1 id="program-title">{program.title}</h1>
+            <p>{program.introduction}</p>
+            <a
+              className={styles.action}
+              href={program.applyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply for the Program <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div className={styles.visual} aria-hidden="true">
+            <span className={styles.visualLabel}>
+              PRACTISCALE / CAREER PATH
+            </span>
+            <div className={styles.visualFlow}>
+              {program.visual.map((word, i) => (
+                <div className={styles.visualNode} key={word}>
+                  <small>0{i + 1}</small>
+                  <strong>{word}</strong>
+                </div>
+              ))}
+            </div>
+            <span className={styles.visualFoot}>US HEALTHCARE ACCOUNTS</span>
+          </div>
+          <ul className={styles.facts} aria-label="Program facts">
+            {program.facts.map((fact, i) => (
+              <li key={fact}>
+                <span>0{i + 1}</span>
+                {fact}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className={styles.premise} aria-labelledby="program-premise">
+        <div className={styles.split}>
+          <div>
+            <span className={styles.eyebrow}>The starting point</span>
+            <h2 id="program-premise">{program.premiseTitle}</h2>
+          </div>
+          <p>{program.premiseBody}</p>
+        </div>
+      </section>
+
+      <section className={styles.work} aria-labelledby="program-work">
+        <div className={styles.split}>
+          <div className={styles.workIntro}>
+            <span className={styles.eyebrow}>The real work</span>
+            <h2 id="program-work">{program.workTitle}</h2>
+            {program.workBody && <p>{program.workBody}</p>}
+          </div>
+          <div className={styles.workList}>
+            <span className={styles.listLabel}>
+              {program.href.endsWith("appointment-setter")
+                ? "What you will learn"
+                : "What you will do"}
+            </span>
+            <ol>
+              {program.workItems.map((item, i) => (
+                <li key={item.title}>
+                  <span className={styles.number}>
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.audience} aria-labelledby="program-audience">
+        <div className={styles.split}>
+          <div>
+            <span className={styles.eyebrow}>The right fit</span>
+            <h2 id="program-audience">Who this program is for</h2>
+          </div>
+          <div>
+            <ul>
+              {program.audience.map((person) => (
+                <li key={person}>{person}</li>
+              ))}
+            </ul>
+            {program.exclusion && (
+              <p className={styles.exclusion}>
+                <strong>Not for:</strong> {program.exclusion}
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.process} aria-labelledby="program-process">
+        <div className={styles.processInner}>
+          <div className={styles.processLead}>
+            <span className={styles.eyebrow}>
+              From application to paid work
+            </span>
+            <h2 id="program-process">How the program works</h2>
+          </div>
+          <ol className={styles.steps}>
+            {program.steps.map((step, i) => (
+              <li key={step.title}>
+                <span className={styles.stepNumber}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {program.quote && (
+        <section className={styles.outcome} aria-labelledby="program-outcome">
+          <div className={styles.split}>
+            <div>
+              <span className={styles.eyebrow}>Where it leads</span>
+              <h2 id="program-outcome">The first step in a sales career</h2>
+              <blockquote>
+                <p>“{program.quote.text}”</p>
+                <footer>{program.quote.attribution}</footer>
+              </blockquote>
+            </div>
+            <div>
+              <p className={styles.outcomeBody}>{program.quote.body}</p>
+              <Link className={styles.textLink} href="/jobs#sales">
+                Explore sales roles <span aria-hidden="true">↗</span>
+              </Link>
+              <p className={styles.disclaimer}>
+                Earnings shown here are individual results, not typical or
+                guaranteed earnings. What you earn depends on your role, skill,
+                effort and performance.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className={styles.faq} aria-labelledby="program-faq">
+        <div className={styles.split}>
+          <div>
+            <span className={styles.eyebrow}>Good to know</span>
+            <h2 id="program-faq">Questions before you apply</h2>
+          </div>
+          <div className={styles.faqList}>
+            {program.questions.map((item, i) => (
+              <details key={item.question}>
+                <summary>
+                  <span>{String(i + 1).padStart(2, "0")}</span>
+                  <strong>{item.question}</strong>
+                  <b aria-hidden="true">+</b>
+                </summary>
+                <p>
+                  <Answer text={item.answer} />
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.closing} aria-labelledby="program-closing">
+        <div className={styles.closingInner}>
+          <span className={styles.eyebrow}>Your next move</span>
+          <h2 id="program-closing">{program.closingTitle}</h2>
+          <a
+            className={styles.action}
+            href={program.applyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply on WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <p>Send your CV and a 60 second video on why you fit.</p>
+          <nav aria-label="Explore PractiScale">
+            <Link href={program.other.href}>{program.other.label} ↗</Link>
+            <Link href="/jobs">See open jobs ↗</Link>
+            <Link
+              href={
+                program.href.endsWith("appointment-setter")
+                  ? "/about/how-we-work"
+                  : "/about/our-story#founder"
+              }
+            >
+              {program.href.endsWith("appointment-setter")
+                ? "How we work"
+                : "Our founder"}{" "}
+              ↗
+            </Link>
+            <Link href="/who-we-serve">Who we serve ↗</Link>
+          </nav>
+        </div>
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+    </div>
+  );
+}

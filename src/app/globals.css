@@ -3235,3 +3235,72 @@ p {
     right: 8px;
   }
 }
+
+/* Inner routes share the hero's navigation behavior without covering their intro. */
+.site-header.floating-header.interior-header[data-placement="hero"] {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+
+/* Interior routes keep the floating behavior while presenting one calm toolbar. */
+.site-header.floating-header.interior-header {
+  padding: 11px 22px;
+  border: 1px solid #d2e0df;
+  border-radius: 18px;
+  background: rgb(250 252 251 / 97%);
+  box-shadow: 0 9px 28px rgb(19 65 67 / 8%);
+  backdrop-filter: blur(16px);
+}
+
+.interior-header > .brand::before {
+  display: none;
+}
+
+.interior-header .nav-panel {
+  gap: 1px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.interior-header .nav-group.is-current > button,
+.interior-header .nav-panel > a[aria-current="page"] {
+  background: #e0f0ed;
+  color: #006966;
+}
+
+@media (max-width: 1200px) {
+  .interior-header .nav-panel.is-open {
+    padding: 12px;
+    border: 1px solid #d2e0df;
+    background: var(--fog);
+    box-shadow: 0 16px 40px rgb(19 65 67 / 17%);
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header.floating-header.interior-header {
+    padding: 8px 11px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 347px) {
+  .site-header.floating-header > .brand {
+    width: min(210px, calc(100vw - 110px));
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    justify-content: flex-start;
+  }
+
+  .site-header.floating-header .brand img {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+}

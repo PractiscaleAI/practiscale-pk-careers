@@ -44,7 +44,7 @@ export default function Home() {
                   <br />
                   Training and real work for Pakistani talent.
                 </p>
-                <Action href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.">
+                <Action href="/training-programs/appointment-setter">
                   Explore training
                 </Action>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
             </dl>
             <div className="hero-bottom-right">
-              <Link href="https://wa.me/923334000600?text=Hi%20PractiScale%2C%20please%20share%20the%20current%20training%20program%20details.">
+              <Link href="/training-programs/appointment-setter">
                 <span className="hero-next-copy">
                   <span className="eyebrow">Your next chapter</span>
                   <span className="hero-next-label" id="hero-next-label">

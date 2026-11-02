@@ -36,9 +36,11 @@ const sharp = require("sharp");
     check(
       "Approved homepage sections and content",
       JSON.stringify(
-        await page.locator("main>section").evaluateAll((sections) =>
-          sections.map((section) => section.id || section.className),
-        ),
+        await page
+          .locator("main>section")
+          .evaluateAll((sections) =>
+            sections.map((section) => section.id || section.className),
+          ),
       ) ===
         JSON.stringify([
           "hero-scroll",
@@ -152,16 +154,15 @@ const sharp = require("sharp");
               : ((channel + 0.055) / 1.055) ** 2.4;
           });
           return (
-            channels[0] * 0.2126 +
-            channels[1] * 0.7152 +
-            channels[2] * 0.0722
+            channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722
           );
         };
         const contrast = (foreground) => {
           const rgb = foreground.match(/\d+/g).slice(0, 3).map(Number);
-          const [lighter, darker] = [luminance(rgb), luminance(background)].sort(
-            (a, b) => b - a,
-          );
+          const [lighter, darker] = [
+            luminance(rgb),
+            luminance(background),
+          ].sort((a, b) => b - a);
           return (lighter + 0.05) / (darker + 0.05);
         };
         const headingContrast = contrast(pose.heading);
@@ -177,7 +178,10 @@ const sharp = require("sharp");
     await page.getByRole("button", { name: "About", exact: true }).click();
     check(
       "Founder menu works",
-      await page.getByRole("link", { name: "Meet our founder" }).isVisible(),
+      await page
+        .locator("#main-navigation")
+        .getByRole("link", { name: "Our story and founder" })
+        .isVisible(),
     );
     await page.keyboard.press("Escape");
     check(
@@ -191,18 +195,27 @@ const sharp = require("sharp");
       .getByRole("link", { name: "Appointment Setter", exact: true })
       .getAttribute("href");
     check(
-      "Program enquiry has real destination",
-      href.startsWith("https://wa.me/") &&
-        decodeURIComponent(href).includes("Appointment Setter"),
+      "Program menu points to its page",
+      href === "/training-programs/appointment-setter",
     );
     await page.keyboard.press("Escape");
     await page.setViewportSize({ width: 375, height: 900 });
     await page.getByRole("button", { name: "Open navigation" }).click();
     await page.getByRole("button", { name: "About", exact: true }).click();
-    await page.getByRole("link", { name: "Meet our founder" }).click();
+    await page
+      .locator("#main-navigation")
+      .getByRole("link", { name: "Our story and founder" })
+      .click();
+    await page.waitForURL("**/about/our-story");
+    await page.getByRole("button", { name: "Open navigation" }).waitFor({
+      state: "visible",
+    });
     check(
-      "Mobile menu closes after anchor",
-      await page.getByRole("button", { name: "Open navigation" }).isVisible(),
+      "Mobile menu closes after route navigation",
+      new URL(page.url()).pathname === "/about/our-story" &&
+        (await page
+          .getByRole("button", { name: "Open navigation" })
+          .isVisible()),
     );
     const nojs = await browser.newContext({
       viewport: { width: 375, height: 900 },

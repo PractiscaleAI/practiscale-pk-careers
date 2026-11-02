@@ -1,0 +1,692 @@
+.eyebrow,
+.indexLabel,
+.teamCount,
+.programCard > span,
+.roleFacts dt,
+.count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: #fff;
+  background: var(--deep);
+  border-radius: 24px;
+  margin: 0 var(--section-gutter);
+  overflow: hidden;
+}
+
+.heroInner,
+.explorerInner,
+.trainingInner,
+.hiringInner,
+.closingInner {
+  width: min(100%, 1320px);
+  margin-inline: auto;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(330px, 0.85fr);
+  align-items: center;
+  gap: clamp(48px, 7vw, 120px);
+  min-height: min(720px, 78svh);
+  padding: clamp(72px, 8vw, 128px) clamp(28px, 5vw, 78px);
+}
+
+.heroCopy {
+  max-width: 700px;
+}
+
+.hero .eyebrow {
+  color: var(--accent);
+}
+
+.hero h1 {
+  max-width: 11ch;
+  margin-top: 18px;
+  font-size: clamp(48px, 5.7vw, 88px);
+  line-height: 1.03;
+  letter-spacing: -0.055em;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.heroCopy > p {
+  max-width: 51ch;
+  margin-top: 32px;
+  color: var(--dark-muted);
+  font-size: clamp(17px, 1.25vw, 20px);
+  line-height: 1.58;
+}
+
+.heroLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 1px solid var(--accent);
+}
+
+.heroLink svg,
+.teamIndex svg,
+.roleApply svg,
+.programCard a svg {
+  transition: transform 220ms ease;
+}
+
+.heroLink:hover svg,
+.teamIndex a:hover svg,
+.roleApply:hover svg,
+.programCard a:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.teamIndex {
+  padding: 32px 36px 26px;
+  border: 1px solid var(--line-dark);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--surface) 56%, transparent);
+}
+
+.indexLabel {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.teamIndex a {
+  display: grid;
+  grid-template-columns: 28px 1fr auto 18px;
+  align-items: center;
+  gap: 10px;
+  min-height: 72px;
+  border-bottom: 1px solid var(--line-dark);
+  transition: color 200ms ease;
+}
+
+.teamIndex a:last-child {
+  border-bottom: 0;
+}
+
+.teamIndex a:hover {
+  color: var(--accent);
+}
+
+.teamIndex a > span,
+.teamIndex small {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--dark-muted);
+}
+
+.teamIndex strong {
+  font-family: Sora, sans-serif;
+  font-size: clamp(17px, 1.45vw, 22px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.explorer,
+.training,
+.hiring,
+.closing {
+  padding-inline: var(--section-gutter);
+}
+
+.explorer {
+  padding-block: clamp(80px, 9vw, 138px) clamp(100px, 11vw, 160px);
+  background: var(--fog);
+  scroll-margin-top: 30px;
+}
+
+.explorerHead {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.explorerHead h2,
+.training h2,
+.hiring h2,
+.closing h2 {
+  margin-top: 12px;
+  font-size: clamp(36px, 3.8vw, 58px);
+  letter-spacing: -0.04em;
+}
+
+.explorerHead > p {
+  width: min(100%, 36ch);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.filterBar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 52px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.teamFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teamFilters button,
+.emptyState button {
+  min-height: 44px;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--deep);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.teamFilters button[aria-pressed="true"],
+.teamFilters button:hover,
+.emptyState button:hover {
+  background: var(--deep);
+  border-color: var(--deep);
+  color: #fff;
+}
+
+.modeFilter {
+  display: grid;
+  gap: 7px;
+  flex: 0 0 165px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modeFilter select {
+  width: 100%;
+  min-height: 44px;
+  padding: 6px 30px 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--deep);
+  cursor: pointer;
+}
+
+.count {
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.teamSection {
+  margin-top: clamp(70px, 9vw, 118px);
+  scroll-margin-top: 24px;
+}
+
+.teamHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.teamCount {
+  color: #0b5e5b;
+  white-space: nowrap;
+}
+
+.teamHeading h3 {
+  font-size: clamp(31px, 3.25vw, 46px);
+  letter-spacing: -0.04em;
+}
+
+.roleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.roleCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(24px, 2.8vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(19, 65, 67, 0.025);
+  transition:
+    border-color 240ms ease,
+    box-shadow 240ms ease;
+}
+
+.roleCard:hover {
+  border-color: #9dc9c3;
+  box-shadow: 0 20px 45px rgba(19, 65, 67, 0.075);
+}
+
+.roleTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #387c7a;
+}
+
+.mode {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid #cee5e1;
+  border-radius: 999px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+
+.roleCard h4 {
+  margin: 22px 0 0;
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+  font-size: clamp(25px, 2vw, 30px);
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+}
+
+.roleSummary {
+  margin-top: 13px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+.roleFacts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 26px 0 0;
+  padding: 19px 0;
+  border-top: 1px solid #e2e9e9;
+  border-bottom: 1px solid #e2e9e9;
+}
+
+.roleFacts dt {
+  color: #4f7776;
+  font-size: 10px;
+  letter-spacing: 0.055em;
+}
+
+.roleFacts dd {
+  margin: 5px 0 0;
+  color: var(--deep);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.roleDetails {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.roleDetails p + p {
+  margin-top: 0;
+}
+
+.roleDetails strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--deep);
+  font-size: 13px;
+}
+
+.roleApply {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  margin-top: auto;
+  padding-top: 20px;
+  color: #0d706a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.roleApply:hover {
+  color: var(--link);
+}
+
+.freshersLine {
+  max-width: none;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.freshersLine a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+}
+
+.emptyState {
+  margin-top: 46px;
+  padding: 44px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.emptyState h3 {
+  font-size: 26px;
+}
+
+.emptyState p {
+  margin: 10px 0 22px;
+  color: var(--muted);
+}
+
+.training {
+  padding-block: clamp(90px, 10vw, 150px);
+  color: #fff;
+  background: var(--deep);
+}
+
+.trainingInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(40px, 5vw, 90px);
+}
+
+.training .eyebrow,
+.hiring .eyebrow {
+  color: var(--accent);
+}
+
+.training h2 {
+  max-width: 13ch;
+}
+
+.programGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.programCard {
+  padding: 27px 30px;
+  border: 1px solid var(--line-dark);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.programCard > span {
+  color: var(--accent);
+}
+
+.programCard h3 {
+  margin-top: 12px;
+  font-size: clamp(22px, 2.1vw, 30px);
+  letter-spacing: -0.03em;
+}
+
+.programCard p {
+  margin-top: 10px;
+  color: var(--dark-muted);
+  font-size: 15px;
+}
+
+.programCard a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--accent);
+}
+
+.hiring {
+  padding-block: clamp(90px, 10vw, 144px);
+  color: #fff;
+  background: var(--surface);
+}
+
+.hiringInner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(48px, 7vw, 120px);
+}
+
+.hiringIntro p {
+  margin-top: 22px;
+  color: var(--dark-muted);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 38px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  padding-top: 16px;
+  border-top: 1px solid #68a8a4;
+}
+
+.steps li > span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+.steps h3 {
+  margin-top: 21px;
+  font-size: clamp(23px, 2vw, 30px);
+}
+
+.steps p {
+  margin-top: 11px;
+  color: var(--dark-muted);
+  font-size: 15px;
+  line-height: 1.58;
+}
+
+.closing {
+  padding-block: clamp(88px, 9vw, 132px) 46px;
+  background: #fff;
+}
+
+.closingInner {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.closing h2 {
+  margin-top: 10px;
+}
+
+.closingInner p {
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.closingInner :global(.action) {
+  flex: 0 0 auto;
+}
+
+.earningsNote {
+  max-width: 1320px;
+  margin: 80px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .roleCard,
+    .programCard,
+    .steps li {
+      animation: gentle-enter linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 80%;
+    }
+  }
+}
+
+@keyframes gentle-enter {
+  from {
+    transform: translateY(16px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1050px) {
+  .heroInner {
+    grid-template-columns: minmax(0, 1fr) minmax(270px, 0.9fr);
+    gap: 36px;
+  }
+  .teamIndex {
+    padding-inline: 24px;
+  }
+  .teamIndex a {
+    grid-template-columns: 22px 1fr 16px;
+  }
+  .teamIndex small {
+    display: none;
+  }
+  .trainingInner,
+  .hiringInner {
+    grid-template-columns: 1fr;
+  }
+  .training h2 {
+    max-width: 22ch;
+  }
+  .programGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    margin-inline: 10px;
+    border-radius: 18px;
+  }
+  .heroInner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 75px 24px 34px;
+  }
+  .hero h1 {
+    max-width: 12ch;
+    font-size: clamp(42px, 10vw, 64px);
+  }
+  .heroCopy > p {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+  .teamIndex {
+    padding: 22px;
+  }
+  .teamIndex a {
+    min-height: 60px;
+  }
+  .explorerHead,
+  .filterBar,
+  .closingInner {
+    display: block;
+  }
+  .explorerHead > p {
+    margin-top: 16px;
+  }
+  .filterBar {
+    margin-top: 30px;
+  }
+  .modeFilter {
+    max-width: 210px;
+    margin-top: 18px;
+  }
+  .roleGrid,
+  .programGrid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .roleCard {
+    padding: 24px;
+  }
+  .teamHeading {
+    gap: 12px;
+  }
+  .teamHeading h3 {
+    font-size: clamp(28px, 7vw, 38px);
+  }
+  .closingInner :global(.action) {
+    margin-top: 26px;
+  }
+  .earningsNote {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 390px) {
+  .roleFacts {
+    gap: 12px;
+  }
+  .roleFacts dd {
+    font-size: 13px;
+  }
+  .teamFilters button {
+    padding-inline: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroLink svg,
+  .teamIndex svg,
+  .roleApply svg,
+  .programCard a svg,
+  .roleCard {
+    transition: none;
+  }
+}

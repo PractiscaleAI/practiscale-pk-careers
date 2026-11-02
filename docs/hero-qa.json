@@ -5,11 +5,11 @@
       "pass": true
     },
     {
-      "name": "Hero, problem, company film, career paths and laptop earnings",
+      "name": "Approved homepage sections and content",
       "pass": true
     },
     {
-      "name": "No footer or unrequested homepage sections",
+      "name": "One site footer and no unrequested homepage sections",
       "pass": true
     },
     {
@@ -69,6 +69,19 @@
       "pass": true
     },
     {
+      "name": "Who layered copy has readable pixel contrast",
+      "pass": true,
+      "detail": {
+        "background": [
+          19,
+          65,
+          67
+        ],
+        "headingContrast": 11.26091316389117,
+        "eyebrowContrast": 7.696219838866298
+      }
+    },
+    {
       "name": "Founder menu works",
       "pass": true
     },
@@ -77,11 +90,11 @@
       "pass": true
     },
     {
-      "name": "Program enquiry has real destination",
+      "name": "Program menu points to its page",
       "pass": true
     },
     {
-      "name": "Mobile menu closes after anchor",
+      "name": "Mobile menu closes after route navigation",
       "pass": true
     },
     {

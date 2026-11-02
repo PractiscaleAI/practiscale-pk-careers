@@ -195,15 +195,16 @@ const bodies = [
       ) === JSON.stringify(bodies),
     );
     check(
-      "Career CTA copy and unfinished-page placeholders",
+      "Career CTAs lead to the completed pages",
       await section
         .locator("article .action")
         .evaluateAll(
           (els) =>
             els[0].textContent === "View Training Programs" &&
-            els[0].getAttribute("href") === "#" &&
+            els[0].getAttribute("href") ===
+              "/training-programs/appointment-setter" &&
             els[1].textContent === "See Open Jobs" &&
-            els[1].getAttribute("href") === "#",
+            els[1].getAttribute("href") === "/jobs",
         ),
     );
     check(
@@ -956,7 +957,7 @@ const bodies = [
         check(
           "Reduced-motion flow exposes the Jobs link in normal tab order",
           await p.evaluate(
-            () => document.activeElement?.getAttribute("href") === "#",
+            () => document.activeElement?.getAttribute("href") === "/jobs",
           ),
         );
       }
@@ -983,11 +984,9 @@ const bodies = [
         ),
       );
       check(
-        `Destination returns to an existing homepage card ${path}`,
-        (await routes.page
-          .getByRole("link", { name: "Back to career paths", exact: true })
-          .getAttribute("href")) ===
-          (path === "/jobs" ? "/#career-jobs" : "/#career-training"),
+        `Destination includes site navigation ${path}`,
+        (await routes.page.locator("header .brand").getAttribute("href")) ===
+          "/",
       );
       await routes.page.screenshot({
         path: `${dir}/destination-${path.split("/").at(-1)}.png`,

@@ -9,16 +9,16 @@ const groups = [
   {
     label: "About",
     items: [
-      ["Meet our founder", "#founder"],
-      ["How we work", "https://practiscale.com/"],
-      ["Ask about PractiScale", whatsapp("PractiScale")],
+      ["Our story and founder", "/about/our-story"],
+      ["How we work", "/about/how-we-work"],
+      ["Why PractiScale", "/about/why-practiscale"],
     ],
   },
   {
     label: "Training",
     items: [
-      ["Appointment Setter", whatsapp("the Appointment Setter Program")],
-      ["Virtual Assistant", whatsapp("the Virtual Assistant Program")],
+      ["Appointment Setter", "/training-programs/appointment-setter"],
+      ["Virtual Assistant", "/training-programs/virtual-assistant"],
     ],
   },
 ];
@@ -50,7 +50,10 @@ export default function Navigation() {
   }, [path, place]);
   useEffect(() => {
     const stage = document.querySelector<HTMLElement>(".hero-stage");
-    if (!stage) return;
+    const interiorAnchor = document.querySelector<HTMLElement>(
+      "[data-interior-header-anchor]",
+    );
+    if (!stage && !interiorAnchor) return;
     let lastY = Math.max(0, window.scrollY),
       direction = 0,
       distance = 0,
@@ -58,8 +61,11 @@ export default function Navigation() {
       frame = 0,
       focusFrame = 0;
     const anchorInPlace = () =>
-      stage.getBoundingClientRect().top + (innerWidth < 768 ? 8 : 18) >=
-      (innerWidth < 768 ? 16 : 32) - 1;
+      stage
+        ? stage.getBoundingClientRect().top + (innerWidth < 768 ? 8 : 18) >=
+          (innerWidth < 768 ? 16 : 32) - 1
+        : (interiorAnchor?.getBoundingClientRect().bottom ?? 0) >=
+          (innerWidth < 768 ? 16 : 20);
     const update = () => {
       frame = 0;
       const y = Math.max(
@@ -138,7 +144,7 @@ export default function Navigation() {
       cancelAnimationFrame(frame);
       cancelAnimationFrame(focusFrame);
     };
-  }, [mobile, open, place]);
+  }, [mobile, open, path, place]);
   useEffect(() => {
     const close = (e: KeyboardEvent) => {
       if (e.key === "Escape" && (mobile || open)) {
@@ -167,7 +173,7 @@ export default function Navigation() {
   const navigation = (
     <>
       <header
-        className={`site-header floating-header ${path === "/" ? "home-header" : ""} ${placement.mode !== "hero" ? "is-scrolled" : ""}`}
+        className={`site-header floating-header ${path === "/" ? "home-header" : "interior-header"} ${placement.mode !== "hero" ? "is-scrolled" : ""}`}
         ref={ref}
         data-placement={placement.mode}
         style={
@@ -186,14 +192,18 @@ export default function Navigation() {
           <picture>
             <source
               media="(max-width: 347px)"
-              srcSet="/brand/logos/practiscale-mark.png"
+              srcSet="/brand/logos/practiscale-logo-primary.png"
             />
             <source
               media="(max-width: 767px)"
               srcSet="/brand/logos/practiscale-logo-primary.png"
             />
             <img
-              src="/brand/logos/practiscale-logo-reversed.png"
+              src={
+                path === "/"
+                  ? "/brand/logos/practiscale-logo-reversed.png"
+                  : "/brand/logos/practiscale-logo-primary.png"
+              }
               width="363"
               height="67"
               alt="PractiScale - Built for growth"
@@ -243,7 +253,7 @@ export default function Navigation() {
           </Link>
           {groups.map((group) => (
             <div
-              className="nav-group"
+              className={`nav-group ${group.items.some(([, url]) => url === path) ? "is-current" : ""}`}
               key={group.label}
               onBlur={(e) => {
                 if (!e.currentTarget.contains(e.relatedTarget)) setOpen(null);
@@ -265,7 +275,11 @@ export default function Navigation() {
                 hidden={open !== group.label}
               >
                 {group.items.map(([name, url]) => (
-                  <Link href={url} key={url}>
+                  <Link
+                    href={url}
+                    key={url}
+                    aria-current={path === url ? "page" : undefined}
+                  >
                     {name}
                     <ArrowUpRight size={14} aria-hidden="true" />
                   </Link>
@@ -274,13 +288,13 @@ export default function Navigation() {
             </div>
           ))}
           <Link
-            href={whatsapp("current career opportunities")}
+            href="/jobs"
             aria-current={path === "/jobs" ? "page" : undefined}
           >
             Careers
           </Link>
           <Link
-            href="https://practiscale.com/"
+            href="/who-we-serve"
             aria-current={path === "/who-we-serve" ? "page" : undefined}
           >
             Who we serve

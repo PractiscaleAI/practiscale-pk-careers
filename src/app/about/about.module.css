@@ -1,0 +1,1028 @@
+.page {
+  --about-width: 1280px;
+  --about-gutter: var(--section-gutter);
+  color: var(--ink);
+  background: var(--fog);
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  min-height: min(690px, calc(100svh - 126px));
+  margin: 8px 16px 0;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--deep);
+  color: #fff;
+  isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 65, 67, 0.1) 38%,
+    rgba(19, 65, 67, 0) 74%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: clamp(64px, 8vw, 132px) clamp(30px, 6vw, 104px);
+}
+
+.heroContent :global(.eyebrow) {
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.heroContent h1 {
+  max-width: 700px;
+  font-size: clamp(42px, 5.5vw, 82px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+
+.heroContent > p {
+  max-width: 52ch;
+  margin-top: clamp(25px, 3vw, 42px);
+  color: #d5e4e3;
+  font-size: clamp(16px, 1.2vw, 19px);
+  line-height: 1.65;
+}
+
+.heroImageWrap {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.heroImageWrap::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--deep), transparent 22%),
+    linear-gradient(0deg, rgba(19, 65, 67, 0.38), transparent 26%);
+  content: "";
+  pointer-events: none;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroPortrait .heroImage {
+  object-position: 72% center;
+}
+
+.heroIndex {
+  position: absolute;
+  z-index: 4;
+  bottom: 28px;
+  right: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.section,
+.sectionDark,
+.sectionWhite {
+  padding: clamp(88px, 10vw, 154px) var(--about-gutter);
+}
+
+.sectionDark {
+  background: var(--deep);
+  color: #fff;
+}
+
+.sectionWhite {
+  background: #fff;
+}
+
+.container {
+  max-width: var(--about-width);
+  margin-inline: auto;
+}
+
+.sectionHeading {
+  max-width: 850px;
+  margin-bottom: clamp(36px, 5vw, 72px);
+}
+
+.sectionHeading :global(.eyebrow) {
+  margin-bottom: 20px;
+  color: #075b56;
+}
+
+.sectionHeading > .smallLabel {
+  display: block;
+  margin-bottom: 20px;
+  color: #075b56;
+}
+
+.sectionHeading h2 {
+  max-width: 18ch;
+  font-size: clamp(34px, 4vw, 58px);
+  letter-spacing: var(--section-title-tracking);
+}
+
+.sectionHeading > p {
+  max-width: 66ch;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: clamp(16px, 1.25vw, 19px);
+}
+
+.inverseHeading :global(.eyebrow) {
+  color: var(--accent);
+}
+
+.inverseHeading > .smallLabel {
+  color: var(--accent);
+}
+
+.inverseHeading > p {
+  color: var(--dark-muted);
+}
+
+.journey {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.75fr);
+  gap: clamp(32px, 8vw, 120px);
+  align-items: start;
+}
+
+.journeyList {
+  position: relative;
+  list-style: none;
+  padding: 0 0 0 48px;
+  margin: 0;
+  counter-reset: journey;
+}
+
+.journeyList::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 1px;
+  background: var(--line);
+  content: "";
+}
+
+.journeyList li {
+  position: relative;
+  min-height: 175px;
+  padding: 0 0 45px;
+  border-bottom: 1px solid var(--line);
+}
+
+.journeyList li + li {
+  padding-top: 45px;
+}
+
+.journeyList li:last-child {
+  border-bottom: 0;
+}
+
+.journeyList li::before {
+  position: absolute;
+  top: 0;
+  left: -39px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--fog);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--surface);
+  content: "";
+}
+
+.journeyList li + li::before {
+  top: 45px;
+}
+
+.stepIndex,
+.cardIndex,
+.smallLabel,
+.metricLabel,
+.storyName {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.stepIndex {
+  display: block;
+  color: #075b56;
+  margin-bottom: 14px;
+}
+
+.journeyList h3 {
+  font-size: clamp(23px, 2vw, 29px);
+  letter-spacing: var(--card-title-tracking);
+}
+
+.journeyList p {
+  margin-top: 13px;
+  color: var(--muted);
+}
+
+.journeyAside {
+  position: sticky;
+  top: 32px;
+}
+
+.imagePanel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #d9e4e3;
+  box-shadow: 0 22px 55px rgba(13, 55, 57, 0.12);
+}
+
+.journeyAside .imagePanel {
+  aspect-ratio: 4 / 4.5;
+}
+
+.imagePanel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageCaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 13px;
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.founderGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(42px, 7vw, 112px);
+  align-items: start;
+}
+
+.founderAside {
+  position: sticky;
+  top: 32px;
+}
+
+.founderAside .imagePanel {
+  aspect-ratio: 4 / 4.3;
+}
+
+.founderAside .imagePanel img {
+  object-position: 72% center;
+}
+
+.founderVoice {
+  max-width: 24ch;
+  margin-top: 26px;
+  color: var(--accent);
+  font-family: Sora, sans-serif;
+  font-size: clamp(24px, 2.5vw, 38px);
+  line-height: 1.22;
+  letter-spacing: -0.035em;
+}
+
+.founderContent .sectionHeading {
+  margin-bottom: 32px;
+}
+
+.founderContent h2 {
+  max-width: none;
+}
+
+.storyChapter {
+  padding: 30px 0;
+  border-top: 1px solid var(--line-dark);
+}
+
+.storyChapter h3 {
+  margin-bottom: 16px;
+  color: var(--accent);
+  font-size: 19px;
+  letter-spacing: -0.02em;
+}
+
+.storyChapter p {
+  color: #e0eded;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.storyChapter p + p {
+  margin-top: 16px;
+}
+
+.beliefs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.beliefs blockquote {
+  margin: 0;
+  min-height: 145px;
+  padding: 24px;
+  border: 1px solid var(--line-dark);
+  border-radius: 14px;
+  color: #e0eded;
+  font-family: Sora, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.missionGrid,
+.valueGrid,
+.reasonGrid,
+.modeGrid,
+.systemsGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.missionGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 32px;
+}
+
+.missionCard {
+  min-height: 230px;
+  padding: clamp(26px, 3vw, 44px);
+  border-radius: 18px;
+  background: #e6ecec;
+}
+
+.missionCard:nth-child(2) {
+  background: #d6eae5;
+}
+
+.missionCard h3,
+.valueCard h3 {
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+
+.missionCard p,
+.valueCard p {
+  max-width: 44ch;
+  color: var(--muted);
+}
+
+.valueGrid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.valueCard {
+  grid-column: span 2;
+}
+
+.valueCard:nth-last-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.valueCard {
+  min-height: 195px;
+  padding: 30px;
+  border-top: 1px solid var(--surface);
+  background: #fff;
+}
+
+.valueCard h3 {
+  margin: 20px 0 12px;
+  font-size: 20px;
+}
+
+.numberedCard {
+  min-width: 0;
+  padding: clamp(24px, 2.7vw, 40px);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(19, 65, 67, 0.035);
+}
+
+.cardIndex {
+  display: block;
+  width: fit-content;
+  margin-bottom: clamp(34px, 5vw, 70px);
+  color: #075b56;
+}
+
+.numberedCard h3 {
+  margin-bottom: 14px;
+  font-size: clamp(23px, 2vw, 28px);
+  letter-spacing: var(--card-title-tracking);
+}
+
+.cardBody,
+.cardBody p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.waysGrid,
+.womenGrid,
+.rolesGrid,
+.growthGrid,
+.honestGrid {
+  display: grid;
+  gap: clamp(20px, 4vw, 64px);
+}
+
+.womenGrid {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.womenGrid .sectionHeading {
+  margin-bottom: 0;
+}
+
+.womenDetails {
+  display: grid;
+  gap: 16px;
+}
+
+.womenDetails .numberedCard {
+  background: #fff;
+}
+
+.womenDetails .cardIndex {
+  margin-bottom: 18px;
+}
+
+.womenDetails .numberedCard h3 {
+  font-size: 20px;
+}
+
+.womenDetails :global(.action) {
+  margin-top: 10px;
+}
+
+.metricGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line-dark);
+  border-left: 1px solid var(--line-dark);
+}
+
+.metric {
+  min-height: 186px;
+  padding: 28px;
+  border-right: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.metric strong {
+  display: block;
+  margin-bottom: 14px;
+  font-family: Sora, sans-serif;
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.metricLabel {
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+}
+
+.metric:last-child {
+  grid-column: span 2;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 90px);
+  align-items: center;
+}
+
+.trustGrid .sectionHeading {
+  margin-bottom: 0;
+}
+
+.trustCopy {
+  padding-left: clamp(0px, 3vw, 50px);
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+  font-size: clamp(16px, 1.3vw, 19px);
+}
+
+.trustCopy strong {
+  display: block;
+  margin-top: 28px;
+  color: var(--deep);
+  font-family: Sora, sans-serif;
+  font-size: clamp(21px, 2vw, 28px);
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.processGrid .numberedCard {
+  position: relative;
+  min-height: 295px;
+  border-color: var(--line-dark);
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.processGrid .cardIndex {
+  margin-bottom: 54px;
+  color: var(--accent);
+}
+
+.processGrid .numberedCard h3 {
+  color: #fff;
+}
+
+.processGrid .cardBody {
+  color: var(--dark-muted);
+}
+
+.processLink {
+  display: block;
+  margin-top: 34px;
+  color: var(--accent);
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.rolesGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.roleCard {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: white;
+}
+
+.roleCard h3 {
+  font-size: 21px;
+}
+
+.roleCard p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.roleCard .smallLabel {
+  color: #075b56;
+  margin-bottom: 9px;
+}
+
+.roleCard:nth-child(5) {
+  grid-column: 1 / -1;
+  width: calc(50% - 7px);
+  justify-self: center;
+}
+
+.systemsGrid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.systemsGrid .numberedCard {
+  min-height: 235px;
+  padding: 24px;
+}
+
+.systemsGrid .cardIndex {
+  margin-bottom: 28px;
+}
+
+.systemsGrid .numberedCard h3 {
+  font-size: 18px;
+}
+
+.systemsGrid .cardBody {
+  font-size: 14px;
+}
+
+.modeGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.modeGrid .numberedCard {
+  min-height: 250px;
+}
+
+.reasonGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.reasonGrid .numberedCard {
+  min-height: 310px;
+}
+
+.growthGrid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.growthCard {
+  min-width: 0;
+  padding: 26px;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.growthCard h3 {
+  font-size: 21px;
+  margin-bottom: 35px;
+}
+
+.growthCard dl {
+  margin: 0;
+}
+
+.growthCard dt {
+  margin-top: 22px;
+  color: #075b56;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.growthCard dd {
+  margin: 4px 0 0;
+  font-family: Sora, sans-serif;
+  font-size: clamp(20px, 1.7vw, 26px);
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.disclaimer {
+  margin-top: 24px;
+  color: var(--dark-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.honestGrid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  align-items: start;
+}
+
+.honestGrid .sectionHeading {
+  margin-bottom: 0;
+}
+
+.thriveList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thriveList li {
+  position: relative;
+  padding: 21px 0 21px 28px;
+  border-top: 1px solid var(--line);
+  font-family: Sora, sans-serif;
+  font-size: clamp(18px, 1.7vw, 22px);
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.thriveList li::before {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0f8272;
+  content: "";
+}
+
+.honestNote {
+  max-width: 59ch;
+  margin-top: 32px;
+  padding: 28px 32px;
+  border-left: 3px solid var(--deep);
+  background: #e6ecec;
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.cta {
+  padding: clamp(80px, 9vw, 130px) var(--about-gutter);
+  background: #dcece8;
+}
+
+.ctaInner {
+  max-width: 820px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.ctaInner :global(.eyebrow) {
+  margin-bottom: 22px;
+  color: #075b56;
+}
+
+.ctaInner h2 {
+  font-size: clamp(38px, 4.5vw, 64px);
+}
+
+.ctaInner > p {
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: clamp(16px, 1.2vw, 19px);
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.ctaActions :global(.action-secondary) {
+  background: transparent;
+  color: var(--deep);
+}
+
+.ctaActions :global(.action-secondary:hover) {
+  background: var(--deep);
+  color: #fff;
+}
+
+@media (max-width: 1080px) {
+  .valueGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .valueCard,
+  .valueCard:nth-last-child(-n + 2) {
+    grid-column: auto;
+  }
+  .valueCard:first-child {
+    grid-column: 1 / -1;
+  }
+  .roleCard {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .systemsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .processGrid,
+  .growthGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .reasonGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .beliefs {
+    grid-template-columns: 1fr;
+  }
+  .beliefs blockquote {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .heroContent {
+    padding: clamp(52px, 7vw, 76px) clamp(30px, 6vw, 60px);
+  }
+  .heroImageWrap {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    background: var(--deep);
+  }
+  .heroImage {
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%);
+    mask-image: linear-gradient(to bottom, transparent, #000 22%);
+  }
+  .heroPortrait .heroImage {
+    object-position: center top;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin: 6px 8px 0;
+    border-radius: 16px;
+  }
+  .heroContent {
+    padding: 70px 24px 48px;
+  }
+  .heroContent h1 {
+    font-size: clamp(36px, 10vw, 54px);
+  }
+  .heroContent > p {
+    font-size: 16px;
+  }
+  .heroImageWrap {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .heroImageWrap::after {
+    background: linear-gradient(0deg, rgba(19, 65, 67, 0.2), transparent 35%);
+  }
+  .heroPortrait .heroImage {
+    object-position: center;
+  }
+  .heroIndex {
+    bottom: 12px;
+    right: 14px;
+  }
+  .section,
+  .sectionDark,
+  .sectionWhite {
+    padding-block: 78px;
+  }
+  .journey,
+  .founderGrid,
+  .womenGrid,
+  .trustGrid,
+  .honestGrid {
+    grid-template-columns: 1fr;
+  }
+  .journeyAside,
+  .founderAside {
+    position: static;
+  }
+  .journeyAside {
+    grid-row: 1;
+  }
+  .journeyAside .imagePanel {
+    aspect-ratio: 16 / 10;
+  }
+  .founderAside .imagePanel {
+    aspect-ratio: 16 / 10;
+  }
+  .missionGrid,
+  .rolesGrid,
+  .modeGrid {
+    grid-template-columns: 1fr;
+  }
+  .roleCard:nth-child(5) {
+    grid-column: auto;
+    width: 100%;
+  }
+  .valueGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metricGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metric:last-child {
+    grid-column: span 2;
+  }
+  .systemsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .heroContent {
+    padding: 52px 22px 38px;
+  }
+  .heroImageWrap {
+    aspect-ratio: 4 / 3;
+  }
+  .section,
+  .sectionDark,
+  .sectionWhite {
+    padding-block: 64px;
+  }
+  .sectionHeading {
+    margin-bottom: 36px;
+  }
+  .journeyList {
+    padding-left: 36px;
+  }
+  .journeyList li {
+    min-height: 0;
+  }
+  .journeyList li::before {
+    left: -33px;
+  }
+  .journeyList::before {
+    left: 9px;
+  }
+  .valueGrid,
+  .processGrid,
+  .reasonGrid,
+  .growthGrid,
+  .systemsGrid,
+  .modeGrid {
+    grid-template-columns: 1fr;
+  }
+  .valueCard:first-child {
+    grid-column: auto;
+  }
+  .numberedCard,
+  .missionCard,
+  .growthCard {
+    min-height: auto !important;
+  }
+  .numberedCard .cardIndex {
+    margin-bottom: 24px;
+  }
+  .roleCard {
+    display: block;
+    padding: 24px;
+  }
+  .roleCard > h3 {
+    margin-bottom: 20px;
+  }
+  .metric {
+    min-height: 145px;
+    padding: 20px;
+  }
+  .metric strong {
+    font-size: clamp(25px, 8vw, 36px);
+  }
+  .metricLabel {
+    font-size: 13px;
+  }
+  .ctaActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ctaActions :global(.action) {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .journeyList li,
+    .numberedCard,
+    .growthCard,
+    .roleCard {
+      animation: about-enter linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 58%;
+    }
+  }
+}
+
+@keyframes about-enter {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

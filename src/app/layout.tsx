@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Preloader from "@/components/preloader";
+import RoutePreloader from "@/components/route-preloader";
 import { siteUrl } from "@/lib/content";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -52,7 +52,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Preloader />
+        <RoutePreloader />
         {children}
         <script
           type="application/ld+json"

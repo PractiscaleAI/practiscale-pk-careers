@@ -23,7 +23,7 @@ export const careerChapters: readonly CareerChapter[] = [
     title: "Training Programs",
     body: "Start with training. Learn the skill, pass the role assessment and move into a paid role on our team or our clients' accounts.",
     cta: "View Training Programs",
-    href: "#",
+    href: "/training-programs/appointment-setter",
     visualLabel: "Skills taking shape",
   },
   {
@@ -34,7 +34,7 @@ export const careerChapters: readonly CareerChapter[] = [
     title: "Jobs",
     body: "Bring your experience in sales, design, video, development, AI, recruitment or operations. Apply directly for an open role.",
     cta: "See Open Jobs",
-    href: "#",
+    href: "/jobs",
     visualLabel: "A connected team",
   },
 ];

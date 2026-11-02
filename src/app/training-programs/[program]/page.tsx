@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import CareerDestination from "@/components/career-destination";
-import { careerPrograms } from "@/lib/career-content";
+import InteriorShell from "@/components/interior-shell";
+import TrainingProgramPage, {
+  trainingPrograms,
+  type TrainingProgramSlug,
+} from "@/components/training-program-page";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return [{ program: "appointment-setter" }, { program: "virtual-assistant" }];
+  return Object.keys(trainingPrograms).map((program) => ({ program }));
 }
 const findProgram = (program: string) =>
-  careerPrograms.find(
-    (ch) => ch.href === `/training-programs/${program}` && ch.id !== "training",
-  );
+  program in trainingPrograms
+    ? trainingPrograms[program as TrainingProgramSlug]
+    : null;
 export async function generateMetadata({
   params,
 }: {
@@ -20,9 +23,16 @@ export async function generateMetadata({
     chapter = findProgram(program);
   if (!chapter) return {};
   return {
-    title: chapter.title,
-    description: chapter.body,
+    title: { absolute: chapter.seoTitle },
+    description: chapter.seoDescription,
+    keywords: chapter.keywords,
     alternates: { canonical: chapter.href },
+    openGraph: {
+      title: chapter.seoTitle,
+      description: chapter.seoDescription,
+      url: chapter.href,
+      type: "website",
+    },
   };
 }
 export default async function ProgramPage({
@@ -33,5 +43,9 @@ export default async function ProgramPage({
   const { program } = await params,
     chapter = findProgram(program);
   if (!chapter) notFound();
-  return <CareerDestination chapter={chapter} />;
+  return (
+    <InteriorShell>
+      <TrainingProgramPage program={chapter} />
+    </InteriorShell>
+  );
 }

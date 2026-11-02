@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write src docs scripts *.ts *.json *.mjs SETUP.md",
     "test:browser": "node scripts/qa-site.cjs",
+    "test:interior": "node scripts/qa-interior-pages.cjs",
     "test:motion": "node scripts/qa-motion.cjs",
     "test:preloader": "node scripts/qa-preloader.cjs",
     "test:layout": "node scripts/qa-layout.cjs",
