@@ -65,7 +65,7 @@
 .video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transform-origin: center;
 }
@@ -229,12 +229,12 @@
     gap: 24px;
   }
   .copy h2 {
-    font-size: clamp(26px, 6.8vw, 34px);
-    margin: 14px 0 18px;
+    font-size: clamp(25px, 6.8vw, 32px);
+    margin: 8px 0 12px;
   }
   .copy > p:last-child {
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 14.5px;
+    line-height: 1.5;
   }
   .slot {
     width: min(100%, 520px);
@@ -244,6 +244,56 @@
   }
   .section[data-enhanced="true"] .inner {
     padding-inline: 24px;
+    padding-block: 84px 16px;
+    gap: 12px;
+  }
+  .section[data-enhanced="true"] .hint {
+    padding-top: 0;
+    font-size: 11px;
+  }
+  .section[data-enhanced="true"] .watch {
+    background: color-mix(in srgb, var(--deep) 94%, transparent);
+    box-shadow: 0 8px 22px rgb(0 0 0 / 18%);
+  }
+}
+@media (max-width: 359px) {
+  .section[data-enhanced="true"] .inner {
+    padding-top: 84px;
+    padding-bottom: 12px;
+    gap: 8px;
+  }
+  .copy h2 {
+    font-size: 24px;
+    line-height: 1.08;
+    margin-block: 6px 8px;
+  }
+  .copy > p:last-child {
+    font-size: 13px;
+    line-height: 1.38;
+  }
+  .section[data-enhanced="true"] .watch {
+    min-height: 40px;
+    padding: 8px 12px;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .section[data-enhanced="true"] .hint {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .section[data-enhanced="true"] .inner {
+    /* The fixed tablet header is taller than the 24px desktop stage inset. */
+    padding-top: 112px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) and (max-height: 850px) {
+  .section[data-enhanced="true"] .inner {
+    /* At the first desktop breakpoint the brand mark still occupies this row. */
+    padding-top: 112px;
+  }
+  .copy > p:last-child {
+    max-width: 470px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -320,10 +370,22 @@
     aspect-ratio: 941/1672;
   }
 }
-.poster {
+@media (max-width: 1023px) and (orientation: portrait) {
+  .section[data-portrait="true"][data-enhanced="true"] .slot {
+    width: 100%;
+    aspect-ratio: 4/3;
+  }
+  .section[data-enhanced="true"] .hint {
+    /* Reserve space for the manual Watch control below the wide card. */
+    padding-top: 50px;
+  }
+}
+.poster,
+.thumbnail {
   display: none;
 }
-.section[data-enhanced="true"] .poster {
+.section[data-enhanced="true"] .poster,
+.section[data-enhanced="true"] .thumbnail {
   display: block;
   position: absolute;
   inset: 0;
@@ -332,9 +394,20 @@
   transform-origin: center;
   transition: opacity 180ms ease;
 }
-.poster img {
+.section[data-enhanced="true"] .thumbnail {
+  /* Scroll progress already eases the cover handoff. A CSS transition here
+     would lag behind quick forward and reverse gestures. */
+  transition: none;
+}
+.poster img,
+.thumbnail img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.thumbnail img {
+  /* The authored cover matches the preview slot, while the sticky stage has
+     a different aspect ratio. Preserve the full headline inside that slot. */
   object-fit: contain;
 }
 .section[data-expanded="true"][data-film-ready="true"] .poster {
@@ -343,5 +416,123 @@
 @media (prefers-reduced-motion: reduce) {
   .poster {
     transition: none;
+  }
+}
+
+.filmDialog:not([open]) {
+  display: none;
+}
+.filmDialog[open] {
+  display: block;
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: var(--deep);
+  color: #fff;
+  overscroll-behavior: contain;
+}
+.filmDialog::backdrop {
+  background: var(--deep);
+}
+.dialogVideo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--deep);
+}
+.dialogPrompt {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 35%, rgb(5 31 34 / 22%));
+  transition:
+    opacity 180ms ease,
+    visibility 180ms ease;
+}
+.dialogPrompt button {
+  pointer-events: auto;
+}
+.filmDialog[data-playing="true"] .dialogPrompt {
+  opacity: 0;
+  visibility: hidden;
+}
+.dialogPlay,
+.dialogContinue {
+  border: 1px solid rgb(255 255 255 / 48%);
+  border-radius: 999px;
+  background: var(--deep);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 24%);
+}
+.dialogPlay {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 14px 22px;
+  font-size: 16px;
+}
+.dialogPlay span {
+  font-size: 13px;
+}
+.dialogContinue {
+  position: absolute;
+  z-index: 2;
+  bottom: max(78px, calc(env(safe-area-inset-bottom) + 68px));
+  right: max(18px, env(safe-area-inset-right));
+  min-height: 44px;
+  padding: 10px 18px;
+  font-size: 14px;
+}
+.dialogContinue span {
+  margin-left: 8px;
+}
+.dialogPlay:hover,
+.dialogContinue:hover {
+  background: var(--surface);
+}
+.dialogPlay:focus-visible,
+.dialogContinue:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.dialogPrompt p {
+  max-width: 330px;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 1px 8px rgb(0 0 0 / 55%);
+}
+@media (max-width: 767px) {
+  .dialogPlay {
+    min-height: 52px;
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+  .dialogContinue {
+    bottom: max(74px, calc(env(safe-area-inset-bottom) + 64px));
+    right: max(12px, env(safe-area-inset-right));
+    padding: 8px 14px;
   }
 }

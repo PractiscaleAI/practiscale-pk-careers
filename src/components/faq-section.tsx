@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { homeFaqs } from "@/lib/content";
 import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 import styles from "./faq-section.module.css";
@@ -10,6 +10,8 @@ const clamp = (value: number) => Math.max(0, Math.min(1, value));
 
 export default function FaqSection() {
   const root = useRef<HTMLElement>(null);
+  const [interactive, setInteractive] = useState(false);
+  const [active, setActive] = useState<number | null>(null);
 
   useEffect(() => {
     const section = root.current;
@@ -24,9 +26,9 @@ export default function FaqSection() {
     const canvas =
       section.querySelector<HTMLCanvasElement>("[data-faq-canvas]");
     const list = section.querySelector<HTMLElement>("[data-faq-list]");
-    const items = Array.from(
-      section.querySelectorAll<HTMLElement>("[data-faq-item]"),
-    );
+    const heading = introTrack?.querySelector<HTMLElement>("h2");
+    const firstQuestion =
+      list?.querySelector<HTMLElement>("[data-faq-item] h3");
     const answers = Array.from(
       section.querySelectorAll<HTMLElement>("[data-faq-answer]"),
     );
@@ -35,14 +37,15 @@ export default function FaqSection() {
       !introScene ||
       !canvas ||
       !list ||
-      items.length !== homeFaqs.length
+      !heading ||
+      !firstQuestion ||
+      answers.length !== homeFaqs.length
     )
       return;
 
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     const abort = new AbortController();
-    let active = -1;
-    let enhanced = false;
+    let motion = false;
     let readFrame = 0;
     let paintFrame = 0;
     let introTarget = 0;
@@ -57,22 +60,21 @@ export default function FaqSection() {
       destroy: () => void;
     } | null = null;
 
-    function activate(index: number) {
-      if (index === active) return;
-      active = index;
-      section!.dataset.active = String(index);
-      items.forEach((item, itemIndex) => {
-        const selected = itemIndex === index;
-        item.dataset.active = String(selected);
-        const answer = answers[itemIndex];
-        answer.inert = enhanced && !selected;
-        if (enhanced && !selected) answer.setAttribute("aria-hidden", "true");
-        else answer.removeAttribute("aria-hidden");
-      });
-    }
-
     function paint(now: number) {
       paintFrame = 0;
+      // Scroll moves the list immediately, while the sculpture and text ease
+      // toward it. Hide the title if a fast fling brings the first question
+      // close before the normal title fade has caught up.
+      const titleClearance =
+        firstQuestion!.getBoundingClientRect().top -
+        heading!.getBoundingClientRect().bottom;
+      const geometryProgress = clamp((120 - titleClearance) / 56);
+      const geometryExit =
+        geometryProgress * geometryProgress * (3 - 2 * geometryProgress);
+      section!.style.setProperty(
+        "--faq-geometric-exit",
+        geometryExit.toFixed(4),
+      );
       const elapsed = lastPaint ? Math.min(64, now - lastPaint) : 16;
       lastPaint = now;
       introPainted +=
@@ -83,10 +85,14 @@ export default function FaqSection() {
         "--faq-intro-progress",
         introPainted.toFixed(4),
       );
-      const closingProgress = clamp((introPainted - 0.66) / 0.04);
+      const closingProgress = clamp((introPainted - 0.61) / 0.07);
       const floorClose =
         closingProgress * closingProgress * (3 - 2 * closingProgress);
-      const answerProgress = clamp((introPainted - 0.67) / 0.06);
+      const headingProgress = clamp((introPainted - 0.78) / 0.14);
+      const headingExit =
+        headingProgress * headingProgress * (3 - 2 * headingProgress);
+      section!.style.setProperty("--faq-heading-exit", headingExit.toFixed(4));
+      const answerProgress = clamp((introPainted - 0.61) / 0.07);
       const answerReveal =
         answerProgress * answerProgress * (3 - 2 * answerProgress);
       section!.style.setProperty("--faq-floor-close", floorClose.toFixed(4));
@@ -95,9 +101,13 @@ export default function FaqSection() {
         "--faq-question-reveal",
         answerReveal.toFixed(4),
       );
+      const handoffProgress = clamp((introPainted - 0.86) / 0.13);
+      const handoffRise =
+        handoffProgress * handoffProgress * (3 - 2 * handoffProgress);
+      section!.style.setProperty("--faq-handoff-rise", handoffRise.toFixed(4));
       // Keep answer links out of keyboard navigation until the first row is
       // visibly readable. Restore them as soon as the handoff completes.
-      list!.inert = enhanced && answerReveal < 0.5;
+      list!.inert = motion && answerReveal < 0.25;
       sculpture?.render(introPainted, pointerX, pointerY);
       if (introPainted !== introTarget)
         paintFrame = requestAnimationFrame(paint);
@@ -105,19 +115,12 @@ export default function FaqSection() {
 
     function read() {
       readFrame = 0;
-      if (!enhanced) return;
+      if (!motion) return;
       const introRect = introTrack!.getBoundingClientRect();
       const travel = Math.max(1, introTrack!.offsetHeight - innerHeight);
       introTarget = clamp(-introRect.top / travel);
       if (Math.abs(introTarget - introPainted) > 0.002 && !paintFrame)
         paintFrame = requestAnimationFrame(paint);
-
-      const focusLine = innerHeight * (innerWidth <= 600 ? 0.38 : 0.5);
-      let next = 0;
-      items.forEach((item, index) => {
-        if (item.getBoundingClientRect().top <= focusLine) next = index;
-      });
-      if (!answers[active]?.contains(document.activeElement)) activate(next);
     }
 
     function schedule() {
@@ -125,28 +128,27 @@ export default function FaqSection() {
     }
 
     function setup() {
-      enhanced = !reduced.matches;
-      section!.dataset.enhanced = String(enhanced);
-      list!.inert = enhanced && introPainted < 0.7;
+      motion = !reduced.matches;
+      section!.dataset.motion = String(motion);
+      list!.inert = motion && introPainted < 0.63;
       answers.forEach((answer, index) => {
         answer.style.height = "auto";
-        items[index].style.setProperty(
+        answer.parentElement?.style.setProperty(
           "--faq-answer-height",
           `${answer.scrollHeight}px`,
         );
         answer.style.removeProperty("height");
       });
-      if (enhanced) {
-        active = -1;
-        activate(0);
+      if (motion) {
         read();
+        if (!paintFrame) paintFrame = requestAnimationFrame(paint);
       } else {
-        active = -1;
-        items.forEach((item) => (item.dataset.active = "false"));
-        answers.forEach((answer) => {
-          answer.inert = false;
-          answer.removeAttribute("aria-hidden");
-        });
+        if (paintFrame) cancelAnimationFrame(paintFrame);
+        paintFrame = 0;
+        introTarget = 0;
+        introPainted = 0;
+        lastPaint = 0;
+        section!.style.setProperty("--faq-intro-progress", "0");
       }
       sculpture?.resize();
       sculpture?.render(introPainted, pointerX, pointerY);
@@ -161,7 +163,6 @@ export default function FaqSection() {
       signal: abort.signal,
     });
     reduced.addEventListener("change", setup, { signal: abort.signal });
-    section.addEventListener("focusout", schedule, { signal: abort.signal });
     introScene.addEventListener(
       "pointermove",
       (event) => {
@@ -208,6 +209,7 @@ export default function FaqSection() {
     observer.observe(introTrack);
 
     setup();
+    setInteractive(true);
     document.fonts.ready.then(() => {
       if (!abort.signal.aborted) setup();
     });
@@ -230,7 +232,8 @@ export default function FaqSection() {
       className={styles.section}
       aria-labelledby="questions-heading"
       data-theme="fog"
-      data-active="0"
+      data-active={active ?? -1}
+      data-enhanced={interactive}
     >
       <div className={styles.introTrack} data-faq-intro-track>
         <div className={styles.introStage}>
@@ -258,15 +261,50 @@ export default function FaqSection() {
             key={question}
             className={styles.item}
             data-faq-item
-            data-active={index === 0}
+            data-active={active === index}
+            onPointerMove={(event) => {
+              if (event.pointerType !== "mouse" || !interactive) return;
+              const focusedAnswer = root.current?.querySelector<HTMLElement>(
+                `[data-faq-item][data-active="true"] [data-faq-answer]`,
+              );
+              if (focusedAnswer?.contains(document.activeElement)) return;
+              setActive(index);
+            }}
           >
             <div className={styles.question}>
               <span className={styles.number} aria-hidden="true">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3>{question}</h3>
+              <h3>
+                <button
+                  type="button"
+                  className={styles.questionButton}
+                  data-faq-trigger
+                  disabled={!interactive}
+                  aria-expanded={!interactive || active === index}
+                  aria-controls={`faq-answer-${index + 1}`}
+                  onClick={(event) => {
+                    if (
+                      event.nativeEvent instanceof PointerEvent &&
+                      event.nativeEvent.pointerType === "mouse"
+                    ) {
+                      setActive(index);
+                      return;
+                    }
+                    setActive((current) => (current === index ? null : index));
+                  }}
+                >
+                  <span>{question}</span>
+                </button>
+              </h3>
             </div>
-            <div className={styles.answerBody} data-faq-answer>
+            <div
+              id={`faq-answer-${index + 1}`}
+              className={styles.answerBody}
+              data-faq-answer
+              inert={interactive && active !== index}
+              aria-hidden={interactive && active !== index ? true : undefined}
+            >
               <p>
                 {index === 0 ? (
                   <>

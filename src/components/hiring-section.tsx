@@ -349,11 +349,6 @@ export default function HiringSection() {
             ))}
           </ol>
         </div>
-        <div className={styles.footer}>
-          <span className={styles.hint}>
-            Scroll to explore <span aria-hidden="true">↓</span>
-          </span>
-        </div>
       </div>
       <div id="hiring-end" tabIndex={-1} className={styles.end} />
     </section>

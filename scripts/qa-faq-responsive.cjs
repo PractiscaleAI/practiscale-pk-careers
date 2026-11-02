@@ -2,16 +2,20 @@ const { chromium } = require("@playwright/test");
 const path = require("node:path");
 
 const baseURL = process.env.FAQ_BASE_URL || "http://127.0.0.1:3000";
-const cases = [
-  [320, 568],
-  [390, 844],
-  [424, 668],
-  [768, 600],
-  [768, 1024],
-  [1536, 696],
-  [1440, 900],
-  [1900, 861],
-];
+const cases = process.env.FAQ_CASE
+  ? [process.env.FAQ_CASE.split("x").map(Number)]
+  : [
+      [320, 568],
+      [390, 844],
+      [424, 668],
+      [768, 600],
+      [768, 1024],
+      [1100, 700],
+      [1280, 720],
+      [1536, 696],
+      [1440, 900],
+      [1900, 861],
+    ];
 
 async function dismissIntroduction(page) {
   await page.waitForTimeout(350);
@@ -23,21 +27,42 @@ async function dismissIntroduction(page) {
 }
 
 async function goToQuestion(page, index) {
+  await page.evaluate(() => {
+    const intro = document.querySelector("[data-faq-intro-track]");
+    scrollTo({
+      top:
+        intro.getBoundingClientRect().top +
+        scrollY +
+        intro.offsetHeight -
+        innerHeight,
+      behavior: "instant",
+    });
+  });
+  await page.waitForFunction(
+    () =>
+      Number(
+        document
+          .querySelector("#questions")
+          ?.style.getPropertyValue("--faq-intro-progress"),
+      ) > 0.99,
+  );
   await page.evaluate((itemIndex) => {
     const item = document.querySelectorAll("[data-faq-item]")[itemIndex];
     const focus = innerHeight * (innerWidth <= 600 ? 0.38 : 0.5);
     scrollTo({
-      top: item.getBoundingClientRect().top + scrollY - focus + 10,
+      // The first row can already be near the top of the viewport at the
+      // end of the intro. Scrolling backwards to center it reopens the 3D
+      // scene and tests the wrong state.
+      top: Math.max(
+        scrollY,
+        item.getBoundingClientRect().top + scrollY - focus + 10,
+      ),
       behavior: "instant",
     });
   }, index);
   await page.waitForFunction(
-    (itemIndex) =>
-      document.querySelector("#questions")?.dataset.active ===
-      String(itemIndex),
-    index,
+    () => !document.querySelector("[data-faq-list]")?.inert,
   );
-  await page.waitForTimeout(450);
 }
 
 async function capture(page, width, height, scene) {
@@ -52,6 +77,49 @@ async function capture(page, width, height, scene) {
       `faq-reference-match-${width}x${height}-${scene}.png`,
     ),
   });
+}
+
+async function assertNoTitleQuestionCollision(page, label, frames = 1) {
+  const samples = await page.evaluate(async (count) => {
+    const title = document.querySelector("#questions h2");
+    const titleLayer = title.parentElement;
+    const firstRow = document.querySelector("#questions [data-faq-item]");
+    const result = [];
+    for (let frame = 0; frame < count; frame++) {
+      await new Promise(requestAnimationFrame);
+      const titleRect = title.getBoundingClientRect();
+      const rowRect = firstRow.getBoundingClientRect();
+      const horizontalOverlap =
+        Math.min(titleRect.right, rowRect.right) -
+        Math.max(titleRect.left, rowRect.left);
+      const verticalOverlap =
+        Math.min(titleRect.bottom, rowRect.bottom) -
+        Math.max(titleRect.top, rowRect.top);
+      const titleOpacity = Number(getComputedStyle(titleLayer).opacity);
+      const rowOpacity = Number(getComputedStyle(firstRow).opacity);
+      if (
+        titleOpacity > 0.05 &&
+        rowOpacity > 0.05 &&
+        horizontalOverlap > 0 &&
+        verticalOverlap > 0
+      ) {
+        result.push({
+          frame,
+          titleOpacity,
+          rowOpacity,
+          verticalOverlap,
+          introProgress: document
+            .querySelector("#questions")
+            .style.getPropertyValue("--faq-intro-progress"),
+        });
+      }
+    }
+    return result;
+  }, frames);
+  if (samples.length)
+    throw Error(
+      `${label}: FAQ title overlaps first question ${JSON.stringify(samples[0])}`,
+    );
 }
 
 (async () => {
@@ -181,7 +249,31 @@ async function capture(page, width, height, scene) {
               `${width}x${height} at ${progress}: blank FAQ handoff ${JSON.stringify(handoff)}`,
             );
         }
+        await assertNoTitleQuestionCollision(
+          page,
+          `${width}x${height} at ${progress}`,
+        );
         await capture(page, width, height, `intro-${progress}`);
+      }
+
+      // A fast wheel or touch fling moves the document before eased visual
+      // progress catches up. Check every painted frame in both directions.
+      for (const target of [0, 1, 0]) {
+        await page.evaluate((p) => {
+          const intro = document.querySelector("[data-faq-intro-track]");
+          scrollTo({
+            top:
+              intro.getBoundingClientRect().top +
+              scrollY +
+              (intro.offsetHeight - innerHeight) * p,
+            behavior: "instant",
+          });
+        }, target);
+        await assertNoTitleQuestionCollision(
+          page,
+          `${width}x${height} fast scroll to ${target}`,
+          50,
+        );
       }
 
       if ([424, 1536].includes(width)) {
@@ -211,8 +303,41 @@ async function capture(page, width, height, scene) {
         await capture(page, width, height, "intro-reverse-0.5");
       }
 
+      let previousHover = -1;
       for (const index of [0, 3, 6, 0]) {
         await goToQuestion(page, index);
+        const beforeHover = await page
+          .locator("#questions")
+          .getAttribute("data-active");
+        if (beforeHover !== String(previousHover))
+          throw Error(
+            `${width}x${height}: scrolling changed the open answer from ${previousHover} to ${beforeHover}`,
+          );
+        await page.locator("[data-faq-trigger]").nth(index).hover();
+        await page.waitForFunction(
+          (itemIndex) =>
+            document.querySelector("#questions")?.dataset.active ===
+            String(itemIndex),
+          index,
+        );
+        await page.waitForFunction(
+          (itemIndex) => {
+            const section = document.querySelector("#questions");
+            const items = [...section.querySelectorAll("[data-faq-item]")];
+            return (
+              section.dataset.active === String(itemIndex) &&
+              items.every((item, currentIndex) => {
+                const answer = item.querySelector("[data-faq-answer]");
+                const height = answer.getBoundingClientRect().height;
+                return currentIndex === itemIndex
+                  ? Math.abs(height - answer.scrollHeight) <= 3
+                  : height <= 3;
+              })
+            );
+          },
+          index,
+          { timeout: 1600 },
+        );
         const state = await page.evaluate(() => {
           const section = document.querySelector("#questions");
           const items = [...section.querySelectorAll("[data-faq-item]")];
@@ -220,6 +345,9 @@ async function capture(page, width, height, scene) {
           const activeAnswer = active.querySelector("[data-faq-answer]");
           return {
             active: section.dataset.active,
+            expanded: active
+              .querySelector("[data-faq-trigger]")
+              .getAttribute("aria-expanded"),
             visibleQuestions: items.filter(
               (item) => item.getClientRects().length,
             ).length,
@@ -228,12 +356,28 @@ async function capture(page, width, height, scene) {
                 item.querySelector("[data-faq-answer]").getBoundingClientRect()
                   .height > 3,
             ).length,
+            answerHeights: items.map(
+              (item) =>
+                Math.round(
+                  item
+                    .querySelector("[data-faq-answer]")
+                    .getBoundingClientRect().height * 10,
+                ) / 10,
+            ),
             answerBottom: activeAnswer.getBoundingClientRect().bottom,
             overflow: document.documentElement.scrollWidth - innerWidth,
+            scrollY,
+            questionTop: active.getBoundingClientRect().top,
+            introProgress: document
+              .querySelector("#questions")
+              .style.getPropertyValue("--faq-intro-progress"),
           };
         });
+        if ([0, 6].includes(index))
+          await capture(page, width, height, `question-${index + 1}`);
         if (
           state.active !== String(index) ||
+          state.expanded !== "true" ||
           state.visibleQuestions !== 7 ||
           state.openAnswers !== 1 ||
           state.answerBottom > height + 8 ||
@@ -243,35 +387,74 @@ async function capture(page, width, height, scene) {
           throw Error(
             `${width}x${height} question ${index + 1}: ${JSON.stringify({ state, errors })}`,
           );
-        if ([0, 6].includes(index))
-          await capture(page, width, height, `question-${index + 1}`);
+        await page.mouse.move(5, 10);
+        if (
+          (await page.locator("#questions").getAttribute("data-active")) !==
+          String(index)
+        )
+          throw Error(
+            `${width}x${height}: leaving a question closed its answer`,
+          );
+        previousHover = index;
+      }
+      if (width === 1440) {
+        const keyboardTrigger = page.locator("[data-faq-trigger]").nth(3);
+        await keyboardTrigger.focus();
+        await keyboardTrigger.press("Enter");
+        const enterState = await page
+          .locator("#questions")
+          .getAttribute("data-active");
+        if (enterState !== "3")
+          throw Error(
+            `Keyboard Enter did not open the focused FAQ answer: ${JSON.stringify(await page.evaluate(() => ({ active: document.querySelector("#questions").dataset.active, focus: document.activeElement?.tagName, disabled: document.querySelectorAll("[data-faq-trigger]")[3].disabled, inert: document.querySelector("[data-faq-list]").inert, scrollY, progress: document.querySelector("#questions").style.getPropertyValue("--faq-intro-progress") })))}`,
+          );
+        await keyboardTrigger.press("Space");
+        if (
+          (await page.locator("#questions").getAttribute("data-active")) !==
+          "-1"
+        )
+          throw Error("Keyboard Space did not close the focused FAQ answer");
       }
       console.log(
-        `PASS ${width}x${height}: 3D entrance, questions 01 -> 04 -> 07 -> 01`,
+        `PASS ${width}x${height}: 3D entrance and pointer-hover answers`,
       );
       await page.close();
     }
 
-    const touch = await browser.newContext({
-      viewport: { width: 390, height: 844 },
-      isMobile: true,
-      hasTouch: true,
-      deviceScaleFactor: 2,
-    });
-    const touchPage = await touch.newPage();
-    await touchPage.goto(baseURL, { waitUntil: "domcontentloaded" });
-    await dismissIntroduction(touchPage);
-    await goToQuestion(touchPage, 6);
-    const touchState = await touchPage.evaluate(() => ({
-      active: document.querySelector("#questions")?.dataset.active,
-      overflow: document.documentElement.scrollWidth - innerWidth,
-    }));
-    if (touchState.active !== "6" || touchState.overflow > 1)
-      throw Error(`Touch layout: ${JSON.stringify(touchState)}`);
-    console.log(
-      "PASS touch emulation: final answer and no horizontal overflow",
-    );
-    await touch.close();
+    for (const [width, height] of [
+      [320, 568],
+      [390, 844],
+    ]) {
+      const touch = await browser.newContext({
+        viewport: { width, height },
+        isMobile: true,
+        hasTouch: true,
+        deviceScaleFactor: 2,
+      });
+      const touchPage = await touch.newPage();
+      await touchPage.goto(baseURL, { waitUntil: "domcontentloaded" });
+      await dismissIntroduction(touchPage);
+      await goToQuestion(touchPage, 6);
+      await touchPage.locator("[data-faq-trigger]").nth(6).tap();
+      const touchState = await touchPage.evaluate(() => ({
+        active: document.querySelector("#questions")?.dataset.active,
+        overflow: document.documentElement.scrollWidth - innerWidth,
+      }));
+      if (touchState.active !== "6" || touchState.overflow > 1)
+        throw Error(`Touch layout ${width}: ${JSON.stringify(touchState)}`);
+      await touchPage.locator("[data-faq-trigger]").nth(6).tap();
+      if (
+        (await touchPage.locator("#questions").getAttribute("data-active")) !==
+        "-1"
+      )
+        throw Error(
+          `Touch ${width}: tapping an open question did not close it`,
+        );
+      console.log(
+        `PASS touch ${width}x${height}: tap opens and closes an answer, no horizontal overflow`,
+      );
+      await touch.close();
+    }
 
     const reduced = await browser.newPage({
       viewport: { width: 424, height: 668 },
@@ -283,15 +466,25 @@ async function capture(page, width, height, scene) {
       const section = document.querySelector("#questions");
       return {
         enhanced: section.dataset.enhanced,
+        motion: section.dataset.motion,
         openAnswers: [...section.querySelectorAll("[data-faq-answer]")].filter(
           (answer) => answer.getBoundingClientRect().height > 3,
         ).length,
       };
     });
-    if (fallback.enhanced !== "false" || fallback.openAnswers !== 7)
+    if (
+      fallback.enhanced !== "true" ||
+      fallback.motion !== "false" ||
+      fallback.openAnswers !== 0
+    )
       throw Error(`Reduced-motion fallback: ${JSON.stringify(fallback)}`);
+    await reduced.locator("[data-faq-trigger]").first().click();
+    if (
+      (await reduced.locator("#questions").getAttribute("data-active")) !== "0"
+    )
+      throw Error("Reduced-motion FAQ did not open on click");
     console.log(
-      "PASS reduced motion: all seven answers in normal reading order",
+      "PASS reduced motion: static introduction and click-to-open answers",
     );
     await reduced.close();
 
@@ -306,6 +499,17 @@ async function capture(page, width, height, scene) {
       .count();
     if (noScriptAnswers !== 7)
       throw Error(`No-JavaScript fallback: ${noScriptAnswers} answers`);
+    const visibleNoScriptAnswers = await noScriptPage
+      .locator("[data-faq-answer]")
+      .evaluateAll(
+        (nodes) =>
+          nodes.filter((answer) => answer.getBoundingClientRect().height > 3)
+            .length,
+      );
+    if (visibleNoScriptAnswers !== 7)
+      throw Error(
+        `No-JavaScript fallback: only ${visibleNoScriptAnswers} visible answers`,
+      );
     console.log("PASS no JavaScript: seven answers in document order");
     await noScript.close();
   } finally {

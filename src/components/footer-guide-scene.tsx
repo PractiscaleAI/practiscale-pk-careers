@@ -84,6 +84,7 @@ export default function FooterGuideScene({
     canvas.className = styles.guideCanvas;
     canvas.setAttribute("aria-hidden", "true");
     host.appendChild(canvas);
+    const poster = host.previousElementSibling as HTMLImageElement | null;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.setClearColor(0x000000, 0);
 
@@ -426,12 +427,16 @@ export default function FooterGuideScene({
 
         loaded = true;
         renderer.render(scene, camera);
+        // Swap the still and live render in one paint. A crossfade doubles the
+        // helmet silhouette whenever the head begins turning during entry.
+        if (poster) poster.style.visibility = "hidden";
         canvas.style.opacity = "1";
         host?.setAttribute("data-guide-ready", "true");
         onReady();
         onVisibility();
       } catch {
         canvas.style.opacity = "0";
+        if (poster) poster.style.visibility = "";
         onFailure();
       }
     };
@@ -479,6 +484,7 @@ export default function FooterGuideScene({
         event.preventDefault();
         stop();
         canvas.style.opacity = "0";
+        if (poster) poster.style.visibility = "";
         onFailure();
       },
       { signal: abort.signal },
@@ -497,6 +503,7 @@ export default function FooterGuideScene({
       textures.forEach((texture) => texture.dispose());
       renderer.dispose();
       canvas.remove();
+      if (poster) poster.style.visibility = "";
     };
   }, [onReady, onFailure, depthVariant]);
 

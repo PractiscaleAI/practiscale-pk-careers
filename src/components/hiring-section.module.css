@@ -44,7 +44,6 @@
 .eyebrow,
 .centerLabel,
 .stepNumber,
-.footer,
 .station {
   font-family: "JetBrains Mono", monospace;
 }
@@ -298,28 +297,6 @@
   line-height: var(--body-copy-leading);
   color: var(--dark-muted);
 }
-.footer {
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 11px;
-  color: var(--dark-muted);
-}
-.hint {
-  visibility: hidden;
-}
-.section[data-scroll="true"] .hint {
-  visibility: visible;
-}
-.hint span {
-  color: var(--accent);
-  margin-left: 12px;
-}
 .skip {
   position: absolute;
   z-index: 5;
@@ -418,9 +395,6 @@
     margin-inline: auto;
     transform-origin: center;
   }
-  .footer {
-    justify-content: center;
-  }
   .section[data-scroll="true"] .stage {
     padding-block: 100px 24px;
   }
@@ -480,23 +454,23 @@
     line-height: 1.45;
   }
   .section[data-scroll="true"] .journey {
-    --dial-size: clamp(250px, 43svh, 340px);
-    gap: 0;
+    --dial-size: min(380px, 46svh, calc(100vw - 48px));
+    gap: 8px;
     margin-block: 14px;
   }
   .section[data-scroll="true"] .steps {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    min-height: 0;
-    overflow: hidden;
-    clip-path: inset(50%);
+    position: relative;
+    width: min(100%, 320px);
+    min-height: 62px;
+    margin-inline: auto;
+    overflow: visible;
+    clip-path: none;
   }
   .section[data-scroll="true"] .center {
-    inset: 10% 15% 24%;
+    inset: 23%;
   }
   .section[data-scroll="true"] .centerLabel {
-    font-size: 8px;
+    font-size: 10px;
   }
   .section[data-scroll="true"] .step::before {
     margin-bottom: 8px;
@@ -508,31 +482,22 @@
     font-size: 23px;
   }
   .section[data-scroll="true"] .step p {
-    font-size: 15px;
-    line-height: 1.45;
+    font-size: clamp(13px, 3.5vw, 15px);
+    line-height: 1.4;
   }
   .section[data-scroll="true"] .number {
     font-size: clamp(40px, 6svh, 52px);
     line-height: 1.08;
   }
   .section[data-scroll="true"] .centerTitle {
-    font-size: 16px;
+    font-size: clamp(17px, 4vw, 20px);
   }
   .section[data-scroll="true"] .centerDetail {
-    display: block;
-    max-width: 185px;
-    margin-top: 9px;
-    color: var(--fog);
-    font:
-      500 12px/1.35 Manrope,
-      sans-serif;
+    display: none;
   }
   .section[data-scroll="true"] .station {
     width: 62px;
     height: 46px;
-  }
-  .section[data-scroll="true"] .footer {
-    padding-bottom: 2px;
   }
   .section:not([data-scroll="true"]) .dial {
     display: none;
@@ -553,8 +518,14 @@
   .section:not([data-scroll="true"]) .stepTop {
     margin-bottom: 7px;
   }
-  .section:not([data-scroll="true"]) .footer {
-    display: none;
+}
+@media (max-width: 600px) and (max-height: 650px) {
+  .section[data-scroll="true"] .stage {
+    padding-top: 88px;
+    padding-bottom: 18px;
+  }
+  .section[data-scroll="true"] .journey {
+    margin-block: 8px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

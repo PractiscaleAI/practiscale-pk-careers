@@ -125,6 +125,22 @@ export default function TestimonialCarousel({
       section.style.height = scrollEnabled
         ? `${height + stride * (cards.length - 0.5)}px`
         : "";
+      paintHeading(scrollY - scrollStart());
+    }
+    function paintHeading(distance: number) {
+      if (
+        !scrollEnabled ||
+        innerWidth > 360 ||
+        innerHeight > 620 ||
+        overhang <= 0
+      ) {
+        stage.style.removeProperty("--testimonial-heading-opacity");
+        return;
+      }
+      stage.style.setProperty(
+        "--testimonial-heading-opacity",
+        String(Math.max(0, Math.min(1, -distance / overhang))),
+      );
     }
     function onScroll() {
       // Browser scroll anchoring can fire before its resize event. Preserve the
@@ -136,6 +152,7 @@ export default function TestimonialCarousel({
       if (!scrollEnabled || gesture?.dragging || resizeTimer !== undefined)
         return;
       const distance = scrollY - scrollStart();
+      paintHeading(distance);
       inScene =
         distance >= -overhang && distance <= stride * (cards.length - 0.5);
       const index = clamp(Math.floor(distance / stride + 0.25));
@@ -280,6 +297,7 @@ export default function TestimonialCarousel({
       delete section.dataset.scrollTestimonials;
       section.style.removeProperty("height");
       section.style.removeProperty("--testimonial-pin-top");
+      stage.style.removeProperty("--testimonial-heading-opacity");
       delete host.dataset.enhanced;
       delete host.dataset.dragging;
       track.style.removeProperty("transform");
@@ -348,9 +366,7 @@ export default function TestimonialCarousel({
           ))}
         </div>
         <span className={styles.hint} aria-hidden="true">
-          <span className={styles.scrollHint}>
-            Scroll to hear from the team
-          </span>
+          <span className={styles.scrollHint}>Scroll to read each story</span>
           <span className={styles.mouseHint}>Drag to explore</span>
           <span className={styles.touchHint}>Swipe to explore</span>
         </span>

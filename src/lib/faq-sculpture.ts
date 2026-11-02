@@ -36,6 +36,9 @@ export function mountFaqSculpture(canvas: HTMLCanvasElement): Sculpture {
   scene.add(stage);
   const mark = new THREE.Group();
   stage.add(mark);
+  const frontLetter = new THREE.Group();
+  const rearLetter = new THREE.Group();
+  mark.add(frontLetter, rearLetter);
   const surfaceClip = new THREE.Plane(new THREE.Vector3(0, 1, 0), 1.49);
 
   const letterMaterial = new THREE.MeshStandardMaterial({
@@ -93,9 +96,16 @@ export function mountFaqSculpture(canvas: HTMLCanvasElement): Sculpture {
   for (const shape of [glyph, dot]) {
     const geometry = new THREE.ExtrudeGeometry(shape, extrude);
     geometries.push(geometry);
-    const mesh = new THREE.Mesh(geometry, letterMaterial);
-    mesh.position.z = -0.15;
-    mark.add(mesh);
+    const front = new THREE.Mesh(geometry, letterMaterial);
+    front.position.z = -0.15;
+    frontLetter.add(front);
+    // The rear face of an extruded question mark reads like an S when it
+    // rotates toward the viewer. A second, inward-facing copy keeps the same
+    // typographic silhouette readable through the full scroll turn.
+    const rear = new THREE.Mesh(geometry, letterMaterial);
+    rear.rotation.y = Math.PI;
+    rear.position.z = 0.15;
+    rearLetter.add(rear);
   }
 
   const diskGeometry = new THREE.CylinderGeometry(1.7, 1.67, 0.22, 88);
@@ -131,12 +141,15 @@ export function mountFaqSculpture(canvas: HTMLCanvasElement): Sculpture {
     const turn = turnProgress * turnProgress * (3 - 2 * turnProgress);
     const sinkProgress =
       canvas.clientWidth < 440
-        ? THREE.MathUtils.clamp((p - 0.5) / 0.2, 0, 1)
-        : THREE.MathUtils.clamp((p - 0.52) / 0.31, 0, 1);
+        ? THREE.MathUtils.clamp((p - 0.5) / 0.18, 0, 1)
+        : THREE.MathUtils.clamp((p - 0.52) / 0.18, 0, 1);
     const sink = sinkProgress * sinkProgress * (3 - 2 * sinkProgress);
     stage.rotation.y = -0.1 + pointerX * 0.035;
     stage.position.y = -sink * 3.6;
     mark.rotation.y = -0.34 + turn * Math.PI * 2;
+    const rearFacing = Math.cos(mark.rotation.y + stage.rotation.y) < 0;
+    frontLetter.visible = !rearFacing;
+    rearLetter.visible = rearFacing;
     mark.rotation.x = Math.sin(p * Math.PI) * 0.06 + pointerY * 0.03;
     mark.position.y = canvas.clientWidth < 440 ? 0.23 : 0.28;
     renderer.render(scene, camera);

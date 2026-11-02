@@ -4,7 +4,8 @@ const { dismissIntroduction } = require("./qa-helpers.cjs");
 const teamClearance = require("./qa-team-clearance.cjs");
 const fs = require("node:fs"),
   sharp = require("sharp");
-const dir = process.env.QA_OUTPUT_DIR || "docs/qa/career-section/v039-two-paths";
+const dir =
+  process.env.QA_OUTPUT_DIR || "docs/qa/career-section/v039-two-paths";
 const reportPath = process.env.QA_OUTPUT_DIR
   ? `${dir}/report.json`
   : "docs/career-section-qa.json";
@@ -146,13 +147,14 @@ const bodies = [
     };
     check(
       "Career section follows the company film and preserved problem section",
-      await page
-        .locator("main>section")
-        .evaluateAll(
-          (els) =>
-            els.slice(1, 6).map((section) => section.id).join(",") ===
-            "the-problem,who-we-are,career-paths,the-proof,testimonials",
-        ),
+      await page.locator("main>section").evaluateAll(
+        (els) =>
+          els
+            .slice(1, 6)
+            .map((section) => section.id)
+            .join(",") ===
+          "the-problem,who-we-are,career-paths,the-proof,testimonials",
+      ),
     );
     check(
       "Exactly two path cards with the requested buttons removed",
@@ -232,22 +234,46 @@ const bodies = [
       ),
     );
     for (const [width, height] of [
+      [1920, 1080],
       [1440, 900],
       [1366, 768],
       [1024, 900],
     ]) {
       await page.setViewportSize({ width, height });
       await page.waitForTimeout(600);
+      // A resized, pinned upstream scene can temporarily preserve the old
+      // scroll position. Native input releases that keeper before sampling.
+      await page.mouse.wheel(0, 1);
+      await page.waitForTimeout(250);
       let m = await metrics();
       await scroll(m.start + m.travel * 0.1);
-      await page.waitForFunction(
-        () =>
-          Number(
-            document.querySelector("[data-career-world]")?.dataset.frames,
-          ) >= 5,
-        null,
-        { timeout: 10000 },
-      );
+      await page
+        .waitForFunction(
+          () =>
+            Number(
+              document.querySelector("[data-career-world]")?.dataset.frames,
+            ) >= 5,
+          null,
+          { timeout: 10000 },
+        )
+        .catch(async (error) => {
+          console.log(
+            "Career render did not start:",
+            await rail.evaluate((el) => ({
+              width: innerWidth,
+              height: innerHeight,
+              scrollY,
+              rail: el.getBoundingClientRect().toJSON(),
+              viewport: el
+                .querySelector("[data-career-viewport]")
+                .getBoundingClientRect()
+                .toJSON(),
+              dataset: { ...el.dataset },
+              world: { ...el.querySelector("[data-career-world]").dataset },
+            })),
+          );
+          throw error;
+        });
       m = await metrics();
       check(
         `Horizontal pinned stage ${width}x${height}`,
@@ -417,13 +443,14 @@ const bodies = [
         ),
       }));
       check(
-        `Reference motion: one visual crosses the fixed text as Jobs rises ${width}`,
-        Math.abs(mid.texts[0].left - mid.viewport.left) < 1 &&
-          mid.visual.left > mid.texts[0].left &&
-          mid.visual.left < mid.texts[1].left &&
+        `Horizontal handoff keeps all three panels adjacent without hiding copy ${width}`,
+        mid.texts[0].left < mid.viewport.left &&
+          mid.texts[0].right <= mid.visual.left - 10 &&
+          mid.visual.right <= mid.texts[1].left - 10 &&
+          mid.texts[0].right > mid.viewport.left + 100 &&
+          mid.texts[1].left < mid.viewport.right - 100 &&
           Math.abs(mid.visual.width - mid.texts[0].width) < 1 &&
-          mid.texts[1].top > mid.visual.top + 40 &&
-          mid.texts[1].top < mid.visual.bottom - 40 &&
+          Math.abs(mid.texts[1].top - mid.visual.top) < 1 &&
           Math.abs(mid.texts[0].top - mid.visual.top) < 1 &&
           mid.radius === 24,
         mid,
@@ -434,10 +461,8 @@ const bodies = [
         mid,
       );
       check(
-        `Staggered vertical text handoff follows scroll ${width}`,
-        mid.groups[0].every((g) => g.y < 0 && g.opacity < 1) &&
-          mid.groups[1].every((g) => g.y > 0 && g.opacity < 1) &&
-          mid.groups[1][0].y < mid.groups[1][2].y,
+        `Both card texts remain fully legible during scroll handoff ${width}`,
+        mid.groups.flat().every((g) => Math.abs(g.y) < 1 && g.opacity === 1),
         mid.groups,
       );
       await page.screenshot({ path: `${dir}/${width}-midpoint.png` });
@@ -456,8 +481,10 @@ const bodies = [
           const header = document.querySelector("header.site-header");
           const bounds = header.getBoundingClientRect();
           const style = getComputedStyle(header);
-          return bounds.top < innerHeight && bounds.bottom > 0 &&
-            style.visibility !== "hidden" && Number(style.opacity) > 0
+          return bounds.top < innerHeight &&
+            bounds.bottom > 0 &&
+            style.visibility !== "hidden" &&
+            Number(style.opacity) > 0
             ? bounds.bottom
             : 0;
         })(),
@@ -977,10 +1004,7 @@ const bodies = [
     process.exitCode = 1;
   } finally {
     await browser.close();
-    fs.writeFileSync(
-      reportPath,
-      JSON.stringify(report, null, 2),
-    );
+    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
     console.log(
       JSON.stringify(
         {

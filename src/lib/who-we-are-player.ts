@@ -112,16 +112,20 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     // The portrait aperture follows the actual image throughout expansion.
     // Expanding a viewport-shaped matte faster exposed empty bands at its edges.
     const imageWidth = baseWidth * scale,
-      imageHeight = (imageWidth * 16) / 9;
+      imageHeight = (imageWidth * 16) / 9,
+      portraitShift = portraitFilm ? (y - (h - ch) / 2) * (1 - e) : 0,
+      imageTop = (h - imageHeight) / 2 + portraitShift;
     const left = portraitFilm ? Math.max(0, (w - imageWidth) / 2) : x * (1 - e),
-      top = portraitFilm ? Math.max(0, (h - imageHeight) / 2) : y * (1 - e),
+      top = portraitFilm ? Math.max(0, imageTop) : y * (1 - e),
       right = portraitFilm ? left : (w - x - cw) * (1 - e),
-      bottom = portraitFilm ? top : (h - y - ch) * (1 - e),
+      bottom = portraitFilm
+        ? Math.max(0, h - imageTop - imageHeight)
+        : (h - y - ch) * (1 - e),
       radius = 20 * (1 - e);
     frame.style.clipPath = `inset(${top}px ${right}px ${bottom}px ${left}px round ${radius}px)`;
-    surface.style.transform = `scale(${scale})`;
+    surface.style.transform = `translateY(${portraitShift}px) scale(${scale})`;
     background.style.clipPath = `inset(${backdropTop * (1 - e)}px ${gutter * (1 - e)}px ${backdropTop * (1 - e)}px ${gutter * (1 - e)}px round ${24 * (1 - e)}px)`;
-    const wipe = smooth(p / 0.045);
+    const wipe = smooth((p - 0.045) / 0.11);
     // Fade complete lines during the handoff. Clipping through the text was
     // cutting the first line of the description in shorter desktop viewports.
     copy.style.opacity = String(1 - wipe);
@@ -248,7 +252,7 @@ export function mountWhoWeAre(root: HTMLDivElement) {
       return;
     }
     const x = (w - cw) / 2,
-      y = (h - ch) / 2,
+      y = mobile ? 24 : (h - ch) / 2,
       baseWidth = Math.min(w, h * ratio),
       baseHeight = baseWidth / ratio;
     geometry = {
@@ -275,49 +279,56 @@ export function mountWhoWeAre(root: HTMLDivElement) {
     );
     video.controls = false;
     state.progress = 0;
-    tween = gsap.fromTo(state, { progress: 0 }, {
-      progress: 1,
-      ease: "none",
-      onUpdate: requestDraw,
-      scrollTrigger: {
-        trigger: root,
-        // A sticky viewport already reports top:0 mid-scene. Measuring it on
-        // refresh shifts the start to the current scroll position. Use its
-        // natural-flow rail and the mobile introduction instead.
-        start: () => root.getBoundingClientRect().top + window.scrollY +
-          (root.querySelector<HTMLElement>("[data-who-introduction]")?.offsetHeight ?? 0),
-        end: () =>
-          `+=${parseFloat(root.style.getPropertyValue("--who-travel"))}`,
-        scrub: 0.55,
-        // Re-measuring other pinned sections must not reset the film to zero.
-        // The endpoints are constant; only the scroll geometry needs refreshing.
-        onRefresh: (trigger) => {
-          trigger.animation?.totalProgress(trigger.progress);
-          state.progress = trigger.progress;
-          draw(true);
-        },
-        onUpdate: (trigger) => {
-          const delta =
-            lastRawProgress === null ? 0 : trigger.progress - lastRawProgress;
-          const direction =
-            Math.abs(delta) > 0.00001 ? Math.sign(delta) : scrollDirection;
-          if (
-            !desktop.matches &&
-            loaded &&
-            scrollDirection &&
-            direction !== scrollDirection
-          ) {
-            turnLimit = presentedTime;
-            // Cancel an old-direction seek instead of allowing it to drain
-            // behind the visitor's newly reversed scroll input.
-            if (Math.abs(video.currentTime - presentedTime) > 1 / 30)
-              video.currentTime = presentedTime;
-          }
-          scrollDirection = direction;
-          lastRawProgress = trigger.progress;
+    tween = gsap.fromTo(
+      state,
+      { progress: 0 },
+      {
+        progress: 1,
+        ease: "none",
+        onUpdate: requestDraw,
+        scrollTrigger: {
+          trigger: root,
+          // A sticky viewport already reports top:0 mid-scene. Measuring it on
+          // refresh shifts the start to the current scroll position. Use its
+          // natural-flow rail and the mobile introduction instead.
+          start: () =>
+            root.getBoundingClientRect().top +
+            window.scrollY +
+            (root.querySelector<HTMLElement>("[data-who-introduction]")
+              ?.offsetHeight ?? 0),
+          end: () =>
+            `+=${parseFloat(root.style.getPropertyValue("--who-travel"))}`,
+          scrub: 0.55,
+          // Re-measuring other pinned sections must not reset the film to zero.
+          // The endpoints are constant; only the scroll geometry needs refreshing.
+          onRefresh: (trigger) => {
+            trigger.animation?.totalProgress(trigger.progress);
+            state.progress = trigger.progress;
+            draw(true);
+          },
+          onUpdate: (trigger) => {
+            const delta =
+              lastRawProgress === null ? 0 : trigger.progress - lastRawProgress;
+            const direction =
+              Math.abs(delta) > 0.00001 ? Math.sign(delta) : scrollDirection;
+            if (
+              !desktop.matches &&
+              loaded &&
+              scrollDirection &&
+              direction !== scrollDirection
+            ) {
+              turnLimit = presentedTime;
+              // Cancel an old-direction seek instead of allowing it to drain
+              // behind the visitor's newly reversed scroll input.
+              if (Math.abs(video.currentTime - presentedTime) > 1 / 30)
+                video.currentTime = presentedTime;
+            }
+            scrollDirection = direction;
+            lastRawProgress = trigger.progress;
+          },
         },
       },
-    });
+    );
     tween.scrollTrigger?.refresh();
     state.progress = tween.scrollTrigger?.progress ?? 0;
     if (oldProgress !== null) resizeProgress = oldProgress;
@@ -516,7 +527,8 @@ export function mountWhoWeAre(root: HTMLDivElement) {
   const cleanupAnchor = mountSceneAnchor(root.closest("section"), {
     hashes: ["#who-we-are", "#who-heading"],
     scrollTop: () => {
-      const sectionTop = root.closest("section")!.getBoundingClientRect().top + scrollY;
+      const sectionTop =
+        root.closest("section")!.getBoundingClientRect().top + scrollY;
       // A direct mobile hash opens with the floating wordmark visible. Keep
       // the eyebrow below it without changing the ordinary scroll scene.
       return sectionTop - (innerWidth < 1024 ? 64 : 0);

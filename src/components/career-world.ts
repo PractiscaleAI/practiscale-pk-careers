@@ -86,7 +86,7 @@ void main() {
   vec3 color=mix(uBlue*1.8,uGrowth*1.08,smoothstep(.15,.45,vTint));
   color=mix(color,uMint,smoothstep(.5,.72,vTint));
   color=mix(color,uFog,smoothstep(.88,1.,vTint)*.9);
-  vec3 brainColor=color*mix(.7,1.05,vLight);
+  vec3 brainColor=color*mix(.86,1.25,vLight);
   vec3 teamColor=uGrowth;
   if(vTeamStyle.x>.26) teamColor=mix(uBlue,uFog,.45);
   if(vTeamStyle.x>.53) teamColor=uMint;
@@ -118,7 +118,7 @@ void main() {
   vec3 n=normalize(vNormal);
   float key=max(0.0,dot(n,normalize(vec3(-.55,.7,.9))));
   float rim=pow(1.0-abs(n.z),2.5);
-  vec3 color=mix(uDeep*.62,uSurface,.12+key*.62);
+  vec3 color=mix(uDeep*.7,uSurface,.18+key*.68);
   color=mix(color,uMint,rim*.045);
   gl_FragColor=vec4(mix(uDeep,color,uPresence*.86),1.0);
   #include <colorspace_fragment>

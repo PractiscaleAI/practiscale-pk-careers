@@ -7,11 +7,7 @@ import {
   range,
   storyAt,
 } from "./earnings-data.js";
-import {
-  digitRevealAt,
-  recordMotionAt,
-  numberPresentationAt,
-} from "./number-cues.js";
+import { recordMotionAt, numberPresentationAt } from "./number-cues.js";
 
 export async function createLaptop(parent, onContextChange) {
   // Let input and painting run between expensive, one-time preparation stages.
@@ -485,10 +481,6 @@ export async function createLaptop(parent, onContextChange) {
       "right",
     );
     if (summary) {
-      const appear = state.staticMode ? 1 : range(state.p, 0.819, 0.839);
-      sc.save();
-      sc.globalAlpha = appear;
-      sc.translate(0, (1 - appear) * 45);
       text("10 people. Real commissions.", 105, 345, 102);
       text("Combined total", 105, 463, 67, "#9be3d6", "Manrope");
       drawAmount(total, "Rs", "#f5b041");
@@ -501,7 +493,6 @@ export async function createLaptop(parent, onContextChange) {
         "#bdd3d3",
         "Manrope",
       );
-      sc.restore();
     } else if (showingRecords) {
       const data = records[record];
       const motion = recordMotionAt(phase);
@@ -510,10 +501,9 @@ export async function createLaptop(parent, onContextChange) {
       sc.rect(0, 195, 1920, 1005);
       sc.clip();
       sc.translate(0, motion.y);
-      sc.globalAlpha = motion.alpha;
       text(data.name, 105, 355, 116);
       text(data.role, 105, 472, 78, "#9be3d6", "Manrope");
-      drawAmount(data.amount, "Rs", "#f3f6f6", phase);
+      drawAmount(data.amount, "Rs", "#f3f6f6");
       text(data.period, 105, 1050, 78, "#bdd3d3", "Manrope");
       sc.restore();
     } else {
@@ -545,23 +535,12 @@ export async function createLaptop(parent, onContextChange) {
         ? `${records[record].name} | Rs ${format(records[record].amount)} | ${records[record].period}`
         : "The people behind the numbers";
   }
-  function drawAmount(amount, currency, color, phase = 1) {
+  function drawAmount(amount, currency, color) {
     text(currency, 105, 828, 87, color, "Manrope");
     sc.font = "600 294px Sora";
     sc.textAlign = "left";
-    let x = 258;
-    for (const [i, char] of [...format(amount)].entries()) {
-      const q = digitRevealAt(phase, i);
-      sc.save();
-      sc.beginPath();
-      sc.rect(x - 3, 555, sc.measureText(char).width + 6, 340);
-      sc.clip();
-      sc.globalAlpha *= q;
-      sc.fillStyle = color;
-      sc.fillText(char, x, 835 + (1 - q) * 160);
-      sc.restore();
-      x += sc.measureText(char).width;
-    }
+    sc.fillStyle = color;
+    sc.fillText(format(amount), 258, 835);
   }
   let width = 1200,
     height = 800,
@@ -601,9 +580,9 @@ export async function createLaptop(parent, onContextChange) {
       state.screen === 0
         ? "off"
         : state.summary
-          ? `summary:${state.staticMode ? 1 : range(state.p, 0.819, 0.839)}:${state.screen}`
+          ? `summary:${state.screen}`
           : state.showingRecords
-            ? `record:${state.record}:${state.phase >= 0.28 && state.phase <= 0.85 ? "hold" : state.phase}:${state.screen}`
+            ? `record:${state.record}:${state.phase >= 0.15 && state.phase <= 0.85 ? "hold" : state.phase}:${state.screen}`
             : `intro:${state.screen}`;
     const screenChanged = force || screenKey !== lastScreenKey;
     lastState = { ...state };

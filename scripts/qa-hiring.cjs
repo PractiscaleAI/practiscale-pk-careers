@@ -89,9 +89,16 @@ fs.mkdirSync(dir, { recursive: true });
                   a.bottom > b.top,
               ),
           );
-          const titles = [...el.querySelectorAll('[data-hiring-step] h3')].map(e=>e.getBoundingClientRect());
-          const rowsAligned = innerWidth < 1000 || (Math.abs(titles[0].top-titles[1].top)<1 && Math.abs(titles[2].top-titles[3].top)<1);
-          const footerTop = el.querySelector('[data-hiring-stage]').lastElementChild.getBoundingClientRect().top;
+          const titles = [...el.querySelectorAll("[data-hiring-step] h3")].map(
+            (e) => e.getBoundingClientRect(),
+          );
+          const rowsAligned =
+            innerWidth < 1000 ||
+            (Math.abs(titles[0].top - titles[1].top) < 1 &&
+              Math.abs(titles[2].top - titles[3].top) < 1);
+          const activeDetail = el
+            .querySelector('[data-hiring-step][data-active="true"] p')
+            ?.getBoundingClientRect();
           const paras = [...el.querySelector("header").querySelectorAll("p")]
             .map((e) => e.getBoundingClientRect())
             .filter((r) => r.width > 0);
@@ -112,7 +119,13 @@ fs.mkdirSync(dir, { recursive: true });
             headingClear: heading.bottom < dial.top,
             noCardOverlap: !overlaps,
             rowsAligned,
-            footerClear: Math.max(...cards.map(r=>r.bottom)) + 12 <= footerTop,
+            contentClear:
+              Math.max(...cards.map((r) => r.bottom)) <= stage.bottom - 8,
+            mobileDetailClear:
+              innerWidth > 600 ||
+              el.dataset.scroll !== "true" ||
+              (activeDetail.top >= dial.bottom + 4 &&
+                activeDetail.bottom <= stage.bottom - 8),
             centeredHeading: paras.every(
               (r) => Math.abs(r.left + r.width / 2 - innerWidth / 2) < 2,
             ),
@@ -125,7 +138,11 @@ fs.mkdirSync(dir, { recursive: true });
       check(name + " centered header", m.centeredHeading, m);
       check(
         name + " scroll mode",
-        m.scroll === String(!reduced && height >= (width >= 1000 ? 580 : 740)),
+        m.scroll ===
+          String(
+            !reduced &&
+              height >= (width >= 1000 ? 580 : width <= 600 ? 540 : 740),
+          ),
         m.scroll,
       );
       await page.screenshot({ path: `${dir}/${name}-apply.png` });
@@ -147,7 +164,9 @@ fs.mkdirSync(dir, { recursive: true });
             name + " station " + i,
             m.active === i &&
               m.noCardOverlap &&
-              m.rowsAligned && m.footerClear &&
+              m.rowsAligned &&
+              m.contentClear &&
+              m.mobileDetailClear &&
               Math.abs(m.angle - (-45 + i * 90)) < 0.1 &&
               m.fits &&
               m.headingClear,
@@ -156,10 +175,30 @@ fs.mkdirSync(dir, { recursive: true });
           if (i === 2)
             await page.screenshot({ path: `${dir}/${name}-task.png` });
         }
-        // Actual wheel input, then a rapid reversal before scrub settles.
-        await page.mouse.wheel(0, m.travel * 0.82);
+        // Jump to the next reading hold, then reverse before scrub settles.
+        // Keep both targets inside the hiring scene so adjacent pinned films
+        // cannot capture the test's wheel input.
+        await section.evaluate((el) => {
+          const stage = el.querySelector("[data-hiring-stage]");
+          scrollTo({
+            top:
+              el.getBoundingClientRect().top +
+              scrollY +
+              (el.offsetHeight - stage.offsetHeight) * 0.82,
+            behavior: "instant",
+          });
+        });
         await page.waitForTimeout(55);
-        await page.mouse.wheel(0, -m.travel * 0.5);
+        await section.evaluate((el) => {
+          const stage = el.querySelector("[data-hiring-stage]");
+          scrollTo({
+            top:
+              el.getBoundingClientRect().top +
+              scrollY +
+              (el.offsetHeight - stage.offsetHeight) * 0.32,
+            behavior: "instant",
+          });
+        });
         await page.waitForTimeout(850);
         m = await state();
         check(name + " rapid reverse latest target", m.active === 1, m);

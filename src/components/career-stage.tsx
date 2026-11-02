@@ -153,7 +153,7 @@ export default function CareerStage({ children }: { children: ReactNode }) {
         getComputedStyle(section).getPropertyValue("--career-gap"),
       );
       let visualHeight = stacked
-        ? clamp(stageHeight * 0.34, 176, 280)
+        ? clamp(stageHeight * 0.44, 190, 400)
         : stageHeight;
       let panelHeight = stacked
         ? stageHeight - visualHeight - gap
@@ -231,7 +231,7 @@ export default function CareerStage({ children }: { children: ReactNode }) {
       visual.style.transform = `translate3d(${visualOffset}px,0,0)`;
       texts[1].style.transform = stacked
         ? `translate3d(${stageWidth + gap}px,0,0)`
-        : `translate3d(0,${panelHeight}px,0)`;
+        : `translate3d(${visualOffset}px,0,0)`;
       cards[1].inert = true;
       cards[1].setAttribute("aria-hidden", "true");
       const compact = rail.dataset.compact === "true";
@@ -268,36 +268,23 @@ export default function CareerStage({ children }: { children: ReactNode }) {
         const frame = careerFrame(progress);
         const swap = smooth(frame.exchange);
         const stackedSwap = smooth((frame.exchange - 0.43) / 0.14);
-        const rise = smooth((frame.exchange - 0.16) / 0.72);
         if (stacked) {
           visual.style.transform = "translate3d(0,0,0)";
           texts[0].style.transform = `translate3d(${-(stageWidth + gap) * stackedSwap}px,0,0)`;
           texts[1].style.transform = `translate3d(${(stageWidth + gap) * (1 - stackedSwap)}px,0,0)`;
         } else {
+          // Move the two complete paths and the sculpture as one horizontal
+          // sequence. Adjacent panels never cover each other's reading area.
+          texts[0].style.transform = `translate3d(${-visualOffset * swap}px,0,0)`;
           visual.style.transform = `translate3d(${visualOffset * (1 - swap)}px,0,0)`;
-          texts[1].style.transform = `translate3d(0,${panelHeight * (1 - rise)}px,0)`;
+          texts[1].style.transform = `translate3d(${visualOffset * (1 - swap)}px,0,0)`;
         }
         cards.forEach((card, index) => {
-          const readable =
-            index === 0 ? 1 - smooth((frame.exchange - 0.15) / 0.6) : rise;
-          card.inert = index !== frame.chapter || readable < 0.85;
+          card.inert = index !== frame.chapter;
           card.setAttribute("aria-hidden", String(index !== frame.chapter));
-          groups[index].forEach((group, order) => {
-            if (stacked) {
-              // The whole card is the moving unit on narrow screens. Keep its
-              // type opaque while it slides so neither half turns ghostly.
-              group.style.transform = "translate3d(0,0,0)";
-              group.style.opacity = "1";
-              return;
-            }
-            const incoming = smooth(
-              (frame.exchange - 0.22 - order * 0.04) / (0.7 - order * 0.04),
-            );
-            const outgoing = smooth(
-              (frame.exchange - 0.24 - order * 0.03) / (0.62 - order * 0.03),
-            );
-            group.style.transform = `translate3d(0,${index === 0 ? -40 * outgoing : 32 * (1 - incoming)}px,0)`;
-            group.style.opacity = String(index === 0 ? 1 - outgoing : incoming);
+          groups[index].forEach((group) => {
+            group.style.transform = "translate3d(0,0,0)";
+            group.style.opacity = "1";
           });
         });
         if (lastCard !== frame.chapter) {

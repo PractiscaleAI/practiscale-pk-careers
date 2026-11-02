@@ -1,5 +1,13 @@
 # PractiScale design context
 
+## Founder film viewing, revision 1.08
+
+Keep the existing scroll zoom into the founder film. On first human arrival, a full-screen viewing stage catches a fast downward scroll so the story is noticed. Its film starts with sound after the visitor selects Play film with sound, or directly from the Watch his story button. Continue and Escape release the stage and restore normal scrolling; revisiting the section in the same page must not reopen the stage. Preserve the current responsive portrait and landscape edits, the film still before playback, and the reduced-motion and data-saving fallbacks. Do not generate another video or add captions. This revises the earlier muted-first autoplay and passive fast-scroll checkpoint behavior.
+
+## FAQ answer interaction, revision 1.07
+
+Keep the approved scroll-driven 3D question-mark entrance, tray descent, diamond closure, and immediate handoff to the seven question rows. On wide screens the section heading remains visible while the first question replaces the sculpture's place, then fades as the questions rise into the upper reading area. This avoids a blank upper half during the handoff without overlapping the sculpture; narrow layouts keep their earlier, faster heading fade. After the handoff, page scrolling no longer chooses an answer. On mouse devices, moving the pointer over a row opens that answer; leaving the row keeps it readable until another row is chosen. On touch devices, tapping a question opens it and tapping again closes it. Every question is a native button with a visible focus treatment, Enter and Space activation, and an accurate expanded state. Only one answer is open at a time; the initial enhanced list has no open answer. The no-JavaScript view keeps all seven answers readable, while reduced-motion users retain click disclosure with a static introduction. This user-directed interaction supersedes the scroll-selected answer behavior in revisions 1.02 and earlier without changing the FAQ sculpture choreography, palette, copy, or other sections.
+
 ## Footer hierarchy and browser zoom, revision 1.06
 
 The footer keeps its approved PractiScale mascot and three-column desktop composition. The mascot is slightly smaller so the actions retain visual priority. Apply on WhatsApp is the primary footer action; email, phone and company links stay legible without a second competing accent. Tablet content uses two columns where each column can hold the action without wrapping, then stacks at narrower widths. On phones the mascot appears before the office and legal details so it belongs to the composition instead of following the copyright. Preserve the existing bounded gaze interaction and its touch and reduced-motion stills.

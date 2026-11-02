@@ -48,6 +48,11 @@ export function mountEarningsLaptop(root) {
     const { width: W, height: H, dpr } = geometry;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, W, H);
+    // Let the atmospheric lines recede with the lid. A full-strength wave
+    // beneath the closed laptop reads as a stray horizontal divider.
+    const opacity = 1 - range(p, 0.935, 0.995);
+    if (opacity <= 0) return;
+    ctx.globalAlpha = opacity;
     ctx.lineWidth = 0.65;
     const mx = pointer.x * W,
       my = pointer.y * H,
@@ -73,6 +78,7 @@ export function mountEarningsLaptop(root) {
     ctx.fillStyle = "rgba(189,211,211,.08)";
     for (let x = 17; x < W; x += 48)
       for (let y = 19; y < H; y += 48) ctx.fillRect(x, y, 0.7, 0.7);
+    ctx.globalAlpha = 1;
   }
   function draw(now = performance.now()) {
     raf = 0;

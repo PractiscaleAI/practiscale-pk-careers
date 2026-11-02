@@ -84,7 +84,7 @@ export default function FounderSection() {
           <video
             className={styles.video}
             data-founder-video
-            poster="/media/founder/founder-dream-v063.webp"
+            poster="/media/founder/founder-thumbnail-desktop-v3.webp"
             preload="none"
             controls
             playsInline
@@ -106,28 +106,60 @@ export default function FounderSection() {
           <picture className={styles.poster} aria-hidden="true">
             <source
               media="(max-width: 1023px) and (orientation: portrait)"
-              srcSet="/media/founder/founder-dream-portrait-v073.avif"
+              srcSet="/media/founder/founder-film-still-portrait-v1.avif"
               type="image/avif"
-              width="941"
-              height="1672"
+              width="540"
+              height="960"
             />
             <source
               media="(max-width: 1023px) and (orientation: portrait)"
-              srcSet="/media/founder/founder-dream-portrait-v073.webp"
+              srcSet="/media/founder/founder-film-still-portrait-v1.webp"
               type="image/webp"
-              width="941"
-              height="1672"
+              width="540"
+              height="960"
             />
             <source
-              srcSet="/media/founder/founder-dream-v063.avif"
+              srcSet="/media/founder/founder-film-still-desktop-v1.avif"
               type="image/avif"
             />
             <img
               data-founder-poster
-              src="/media/founder/founder-dream-v063.webp"
+              src="/media/founder/founder-film-still-desktop-v1.webp"
               alt=""
-              width="1672"
-              height="941"
+              width="1600"
+              height="900"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
+          <picture
+            className={styles.thumbnail}
+            data-founder-thumbnail
+            aria-hidden="true"
+          >
+            <source
+              media="(max-width: 1023px) and (orientation: portrait)"
+              srcSet="/media/founder/founder-thumbnail-mobile-wide-v4.avif"
+              type="image/avif"
+              width="800"
+              height="600"
+            />
+            <source
+              media="(max-width: 1023px) and (orientation: portrait)"
+              srcSet="/media/founder/founder-thumbnail-mobile-wide-v4.webp"
+              type="image/webp"
+              width="800"
+              height="600"
+            />
+            <source
+              srcSet="/media/founder/founder-thumbnail-desktop-v3.avif"
+              type="image/avif"
+            />
+            <img
+              src="/media/founder/founder-thumbnail-desktop-v3.webp"
+              alt=""
+              width="1600"
+              height="900"
               loading="lazy"
               decoding="async"
             />
@@ -155,6 +187,42 @@ export default function FounderSection() {
           )}
         </div>
       </div>
+      <dialog
+        className={styles.filmDialog}
+        data-founder-dialog
+        aria-label="Afrasyab Ahmed's story"
+      >
+        <video
+          className={styles.dialogVideo}
+          data-founder-dialog-video
+          poster={
+            activeFilm.includes("portrait")
+              ? "/media/founder/founder-film-still-portrait-v1.webp"
+              : "/media/founder/founder-film-still-desktop-v1.webp"
+          }
+          preload="none"
+          playsInline
+          controls
+          aria-label="Afrasyab Ahmed, the story behind PractiScale"
+        />
+        <div className={styles.dialogPrompt} data-founder-dialog-prompt>
+          <button
+            className={styles.dialogPlay}
+            data-founder-dialog-play
+            type="button"
+          >
+            <span aria-hidden="true">▶</span> Play film with sound
+          </button>
+          <p data-founder-dialog-message role="status" aria-live="polite" />
+        </div>
+        <button
+          className={styles.dialogContinue}
+          data-founder-dialog-continue
+          type="button"
+        >
+          Skip the video <span aria-hidden="true">→</span>
+        </button>
+      </dialog>
       <span id="founder-film-end" className={styles.end} />
     </section>
   );

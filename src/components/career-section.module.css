@@ -201,7 +201,11 @@
   width: var(--career-panel-width);
   height: var(--career-visual-height);
   z-index: 2;
-  background: var(--deep);
+  background: radial-gradient(
+    circle at 50% 46%,
+    color-mix(in srgb, var(--deep) 83%, var(--accent)) 0%,
+    var(--deep) 76%
+  );
   pointer-events: none;
 }
 .rail[data-mode="pinned"] .keyboardNav {
@@ -214,6 +218,10 @@
   top: calc(var(--career-visual-height) + var(--career-gap));
   left: 0;
   padding: 24px;
+  justify-content: center;
+}
+.rail[data-mode="pinned"][data-layout="stacked"] .details {
+  margin-top: 0;
 }
 .rail[data-mode="pinned"][data-layout="stacked"] .labels {
   margin-bottom: 16px;
