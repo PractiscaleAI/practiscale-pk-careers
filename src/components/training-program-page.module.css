@@ -534,7 +534,7 @@
   margin-top: 37px;
 }
 .closingInner > p {
-  margin-top: 19px;
+  margin: 19px auto 0;
   color: #c5dedd;
   font-size: 15px;
 }
