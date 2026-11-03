@@ -11,9 +11,7 @@ import {
   type WorkMode,
 } from "./jobs-data";
 import styles from "./jobs.module.css";
-
-const applyFor = (title: string) =>
-  `https://wa.me/923334000600?text=${encodeURIComponent(`Hi PractiScale, I would like to apply for the ${title} role. Please share the next steps.`)}`;
+import { applicationFormUrl } from "@/lib/content";
 
 function RoleCard({ role }: { role: JobRole }) {
   return (
@@ -43,7 +41,7 @@ function RoleCard({ role }: { role: JobRole }) {
           {role.requirements}
         </p>
       </div>
-      <a className={styles.roleApply} href={applyFor(role.title)}>
+      <a className={styles.roleApply} href={applicationFormUrl}>
         Apply for this role{" "}
         <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />
       </a>

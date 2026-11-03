@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import InteriorShell from "@/components/interior-shell";
 import { Action } from "@/components/ui";
+import { applicationFormUrl } from "@/lib/content";
 import JobsExplorer from "./jobs-explorer";
 import { jobRoles, jobTeams } from "./jobs-data";
 import styles from "./jobs.module.css";
@@ -135,7 +136,7 @@ export default function JobsPage() {
               If you can sell, build or create, we still want to hear from you.
             </p>
           </div>
-          <Action href="https://wa.me/923334000600">Pitch us anyway</Action>
+          <Action href={applicationFormUrl}>Submit an Application</Action>
         </div>
         <p className={styles.earningsNote}>
           Earning ranges include performance based pay where applicable. Your

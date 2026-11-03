@@ -1,5 +1,9 @@
 # PractiScale design context
 
+## Homepage preloader, revision 1.10
+
+Retain the approved broad annular ring, bottom-up PractiScale mark fill, reversed signature and logo-aperture exit. Show a matching static first frame in the initial HTML while the embedded artwork loads. Drive the ring and mark from the five real hero-critical readiness signals instead of an elapsed-time animation. Release into the ready hero after the last signal settles, with the eight-second escape if loading stalls. Repeat visits may omit the minimum first-visit display time. Keep the preloader scoped to the homepage and do not change the hero choreography.
+
 ## Interior navigation, revision 1.09
 
 Inner pages use one restrained pale toolbar with the primary PractiScale wordmark and navigation aligned within the same page gutters. The current section has a quiet mint cue, and the compact menu preserves the full wordmark even at 320px. Keep the homepage navigation at its approved hero coordinates and retain its natural exit and upward-scroll return. The inner-page toolbar follows that scroll behavior without covering the page introduction.
@@ -14,7 +18,7 @@ Keep the approved scroll-driven 3D question-mark entrance, tray descent, diamond
 
 ## Footer hierarchy and browser zoom, revision 1.06
 
-The footer keeps its approved PractiScale mascot and three-column desktop composition. The mascot is slightly smaller so the actions retain visual priority. Apply on WhatsApp is the primary footer action; email, phone and company links stay legible without a second competing accent. Tablet content uses two columns where each column can hold the action without wrapping, then stacks at narrower widths. On phones the mascot appears before the office and legal details so it belongs to the composition instead of following the copyright. Preserve the existing bounded gaze interaction and its touch and reduced-motion stills.
+The footer keeps its approved PractiScale mascot and three-column desktop composition. The mascot is slightly smaller so the actions retain visual priority. Apply Now opens the application form as the primary footer action; email, phone and company links stay legible without a second competing accent. Tablet content uses two columns where each column can hold the action without wrapping, then stacks at narrower widths. On phones the mascot appears before the office and legal details so it belongs to the composition instead of following the copyright. Preserve the existing bounded gaze interaction and its touch and reduced-motion stills.
 
 Browser zoom stays enabled for accessibility. When zoom or a comparable desktop viewport change reflows the long scroll scenes, retain the section at the center of the reader's view. Only correct a jump into another section, and relinquish that correction immediately on real scroll, touch, keyboard navigation or a new hash. The founder fast-scroll checkpoint must ignore zoom gestures and resize-induced exits. Keep all existing scroll choreography and the first fast-scroll checkpoint for normal navigation.
 
@@ -114,7 +118,7 @@ The calendar has a larger presence, a folded rear support, layered paper edge, s
 
 ## Final application CTA, revision 0.74
 
-Place the final CTA after How hiring works. Use the approved Monday desk-calendar concept: supplied headline and application copy on the left, a dimensional teal stand and white paper calendar on the right. Label the large numeral DAY 01 to represent a first working day, not an actual scheduled date or guaranteed offer. Keep the supplied conditional wording and WhatsApp, email and phone destinations exactly. On phones stack the action group before the calendar so the application choices are immediately available.
+Place the final CTA after How hiring works. Use the approved Monday desk-calendar concept: supplied headline and application copy on the left, a dimensional teal stand and white paper calendar on the right. Label the large numeral DAY 01 to represent a first working day, not an actual scheduled date or guaranteed offer. Keep the supplied conditional wording and the current application-form, email and phone destinations exactly. On phones stack the action group before the calendar so the application choices are immediately available.
 
 Reuse globals.css palette and typography tokens and the shared Action component. Fog is dominant, deep teal anchors the object and text, mint is a small detail and the brief turning page. Treat 60/30/10 as visual emphasis. No new raster assets, video, WebGL canvas or dependencies. A scoped GSAP sequence turns one decorative page when the calendar enters view; it does not pin the section, intercept scrolling or replay on reversal. Fine-pointer movement tilts only the calendar by a few degrees; buttons remain stable. Reduced-motion and no-JavaScript visitors see the final calendar face and working native links. Preserve all preceding sections and motion.
 

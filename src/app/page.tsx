@@ -23,6 +23,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <link
+        rel="preload"
+        as="image"
+        href="/media/ceo-prime-v1/poster.webp"
+        type="image/webp"
+        fetchPriority="high"
+      />
       <main>
         <HeroLayout />
         <section className="hero-scroll">

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { X, ArrowUpRight, ChevronDown } from "lucide-react";
-import { whatsapp } from "@/lib/content";
+import { applicationFormUrl } from "@/lib/content";
 const groups = [
   {
     label: "About",
@@ -299,8 +299,8 @@ export default function Navigation() {
           >
             Who we serve
           </Link>
-          <a className="nav-cta" href={whatsapp()}>
-            <span>Apply on WhatsApp</span>
+          <a className="nav-cta" href={applicationFormUrl}>
+            <span>Apply Now</span>
             <span className="button-icon">
               <ArrowUpRight size={18} aria-hidden="true" />
             </span>

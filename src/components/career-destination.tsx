@@ -6,7 +6,7 @@ import {
   careerPrograms,
   type CareerChapter,
 } from "@/lib/career-content";
-import { whatsapp } from "@/lib/content";
+import { applicationFormUrl } from "@/lib/content";
 import JobBoard from "./job-board";
 import styles from "./career-destination.module.css";
 
@@ -45,12 +45,8 @@ export default function CareerDestination({
               <strong>{chapter.earnings}</strong>
             </p>
           )}
-          <Action
-            href={whatsapp(
-              jobs ? "current open roles" : `the ${chapter.title}`,
-            )}
-          >
-            {jobs ? "Ask hiring about open roles" : "Ask about this program"}
+          <Action href={applicationFormUrl}>
+            {jobs ? "Apply for a Role" : "Apply to the Program"}
           </Action>
         </div>
         <div className={styles.visual} aria-hidden="true">

@@ -16,6 +16,7 @@ out/
 .pypirc
 playwright-report/
 test-results/
+docs/qa/preloader/
 *.tsbuildinfo
 
 # Protected local source media. Only approved web renditions belong in public/.

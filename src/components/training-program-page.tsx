@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { applicationFormUrl } from "@/lib/content";
 import styles from "./training-program-page.module.css";
 
 type Item = { title: string; body: string };
@@ -28,12 +29,6 @@ type Program = {
   visual: string[];
 };
 
-const apply = (name: string) =>
-  "https://wa.me/923334000600?text=" +
-  encodeURIComponent(
-    "Hi PractiScale, I would like to apply for the " + name + " Program.",
-  );
-
 export const trainingPrograms = {
   "appointment-setter": {
     href: "/training-programs/appointment-setter",
@@ -57,7 +52,7 @@ export const trainingPrograms = {
       "Onsite in Rawalpindi or Islamabad",
       "Rs 30,000 to Rs 200,000 per month after hiring",
     ],
-    applyLink: apply("Appointment Setter"),
+    applyLink: applicationFormUrl,
     premiseTitle: "Every job wants experience. Nobody wants to give it.",
     premiseBody:
       "This program breaks that loop. You get trained on the exact work, assessed on a real task and hired to do it.",
@@ -144,7 +139,7 @@ export const trainingPrograms = {
       {
         question: "How do I apply?",
         answer:
-          "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
+          "Complete the application form or email your CV to hiring@practiscale.com.",
       },
     ],
     closingTitle: "Learn the skill. Then get paid to use it.",
@@ -175,7 +170,7 @@ export const trainingPrograms = {
       "Fully remote",
       "Rs 20,000 to Rs 150,000 per month after hiring",
     ],
-    applyLink: apply("Virtual Assistant"),
+    applyLink: applicationFormUrl,
     premiseTitle: "Ability was never the problem. Access was.",
     premiseBody:
       "Many capable women in Pakistan are held back by limited access to stable, professional work. This program removes the commute and opens a real career path, so skill and effort decide how far you go.",
@@ -245,7 +240,7 @@ export const trainingPrograms = {
       {
         question: "How do I apply?",
         answer:
-          "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
+          "Complete the application form or email your CV to hiring@practiscale.com.",
       },
     ],
     closingTitle: "Build a professional career from home.",
@@ -261,11 +256,11 @@ export type TrainingProgramSlug = keyof typeof trainingPrograms;
 
 function Answer({ text }: { text: string }) {
   return text
-    .split(/(0333 4000 600|hiring@practiscale\.com)/g)
+    .split(/(application form|hiring@practiscale\.com)/g)
     .map((part, i) => {
-      if (part === "0333 4000 600")
+      if (part === "application form")
         return (
-          <a key={i} href="https://wa.me/923334000600">
+          <a key={i} href={applicationFormUrl}>
             {part}
           </a>
         );
@@ -473,7 +468,7 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apply on WhatsApp <span aria-hidden="true">↗</span>
+            Apply Now <span aria-hidden="true">↗</span>
           </a>
           <p>Send your CV and a 60 second video on why you fit.</p>
           <nav aria-label="Explore PractiScale">

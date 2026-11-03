@@ -13,7 +13,9 @@ type Manifest = {
 };
 export default function HeroSequence() {
   const host = useRef<HTMLDivElement>(null);
-  const [mode, setMode] = useState<"static" | "mobile" | "desktop">("static");
+  const [mode, setMode] = useState<"static" | "mobile" | "desktop" | null>(
+    null,
+  );
   useEffect(() => {
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     const phone = matchMedia("(max-width: 767px)");
@@ -35,7 +37,13 @@ export default function HeroSequence() {
   }, []);
   useEffect(() => {
     const el = host.current;
-    if (!el || mode === "static") return;
+    if (!el || mode === null) return;
+    if (mode === "static") {
+      el.dataset.initialized = "true";
+      return () => {
+        el.dataset.initialized = "false";
+      };
+    }
     let stopped = false,
       failed = false,
       requested = 0,
@@ -82,6 +90,7 @@ export default function HeroSequence() {
       failed = true;
       el.dataset.ready = "false";
       el.dataset.engine = "poster";
+      el.dataset.initialized = "true";
       dispose();
     };
     const start = async () => {
@@ -384,6 +393,9 @@ export default function HeroSequence() {
           });
           if (!main.inert) resize();
         }
+        // The first frame and the scroll driver must both exist before the
+        // introduction hands control to the visitor.
+        el.dataset.initialized = "true";
       } catch {
         if (!stopped) fallback();
       }
@@ -395,6 +407,7 @@ export default function HeroSequence() {
       el.dataset.ready = "false";
       el.dataset.engine = "poster";
       el.dataset.frame = "0";
+      el.dataset.initialized = "false";
     };
   }, [mode]);
   return (
@@ -403,6 +416,7 @@ export default function HeroSequence() {
       className="hero-portrait"
       data-engine="poster"
       data-frame="0"
+      data-initialized="false"
     >
       <img
         className="portrait-poster"

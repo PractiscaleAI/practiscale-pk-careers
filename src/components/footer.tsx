@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import FooterGuide from "./footer-guide";
+import { applicationFormUrl } from "@/lib/content";
 import styles from "./footer.module.css";
 
 const directions = "https://maps.app.goo.gl/Rw8dfvA1SNsVvoW26";
@@ -45,10 +46,10 @@ export default function Footer() {
             <h3>Apply</h3>
             <a
               className={styles.applyPrimary}
-              href="https://wa.me/923334000600"
-              aria-label="Apply on WhatsApp at 0333 4000 600"
+              href={applicationFormUrl}
+              aria-label="Open the PractiScale application form"
             >
-              Apply on WhatsApp
+              Apply Now
               <ArrowUpRight size={16} strokeWidth={1.7} aria-hidden="true" />
             </a>
             <a href="mailto:hiring@practiscale.com">

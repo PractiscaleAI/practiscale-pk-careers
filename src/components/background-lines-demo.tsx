@@ -128,7 +128,7 @@ export default function FounderSection() {
               alt=""
               width="1600"
               height="900"
-              loading="eager"
+              loading="lazy"
               decoding="async"
             />
           </picture>

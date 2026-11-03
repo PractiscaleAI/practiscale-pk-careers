@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { homeFaqs } from "@/lib/content";
+import { applicationFormUrl, homeFaqs } from "@/lib/content";
 import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 import styles from "./faq-section.module.css";
 
@@ -315,9 +315,10 @@ export default function FaqSection() {
                   </>
                 ) : index === last ? (
                   <>
-                    Apply on WhatsApp at{" "}
-                    <a href="https://wa.me/923334000600">0333 4000 600</a> or
-                    email your CV to{" "}
+                    <a href={applicationFormUrl}>
+                      Complete the application form
+                    </a>{" "}
+                    or email your CV to{" "}
                     <a href="mailto:hiring@practiscale.com">
                       hiring@practiscale.com
                     </a>

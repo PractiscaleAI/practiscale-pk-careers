@@ -236,9 +236,7 @@ const fs = require("fs");
         .isVisible(),
     );
     await mp.screenshot({ path: "docs/qa/whole-hero/mobile-menu.png" });
-    await mp
-      .getByRole("link", { name: "Apply on WhatsApp", exact: true })
-      .focus();
+    await mp.getByRole("link", { name: "Apply Now", exact: true }).focus();
     await mp.keyboard.press("Tab");
     check(
       "Tabbing out closes the mobile disclosure",

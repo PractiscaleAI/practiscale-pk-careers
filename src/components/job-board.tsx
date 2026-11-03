@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight, Search } from "lucide-react";
-import { roles, whatsapp } from "@/lib/content";
+import { applicationFormUrl, roles } from "@/lib/content";
 export default function JobBoard() {
   const [team, setTeam] = useState("All"),
     [mode, setMode] = useState("All"),
@@ -71,8 +71,8 @@ export default function JobBoard() {
                 {r.experience} · Compensation confirmed during screening
               </p>
             </div>
-            <a href={whatsapp(r.title)} className="role-action">
-              Ask about this role
+            <a href={applicationFormUrl} className="role-action">
+              Apply for This Role
               <ArrowUpRight size={19} aria-hidden="true" />
             </a>
           </article>

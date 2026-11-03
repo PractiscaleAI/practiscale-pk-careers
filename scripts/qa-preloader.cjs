@@ -1,237 +1,181 @@
-const { dismissIntroduction } = require("./qa-helpers.cjs");
 const { chromium } = require("@playwright/test");
 const fs = require("fs");
 const path = require("path");
+
+const baseUrl = process.env.QA_BASE_URL || "http://127.0.0.1:3000";
+const output = path.join(process.cwd(), "docs", "qa", "preloader");
+fs.mkdirSync(output, { recursive: true });
+
 (async () => {
+  const report = { baseUrl, checks: [], errors: [] };
+  const check = (name, pass, detail) => {
+    report.checks.push({ name, pass, detail });
+    if (!pass) throw Error(name + (detail ? ` | ${JSON.stringify(detail)}` : ""));
+  };
   const browser = await chromium.launch({
     executablePath:
-      process.env.CHROME_PATH ||
-      "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      process.env.CHROME_PATH || "C:/Program Files/Google/Chrome/Application/chrome.exe",
     headless: true,
     args: ["--no-sandbox"],
   });
-  const report = { checks: [], errors: [] };
-  const dir = "docs/qa/preloader";
-  fs.mkdirSync(dir, { recursive: true });
-  const check = (name, pass, detail) => {
-    report.checks.push({ name, pass, detail });
-    if (!pass) throw Error(name + JSON.stringify(detail));
-  };
-  const done = (p) =>
-    p.locator(".preloader").waitFor({ state: "hidden", timeout: 11000 });
-  const childOf = async (p) => {
-    await p
-      .frameLocator(".preloader-original-frame")
-      .locator(".ring")
-      .waitFor({ state: "attached" });
-    return p.frames().find((f) => f.url().endsWith("/preloader/embedded.html"));
+  const page = async (options = {}) => {
+    const tab = await browser.newPage(options);
+    tab.on("pageerror", (error) => report.errors.push(error.message));
+    return tab;
   };
   try {
-    const source = fs.readFileSync("public/preloader/original.html", "utf8"),
-      embedded = fs.readFileSync("public/preloader/embedded.html", "utf8");
+    const html = await fetch(baseUrl).then((response) => response.text());
     check(
-      "Original animation script preserved verbatim",
-      embedded.includes(source.match(/<script>[\s\S]*?<\/script>/)[0]),
+      "Loader and its critical styles are in the initial HTML before the page",
+      html.includes("id=\"site-preloader\"") &&
+        html.indexOf("id=\"site-preloader\"") < html.indexOf("<main") &&
+        html.includes("html:has(#site-preloader)"),
     );
     check(
-      "Original SVG/template preserved verbatim",
-      embedded.includes(
-        source.match(/<template id="stage">[\s\S]*?<\/template>/)[0],
-      ),
+      "Hero poster and critical fonts have preload hints",
+      /<link(?=[^>]*href="\/media\/ceo-prime-v1\/poster\.webp")(?=[^>]*as="image")[^>]*>/.test(html) &&
+        html.includes('href="/brand/fonts/Manrope400.ttf" as="font"') &&
+        html.includes('href="/brand/fonts/Sora600.ttf" as="font"'),
     );
     check(
-      "Original visual CSS preserved verbatim",
-      embedded.includes(source.match(/<style>[\s\S]*?<\/style>/)[0]),
+      "Original loader artwork is restored with a first-paint fallback",
+      html.includes('src="/preloader/embedded.html"') &&
+        html.includes("preloader-first-ring") &&
+        !html.includes("preloader-fast-ring"),
     );
-    const p = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-    p.on("pageerror", (e) => report.errors.push(e.message));
-    await p.addInitScript(() => {
-      window.__introEvents = [];
-      window.addEventListener("message", (e) => {
-        if (e.data?.source === "practiscale-original-preloader")
-          window.__introEvents.push(e.data.type);
-      });
+
+    const slow = await page({ viewport: { width: 1440, height: 900 } });
+    await slow.addInitScript(() => {
+      window.__preloaderLayerStates = { fallback: 0, artwork: 0, overlap: 0, blank: 0 };
+      let seen = false;
+      const sample = () => {
+        const root = document.querySelector("#site-preloader");
+        if (root) {
+          seen = true;
+          const fallback = root.querySelector(".preloader-first-frame");
+          const artwork = root.querySelector(".preloader-original-frame");
+          if (fallback && artwork) {
+            const firstVisible = getComputedStyle(fallback).visibility === "visible";
+            const artworkVisible = getComputedStyle(artwork).visibility === "visible";
+            if (firstVisible && artworkVisible) window.__preloaderLayerStates.overlap++;
+            else if (firstVisible) window.__preloaderLayerStates.fallback++;
+            else if (artworkVisible) window.__preloaderLayerStates.artwork++;
+            else window.__preloaderLayerStates.blank++;
+          }
+        }
+        if (!seen || root) requestAnimationFrame(sample);
+      };
+      requestAnimationFrame(sample);
     });
-    await p.goto("http://127.0.0.1:3000", { waitUntil: "domcontentloaded" });
-    await p.locator(".preloader").waitFor({ state: "visible" });
-    const child = await childOf(p);
-    check(
-      "No visible skip control is rendered",
-      (await p.locator(".loader-skip").count()) === 0,
-    );
-    await child.waitForFunction(
-      () =>
-        Number(document.querySelector("#pre").getAttribute("aria-valuenow")) >=
-        35,
-    );
-    const state = await child.evaluate(() => ({
-      progress: Number(
-        document.querySelector("#pre").getAttribute("aria-valuenow"),
+    let heroRequestStarted = false;
+    await slow.route("**/preloader/embedded.html", async (route) => {
+      await new Promise((resolve) => setTimeout(resolve, 300));
+      await route.continue();
+    });
+    await slow.route("**/media/hero-manifest.json", async (route) => {
+      heroRequestStarted = true;
+      await new Promise((resolve) => setTimeout(resolve, 2600));
+      await route.continue();
+    });
+    await slow.goto(baseUrl, { waitUntil: "domcontentloaded" });
+    await slow.locator("#site-preloader").waitFor({ state: "visible" });
+    await slow.screenshot({ path: path.join(output, "desktop-loading.png") });
+    await slow.waitForTimeout(600);
+    const pending = await slow.evaluate(() => ({
+      count: Number(
+        document.querySelector('[aria-label="Critical assets loaded"]')?.getAttribute("aria-valuenow"),
       ),
-      hole: document.querySelector(".hole").getAttribute("opacity"),
-      clip: Number(document.querySelector(".clip").getAttribute("height")),
-      circles: [...document.querySelectorAll("circle")].map((e) =>
-        e.getAttribute("r"),
+      locked: getComputedStyle(document.documentElement).overflow === "hidden",
+      inert: !!document.querySelector("main")?.inert,
+      heroLoading: document.querySelector(".hero-portrait")?.dataset.initialized !== "true",
+      visualProgress: Number(
+        document.querySelector(".preloader-original-frame")?.contentDocument
+          ?.getElementById("pre")?.getAttribute("aria-valuenow"),
       ),
-      controls: getComputedStyle(document.querySelector("#ctl")).display,
-      wordmark: getComputedStyle(document.querySelector(".stage .logo")).filter,
     }));
     check(
-      "Original broad annulus and bottom-up mark fill",
-      state.progress >= 35 &&
-        state.progress < 100 &&
-        state.clip > 0 &&
-        state.circles.join(",") === "191,88",
-      state,
+      "Real progress waits for the delayed first hero frame",
+      pending.count > 0 &&
+        pending.count < 3 &&
+        pending.locked &&
+        pending.inert &&
+        pending.heroLoading &&
+        pending.visualProgress === Math.round((pending.count / 3) * 100),
+      pending,
     );
+    check("Other assets load while the overlay is visible", heroRequestStarted);
+    await slow.locator("#site-preloader").waitFor({ state: "detached", timeout: 12000 });
+    const layers = await slow.evaluate(() => window.__preloaderLayerStates);
     check(
-      "No early aperture or visible preview controls",
-      state.hole === "0" && state.controls === "none",
-      state,
+      "First-paint artwork hands off without duplicate or blank loader frames",
+      layers.fallback > 0 && layers.artwork > 0 && layers.overlap === 0 && layers.blank === 0,
+      layers,
     );
+    const finished = await slow.evaluate(() => ({
+      initialized: document.querySelector(".hero-portrait")?.dataset.initialized,
+      locked: getComputedStyle(document.documentElement).overflow === "hidden",
+      inert: !!document.querySelector("main")?.inert,
+    }));
     check(
-      "Original white wordmark filter preserved",
-      state.wordmark.includes("brightness(0)") &&
-        state.wordmark.includes("invert(1)"),
-      state.wordmark,
+      "Hero is ready before the overlay is removed and scrolling is restored",
+      finished.initialized === "true" && !finished.locked && !finished.inert,
+      finished,
     );
-    await p.screenshot({ path: path.join(dir, "desktop-fill.png") });
-    await child.waitForFunction(() =>
-      document.querySelector("#pre").classList.contains("exit"),
-    );
-    await p.waitForTimeout(130);
-    await p.screenshot({ path: path.join(dir, "desktop-open.png") });
-    const first = await child.locator(".hole").getAttribute("transform");
-    await p.waitForTimeout(650);
-    const second = await child.locator(".hole").getAttribute("transform");
-    check("Original upper-wing zoom advances", first !== second, {
-      first,
-      second,
-    });
+    await slow.screenshot({ path: path.join(output, "desktop-ready.png") });
     check(
-      "Scroll and underlying controls locked through reveal",
-      await p.evaluate(
-        () =>
-          document.documentElement.style.overflow === "hidden" &&
-          document.querySelector("main").inert,
-      ),
+      "Repeat visit is recorded for a faster cached path",
+      (await slow.evaluate(() => sessionStorage.getItem("practiscale-intro-seen"))) === "1",
     );
-    await p.screenshot({ path: path.join(dir, "desktop-zoom.png") });
-    await done(p);
-    check(
-      "Original completion releases overlay; guard not used",
-      await p.evaluate(
-        () =>
-          window.__introEvents.includes("complete") &&
-          !document.querySelector("main").inert &&
-          document.documentElement.style.overflow !== "hidden",
-      ),
-    );
-    await p.screenshot({ path: path.join(dir, "desktop-complete.png") });
-    for (let i = 0; i < 2; i++) {
-      await p.reload({ waitUntil: "domcontentloaded" });
-      await p.locator(".preloader").waitFor({ state: "visible" });
-      await childOf(p);
-      check("Original replays on cached refresh " + i, true);
-      await dismissIntroduction(p);
-      await done(p);
-    }
-    const kp = await browser.newPage();
-    await kp.goto("http://127.0.0.1:3000", { waitUntil: "domcontentloaded" });
-    await kp.waitForFunction(() => document.querySelector("main").inert);
-    await kp.locator(".preloader").focus();
-    await kp.keyboard.press("Tab");
-    check(
-      "Keyboard focus remains in introduction",
-      await kp
-        .locator(".preloader")
-        .evaluate((e) => e === document.activeElement),
-    );
-    await kp.keyboard.press("Shift+Tab");
-    check(
-      "Reverse Tab remains in introduction",
-      await kp
-        .locator(".preloader")
-        .evaluate((e) => e === document.activeElement),
-    );
-    await kp.keyboard.press("Escape");
-    await done(kp);
-    check(
-      "Escape skips and restores scroll",
-      await kp.evaluate(
-        () => document.documentElement.style.overflow !== "hidden",
-      ),
-    );
-    const mp = await browser.newPage({ viewport: { width: 375, height: 812 } });
-    await mp.goto("http://127.0.0.1:3000", { waitUntil: "domcontentloaded" });
-    const mf = await childOf(mp);
-    await mf.waitForFunction(
-      () =>
-        Number(document.querySelector("#pre").getAttribute("aria-valuenow")) >=
-        85,
-    );
-    await mp.screenshot({ path: path.join(dir, "mobile-fill.png") });
-    const bounds = await mf.locator(".ring").boundingBox();
-    check(
-      "Original ring fits phone screen",
-      bounds.width <= 375 && bounds.height <= 812,
-      bounds,
-    );
-    await mp.setViewportSize({ width: 844, height: 390 });
-    await done(mp);
-    check("Orientation change completes without stuck overlay", true);
-    const rm = await browser.newPage({
+
+    const mobile = await page({ viewport: { width: 375, height: 812 } });
+    await mobile.goto(baseUrl, { waitUntil: "domcontentloaded" });
+    await mobile.locator("#site-preloader").waitFor({ state: "visible" });
+    const ring = await mobile.locator(".preloader-first-ring").boundingBox();
+    check("Loading visual fits a 375px phone", ring && ring.width <= 375 && ring.height <= 812, ring);
+    await mobile.screenshot({ path: path.join(output, "mobile-loading.png") });
+    await mobile.locator("#site-preloader").waitFor({ state: "detached", timeout: 12000 });
+    await mobile.screenshot({ path: path.join(output, "mobile-ready.png") });
+
+    const reduced = await page({
       viewport: { width: 375, height: 812 },
       reducedMotion: "reduce",
     });
-    await rm.goto("http://127.0.0.1:3000", { waitUntil: "domcontentloaded" });
-    const rf = await childOf(rm);
-    check(
-      "Original reduced-motion fill duration retained",
-      (await rf.locator("#duration").inputValue()) === "1",
-    );
-    await done(rm);
-    check(
-      "Reduced motion leaves visible static portrait",
-      await rm.locator(".portrait-poster").isVisible(),
-    );
-    const nojs = await browser.newPage({
+    await reduced.goto(baseUrl, { waitUntil: "domcontentloaded" });
+    await reduced.locator("#site-preloader").waitFor({ state: "detached", timeout: 12000 });
+    check("Reduced motion also releases the page", await reduced.locator("h1").isVisible());
+
+    const noJs = await page({
       viewport: { width: 375, height: 812 },
       javaScriptEnabled: false,
     });
-    await nojs.goto("http://127.0.0.1:3000", { waitUntil: "domcontentloaded" });
+    await noJs.goto(baseUrl, { waitUntil: "domcontentloaded" });
     check(
-      "No-JavaScript hero visible without overlay",
-      (await nojs.locator("h1").isVisible()) &&
-        !(await nojs.locator(".preloader").isVisible()),
+      "No JavaScript leaves the hero readable",
+      !(await noJs.locator("#site-preloader").isVisible()) &&
+        (await noJs.locator("h1").isVisible()),
     );
-    const stalled = await browser.newPage();
-    await stalled.route("**/preloader/embedded.html", (r) =>
-      r.fulfill({
-        status: 200,
-        contentType: "text/html",
-        body: "<!doctype html><title>QA bridge stall</title>",
-      }),
-    );
-    await stalled.goto("http://127.0.0.1:3000/?no3d=1", {
-      waitUntil: "domcontentloaded",
+
+    const stalled = await page({ viewport: { width: 1440, height: 900 } });
+    await stalled.route("**/media/hero-manifest.json", async (route) => {
+      await new Promise((resolve) => setTimeout(resolve, 9500));
+      await route.continue().catch(() => {});
     });
-    await stalled.waitForFunction(() => document.querySelector("main").inert);
-    await done(stalled);
+    await stalled.goto(baseUrl, { waitUntil: "domcontentloaded" });
+    const began = Date.now();
+    await stalled.locator("#site-preloader").waitFor({ state: "detached", timeout: 11000 });
+    const fallbackMs = Date.now() - began;
     check(
-      "Failed introduction bridge cannot trap visitor",
-      await stalled.evaluate(
-        () =>
-          !document.querySelector("main").inert &&
-          document.documentElement.style.overflow !== "hidden",
-      ),
+      "Stalled hero cannot trap a visitor beyond the fallback",
+      fallbackMs >= 7000 && fallbackMs < 10000 &&
+        (await stalled.evaluate(() => getComputedStyle(document.documentElement).overflow !== "hidden")),
+      fallbackMs,
     );
-    check("No runtime errors", !report.errors.length, report.errors);
-  } catch (e) {
-    report.failure = e.stack;
+    check("No page errors", report.errors.length === 0, report.errors);
+  } catch (error) {
+    report.failure = error.stack;
     process.exitCode = 1;
   } finally {
-    fs.writeFileSync("docs/preloader-qa.json", JSON.stringify(report, null, 2));
+    fs.writeFileSync(path.join(output, "report.json"), JSON.stringify(report, null, 2));
     console.log(JSON.stringify(report, null, 2));
     await browser.close();
   }

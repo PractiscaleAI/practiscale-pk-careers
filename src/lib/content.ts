@@ -1,5 +1,5 @@
-export const whatsapp = (subject = "a career at PractiScale") =>
-  `https://wa.me/923334000600?text=${encodeURIComponent(`Hi PractiScale, I would like to ask about ${subject}. Please share current availability, eligibility and compensation details.`)}`;
+export const applicationFormUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeVnz71TpOc4h6MiOE7gRY6_cCfJdHCkNZmzj22PCh1d20f5w/viewform?usp=header";
 export const siteUrl = process.env.SITE_URL || "https://practiscale.pk";
 export const routes = [
   "/",
@@ -161,6 +161,6 @@ export const homeFaqs = [
   ],
   [
     "How do I apply?",
-    "Apply on WhatsApp at 0333 4000 600 or email your CV to hiring@practiscale.com.",
+    "Complete the application form or email your CV to hiring@practiscale.com.",
   ],
 ];

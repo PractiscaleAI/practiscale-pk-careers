@@ -125,7 +125,7 @@ const bodies = [
       (await section.getByRole("link").count()) === 1 &&
         (await section.getByRole("link").innerText()) === "Explore training" &&
         (await section.getByRole("link").getAttribute("href")).includes(
-          "wa.me/923334000600",
+          "/training-programs/appointment-setter",
         ),
     );
     check(

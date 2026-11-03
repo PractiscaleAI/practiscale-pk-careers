@@ -95,7 +95,7 @@ const fs = require("fs");
             "Explore training",
             "Your next chapter",
             "Starts with a skill",
-            "Apply on WhatsApp",
+            "Apply Now",
           ]),
         g.labels,
       );

@@ -43,7 +43,7 @@ function check(name, pass, detail) {
       });
       const name = width+"x"+height;
       check(name+": exact heading", data.title === "Your next Monday could be your first day.", data.title);
-      check(name+": exact destinations", JSON.stringify(data.links) === JSON.stringify(["https://wa.me/923334000600","mailto:hiring@practiscale.com","tel:+923334000600"]));
+      check(name+": exact destinations", JSON.stringify(data.links) === JSON.stringify(["https://docs.google.com/forms/d/e/1FAIpQLSeVnz71TpOc4h6MiOE7gRY6_cCfJdHCkNZmzj22PCh1d20f5w/viewform?usp=header","mailto:hiring@practiscale.com","tel:+923334000600"]));
       check(name+": image loads and clips", data.loaded && data.photoClip && data.imageSize[0]===900, data);
       check(name+": no horizontal overflow", !data.overflow, data);
       check(name+": usable buttons", data.widths.every(x => x.width>160 && x.height>=44 && x.left>=0 && x.right<=width),data.widths);
