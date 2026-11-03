@@ -156,6 +156,7 @@ export default function HowWeWorkPage() {
         <section className={styles.section} aria-labelledby="roles-heading">
           <div className={styles.container}>
             <SectionHeading
+              id="roles-heading"
               eyebrow="Where you fit"
               title="Where each role fits"
             />
@@ -163,9 +164,11 @@ export default function HowWeWorkPage() {
               {roles.map(({ team, roles: roleNames, contribution }) => (
                 <article className={styles.roleCard} key={team}>
                   <h3>{team}</h3>
-                  <div>
+                  <div className={styles.roleDetail}>
                     <p className={styles.smallLabel}>Roles</p>
                     <p>{roleNames}</p>
+                  </div>
+                  <div className={styles.roleDetail}>
                     <p className={styles.smallLabel}>What you contribute</p>
                     <p>{contribution}</p>
                   </div>
@@ -181,6 +184,7 @@ export default function HowWeWorkPage() {
         >
           <div className={styles.container}>
             <SectionHeading
+              id="systems-heading"
               eyebrow="How we train and measure"
               title="Hiring gives you people. Systems turn them into a company."
               body="We built our own systems so every person gets training, feedback and a fair measure of performance."
@@ -198,6 +202,7 @@ export default function HowWeWorkPage() {
         <section className={styles.section} aria-labelledby="modes-heading">
           <div className={styles.container}>
             <SectionHeading
+              id="modes-heading"
               eyebrow="Work modes"
               title="Remote, onsite or hybrid"
             />

@@ -1,4 +1,3 @@
-import { getImageProps } from "next/image";
 import { Action, Eyebrow } from "@/components/ui";
 import styles from "./about.module.css";
 
@@ -19,25 +18,6 @@ export function AboutHero({
   imageAlt: string;
   variant?: "standard" | "portrait";
 }) {
-  const commonImageProps = {
-    alt: imageAlt,
-    fill: true as const,
-    // The tall desktop pane crops landscape art, so it needs near-viewport
-    // source width even though the pane itself occupies about half the page.
-    sizes: "100vw",
-    className: styles.heroImage,
-    loading: "eager" as const,
-    fetchPriority: "high" as const,
-  };
-  const { props: desktopImageProps } = getImageProps({
-    ...commonImageProps,
-    src: image,
-  });
-  const { props: mobileImageProps } = getImageProps({
-    ...commonImageProps,
-    src: mobileImage,
-  });
-
   return (
     <section
       className={`${styles.hero} ${variant === "portrait" ? styles.heroPortrait : ""}`}
@@ -49,12 +29,15 @@ export function AboutHero({
       </div>
       <div className={styles.heroImageWrap}>
         <picture>
-          <source
-            media="(max-width: 900px)"
-            srcSet={mobileImageProps.srcSet}
-            sizes={mobileImageProps.sizes}
+          <source media="(max-width: 900px)" srcSet={mobileImage} />
+          <img
+            className={styles.heroImage}
+            src={image}
+            alt={imageAlt}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
-          <img {...desktopImageProps} />
         </picture>
       </div>
       <div className={styles.heroIndex} aria-hidden="true">
@@ -65,11 +48,13 @@ export function AboutHero({
 }
 
 export function SectionHeading({
+  id,
   eyebrow,
   title,
   body,
   inverse = false,
 }: {
+  id?: string;
   eyebrow?: string;
   title: string;
   body?: string;
@@ -80,7 +65,7 @@ export function SectionHeading({
       className={`${styles.sectionHeading} ${inverse ? styles.inverseHeading : ""}`}
     >
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2>{title}</h2>
+      <h2 id={id}>{title}</h2>
       {body && <p>{body}</p>}
     </div>
   );

@@ -37,9 +37,13 @@ export function mountEarningsLaptop(root) {
     sceneModule = null;
   const prepareModule = () => (sceneModule ??= import("./scene.js"));
   function scheduleWarmup() {
-    clearTimeout(warmTimer);
-    if (warm && !world && !loading && !failed && visible)
-      warmTimer = setTimeout(() => void initialize(), 180);
+    // A steady wheel or touch scroll fires repeatedly. Keep the first warmup
+    // appointment so it can finish before the visitor reaches this section.
+    if (warm && !warmTimer && !world && !loading && !failed && visible)
+      warmTimer = setTimeout(() => {
+        warmTimer = 0;
+        void initialize();
+      }, 180);
   }
   let pointer = { x: 0.5, y: 0.4 },
     target = { ...pointer };
@@ -419,9 +423,15 @@ export function mountEarningsLaptop(root) {
         // Fetch early without allocating a GPU world on every homepage visit.
         void prepareModule().catch(() => {});
         scheduleWarmup();
-      } else clearTimeout(warmTimer);
+      } else {
+        clearTimeout(warmTimer);
+        warmTimer = 0;
+      }
     },
-    { rootMargin: "1200px 0px" },
+    // This scene has a one-time WebGL and lighting setup. Begin while it is
+    // still two to three viewports away so normal continuous scrolling does
+    // not arrive at an unopened fallback laptop.
+    { rootMargin: "2400px 0px" },
   );
   warmObserver.observe(viewport);
   const mutation = new MutationObserver(() => {

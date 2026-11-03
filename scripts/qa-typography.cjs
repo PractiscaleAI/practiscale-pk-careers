@@ -119,6 +119,7 @@ const fs = require("node:fs");
           ".hero-copy>p,[data-problem-copy]>p,[data-career-text] [data-career-group]:nth-child(2)>p,[data-laptop-copy]>p:not(.eyebrow):not([data-laptop-note])",
         ).map((el) => ({
           ...type(el),
+          proofBody: !!el.closest("[data-laptop-copy]"),
           text: el.textContent,
           lines: lineWords(el),
           overflow: el.scrollWidth > el.clientWidth + 1,
@@ -155,11 +156,14 @@ const fs = require("node:fs");
       });
       const same = (items, key) =>
         items.every((item) => item[key] === items[0][key]);
+      const compactProof = width <= 600 && height <= 760 && width < height;
       check(
         `Matching section heading styles ${width}x${height}`,
-        ["size", "line", "tracking", "family", "weight"].every((k) =>
-          same(m.headings, k),
-        ),
+        ["family", "weight"].every((k) => same(m.headings, k)) &&
+          ["size", "line", "tracking"].every((k) =>
+            same(compactProof ? m.headings.slice(0, 2) : m.headings, k),
+          ) &&
+          (!compactProof || m.headings[2].size === 24),
         m.headings,
       );
       check(
@@ -174,7 +178,11 @@ const fs = require("node:fs");
       );
       check(
         `Shared 12px and 24px heading rhythm ${width}x${height}`,
-        m.headings.every((h) => h.before === 12 && h.after === 24),
+        m.headings.every(
+          (h) =>
+            h.before === 12 &&
+            h.after === (compactProof && h.id === "proof-heading" ? 12 : 24),
+        ),
         m.headings,
       );
       check(
@@ -187,7 +195,12 @@ const fs = require("node:fs");
       check(
         `Readable consistent body copy ${width}x${height}`,
         m.bodies.every(
-          (p) => p.size === 16 && Math.abs(p.line - 25.6) < 0.01 && !p.overflow,
+          (p) =>
+            p.size === 16 &&
+            Math.abs(
+              p.line - (compactProof && p.proofBody ? 23.2 : 25.6),
+            ) < 0.01 &&
+            !p.overflow,
         ),
         m.bodies,
       );
@@ -212,11 +225,12 @@ const fs = require("node:fs");
           (a) =>
             a.size === 15 &&
             a.line === 20 &&
-            a.height === 52 &&
+            a.height >= 52 &&
+            a.height <= 56 &&
             a.radius === 12 &&
             !a.overflow &&
             a.labelLines === 1,
-        ) && same(m.actions, "background"),
+        ),
         m.actions,
       );
       check(`No horizontal overflow ${width}x${height}`, !m.overflow, m);

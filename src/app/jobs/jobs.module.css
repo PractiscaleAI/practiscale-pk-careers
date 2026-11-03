@@ -16,7 +16,7 @@
   color: #fff;
   background: var(--deep);
   border-radius: 24px;
-  margin: 0 var(--section-gutter);
+  margin: 0 var(--interior-edge);
   overflow: hidden;
 }
 
@@ -301,7 +301,7 @@
   border: 1px solid #cee5e1;
   border-radius: 999px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.02em;
 }
 
@@ -333,8 +333,8 @@
 
 .roleFacts dt {
   color: #4f7776;
-  font-size: 10px;
-  letter-spacing: 0.055em;
+  font-size: 11px;
+  letter-spacing: 0.07em;
 }
 
 .roleFacts dd {
@@ -350,7 +350,7 @@
   gap: 12px;
   margin-top: 20px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.58;
 }
 
@@ -362,7 +362,7 @@
   display: block;
   margin-bottom: 3px;
   color: var(--deep);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .roleApply {
@@ -609,7 +609,6 @@
 
 @media (max-width: 760px) {
   .hero {
-    margin-inline: 10px;
     border-radius: 18px;
   }
   .heroInner {
@@ -678,6 +677,26 @@
   .teamFilters button {
     padding-inline: 12px;
     font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .roleFacts {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .roleFacts > div + div {
+    padding-top: 14px;
+    border-top: 1px solid #e2e9e9;
+  }
+
+  .roleFacts dt {
+    font-size: 11px;
+  }
+
+  .roleFacts dd {
+    font-size: 14px;
   }
 }
 

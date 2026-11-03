@@ -180,6 +180,8 @@ export const trainingPrograms = {
     premiseBody:
       "Many capable women in Pakistan are held back by limited access to stable, professional work. This program removes the commute and opens a real career path, so skill and effort decide how far you go.",
     workTitle: "The work that keeps accounts running",
+    workBody:
+      "From verified research to clear reporting, the details you manage help US healthcare teams act with confidence.",
     workItems: [
       {
         title: "Research",
@@ -371,9 +373,14 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
 
       <section className={styles.audience} aria-labelledby="program-audience">
         <div className={styles.split}>
-          <div>
+          <div className={styles.audienceLead}>
             <span className={styles.eyebrow}>The right fit</span>
             <h2 id="program-audience">Who this program is for</h2>
+            {program.exclusion && (
+              <p className={styles.exclusion}>
+                <strong>Not for:</strong> {program.exclusion}
+              </p>
+            )}
           </div>
           <div>
             <ul>
@@ -381,11 +388,6 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
                 <li key={person}>{person}</li>
               ))}
             </ul>
-            {program.exclusion && (
-              <p className={styles.exclusion}>
-                <strong>Not for:</strong> {program.exclusion}
-              </p>
-            )}
           </div>
         </div>
       </section>

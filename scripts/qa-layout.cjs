@@ -140,11 +140,9 @@ const fs = require("fs");
         );
       if (w < 768)
         check(
-          "Reference mobile navbar " + w + "x" + h,
+          "Approved mobile navbar " + w + "x" + h,
           g.bg === "rgb(243, 246, 246)" &&
-            g.logoSrc.endsWith(
-              w < 348 ? "practiscale-mark.png" : "practiscale-logo-primary.png",
-            ) &&
+            g.logoSrc.endsWith("practiscale-logo-primary.png") &&
             g.header.height <= 66 &&
             g.logo.right < g.menu.left &&
             g.logo.right <= g.header.right &&

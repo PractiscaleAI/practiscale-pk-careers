@@ -46,10 +46,21 @@ const reasons = [
 ] as const;
 
 const stories = [
-  ["Mahnoor", "PKR 5,000", "PKR 159,000, later promoted to Team Lead"],
-  ["Nayab", "PKR 5,000", "PKR 134,000"],
-  ["Abdul Waris", "PKR 2,000", "PKR 118,000"],
-  ["Hanzala", "PKR 16,000 by day 12", "PKR 85,000 in month 2"],
+  {
+    name: "Mahnoor",
+    start: "PKR 5,000",
+    result: "PKR 159,000",
+    note: "Later promoted to Team Lead",
+  },
+  { name: "Nayab", start: "PKR 5,000", result: "PKR 134,000" },
+  { name: "Abdul Waris", start: "PKR 2,000", result: "PKR 118,000" },
+  {
+    name: "Hanzala",
+    start: "PKR 16,000",
+    result: "PKR 85,000",
+    startNote: "By day 12",
+    note: "In month 2",
+  },
 ] as const;
 
 const thrives = [
@@ -75,6 +86,7 @@ export default function WhyPractiScalePage() {
         <section className={styles.section} aria-labelledby="reasons-heading">
           <div className={styles.container}>
             <SectionHeading
+              id="reasons-heading"
               eyebrow="Six reasons"
               title="What you can build here"
             />
@@ -102,14 +114,32 @@ export default function WhyPractiScalePage() {
               </h2>
             </div>
             <div className={styles.growthGrid}>
-              {stories.map(([name, start, result]) => (
+              {stories.map(({ name, start, result, ...details }) => (
                 <article className={styles.growthCard} key={name}>
                   <h3>{name}</h3>
                   <dl>
-                    <dt>Started at</dt>
-                    <dd>{start}</dd>
-                    <dt>Grew to</dt>
-                    <dd>{result}</dd>
+                    <div className={styles.growthStart}>
+                      <dt>Started at</dt>
+                      <dd>
+                        <span className={styles.growthCurrency}>PKR</span>
+                        <span>{start.slice(4)}</span>
+                      </dd>
+                      {"startNote" in details && (
+                        <dd className={styles.growthNote}>
+                          {details.startNote}
+                        </dd>
+                      )}
+                    </div>
+                    <div className={styles.growthResult}>
+                      <dt>Grew to</dt>
+                      <dd>
+                        <span className={styles.growthCurrency}>PKR</span>
+                        <span>{result.slice(4)}</span>
+                      </dd>
+                      {"note" in details && (
+                        <dd className={styles.growthNote}>{details.note}</dd>
+                      )}
+                    </div>
                   </dl>
                 </article>
               ))}

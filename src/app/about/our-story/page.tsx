@@ -124,7 +124,7 @@ export default function OurStoryPage() {
                   />
                 </div>
                 <p className={styles.imageCaption}>
-                  <span>PractiScale, Rawalpindi</span>
+                  <span>Where the journey led</span>
                   <span>Office recreation</span>
                 </p>
               </aside>
@@ -134,18 +134,24 @@ export default function OurStoryPage() {
 
         <section
           id="founder"
-          className={styles.sectionDark}
+          className={`${styles.sectionDark} ${styles.founderSection}`}
           aria-labelledby="founder-heading"
         >
           <div className={`${styles.container} ${styles.founderGrid}`}>
             <aside className={styles.founderAside}>
               <div className={styles.imagePanel}>
-                <Image
-                  src="/media/about/about-founder-desktop.webp"
-                  alt="Art-directed portrait of Afrasyab Ahmed, Founder and CEO of PractiScale"
-                  fill
-                  sizes="(max-width: 760px) 100vw, 40vw"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 760px)"
+                    srcSet="/media/about/about-founder-portrait-mobile-v3.webp"
+                  />
+                  <Image
+                    src="/media/about/about-founder-portrait-desktop-v2.webp"
+                    alt="Art-directed portrait of Afrasyab Ahmed, Founder and CEO of PractiScale"
+                    fill
+                    sizes="(max-width: 760px) 100vw, 40vw"
+                  />
+                </picture>
               </div>
               <p className={styles.founderVoice}>
                 I did not start with capital or connections. I started by

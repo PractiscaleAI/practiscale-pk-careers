@@ -1,4 +1,5 @@
 .shell {
+  --interior-edge: 16px;
   min-width: 0;
   overflow: clip;
   background: var(--fog);
@@ -8,7 +9,7 @@
   position: relative;
   z-index: 60;
   min-height: 116px;
-  padding: 16px 16px 0;
+  padding: 16px var(--interior-edge) 0;
   background: var(--fog);
 }
 
@@ -22,9 +23,13 @@
 }
 
 @media (max-width: 767px) {
+  .shell {
+    --interior-edge: 8px;
+  }
+
   .header {
     min-height: 100px;
-    padding: 8px 8px 0;
+    padding: 8px var(--interior-edge) 0;
   }
 
   .header :global(.site-header) {

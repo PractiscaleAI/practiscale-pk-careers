@@ -249,12 +249,14 @@ export function mountFounderFilm(
     const imageTransform = `translateY(${imageY}px) scale(${posterScale})`;
     poster.style.transform = `translateY(${imageY + coverHeadroom}px) scale(${posterScale})`;
     thumbnail.style.transform = imageTransform;
-    // Hand the designed cover to the unlettered footage still before the
-    // aperture starts expanding. This keeps the video reveal visually continuous.
-    const handoff = Math.max(0, Math.min(1, (state.progress - 0.025) / 0.13));
-    const handoffEase = handoff * handoff * (3 - 2 * handoff);
-    thumbnail.style.opacity = String(1 - handoffEase);
-    thumbnail.style.visibility = handoffEase < 1 ? "visible" : "hidden";
+    // The cover and the footage still use different facial poses. Keep the
+    // cover intact through the introduction, then make a deliberate cut to
+    // the footage still before the aperture expands. A scrubbed crossfade
+    // superimposes both faces, even when the visitor pauses mid-scroll.
+    const coverVisible = state.progress < 0.155;
+    thumbnail.style.opacity = coverVisible ? "1" : "0";
+    thumbnail.style.visibility = coverVisible ? "visible" : "hidden";
+    poster.style.opacity = "1";
     const departure = Math.max(0, Math.min(1, (state.progress - 0.08) / 0.2));
     const fade = 1 - departure * departure * (3 - 2 * departure);
     copy.style.transform = `translateY(${-12 * (1 - fade)}px)`;

@@ -275,10 +275,10 @@
 }
 .workIntro > p {
   max-width: 570px;
-  margin-top: 34px;
+  margin-top: 28px;
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: clamp(17px, 1.3vw, 20px);
+  line-height: 1.6;
 }
 .listLabel {
   display: block;
@@ -293,9 +293,9 @@
 }
 .workList li {
   display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 22px;
-  padding: 28px 0;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  padding: 30px 0;
   border-bottom: 1px solid var(--line);
 }
 .number {
@@ -303,7 +303,7 @@
   padding-top: 4px;
 }
 .workList h3 {
-  font-size: clamp(19px, 1.45vw, 24px);
+  font-size: clamp(20px, 1.6vw, 26px);
   letter-spacing: -0.025em;
 }
 .workList p {
@@ -328,28 +328,31 @@
 }
 .audience li {
   position: relative;
-  padding: 24px 0 24px 34px;
+  padding: 24px 0 24px 42px;
   border-top: 1px solid #a6d8d24a;
-  font-size: clamp(18px, 1.55vw, 22px);
+  font-family: Sora, sans-serif;
+  font-size: clamp(19px, 1.6vw, 24px);
   line-height: 1.5;
+  letter-spacing: -0.025em;
 }
 .audience li::before {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 38px;
   left: 0;
-  width: 10px;
-  height: 10px;
-  border: 1px solid var(--accent);
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--accent);
   border-radius: 50%;
 }
 .exclusion {
-  margin-top: 35px;
-  padding: 20px 23px;
-  border: 1px solid #a6d8d24a;
-  border-radius: 12px;
+  max-width: 47ch;
+  margin-top: clamp(40px, 6vw, 90px);
+  padding: 18px 0 0;
+  border-top: 1px solid #a6d8d24a;
   color: #c5dedd;
   font-size: 15px;
+  line-height: 1.65;
 }
 .exclusion strong {
   color: var(--accent);
@@ -359,7 +362,7 @@
   background: #e6ecec;
 }
 .processLead {
-  margin-bottom: clamp(55px, 7vw, 100px);
+  margin-bottom: clamp(44px, 5vw, 74px);
 }
 .processLead .eyebrow {
   color: #0e6461;
@@ -371,7 +374,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: clamp(17px, 2vw, 32px);
+  gap: clamp(18px, 2.3vw, 38px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -382,8 +385,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 25px;
-  height: 1px;
+  top: 0;
+  height: 2px;
   background: #aac7c4;
 }
 .steps::after {
@@ -395,27 +398,33 @@
   position: relative;
   z-index: 1;
   min-width: 0;
+  padding-top: 28px;
 }
 .stepNumber {
-  width: 50px;
-  height: 50px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #138579;
-  border-radius: 50%;
-  background: #e6ecec;
-  color: #166e6b;
+  display: block;
+  color: #0f716c;
+  font-family: Sora, sans-serif;
+  font-size: clamp(44px, 4.2vw, 68px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.065em;
 }
 .steps h3 {
-  margin-top: 34px;
+  margin-top: 28px;
   font-size: clamp(20px, 1.65vw, 27px);
 }
 .steps p {
-  margin-top: 14px;
-  max-width: 220px;
+  margin-top: 12px;
+  max-width: 27ch;
   color: var(--muted);
   font-size: 15px;
   line-height: 1.65;
+}
+.steps li:last-child {
+  padding-inline: 18px;
+  padding-bottom: 20px;
+  border-radius: 0 0 14px 14px;
+  background: #d3e8e2;
 }
 .outcome {
   padding: clamp(100px, 10vw, 165px) 0;
@@ -562,27 +571,12 @@
     animation-timeline: view();
     animation-range: entry 12% exit 40%;
   }
-  .steps li .stepNumber {
-    animation: stepEnter linear both;
-    animation-timeline: view();
-    animation-range: entry 10% cover 28%;
-  }
   @keyframes pathFill {
     from {
       transform: scaleX(0);
     }
     to {
       transform: scaleX(1);
-    }
-  }
-  @keyframes stepEnter {
-    from {
-      background: #e6ecec;
-      color: #166e6b;
-    }
-    to {
-      background: #134143;
-      color: #fff;
     }
   }
 }
@@ -608,12 +602,18 @@
     width: 6px;
   }
   .steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    row-gap: 52px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 38px;
   }
   .steps::before,
   .steps::after {
     display: none;
+  }
+  .steps li {
+    border-top: 2px solid #aac7c4;
+  }
+  .steps li:last-child {
+    grid-column: 1 / -1;
   }
 }
 @media (max-width: 760px) {
@@ -724,13 +724,19 @@
   }
   .steps li {
     display: grid;
-    grid-template-columns: 50px 1fr;
-    column-gap: 18px;
-    padding: 0 0 30px;
+    grid-template-columns: 58px 1fr;
+    column-gap: 15px;
+    padding: 23px 0 26px;
   }
   .steps li + li {
-    border-top: 1px solid #aac7c4;
-    padding-top: 25px;
+    border-top: 2px solid #aac7c4;
+    padding-top: 23px;
+  }
+  .steps li:last-child {
+    padding-inline: 14px;
+  }
+  .steps .stepNumber {
+    font-size: 43px;
   }
   .steps h3 {
     margin-top: 3px;
