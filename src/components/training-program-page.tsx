@@ -20,9 +20,18 @@ type Program = {
   workBody?: string;
   workItems: Item[];
   audience: string[];
+  audienceLabels?: string[];
+  audienceQualifier?: string;
   exclusion?: string;
   steps: Item[];
-  quote?: { text: string; attribution: string; body: string };
+  quote?: {
+    text: string;
+    attribution: string;
+    introduction: string;
+    skills: string[];
+    nextRole: string;
+    earnings: string;
+  };
   questions: Question[];
   closingTitle: string;
   other: { label: string; href: string };
@@ -114,7 +123,12 @@ export const trainingPrograms = {
     quote: {
       text: "Before you learn how to build a business, learn how to sell.",
       attribution: "Afrasyab Ahmed, Founder and CEO",
-      body: "Appointment setting builds the foundation of every sales career: communication, confidence and persistence. Our Closer roles, earning Rs 3 to 8 lakh per month, require B2B sales experience. This is where that experience starts.",
+      introduction:
+        "Learn to listen, qualify and follow up on real US healthcare accounts.",
+      skills: ["Communication", "Confidence", "Persistence"],
+      nextRole:
+        "Our Closer roles require B2B sales experience. This is where that experience starts.",
+      earnings: "Rs 3 to 8 lakh",
     },
     questions: [
       {
@@ -197,6 +211,8 @@ export const trainingPrograms = {
       "Women returning to work after a career break.",
       "Women who are organized, reliable and detail oriented.",
     ],
+    audienceLabels: ["Starting out", "Returning to work", "Your strengths"],
+    audienceQualifier: "Women only / Fully remote",
     steps: [
       {
         title: "Apply",
@@ -366,24 +382,43 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
         </div>
       </section>
 
-      <section className={styles.audience} aria-labelledby="program-audience">
-        <div className={styles.split}>
+      <section
+        className={`${styles.audience} ${program.exclusion ? styles.audienceWithNote : ""} ${program.audienceLabels ? styles.audienceLabeled : ""}`}
+        aria-labelledby="program-audience"
+      >
+        <div className={`${styles.split} ${styles.audienceGrid}`}>
           <div className={styles.audienceLead}>
-            <span className={styles.eyebrow}>The right fit</span>
-            <h2 id="program-audience">Who this program is for</h2>
-            {program.exclusion && (
-              <p className={styles.exclusion}>
-                <strong>Not for:</strong> {program.exclusion}
-              </p>
+            <div>
+              <span className={styles.eyebrow}>The right fit</span>
+              <h2 id="program-audience">Who this program is for</h2>
+            </div>
+            {program.audienceQualifier && (
+              <p className={styles.audienceQualifier}>{program.audienceQualifier}</p>
             )}
           </div>
-          <div>
+          <div className={styles.audienceList}>
             <ul>
-              {program.audience.map((person) => (
-                <li key={person}>{person}</li>
+              {program.audience.map((person, index) => (
+                <li key={person}>
+                  {program.audienceLabels ? (
+                    <span className={styles.audienceDescriptor}>
+                      {program.audienceLabels[index]}
+                    </span>
+                  ) : (
+                    <span className={styles.audienceNumber} aria-hidden="true">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  )}
+                  <span>{person}</span>
+                </li>
               ))}
             </ul>
           </div>
+          {program.exclusion && (
+            <p className={styles.exclusion}>
+              <strong>Not for:</strong> {program.exclusion}
+            </p>
+          )}
         </div>
       </section>
 
@@ -411,25 +446,53 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
 
       {program.quote && (
         <section className={styles.outcome} aria-labelledby="program-outcome">
-          <div className={styles.split}>
-            <div>
-              <span className={styles.eyebrow}>Where it leads</span>
-              <h2 id="program-outcome">The first step in a sales career</h2>
+          <div className={styles.outcomeInner}>
+            <header className={styles.outcomeHead}>
+              <div>
+                <span className={styles.eyebrow}>Where it leads</span>
+                <h2 id="program-outcome">The first step in a sales career</h2>
+              </div>
+              <p>{program.quote.introduction}</p>
+            </header>
+
+            <div className={styles.careerPath}>
+              <div className={styles.pathStage}>
+                <span className={styles.pathLabel}>Start here</span>
+                <h3>Appointment setting</h3>
+                <p>Start professional conversations and book qualified meetings.</p>
+                <ul className={styles.pathSkills} aria-label="Skills you build">
+                  {program.quote.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className={styles.pathConnector} aria-hidden="true">
+                <span>→</span>
+              </div>
+              <div className={styles.pathStage}>
+                <span className={styles.pathLabel}>A path ahead</span>
+                <h3>Closer roles</h3>
+                <p>{program.quote.nextRole}</p>
+                <div className={styles.pathEarnings}>
+                  <span>Individual closer earnings</span>
+                  <strong>{program.quote.earnings} / month</strong>
+                  <p className={styles.pathEarningsNote}>
+                    These are individual results, not typical or guaranteed
+                    monthly earnings. What you earn depends on your role, skill,
+                    effort and performance.
+                  </p>
+                </div>
+                <Link className={styles.textLink} href="/jobs#sales">
+                  Explore sales roles <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.outcomeFoot}>
               <blockquote>
                 <p>“{program.quote.text}”</p>
                 <footer>{program.quote.attribution}</footer>
               </blockquote>
-            </div>
-            <div>
-              <p className={styles.outcomeBody}>{program.quote.body}</p>
-              <Link className={styles.textLink} href="/jobs#sales">
-                Explore sales roles <span aria-hidden="true">↗</span>
-              </Link>
-              <p className={styles.disclaimer}>
-                Earnings shown here are individual results, not typical or
-                guaranteed earnings. What you earn depends on your role, skill,
-                effort and performance.
-              </p>
             </div>
           </div>
         </section>
@@ -474,8 +537,12 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
             >
               Apply Now <span aria-hidden="true">↗</span>
             </a>
-            <Link className={styles.closingAlternative} href={program.other.href}>
-              Explore the {program.other.label} <span aria-hidden="true">↗</span>
+            <Link
+              className={styles.closingAlternative}
+              href={program.other.href}
+            >
+              Explore the {program.other.label}{" "}
+              <span aria-hidden="true">↗</span>
             </Link>
           </div>
         </div>
