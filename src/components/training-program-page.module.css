@@ -102,7 +102,7 @@
 }
 .action:focus-visible,
 .textLink:focus-visible,
-.closing nav a:focus-visible,
+.closingAlternative:focus-visible,
 .faq summary:focus-visible,
 .faq a:focus-visible {
   outline: 3px solid #38c9bb;
@@ -524,46 +524,57 @@
   color: #0b6b98;
 }
 .closing {
-  padding: clamp(110px, 12vw, 190px) 0 95px;
-  color: white;
-  background: var(--deep);
+  padding: clamp(100px, 10vw, 150px) 0;
+  color: var(--deep);
+  background: #dcece7;
 }
 .closingInner {
-  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: center;
+  gap: clamp(48px, 8vw, 125px);
 }
 .closing .eyebrow {
-  color: var(--accent);
+  color: #0e716d;
 }
 .closing h2 {
-  max-width: 930px;
-  margin: auto;
-  font-size: clamp(43px, 4.7vw, 76px);
+  max-width: 750px;
+  font-size: clamp(43px, 4.4vw, 72px);
+  scroll-margin-top: 170px;
+}
+.closingPanel {
+  padding: clamp(30px, 3.5vw, 52px);
+  border: 1px solid #b6d4cd;
+  border-radius: 24px;
+  background: #f8fbfa;
+  box-shadow: 0 22px 55px #16464314;
+}
+.closingPanel > p {
+  max-width: 30ch;
+  color: var(--deep);
+  font-size: clamp(18px, 1.55vw, 22px);
+  line-height: 1.5;
 }
 .closing .action {
-  margin-top: 37px;
+  margin-top: 30px;
 }
-.closingInner > p {
-  margin: 19px auto 0;
-  color: #c5dedd;
-  font-size: 15px;
-}
-.closing nav {
+.closingAlternative {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 26px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px 32px;
-  margin-top: 75px;
-  padding-top: 25px;
-  border-top: 1px solid #a6d8d24a;
-}
-.closing nav a {
-  color: #c5dedd;
-  font-size: 14px;
-}
-.closing nav a:hover {
-  color: white;
+  align-items: baseline;
+  gap: 8px;
+  color: #0e6461;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
   text-decoration: underline;
+  text-decoration-color: #7dada4;
   text-underline-offset: 5px;
+}
+.closingAlternative:hover {
+  color: #096f99;
 }
 @supports (animation-timeline: view()) {
   .steps::after {
@@ -581,6 +592,10 @@
   }
 }
 @media (max-width: 1100px) {
+  .closingInner {
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 0.85fr);
+    gap: 42px;
+  }
   .heroInner {
     grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
     gap: 35px;
@@ -614,6 +629,15 @@
   }
   .steps li:last-child {
     grid-column: 1 / -1;
+  }
+}
+@media (max-width: 900px) {
+  .closingInner {
+    display: block;
+  }
+  .closingPanel {
+    max-width: 580px;
+    margin-top: 38px;
   }
 }
 @media (max-width: 760px) {
@@ -664,7 +688,7 @@
     margin-top: 20px;
   }
   .closing {
-    padding-bottom: 65px;
+    padding: 90px 0;
   }
 }
 @media (max-width: 480px) {
@@ -757,6 +781,17 @@
   }
   .closing h2 {
     font-size: clamp(36px, 9vw, 47px);
+  }
+  .closingPanel {
+    margin-top: 31px;
+    padding: 26px;
+    border-radius: 18px;
+  }
+  .closingPanel > p {
+    font-size: 18px;
+  }
+  .closing .action {
+    margin-top: 24px;
   }
 }
 @media (max-width: 360px) {

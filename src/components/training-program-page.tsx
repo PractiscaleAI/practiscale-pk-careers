@@ -460,34 +460,24 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
 
       <section className={styles.closing} aria-labelledby="program-closing">
         <div className={styles.closingInner}>
-          <span className={styles.eyebrow}>Your next move</span>
-          <h2 id="program-closing">{program.closingTitle}</h2>
-          <a
-            className={styles.action}
-            href={program.applyLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apply Now <span aria-hidden="true">↗</span>
-          </a>
-          <p>Send your CV and a 60 second video on why you fit.</p>
-          <nav aria-label="Explore PractiScale">
-            <Link href={program.other.href}>{program.other.label} ↗</Link>
-            <Link href="/jobs">See open jobs ↗</Link>
-            <Link
-              href={
-                program.href.endsWith("appointment-setter")
-                  ? "/about/how-we-work"
-                  : "/about/our-story#founder"
-              }
+          <div className={styles.closingIntro}>
+            <span className={styles.eyebrow}>Your next move</span>
+            <h2 id="program-closing">{program.closingTitle}</h2>
+          </div>
+          <div className={styles.closingPanel}>
+            <p>Send your CV and a 60 second video on why you fit.</p>
+            <a
+              className={styles.action}
+              href={program.applyLink}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {program.href.endsWith("appointment-setter")
-                ? "How we work"
-                : "Our founder"}{" "}
-              ↗
+              Apply Now <span aria-hidden="true">↗</span>
+            </a>
+            <Link className={styles.closingAlternative} href={program.other.href}>
+              Explore the {program.other.label} <span aria-hidden="true">↗</span>
             </Link>
-            <Link href="/who-we-serve">Who we serve ↗</Link>
-          </nav>
+          </div>
         </div>
       </section>
       <script
