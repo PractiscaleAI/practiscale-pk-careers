@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { applicationFormUrl } from "@/lib/content";
+import {
+  appointmentSetterTrainingFormUrl,
+  virtualAssistantTrainingFormUrl,
+} from "@/lib/content";
 import styles from "./training-program-page.module.css";
 
 type Item = { title: string; body: string };
@@ -16,6 +19,8 @@ type Program = {
   applyLink: string;
   premiseTitle: string;
   premiseBody: string;
+  premiseBefore: string;
+  premiseAfter: string;
   workTitle: string;
   workBody?: string;
   workItems: Item[];
@@ -35,7 +40,6 @@ type Program = {
   questions: Question[];
   closingTitle: string;
   other: { label: string; href: string };
-  visual: string[];
 };
 
 export const trainingPrograms = {
@@ -61,10 +65,12 @@ export const trainingPrograms = {
       "Onsite in Rawalpindi or Islamabad",
       "Rs 30,000 to Rs 200,000 per month after hiring",
     ],
-    applyLink: applicationFormUrl,
+    applyLink: appointmentSetterTrainingFormUrl,
     premiseTitle: "Every job wants experience. Nobody wants to give it.",
     premiseBody:
-      "This program breaks that loop. You get trained on the exact work, assessed on a real task and hired to do it.",
+      "Learn the work itself, then show what you can do in a real role assessment. Candidates who pass are offered a paid appointment setting role.",
+    premiseBefore: "No prior sales experience",
+    premiseAfter: "A skill you can demonstrate",
     workTitle: "The first conversation behind every introduction",
     workBody:
       "Appointment setters start the conversations our clients depend on. You reach the right professionals, confirm their interest and book the meeting. Every introduction PractiScale makes begins with this work.",
@@ -161,7 +167,6 @@ export const trainingPrograms = {
       label: "Virtual Assistant Program",
       href: "/training-programs/virtual-assistant",
     },
-    visual: ["Open", "Qualify", "Book"],
   },
   "virtual-assistant": {
     href: "/training-programs/virtual-assistant",
@@ -184,10 +189,12 @@ export const trainingPrograms = {
       "Fully remote",
       "Rs 20,000 to Rs 150,000 per month after hiring",
     ],
-    applyLink: applicationFormUrl,
+    applyLink: virtualAssistantTrainingFormUrl,
     premiseTitle: "Ability was never the problem. Access was.",
     premiseBody:
-      "Many capable women in Pakistan are held back by limited access to stable, professional work. This program removes the commute and opens a real career path, so skill and effort decide how far you go.",
+      "For women in Pakistan, location can limit access to stable professional work. This program offers remote training and a path to paid work on US healthcare accounts.",
+    premiseBefore: "Commuting limits access",
+    premiseAfter: "Professional remote work",
     workTitle: "The work that keeps accounts running",
     workBody:
       "From verified research to clear reporting, the details you manage help US healthcare teams act with confidence.",
@@ -264,19 +271,18 @@ export const trainingPrograms = {
       label: "Appointment Setter Program",
       href: "/training-programs/appointment-setter",
     },
-    visual: ["Research", "Organize", "Support"],
   },
 } satisfies Record<string, Program>;
 
 export type TrainingProgramSlug = keyof typeof trainingPrograms;
 
-function Answer({ text }: { text: string }) {
+function Answer({ text, applyLink }: { text: string; applyLink: string }) {
   return text
     .split(/(application form|hiring@practiscale\.com)/g)
     .map((part, i) => {
       if (part === "application form")
         return (
-          <a key={i} href={applicationFormUrl}>
+          <a key={i} href={applyLink} target="_blank" rel="noopener noreferrer">
             {part}
           </a>
         );
@@ -291,6 +297,10 @@ function Answer({ text }: { text: string }) {
 }
 
 export default function TrainingProgramPage({ program }: { program: Program }) {
+  const isAppointmentSetter = program.href.endsWith("appointment-setter");
+  const visualSteps = isAppointmentSetter
+    ? ["Open", "Qualify", "Book"]
+    : ["Research", "Organize", "Support"];
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -317,20 +327,6 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               Apply for the Program <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <div className={styles.visual} aria-hidden="true">
-            <span className={styles.visualLabel}>
-              PRACTISCALE / CAREER PATH
-            </span>
-            <div className={styles.visualFlow}>
-              {program.visual.map((word, i) => (
-                <div className={styles.visualNode} key={word}>
-                  <small>0{i + 1}</small>
-                  <strong>{word}</strong>
-                </div>
-              ))}
-            </div>
-            <span className={styles.visualFoot}>US HEALTHCARE ACCOUNTS</span>
-          </div>
           <ul className={styles.facts} aria-label="Program facts">
             {program.facts.map((fact, i) => (
               <li key={fact}>
@@ -339,16 +335,68 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               </li>
             ))}
           </ul>
+          <div
+            className={`${styles.visual} ${isAppointmentSetter ? styles.visualSetter : styles.visualAssistant}`}
+            aria-hidden="true"
+          >
+            <div className={styles.visualTop}>
+              <span>
+                {isAppointmentSetter
+                  ? "APPOINTMENT SETTING / THE WORK"
+                  : "VIRTUAL ASSISTANT / THE WORK"}
+              </span>
+              <span>{isAppointmentSetter ? "ONSITE" : "REMOTE"}</span>
+            </div>
+            <div className={styles.scene}>
+              <div className={styles.sceneHeading}>
+                <span>{isAppointmentSetter ? "FROM FIRST CONTACT" : "REMOTE ACCOUNT SUPPORT"}</span>
+                <strong>
+                  {isAppointmentSetter ? (
+                    <>A conversation becomes a <em>qualified meeting.</em></>
+                  ) : (
+                    <>The details keep <em>work moving.</em></>
+                  )}
+                </strong>
+              </div>
+              <ol className={styles.sceneSteps}>
+                {visualSteps.map((step, i) => (
+                  <li key={step}>
+                    <span>0{i + 1}</span>
+                    <strong>{step}</strong>
+                  </li>
+                ))}
+              </ol>
+              <p className={styles.sceneOutcome}>
+                <span aria-hidden="true" />
+                {isAppointmentSetter ? "Qualified introduction booked" : "US healthcare account supported"}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className={styles.premise} aria-labelledby="program-premise">
-        <div className={styles.split}>
-          <div>
+        <div className={styles.premiseInner}>
+          <div className={styles.premiseIntro}>
             <span className={styles.eyebrow}>The starting point</span>
             <h2 id="program-premise">{program.premiseTitle}</h2>
           </div>
-          <p>{program.premiseBody}</p>
+          <div className={styles.premiseResponse}>
+            <span className={styles.premiseResponseLabel}>
+              What changes here
+            </span>
+            <p>{program.premiseBody}</p>
+            <div className={styles.premiseShift}>
+              <div>
+                <span>Starting point</span>
+                <p>{program.premiseBefore}</p>
+              </div>
+              <div>
+                <span>What you build</span>
+                <strong>{program.premiseAfter}</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -513,7 +561,7 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
                   <b aria-hidden="true">+</b>
                 </summary>
                 <p>
-                  <Answer text={item.answer} />
+                  <Answer text={item.answer} applyLink={program.applyLink} />
                 </p>
               </details>
             ))}

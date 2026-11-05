@@ -176,6 +176,10 @@ export default function JobsExplorer() {
             </button>
           </div>
         )}
+        <p className={styles.earningsNote}>
+          Pay figures are role ranges or upper limits from the hiring brief, not
+          guaranteed earnings. Exact compensation is confirmed during screening.
+        </p>
       </div>
     </section>
   );

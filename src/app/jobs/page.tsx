@@ -129,24 +129,6 @@ export default function JobsPage() {
         </div>
       </section>
 
-      <section className={styles.closing} aria-labelledby="jobs-open-heading">
-        <div className={styles.closingInner}>
-          <div>
-            <span className={styles.eyebrow}>Ready to apply?</span>
-            <h2 id="jobs-open-heading">Choose the role that fits you.</h2>
-            <p>
-              Every open role above links to its corresponding application form.
-            </p>
-          </div>
-          <a className={styles.heroLink} href="#open-roles">
-            See open roles <ArrowUpRight size={18} aria-hidden="true" />
-          </a>
-        </div>
-        <p className={styles.earningsNote}>
-          Pay figures are role ranges or upper limits from the hiring brief, not
-          guaranteed earnings. Exact compensation is confirmed during screening.
-        </p>
-      </section>
     </InteriorShell>
   );
 }
