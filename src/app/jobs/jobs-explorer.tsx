@@ -21,13 +21,13 @@ function RoleCard({ role }: { role: JobRole }) {
       <h4>{role.title}</h4>
       <p className={styles.roleSummary}>{role.summary}</p>
       <dl className={styles.roleFacts}>
+        <div className={styles.payFact}>
+          <dt>Monthly pay</dt>
+          <dd>{role.earnings}</dd>
+        </div>
         <div>
           <dt>Experience</dt>
           <dd>{role.experience}</dd>
-        </div>
-        <div>
-          <dt>Monthly pay</dt>
-          <dd>{role.earnings}</dd>
         </div>
         {role.schedule && (
           <div>
@@ -124,10 +124,17 @@ export default function JobsExplorer() {
             </select>
           </label>
         </div>
-        <p className={styles.count} aria-live="polite">
-          {matchingRoles.length} {matchingRoles.length === 1 ? "role" : "roles"}{" "}
-          shown
-        </p>
+        <div className={styles.resultsMeta}>
+          <p className={styles.count} aria-live="polite">
+            {matchingRoles.length} {matchingRoles.length === 1 ? "role" : "roles"}{" "}
+            shown
+          </p>
+          <p className={styles.earningsNote}>
+            <strong>About compensation</strong> Pay figures are role ranges or
+            upper limits from the hiring brief, not guaranteed earnings. Exact
+            compensation is confirmed during screening.
+          </p>
+        </div>
         {jobTeams.map((item) => {
           const roles = matchingRoles.filter((role) => role.team === item.name);
           if (!roles.length) return null;
@@ -176,10 +183,6 @@ export default function JobsExplorer() {
             </button>
           </div>
         )}
-        <p className={styles.earningsNote}>
-          Pay figures are role ranges or upper limits from the hiring brief, not
-          guaranteed earnings. Exact compensation is confirmed during screening.
-        </p>
       </div>
     </section>
   );
