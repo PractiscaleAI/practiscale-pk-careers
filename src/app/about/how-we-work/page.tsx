@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "How PractiScale Works | Remote Healthcare Outreach Jobs in Pakistan",
   },
   description:
-    "See what our Pakistan teams do for US healthcare businesses, where sales, VA, creative and tech roles fit, and how we train, coach and measure performance.",
+    "See how our Pakistan teams serve US healthcare businesses, where current sales, media and operations roles fit, and how we train and measure performance.",
   alternates: { canonical: "/about/how-we-work" },
 };
 
@@ -35,33 +35,21 @@ const process = [
 const roles = [
   {
     team: "Sales",
-    roles: "Appointment Setter, Closer",
+    roles: "Onsite Appointment Setter, Onsite Sales Closer, Remote Appointment Setter, Remote Sales Closer",
     contribution:
       "Start conversations, book meetings and bring new clients on board.",
   },
   {
-    team: "Account support",
-    roles: "Virtual Assistant",
+    team: "Media",
+    roles: "Copywriter, Female Content Creator, Videographer, Social Media Manager, Content Strategist, Video Editor, Graphic Designer",
     contribution:
-      "Research, organize and support the accounts our teams manage.",
+      "Plan, produce and publish the stories that show the people and work behind PractiScale.",
   },
   {
-    team: "Creative",
-    roles: "Graphic Designer, Video Editor, Script Writer",
+    team: "Operations",
+    roles: "CRM + AI Expert, IT Support Executive, Onsite HR Recruiter, Full-Stack Marketer, Remote HR Recruiter",
     contribution:
-      "Create the content that builds the PractiScale brand in the US and in Pakistan.",
-  },
-  {
-    team: "Technology",
-    roles: "AI Engineer, CRM and AI Expert, WordPress Developer, Web Developer",
-    contribution:
-      "Build the websites, internal tools and AI systems the company runs on.",
-  },
-  {
-    team: "People and operations",
-    roles: "HR Recruiter, Associate Manager",
-    contribution:
-      "Hire the next team members and keep daily operations on track.",
+      "Support hiring, systems, marketing and the daily work that keeps teams running.",
   },
 ] as const;
 
@@ -79,10 +67,9 @@ const systems = [
 const modes = [
   [
     "Remote",
-    "Work from anywhere in Pakistan on roles such as Remote Closer, Virtual Assistant and Remote HR Recruiter.",
+    "Work remotely in roles such as Remote Appointment Setter, Remote Sales Closer or CRM + AI Expert. The Remote HR Recruiter role requires you to be based in Rawalpindi or Islamabad.",
   ],
   ["Onsite", "Work from our offices in Rawalpindi or Islamabad."],
-  ["Hybrid", "Split between home and office, currently for creative roles."],
 ] as const;
 
 export default function HowWeWorkPage() {
@@ -204,7 +191,7 @@ export default function HowWeWorkPage() {
             <SectionHeading
               id="modes-heading"
               eyebrow="Work modes"
-              title="Remote, onsite or hybrid"
+              title="Remote or onsite"
             />
             <div className={styles.modeGrid}>
               {modes.map(([title, body], index) => (

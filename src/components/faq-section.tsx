@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { applicationFormUrl, homeFaqs } from "@/lib/content";
+import { homeFaqs } from "@/lib/content";
 import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 import styles from "./faq-section.module.css";
 
@@ -315,8 +315,8 @@ export default function FaqSection() {
                   </>
                 ) : index === last ? (
                   <>
-                    <a href={applicationFormUrl}>
-                      Complete the application form
+                    <a href="/jobs">
+                      Choose an open role and apply
                     </a>{" "}
                     or email your CV to{" "}
                     <a href="mailto:hiring@practiscale.com">

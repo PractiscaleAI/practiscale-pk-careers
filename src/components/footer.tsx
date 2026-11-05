@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import FooterGuide from "./footer-guide";
-import { applicationFormUrl } from "@/lib/content";
 import styles from "./footer.module.css";
 
 const directions = "https://maps.app.goo.gl/Rw8dfvA1SNsVvoW26";
@@ -44,14 +43,14 @@ export default function Footer() {
         <div className={styles.right}>
           <div className={styles.group}>
             <h3>Apply</h3>
-            <a
+            <Link
               className={styles.applyPrimary}
-              href={applicationFormUrl}
-              aria-label="Open the PractiScale application form"
+              href="/jobs"
+              aria-label="Explore open jobs at PractiScale"
             >
-              Apply Now
+              See Open Jobs
               <ArrowUpRight size={16} strokeWidth={1.7} aria-hidden="true" />
-            </a>
+            </Link>
             <a href="mailto:hiring@practiscale.com">
               Email: hiring@practiscale.com
             </a>

@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 import { mountSceneAnchor } from "@/lib/scene-anchor.js";
 import { mountCtaWaves } from "@/lib/cta-wave";
 import { Action, Eyebrow } from "./ui";
-import { applicationFormUrl } from "@/lib/content";
 import styles from "./final-cta.module.css";
 
 function ArrivalArc() {
@@ -51,7 +50,7 @@ export default function FinalCTA() {
             Send your CV and a 60 second video. If you are the right fit, you start the following Monday.
           </p>
           <div className={styles.actions}>
-            <Action href={applicationFormUrl}>Apply Now</Action>
+            <Action href="/jobs">Explore Open Jobs</Action>
             <Action href="mailto:hiring@practiscale.com" secondary>Email Your CV</Action>
           </div>
           <p className={styles.call}>Or call <a href="tel:+923334000600">0333 4000 600</a></p>

@@ -535,7 +535,7 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply Now <span aria-hidden="true">↗</span>
+              Apply for the Program <span aria-hidden="true">↗</span>
             </a>
             <Link
               className={styles.closingAlternative}

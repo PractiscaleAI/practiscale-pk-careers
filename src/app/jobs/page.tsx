@@ -2,19 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import InteriorShell from "@/components/interior-shell";
-import { Action } from "@/components/ui";
-import { applicationFormUrl } from "@/lib/content";
 import JobsExplorer from "./jobs-explorer";
 import { jobRoles, jobTeams } from "./jobs-data";
 import styles from "./jobs.module.css";
 
 export const metadata: Metadata = {
   title: {
-    absolute:
-      "Jobs at PractiScale | Sales, Design, Developer and AI Jobs in Pakistan",
+    absolute: "Open Jobs at PractiScale | Sales, Media and Operations",
   },
   description:
-    "Open roles in sales, graphic design, video editing, AI engineering, WordPress and web development, recruitment and operations. Remote, onsite and hybrid in Rawalpindi and Islamabad.",
+    "Explore current sales, media and operations roles at PractiScale. See each role's responsibilities, work mode, pay and application form.",
   alternates: { canonical: "/jobs" },
 };
 
@@ -48,10 +45,9 @@ export default function JobsPage() {
               Open jobs at <span>PractiScale</span>
             </h1>
             <p>
-              Sales, creative, tech and operations roles in Rawalpindi,
-              Islamabad and remote. Explore each role&apos;s responsibilities
-              and work mode. We confirm pay and experience details during
-              screening where they are not listed.
+              Current openings in sales, media and operations. Compare the
+              responsibilities, work mode and monthly pay for each role, then
+              apply through the form for that role or team.
             </p>
             <a className={styles.heroLink} href="#open-roles">
               Explore roles <ArrowDownRight size={18} aria-hidden="true" />
@@ -91,7 +87,10 @@ export default function JobsPage() {
             <article className={styles.programCard}>
               <span>Freshers welcome / Onsite</span>
               <h3>Appointment Setter Program</h3>
-              <p>Rs 30,000 to Rs 200,000 per month after hiring.</p>
+              <p>
+                Build appointment-setting skills and move toward a paid sales
+                role.
+              </p>
               <Link href="/training-programs/appointment-setter">
                 View program <ArrowUpRight size={18} aria-hidden="true" />
               </Link>
@@ -99,7 +98,10 @@ export default function JobsPage() {
             <article className={styles.programCard}>
               <span>Women only / Remote</span>
               <h3>Virtual Assistant Program</h3>
-              <p>Rs 20,000 to Rs 150,000 per month after hiring.</p>
+              <p>
+                Train for remote account support through the Women Empowerment
+                Program.
+              </p>
               <Link href="/training-programs/virtual-assistant">
                 View program <ArrowUpRight size={18} aria-hidden="true" />
               </Link>
@@ -130,17 +132,19 @@ export default function JobsPage() {
       <section className={styles.closing} aria-labelledby="jobs-open-heading">
         <div className={styles.closingInner}>
           <div>
-            <span className={styles.eyebrow}>Open application</span>
-            <h2 id="jobs-open-heading">Don&apos;t see your role?</h2>
+            <span className={styles.eyebrow}>Ready to apply?</span>
+            <h2 id="jobs-open-heading">Choose the role that fits you.</h2>
             <p>
-              If you can sell, build or create, we still want to hear from you.
+              Every open role above links to its corresponding application form.
             </p>
           </div>
-          <Action href={applicationFormUrl}>Submit an Application</Action>
+          <a className={styles.heroLink} href="#open-roles">
+            See open roles <ArrowUpRight size={18} aria-hidden="true" />
+          </a>
         </div>
         <p className={styles.earningsNote}>
-          Earning ranges include performance based pay where applicable. Your
-          exact compensation is confirmed during the screening call.
+          Pay figures are role ranges or upper limits from the hiring brief, not
+          guaranteed earnings. Exact compensation is confirmed during screening.
         </p>
       </section>
     </InteriorShell>

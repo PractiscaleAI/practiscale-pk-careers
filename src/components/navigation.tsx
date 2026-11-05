@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { X, ArrowUpRight, ChevronDown } from "lucide-react";
-import { applicationFormUrl } from "@/lib/content";
 const groups = [
   {
     label: "About",
@@ -299,12 +298,12 @@ export default function Navigation() {
           >
             Who we serve
           </Link>
-          <a className="nav-cta" href={applicationFormUrl}>
-            <span>Apply Now</span>
+          <Link className="nav-cta" href="/jobs">
+            <span>See Open Jobs</span>
             <span className="button-icon">
               <ArrowUpRight size={18} aria-hidden="true" />
             </span>
-          </a>
+          </Link>
         </nav>
       </header>
     </>

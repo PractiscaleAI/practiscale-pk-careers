@@ -1,183 +1,252 @@
-export type JobTeam =
-  "Sales" | "Creative" | "Technology" | "People and Operations";
-export type WorkMode = "Remote" | "Onsite" | "Hybrid";
+export type JobTeam = "Sales" | "Media" | "Operations";
+export type WorkMode = "Remote" | "Onsite";
 
 export type JobRole = {
   title: string;
   team: JobTeam;
-  mode: string;
-  modes: WorkMode[];
+  mode: WorkMode;
   experience: string;
   earnings: string;
   summary: string;
   duties: string;
   requirements: string;
+  applyUrl: string;
+  schedule?: string;
 };
 
 export const jobTeams: { id: string; name: JobTeam; short: string }[] = [
   { id: "sales", name: "Sales", short: "Sales" },
-  { id: "creative", name: "Creative", short: "Creative" },
-  { id: "technology", name: "Technology", short: "Technology" },
-  {
-    id: "operations",
-    name: "People and Operations",
-    short: "People & Operations",
-  },
+  { id: "media", name: "Media", short: "Media" },
+  { id: "operations", name: "Operations", short: "Operations" },
 ];
+
+const salesForms = {
+  onsiteCloser:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeRjN3wxPGVbLnqgEMONaZL-ma5KxsyMo94R-CDkIBgwqXwDQ/viewform",
+  onsiteSetter:
+    "https://docs.google.com/forms/d/e/1FAIpQLSfY-KNuiBVQWo5ZCGNvg4KFZWHLku8zcieyJnt6e7Eng_ppTw/viewform",
+  remoteSetter:
+    "https://docs.google.com/forms/d/e/1FAIpQLSchmjp3-kiZUvu0b2EotiH8nm8dqPnROuwN5qOzzGQXSERZQg/viewform",
+  remoteCloser:
+    "https://docs.google.com/forms/d/e/1FAIpQLSf0Isf_bbOa6Tt0ntPcX9Pj_JrrX3QEZElx5e3VBjC9ExWokw/viewform",
+};
+const mediaForm =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdnu6NQ0gvWKLKgGrS1zUbi_GKyWCLSn35ATJchiUszKiVBEg/viewform";
+const operationsForm =
+  "https://docs.google.com/forms/d/e/1FAIpQLScvwNjI0FKQAH2pdhy5-Ig6Gob9NHxEBX-QfGa39PNaiinffA/viewform";
 
 export const jobRoles: JobRole[] = [
   {
-    title: "Remote Closer",
+    title: "Onsite Appointment Setter",
+    team: "Sales",
+    mode: "Onsite",
+    experience: "Freshers welcome",
+    earnings: "Up to PKR 100,000 + performance incentives",
+    schedule: "6 PM to 3 AM PKT",
+    summary:
+      "Start conversations with potential US healthcare clients and book qualified meetings.",
+    duties:
+      "Contact leads, handle objections, qualify prospects and book appointments for the sales team.",
+    requirements:
+      "Strong spoken English. Sales or call center experience is a plus.",
+    applyUrl: salesForms.onsiteSetter,
+  },
+  {
+    title: "Onsite Sales Closer",
+    team: "Sales",
+    mode: "Onsite",
+    experience: "Minimum 2 years in sales or closing",
+    earnings: "Up to PKR 700,000 based on performance",
+    schedule: "6 PM to 3 AM PKT",
+    summary: "Turn qualified conversations into new client relationships.",
+    duties:
+      "Lead qualified calls, understand client needs, present the service, handle objections and close.",
+    requirements:
+      "Strong English, listening and negotiation skills. International client or service sales experience is preferred.",
+    applyUrl: salesForms.onsiteCloser,
+  },
+  {
+    title: "Remote Appointment Setter",
     team: "Sales",
     mode: "Remote",
-    modes: ["Remote"],
-    experience: "2 to 3 years in B2B sales",
-    earnings: "Rs 3 to 8 lakh",
-    summary:
-      "Speak with US healthcare business owners and help them decide if our referral partner service fits their growth plans.",
+    experience: "Freshers welcome",
+    earnings: "Up to PKR 100,000 + performance incentives",
+    schedule: "6 PM to 3 AM PKT",
+    summary: "Qualify prospects and book meetings from a remote workspace.",
     duties:
-      "Run sales calls with qualified US prospects, answer questions honestly and close new clients.",
-    requirements:
-      "Confident spoken English, a track record in B2B sales and the discipline to work remotely.",
+      "Reach out to leads, handle objections, qualify their interest and schedule sales conversations.",
+    requirements: "Strong spoken English. Sales experience is a plus.",
+    applyUrl: salesForms.remoteSetter,
   },
   {
-    title: "Onsite Closer",
+    title: "Remote Sales Closer",
     team: "Sales",
-    mode: "Onsite, Rawalpindi or Islamabad",
-    modes: ["Onsite"],
-    experience: "2 to 3 years in B2B sales",
-    earnings: "Rs 3 to 8 lakh",
-    summary: "The same closing role, working alongside our sales floor.",
+    mode: "Remote",
+    experience: "Minimum 3 years in sales or closing",
+    earnings: "Up to PKR 700,000 based on performance",
+    schedule: "6 PM to 3 AM PKT",
+    summary: "Close qualified opportunities while working remotely.",
     duties:
-      "Run sales calls with qualified US prospects and close new clients.",
-    requirements: "Confident spoken English and a track record in B2B sales.",
+      "Run sales calls, identify needs, present the service, manage objections and negotiate agreements.",
+    requirements:
+      "Proven closing record, strong English, a laptop, stable internet and a quiet workspace. International client or service sales experience is preferred.",
+    applyUrl: salesForms.remoteCloser,
   },
   {
-    title: "Graphic Designer",
-    team: "Creative",
-    mode: "Hybrid",
-    modes: ["Hybrid"],
-    experience: "Portfolio required",
-    earnings: "Rs 30,000 to Rs 200,000",
-    summary: "Design the visuals behind PractiScale in the US and Pakistan.",
+    title: "Copywriter",
+    team: "Media",
+    mode: "Onsite",
+    experience: "1 to 2 years",
+    earnings: "PKR 50,000 to 100,000 + performance bonuses",
+    summary: "Write clear, engaging copy for PractiScale's media channels.",
     duties:
-      "Create social posts, carousels, ads, presentations and website graphics.",
+      "Write video scripts, social captions, advertising copy and founder content.",
+    requirements: "Strong writing, clear hooks and relevant writing samples.",
+    applyUrl: mediaForm,
+  },
+  {
+    title: "Female Content Creator",
+    team: "Media",
+    mode: "Onsite",
+    experience: "6 months to 1 year",
+    earnings: "PKR 25,000 to 50,000 + bonuses and incentives",
+    summary: "Create on-camera content with the media team.",
+    duties:
+      "Develop ideas, present on camera and create reels and brand videos.",
     requirements:
-      "A strong portfolio, clean layout skills and the ability to follow a brand system.",
+      "Confident on-camera delivery, creativity and sample content.",
+    applyUrl: mediaForm,
+  },
+  {
+    title: "Videographer",
+    team: "Media",
+    mode: "Onsite",
+    experience: "1 to 2 years",
+    earnings: "PKR 50,000 to 100,000 + bonuses and incentives",
+    summary: "Capture the people, places and stories behind PractiScale.",
+    duties:
+      "Film interviews, office content, events and promotions; manage lighting, audio and footage.",
+    requirements:
+      "Camera, lighting and audio skills with a relevant portfolio.",
+    applyUrl: mediaForm,
+  },
+  {
+    title: "Social Media Manager",
+    team: "Media",
+    mode: "Onsite",
+    experience: "1 to 2 years",
+    earnings: "PKR 30,000 to 70,000 + performance bonuses",
+    summary: "Keep our social channels consistent and responsive.",
+    duties:
+      "Manage content calendars, publishing and community responses; track results.",
+    requirements:
+      "Social platform knowledge, organization and reporting skills.",
+    applyUrl: mediaForm,
+  },
+  {
+    title: "Content Strategist",
+    team: "Media",
+    mode: "Onsite",
+    experience: "2 to 5 years",
+    earnings: "PKR 40,000 to 150,000 + performance bonuses",
+    summary: "Shape content around audience needs and measurable results.",
+    duties:
+      "Plan themes, campaigns and briefs; research audiences and use performance data to guide content.",
+    requirements: "Content planning, audience research and analytical skills.",
+    applyUrl: mediaForm,
   },
   {
     title: "Video Editor",
-    team: "Creative",
-    mode: "Hybrid",
-    modes: ["Hybrid"],
-    experience: "Portfolio required",
-    earnings: "Rs 30,000 to Rs 200,000",
-    summary: "Edit the videos that tell the PractiScale story.",
-    duties: "Edit short form videos, founder content, testimonials and ads.",
+    team: "Media",
+    mode: "Onsite",
+    experience: "1 to 3 years",
+    earnings: "PKR 40,000 to 200,000 + performance bonuses",
+    summary: "Turn raw footage into clear, compelling stories.",
+    duties:
+      "Edit reels, interviews, testimonials and ads with effective pacing, audio, captions and motion graphics where needed.",
     requirements:
-      "A portfolio of edited work, a sense of pacing and fast turnaround.",
+      "Editing portfolio, attention to detail and reliable turnaround.",
+    applyUrl: mediaForm,
   },
   {
-    title: "Script Writer",
-    team: "Creative",
-    mode: "Hybrid",
-    modes: ["Hybrid"],
-    experience: "Portfolio required",
-    earnings: "Rs 30,000 to Rs 200,000",
-    summary: "Write the words behind our videos and content.",
-    duties: "Write scripts for short videos, ads and founder content.",
-    requirements:
-      "Writing samples that are clear, specific and natural to say out loud.",
-  },
-  {
-    title: "AI Engineer",
-    team: "Technology",
-    mode: "Onsite or remote",
-    modes: ["Onsite", "Remote"],
-    experience: "Shared during the screening call",
-    earnings: "Shared during the screening call",
+    title: "Graphic Designer",
+    team: "Media",
+    mode: "Onsite",
+    experience: "1 to 3 years",
+    earnings: "PKR 30,000 to 100,000 + performance bonuses",
     summary:
-      "Build the AI systems behind our training, quality and operations.",
+      "Design coherent visuals for PractiScale's campaigns and channels.",
     duties:
-      "Develop and improve AI tools for training, call scoring and internal workflows.",
+      "Create social posts, carousels, advertising visuals and other branded designs.",
     requirements:
-      "Hands on experience building with AI models and APIs, and examples of shipped work.",
+      "Strong portfolio, typography and layout skills, and consistent use of brand guidelines.",
+    applyUrl: mediaForm,
   },
   {
-    title: "CRM and AI Expert",
-    team: "Technology",
-    mode: "Onsite or remote",
-    modes: ["Onsite", "Remote"],
-    experience: "1 to 2 years in IT",
-    earnings: "Rs 50,000 to Rs 300,000",
+    title: "CRM + AI Expert",
+    team: "Operations",
+    mode: "Remote",
+    experience: "Minimum 2 years",
+    earnings: "PKR 70,000 to 150,000 + performance bonuses",
     summary:
-      "Keep the CRM and automation systems the company runs on working smoothly.",
+      "Improve the systems that support leads, follow-ups and internal work.",
     duties:
-      "Build pipelines and automations, maintain data quality and support teams using the CRM.",
+      "Build and optimize CRM workflows and automations, and integrate AI tools and third-party platforms.",
     requirements:
-      "Experience with CRM platforms and automation, and a problem solving mindset.",
+      "Hands-on GoHighLevel, CRM workflows, automation, APIs or webhooks and AI integrations. n8n, Make or Zapier is a plus.",
+    applyUrl: operationsForm,
   },
   {
-    title: "WordPress Developer",
-    team: "Technology",
-    mode: "Onsite or remote",
-    modes: ["Onsite", "Remote"],
-    experience: "Shared during the screening call",
-    earnings: "Shared during the screening call",
-    summary: "Build and maintain our WordPress websites.",
+    title: "IT Support Executive",
+    team: "Operations",
+    mode: "Onsite",
+    experience: "1 to 2 years",
+    earnings: "PKR 30,000 to 80,000",
+    summary: "Keep our office systems reliable for the team.",
     duties:
-      "Build pages, update layouts, improve speed and keep our sites secure.",
+      "Troubleshoot hardware, software and network issues; maintain systems and servers.",
     requirements:
-      "Experience with WordPress and Elementor, and live websites you can show us.",
-  },
-  {
-    title: "Web Developer",
-    team: "Technology",
-    mode: "Onsite or remote",
-    modes: ["Onsite", "Remote"],
-    experience: "Shared during the screening call",
-    earnings: "Shared during the screening call",
-    summary:
-      "Build the web apps and internal tools behind our hiring, training and operations.",
-    duties:
-      "Develop and maintain web applications, dashboards and internal portals.",
-    requirements:
-      "Experience with modern web frameworks and projects you can walk us through.",
+      "Hardware, networking, server management, configuration, backups and general IT support knowledge.",
+    applyUrl: operationsForm,
   },
   {
     title: "Onsite HR Recruiter",
-    team: "People and Operations",
-    mode: "Onsite, Rawalpindi or Islamabad",
-    modes: ["Onsite"],
+    team: "Operations",
+    mode: "Onsite",
     experience: "Freshers welcome",
-    earnings: "Rs 30,000 to Rs 100,000",
-    summary: "Find the next people to join our growing teams.",
-    duties: "Source, screen and schedule candidates.",
-    requirements: "Strong communication and good judgment about people.",
+    earnings: "PKR 30,000 to 100,000 + performance incentives",
+    summary: "Help the right people find the right roles at PractiScale.",
+    duties:
+      "Manage postings, screening, interview coordination, follow-ups and hiring records.",
+    requirements:
+      "Good communication and interpersonal skills, basic English and candidate coordination.",
+    applyUrl: operationsForm,
+  },
+  {
+    title: "Full-Stack Marketer",
+    team: "Operations",
+    mode: "Onsite",
+    experience: "3 to 5 years",
+    earnings: "PKR 100,000 to 250,000 + performance bonuses",
+    summary:
+      "Own the marketing strategy from research through measurable growth.",
+    duties:
+      "Lead ICP research, positioning, offers, acquisition, funnels, CRM automation, conversion and performance analysis.",
+    requirements:
+      "B2B marketing, paid media, funnels, CRM, analytics and revenue attribution. US-market experience is preferred.",
+    applyUrl: operationsForm,
   },
   {
     title: "Remote HR Recruiter",
-    team: "People and Operations",
-    mode: "Remote, project based",
-    modes: ["Remote"],
-    experience: "Recruitment experience preferred",
-    earnings: "Rs 30,000 to Rs 100,000",
-    summary: "Recruit for our teams remotely, on a project basis.",
-    duties: "Source and screen candidates for open roles.",
-    requirements:
-      "Organized, responsive and comfortable working independently.",
-  },
-  {
-    title: "Associate Manager",
-    team: "People and Operations",
-    mode: "Onsite",
-    modes: ["Onsite"],
-    experience: "1 to 2 years in customer support. Women only",
-    earnings: "Rs 30,000 to Rs 200,000",
-    summary: "Support team members and keep daily operations on track.",
+    team: "Operations",
+    mode: "Remote",
+    experience: "Freshers welcome",
+    earnings: "PKR 30,000 to 100,000 + performance incentives",
+    summary: "Support recruiting remotely from Rawalpindi or Islamabad.",
     duties:
-      "Coordinate daily work, support team members and resolve issues quickly.",
+      "Source and screen candidates, coordinate interviews, follow up and maintain pipelines.",
     requirements:
-      "Customer support experience, calm under pressure and a willingness to lead.",
+      "Based in Rawalpindi or Islamabad, with good interpersonal skills and basic English.",
+    applyUrl: operationsForm,
   },
 ];

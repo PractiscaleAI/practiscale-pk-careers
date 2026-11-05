@@ -11,7 +11,6 @@ import {
   type WorkMode,
 } from "./jobs-data";
 import styles from "./jobs.module.css";
-import { applicationFormUrl } from "@/lib/content";
 
 function RoleCard({ role }: { role: JobRole }) {
   return (
@@ -27,9 +26,15 @@ function RoleCard({ role }: { role: JobRole }) {
           <dd>{role.experience}</dd>
         </div>
         <div>
-          <dt>Monthly earning range</dt>
+          <dt>Monthly pay</dt>
           <dd>{role.earnings}</dd>
         </div>
+        {role.schedule && (
+          <div>
+            <dt>Shift</dt>
+            <dd>{role.schedule}</dd>
+          </div>
+        )}
       </dl>
       <div className={styles.roleDetails}>
         <p>
@@ -41,7 +46,13 @@ function RoleCard({ role }: { role: JobRole }) {
           {role.requirements}
         </p>
       </div>
-      <a className={styles.roleApply} href={applicationFormUrl}>
+      <a
+        className={styles.roleApply}
+        href={role.applyUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Apply for ${role.title}`}
+      >
         Apply for this role{" "}
         <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />
       </a>
@@ -55,7 +66,7 @@ export default function JobsExplorer() {
   const matchingRoles = jobRoles.filter(
     (role) =>
       (team === "All" || role.team === team) &&
-      (mode === "All" || role.modes.includes(mode)),
+      (mode === "All" || role.mode === mode),
   );
 
   return (
@@ -110,7 +121,6 @@ export default function JobsExplorer() {
               <option value="All">All modes</option>
               <option value="Remote">Remote</option>
               <option value="Onsite">Onsite</option>
-              <option value="Hybrid">Hybrid</option>
             </select>
           </label>
         </div>

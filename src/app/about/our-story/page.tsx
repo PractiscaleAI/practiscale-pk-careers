@@ -305,8 +305,8 @@ export default function OurStoryPage() {
                 remote, so the commute is never the barrier.
               </NumberedCard>
               <NumberedCard index={2} title="Leadership roles">
-                Our Associate Manager role is open to women, so the path leads
-                beyond entry level.
+                We want women to grow into leadership as their experience and
+                responsibilities grow.
               </NumberedCard>
               <Action href="/training-programs/virtual-assistant">
                 Explore the VA Program
