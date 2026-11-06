@@ -201,11 +201,8 @@
   width: var(--career-panel-width);
   height: var(--career-visual-height);
   z-index: 2;
-  background: radial-gradient(
-    circle at 50% 46%,
-    color-mix(in srgb, var(--deep) 83%, var(--accent)) 0%,
-    var(--deep) 76%
-  );
+  /* Match the solid pixels in the temporary poster until WebGL has drawn. */
+  background: #134043;
   pointer-events: none;
 }
 .rail[data-mode="pinned"] .keyboardNav {
