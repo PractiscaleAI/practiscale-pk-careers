@@ -1,0 +1,126 @@
+.dock {
+  position: fixed;
+  z-index: 70;
+  top: 50%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(-50%);
+  isolation: isolate;
+}
+
+.trigger {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: 48px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid rgba(155, 227, 214, 0.36);
+  border-right: 0;
+  border-radius: 13px 0 0 13px;
+  background: var(--deep);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -7px 8px 24px rgba(7, 45, 47, 0.18);
+  transition: background-color 180ms ease, width 180ms ease;
+}
+
+.trigger:hover,
+.dock[data-open="true"] .trigger {
+  background: var(--surface);
+}
+
+.trigger:focus-visible,
+.profile:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.panel {
+  order: -1;
+  display: grid;
+  grid-template-columns: 44px;
+  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  gap: 2px;
+  padding: 0;
+  overflow: hidden;
+  border: 0 solid rgba(155, 227, 214, 0.3);
+  border-radius: 16px;
+  background: var(--deep);
+  box-shadow: 0 18px 40px rgba(7, 45, 47, 0.24);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(10px) scale(0.97);
+  transform-origin: right center;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    width 180ms ease,
+    height 180ms ease,
+    padding 180ms ease,
+    visibility 180ms;
+}
+
+.dock[data-open="true"] .panel {
+  width: 60px;
+  height: 198px;
+  padding: 7px;
+  border-width: 1px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+}
+
+.dock[data-open="true"] .trigger {
+  border-radius: 0;
+  border-left: 0;
+}
+
+.profile {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 10px;
+  color: #f7ffff;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.profile:hover,
+.profile:focus-visible {
+  background: var(--raised);
+  color: var(--accent);
+}
+
+.icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+@media (max-width: 600px) {
+  .trigger {
+    width: 44px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trigger,
+  .panel,
+  .profile {
+    transition: none;
+  }
+}

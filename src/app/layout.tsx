@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import RoutePreloader from "@/components/route-preloader";
+import SocialDock from "@/components/social-dock";
 import { siteUrl } from "@/lib/content";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -54,6 +55,7 @@ export default function RootLayout({
         </a>
         <RoutePreloader />
         {children}
+        <SocialDock />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
