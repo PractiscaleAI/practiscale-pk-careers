@@ -757,6 +757,7 @@
   }
   .earningsNote {
     margin-top: 10px;
+    padding-right: 52px;
   }
 }
 
@@ -808,5 +809,54 @@
   .programCard a svg,
   .roleCard {
     transition: none;
+  }
+}
+
+/* Interior editorial refinement: jobs page only. */
+.explorer {
+  padding-block: clamp(60px, 5vw, 80px) clamp(66px, 5vw, 80px);
+}
+
+.teamSection {
+  margin-top: clamp(42px, 4vw, 58px);
+}
+
+.roleGrid {
+  gap: 14px;
+}
+
+.roleCard {
+  padding: clamp(23px, 2vw, 29px);
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.roleCard:hover {
+  box-shadow: 0 14px 32px rgba(19, 65, 67, 0.07);
+}
+
+.roleCard h4 {
+  margin-top: 14px;
+  font-size: clamp(23px, 1.8vw, 28px);
+}
+
+.roleFacts {
+  margin-top: 17px;
+  gap: 11px 20px;
+}
+
+.training,
+.hiring {
+  padding-block: clamp(76px, 7vw, 108px);
+}
+
+@media (max-width: 760px) {
+  .explorer,
+  .training,
+  .hiring {
+    padding-block: 66px;
+  }
+  .roleCard {
+    padding: 22px;
   }
 }

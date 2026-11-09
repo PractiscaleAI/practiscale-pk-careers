@@ -1221,3 +1221,51 @@
     transform: scaleX(1);
   }
 }
+
+/* Interior editorial refinement: training pages only. */
+.heroInner {
+  min-height: min(660px, 100svh);
+  padding-bottom: 56px;
+}
+
+.work,
+.process,
+.faq {
+  padding-block: clamp(76px, 7.5vw, 112px);
+}
+
+.outcome {
+  padding-block: clamp(78px, 7vw, 112px);
+}
+
+.processLead {
+  margin-bottom: clamp(36px, 4vw, 56px);
+}
+
+@media (max-width: 760px) {
+  .heroInner {
+    min-height: 0;
+  }
+  .work,
+  .process,
+  .outcome,
+  .faq {
+    padding-block: 68px;
+  }
+  .workIntro {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .premise,
+  .work,
+  .process,
+  .outcome,
+  .faq {
+    padding-block: 64px;
+  }
+  .audience {
+    padding-block: 64px;
+  }
+}

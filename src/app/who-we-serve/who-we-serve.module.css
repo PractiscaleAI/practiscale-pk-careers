@@ -527,3 +527,48 @@
     transition: none;
   }
 }
+
+/* Interior editorial refinement: who we serve page only. */
+.how,
+.industrySection,
+.clientProof,
+.nextSteps {
+  padding-block: clamp(76px, 7.5vw, 112px);
+}
+
+.industryIntro {
+  margin-bottom: 36px;
+}
+
+.industryCard {
+  min-height: 365px;
+  padding: clamp(23px, 2vw, 30px);
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.industryCard:hover {
+  box-shadow: 0 16px 36px rgba(19, 65, 67, 0.07);
+}
+
+.industryCard h3 {
+  min-height: 0;
+  margin-top: 20px;
+}
+
+.industryCard dl {
+  gap: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+  .how,
+  .industrySection,
+  .clientProof,
+  .nextSteps {
+    padding-block: 66px;
+  }
+  .industryCard {
+    min-height: 0;
+  }
+}
