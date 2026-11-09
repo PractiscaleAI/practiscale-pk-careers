@@ -315,6 +315,7 @@
   padding: 4px 9px;
   border: 1px solid #cee5e1;
   border-radius: 999px;
+  color: #245d5b;
   font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.02em;
@@ -859,4 +860,72 @@
   .roleCard {
     padding: 22px;
   }
+}
+
+
+/* Jobs: full-width role records make the active openings easier to compare. */
+.roleGrid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+.roleGrid > .roleCard:last-child:nth-child(odd) { grid-column: auto; width: 100%; justify-self: stretch; }
+.roleCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(180px, .72fr) minmax(0, 1.12fr);
+  grid-template-areas: "identity facts details" "identity facts apply";
+  gap: 12px clamp(24px, 3vw, 48px);
+  align-items: start;
+  padding: clamp(27px, 3vw, 42px) 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.roleCard:last-child { border-bottom: 1px solid var(--line); }
+.roleCard:hover { border-color: #a5cfca; box-shadow: none; }
+.roleIdentity { grid-area: identity; min-width: 0; }
+.roleIdentity h4 { margin-top: 16px; font-size: clamp(24px, 2.2vw, 34px); }
+.roleSummary { max-width: 42ch; }
+.roleFacts {
+  grid-area: facts;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 0;
+  margin: 0;
+  padding: 2px 0 0;
+  border: 0;
+}
+.roleFacts > div, .roleFacts > div:nth-child(2):last-child { grid-column: auto; }
+.roleFacts .payFact { padding: 0; border: 0; }
+.roleFacts dt { font-family: "JetBrains Mono", monospace; text-transform: uppercase; }
+.roleDetails { grid-area: details; margin: 0; }
+.roleApply {
+  grid-area: apply;
+  justify-content: flex-start;
+  width: fit-content;
+  min-height: 44px;
+  margin: 8px 0 0;
+  padding: 0;
+  border-bottom: 1px solid currentColor;
+}
+.roleApply:focus-visible { outline: 2px solid #0d706a; outline-offset: 4px; }
+
+@media (max-width: 1100px) {
+  .roleCard {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, .8fr);
+    grid-template-areas: "identity facts" "details details" "apply apply";
+    column-gap: 32px;
+  }
+  .roleDetails { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+}
+@media (max-width: 760px) {
+  .roleCard {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "identity" "facts" "details" "apply";
+    gap: 17px;
+    padding-block: 29px;
+  }
+  .roleFacts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .roleFacts .payFact { grid-column: 1 / -1; }
+  .roleDetails { grid-template-columns: minmax(0, 1fr); gap: 11px; }
+  .roleIdentity h4 { font-size: clamp(23px, 6vw, 30px); }
 }

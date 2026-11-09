@@ -15,11 +15,13 @@ import styles from "./jobs.module.css";
 function RoleCard({ role }: { role: JobRole }) {
   return (
     <article className={styles.roleCard}>
-      <div className={styles.roleTop}>
-        <span className={styles.mode}>{role.mode}</span>
+      <div className={styles.roleIdentity}>
+        <div className={styles.roleTop}>
+          <span className={styles.mode}>{role.mode}</span>
+        </div>
+        <h4>{role.title}</h4>
+        <p className={styles.roleSummary}>{role.summary}</p>
       </div>
-      <h4>{role.title}</h4>
-      <p className={styles.roleSummary}>{role.summary}</p>
       <dl className={styles.roleFacts}>
         <div className={styles.payFact}>
           <dt>Monthly pay</dt>
@@ -51,7 +53,7 @@ function RoleCard({ role }: { role: JobRole }) {
         href={role.applyUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Apply for ${role.title}`}
+        aria-label={`Apply for this role: ${role.title}`}
       >
         Apply for this role{" "}
         <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />

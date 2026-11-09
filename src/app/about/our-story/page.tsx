@@ -17,23 +17,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about/our-story" },
 };
 
-const journey = [
-  ["The beginning", "A young man from Pakistan with a point to prove."],
-  [
-    "No connections",
-    "No money. No contacts. Only ambition and a skill to build.",
-  ],
-  ["The early days", "We built at night while everyone else slept."],
-  ["The first office", "The home office became 1,000 sq. ft."],
-  ["Filling up", "One by one, the seats filled."],
-  [
-    "Raising the ceiling",
-    "We did not move to a bigger office. We kept the old one full and started a new one from zero.",
-  ],
-  ["The new home", "10,000 sq. ft. Brick by brick, this became home."],
-  ["Our team", "100+ people. The ones who made it real."],
-] as const;
-
 const values = [
   [
     "Hunger over pedigree",
@@ -92,45 +75,6 @@ export default function OurStoryPage() {
           imageAlt="Art-directed portrait of Afrasyab Ahmed, Founder and CEO of PractiScale"
           variant="portrait"
         />
-
-        <section className={styles.section} aria-labelledby="journey-heading">
-          <div className={styles.container}>
-            <div className={styles.sectionHeading}>
-              <span className={styles.smallLabel}>01 / The journey</span>
-              <h2 id="journey-heading">From a home office to 10,000 sq. ft.</h2>
-            </div>
-            <div className={styles.journey}>
-              <ol className={styles.journeyList}>
-                {journey.map(([title, body], index) => (
-                  <li key={title}>
-                    <span className={styles.stepIndex}>
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3>{title}</h3>
-                    <p>{body}</p>
-                  </li>
-                ))}
-              </ol>
-              <aside
-                className={styles.journeyAside}
-                aria-label="PractiScale office interior"
-              >
-                <div className={styles.imagePanel}>
-                  <Image
-                    src="/media/about/about-office-reception-branded-v2.webp"
-                    alt="Recreated view of PractiScale's Rawalpindi office reception"
-                    fill
-                    sizes="(max-width: 760px) 100vw, 40vw"
-                  />
-                </div>
-                <p className={styles.imageCaption}>
-                  <span>Where the journey led</span>
-                  <span>Office recreation</span>
-                </p>
-              </aside>
-            </div>
-          </div>
-        </section>
 
         <section
           id="founder"

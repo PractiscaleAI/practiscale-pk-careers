@@ -1269,3 +1269,60 @@
     padding-block: 64px;
   }
 }
+
+
+/* Shared training process: readable, sequential stages without a decorative rail. */
+.process { background: #e6ecec; }
+.processInner {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(42px, 6vw, 100px);
+  align-items: start;
+}
+.processLead { position: sticky; top: 120px; margin: 0; }
+.processLead h2 { max-width: 12ch; }
+.steps { display: block; margin: 0; padding: 0; }
+.steps::before, .steps::after { content: none; display: none; }
+.steps li, .steps li:last-child {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  column-gap: 20px;
+  min-height: 0;
+  margin: 0;
+  padding: 23px 0 27px;
+  border: 0;
+  border-top: 1px solid #afc9c6;
+  border-radius: 0;
+  background: transparent;
+}
+.steps li:last-child { border-bottom: 1px solid #afc9c6; }
+.steps .stepNumber {
+  grid-row: 1 / 3;
+  color: #0d716b;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .03em;
+  line-height: 1.45;
+}
+.steps h3 { margin: 0; font-size: clamp(22px, 2vw, 28px); line-height: 1.25; }
+.steps p { grid-column: 2; max-width: 52ch; margin-top: 7px; font-size: 16px; line-height: 1.55; }
+.steps li:last-child h3 { color: #0d716b; }
+
+@media (max-width: 900px) {
+  .processInner { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .processLead { position: static; }
+  .processLead h2 { max-width: none; }
+}
+@media (max-width: 480px) {
+  .steps li, .steps li + li, .steps li:last-child {
+    grid-template-columns: 42px minmax(0, 1fr);
+    column-gap: 12px;
+    padding: 19px 0 21px;
+    border-top: 1px solid #afc9c6;
+  }
+  .steps li:last-child { border-bottom: 1px solid #afc9c6; }
+  .steps .stepNumber { font-size: 13px; }
+  .steps h3 { margin: 0; font-size: 21px; }
+  .steps p { margin-top: 6px; font-size: 15px; }
+}
