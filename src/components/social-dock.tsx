@@ -58,6 +58,8 @@ export default function SocialDock() {
     };
   }, [isOpen]);
 
+  if (pathname === "/virtual-assistent") return null;
+
   return (
     <aside
       ref={dockRef}

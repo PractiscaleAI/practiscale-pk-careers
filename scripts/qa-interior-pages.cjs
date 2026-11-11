@@ -103,6 +103,95 @@ const sizes = [
           state.preloaderCount === 0,
           state,
         );
+        if (route === "/about/our-story") {
+          const hero = page.locator("section").filter({
+            has: page.getByRole("heading", { level: 1 }),
+          });
+          const heroLayout = await hero
+            .locator("img")
+            .evaluate(async (image) => {
+              await image.decode();
+              const panel = image.closest("section");
+              const copy = panel.querySelector("p").getBoundingClientRect();
+              const photo = image.getBoundingClientRect();
+              const frame = panel.getBoundingClientRect();
+              return {
+                source: new URL(image.currentSrc).pathname,
+                stacked: photo.top >= copy.bottom,
+                edgeAligned: Math.abs(photo.right - frame.right) < 1,
+                blend: getComputedStyle(
+                  image.closest("picture").parentElement,
+                  "::after",
+                ).backgroundImage,
+              };
+            });
+          check(
+            key + ": hero preserves the responsive full-bleed portrait",
+            heroLayout.source ===
+              (size.width <= 900
+                ? "/media/about/about-founder-mobile.webp"
+                : "/media/about/about-founder-desktop.webp") &&
+              heroLayout.stacked === size.width <= 900 &&
+              heroLayout.edgeAligned &&
+              heroLayout.blend.includes("linear-gradient"),
+            heroLayout,
+          );
+          const profile = await page
+            .locator("#founder")
+            .getByRole("img", {
+              name: "Afrasyab Ahmed, Founder and CEO of PractiScale",
+              exact: true,
+            })
+            .evaluate(async (image) => {
+              await image.decode();
+              const section = image.closest("section");
+              const figure = image.closest("figure");
+              const editorial = figure.parentElement;
+              const profile = editorial.parentElement.parentElement;
+              const name = section.querySelector("h2").getBoundingClientRect();
+              const portrait = image.getBoundingClientRect();
+              const paragraphs = [...section.querySelectorAll("p")].slice(1);
+              const quotes = section.querySelectorAll("blockquote");
+              const quote = quotes[0].getBoundingClientRect();
+              const style = getComputedStyle(image);
+              return {
+                source: new URL(image.currentSrc).pathname,
+                aspect: portrait.width / portrait.height,
+                originalAspect: image.naturalWidth / image.naturalHeight,
+                fit: style.objectFit,
+                mask: style.maskImage,
+                profileWidth: profile.clientWidth,
+                portraitBelowName: portrait.top >= name.bottom,
+                portraitLeftOfName: portrait.right <= name.left,
+                paragraphCount: paragraphs.length,
+                quoteCount: quotes.length,
+                quoteBelow:
+                  quote.top >= editorial.getBoundingClientRect().bottom,
+                chapterHeadings: section.querySelectorAll("h3").length,
+                chapterControls: section.querySelectorAll("nav, button").length,
+              };
+            });
+          check(
+            key + ": original founder portrait is displayed without clipping",
+            profile.source === "/media/about/ceo-image-3.webp" &&
+              Math.abs(profile.aspect - profile.originalAspect) < 0.001 &&
+              profile.fit === "contain" &&
+              profile.mask === "none",
+            profile,
+          );
+          check(
+            key + ": founder profile reflows and ends with one quote",
+            (profile.profileWidth <= 560
+              ? profile.portraitBelowName
+              : profile.portraitLeftOfName) &&
+              profile.paragraphCount === 3 &&
+              profile.quoteCount === 1 &&
+              profile.quoteBelow &&
+              profile.chapterHeadings === 0 &&
+              profile.chapterControls === 0,
+            profile,
+          );
+        }
         if (size.name === "desktop" || size.name === "phone") {
           const name = route.split("/").filter(Boolean).join("-");
           await page.screenshot({
@@ -119,6 +208,52 @@ const sizes = [
               targets: violation.nodes.map((node) => node.target),
             });
           }
+        }
+        if (route === "/jobs") {
+          const banner = page.getByRole("region", {
+            name: "Open jobs at PractiScale",
+          });
+          const image = await banner
+            .getByRole("img")
+            .evaluate(async (photo) => {
+              await photo.decode();
+              const frame = photo.getBoundingClientRect();
+              const section = photo.closest("section");
+              const copy = section.querySelector("p").getBoundingClientRect();
+              const search = section
+                .querySelector('[role="search"]')
+                .getBoundingClientRect();
+              return {
+                width: photo.naturalWidth,
+                stacked: copy.bottom <= frame.top && frame.bottom <= search.top,
+                searchAboveImage: search.bottom <= frame.top,
+              };
+            });
+          check(
+            key +
+              ": Careers banner photo and search follow the responsive layout",
+            image.width > 0 &&
+              image.stacked === size.width <= 900 &&
+              !image.searchAboveImage,
+            image,
+          );
+          const firstRole = page.locator("#open-roles article").first();
+          const apply = firstRole.getByRole("link", {
+            name: /^Apply now for /,
+          });
+          await firstRole.scrollIntoViewIfNeeded();
+          const before = await firstRole.boundingBox();
+          const visibleBefore = await apply.isVisible();
+          if (size.width > 760) await firstRole.hover();
+          const after = await firstRole.boundingBox();
+          check(
+            key + ": Apply action stays visible without moving the role card",
+            visibleBefore &&
+              (await apply.isVisible()) &&
+              before !== null &&
+              JSON.stringify(before) === JSON.stringify(after),
+            { visibleBefore, before, after },
+          );
         }
       }
       await context.close();

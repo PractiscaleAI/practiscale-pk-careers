@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { ArrowUpRight, ChevronDown, Search, X } from "lucide-react";
 import {
   jobRoles,
   jobTeams,
@@ -12,52 +12,76 @@ import {
 } from "./jobs-data";
 import styles from "./jobs.module.css";
 
+const pageSize = 3;
+const workModes = ["All", "Onsite", "Remote"] as const;
+const rolesByTeam = jobTeams.map(({ name }) =>
+  jobRoles.filter((role) => role.team === name),
+);
+const orderedRoles = Array.from(
+  { length: Math.max(...rolesByTeam.map((roles) => roles.length)) },
+  (_, index) => rolesByTeam.flatMap((roles) => roles.slice(index, index + 1)),
+).flat();
+
 function RoleCard({ role }: { role: JobRole }) {
+  const [amount, qualifier] = role.earnings.split(
+    / (?=\+ |based on performance)/,
+    2,
+  );
+
   return (
     <article className={styles.roleCard}>
-      <div className={styles.roleIdentity}>
-        <div className={styles.roleTop}>
-          <span className={styles.mode}>{role.mode}</span>
-        </div>
-        <h4>{role.title}</h4>
-        <p className={styles.roleSummary}>{role.summary}</p>
-      </div>
-      <dl className={styles.roleFacts}>
-        <div className={styles.payFact}>
-          <dt>Monthly pay</dt>
-          <dd>{role.earnings}</dd>
-        </div>
+      <div className={styles.roleHeader}>
+        <span className={styles.teamIcon} aria-hidden="true">
+          {role.team[0]}
+        </span>
         <div>
-          <dt>Experience</dt>
-          <dd>{role.experience}</dd>
+          <h3>{role.title}</h3>
+          <ul className={styles.roleFacts} aria-label="Role at a glance">
+            <li>{role.team}</li>
+            <li>{role.mode}</li>
+            <li>{role.experience}</li>
+            {role.schedule && <li>{role.schedule}</li>}
+          </ul>
+          <p className={styles.roleSummary}>{role.summary}</p>
         </div>
-        {role.schedule && (
-          <div>
-            <dt>Shift</dt>
-            <dd>{role.schedule}</dd>
-          </div>
-        )}
-      </dl>
-      <div className={styles.roleDetails}>
-        <p>
-          <strong>What you will do</strong>
-          {role.duties}
-        </p>
-        <p>
-          <strong>What we look for</strong>
-          {role.requirements}
-        </p>
       </div>
-      <a
-        className={styles.roleApply}
-        href={role.applyUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Apply for this role: ${role.title}`}
-      >
-        Apply for this role{" "}
-        <ArrowUpRight size={17} strokeWidth={1.7} aria-hidden="true" />
-      </a>
+      <div className={styles.roleCompensation}>
+        <dl>
+          <dt>Monthly pay</dt>
+          <dd>
+            <span className={styles.rolePay}>
+              {amount.replace(/(\d) to (?=\d)/, "$1–")}
+            </span>
+            {qualifier && (
+              <span className={styles.payQualifier}>{qualifier}</span>
+            )}
+          </dd>
+        </dl>
+        <a
+          className={styles.roleApply}
+          href={role.applyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={"Apply now for " + role.title}
+        >
+          Apply now <ArrowUpRight size={16} aria-hidden="true" />
+        </a>
+      </div>
+      <details className={styles.roleDetails}>
+        <summary>
+          Role details <ChevronDown size={15} aria-hidden="true" />
+        </summary>
+        <div className={styles.detailsBody}>
+          <p>
+            <strong>What you’ll do</strong>
+            {role.duties}
+          </p>
+          <p>
+            <strong>What you’ll need</strong>
+            {role.requirements}
+          </p>
+        </div>
+      </details>
     </article>
   );
 }
@@ -65,30 +89,208 @@ function RoleCard({ role }: { role: JobRole }) {
 export default function JobsExplorer() {
   const [team, setTeam] = useState<JobTeam | "All">("All");
   const [mode, setMode] = useState<WorkMode | "All">("All");
-  const matchingRoles = jobRoles.filter(
+  const [freshersOnly, setFreshersOnly] = useState(false);
+  const [query, setQuery] = useState("");
+  const [limit, setLimit] = useState(pageSize);
+  const searchInput = useRef<HTMLInputElement>(null);
+  const filters = useRef<HTMLDetailsElement>(null);
+  const list = useRef<HTMLDivElement>(null);
+  const nextRole = useRef<number | null>(null);
+
+  useEffect(() => {
+    const compact = window.matchMedia("(max-width: 760px)");
+    const syncFilterPanel = () => {
+      if (filters.current) filters.current.open = !compact.matches;
+    };
+    const syncTeamLink = () => {
+      const linkedTeam = jobTeams.find(
+        ({ id }) => window.location.hash === "#" + id,
+      );
+      if (linkedTeam) {
+        setTeam(linkedTeam.name);
+        setLimit(pageSize);
+      }
+    };
+    syncFilterPanel();
+    syncTeamLink();
+    compact.addEventListener("change", syncFilterPanel);
+    window.addEventListener("hashchange", syncTeamLink);
+    return () => {
+      compact.removeEventListener("change", syncFilterPanel);
+      window.removeEventListener("hashchange", syncTeamLink);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (nextRole.current === null) return;
+    list.current?.querySelectorAll("summary")[nextRole.current]?.focus();
+    nextRole.current = null;
+  }, [limit]);
+
+  const searchTerm = query.trim().toLowerCase();
+  const activeFilters = Number(mode !== "All") + Number(freshersOnly);
+  const hasFilters = team !== "All" || activeFilters > 0 || searchTerm !== "";
+  const matchingRoles = orderedRoles.filter(
     (role) =>
       (team === "All" || role.team === team) &&
-      (mode === "All" || role.mode === mode),
+      (mode === "All" || role.mode === mode) &&
+      (!freshersOnly || role.experience === "Freshers welcome") &&
+      (!searchTerm ||
+        [
+          role.title,
+          role.team,
+          role.mode,
+          role.summary,
+          role.duties,
+          role.requirements,
+          role.experience,
+          role.schedule ?? "",
+        ].some((value) => value.toLowerCase().includes(searchTerm))),
   );
+  const shown = matchingRoles.slice(0, limit);
+  const nextCount = Math.min(pageSize, matchingRoles.length - shown.length);
+  const resultCount = nextCount
+    ? "Showing " + shown.length + " of " + matchingRoles.length + " roles"
+    : matchingRoles.length + (matchingRoles.length === 1 ? " role" : " roles");
+
+  function selectTeam(value: JobTeam | "All") {
+    setTeam(value);
+    setLimit(pageSize);
+  }
+
+  function clearSearch() {
+    setQuery("");
+    setLimit(pageSize);
+    searchInput.current?.focus();
+  }
+
+  function clearFilters() {
+    setTeam("All");
+    setMode("All");
+    setFreshersOnly(false);
+    clearSearch();
+  }
 
   return (
-    <section
-      className={styles.explorer}
-      id="open-roles"
-      aria-labelledby="roles-title"
-    >
-      <div className={styles.explorerInner}>
-        <div className={styles.explorerHead}>
-          <div>
-            <span className={styles.eyebrow}>Find your fit</span>
-            <h2 id="roles-title">Explore open roles</h2>
+    <>
+      <section className={styles.hero} aria-labelledby="jobs-heading">
+        <div className={styles.heroInner}>
+          <div className={styles.heroCopy}>
+            <h1 id="jobs-heading">
+              Open jobs at <span>PractiScale</span>
+            </h1>
+            <p>
+              Explore Sales, Media and Operations roles. Compare work mode,
+              experience and monthly pay before you apply.
+            </p>
           </div>
-          <p>
-            Choose a team or work mode. Each role shows what you will do and
-            what we look for.
-          </p>
+          <div className={styles.heroMedia}>
+            <Image
+              src="/media/who-we-are/team.webp"
+              alt="PractiScale colleagues working in the office"
+              fill
+              sizes="(max-width: 900px) 100vw, 52vw"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </div>
+          <div
+            className={styles.searchField}
+            role="search"
+            aria-label="Open roles"
+          >
+            <Search size={19} strokeWidth={1.8} aria-hidden="true" />
+            <label className={styles.srOnly} htmlFor="role-search">
+              Search roles or skills
+            </label>
+            <input
+              id="role-search"
+              ref={searchInput}
+              type="search"
+              value={query}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setLimit(pageSize);
+              }}
+              placeholder="Search roles or skills"
+              autoComplete="off"
+            />
+            {query && (
+              <button
+                type="button"
+                aria-label="Clear search"
+                onClick={clearSearch}
+              >
+                <X size={19} aria-hidden="true" />
+              </button>
+            )}
+          </div>
         </div>
-        <div className={styles.filterBar}>
+      </section>
+
+      <section
+        className={styles.board}
+        id="open-roles"
+        aria-labelledby="roles-title"
+      >
+        <details className={styles.filters} ref={filters}>
+          <summary>
+            Filters
+            {activeFilters > 0 && <span> · {activeFilters} active</span>}
+          </summary>
+          <div className={styles.filterFields}>
+            <fieldset>
+              <legend>Work mode</legend>
+              <div className={styles.workModes}>
+                {workModes.map((item) => (
+                  <label key={item}>
+                    <input
+                      type="radio"
+                      name="jobs-work-mode"
+                      checked={mode === item}
+                      onChange={() => {
+                        setMode(item);
+                        setLimit(pageSize);
+                      }}
+                    />
+                    {item === "All" ? "All modes" : item}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Experience</legend>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={freshersOnly}
+                  onChange={(event) => {
+                    setFreshersOnly(event.target.checked);
+                    setLimit(pageSize);
+                  }}
+                />
+                Freshers welcome
+              </label>
+            </fieldset>
+            {hasFilters && (
+              <button
+                className={styles.clearFilters}
+                type="button"
+                onClick={clearFilters}
+              >
+                Clear filters
+              </button>
+            )}
+          </div>
+        </details>
+
+        <div className={styles.results}>
+          <div className={styles.resultsHead}>
+            <h2 id="roles-title">Open roles</h2>
+            <p className={styles.count} role="status">
+              {resultCount}
+            </p>
+          </div>
           <div
             className={styles.teamFilters}
             role="group"
@@ -97,95 +299,58 @@ export default function JobsExplorer() {
             <button
               type="button"
               aria-pressed={team === "All"}
-              onClick={() => setTeam("All")}
+              onClick={() => selectTeam("All")}
             >
-              All
+              All roles
             </button>
-            {jobTeams.map((item) => (
+            {jobTeams.map(({ id, name, short }) => (
               <button
-                key={item.id}
+                key={id}
+                id={id}
                 type="button"
-                aria-pressed={team === item.name}
-                onClick={() => setTeam(item.name)}
+                aria-pressed={team === name}
+                onClick={() => selectTeam(name)}
               >
-                {item.short}
+                {short}
               </button>
             ))}
           </div>
-          <label className={styles.modeFilter}>
-            <span>Work mode</span>
-            <select
-              value={mode}
-              onChange={(event) =>
-                setMode(event.target.value as WorkMode | "All")
-              }
-            >
-              <option value="All">All modes</option>
-              <option value="Remote">Remote</option>
-              <option value="Onsite">Onsite</option>
-            </select>
-          </label>
-        </div>
-        <div className={styles.resultsMeta}>
-          <p className={styles.count} aria-live="polite">
-            {matchingRoles.length} {matchingRoles.length === 1 ? "role" : "roles"}{" "}
-            shown
-          </p>
-          <p className={styles.earningsNote}>
-            <strong>About compensation</strong> Pay figures are role ranges or
-            upper limits from the hiring brief, not guaranteed earnings. Exact
-            compensation is confirmed during screening.
-          </p>
-        </div>
-        {jobTeams.map((item) => {
-          const roles = matchingRoles.filter((role) => role.team === item.name);
-          if (!roles.length) return null;
-          return (
-            <section
-              key={item.id}
-              className={styles.teamSection}
-              id={item.id}
-              aria-labelledby={`${item.id}-title`}
-            >
-              <div className={styles.teamHeading}>
-                <span className={styles.teamCount}>
-                  {String(roles.length).padStart(2, "0")} roles
-                </span>
-                <h3 id={`${item.id}-title`}>{item.name}</h3>
-              </div>
-              <div className={styles.roleGrid}>
-                {roles.map((role) => (
-                  <RoleCard key={role.title} role={role} />
-                ))}
-              </div>
-              {item.id === "sales" && (
-                <p className={styles.freshersLine}>
-                  New to sales?{" "}
-                  <Link href="/training-programs/appointment-setter">
-                    Start with the Appointment Setter Program{" "}
-                    <ArrowUpRight size={16} aria-hidden="true" />
-                  </Link>
-                </p>
-              )}
-            </section>
-          );
-        })}
-        {matchingRoles.length === 0 && (
-          <div className={styles.emptyState}>
-            <h3>No roles match that combination.</h3>
-            <p>Try another team or work mode to see the available roles.</p>
+          <div className={styles.roleList} ref={list}>
+            {shown.map((role) => (
+              <RoleCard key={role.title} role={role} />
+            ))}
+          </div>
+          {!shown.length && (
+            <div className={styles.emptyState}>
+              <h3>No roles match</h3>
+              <p>Try a different search or change your filters.</p>
+              <button
+                className={styles.clearFilters}
+                type="button"
+                onClick={clearFilters}
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
+          {nextCount > 0 && (
             <button
+              className={styles.moreRoles}
               type="button"
               onClick={() => {
-                setTeam("All");
-                setMode("All");
+                nextRole.current = shown.length;
+                setLimit(limit + pageSize);
               }}
             >
-              Show all roles
+              Show {nextCount} more {nextCount === 1 ? "role" : "roles"}
             </button>
-          </div>
-        )}
-      </div>
-    </section>
+          )}
+          <p className={styles.earningsNote}>
+            Pay figures are role ranges or upper limits. Exact compensation is
+            confirmed during screening.
+          </p>
+        </div>
+      </section>
+    </>
   );
 }

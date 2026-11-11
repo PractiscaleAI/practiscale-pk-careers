@@ -72,118 +72,61 @@ export default function OurStoryPage() {
           body="PractiScale started in a home office with no money and no connections. Today, 100+ people work here, serving 500+ healthcare businesses across the US. This is how it happened, and where it is going."
           image="/media/about/about-founder-desktop.webp"
           mobileImage="/media/about/about-founder-mobile.webp"
-          imageAlt="Art-directed portrait of Afrasyab Ahmed, Founder and CEO of PractiScale"
-          variant="portrait"
+          imageAlt="Afrasyab Ahmed, founder of PractiScale"
+          variant="story"
         />
 
         <section
           id="founder"
-          className={`${styles.sectionDark} ${styles.founderSection}`}
+          className={`${styles.section} ${styles.founderSection}`}
           aria-labelledby="founder-heading"
         >
-          <div className={`${styles.container} ${styles.founderGrid}`}>
-            <aside className={styles.founderAside}>
-              <div className={styles.imagePanel}>
-                <picture>
-                  <source
-                    media="(max-width: 760px)"
-                    srcSet="/media/about/about-founder-portrait-mobile-v3.webp"
-                  />
+          <div className={styles.founderProfile}>
+            <div className={styles.founderSheet}>
+              <div className={styles.founderEditorial}>
+                <div className={styles.founderHeading}>
+                  <p className={styles.founderRole}>Founder and CEO</p>
+                  <h2 id="founder-heading">Afrasyab Ahmed</h2>
+                </div>
+                <figure className={styles.founderPortraitFrame}>
                   <Image
-                    src="/media/about/about-founder-portrait-desktop-v2.webp"
-                    alt="Art-directed portrait of Afrasyab Ahmed, Founder and CEO of PractiScale"
-                    fill
-                    sizes="(max-width: 760px) 100vw, 40vw"
+                    className={styles.founderPortrait}
+                    src="/media/about/ceo-image-3.webp"
+                    alt="Afrasyab Ahmed, Founder and CEO of PractiScale"
+                    width={1275}
+                    height={2375}
+                    unoptimized
                   />
-                </picture>
+                </figure>
+                <div className={styles.founderNarrative}>
+                  <p>
+                    It took me nine years to learn sales. Rejection taught me to
+                    listen, follow-up taught me discipline, and objections
+                    taught me to ask better questions. Those lessons took
+                    PractiScale from a home office to a 10,000&nbsp;sq.&nbsp;ft.
+                    workspace.
+                  </p>
+                  <p>
+                    Growth changed what I was responsible for. I went from
+                    chasing a personal income target to overseeing a
+                    PKR&nbsp;10&nbsp;million monthly payroll.
+                  </p>
+                  <p>
+                    My goal is to build a 5,000-person company. That takes
+                    systems for hiring, training and quality, and room for
+                    people to step into leadership.
+                  </p>
+                </div>
               </div>
-              <p className={styles.founderVoice}>
-                I did not start with capital or connections. I started by
-                learning how to sell.
-              </p>
-            </aside>
-            <div className={styles.founderContent}>
-              <div
-                className={`${styles.sectionHeading} ${styles.inverseHeading}`}
-              >
-                <span className={styles.smallLabel}>Founder and CEO</span>
-                <h2 id="founder-heading">Afrasyab Ahmed</h2>
+              <div className={styles.founderQuote}>
+                <span className={styles.founderQuoteMark} aria-hidden="true">
+                  “
+                </span>
+                <blockquote>
+                  I did not start with capital or connections. I started by
+                  learning how to sell.
+                </blockquote>
               </div>
-              <div className={styles.storyChapter}>
-                <h3>The skill</h3>
-                <p>
-                  Sales took me nine years to learn properly. Rejection taught
-                  me to listen. Follow up taught me discipline. Objections
-                  taught me that a &quot;no&quot; is usually a question nobody
-                  has answered yet. Sales did not just change my income. It
-                  changed the size of my ambition.
-                </p>
-              </div>
-              <div className={styles.storyChapter}>
-                <h3>The offices</h3>
-                <p>
-                  Sales took me from a home office to 1,000 sq. ft., then to
-                  10,000 sq. ft. When an office filled up, I did not move
-                  everyone into a bigger one. I kept the old one full and
-                  started the new one at zero. New seats. New people. New
-                  managers.
-                </p>
-                <p>
-                  My offices got bigger because my ability to sell got better.
-                </p>
-              </div>
-              <div className={styles.storyChapter}>
-                <h3>The responsibility</h3>
-                <p>
-                  My goal used to be earning PKR 1 million a month. Today,
-                  responsibility looks like a PKR 10 million monthly payroll,
-                  and hundreds of families who depend on this company working.
-                  Money stopped being about what I take home. It became about
-                  what the team takes home.
-                </p>
-              </div>
-              <div className={styles.storyChapter}>
-                <h3>The system</h3>
-                <p>
-                  When I said I wanted to build a 5,000 person company, I
-                  realized ambition was not the problem. Infrastructure was. So
-                  I stopped posting and started building: a hiring engine, an AI
-                  training platform, call scoring, quality checks, payroll and
-                  our own ERP.
-                </p>
-                <p>
-                  You cannot build a 5,000 person company with 50 person
-                  systems.
-                </p>
-              </div>
-              <div className={styles.storyChapter}>
-                <h3>The people</h3>
-                <p>
-                  AI is not replacing my team. It is helping me build a bigger
-                  one, and making every person on it more capable.
-                </p>
-                <p>
-                  When two of our managers left, I told the office it was a day
-                  to celebrate. Two leadership seats had opened, and people who
-                  had been waiting could finally step up. A company should never
-                  depend on a few irreplaceable people. It should keep producing
-                  leaders.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.container}>
-            <div className={styles.beliefs} aria-label="Founder beliefs">
-              <blockquote>
-                Hiring gives you people. Systems turn them into a company.
-              </blockquote>
-              <blockquote>
-                You can recruit talent with money. You retain it with
-                opportunity.
-              </blockquote>
-              <blockquote>
-                Learn a skill that gets paid wherever business exists.
-              </blockquote>
             </div>
           </div>
         </section>

@@ -14,13 +14,13 @@ export function AboutHero({
   title: string;
   body: string;
   image: string;
-  mobileImage: string;
+  mobileImage?: string;
   imageAlt: string;
-  variant?: "standard" | "portrait";
+  variant?: "standard" | "story";
 }) {
   return (
     <section
-      className={`${styles.hero} ${variant === "portrait" ? styles.heroPortrait : ""}`}
+      className={`${styles.hero} ${variant === "story" ? styles.storyHero : ""}`}
     >
       <div className={styles.heroContent}>
         <Eyebrow>{eyebrow}</Eyebrow>
@@ -29,7 +29,9 @@ export function AboutHero({
       </div>
       <div className={styles.heroImageWrap}>
         <picture>
-          <source media="(max-width: 900px)" srcSet={mobileImage} />
+          {mobileImage && (
+            <source media="(max-width: 900px)" srcSet={mobileImage} />
+          )}
           <img
             className={styles.heroImage}
             src={image}
@@ -40,9 +42,11 @@ export function AboutHero({
           />
         </picture>
       </div>
-      <div className={styles.heroIndex} aria-hidden="true">
-        PRACTISCALE / PAKISTAN
-      </div>
+      {variant === "standard" && (
+        <div className={styles.heroIndex} aria-hidden="true">
+          PRACTISCALE / PAKISTAN
+        </div>
+      )}
     </section>
   );
 }

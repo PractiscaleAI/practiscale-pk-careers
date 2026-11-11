@@ -14,10 +14,10 @@ export type JobRole = {
   schedule?: string;
 };
 
-export const jobTeams: { id: string; name: JobTeam; short: string }[] = [
-  { id: "sales", name: "Sales", short: "Sales" },
-  { id: "media", name: "Media", short: "Media" },
-  { id: "operations", name: "Operations", short: "Operations" },
+export const jobTeams: { id: string; name: JobTeam; short: string; description: string }[] = [
+  { id: "sales", name: "Sales", short: "Sales", description: "Start conversations, qualify opportunities and help US healthcare clients grow." },
+  { id: "media", name: "Media", short: "Media", description: "Shape the stories, visuals and video that bring our work to life." },
+  { id: "operations", name: "Operations", short: "Operations", description: "Support the people and systems that keep our teams moving." },
 ];
 
 const salesForms = {
