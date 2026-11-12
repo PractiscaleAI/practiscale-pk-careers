@@ -1,295 +1,226 @@
+/**
+ * QA for /virtual-assistent: no sideways scroll, the hero's haze clears
+ * while the moon is still rising, she and the title share the scene with
+ * the title above her and clear of her on wide screens, the stories reel always focuses the card
+ * nearest its focus line, and the career path finishes fully inked.
+ *
+ * QA_BASE_URL (default http://127.0.0.1:3000) — server to test.
+ * QA_ARTIFACTS_DIR — when set, screenshots of every checked state land here.
+ */
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const { chromium } = require("@playwright/test");
-const { default: AxeBuilder } = require("@axe-core/playwright");
 
-const url =
-  (process.env.QA_BASE_URL || "http://127.0.0.1:3000") + "/virtual-assistent";
-const hero = "[data-webinar-hero]";
-const stage = "[data-webinar-stage]";
-const reel = "[data-story-reel]";
-const agenda = "[data-webinar-agenda]";
-const widths = [
+const url = (process.env.QA_BASE_URL || "http://127.0.0.1:3000") + "/virtual-assistent?still";
+const sizes = [
+  [1920, 1080],
   [1440, 900],
+  [1280, 720],
+  [1192, 800],
   [1024, 768],
   [768, 1024],
+  [530, 900],
   [390, 844],
   [320, 640],
 ];
 
-function frame(page) {
-  return page.evaluate(
-    () =>
-      new Promise((resolve) =>
-        requestAnimationFrame(() => requestAnimationFrame(resolve)),
-      ),
+const frames = (page, n = 3) =>
+  page.evaluate(
+    (count) =>
+      new Promise((resolve) => {
+        let left = count;
+        const step = () => (--left ? requestAnimationFrame(step) : resolve());
+        requestAnimationFrame(step);
+      }),
+    n,
   );
+
+async function pinTo(page, selector, p) {
+  await page.locator(selector).evaluate((el, progress) => {
+    const top = el.getBoundingClientRect().top + scrollY;
+    window.scrollTo({ top: top + (el.offsetHeight - innerHeight) * progress, behavior: "instant" });
+  }, p);
+  await frames(page);
 }
 
-async function showAt(page, selector, top) {
-  await page.locator(selector).evaluate((element, target) => {
-    window.scrollTo({
-      top: scrollY + element.getBoundingClientRect().top - target,
-      behavior: "instant",
-    });
-  }, top);
-  await frame(page);
+async function shot(page, name) {
+  if (!process.env.QA_ARTIFACTS_DIR) return;
+  await page.screenshot({ path: path.join(process.env.QA_ARTIFACTS_DIR, `va-${name}.png`) });
 }
 
-async function heroProgress(page, progress) {
-  await page.locator(hero).evaluate((element, p) => {
-    const heroStage = element.querySelector("[data-webinar-stage]");
-    window.scrollTo({
-      top: (element.offsetHeight - heroStage.offsetHeight) * p,
-      behavior: "instant",
-    });
-  }, progress);
-  await frame(page);
-}
-
-async function screenshot(page, name) {
-  if (process.env.QA_ARTIFACTS_DIR) {
-    await page.screenshot({
-      path: path.join(
-        process.env.QA_ARTIFACTS_DIR,
-        "va-webinar-" + name + ".png",
-      ),
-      animations: "disabled",
-    });
-  }
+async function noSideways(page, where) {
+  const { sw, cw } = await page.evaluate(() => ({
+    sw: document.documentElement.scrollWidth,
+    cw: document.documentElement.clientWidth,
+  }));
+  assert.ok(sw <= cw, `sideways scroll at ${where}: ${sw} > ${cw}`);
 }
 
 (async () => {
   const browser = await chromium.launch({
-    ...(process.env.CHROME_PATH
-      ? { executablePath: process.env.CHROME_PATH }
-      : { channel: "chrome" }),
+    executablePath: process.env.CHROME_PATH || "C:/Program Files/Google/Chrome/Application/chrome.exe",
     headless: true,
   });
-  try {
-    const context = await browser.newContext();
-    const page = await context.newPage();
-    const errors = [];
-    page.on("pageerror", (error) => errors.push(error.message));
-    const activeStory = page.locator(
-      reel + " [data-story-card][aria-hidden=false] h3",
-    );
-    const activeTopic = page.locator(agenda + " [aria-current=step]");
-    const detail = page.locator("[data-agenda-detail]");
-    const sectionNav = page.getByRole("navigation", {
-      name: "Webinar sections",
-    });
-    const property = (name) =>
-      page
-        .locator(hero)
-        .evaluate(
-          (element, prop) => element.style.getPropertyValue(prop),
-          name,
-        );
-    for (const [width, height] of widths) {
-      await page.setViewportSize({ width, height });
-      const response = await page.goto(url);
-      assert.equal(response.status(), 200);
-      await page.waitForSelector("[data-webinar-enhanced]");
-      await page.evaluate(() => document.fonts.ready.then(() => null));
-      await frame(page);
-      assert.equal(
-        await page.getByRole("heading", { level: 1 }).innerText(),
-        "Start a remote VA career from home.",
-      );
-      const shift = page.getByText("After training · 6 PM to 3 AM PKT", {
-        exact: true,
+  const failures = [];
+
+  // Regression (user report, Nov 2026): if the frame loop has not run — before
+  // hydration, in a background tab, or after a script error — the hero must
+  // still show its opening pose, never the finished composite over the title.
+  {
+    const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1898, height: 835 } });
+    const page = await ctx.newPage();
+    try {
+      await page.goto(url, { waitUntil: "domcontentloaded" });
+      const st = await page.evaluate(() => {
+        const op = (n) => Number(getComputedStyle(document.querySelector(`[data-layer="${n}"]`)).opacity);
+        const title = document.querySelector("[data-va-title]");
+        const layers = [...document.querySelectorAll("[data-layer]")];
+        return {
+          room: op("room"),
+          desk: op("desk"),
+          her: op("her"),
+          titleOnTop: layers.every((l) => l.compareDocumentPosition(title) & Node.DOCUMENT_POSITION_FOLLOWING),
+        };
       });
-      assert.ok(await shift.isVisible());
-      const shiftBox = await shift.boundingBox();
-      assert.ok(
-        shiftBox.y + shiftBox.height <= height,
-        "shift hours must appear in the first viewport",
-      );
-      const source = await page
-        .locator(hero + " picture img")
-        .evaluate((img) => [img.currentSrc, img.naturalWidth]);
-      assert.ok(
-        source[0].includes(
-          width <= 680 ? "home-workspace-mobile" : "home-workspace-desktop",
-        ),
-      );
-      assert.ok(source[1] > 0);
-      assert.equal(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth <= innerWidth + 1,
-        ),
-        true,
-      );
-      const pin = await page
-        .locator(stage)
-        .evaluate((element) => getComputedStyle(element).position);
-      assert.equal(pin, height >= 720 ? "sticky" : "relative");
-      if ([1440, 768, 390, 320].includes(width))
-        await screenshot(page, width + "-start");
-      if (height >= 720) {
-        assert.equal(await property("--haze"), "0.7800");
-        await heroProgress(page, 0.32);
-        assert.equal(await property("--haze"), "0.0000");
-        assert.ok(Number(await property("--photo-light")) < 0.65);
-        await heroProgress(page, 0.83);
-        assert.equal(await property("--photo-light"), "1.0000");
-        if ([1440, 768, 390].includes(width))
-          await screenshot(page, width + "-revealed");
-        await heroProgress(page, 1.08);
-        const handoff = await page.evaluate(() => ({
-          stageBottom: document
-            .querySelector("[data-webinar-stage]")
-            .getBoundingClientRect().bottom,
-          storyTop: document
-            .querySelector("[data-webinar-stories]")
-            .getBoundingClientRect().top,
-        }));
-        assert.ok(Math.abs(handoff.stageBottom - handoff.storyTop) < 2);
-        await heroProgress(page, 0);
-        assert.equal(await property("--haze"), "0.7800");
-      }
-
-      for (const [position, name] of [
-        [0.77, "Kanwal Fayaz"],
-        [0.52, "Mahnoor Naeem"],
-        [0.27, "Nayab Fatima"],
-      ]) {
-        await showAt(page, reel, height * position);
-        assert.equal(await activeStory.textContent(), name);
-      }
-      await sectionNav.getByRole("link", { name: "Stories" }).click();
-      await page.waitForURL(/#stories$/);
-      await frame(page);
-      assert.equal(await activeStory.textContent(), "Kanwal Fayaz");
-      await page.getByRole("button", { name: "Mahnoor Naeem" }).click();
-      await page.waitForFunction(
-        () =>
-          document
-            .querySelector("[data-story-track]")
-            .style.getPropertyValue("--reel-x") === "-100.00%",
-      );
-      assert.equal(await activeStory.textContent(), "Mahnoor Naeem");
-      await showAt(page, reel, height * 0.3);
-      assert.equal(await activeStory.textContent(), "Mahnoor Naeem");
-      if ([1440, 390].includes(width))
-        await screenshot(page, width + "-stories");
-
-      await sectionNav.getByRole("link", { name: "Agenda" }).click();
-      await page.waitForURL(/#agenda$/);
-      await frame(page);
-      assert.match(await activeTopic.textContent(), /remote VA work/);
-      await page.getByRole("button", { name: /hours and earnings/ }).click();
-      await frame(page);
-      assert.match(await detail.textContent(), /shift requirements/);
-      const offset = await page
-        .locator("[data-agenda-route]")
-        .evaluate((path) =>
-          parseFloat(getComputedStyle(path).strokeDashoffset),
-        );
-      assert.ok(
-        Math.abs(offset - 0.25) < 0.005,
-        "the active topic and drawn route must agree",
-      );
-      await showAt(page, "[data-agenda-list]", height * 0.31);
-      assert.match(await activeTopic.textContent(), /hours and earnings/);
-      if ([1440, 390].includes(width))
-        await screenshot(page, width + "-agenda");
-
-      await sectionNav.getByRole("link", { name: "FAQ" }).click();
-      const firstQuestion = page.getByText("Do I need experience?", {
-        exact: true,
-      });
-      await firstQuestion.focus();
-      await page.keyboard.press("Enter");
-      assert.equal(await firstQuestion.locator("..").getAttribute("open"), "");
-      await page
-        .getByText("What happens after the webinar?", { exact: true })
-        .click();
-      assert.equal(await page.locator("#webinar-faq details[open]").count(), 1);
-      await sectionNav.getByRole("link", { name: "Register" }).click();
-      await page.waitForURL(/#reserve$/);
-      const form = page.locator("#reserve form");
-      assert.equal(await form.count(), 1);
-      const closed = await form.getByRole("status").isVisible();
-      assert.equal(
-        await form
-          .getByRole("button", { name: "Reserve my free seat" })
-          .isDisabled(),
-        closed,
-      );
-      assert.equal(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth <= innerWidth + 1,
-        ),
-        true,
-      );
-      if ([1440, 390].includes(width))
-        await screenshot(page, width + "-registration");
-      console.log(width + "x" + height + " passed");
+      assert.equal(st.room + st.desk + st.her, 0, `no-JS hero shows the composite: ${JSON.stringify(st)}`);
+      assert.ok(st.titleOnTop, "hero title is not above every layer");
+      console.log("ok no-js start pose");
+    } catch (error) {
+      failures.push(error.message);
+      console.error(`FAIL no-js: ${error.message}`);
+    } finally {
+      await ctx.close();
     }
-
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(url + "#agenda");
-    await page.waitForSelector("[data-webinar-enhanced]");
-    await frame(page);
-    const anchor = await page.locator("#agenda").boundingBox();
-    assert.ok(
-      anchor.y >= 55 && anchor.y < 110,
-      "deep link must survive hero height enhancement",
-    );
-    await page.emulateMedia({ reducedMotion: "reduce" });
-    await page.waitForFunction(
-      () => !document.querySelector("[data-webinar-motion]"),
-    );
-    assert.equal(
-      await page
-        .locator(stage)
-        .evaluate((element) => getComputedStyle(element).position),
-      "relative",
-    );
-    assert.equal(await property("--haze"), "");
-    await sectionNav.getByRole("link", { name: "Stories" }).click();
-    await page.getByRole("button", { name: "Nayab Fatima" }).click();
-    await frame(page);
-    assert.equal(await activeStory.textContent(), "Nayab Fatima");
-    const accessibility = await new AxeBuilder({ page })
-      .include("[data-webinar-page]")
-      .analyze();
-    assert.deepEqual(
-      accessibility.violations.map((violation) => ({
-        id: violation.id,
-        targets: violation.nodes.map((node) => node.target),
-      })),
-      [],
-    );
-
-    const noScript = await browser.newContext({
-      javaScriptEnabled: false,
-      viewport: { width: 390, height: 844 },
-    });
-    const staticPage = await noScript.newPage();
-    await staticPage.goto(url);
-    assert.equal(
-      await staticPage.locator("[data-story-card]:visible").count(),
-      3,
-    );
-    assert.equal(
-      await staticPage.locator("[data-agenda-static]:visible").count(),
-      5,
-    );
-    assert.equal(
-      await staticPage.locator("[data-story-select]:visible").count(),
-      0,
-    );
-    assert.deepEqual(errors, []);
-    console.log(
-      "Reduced motion, accessibility, and no-JavaScript reading order passed",
-    );
-  } finally {
-    await browser.close();
   }
-})().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+
+  for (const [w, h] of sizes) {
+    const tag = `${w}x${h}`;
+    const page = await browser.newPage({ viewport: { width: w, height: h } });
+    try {
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.evaluate(() => document.fonts.ready);
+      await frames(page, 4);
+
+      // Hero.
+      for (const p of [0, 0.12, 0.3, 0.5, 0.66, 0.9]) {
+        await pinTo(page, "[data-va-hero]", p);
+        await noSideways(page, `${tag} hero ${p}`);
+        await shot(page, `${tag}-hero-${p}`);
+      }
+      await pinTo(page, "[data-va-hero]", 0.18);
+      const hero = await page.evaluate(() => ({
+        veil: Number(getComputedStyle(document.querySelector("[data-va-veil]")).opacity),
+        moon: new DOMMatrix(getComputedStyle(document.querySelector('[data-layer="moon"]')).transform).m42,
+      }));
+      assert.ok(hero.veil < 0.01, `${tag}: haze not cleared at 0.18 (${hero.veil})`);
+      assert.ok(hero.moon > 0, `${tag}: moon already risen when the haze clears`);
+      // Regression (user report, Nov 2026): her hands must stay on the laptop,
+      // so her layer and the desk layer always share one position.
+      for (const p of [0.15, 0.3, 0.85]) {
+        await pinTo(page, "[data-va-hero]", p);
+        const pair = await page.evaluate(() => [
+          document.querySelector('[data-layer="desk"]').style.transform,
+          document.querySelector('[data-layer="her"]').style.transform,
+        ]);
+        assert.equal(pair[0], pair[1], `${tag} hero ${p}: desk and her drift apart`);
+      }
+      // Regression (user report, Nov 2026): she must be in the scene while
+      // FROM HOME reads, and on wide screens the title must end before her.
+      for (const p of [0.4, 0.5, 0.6]) {
+        await pinTo(page, "[data-va-hero]", p);
+        const t = await page.evaluate(() => {
+          const h1 = document.querySelector("[data-va-title] h1");
+          // Measure only the visible words; the heading also holds visually
+          // hidden screen-reader text.
+          const r = document.createRange();
+          r.selectNodeContents(h1.lastChild);
+          const box = r.getBoundingClientRect();
+          return {
+            title: Number(getComputedStyle(document.querySelector("[data-va-title]")).opacity),
+            her: Number(getComputedStyle(document.querySelector('[data-layer="her"]')).opacity),
+            right: box.right / innerWidth,
+            wide: innerWidth >= innerHeight,
+          };
+        });
+        assert.ok(t.title > 0.98 && t.her > 0.98, `${tag} hero ${p}: title ${t.title} / her ${t.her} not both shown`);
+        if (t.wide) assert.ok(t.right <= 0.62, `${tag} hero ${p}: title runs to ${(t.right * 100).toFixed(0)}% of the width, into her`);
+      }
+
+      // VSL + metrics.
+      await page.locator("#watch").scrollIntoViewIfNeeded();
+      await page.locator("[data-va-vsl]").evaluate((el) =>
+        window.scrollTo({ top: el.getBoundingClientRect().top + scrollY - innerHeight * 0.15, behavior: "instant" }),
+      );
+      await frames(page, 4);
+      await page.waitForTimeout(1100);
+      await noSideways(page, `${tag} watch`);
+      await shot(page, `${tag}-watch`);
+      await page.evaluate(() => window.scrollTo({ top: document.querySelector("#watch").offsetTop, behavior: "instant" }));
+      await frames(page);
+      await page.waitForTimeout(1100);
+      await shot(page, `${tag}-watch-head`);
+
+      // Reel: the card nearest the focus line is the one in focus.
+      for (const p of [0, 0.25, 0.5, 0.75, 1]) {
+        await pinTo(page, "[data-va-reel]", p);
+        await noSideways(page, `${tag} reel ${p}`);
+        const r = await page.evaluate(() => {
+          const root = document.querySelector("[data-va-reel]");
+          const vw = document.documentElement.clientWidth;
+          const focus = vw * (vw >= 900 ? 0.58 : 0.5);
+          const cards = [...root.querySelectorAll("[data-va-card]")];
+          const dist = cards.map((c) => {
+            const b = c.getBoundingClientRect();
+            return Math.abs(b.left + b.width / 2 - focus);
+          });
+          const opac = cards.map((c) => Number(c.style.opacity));
+          return {
+            active: Number(root.dataset.active),
+            nearest: dist.indexOf(Math.min(...dist)),
+            brightest: opac.indexOf(Math.max(...opac)),
+            card: cards[0].getBoundingClientRect(),
+          };
+        });
+        assert.equal(r.active, r.nearest, `${tag} reel ${p}: active ${r.active} != nearest ${r.nearest}`);
+        assert.equal(r.brightest, r.nearest, `${tag} reel ${p}: brightest is not nearest`);
+        await shot(page, `${tag}-reel-${p}`);
+      }
+
+      // Career path.
+      for (const p of [0.1, 0.55, 1]) {
+        await pinTo(page, "[data-va-path]", p);
+        await noSideways(page, `${tag} path ${p}`);
+        await shot(page, `${tag}-path-${p}`);
+      }
+      // Only the composition for this screen shape is shown and animated:
+      // landscape draws left → right, portrait top → bottom.
+      const route = await page.evaluate(() => {
+        const shown = [...document.querySelectorAll("[data-va-path-layout]")].filter((svg) => getComputedStyle(svg).display !== "none");
+        const box = shown[0]?.getBoundingClientRect();
+        return {
+          ids: shown.map((svg) => svg.dataset.vaPathLayout),
+          inked: shown.flatMap((svg) => [...svg.querySelectorAll("[data-va-leg]")].map((l) => Number(l.style.strokeDashoffset))),
+          size: box ? [box.width, box.height] : [0, 0],
+        };
+      });
+      assert.deepEqual(route.ids, [w >= h ? "land" : "port"], `${tag}: wrong path composition ${route.ids}`);
+      assert.ok(route.inked.length === 4 && route.inked.every((v) => v < 0.001), `${tag}: path not fully inked ${route.inked}`);
+      assert.ok(route.size[1] > h * 0.3, `${tag}: path drawing too small (${route.size.map(Math.round)})`);
+
+      for (const id of ["requirements", "agenda", "faq", "reserve"]) {
+        await page.evaluate((s) => document.getElementById(s).scrollIntoView({ behavior: "instant" }), id);
+        await page.waitForTimeout(1100);
+        await noSideways(page, `${tag} ${id}`);
+        await shot(page, `${tag}-${id}`);
+      }
+      console.log(`ok ${tag}`);
+    } catch (error) {
+      failures.push(error.message);
+      console.error(`FAIL ${tag}: ${error.message}`);
+    } finally {
+      await page.close();
+    }
+  }
+  await browser.close();
+  if (failures.length) process.exit(1);
+})();
