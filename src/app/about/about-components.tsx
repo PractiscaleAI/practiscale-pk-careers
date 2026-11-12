@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Action, Eyebrow } from "@/components/ui";
 import styles from "./about.module.css";
 
@@ -11,7 +12,7 @@ export function AboutHero({
   variant = "standard",
 }: {
   eyebrow: string;
-  title: string;
+  title: ReactNode;
   body: string;
   image: string;
   mobileImage?: string;

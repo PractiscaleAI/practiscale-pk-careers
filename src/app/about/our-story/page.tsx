@@ -2,12 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import InteriorShell from "@/components/interior-shell";
 import { Action } from "@/components/ui";
-import {
-  AboutCta,
-  AboutHero,
-  NumberedCard,
-  SectionHeading,
-} from "../about-components";
+import { AboutCta, AboutHero, NumberedCard } from "../about-components";
 import styles from "../about.module.css";
 
 export const metadata: Metadata = {
@@ -68,11 +63,15 @@ export default function OurStoryPage() {
       <div className={styles.page}>
         <AboutHero
           eyebrow="Our story"
-          title="Built in Pakistan, on one skill: sales"
-          body="PractiScale started in a home office with no money and no connections. Today, 100+ people work here, serving 500+ healthcare businesses across the US. This is how it happened, and where it is going."
-          image="/media/about/about-founder-desktop.webp"
-          mobileImage="/media/about/about-founder-mobile.webp"
-          imageAlt="Afrasyab Ahmed, founder of PractiScale"
+          title={
+            <>
+              Built in Pakistan, <br />
+              on one skill: <span>sales</span>
+            </>
+          }
+          body="PractiScale started in a home office. Today, our team of 100+ serves 500+ healthcare businesses across the US."
+          image="/media/about/about-office-exterior-clean-v1.webp"
+          imageAlt="The front of the PractiScale building in Rawalpindi, showing the company sign and entrance"
           variant="story"
         />
 
@@ -131,41 +130,35 @@ export default function OurStoryPage() {
           </div>
         </section>
 
-        <section
-          className={styles.section}
-          aria-label="Mission, vision and values"
-        >
-          <div className={styles.container}>
-            <SectionHeading
-              eyebrow="What guides us"
-              title="Mission, vision and values"
-            />
-            <div className={styles.missionGrid}>
-              <article className={styles.missionCard}>
-                <h3>Mission</h3>
-                <p>
-                  Find overlooked talent in Pakistan, train it in skills the
-                  global market pays for, and reward it for results.
-                </p>
-              </article>
-              <article className={styles.missionCard}>
-                <h3>Vision</h3>
-                <p>
-                  Build a 5,000 person company from Pakistan and create 5,000
-                  careers that did not exist before.
-                </p>
-              </article>
-            </div>
-            <div className={styles.valueGrid}>
-              {values.map(([title, body], index) => (
-                <article className={styles.valueCard} key={title}>
-                  <span className={styles.cardIndex}>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
+        <section className={styles.section} aria-labelledby="mission-heading">
+          <div className={styles.missionLayout}>
+            <div className={styles.missionSheet}>
+              <h2 id="mission-heading">Mission, vision and values</h2>
+              <div className={styles.missionGrid}>
+                <article className={styles.missionCard}>
+                  <h3>Mission</h3>
+                  <p>
+                    Find overlooked talent in Pakistan, train it in skills the
+                    global market pays for, and reward it for results.
+                  </p>
                 </article>
-              ))}
+                <article className={styles.missionCard}>
+                  <h3>Vision</h3>
+                  <p>
+                    Build a 5,000 person company from Pakistan and create 5,000
+                    careers that did not exist before.
+                  </p>
+                </article>
+              </div>
+              <h3 className={styles.valuesHeading}>Values</h3>
+              <dl className={styles.valueGrid}>
+                {values.map(([title, body]) => (
+                  <div className={styles.valueItem} key={title}>
+                    <dt>{title}</dt>
+                    <dd>{body}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
           </div>
         </section>

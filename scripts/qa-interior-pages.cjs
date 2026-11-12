@@ -112,13 +112,18 @@ const sizes = [
             .evaluate(async (image) => {
               await image.decode();
               const panel = image.closest("section");
-              const copy = panel.querySelector("p").getBoundingClientRect();
+              const copy = panel.querySelector("h1 + p").getBoundingClientRect();
               const photo = image.getBoundingClientRect();
               const frame = panel.getBoundingClientRect();
               return {
                 source: new URL(image.currentSrc).pathname,
                 stacked: photo.top >= copy.bottom,
                 edgeAligned: Math.abs(photo.right - frame.right) < 1,
+                fullPhoto:
+                  Math.abs(
+                    photo.width / photo.height -
+                      image.naturalWidth / image.naturalHeight,
+                  ) < 0.002 && getComputedStyle(image).objectFit === "contain",
                 blend: getComputedStyle(
                   image.closest("picture").parentElement,
                   "::after",
@@ -126,13 +131,13 @@ const sizes = [
               };
             });
           check(
-            key + ": hero preserves the responsive full-bleed portrait",
+            key +
+              ": Our Story shows the complete building photo with the teal fade",
             heroLayout.source ===
-              (size.width <= 900
-                ? "/media/about/about-founder-mobile.webp"
-                : "/media/about/about-founder-desktop.webp") &&
-              heroLayout.stacked === size.width <= 900 &&
+              "/media/about/about-office-exterior-clean-v1.webp" &&
+              heroLayout.stacked === size.width <= 840 &&
               heroLayout.edgeAligned &&
+              heroLayout.fullPhoto &&
               heroLayout.blend.includes("linear-gradient"),
             heroLayout,
           );
