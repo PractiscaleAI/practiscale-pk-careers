@@ -64,14 +64,6 @@ const systems = [
   ["Performance based pay", "Payroll connects directly to results."],
 ] as const;
 
-const modes = [
-  [
-    "Remote",
-    "Work remotely in roles such as Remote Appointment Setter, Remote Sales Closer or CRM + AI Expert. The Remote HR Recruiter role requires you to be based in Rawalpindi or Islamabad.",
-  ],
-  ["Onsite", "Work from our offices in Rawalpindi or Islamabad."],
-] as const;
-
 export default function HowWeWorkPage() {
   return (
     <InteriorShell>
@@ -178,23 +170,6 @@ export default function HowWeWorkPage() {
             />
             <div className={styles.systemsGrid}>
               {systems.map(([title, body], index) => (
-                <NumberedCard index={index + 1} title={title} key={title}>
-                  {body}
-                </NumberedCard>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.section} aria-labelledby="modes-heading">
-          <div className={styles.container}>
-            <SectionHeading
-              id="modes-heading"
-              eyebrow="Work modes"
-              title="Remote or onsite"
-            />
-            <div className={styles.modeGrid}>
-              {modes.map(([title, body], index) => (
                 <NumberedCard index={index + 1} title={title} key={title}>
                   {body}
                 </NumberedCard>

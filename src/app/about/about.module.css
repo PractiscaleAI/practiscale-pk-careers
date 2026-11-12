@@ -453,7 +453,6 @@
 }
 
 .reasonGrid,
-.modeGrid,
 .systemsGrid {
   display: grid;
   gap: 14px;
@@ -874,14 +873,6 @@
   font-size: 17px;
 }
 
-.modeGrid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.modeGrid .numberedCard {
-  min-height: 250px;
-}
-
 .reasonGrid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1165,8 +1156,7 @@
   .journeyAside .imagePanel {
     aspect-ratio: 16 / 10;
   }
-  .rolesGrid,
-  .modeGrid {
+  .rolesGrid {
     grid-template-columns: 1fr;
   }
   .roleCard {
@@ -1225,8 +1215,7 @@
   .processGrid,
   .reasonGrid,
   .growthGrid,
-  .systemsGrid,
-  .modeGrid {
+  .systemsGrid {
     grid-template-columns: 1fr;
   }
   .numberedCard,
@@ -1393,24 +1382,6 @@
   min-height: 352px;
 }
 
-.modeGrid {
-  gap: 0;
-  border-top: 1px solid var(--line);
-}
-
-.modeGrid .numberedCard {
-  min-height: 205px;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-  background: transparent;
-}
-
-.modeGrid .numberedCard + .numberedCard {
-  border-left: 1px solid var(--line);
-}
-
-.modeGrid .cardIndex,
 .reasonGrid .cardIndex {
   margin-bottom: 24px;
 }
@@ -1453,13 +1424,6 @@
   }
   .processGrid .cardIndex {
     margin-bottom: 16px;
-  }
-  .modeGrid .numberedCard {
-    min-height: 0;
-    padding-inline: 2px;
-  }
-  .modeGrid .numberedCard + .numberedCard {
-    border-left: 0;
   }
   .reasonGrid .numberedCard {
     min-height: 0;
