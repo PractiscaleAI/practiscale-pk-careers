@@ -5,7 +5,7 @@ import styles from "./funnel.module.css";
 export default function FunnelHeader() {
   return (
     <header className={styles.top}>
-      <div className={styles.wrap}>
+      <div className={`${styles.wrap} ${styles.topCenter}`}>
         <a href="/" aria-label="PractiScale home">
           <Image
             src="/brand/logos/practiscale-logo-reversed.png"

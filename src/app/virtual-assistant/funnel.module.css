@@ -232,6 +232,10 @@
   gap: 16px;
   height: 68px;
 }
+/* Funnel step pages: the header carries only the logo, centred over the card. */
+.top > .topCenter {
+  justify-content: center;
+}
 .logo {
   display: block;
   width: auto;
