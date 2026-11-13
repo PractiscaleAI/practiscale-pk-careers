@@ -1,7 +1,10 @@
-/** Event details and verified destinations for the /virtual-assistant page. */
+/** Event details and verified links for the /virtual-assistant webinar funnel. */
 export const webinar = {
   DATE: undefined as string | undefined,
   TIME: undefined as string | undefined,
+  /** Registration deadline (ISO 8601 with offset, Pakistan is +05:00), e.g.
+   *  "2026-12-05T23:59:00+05:00". Turns on every countdown on the page; while
+   *  unset the page shows "Seats are limited" wording instead. */
   REGISTRATION_CLOSES_AT: undefined as string | undefined,
   VSL_URL: undefined as string | undefined,
   /** Same-origin route that forwards to the GHL inbound webhook (see

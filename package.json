@@ -27,7 +27,8 @@
     "render:proof": "node scripts/export-proof-band.cjs",
     "test:proof-links": "node scripts/qa-proof-links.cjs",
     "test:hero-continuity": "node scripts/qa-hero-continuity.cjs",
-    "test:testimonials": "node scripts/qa-testimonials.cjs"
+    "test:testimonials": "node scripts/qa-testimonials.cjs",
+    "test:va-funnel": "node scripts/qa-va-funnel.cjs"
   },
   "dependencies": {
     "clsx": "2.1.1",

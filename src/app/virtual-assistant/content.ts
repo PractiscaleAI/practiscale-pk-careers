@@ -1,190 +1,266 @@
 /**
- * Every word on the /virtual-assistant page. Event specifics (date, time,
- * form endpoint, verified links) live in `@/config/webinar`.
+ * Copy for the Virtual Assistant webinar funnel:
+ * landing → register popup → qualification → thank-you / not eligible.
+ * Event specifics and links live in `@/config/webinar`.
  */
 import { webinar } from "@/config/webinar";
 
-export const shiftHours = "6 PM to 3 AM PKT";
-
-export const vsl = {
-  id: "gTAy42y0bBc",
-  title: "Work From Home in Pakistan | Build a Remote Career With PractiScale",
-  poster: "/media/va-stories/vsl-poster-v1.webp",
-};
-
-export const nav = [
-  { label: "Watch", href: "#watch" },
-  { label: "Stories", href: "#stories" },
-  { label: "Path", href: "#path" },
-  { label: "Requirements", href: "#requirements" },
-  { label: "FAQ", href: "#faq" },
-] as const;
-
-export const hero = {
-  kicker: "Free live webinar · for women in Pakistan",
-  lead: "Start a remote VA career",
-  title: "From home",
-  sub: "Work the night shift for US healthcare clinics, from your own desk. See exactly how in one free hour online.",
-  facts: "Online · 60 minutes · Free",
-  veil: "Scroll to begin your shift",
-};
-
-export const intro = {
-  eyebrow: "Watch first",
-  heading: "See the work before you decide.",
-  body: "The founder explains the role, the training and the night shift — and you meet a woman already doing it.",
-  covers: ["What Virtual Assistants do", "How training works", "What the night shift requires"],
-};
-
-export const companyMetrics = [
-  ["500+", "US healthcare clients"],
-  ["100%", "Women-led VA department"],
-  ["5,000", "Jobs for Pakistani women, our goal"],
-  ["2025", "Year PractiScale started"],
-] as const;
-
-/**
- * Portraits were supplied without names. Nayab is the medical-coat portrait
- * (her story); Kanwal is the maroon hijab, as she appears in the VSL
- * thumbnail; Mahnoor is the remaining one.
- */
-export const stories = [
-  {
-    name: "Kanwal Fayaz",
-    role: "Virtual Assistant",
-    start: "Returned to work after time as a homemaker.",
-    outcome: "Rs 113,000",
-    image: "/media/va-stories/kanwal-portrait-v2.webp",
-    linkedin: webinar.LINKEDIN_KANWAL,
-  },
-  {
-    name: "Mahnoor Naeem",
-    role: "Team Leader",
-    start: "Joined with no remote experience and became a team leader.",
-    outcome: "Rs 189,000",
-    image: "/media/va-stories/mahnoor-portrait-v2.webp",
-    linkedin: webinar.LINKEDIN_MAHNOOR,
-  },
-  {
-    name: "Nayab Fatima",
-    role: "Team Leader · Interviewer · Designer · Expert VA",
-    start: "Joined during her final year of medical school.",
-    outcome: "Rs 183,000",
-    image: "/media/va-stories/nayab-portrait-v1.webp",
-    linkedin: webinar.LINKEDIN_NAYAB,
-  },
-] as const;
-
-export const storiesIntro = {
-  eyebrow: "Real stories",
-  heading: "Three paths into remote work.",
-  body: "Where each woman started, and what she reports earning today.",
-};
-
-/** Legs of the career path, in drawing order. */
-export const path = {
-  eyebrow: "Your path",
-  heading: "From webinar to paid role, drawn as you scroll.",
-  legs: [
-    {
-      title: "Free live webinar",
-      body: "One hour online to see the work, the training and the night shift.",
-    },
-    {
-      title: "Qualification",
-      body: "A short qualification step. Candidates who meet the criteria are invited to training.",
-    },
-    {
-      title: "Training",
-      body: "Your first month is training. It is unpaid, and it is where the skills are built.",
-    },
-    {
-      title: "Paid role",
-      body: "Paid roles follow successful training and assessment, on the full 6 PM to 3 AM shift.",
-    },
-  ],
-};
-
-export const requirements = {
-  eyebrow: "Before you apply",
-  heading: "Three things to know first.",
-  fit: "For graduates, final-semester students, and homemakers ready for a long-term remote career and the full shift.",
-  items: [
-    {
-      name: "Who can apply",
-      value: "Women only",
-      detail: "Good English, a laptop, and steady internet.",
-      rings: 1,
-    },
-    {
-      name: "Work hours",
-      value: "6 PM – 3 AM",
-      detail: "Pakistan time, the full shift, after training.",
-      rings: 3,
-      featured: true,
-    },
-    {
-      name: "Training",
-      value: "Month one",
-      detail: "The first month of training is unpaid.",
-      rings: 2,
-    },
-  ],
+export const routes = {
+  landing: "/virtual-assistant",
+  qualify: "/virtual-assistant/qualify",
+  thanks: "/virtual-assistant/thank-you",
+  notEligible: "/virtual-assistant/not-eligible",
 } as const;
 
-/**
- * The agenda, told as the questions women ask and what the host covers live.
- * Replies describe the webinar's content only; they add no new claims.
- */
-export const agenda = {
-  eyebrow: "Webinar agenda",
-  heading: "Your questions, answered live.",
-  lead: "Five questions every woman asks before starting. In one free hour online, the founder answers each of them.",
-  badge: "Preview",
-  day: "What you'll hear live",
-  replyNote: "Answered live in the webinar",
-  closing: { strong: "Bring your own question", rest: " — there's time for yours too." },
-  items: [
-    { question: "What is remote VA work?", reply: "I'll show you the role, and the US healthcare accounts behind it." },
-    { question: "Can I start without experience?", reply: "I'll explain exactly who the program is built for." },
-    { question: "What does training involve?", reply: "You'll see what the first month of training asks of you." },
-    { question: "How do hours and earnings work?", reply: "The shift requirements, and real individual outcomes." },
-    { question: "What happens next?", reply: "How to apply, and what happens during qualification." },
-  ],
-} as const;
-
-export const host = {
-  name: "Afrasyab Ahmed",
-  role: "Founder and CEO · Webinar host",
-  image: "/media/about/about-founder-portrait-desktop-v2.webp",
-  /** Head-and-shoulders crop of `image`, sized for the round avatars. */
-  avatar: "/media/va-hero/host-avatar-v1.webp",
-  /** [before, emphasis, after] */
-  facts: [
-    ["Every trainer, team leader and manager in the VA department is ", "a woman", "."],
-    ["The company’s goal: ", "5,000 jobs", " for Pakistani women."],
-  ],
-} as const;
-
-/** Contacts for webinar questions (the company's published details). */
 export const contact = {
   email: "hiring@practiscale.com",
-  phone: "+92 333 4000600",
-  phoneHref: "tel:+923334000600",
   site: "practiscale.com",
   siteHref: "https://practiscale.com/",
 };
 
+export const vsl = {
+  id: "gTAy42y0bBc",
+  title: "Work From Home in Pakistan | Build a Remote Career With PractiScale",
+  /** The YouTube thumbnail: it carries its own headline on the left and the host on the right. */
+  poster: "/media/va-stories/vsl-poster-v2.webp",
+};
+
+export const host = {
+  name: "Afrasyab Ahmed",
+  role: "Founder & CEO · Your webinar host",
+  photo: "/media/about/about-founder-portrait-desktop-v2.webp",
+};
+
+export const hero = {
+  eyebrow: "Free live webinar for Pakistani women",
+  /** The approved headline, split only for emphasis: the figure is the visual. */
+  headlineTop: "How Pakistani Women Are Earning",
+  headlineFigure: "189,000 Rupees",
+  headlineRest: "a Month Without Leaving Their Home",
+  subLead: "Hard to believe?",
+  sub: "Scroll down to see the women who are already doing it.",
+  urgency: "Seats are filling up. Register before it's too late.",
+  countdownLabel: "Registration closing in:",
+  cta: "See How It Works",
+  assurances: ["100% free", "Online", "60 minutes"],
+  forYouTitle: "This is for you if…",
+  forYou: [
+    "You have a degree but no career to show for it yet",
+    "You want to work but stepping out of the home is not possible",
+    "You have seen online opportunities before and wondered if any of them are actually real",
+  ],
+  proof: {
+    strong: "Real women on our team.",
+    rest: " Verify them yourself on LinkedIn.",
+  },
+};
+
+/** The proof ticker under the hero, built from the case studies. */
+export const ticker = [
+  ["Kanwal · homemaker", "₨113,000 a month"],
+  ["Mahnoor · no remote experience", "Team Leader, ₨189,000"],
+  ["Nayab · medical student", "4 roles, ₨183,000"],
+  ["100%", "female VA department"],
+  ["500+", "US healthcare clients"],
+] as const;
+
+export const trust = [
+  { figure: "189,000", label: "rupees earned by our top performers" },
+  { figure: "100%", label: "female department, built and led by women" },
+];
+
+export const learn = {
+  kicker: "The webinar",
+  title: "What you will learn in this one hour",
+  sub: "Everything you need to know before deciding if this is for you, in one session.",
+  items: [
+    {
+      title: "What does a PractiScale Virtual Assistant actually do?",
+      body: "A real look at what the work looks like day to day. What you will be doing, who you will be working with, and what a normal week feels like from home.",
+    },
+    {
+      title: "What the 15-day training program looks like",
+      body: "What you will learn inside it, how it is structured, and what happens once you complete it.",
+    },
+    {
+      title: "What the career path looks like after training",
+      body: "The responsibilities, the growth opportunities, and the earning potential at every stage.",
+    },
+    {
+      title: "How women with no prior experience got here",
+      body: "Kanwal was a homemaker. Mahnoor heard about us through her sister. Nayab was still in medical school. None of them had remote work experience when they started. You will hear exactly how they got to where they are now.",
+      featured: true,
+    },
+    {
+      title: "Whether you are the right fit",
+      body: "We will be honest about who this is for and who it is not for. By the end of this session, you will know exactly whether this is the right next step for you.",
+    },
+  ],
+  cta: "Count Me In",
+  assurances: ["Free", "Takes 30 seconds"],
+};
+
+export const fit = {
+  kicker: "Honest fit check",
+  title: "Read this before you register",
+  yesTitle: "This is for you if:",
+  yes: [
+    "You are a woman",
+    "You are a graduate, final semester student, or housewife ready to build a professional career",
+    "You have a laptop and a reliable internet connection",
+    "You can communicate in English",
+    "You are available to work from 6 PM to 3 AM after completing training",
+    "You are serious about building a real remote career",
+  ],
+  noTitle: "This is probably not for you if:",
+  no: [
+    "You are looking for a casual part‑time role",
+    "You cannot commit to the working hours after training",
+    "You are not willing to go through an unpaid first month of training",
+    "You want quick money without putting in real work",
+  ],
+};
+
+export const stories = {
+  kicker: "Real team members",
+  title: "Women who started where you are",
+  sub: "These are not actors. These are real women on our team. You can find them on LinkedIn.",
+  featuredTag: "Our headline figure",
+  noteTitle: "About these results",
+  note: "Individual outcomes vary. The results shown here represent real team members. Earnings are not guaranteed and depend on individual performance and consistency.",
+  items: [
+    {
+      name: "Kanwal Fayaz",
+      role: "Virtual Assistant",
+      photo: "/media/va-stories/kanwal-portrait-v2.webp",
+      earn: "₨113,000",
+      earnNote: "a month, from home",
+      before:
+        "Kanwal was a homemaker. She had stepped away from professional life and was not sure if a real career was still possible for her.",
+      started: "She started with us from humble beginnings.",
+      today: "She earns 113,000 rupees from her home.",
+      linkedin: webinar.LINKEDIN_KANWAL,
+    },
+    {
+      name: "Mahnoor Naeem",
+      role: "Team Leader",
+      photo: "/media/va-stories/mahnoor-portrait-v2.webp",
+      earn: "₨189,000",
+      earnNote: "a month · team leader",
+      /** The figure in the hero headline: her row is highlighted. */
+      featured: true,
+      before:
+        "Mahnoor heard about PractiScale through her sister. She had no prior remote work experience when she applied.",
+      started: "She started with us at a modest salary.",
+      today: "She is a Team Leader earning 189,000 rupees.",
+      linkedin: webinar.LINKEDIN_MAHNOOR,
+    },
+    {
+      name: "Nayab Fatima",
+      role: "Team Leader · Interviewer · Designer · Expert VA",
+      photo: "/media/va-stories/nayab-portrait-v1.webp",
+      earn: "₨183,000",
+      earnNote: "a month · 4 roles",
+      before:
+        "Nayab joined us in her final year of medical school. She did not wait to finish her degree.",
+      started: "She started small and built from there.",
+      today:
+        "She holds four roles at PractiScale and earns 183,000 rupees, while maintaining a CGPA of 3.8.",
+      linkedin: webinar.LINKEDIN_NAYAB,
+    },
+  ],
+};
+
+export const about = {
+  kicker: "Your host",
+  title: "Who is running this webinar",
+  credentials: [
+    { figure: "500+", label: "US clients served" },
+    { figure: "100%", label: "Female VA department" },
+  ],
+};
+
+export const details = {
+  kicker: "The details",
+  title: "Before you register",
+  what: "A live one-hour webinar where Afrasyab Ahmed, CEO of PractiScale, walks you through exactly how to start a remote career as a Virtual Assistant from home.",
+  where:
+    "Online. You will receive the link on WhatsApp after registering. Accessible from anywhere in Pakistan.",
+  cta: "Claim My Free Seat",
+  lede: "Everything about the session in one place, and straight answers to what women ask us most.",
+  passTag: "Free · Live · 60 minutes",
+  stubUrgency: "Seats are filling up",
+  noCountdown: "Seats are limited. Register early.",
+  faqTitle: "Common questions",
+  askTitle: "Still have a question?",
+};
+
 export const faq = [
-  ["Do I need experience?", "No. Most of our team started with no remote work experience."],
-  ["I’m still studying. Can I join?", "Yes. Nayab joined in her final year of medical school."],
+  [
+    "Do I need prior experience?",
+    "No. Most of our team members started with zero remote work experience.",
+  ],
+  [
+    "What if I am still studying?",
+    "You can join. Nayab was in her final year of medical school when she started with us.",
+  ],
   [
     "What happens after the webinar?",
-    "There’s a short qualification step. Candidates who meet the criteria are invited to training.",
+    "You will go through a short qualification step. If you meet the criteria, you will receive an invitation to join the training program.",
   ],
   [
     "Is PractiScale a real company?",
-    "PractiScale works with 500+ healthcare businesses in the US. You can review the company’s work at practiscale.com.",
+    "Yes. We serve 500+ healthcare businesses across the US. You can verify us on LinkedIn and Trustpilot before you register.",
   ],
-  ["Is the first month unpaid?", "Yes. Paid roles follow successful training and assessment."],
+  [
+    "Is the training really unpaid for the first month?",
+    "Yes. We say this upfront because we want the right women in the program. The first month is where you build the foundation. From Month 2, you are earning.",
+  ],
 ] as const;
+
+export const final = {
+  title: "Your seat is waiting",
+  sub: "Register now and join our WhatsApp group for the webinar.",
+  cta: "Claim My Free Seat Now",
+  fine: "By registering, you confirm that you meet the eligibility requirements listed above.",
+};
+
+export const disclaimer =
+  "Individual outcomes vary. The case studies shown on this page represent real PractiScale team members. Salary figures are self-reported. Earnings shown are not a guarantee of future results and depend entirely on individual performance, effort, and consistency during and after the training program.";
+
+export const popup = {
+  title: "Save your free seat",
+  step: "Step 1 of 2 · takes 30 seconds",
+  cta: "Continue",
+  privacy: "We never share your details. No spam.",
+};
+
+export const qualify = {
+  title: "A Few Quick Questions",
+  sub: "Step 2 of 2. Just two answers and you're done.",
+  q1: "Are you a woman?",
+  q2: "Do you have access to a laptop and a reliable internet connection?",
+  cta: "Continue",
+};
+
+export const thanks = {
+  title: "You’re Qualified!",
+  sub: "Your spot for the Remote Virtual Assistant Webinar is almost confirmed.",
+  listTitle: "Join our WhatsApp community now to receive:",
+  list: [
+    "Webinar date and time",
+    "Joining instructions",
+    "Important updates and reminders",
+    "Support from our team",
+  ],
+  buttonIntro: "Click the button below to join the official community:",
+  button: "Join the WhatsApp Community",
+  warn: "Please join now—your registration will be completed after you join the community.",
+  fallback: "If the button does not work, copy and open this link in WhatsApp:",
+  closing: "We look forward to seeing you inside!",
+};
+
+export const notEligible = {
+  title: "Thank you for your interest",
+  body: "At this time, the webinar is designed specifically for women who have access to a laptop and reliable internet connection. We appreciate your interest and wish you the best.",
+};

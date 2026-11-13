@@ -58,7 +58,7 @@ export default function SocialDock() {
     };
   }, [isOpen]);
 
-  if (pathname === "/virtual-assistant") return null;
+  if (pathname.startsWith("/virtual-assistant")) return null;
 
   return (
     <aside
