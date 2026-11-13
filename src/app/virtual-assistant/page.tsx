@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   },
   description:
     "Explore a remote Virtual Assistant career with PractiScale. Learn about the work, training, 6 PM to 3 AM hours, and the first unpaid training month at our free live webinar.",
-  alternates: { canonical: "/virtual-assistent" },
+  alternates: { canonical: "/virtual-assistant" },
   openGraph: {
     title: "Start a remote VA career from home | PractiScale webinar",
     description: "A free, live, one-hour webinar on the Virtual Assistant career path at PractiScale.",
     type: "website",
-    url: "/virtual-assistent",
+    url: "/virtual-assistant",
     images: [vsl.poster],
   },
 };

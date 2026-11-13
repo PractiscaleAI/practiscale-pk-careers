@@ -30,10 +30,34 @@ const salesForms = {
   remoteCloser:
     "https://docs.google.com/forms/d/e/1FAIpQLSf0Isf_bbOa6Tt0ntPcX9Pj_JrrX3QEZElx5e3VBjC9ExWokw/viewform",
 };
-const mediaForm =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdnu6NQ0gvWKLKgGrS1zUbi_GKyWCLSn35ATJchiUszKiVBEg/viewform";
-const operationsForm =
-  "https://docs.google.com/forms/d/e/1FAIpQLScvwNjI0FKQAH2pdhy5-Ig6Gob9NHxEBX-QfGa39PNaiinffA/viewform";
+const mediaForms = {
+  copywriter:
+    "https://docs.google.com/forms/d/e/1FAIpQLScDn984Le0mqs0f85k9lWHrDf-d-LX1QIymSl2UWwsUaHdi7Q/viewform",
+  femaleContentCreator:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdDVpEuKpmi9uK6kXjcJTy6m9tZQCSou7F0Rmu0rqt-ZNWVGg/viewform",
+  videographer:
+    "https://docs.google.com/forms/d/e/1FAIpQLSflw_yogBZ6MEkWdxm1pa1K6VxzcwLJ45j6VJUzmdZ44WmmYg/viewform",
+  socialMediaManager:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeuxPB9mBX9zNFw6fuiIXLjAuihsxcZobbl9s4wZY2nCskpug/viewform",
+  contentStrategist:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdUFAAIPwvG7j14QfKm-TpJgNB8LMztGwU4BLoGClKz70AWiw/viewform",
+  videoEditor:
+    "https://docs.google.com/forms/d/e/1FAIpQLScX3NJToMfQv6EyoCOk66sI28HTUb6QvutPiCA8oE-3tJq6XA/viewform",
+  graphicDesigner:
+    "https://docs.google.com/forms/d/e/1FAIpQLSe14Xwb1z8tnTndJyZTciag5LH3hb62sfWvqRx2d4yJYKg55g/viewform",
+};
+const operationsForms = {
+  crmAiExpert:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeOAAoRFKj_6RBcBPXGpfp-BDYTLlFsMU3ObDKrd7gHKG6NKA/viewform",
+  itSupportExecutive:
+    "https://docs.google.com/forms/d/e/1FAIpQLSf0CMB7ZvQDU3lw2lBvSIiIGo7MurSQIUMPZ5HBa0Kopvt16Q/viewform",
+  onsiteHrRecruiter:
+    "https://docs.google.com/forms/d/e/1FAIpQLSceGHzscBn9jUPZfqUblDuJcj_-eYiQ3YHvqYOb0KB_63AK8Q/viewform",
+  fullStackMarketer:
+    "https://docs.google.com/forms/d/e/1FAIpQLSe_h1qtsFv5QYd7LmhCXx6oPqEb_kYc2wOXOGBbmuIb3jwqmw/viewform",
+  remoteHrRecruiter:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdJldcrw82OMMKrian_-QQf5Bn2nlGVDxrlHiyC-pMGUTo5BA/viewform",
+};
 
 export const jobRoles: JobRole[] = [
   {
@@ -102,7 +126,7 @@ export const jobRoles: JobRole[] = [
     duties:
       "Write video scripts, social captions, advertising copy and founder content.",
     requirements: "Strong writing, clear hooks and relevant writing samples.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.copywriter,
   },
   {
     title: "Female Content Creator",
@@ -115,7 +139,7 @@ export const jobRoles: JobRole[] = [
       "Develop ideas, present on camera and create reels and brand videos.",
     requirements:
       "Confident on-camera delivery, creativity and sample content.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.femaleContentCreator,
   },
   {
     title: "Videographer",
@@ -128,7 +152,7 @@ export const jobRoles: JobRole[] = [
       "Film interviews, office content, events and promotions; manage lighting, audio and footage.",
     requirements:
       "Camera, lighting and audio skills with a relevant portfolio.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.videographer,
   },
   {
     title: "Social Media Manager",
@@ -141,7 +165,7 @@ export const jobRoles: JobRole[] = [
       "Manage content calendars, publishing and community responses; track results.",
     requirements:
       "Social platform knowledge, organization and reporting skills.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.socialMediaManager,
   },
   {
     title: "Content Strategist",
@@ -153,7 +177,7 @@ export const jobRoles: JobRole[] = [
     duties:
       "Plan themes, campaigns and briefs; research audiences and use performance data to guide content.",
     requirements: "Content planning, audience research and analytical skills.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.contentStrategist,
   },
   {
     title: "Video Editor",
@@ -166,7 +190,7 @@ export const jobRoles: JobRole[] = [
       "Edit reels, interviews, testimonials and ads with effective pacing, audio, captions and motion graphics where needed.",
     requirements:
       "Editing portfolio, attention to detail and reliable turnaround.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.videoEditor,
   },
   {
     title: "Graphic Designer",
@@ -180,7 +204,7 @@ export const jobRoles: JobRole[] = [
       "Create social posts, carousels, advertising visuals and other branded designs.",
     requirements:
       "Strong portfolio, typography and layout skills, and consistent use of brand guidelines.",
-    applyUrl: mediaForm,
+    applyUrl: mediaForms.graphicDesigner,
   },
   {
     title: "CRM + AI Expert",
@@ -194,7 +218,7 @@ export const jobRoles: JobRole[] = [
       "Build and optimize CRM workflows and automations, and integrate AI tools and third-party platforms.",
     requirements:
       "Hands-on GoHighLevel, CRM workflows, automation, APIs or webhooks and AI integrations. n8n, Make or Zapier is a plus.",
-    applyUrl: operationsForm,
+    applyUrl: operationsForms.crmAiExpert,
   },
   {
     title: "IT Support Executive",
@@ -207,7 +231,7 @@ export const jobRoles: JobRole[] = [
       "Troubleshoot hardware, software and network issues; maintain systems and servers.",
     requirements:
       "Hardware, networking, server management, configuration, backups and general IT support knowledge.",
-    applyUrl: operationsForm,
+    applyUrl: operationsForms.itSupportExecutive,
   },
   {
     title: "Onsite HR Recruiter",
@@ -220,7 +244,7 @@ export const jobRoles: JobRole[] = [
       "Manage postings, screening, interview coordination, follow-ups and hiring records.",
     requirements:
       "Good communication and interpersonal skills, basic English and candidate coordination.",
-    applyUrl: operationsForm,
+    applyUrl: operationsForms.onsiteHrRecruiter,
   },
   {
     title: "Full-Stack Marketer",
@@ -234,7 +258,7 @@ export const jobRoles: JobRole[] = [
       "Lead ICP research, positioning, offers, acquisition, funnels, CRM automation, conversion and performance analysis.",
     requirements:
       "B2B marketing, paid media, funnels, CRM, analytics and revenue attribution. US-market experience is preferred.",
-    applyUrl: operationsForm,
+    applyUrl: operationsForms.fullStackMarketer,
   },
   {
     title: "Remote HR Recruiter",
@@ -247,6 +271,6 @@ export const jobRoles: JobRole[] = [
       "Source and screen candidates, coordinate interviews, follow up and maintain pipelines.",
     requirements:
       "Based in Rawalpindi or Islamabad, with good interpersonal skills and basic English.",
-    applyUrl: operationsForm,
+    applyUrl: operationsForms.remoteHrRecruiter,
   },
 ];

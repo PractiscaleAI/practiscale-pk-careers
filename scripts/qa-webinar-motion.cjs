@@ -1,5 +1,5 @@
 /**
- * QA for /virtual-assistent: no sideways scroll, the hero's haze clears
+ * QA for /virtual-assistant: no sideways scroll, the hero's haze clears
  * while the moon is still rising, she and the title share the scene with
  * the title above her and clear of her on wide screens, the stories reel always focuses the card
  * nearest its focus line, and the career path finishes fully inked.
@@ -12,7 +12,7 @@ const path = require("node:path");
 const { chromium } = require("@playwright/test");
 const { default: AxeBuilder } = require("@axe-core/playwright");
 
-const url = (process.env.QA_BASE_URL || "http://127.0.0.1:3000") + "/virtual-assistent?still";
+const url = (process.env.QA_BASE_URL || "http://127.0.0.1:3000") + "/virtual-assistant?still";
 const sizes = [
   [1920, 1080],
   [1440, 900],

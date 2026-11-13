@@ -1,5 +1,5 @@
 /**
- * Every word on the /virtual-assistent page. Event specifics (date, time,
+ * Every word on the /virtual-assistant page. Event specifics (date, time,
  * form endpoint, verified links) live in `@/config/webinar`.
  */
 import { webinar } from "@/config/webinar";

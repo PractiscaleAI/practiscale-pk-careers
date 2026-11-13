@@ -1,7 +1,7 @@
 /**
  * Webinar registration → GoHighLevel inbound webhook.
  *
- * The /virtual-assistent form posts here (same origin), and this handler
+ * The /virtual-assistant form posts here (same origin), and this handler
  * validates the submission and forwards it to the GHL workflow's inbound
  * webhook. Keeping the webhook server-side means its URL never reaches the
  * browser and the browser never makes a cross-site request.

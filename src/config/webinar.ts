@@ -1,4 +1,4 @@
-/** Event details and verified destinations for the /virtual-assistent page. */
+/** Event details and verified destinations for the /virtual-assistant page. */
 export const webinar = {
   DATE: undefined as string | undefined,
   TIME: undefined as string | undefined,

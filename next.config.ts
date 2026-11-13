@@ -6,6 +6,13 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: { formats: ["image/avif", "image/webp"] },
   devIndicators: false,
+  async redirects() {
+    // The VA landing page was first published under a misspelled slug; keep
+    // old links (ads, WhatsApp shares) working.
+    return [
+      { source: "/virtual-assistent", destination: "/virtual-assistant", permanent: true },
+    ];
+  },
   async headers() {
     // Keep the policy compatible with Next's inline bootstrap scripts and the
     // same-origin preloader iframe. Restrict higher-risk browser capabilities.
