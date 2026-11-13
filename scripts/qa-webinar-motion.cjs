@@ -10,6 +10,7 @@
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const { chromium } = require("@playwright/test");
+const { default: AxeBuilder } = require("@axe-core/playwright");
 
 const url = (process.env.QA_BASE_URL || "http://127.0.0.1:3000") + "/virtual-assistent?still";
 const sizes = [
@@ -42,6 +43,23 @@ async function pinTo(page, selector, p) {
   }, p);
   await frames(page);
 }
+
+// Agenda conversation: which messages are shown, and is the newest in view?
+const chatState = (page) =>
+  page.evaluate(() => {
+    const root = document.querySelector("[data-va-agenda]");
+    const feed = root.querySelector("[data-chat-feed]").parentElement.getBoundingClientRect();
+    const shown = (sel) => [...root.querySelectorAll(sel)].filter((el) => getComputedStyle(el).display !== "none");
+    const all = shown("[data-chat-q], [data-chat-typing], [data-chat-a], [data-chat-end]");
+    const last = all.at(-1)?.getBoundingClientRect();
+    return {
+      live: root.hasAttribute("data-live"),
+      q: shown("[data-chat-q]").length,
+      a: shown("[data-chat-a]").length,
+      end: shown("[data-chat-end]").length,
+      lastInView: !last || (last.top >= feed.top - 1 && last.bottom <= feed.bottom + 1),
+    };
+  });
 
 async function shot(page, name) {
   if (!process.env.QA_ARTIFACTS_DIR) return;
@@ -77,17 +95,79 @@ async function noSideways(page, where) {
         const layers = [...document.querySelectorAll("[data-layer]")];
         return {
           room: op("room"),
-          desk: op("desk"),
-          her: op("her"),
+          seat: op("seat"),
           titleOnTop: layers.every((l) => l.compareDocumentPosition(title) & Node.DOCUMENT_POSITION_FOLLOWING),
         };
       });
-      assert.equal(st.room + st.desk + st.her, 0, `no-JS hero shows the composite: ${JSON.stringify(st)}`);
+      assert.equal(st.room + st.seat, 0, `no-JS hero shows the composite: ${JSON.stringify(st)}`);
       assert.ok(st.titleOnTop, "hero title is not above every layer");
-      console.log("ok no-js start pose");
+      const chat = await chatState(page);
+      assert.ok(!chat.live && chat.q === 5 && chat.a === 5 && chat.end === 1, `no-JS agenda hides messages: ${JSON.stringify(chat)}`);
+      console.log("ok no-js start pose and full agenda");
     } catch (error) {
       failures.push(error.message);
       console.error(`FAIL no-js: ${error.message}`);
+    } finally {
+      await ctx.close();
+    }
+  }
+
+  // Reduced motion: the agenda does not pin and shows every message; axe
+  // finds no violations in the section.
+  {
+    const ctx = await browser.newContext({ reducedMotion: "reduce", viewport: { width: 1440, height: 900 } });
+    const page = await ctx.newPage();
+    try {
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.locator("#agenda").scrollIntoViewIfNeeded();
+      await frames(page, 4);
+      const chat = await chatState(page);
+      assert.ok(!chat.live && chat.q === 5 && chat.a === 5 && chat.end === 1, `reduced-motion agenda: ${JSON.stringify(chat)}`);
+      const axe = await new AxeBuilder({ page }).include("#agenda").analyze();
+      assert.equal(axe.violations.length, 0, `axe (agenda): ${axe.violations.map((v) => `${v.id}: ${v.help}`).join("; ")}`);
+      console.log("ok reduced-motion agenda + axe");
+    } catch (error) {
+      failures.push(error.message);
+      console.error(`FAIL reduced-motion: ${error.message}`);
+    } finally {
+      await ctx.close();
+    }
+  }
+
+  // Regression (user report, Nov 2026): on phones her hands must rest on the
+  // laptop keys. Compares the settled phone hero's hands area against the
+  // approved render. Refresh deliberately with QA_UPDATE_BASELINE=1 after an
+  // approved image change.
+  {
+    const sharp = require("sharp");
+    const fs = require("node:fs");
+    const baseline = path.join(__dirname, "assets", "va-hero-phone-hands.png");
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
+    const page = await ctx.newPage();
+    try {
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.evaluate(() => {
+        const e = document.querySelector("[data-va-hero]");
+        scrollTo(0, (e.offsetHeight - innerHeight) * 0.5);
+      });
+      await page.waitForFunction(() => document.querySelector('[data-layer="seat"] img').complete);
+      await page.waitForTimeout(900);
+      const shot = await page.screenshot({ clip: { x: 60, y: 560, width: 300, height: 220 } });
+      if (process.env.QA_UPDATE_BASELINE === "1" || !fs.existsSync(baseline)) {
+        fs.writeFileSync(baseline, shot);
+        console.log("ok phone hands baseline written");
+      } else {
+        const raw = (b) => sharp(b).removeAlpha().raw().toBuffer();
+        const [a, b] = await Promise.all([raw(shot), raw(fs.readFileSync(baseline))]);
+        let e = 0;
+        for (let i = 0; i < a.length; i++) e += Math.abs(a[i] - b[i]);
+        const diff = e / a.length;
+        assert.ok(diff < 6, `phone hero hands differ from the approved render (mean diff ${diff.toFixed(1)})`);
+        console.log(`ok phone hands on the keys (diff ${diff.toFixed(2)})`);
+      }
+    } catch (error) {
+      failures.push(error.message);
+      console.error(`FAIL phone hands: ${error.message}`);
     } finally {
       await ctx.close();
     }
@@ -114,36 +194,37 @@ async function noSideways(page, where) {
       }));
       assert.ok(hero.veil < 0.01, `${tag}: haze not cleared at 0.18 (${hero.veil})`);
       assert.ok(hero.moon > 0, `${tag}: moon already risen when the haze clears`);
-      // Regression (user report, Nov 2026): her hands must stay on the laptop,
-      // so her layer and the desk layer always share one position.
-      for (const p of [0.15, 0.3, 0.85]) {
-        await pinTo(page, "[data-va-hero]", p);
-        const pair = await page.evaluate(() => [
-          document.querySelector('[data-layer="desk"]').style.transform,
-          document.querySelector('[data-layer="her"]').style.transform,
-        ]);
-        assert.equal(pair[0], pair[1], `${tag} hero ${p}: desk and her drift apart`);
-      }
-      // Regression (user report, Nov 2026): she must be in the scene while
-      // FROM HOME reads, and on wide screens the title must end before her.
-      for (const p of [0.4, 0.5, 0.6]) {
+      // Regression (user report, Nov 2026): her hands must stay on the laptop
+      // on every screen — desk and she are one layer, so there is nothing to
+      // drift. Guard against the layers being split again.
+      const layers = await page.evaluate(() => [...document.querySelectorAll("[data-layer]")].map((l) => l.dataset.layer));
+      assert.deepEqual(layers, ["sky", "moon", "city", "room", "seat"], `${tag}: hero layers ${layers}`);
+
+      // Regression (user report, Nov 2026): the message is readable from the
+      // first frame, then shares the scene with her; on wide screens the
+      // heading ends before she begins.
+      for (const p of [0, 0.4, 0.5, 0.6]) {
         await pinTo(page, "[data-va-hero]", p);
         const t = await page.evaluate(() => {
-          const h1 = document.querySelector("[data-va-title] h1");
-          // Measure only the visible words; the heading also holds visually
-          // hidden screen-reader text.
+          const big = document.querySelector("[data-va-title] h1 span");
           const r = document.createRange();
-          r.selectNodeContents(h1.lastChild);
+          r.selectNodeContents(big);
           const box = r.getBoundingClientRect();
+          const cta = document.querySelector("[data-va-title] a").getBoundingClientRect();
           return {
             title: Number(getComputedStyle(document.querySelector("[data-va-title]")).opacity),
-            her: Number(getComputedStyle(document.querySelector('[data-layer="her"]')).opacity),
+            seat: Number(getComputedStyle(document.querySelector('[data-layer="seat"]')).opacity),
             right: box.right / innerWidth,
+            left: box.left,
+            ctaIn: cta.top >= 0 && cta.bottom <= innerHeight,
             wide: innerWidth >= innerHeight,
           };
         });
-        assert.ok(t.title > 0.98 && t.her > 0.98, `${tag} hero ${p}: title ${t.title} / her ${t.her} not both shown`);
-        if (t.wide) assert.ok(t.right <= 0.62, `${tag} hero ${p}: title runs to ${(t.right * 100).toFixed(0)}% of the width, into her`);
+        assert.ok(t.title > 0.98, `${tag} hero ${p}: message not readable (${t.title})`);
+        assert.ok(t.ctaIn, `${tag} hero ${p}: the reserve button is off screen`);
+        assert.ok(t.left >= 0 && t.right <= 1, `${tag} hero ${p}: FROM HOME runs off screen`);
+        if (p > 0) assert.ok(t.seat > 0.98, `${tag} hero ${p}: she is not in the scene`);
+        if (t.wide && p > 0) assert.ok(t.right <= 0.62, `${tag} hero ${p}: heading runs to ${(t.right * 100).toFixed(0)}% of the width, into her`);
       }
 
       // VSL + metrics.
@@ -207,7 +288,23 @@ async function noSideways(page, where) {
       assert.ok(route.inked.length === 4 && route.inked.every((v) => v < 0.001), `${tag}: path not fully inked ${route.inked}`);
       assert.ok(route.size[1] > h * 0.3, `${tag}: path drawing too small (${route.size.map(Math.round)})`);
 
-      for (const id of ["requirements", "agenda", "faq", "reserve"]) {
+      // The conversation only ever grows, ends complete, keeps the newest
+      // message fully in view, and fits the screen.
+      let prev = { q: 0, a: 0 };
+      for (const p of [0.1, 0.3, 0.55, 0.8, 1]) {
+        await pinTo(page, "[data-va-agenda]", p);
+        await page.waitForTimeout(500);
+        await noSideways(page, `${tag} agenda ${p}`);
+        const chat = await chatState(page);
+        assert.ok(chat.live, `${tag} agenda not live`);
+        assert.ok(chat.q >= prev.q && chat.a >= prev.a, `${tag} agenda ${p}: messages went backwards`);
+        assert.ok(chat.lastInView, `${tag} agenda ${p}: newest message is cut off`);
+        prev = chat;
+        await shot(page, `${tag}-agenda-${p}`);
+      }
+      assert.ok(prev.q === 5 && prev.a === 5 && prev.end === 1, `${tag} agenda incomplete at the end: ${JSON.stringify(prev)}`);
+
+      for (const id of ["requirements", "faq", "reserve"]) {
         await page.evaluate((s) => document.getElementById(s).scrollIntoView({ behavior: "instant" }), id);
         await page.waitForTimeout(1100);
         await noSideways(page, `${tag} ${id}`);

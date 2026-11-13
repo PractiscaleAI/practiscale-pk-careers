@@ -21,17 +21,19 @@ export const nav = [
 ] as const;
 
 export const hero = {
-  title: "From home",
-  srTitle: "Start a remote VA career ",
   kicker: "Free live webinar · for women in Pakistan",
+  lead: "Start a remote VA career",
+  title: "From home",
+  sub: "Work the night shift for US healthcare clinics, from your own desk. See exactly how in one free hour online.",
+  facts: "Online · 60 minutes · Free",
   veil: "Scroll to begin your shift",
-  route: "Pakistan ⇄ United States · Remote",
 };
 
 export const intro = {
-  eyebrow: "Start here",
-  heading: "Start a remote VA career from home.",
-  body: "See what Virtual Assistants do, how training works, and what the night shift requires. Then join the free live webinar.",
+  eyebrow: "Watch first",
+  heading: "See the work before you decide.",
+  body: "The founder explains the role, the training and the night shift — and you meet a woman already doing it.",
+  covers: ["What Virtual Assistants do", "How training works", "What the night shift requires"],
 };
 
 export const companyMetrics = [
@@ -85,22 +87,18 @@ export const path = {
   heading: "From webinar to paid role, drawn as you scroll.",
   legs: [
     {
-      when: "Hour 1",
       title: "Free live webinar",
       body: "One hour online to see the work, the training and the night shift.",
     },
     {
-      when: "Next",
       title: "Qualification",
       body: "A short qualification step. Candidates who meet the criteria are invited to training.",
     },
     {
-      when: "Month 1",
       title: "Training",
       body: "Your first month is training. It is unpaid, and it is where the skills are built.",
     },
     {
-      when: "After training",
       title: "Paid role",
       body: "Paid roles follow successful training and assessment, on the full 6 PM to 3 AM shift.",
     },
@@ -134,15 +132,24 @@ export const requirements = {
   ],
 } as const;
 
+/**
+ * The agenda, told as the questions women ask and what the host covers live.
+ * Replies describe the webinar's content only; they add no new claims.
+ */
 export const agenda = {
   eyebrow: "Webinar agenda",
-  heading: "One hour. Five answers.",
+  heading: "Your questions, answered live.",
+  lead: "Five questions every woman asks before starting. In one free hour online, the founder answers each of them.",
+  badge: "Preview",
+  day: "What you'll hear live",
+  replyNote: "Answered live in the webinar",
+  closing: { strong: "Bring your own question", rest: " — there's time for yours too." },
   items: [
-    ["00", "What is remote VA work?", "See the role and the US healthcare accounts behind it."],
-    ["12", "Can I start without experience?", "Understand who the program is built for."],
-    ["24", "What does training involve?", "Learn what the first month of training asks of you."],
-    ["36", "How do hours and earnings work?", "Hear the shift requirements and real individual outcomes."],
-    ["48", "What happens next?", "Know how to apply and what happens during qualification."],
+    { question: "What is remote VA work?", reply: "I'll show you the role, and the US healthcare accounts behind it." },
+    { question: "Can I start without experience?", reply: "I'll explain exactly who the program is built for." },
+    { question: "What does training involve?", reply: "You'll see what the first month of training asks of you." },
+    { question: "How do hours and earnings work?", reply: "The shift requirements, and real individual outcomes." },
+    { question: "What happens next?", reply: "How to apply, and what happens during qualification." },
   ],
 } as const;
 
@@ -150,10 +157,22 @@ export const host = {
   name: "Afrasyab Ahmed",
   role: "Founder and CEO · Webinar host",
   image: "/media/about/about-founder-portrait-desktop-v2.webp",
-  notes: [
-    "Every trainer, team leader, and manager in the VA department is a woman.",
-    "5,000 jobs for Pakistani women is the company’s goal.",
+  /** Head-and-shoulders crop of `image`, sized for the round avatars. */
+  avatar: "/media/va-hero/host-avatar-v1.webp",
+  /** [before, emphasis, after] */
+  facts: [
+    ["Every trainer, team leader and manager in the VA department is ", "a woman", "."],
+    ["The company’s goal: ", "5,000 jobs", " for Pakistani women."],
   ],
+} as const;
+
+/** Contacts for webinar questions (the company's published details). */
+export const contact = {
+  email: "hiring@practiscale.com",
+  phone: "+92 333 4000600",
+  phoneHref: "tel:+923334000600",
+  site: "practiscale.com",
+  siteHref: "https://practiscale.com/",
 };
 
 export const faq = [

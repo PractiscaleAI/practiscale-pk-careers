@@ -270,9 +270,6 @@ export default function CareerPath() {
 
         {/* Current leg. */}
         <div className={styles.pathLeg}>
-          <p className={styles.eyebrow}>
-            {current.when} · Step {leg + 1}/{content.legs.length}
-          </p>
           <div key={leg} className={styles.legIn} aria-live="polite">
             <h3>{current.title}</h3>
             <p>{current.body}</p>

@@ -47,8 +47,9 @@ export default function VslPlayer() {
             type="button"
             className={styles.vslPoster}
             onClick={() => setPlaying(true)}
-            aria-label={`Play video: ${vsl.title}`}
           >
+            {/* The visible caption is the button's name, prefixed for clarity. */}
+            <span className={styles.srOnly}>Play video: </span>
             <img
               src={vsl.poster}
               alt=""
@@ -62,13 +63,18 @@ export default function VslPlayer() {
                 <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
               </svg>
             </span>
-            <span className={styles.vslTag} aria-hidden="true">
-              <span className={styles.recDot} /> Watch · Afrasyab Ahmed, Founder &amp; CEO
+            <span className={styles.vslCap}>
+              <span>
+                <b>Work from home in Pakistan</b>
+                <small>Afrasyab Ahmed, Founder &amp; CEO</small>
+              </span>
+              <span className={styles.vslWatch}>
+                <span aria-hidden="true">▶ </span>Watch
+              </span>
             </span>
           </button>
         )}
       </div>
-      <div className={`${styles.brackets} ${styles.vslBrackets}`} aria-hidden="true" />
     </div>
   );
 }

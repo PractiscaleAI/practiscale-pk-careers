@@ -10,6 +10,7 @@ services:
     image: practiscale-pk:local
     environment:
       SITE_URL: ${SITE_URL:-https://practiscale.pk}
+      GHL_WEBINAR_WEBHOOK_URL: ${GHL_WEBINAR_WEBHOOK_URL:-}
     ports:
       - "127.0.0.1:3000:3000"
     init: true

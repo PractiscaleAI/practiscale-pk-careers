@@ -121,46 +121,34 @@ export function Reveals() {
   return null;
 }
 
-/** Ticking countdown; shows dashes until a target is configured. */
-export function Countdown({ target, label }: { target?: string; label: string }) {
+/**
+ * "Registration closes in 2 days, 14 hours" as a line of text. Shows the
+ * fallback until a closing time is configured.
+ */
+export function ClosesIn({ target, fallback }: { target?: string; fallback: string }) {
   const [now, setNow] = useState<number | null>(null);
   useEffect(() => {
     if (!target) return;
     const tick = () => setNow(Date.now());
     tick();
-    const id = window.setInterval(tick, 1000);
+    const id = window.setInterval(tick, 30_000);
     return () => window.clearInterval(id);
   }, [target]);
 
-  const ms = target && now !== null ? Math.max(0, new Date(target).getTime() - now) : null;
-  const s = ms === null ? null : Math.floor(ms / 1000);
-  const units: [string, number | null][] = [
-    ["Days", s === null ? null : Math.floor(s / 86400)],
-    ["Hrs", s === null ? null : Math.floor((s % 86400) / 3600)],
-    ["Min", s === null ? null : Math.floor((s % 3600) / 60)],
-    ["Sec", s === null ? null : s % 60],
-  ];
-  const [d, h, m] = units.map(([, v]) => v);
-
-  return (
-    <div className={styles.countdown}>
-      <p className={styles.label}>{label}</p>
-      <div
-        className={styles.countdownUnits}
-        role="timer"
-        aria-label={
-          s === null
-            ? "Countdown starts once the webinar date is confirmed"
-            : `${d} days, ${h} hours, ${m} minutes until registration closes`
-        }
-      >
-        {units.map(([unit, v]) => (
-          <div key={unit} className={styles.brackets}>
-            <span>{v === null ? "--" : String(v).padStart(2, "0")}</span>
-            <small>{unit}</small>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  let text = fallback;
+  if (target) {
+    if (now === null) text = "Registration closes soon";
+    else {
+      const mins = Math.max(0, Math.floor((new Date(target).getTime() - now) / 60000));
+      const d = Math.floor(mins / 1440);
+      const h = Math.floor((mins % 1440) / 60);
+      const m = mins % 60;
+      const unit = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
+      text =
+        mins === 0
+          ? "Registration has closed"
+          : `Registration closes in ${d > 0 ? `${unit(d, "day")}, ${unit(h, "hour")}` : `${unit(h, "hour")}, ${unit(m, "minute")}`}`;
+    }
+  }
+  return <p className={styles.passNote}>{text}</p>;
 }
