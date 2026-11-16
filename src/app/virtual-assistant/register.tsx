@@ -13,7 +13,12 @@ import {
 } from "react";
 import { contact, popup, routes } from "./content";
 import styles from "./funnel.module.css";
-import { pakistaniMobile, postRegistration, saveLead } from "./lead";
+import {
+  captureAttribution,
+  pakistaniMobile,
+  postRegistration,
+  saveLead,
+} from "./lead";
 
 const OpenRegister = createContext<() => void>(() => {});
 
@@ -31,6 +36,7 @@ export function RegisterProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    captureAttribution();
     if (new URLSearchParams(window.location.search).has("register")) open();
   }, [open]);
 

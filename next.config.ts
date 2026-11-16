@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: { formats: ["image/avif", "image/webp"] },
   devIndicators: false,
+  // Remind about Next.js security advisories during dev/build (Next's default policy).
+  experimental: { agentUpgrade: "security" },
   async redirects() {
     // The VA landing page was first published under a misspelled slug; keep
     // old links (ads, WhatsApp shares) working.

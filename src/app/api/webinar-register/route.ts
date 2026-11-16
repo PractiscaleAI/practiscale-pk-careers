@@ -5,7 +5,9 @@
  *   1. stage "lead"           name, WhatsApp, email from the register popup
  *   2. stage "qualification"  the two yes/no answers, for the same contact
  * Each is validated and forwarded to the GHL workflow's inbound webhook, so
- * the contact exists even if the visitor drops off before step 2. Keeping the
+ * the contact exists even if the visitor drops off before step 2. Both calls
+ * also carry where she came from (utm_*, fbclid, gclid, referrer, landing
+ * page, and a summary traffic_source), captured in lead.ts. Keeping the
  * webhook server-side means its URL never reaches the browser.
  *
  * Configure with the GHL_WEBINAR_WEBHOOK_URL environment variable (Vercel
@@ -21,7 +23,36 @@ type Body = {
   isWoman?: unknown;
   hasLaptop?: unknown;
   website?: unknown; // honeypot: real visitors never fill it
+  attribution?: unknown; // utm_*, click ids, referrer, landing page
 };
+
+/** Sent on every call, empty when unknown, so GHL field mappings never break. */
+const ATTRIBUTION_FIELDS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "fbclid",
+  "gclid",
+  "referrer",
+  "landing_page",
+] as const;
+
+/** One readable answer to "where did she come from?" for GHL reports. */
+function trafficSource(fields: Record<string, string>): string {
+  if (fields.utm_source) return fields.utm_source.toLowerCase();
+  if (fields.fbclid) return "facebook";
+  if (fields.gclid) return "google";
+  if (fields.referrer) {
+    try {
+      return new URL(fields.referrer).hostname.replace(/^www\./, "");
+    } catch {
+      /* fall through */
+    }
+  }
+  return "direct";
+}
 
 const str = (v: unknown, max: number) =>
   typeof v === "string" ? v.trim().slice(0, max) : "";
@@ -90,6 +121,16 @@ export async function POST(request: Request) {
     page_url: request.headers.get("referer") ?? "",
     submitted_at: new Date().toISOString(),
   };
+  const attribution =
+    body.attribution && typeof body.attribution === "object"
+      ? (body.attribution as Record<string, unknown>)
+      : {};
+  for (const key of ATTRIBUTION_FIELDS)
+    payload[key] = str(
+      attribution[key],
+      key === "referrer" || key === "landing_page" ? 500 : 300,
+    );
+  payload.traffic_source = trafficSource(payload);
   if (stage === "lead") {
     payload.tag = "va-webinar-lead";
   } else {
