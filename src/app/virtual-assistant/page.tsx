@@ -541,7 +541,9 @@ export default function VirtualAssistantLanding() {
                       <Countdown target={closes} dark />
                     </>
                   ) : (
-                    <p className={styles.stubHead}>{details.noCountdown}</p>
+                    <p className={`${styles.stubHead} ${styles.stubNote}`}>
+                      {details.noCountdown}
+                    </p>
                   )}
                   <RegisterButton className={`${styles.cta} ${styles.block}`}>
                     {details.cta} <Arrow />

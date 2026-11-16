@@ -1256,9 +1256,18 @@
 .passStub .cta {
   box-shadow: none;
 }
+/* The stub is dark inside a light section: use the on-dark colours, not .light .assure. */
 .passStub .assure {
   justify-content: center;
   margin-top: 10px !important;
+  color: var(--on-dark);
+}
+.passStub .assure li::before {
+  color: var(--teal);
+}
+.stubNote {
+  justify-content: center;
+  text-align: center;
 }
 
 /* FAQ as question cards; the dark email card closes the column. */
@@ -1920,13 +1929,13 @@
   }
   .forYouGrid,
   .fitGrid,
-  .eventGrid,
-  .hostCard {
+  .eventGrid {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
   }
+  /* Tablet: keep the portrait beside the text so it shows uncut, as on desktop. */
   .hostCard {
-    gap: 0;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
   }
   .stats > div {
     padding: 18px 16px;
@@ -1961,9 +1970,6 @@
   }
   .journey::before {
     right: 0;
-  }
-  .hostPhoto {
-    min-height: 420px;
   }
   .hostText {
     padding: 28px 24px;
@@ -2027,6 +2033,17 @@
   }
   .bandGo .assure {
     gap: 6px 12px;
+  }
+  /* Stacked host card: a roughly square slot (card width = viewport minus the
+     21px gutters) shows the portrait from hair to chest. */
+  .hostCard {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hostPhoto {
+    min-height: max(420px, calc(100vw - 42px));
+  }
+  .hostPhoto img {
+    object-position: 50% 16%;
   }
 }
 /* Phones: full-width actions, stacked stories and pass rows. */

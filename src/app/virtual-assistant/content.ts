@@ -28,7 +28,7 @@ export const vsl = {
 export const host = {
   name: "Afrasyab Ahmed",
   role: "Founder & CEO · Your webinar host",
-  photo: "/media/about/about-founder-portrait-desktop-v2.webp",
+  photo: "/media/va-webinar/host-afrasyab-v2.webp",
 };
 
 export const hero = {
