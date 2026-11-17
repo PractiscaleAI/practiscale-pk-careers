@@ -3,7 +3,7 @@ export const applicationFormUrl =
 export const appointmentSetterTrainingFormUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSfY-KNuiBVQWo5ZCGNvg4KFZWHLku8zcieyJnt6e7Eng_ppTw/viewform";
 export const virtualAssistantTrainingFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSczW0ij76HC5QlBHH6p-8l1Zc23n6Z5Fn7FTwyAuRYkNIrNuQ/viewform";
+  "https://link.practiscale.com/widget/form/neakhQd3mrDkmjEMjimG";
 export const siteUrl = process.env.SITE_URL || "https://practiscale.pk";
 export const routes = [
   "/",

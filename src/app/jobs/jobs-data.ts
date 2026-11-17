@@ -20,43 +20,30 @@ export const jobTeams: { id: string; name: JobTeam; short: string; description: 
   { id: "operations", name: "Operations", short: "Operations", description: "Support the people and systems that keep our teams moving." },
 ];
 
+// GoHighLevel application forms, one per role.
+const ghlForm = (id: string) => `https://link.practiscale.com/widget/form/${id}`;
+
 const salesForms = {
-  onsiteCloser:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeRjN3wxPGVbLnqgEMONaZL-ma5KxsyMo94R-CDkIBgwqXwDQ/viewform",
-  onsiteSetter:
-    "https://docs.google.com/forms/d/e/1FAIpQLSfY-KNuiBVQWo5ZCGNvg4KFZWHLku8zcieyJnt6e7Eng_ppTw/viewform",
-  remoteSetter:
-    "https://docs.google.com/forms/d/e/1FAIpQLSchmjp3-kiZUvu0b2EotiH8nm8dqPnROuwN5qOzzGQXSERZQg/viewform",
-  remoteCloser:
-    "https://docs.google.com/forms/d/e/1FAIpQLSf0Isf_bbOa6Tt0ntPcX9Pj_JrrX3QEZElx5e3VBjC9ExWokw/viewform",
+  onsiteCloser: ghlForm("qcTlIJxYxseCnhUMOBRz"),
+  onsiteSetter: ghlForm("zOeM1tmNGSXwetp6TDGt"),
+  remoteSetter: ghlForm("l3FoIaB404B7qj6XCEOb"),
+  remoteCloser: ghlForm("pqlrMGAIxi2KigEb1W6U"),
 };
 const mediaForms = {
-  copywriter:
-    "https://docs.google.com/forms/d/e/1FAIpQLScDn984Le0mqs0f85k9lWHrDf-d-LX1QIymSl2UWwsUaHdi7Q/viewform",
-  femaleContentCreator:
-    "https://docs.google.com/forms/d/e/1FAIpQLSdDVpEuKpmi9uK6kXjcJTy6m9tZQCSou7F0Rmu0rqt-ZNWVGg/viewform",
-  videographer:
-    "https://docs.google.com/forms/d/e/1FAIpQLSflw_yogBZ6MEkWdxm1pa1K6VxzcwLJ45j6VJUzmdZ44WmmYg/viewform",
-  socialMediaManager:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeuxPB9mBX9zNFw6fuiIXLjAuihsxcZobbl9s4wZY2nCskpug/viewform",
-  contentStrategist:
-    "https://docs.google.com/forms/d/e/1FAIpQLSdUFAAIPwvG7j14QfKm-TpJgNB8LMztGwU4BLoGClKz70AWiw/viewform",
-  videoEditor:
-    "https://docs.google.com/forms/d/e/1FAIpQLScX3NJToMfQv6EyoCOk66sI28HTUb6QvutPiCA8oE-3tJq6XA/viewform",
-  graphicDesigner:
-    "https://docs.google.com/forms/d/e/1FAIpQLSe14Xwb1z8tnTndJyZTciag5LH3hb62sfWvqRx2d4yJYKg55g/viewform",
+  copywriter: ghlForm("HOn9HxuaPh5VeYdPfin9"),
+  femaleContentCreator: ghlForm("NgyiB7wjWpg5riVQR2RH"),
+  videographer: ghlForm("Fj8smXEkpXITBjqUFMic"),
+  socialMediaManager: ghlForm("scLU16aQTGYeucjlXVMl"),
+  contentStrategist: ghlForm("4oEBlDAILk3koAuBC9Oa"),
+  videoEditor: ghlForm("XJTs4cAm3Y2SAmWIdBdZ"),
+  graphicDesigner: ghlForm("ZPpdG3v40ATs8Rp9QyQG"),
 };
 const operationsForms = {
-  crmAiExpert:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeOAAoRFKj_6RBcBPXGpfp-BDYTLlFsMU3ObDKrd7gHKG6NKA/viewform",
-  itSupportExecutive:
-    "https://docs.google.com/forms/d/e/1FAIpQLSf0CMB7ZvQDU3lw2lBvSIiIGo7MurSQIUMPZ5HBa0Kopvt16Q/viewform",
-  onsiteHrRecruiter:
-    "https://docs.google.com/forms/d/e/1FAIpQLSceGHzscBn9jUPZfqUblDuJcj_-eYiQ3YHvqYOb0KB_63AK8Q/viewform",
-  fullStackMarketer:
-    "https://docs.google.com/forms/d/e/1FAIpQLSe_h1qtsFv5QYd7LmhCXx6oPqEb_kYc2wOXOGBbmuIb3jwqmw/viewform",
-  remoteHrRecruiter:
-    "https://docs.google.com/forms/d/e/1FAIpQLSdJldcrw82OMMKrian_-QQf5Bn2nlGVDxrlHiyC-pMGUTo5BA/viewform",
+  crmAiExpert: ghlForm("gyRcZNfwsc6CngDNgdlo"),
+  itSupportExecutive: ghlForm("ClQMrqX7MKVBry6lU5hA"),
+  onsiteHrRecruiter: ghlForm("6t4u871kWCADUWWT6ajv"),
+  fullStackMarketer: ghlForm("9SnH0FvJOQ6D1lYfgZ7b"),
+  remoteHrRecruiter: ghlForm("l9F8gBTOMDWzSeDOPVYR"),
 };
 
 export const jobRoles: JobRole[] = [

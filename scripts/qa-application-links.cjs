@@ -1,36 +1,51 @@
 const { chromium } = require("@playwright/test");
 
 const base = process.env.QA_BASE_URL || "http://127.0.0.1:3000";
-const form = (id) => `https://docs.google.com/forms/d/e/${id}/viewform`;
+const form = (id) => `https://link.practiscale.com/widget/form/${id}`;
 
-// Every open role on /jobs must open its own Google Form.
+// Every open role on /jobs must open its own GoHighLevel form.
 const roleForms = {
   // Sales
-  "Onsite Sales Closer": form("1FAIpQLSeRjN3wxPGVbLnqgEMONaZL-ma5KxsyMo94R-CDkIBgwqXwDQ"),
-  "Onsite Appointment Setter": form("1FAIpQLSfY-KNuiBVQWo5ZCGNvg4KFZWHLku8zcieyJnt6e7Eng_ppTw"),
-  "Remote Sales Closer": form("1FAIpQLSf0Isf_bbOa6Tt0ntPcX9Pj_JrrX3QEZElx5e3VBjC9ExWokw"),
-  "Remote Appointment Setter": form("1FAIpQLSchmjp3-kiZUvu0b2EotiH8nm8dqPnROuwN5qOzzGQXSERZQg"),
+  "Onsite Sales Closer": form("qcTlIJxYxseCnhUMOBRz"),
+  "Onsite Appointment Setter": form("zOeM1tmNGSXwetp6TDGt"),
+  "Remote Sales Closer": form("pqlrMGAIxi2KigEb1W6U"),
+  "Remote Appointment Setter": form("l3FoIaB404B7qj6XCEOb"),
   // Media
-  Copywriter: form("1FAIpQLScDn984Le0mqs0f85k9lWHrDf-d-LX1QIymSl2UWwsUaHdi7Q"),
-  "Female Content Creator": form("1FAIpQLSdDVpEuKpmi9uK6kXjcJTy6m9tZQCSou7F0Rmu0rqt-ZNWVGg"),
-  Videographer: form("1FAIpQLSflw_yogBZ6MEkWdxm1pa1K6VxzcwLJ45j6VJUzmdZ44WmmYg"),
-  "Social Media Manager": form("1FAIpQLSeuxPB9mBX9zNFw6fuiIXLjAuihsxcZobbl9s4wZY2nCskpug"),
-  "Content Strategist": form("1FAIpQLSdUFAAIPwvG7j14QfKm-TpJgNB8LMztGwU4BLoGClKz70AWiw"),
-  "Video Editor": form("1FAIpQLScX3NJToMfQv6EyoCOk66sI28HTUb6QvutPiCA8oE-3tJq6XA"),
-  "Graphic Designer": form("1FAIpQLSe14Xwb1z8tnTndJyZTciag5LH3hb62sfWvqRx2d4yJYKg55g"),
+  Copywriter: form("HOn9HxuaPh5VeYdPfin9"),
+  "Female Content Creator": form("NgyiB7wjWpg5riVQR2RH"),
+  Videographer: form("Fj8smXEkpXITBjqUFMic"),
+  "Social Media Manager": form("scLU16aQTGYeucjlXVMl"),
+  "Content Strategist": form("4oEBlDAILk3koAuBC9Oa"),
+  "Video Editor": form("XJTs4cAm3Y2SAmWIdBdZ"),
+  "Graphic Designer": form("ZPpdG3v40ATs8Rp9QyQG"),
   // Operations
-  "CRM + AI Expert": form("1FAIpQLSeOAAoRFKj_6RBcBPXGpfp-BDYTLlFsMU3ObDKrd7gHKG6NKA"),
-  "IT Support Executive": form("1FAIpQLSf0CMB7ZvQDU3lw2lBvSIiIGo7MurSQIUMPZ5HBa0Kopvt16Q"),
-  "Onsite HR Recruiter": form("1FAIpQLSceGHzscBn9jUPZfqUblDuJcj_-eYiQ3YHvqYOb0KB_63AK8Q"),
-  "Full-Stack Marketer": form("1FAIpQLSe_h1qtsFv5QYd7LmhCXx6oPqEb_kYc2wOXOGBbmuIb3jwqmw"),
-  "Remote HR Recruiter": form("1FAIpQLSdJldcrw82OMMKrian_-QQf5Bn2nlGVDxrlHiyC-pMGUTo5BA"),
+  "CRM + AI Expert": form("gyRcZNfwsc6CngDNgdlo"),
+  "IT Support Executive": form("ClQMrqX7MKVBry6lU5hA"),
+  "Onsite HR Recruiter": form("6t4u871kWCADUWWT6ajv"),
+  "Full-Stack Marketer": form("9SnH0FvJOQ6D1lYfgZ7b"),
+  "Remote HR Recruiter": form("l9F8gBTOMDWzSeDOPVYR"),
 };
-const virtualAssistantForm = form(
-  "1FAIpQLSczW0ij76HC5QlBHH6p-8l1Zc23n6Z5Fn7FTwyAuRYkNIrNuQ",
-);
+const virtualAssistantForm = form("neakhQd3mrDkmjEMjimG");
+// Google Forms that the roles and the VA program used before GoHighLevel.
 const retiredSharedForms = [
   "1FAIpQLSdnu6NQ0gvWKLKgGrS1zUbi_GKyWCLSn35ATJchiUszKiVBEg", // old shared Media form
   "1FAIpQLScvwNjI0FKQAH2pdhy5-Ig6Gob9NHxEBX-QfGa39PNaiinffA", // old shared Operations form
+  "1FAIpQLSeRjN3wxPGVbLnqgEMONaZL-ma5KxsyMo94R-CDkIBgwqXwDQ",
+  "1FAIpQLSf0Isf_bbOa6Tt0ntPcX9Pj_JrrX3QEZElx5e3VBjC9ExWokw",
+  "1FAIpQLSchmjp3-kiZUvu0b2EotiH8nm8dqPnROuwN5qOzzGQXSERZQg",
+  "1FAIpQLScDn984Le0mqs0f85k9lWHrDf-d-LX1QIymSl2UWwsUaHdi7Q",
+  "1FAIpQLSdDVpEuKpmi9uK6kXjcJTy6m9tZQCSou7F0Rmu0rqt-ZNWVGg",
+  "1FAIpQLSflw_yogBZ6MEkWdxm1pa1K6VxzcwLJ45j6VJUzmdZ44WmmYg",
+  "1FAIpQLSeuxPB9mBX9zNFw6fuiIXLjAuihsxcZobbl9s4wZY2nCskpug",
+  "1FAIpQLSdUFAAIPwvG7j14QfKm-TpJgNB8LMztGwU4BLoGClKz70AWiw",
+  "1FAIpQLScX3NJToMfQv6EyoCOk66sI28HTUb6QvutPiCA8oE-3tJq6XA",
+  "1FAIpQLSe14Xwb1z8tnTndJyZTciag5LH3hb62sfWvqRx2d4yJYKg55g",
+  "1FAIpQLSeOAAoRFKj_6RBcBPXGpfp-BDYTLlFsMU3ObDKrd7gHKG6NKA",
+  "1FAIpQLSf0CMB7ZvQDU3lw2lBvSIiIGo7MurSQIUMPZ5HBa0Kopvt16Q",
+  "1FAIpQLSceGHzscBn9jUPZfqUblDuJcj_-eYiQ3YHvqYOb0KB_63AK8Q",
+  "1FAIpQLSe_h1qtsFv5QYd7LmhCXx6oPqEb_kYc2wOXOGBbmuIb3jwqmw",
+  "1FAIpQLSdJldcrw82OMMKrian_-QQf5Bn2nlGVDxrlHiyC-pMGUTo5BA",
+  "1FAIpQLSczW0ij76HC5QlBHH6p-8l1Zc23n6Z5Fn7FTwyAuRYkNIrNuQ", // old VA program form
 ];
 const routes = [
   "/",
@@ -111,7 +126,7 @@ async function checkJobs(page, width) {
           throw new Error(`${width}px ${route}: old WhatsApp application link`);
         }
         if (links.some(({ href }) => retiredSharedForms.some((id) => href.includes(id)))) {
-          throw new Error(`${width}px ${route}: retired shared Media/Operations form`);
+          throw new Error(`${width}px ${route}: retired Google Form for a role or the VA program`);
         }
         if (route === "/jobs") roleChecks += await checkJobs(page, width);
         if (
