@@ -12,9 +12,9 @@ import {
   hero,
   host,
   learn,
+  reassurance,
   stories,
   ticker,
-  trust,
   vsl,
 } from "./content";
 import { Countdown, ShortCountdown, StickyBar } from "./countdown";
@@ -131,18 +131,13 @@ export default function VirtualAssistantLanding() {
                   <span className={styles.h1Figure}>{hero.headlineFigure}</span>{" "}
                   <span className={styles.h1Rest}>{hero.headlineRest}</span>
                 </h1>
-                <p className={styles.heroSub}>
-                  {hero.subLead} <b>{hero.sub}</b>
-                </p>
+                <p className={styles.heroSub}>{hero.sub}</p>
               </div>
               <div className={styles.heroMedia}>
                 <Vsl />
                 <p className={styles.vslProof}>
                   <Faces />
-                  <span>
-                    <b>{hero.proof.strong}</b>
-                    {hero.proof.rest}
-                  </span>
+                  <span>{hero.proof}</span>
                 </p>
               </div>
             </div>
@@ -191,7 +186,7 @@ export default function VirtualAssistantLanding() {
           </div>
         </div>
 
-        {/* ------------------------------------------- For you + trust bar */}
+        {/* ------------------------------------------------- Future you */}
         <section
           className={`${styles.section} ${styles.dark}`}
           aria-labelledby="foryou-title"
@@ -202,20 +197,93 @@ export default function VirtualAssistantLanding() {
               <h2 id="foryou-title" className={styles.h2}>
                 {hero.forYouTitle}
               </h2>
-              <dl className={styles.stats} aria-label="At a glance">
-                {trust.map((t) => (
-                  <div key={t.figure}>
-                    <dd>{t.figure}</dd>
-                    <dt>{t.label}</dt>
-                  </div>
-                ))}
-              </dl>
             </div>
             <ul className={styles.forYouList}>
               {hero.forYou.map((t) => (
                 <li key={t}>{t}</li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* -------------------------------------------- Trust and clarity */}
+        <section
+          className={`${styles.section} ${styles.reassurance}`}
+          aria-labelledby="reassurance-title"
+        >
+          <div className={styles.wrap}>
+            <div className={styles.reassuranceTop}>
+              <div className={styles.reassuranceIntro}>
+                <p className={styles.kicker}>{reassurance.kicker}</p>
+                <h2 id="reassurance-title" className={styles.h2}>
+                  {reassurance.title}
+                </h2>
+              </div>
+              <div className={styles.reassuranceLead}>
+                <p>
+                  {reassurance.opening} {reassurance.seen}
+                </p>
+                <p>
+                  {reassurance.caution}{" "}
+                  <strong>{reassurance.affirmation}</strong>
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.reassuranceHeard}>
+              <p>{reassurance.heardLabel}</p>
+              <ul aria-label="Common online promises">
+                {reassurance.claims.map((claim) => (
+                  <li key={claim}>
+                    <blockquote>“{claim}”</blockquote>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className={styles.reassuranceFacts}>
+              <div className={styles.reassuranceFactsHead}>
+                <h3>{reassurance.factsTitle}</h3>
+                <p>{reassurance.promise}</p>
+              </div>
+              <ul className={styles.reassuranceNot}>
+                {reassurance.facts.map((fact, index) => (
+                  <li key={fact}>
+                    <span aria-hidden="true">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    {fact}
+                  </li>
+                ))}
+              </ul>
+              <div className={styles.reassuranceDetails}>
+                <div>
+                  <p className={styles.reassuranceLabel}>
+                    {reassurance.workLabel}
+                  </p>
+                  <p>{reassurance.work}</p>
+                </div>
+                <div>
+                  <p className={styles.reassuranceLabel}>
+                    {reassurance.termsLabel}
+                  </p>
+                  <p className={styles.reassuranceTerms}>
+                    {reassurance.disclosure}
+                  </p>
+                </div>
+              </div>
+              <div className={styles.reassuranceVerify}>
+                <b>{reassurance.verifyLabel}</b>
+                <a
+                  href={contact.siteHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {contact.site} <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <p className={styles.reassuranceClosing}>{reassurance.closing}</p>
+            </div>
           </div>
         </section>
 
@@ -410,9 +478,9 @@ export default function VirtualAssistantLanding() {
                 States.
               </p>
               <p className={styles.hostBody}>
-                He started PractiScale in January 2025. The Virtual Assistant
-                department is entirely female-led. Every trainer, every team
-                leader, every manager is a woman.
+                He started PractiScale in January 2025. He designed the Virtual
+                Assistant department to be entirely female-led. Every trainer,
+                every team leader, every manager is a woman.
               </p>
               <p className={styles.hostBody}>
                 His goal is to create{" "}

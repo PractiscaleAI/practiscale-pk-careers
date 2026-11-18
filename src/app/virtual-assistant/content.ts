@@ -37,22 +37,20 @@ export const hero = {
   headlineTop: "How Pakistani Women Are Earning",
   headlineFigure: "189,000 Rupees",
   headlineRest: "a Month Without Leaving Their Home",
-  subLead: "Hard to believe?",
-  sub: "Scroll down to see the women who are already doing it.",
+  sub: "Scroll down to get to see the women who have inspired so many others.",
   urgency: "Seats are filling up. Register before it's too late.",
   countdownLabel: "Registration closing in:",
   cta: "See How It Works",
   assurances: ["100% free", "Online", "60 minutes"],
-  forYouTitle: "This is for you if…",
+  forYouTitle: "Does This Sound Like the Future You Want?",
   forYou: [
-    "You have a degree but no career to show for it yet",
-    "You want to work but stepping out of the home is not possible",
-    "You have seen online opportunities before and wondered if any of them are actually real",
+    "You want to grow personally and professionally from the comfort of your home.",
+    "You want to learn from the experts.",
+    "You want the flexibility of working remotely.",
+    "You want to develop skills that could open new doors.",
+    "You want to build a career you’re genuinely proud of.",
   ],
-  proof: {
-    strong: "Real women on our team.",
-    rest: " Verify them yourself on LinkedIn.",
-  },
+  proof: "Real stories behind the women of PractiScale.",
 };
 
 /** The proof ticker under the hero, built from the case studies. */
@@ -64,10 +62,36 @@ export const ticker = [
   ["500+", "US healthcare clients"],
 ] as const;
 
-export const trust = [
-  { figure: "189,000", label: "rupees earned by our top performers" },
-  { figure: "100%", label: "female department, built and led by women" },
-];
+export const reassurance = {
+  kicker: "Before you decide",
+  title: "Another “online” earning opportunity?",
+  opening: "We get why you would have doubts.",
+  seen: "You’ve probably seen it all.",
+  claims: [
+    "Earn thousands from home.",
+    "No skills needed.",
+    "Just pay a little to get started.",
+  ],
+  caution:
+    "Somewhere along the way, you’ve learned to be careful about what you trust.",
+  affirmation: "That’s good. You should be.",
+  heardLabel: "The promises you’ve heard",
+  factsTitle: "Here’s what we want you to know.",
+  facts: [
+    "This is not an MLM.",
+    "This is not assignment work.",
+    "This is not Forever Living or a product-selling opportunity.",
+  ],
+  promise: "We’re not here to sell you another get-rich-quick dream.",
+  workLabel: "The actual work",
+  work: "PractiScale works with real U.S. healthcare businesses. We’re looking for people willing to learn the skills needed to support them.",
+  termsLabel: "The honest terms",
+  disclosure:
+    "The first month is unpaid training, and employment isn’t guaranteed.",
+  verifyLabel: "Verify our work yourself",
+  closing:
+    "A real company, offering a genuine chance to build something for yourself.",
+};
 
 export const learn = {
   kicker: "The webinar",
@@ -105,7 +129,7 @@ export const fit = {
   title: "Read this before you register",
   yesTitle: "This is for you if:",
   yes: [
-    "You are a woman",
+    "You are a growth-loving woman.",
     "You are a graduate, final semester student, or housewife ready to build a professional career",
     "You have a laptop and a reliable internet connection",
     "You can communicate in English",
@@ -124,7 +148,7 @@ export const fit = {
 export const stories = {
   kicker: "Real team members",
   title: "Women who started where you are",
-  sub: "These are not actors. These are real women on our team. You can find them on LinkedIn.",
+  sub: "These are not actors. These are real women on our team.",
   featuredTag: "Our headline figure",
   noteTitle: "About these results",
   note: "Individual outcomes vary. The results shown here represent real team members. Earnings are not guaranteed and depend on individual performance and consistency.",
