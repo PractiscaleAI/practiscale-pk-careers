@@ -41,7 +41,8 @@ export const metadata: Metadata = {
 };
 
 const closes = webinar.REGISTRATION_CLOSES_AT;
-const faces = stories.items.map((s) => s.photo);
+const faces = [84354, 84355, 84356].map((id) => `/media/va-webinar/${id}.webp`);
+const webinarFaces = [84351, 84352, 84353].map((id) => `/media/va-webinar/${id}.webp`);
 const LOGO_ON_DARK = "/brand/logos/practiscale-logo-reversed.png";
 
 function Arrow() {
@@ -311,7 +312,7 @@ export default function VirtualAssistantLanding() {
                   <span className={styles.n}>0{i + 1}</span>
                   {item.featured && (
                     <span className={styles.trio} aria-hidden="true">
-                      {faces.map((src) => (
+                      {webinarFaces.map((src) => (
                         <Image
                           key={src}
                           src={src}
