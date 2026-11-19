@@ -40,7 +40,7 @@ export const hero = {
   sub: "Scroll down to get to see the women who have inspired so many others.",
   urgency: "Seats are filling up. Register before it's too late.",
   countdownLabel: "Registration closing in:",
-  cta: "See How It Works",
+  cta: "Join the Webinar",
   assurances: ["100% free", "Online", "60 minutes"],
   forYouTitle: "Does This Sound Like the Future You Want?",
   forYou: [
