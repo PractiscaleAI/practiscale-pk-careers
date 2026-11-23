@@ -35,7 +35,7 @@ const values = [
 const milestones = [
   ["500+", "US healthcare businesses served"],
   ["100+", "Team members in Pakistan"],
-  ["46,000", "Candidates in our hiring portal"],
+  ["100k+", "Candidates in our hiring portal"],
   ["10,000 sq. ft.", "Workspace, grown from a home office"],
   ["PKR 10 million", "Monthly payroll"],
   ["29", "Published client case studies"],

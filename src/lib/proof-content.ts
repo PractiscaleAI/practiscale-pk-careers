@@ -1,7 +1,7 @@
 export const proofMetrics = [
   { id: "healthcare", value: "500+", label: "US healthcare businesses served" },
   { id: "team", value: "100+", label: "Team members in Pakistan" },
-  { id: "portal", value: "46,000", label: "Candidates in our hiring portal" },
+  { id: "portal", value: "100k+", label: "Candidates in our hiring portal" },
   { id: "publications", value: "29", label: "Published client case studies" },
 ] as const;
 

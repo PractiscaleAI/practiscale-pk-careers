@@ -349,10 +349,10 @@ export default function JobsExplorer() {
               type="button"
               onClick={() => {
                 nextRole.current = shown.length;
-                setLimit(limit + pageSize);
+                setLimit(matchingRoles.length);
               }}
             >
-              Show {nextCount} more {nextCount === 1 ? "role" : "roles"}
+              View all roles
             </button>
           )}
           <p className={styles.earningsNote}>

@@ -82,7 +82,7 @@ export default function Home() {
               </div>
               <div className="trust-card">
                 <dt>Candidates in our hiring portal</dt>
-                <dd>46,000</dd>
+                <dd>100k+</dd>
               </div>
             </dl>
             <div className="hero-bottom-right">
