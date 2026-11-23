@@ -48,7 +48,7 @@ export const trainingPrograms = {
     seoTitle:
       "Appointment Setter Training and Jobs in Pakistan | Freshers Welcome",
     seoDescription:
-      "Get trained in appointment setting for US healthcare accounts, then get hired onsite in Rawalpindi or Islamabad. No experience needed. Earn Rs 30,000 to Rs 200,000 monthly.",
+      "Get trained in appointment setting for US healthcare accounts, then get hired onsite in Rawalpindi or Islamabad. No experience needed. Earn up to PKR 100,000 monthly after hiring.",
     keywords: [
       "appointment setter jobs in Pakistan",
       "appointment setting training",
@@ -63,7 +63,7 @@ export const trainingPrograms = {
     facts: [
       "Freshers welcome",
       "Onsite in Rawalpindi or Islamabad",
-      "Rs 30,000 to Rs 200,000 per month after hiring",
+      "Up to PKR 100,000 per month + performance-based incentives after hiring",
     ],
     applyLink: appointmentSetterTrainingFormUrl,
     premiseTitle: "Every job wants experience. Nobody wants to give it.",
@@ -154,7 +154,7 @@ export const trainingPrograms = {
       {
         question: "How much will I earn after hiring?",
         answer:
-          "The earning range is Rs 30,000 to Rs 200,000 per month, depending on performance. Exact compensation is confirmed during your screening call.",
+          "Earn up to PKR 100,000 per month after hiring. Exact compensation is confirmed during your screening call.",
       },
       {
         question: "How do I apply?",
@@ -173,7 +173,7 @@ export const trainingPrograms = {
     seoTitle:
       "Work From Home Jobs for Women in Pakistan | Virtual Assistant Program",
     seoDescription:
-      "A women only training and hiring program for remote virtual assistant roles on US healthcare accounts. Work from home and earn Rs 20,000 to Rs 150,000 per month.",
+      "A women only training and hiring program for remote virtual assistant roles on US healthcare accounts. Work from home and earn PKR 30,000 to 80,000 per month.",
     keywords: [
       "work from home jobs for women in Pakistan",
       "online jobs for women in Pakistan",
@@ -187,7 +187,7 @@ export const trainingPrograms = {
     facts: [
       "Women only",
       "Fully remote",
-      "Rs 20,000 to Rs 150,000 per month after hiring",
+      "PKR 30,000 to 80,000 per month after hiring",
     ],
     applyLink: virtualAssistantTrainingFormUrl,
     premiseTitle: "Ability was never the problem. Access was.",
@@ -258,7 +258,7 @@ export const trainingPrograms = {
       {
         question: "How much will I earn after hiring?",
         answer:
-          "The earning range is Rs 20,000 to Rs 150,000 per month, depending on performance. Exact compensation is confirmed during your screening call.",
+          "The earning range is PKR 30,000 to 80,000 per month, depending on performance. Exact compensation is confirmed during your screening call.",
       },
       {
         question: "How do I apply?",
@@ -326,6 +326,9 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
             >
               Apply for the Program <span aria-hidden="true">↗</span>
             </a>
+            <a href="mailto:hiring@practiscale.com">
+              Form not opening? Email your CV
+            </a>
           </div>
           <ul className={styles.facts} aria-label="Program facts">
             {program.facts.map((fact, i) => (
@@ -349,12 +352,20 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
             </div>
             <div className={styles.scene}>
               <div className={styles.sceneHeading}>
-                <span>{isAppointmentSetter ? "FROM FIRST CONTACT" : "REMOTE ACCOUNT SUPPORT"}</span>
+                <span>
+                  {isAppointmentSetter
+                    ? "FROM FIRST CONTACT"
+                    : "REMOTE ACCOUNT SUPPORT"}
+                </span>
                 <strong>
                   {isAppointmentSetter ? (
-                    <>A conversation becomes a <em>qualified meeting.</em></>
+                    <>
+                      A conversation becomes a <em>qualified meeting.</em>
+                    </>
                   ) : (
-                    <>The details keep <em>work moving.</em></>
+                    <>
+                      The details keep <em>work moving.</em>
+                    </>
                   )}
                 </strong>
               </div>
@@ -368,7 +379,9 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               </ol>
               <p className={styles.sceneOutcome}>
                 <span aria-hidden="true" />
-                {isAppointmentSetter ? "Qualified introduction booked" : "US healthcare account supported"}
+                {isAppointmentSetter
+                  ? "Qualified introduction booked"
+                  : "US healthcare account supported"}
               </p>
             </div>
           </div>
@@ -441,7 +454,9 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               <h2 id="program-audience">Who this program is for</h2>
             </div>
             {program.audienceQualifier && (
-              <p className={styles.audienceQualifier}>{program.audienceQualifier}</p>
+              <p className={styles.audienceQualifier}>
+                {program.audienceQualifier}
+              </p>
             )}
           </div>
           <div className={styles.audienceList}>
@@ -507,7 +522,9 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               <div className={styles.pathStage}>
                 <span className={styles.pathLabel}>Start here</span>
                 <h3>Appointment setting</h3>
-                <p>Start professional conversations and book qualified meetings.</p>
+                <p>
+                  Start professional conversations and book qualified meetings.
+                </p>
                 <ul className={styles.pathSkills} aria-label="Skills you build">
                   {program.quote.skills.map((skill) => (
                     <li key={skill}>{skill}</li>
@@ -584,6 +601,9 @@ export default function TrainingProgramPage({ program }: { program: Program }) {
               rel="noopener noreferrer"
             >
               Apply for the Program <span aria-hidden="true">↗</span>
+            </a>
+            <a href="mailto:hiring@practiscale.com">
+              Form not opening? Email your CV
             </a>
             <Link
               className={styles.closingAlternative}

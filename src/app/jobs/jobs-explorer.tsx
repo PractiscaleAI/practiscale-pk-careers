@@ -66,6 +66,16 @@ function RoleCard({ role }: { role: JobRole }) {
         >
           Apply now <ArrowUpRight size={16} aria-hidden="true" />
         </a>
+        <a
+          href={`mailto:hiring@practiscale.com?subject=${encodeURIComponent(role.title + " application")}`}
+          style={{
+            fontSize: "13px",
+            textDecoration: "underline",
+            textUnderlineOffset: "3px",
+          }}
+        >
+          Form not opening? Email your CV
+        </a>
       </div>
       <details className={styles.roleDetails}>
         <summary>

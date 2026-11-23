@@ -14,14 +14,37 @@ export type JobRole = {
   schedule?: string;
 };
 
-export const jobTeams: { id: string; name: JobTeam; short: string; description: string }[] = [
-  { id: "sales", name: "Sales", short: "Sales", description: "Start conversations, qualify opportunities and help US healthcare clients grow." },
-  { id: "media", name: "Media", short: "Media", description: "Shape the stories, visuals and video that bring our work to life." },
-  { id: "operations", name: "Operations", short: "Operations", description: "Support the people and systems that keep our teams moving." },
+export const jobTeams: {
+  id: string;
+  name: JobTeam;
+  short: string;
+  description: string;
+}[] = [
+  {
+    id: "sales",
+    name: "Sales",
+    short: "Sales",
+    description:
+      "Start conversations, qualify opportunities and help US healthcare clients grow.",
+  },
+  {
+    id: "media",
+    name: "Media",
+    short: "Media",
+    description:
+      "Shape the stories, visuals and video that bring our work to life.",
+  },
+  {
+    id: "operations",
+    name: "Operations",
+    short: "Operations",
+    description: "Support the people and systems that keep our teams moving.",
+  },
 ];
 
 // GoHighLevel application forms, one per role.
-const ghlForm = (id: string) => `https://link.practiscale.com/widget/form/${id}`;
+const ghlForm = (id: string) =>
+  `https://link.practiscale.com/widget/form/${id}`;
 
 const salesForms = {
   onsiteCloser: ghlForm("qcTlIJxYxseCnhUMOBRz"),
@@ -48,11 +71,26 @@ const operationsForms = {
 
 export const jobRoles: JobRole[] = [
   {
+    title: "Remote Virtual Assistant",
+    team: "Operations",
+    mode: "Remote",
+    experience: "Freshers welcome",
+    earnings: "PKR 30,000 to 80,000",
+    schedule: "6 PM to 3 AM PKT",
+    summary:
+      "Support US healthcare businesses with day-to-day administrative operations.",
+    duties:
+      "Handle administrative tasks, scheduling, follow-ups, communication and day-to-day operations.",
+    requirements:
+      "Good communication skills, basic computer knowledge, willingness to learn and your own laptop or computer.",
+    applyUrl: "https://link.practiscale.com/widget/form/neakhQd3mrDkmjEMjimG",
+  },
+  {
     title: "Onsite Appointment Setter",
     team: "Sales",
     mode: "Onsite",
     experience: "Freshers welcome",
-    earnings: "Up to PKR 100,000 + performance incentives",
+    earnings: "Up to PKR 100,000 + performance-based incentives",
     schedule: "6 PM to 3 AM PKT",
     summary:
       "Start conversations with potential US healthcare clients and book qualified meetings.",
@@ -81,7 +119,7 @@ export const jobRoles: JobRole[] = [
     team: "Sales",
     mode: "Remote",
     experience: "Freshers welcome",
-    earnings: "Up to PKR 100,000 + performance incentives",
+    earnings: "Up to PKR 100,000 + performance-based incentives",
     schedule: "6 PM to 3 AM PKT",
     summary: "Qualify prospects and book meetings from a remote workspace.",
     duties:

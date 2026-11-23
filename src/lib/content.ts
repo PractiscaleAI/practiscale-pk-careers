@@ -1,7 +1,6 @@
-export const applicationFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSeVnz71TpOc4h6MiOE7gRY6_cCfJdHCkNZmzj22PCh1d20f5w/viewform?usp=header";
+export const applicationFormUrl = "/jobs";
 export const appointmentSetterTrainingFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfY-KNuiBVQWo5ZCGNvg4KFZWHLku8zcieyJnt6e7Eng_ppTw/viewform";
+  "https://link.practiscale.com/widget/form/zOeM1tmNGSXwetp6TDGt";
 export const virtualAssistantTrainingFormUrl =
   "https://link.practiscale.com/widget/form/neakhQd3mrDkmjEMjimG";
 export const siteUrl = process.env.SITE_URL || "https://practiscale.pk";
