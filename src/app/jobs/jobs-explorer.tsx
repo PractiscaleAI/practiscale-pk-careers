@@ -186,8 +186,8 @@ export default function JobsExplorer() {
           </div>
           <div className={styles.heroMedia}>
             <Image
-              src="/media/who-we-are/team.webp"
-              alt="PractiScale colleagues working in the office"
+              src="/media/jobs-office-banner.webp"
+              alt="PractiScale office with colleagues working at their desks"
               fill
               sizes="(max-width: 900px) 100vw, 52vw"
               loading="eager"

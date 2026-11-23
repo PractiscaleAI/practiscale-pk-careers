@@ -656,17 +656,24 @@
   .heroMedia {
     position: relative;
     inset: auto;
-    height: clamp(158px, 43vw, 330px);
+    height: clamp(190px, 52vw, 350px);
     margin-inline: calc(-1 * var(--jobs-gutter))
       calc(-1 * var(--jobs-end-gutter));
+  }
+
+  .heroMedia img {
+    width: 145% !important;
+    max-width: none;
+    left: -45% !important;
+    object-position: 70% 58%;
   }
 
   .heroMedia::after {
     background: linear-gradient(
       180deg,
       var(--deep),
-      transparent 22%,
-      transparent 82%,
+      transparent 28%,
+      transparent 88%,
       var(--deep)
     );
   }
