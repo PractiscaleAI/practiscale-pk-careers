@@ -767,7 +767,7 @@
 }
 .reassuranceDetails {
   display: grid;
-  grid-template-columns: minmax(0, 1.13fr) minmax(0, 0.87fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 70px;
   padding-top: 30px;
 }

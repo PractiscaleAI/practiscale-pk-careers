@@ -264,14 +264,6 @@ export default function VirtualAssistantLanding() {
                   </p>
                   <p>{reassurance.work}</p>
                 </div>
-                <div>
-                  <p className={styles.reassuranceLabel}>
-                    {reassurance.termsLabel}
-                  </p>
-                  <p className={styles.reassuranceTerms}>
-                    {reassurance.disclosure}
-                  </p>
-                </div>
               </div>
               <div className={styles.reassuranceVerify}>
                 <b>{reassurance.verifyLabel}</b>

@@ -85,9 +85,6 @@ export const reassurance = {
   promise: "We’re not here to sell you another get-rich-quick dream.",
   workLabel: "The actual work",
   work: "PractiScale works with real U.S. healthcare businesses. We’re looking for people willing to learn the skills needed to support them.",
-  termsLabel: "The honest terms",
-  disclosure:
-    "The first month is unpaid training, and employment isn’t guaranteed.",
   verifyLabel: "Verify our work yourself",
   closing:
     "A real company, offering a genuine chance to build something for yourself.",
@@ -140,7 +137,6 @@ export const fit = {
   no: [
     "You are looking for a casual part‑time role",
     "You cannot commit to the working hours after training",
-    "You are not willing to go through an unpaid first month of training",
     "You want quick money without putting in real work",
   ],
 };
@@ -235,10 +231,6 @@ export const faq = [
   [
     "Is PractiScale a real company?",
     "Yes. We serve 500+ healthcare businesses across the US. You can verify us on LinkedIn and Trustpilot before you register.",
-  ],
-  [
-    "Is the training really unpaid for the first month?",
-    "Yes. We say this upfront because we want the right women in the program. The first month is where you build the foundation. From Month 2, you are earning.",
   ],
 ] as const;
 
